@@ -21,6 +21,8 @@ struct ContentView: View {
     // 일정 직접 추가
     @State private var showAddEvent = false
     @State private var addEventDate = Date()
+    // 스캔 후 아직 저장하지 않은 변경이 있는지 (하단 저장 바 노출 조건)
+    @State private var hasUnsavedScan = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -106,6 +108,12 @@ struct ContentView: View {
                 childPickerSection
                 imageSection
                 eventsSection
+            }
+            // 스캔 후 저장을 놓치지 않도록 화면 하단에 항상 보이는 저장 바
+            .safeAreaInset(edge: .bottom) {
+                if !events.isEmpty, hasUnsavedScan || savedBanner {
+                    saveBar
+                }
             }
             .navigationTitle("아이일정")
             .toolbar { toolbarContent }
@@ -225,7 +233,6 @@ struct ContentView: View {
             }
 
             reminderSummarySection
-            actionSection
         }
         addEventSection
     }
@@ -296,26 +303,34 @@ struct ContentView: View {
         }
     }
 
-    private var actionSection: some View {
-        Section {
+    /// 하단 고정 저장 바 — 스캔 결과를 저장해야 알림·달력에 반영된다는 것을 놓치지 않게.
+    private var saveBar: some View {
+        VStack(spacing: 6) {
             Button {
                 Task { await addAllEvents() }
             } label: {
-                Label(savedBanner ? "추가 완료!" : "일정 추가하고 알림 받기",
-                      systemImage: savedBanner ? "checkmark.circle.fill" : "calendar.badge.plus")
-                    .frame(maxWidth: .infinity)
+                HStack(spacing: 8) {
+                    Image(systemName: savedBanner ? "checkmark.circle.fill" : "calendar.badge.plus")
+                    Text(savedBanner ? "저장 완료! 달력·위젯에서 확인하세요"
+                         : "일정 \(events.count)개 저장 + 알림 받기")
+                        .fontWeight(.semibold)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 8)
             }
             .buttonStyle(.borderedProminent)
-            .listRowInsets(EdgeInsets())
-            .padding(.vertical, 4)
+            .tint(savedBanner ? .green : .accentColor)
 
             if let resultMessage {
                 Text(resultMessage)
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                    .frame(maxWidth: .infinity, alignment: .center)
             }
         }
+        .padding(.horizontal)
+        .padding(.top, 10)
+        .padding(.bottom, 6)
+        .background(.ultraThinMaterial)
     }
 
     private var reminderSummaryText: String {
@@ -339,6 +354,7 @@ struct ContentView: View {
                     image = nil
                     resultMessage = nil
                     savedBanner = false
+                    hasUnsavedScan = false
                 } label: {
                     Image(systemName: "trash")
                 }
@@ -397,6 +413,7 @@ struct ContentView: View {
             let existingKeys = Set(events.map(dedupKey))
             let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
             events = (events + fresh).sorted { $0.date < $1.date }
+            if !fresh.isEmpty { hasUnsavedScan = true }   // 하단 저장 바 노출
             return fresh.count
         } catch {
             errorMessage = error.localizedDescription
@@ -457,7 +474,10 @@ struct ContentView: View {
         }
 
         resultMessage = messages.joined(separator: " · ")
-        withAnimation { savedBanner = true }
+        withAnimation {
+            hasUnsavedScan = false
+            savedBanner = true
+        }
     }
 
     private func dedupKey(_ event: ScannedEvent) -> String {
