@@ -1,8 +1,10 @@
-# CalendarSnap
+# CalendarSnap (아이일정)
 
 어린이집 알림장·달력을 사진으로 찍으면 **Vision OCR → 한 달 일정 파싱 → 애플 캘린더 일괄 등록 + 준비물 알림 + 홈 화면 위젯**으로 이어지는 iOS 앱.
 
 > 어린이집 아이의 한 달 일정을 한 번에 캘린더에 넣고, 전날 저녁·당일 아침에 준비물 알림을 받는 것이 목표입니다.
+
+**웹사이트**: [소개 페이지](https://m1zz.github.io/CalendarSnap/) · [지원 및 문의](https://m1zz.github.io/CalendarSnap/support.html) · [개인정보 처리방침](https://m1zz.github.io/CalendarSnap/privacy.html)
 
 ## 주요 기능
 

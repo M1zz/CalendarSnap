@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이일정 — 어린이집 일정, 사진 한 장으로</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
+    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #1c1c1e; }
+    a.button { background: #0a84ff; }
+    .card { background: #2c2c2e; }
+    .muted { color: #98989f; }
+  }
+  .icon { font-size: 64px; }
+  h1 { font-size: 2rem; margin: 8px 0 4px; }
+  .muted { color: #6e6e73; }
+  .features {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px; margin: 32px 0; text-align: left;
+  }
+  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
+  .card b { display: block; margin-bottom: 4px; }
+  .card span { font-size: 0.9rem; }
+  .links { margin-top: 40px; }
+  .links a { margin: 0 12px; }
+</style>
+</head>
+<body>
+<div class="icon">📅</div>
+<h1>아이일정</h1>
+<p class="muted">어린이집·유치원 달력과 안내문을 사진으로 찍으면<br>한 달 일정이 캘린더·알림·위젯으로 한 번에.</p>
+
+<div class="features">
+  <div class="card"><b>📸 사진 한 장 → 한 달 일정</b><span>월간 달력, 가정통신문, 안내문 어떤 형태든 자동 인식</span></div>
+  <div class="card"><b>🔔 준비물 알림</b><span>전날 저녁·당일 아침, 준비물 메모까지 함께</span></div>
+  <div class="card"><b>👧👦 다자녀 지원</b><span>아이별 프로필·색상 구분, 통합 달력과 필터</span></div>
+  <div class="card"><b>👨‍👩‍👧 가족 공유</b><span>캘린더 파일(.ics)·텍스트 공유, iCloud 캘린더 동기화</span></div>
+  <div class="card"><b>🧩 홈 화면 위젯</b><span>다가오는 일정을 홈 화면에서 바로</span></div>
+  <div class="card"><b>🔒 프라이버시 우선</b><span>모든 처리는 기기 안에서만 — 서버 전송 없음</span></div>
+</div>
+
+<div class="links">
+  <a href="support.html">지원 · 문의</a> ·
+  <a href="privacy.html">개인정보 처리방침</a> ·
+  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
+</div>
+</body>
+</html>
