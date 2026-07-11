@@ -15,6 +15,8 @@ struct SettingsView: View {
     @State private var avatarItem: PhotosPickerItem?
     @State private var avatarRefresh = 0   // 사진 변경 후 아바타 다시 그리기용
     @State private var pendingDeleteIndex: Int?   // 삭제 확인 대기 중인 아이
+    @State private var classEditIndex: Int?       // 반 입력 중인 아이
+    @State private var classEditText = ""
 
     var body: some View {
         NavigationStack {
@@ -32,13 +34,10 @@ struct SettingsView: View {
                                     .id(avatarRefresh)
                             }
                             .buttonStyle(.plain)
-                            VStack(spacing: 2) {
+                            VStack(alignment: .leading, spacing: 4) {
                                 TextField("이름 (예: 지호)", text: $settings.childNames[i])
                                     .textInputAutocapitalization(.never)
-                                TextField("반 이름 (예: 무궁화)", text: classBinding(for: i))
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                                    .textInputAutocapitalization(.never)
+                                classButton(for: i)
                             }
                         }
                     }
@@ -94,6 +93,24 @@ struct SettingsView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("완료") { dismiss() }
                 }
+            }
+            // 반 입력 팝업
+            .alert(classAlertTitle, isPresented: .constant(classEditIndex != nil)) {
+                TextField("반 이름 (예: 무궁화)", text: $classEditText)
+                Button("저장") {
+                    if let i = classEditIndex, settings.childNames.indices.contains(i) {
+                        settings.childClasses[settings.childNames[i]] =
+                            classEditText.trimmingCharacters(in: .whitespaces)
+                    }
+                    classEditIndex = nil
+                    classEditText = ""
+                }
+                Button("취소", role: .cancel) {
+                    classEditIndex = nil
+                    classEditText = ""
+                }
+            } message: {
+                Text("반을 입력하면 통신문에서 다른 반 전용 일정을 자동으로 걸러줘요.")
             }
             .confirmationDialog(deleteDialogTitle,
                                 isPresented: .constant(pendingDeleteIndex != nil),
@@ -162,17 +179,43 @@ struct SettingsView: View {
         }
     }
 
-    /// i번째 아이의 반 이름 바인딩 (이름 키 기반 저장).
-    private func classBinding(for index: Int) -> Binding<String> {
-        Binding(
-            get: {
-                guard settings.childNames.indices.contains(index) else { return "" }
-                return settings.childClasses[settings.childNames[index]] ?? ""
-            },
-            set: { newValue in
-                guard settings.childNames.indices.contains(index) else { return }
-                settings.childClasses[settings.childNames[index]] = newValue
-            })
+    // MARK: - 반 입력
+
+    /// 반이 없으면 "반을 추가해주세요" 버튼, 있으면 "OO반 ✏️" 표시.
+    private func classButton(for index: Int) -> some View {
+        let className = (settings.childNames.indices.contains(index)
+                         ? settings.childClasses[settings.childNames[index]] ?? "" : "")
+            .trimmingCharacters(in: .whitespaces)
+        return Button {
+            classEditIndex = index
+            classEditText = className
+        } label: {
+            if className.isEmpty {
+                Label("반을 추가해주세요", systemImage: "plus.circle")
+                    .font(.caption)
+                    .foregroundStyle(.tint)
+            } else {
+                HStack(spacing: 4) {
+                    Text(className.hasSuffix("반") ? className : "\(className)반")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 2)
+                        .background(.tint, in: Capsule())
+                    Image(systemName: "pencil")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var classAlertTitle: String {
+        guard let i = classEditIndex, settings.childNames.indices.contains(i),
+              !settings.childNames[i].trimmingCharacters(in: .whitespaces).isEmpty
+        else { return "반 입력" }
+        return "\(settings.childNames[i])의 반"
     }
 
     private func binding(for option: ReminderOption) -> Binding<Bool> {
