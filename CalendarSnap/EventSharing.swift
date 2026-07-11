@@ -87,6 +87,49 @@ enum EventSharing {
     }
 }
 
+// MARK: - 앱 간 데이터 공유 (.aischedule)
+
+/// 아이일정 사용자끼리 주고받는 데이터 패키지.
+/// 받는 쪽 앱이 파일을 열면 일정·아이 정보가 그대로 채워집니다.
+struct SchedulePackage: Codable {
+    var type = "aischedule"
+    var version = 1
+    var children: [String] = []
+    var events: [ScannedEvent] = []
+}
+
+extension EventSharing {
+    static let packageExtension = "aischedule"
+
+    static func exportPackage(events: [ScannedEvent], children: [String]) throws -> Data {
+        try JSONEncoder().encode(SchedulePackage(children: children, events: events))
+    }
+
+    static func importPackage(from data: Data) throws -> SchedulePackage {
+        let package = try JSONDecoder().decode(SchedulePackage.self, from: data)
+        guard package.type == "aischedule" else {
+            throw CocoaError(.fileReadCorruptFile)
+        }
+        return package
+    }
+}
+
+/// ShareLink용: 공유 시점에 .aischedule 파일을 생성하는 Transferable.
+struct ScheduleDataFile: Transferable {
+    let events: [ScannedEvent]
+    let children: [String]
+
+    static var transferRepresentation: some TransferRepresentation {
+        FileRepresentation(exportedContentType: .aischedule) { file in
+            let url = FileManager.default.temporaryDirectory
+                .appendingPathComponent("아이일정.\(EventSharing.packageExtension)")
+            try EventSharing.exportPackage(events: file.events, children: file.children)
+                .write(to: url, options: .atomic)
+            return SentTransferredFile(url)
+        }
+    }
+}
+
 /// ShareLink용: 공유 시점에 .ics 파일을 생성하는 Transferable.
 struct EventICSFile: Transferable {
     let events: [ScannedEvent]
@@ -105,5 +148,10 @@ struct EventICSFile: Transferable {
 extension UTType {
     static var icsType: UTType {
         UTType(filenameExtension: "ics") ?? .data
+    }
+
+    /// Info.plist의 UTExportedTypeDeclarations와 일치해야 함.
+    static var aischedule: UTType {
+        UTType(exportedAs: "com.devkoan.calendarsnap.schedule", conformingTo: .json)
     }
 }

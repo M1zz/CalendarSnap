@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var selectedTab = EventStore.load().isEmpty ? 0 : 1
     // 이번 스캔이 어느 아이의 달력인지
     @State private var selectedChild = ""
+    // 다른 아이일정 사용자에게 받은 데이터 가져오기 결과
+    @State private var importMessage: String?
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -26,6 +28,52 @@ struct ContentView: View {
             calendarTab
                 .tabItem { Label("달력", systemImage: "calendar") }
                 .tag(1)
+        }
+        // 다른 사용자가 보낸 .aischedule 파일을 열면 일정을 채워줌
+        .onOpenURL { url in
+            handleIncomingFile(url)
+        }
+        .alert("가져오기 완료", isPresented: .constant(importMessage != nil)) {
+            Button("확인") { importMessage = nil }
+        } message: {
+            Text(importMessage ?? "")
+        }
+    }
+
+    /// 다른 아이일정 사용자가 공유한 데이터 파일 가져오기.
+    private func handleIncomingFile(_ url: URL) {
+        guard url.pathExtension.lowercased() == EventSharing.packageExtension else { return }
+        let accessing = url.startAccessingSecurityScopedResource()
+        defer { if accessing { url.stopAccessingSecurityScopedResource() } }
+
+        do {
+            let package = try EventSharing.importPackage(from: try Data(contentsOf: url))
+
+            // 아이 목록 병합
+            for name in package.children where !name.isEmpty && !settings.childNames.contains(name) {
+                settings.childNames.append(name)
+            }
+            ReminderSettingsStore.save(settings)
+
+            // 일정 병합 (중복 제외)
+            let existingKeys = Set(events.map(dedupKey))
+            let fresh = package.events.filter { !existingKeys.contains(dedupKey($0)) }
+            events = (events + fresh).sorted { $0.date < $1.date }
+            EventStore.save(events)
+
+            selectedTab = 1
+            let skipped = package.events.count - fresh.count
+            importMessage = "일정 \(fresh.count)개를 가져왔어요."
+                + (skipped > 0 ? " (이미 있는 \(skipped)개 제외)" : "")
+
+            // 알림 권한이 이미 있으면 가져온 일정까지 포함해 재예약
+            Task {
+                if await NotificationManager.authorizationStatus() == .authorized {
+                    await NotificationManager.schedule(for: events, settings: settings)
+                }
+            }
+        } catch {
+            errorMessage = "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요."
         }
     }
 
@@ -97,9 +145,13 @@ struct ContentView: View {
         }
     }
 
-    /// 배우자·가족에게 일정 공유: 캘린더 파일(.ics) 또는 텍스트 요약.
+    /// 배우자·가족에게 일정 공유: 아이일정 데이터 / 캘린더 파일(.ics) / 텍스트 요약.
     private var shareMenu: some View {
         Menu {
+            ShareLink(item: ScheduleDataFile(events: events, children: settings.childNames),
+                      preview: SharePreview("아이일정 데이터", image: Image(systemName: "square.and.arrow.down.on.square"))) {
+                Label("아이일정 사용자에게 보내기", systemImage: "person.crop.circle.badge.plus")
+            }
             ShareLink(item: EventICSFile(events: events),
                       preview: SharePreview("아이일정 캘린더", image: Image(systemName: "calendar"))) {
                 Label("캘린더 파일로 공유 (.ics)", systemImage: "calendar.badge.plus")
