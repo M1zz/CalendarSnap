@@ -3,7 +3,10 @@ import PhotosUI
 
 struct ContentView: View {
     @State private var pickedItems: [PhotosPickerItem] = []
-    @State private var image: UIImage?
+    /// 이번 스캔 세션에서 올린 사진들 (페이지 스와이프로 확인)
+    @State private var scannedImages: [UIImage] = []
+    @State private var showPhotoViewer = false
+    @State private var photoViewerIndex = 0
     /// 저장된 일정 (달력 탭·위젯·공유의 원본)
     @State private var savedEvents: [ScannedEvent] = EventStore.load()
     /// 이번에 추가한 사진에서 추출된 일정 원본 (반 필터 적용 전)
@@ -29,6 +32,8 @@ struct ContentView: View {
     // 아이 미등록 상태에서 저장 시 이름을 물어보는 팝업
     @State private var showAskChild = false
     @State private var newChildName = ""
+    // 자동 아이 추정으로 인한 선택 변경 시, 전체 재배정을 건너뛰기 위한 플래그
+    @State private var suppressRestamp = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -70,6 +75,10 @@ struct ContentView: View {
             Button("확인") { importMessage = nil }
         } message: {
             Text(importMessage ?? "")
+        }
+        // 올린 사진 크게 보기 (스와이프 + 핀치 줌)
+        .fullScreenCover(isPresented: $showPhotoViewer) {
+            PhotoViewerView(images: scannedImages, index: photoViewerIndex)
         }
         .sheet(isPresented: $showAddEvent) {
             AddEventView(children: registeredChildren,
@@ -186,13 +195,19 @@ struct ContentView: View {
             .overlay { if isProcessing { processingOverlay } }
             .sheet(isPresented: $showCamera) {
                 CameraPicker { captured in
-                    image = captured
+                    scannedImages.append(captured)
                     Task { await runOCR(on: captured) }
                 }
                 .ignoresSafeArea()
             }
             // 위에서 아이를 바꾸면 추출된 일정 전체를 그 아이로 재배정하고 반 필터도 다시 적용
             .onChange(of: selectedChild) { _, newChild in
+                // 자동 추정에 의한 변경은 해당 사진 분량만 배정되므로 전체 재배정 생략
+                if suppressRestamp {
+                    suppressRestamp = false
+                    refreshScanned()
+                    return
+                }
                 guard !newChild.isEmpty, !scannedAll.isEmpty else { return }
                 scannedAll = scannedAll.map { event in
                     var e = event
@@ -217,7 +232,7 @@ struct ContentView: View {
                     for item in items {
                         if let data = try? await item.loadTransferable(type: Data.self),
                            let uiImage = UIImage(data: data) {
-                            image = uiImage
+                            scannedImages.append(uiImage)
                             added += await runOCR(on: uiImage)
                         }
                     }
@@ -282,19 +297,37 @@ struct ContentView: View {
 
     @ViewBuilder
     private var imageSection: some View {
-        Section {
-            if let image {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxHeight: 220)
-                    .frame(maxWidth: .infinity)
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
-            } else {
+        if scannedImages.isEmpty {
+            Section {
                 ContentUnavailableView(
                     "어린이집 알림장을 찍어보세요",
                     systemImage: "calendar.badge.plus",
                     description: Text("한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요."))
+            }
+        } else {
+            Section {
+                // 올린 사진들을 좌우 스와이프로 넘겨보고, 탭하면 크게 보기
+                TabView(selection: $photoViewerIndex) {
+                    ForEach(scannedImages.indices, id: \.self) { i in
+                        Image(uiImage: scannedImages[i])
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .padding(.bottom, scannedImages.count > 1 ? 24 : 0)
+                            .contentShape(Rectangle())
+                            .onTapGesture { showPhotoViewer = true }
+                            .tag(i)
+                    }
+                }
+                .tabViewStyle(.page(indexDisplayMode: scannedImages.count > 1 ? .always : .never))
+                .indexViewStyle(.page(backgroundDisplayMode: .always))
+                .frame(height: 250)
+                .listRowInsets(EdgeInsets())
+            } footer: {
+                Text(scannedImages.count > 1
+                     ? "사진 \(scannedImages.count)장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요."
+                     : "사진을 탭하면 크게 볼 수 있어요.")
             }
         }
     }
@@ -441,7 +474,7 @@ struct ContentView: View {
                 Button(role: .destructive) {
                     scannedAll = []
                     scanned = []
-                    image = nil
+                    scannedImages = []
                     resultMessage = nil
                     savedBanner = false
                 } label: {
@@ -493,6 +526,18 @@ struct ContentView: View {
                 parsed = EventParser.parse(recognized: recognized)
             }
 
+            // 과거 일정 패턴(반 이름·고유 어휘)으로 어느 아이의 문서인지 자동 추정
+            if registeredChildren.count >= 2,
+               let guessed = EventParser.guessChild(for: parsed,
+                                                    history: savedEvents,
+                                                    children: registeredChildren,
+                                                    classes: settings.childClasses),
+               guessed != selectedChild {
+                suppressRestamp = true
+                selectedChild = guessed
+                resultMessage = "일정 패턴을 보고 '\(guessed)'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
+            }
+
             // 선택된 아이(미선택이면 첫 아이)로 표시 후 이번 스캔 목록에 누적
             // (이미 저장돼 있거나 이번 스캔에 있는 일정은 중복 제외)
             let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
@@ -539,7 +584,7 @@ struct ContentView: View {
         // 스캔 작업 공간 비우기 — 저장된 일정은 달력 탭에서
         scannedAll = []
         scanned = []
-        image = nil
+        scannedImages = []
 
         var messages: [String] = []
 

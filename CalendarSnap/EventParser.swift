@@ -116,6 +116,70 @@ enum EventParser {
                           options: .regularExpression) != nil
     }
 
+    // MARK: - 과거 패턴으로 아이 추정
+
+    /// 새로 스캔한 일정이 어느 아이의 문서인지 과거 일정 패턴으로 추정.
+    ///
+    /// 신호: ① 아이의 반 이름 언급 (결정적), ② 과거 그 아이 일정의 고유 어휘
+    /// (기관명·특별활동명·선생님 이름 등)와의 겹침. 확신이 없으면 nil.
+    static func guessChild(for newEvents: [ScannedEvent],
+                           history: [ScannedEvent],
+                           children: [String],
+                           classes: [String: String]) -> String? {
+        guard children.count >= 2, !newEvents.isEmpty else { return nil }
+        let newText = newEvents.map { "\($0.title) \($0.notes) \($0.rawText)" }.joined(separator: " ")
+        let newTokens = extractTokens(from: newText)
+
+        var scores: [(name: String, score: Double)] = []
+        for child in children {
+            var score = 0.0
+
+            // ① 반 이름 언급 (결정적 신호)
+            let cls = (classes[child] ?? "")
+                .trimmingCharacters(in: .whitespaces)
+                .replacingOccurrences(of: "반", with: "")
+            if !cls.isEmpty, mentionsToken(cls, in: newText) {
+                score += 10
+            }
+
+            // ② 과거 일정 어휘 겹침
+            let childHistory = history.filter { $0.childName == child }
+            if !childHistory.isEmpty {
+                let historyText = childHistory
+                    .map { "\($0.title) \($0.notes)" }
+                    .joined(separator: " ")
+                score += Double(newTokens.intersection(extractTokens(from: historyText)).count)
+            }
+            scores.append((child, score))
+        }
+
+        let ranked = scores.sorted { $0.score > $1.score }
+        guard let top = ranked.first else { return nil }
+        let runnerUp = ranked.count > 1 ? ranked[1].score : 0
+        // 점수가 충분하고 2위와 확실히 벌어질 때만 추정
+        guard top.score >= 3, top.score >= runnerUp + 2 else { return nil }
+        return top.name
+    }
+
+    /// 문서 특징 비교용 토큰 (2자 이상 한글 단어, 범용어 제외).
+    private static let tokenStopwords: Set<String> = [
+        "안내", "일정", "활동", "교육", "체험", "행사", "예정", "진행", "준비물", "준비",
+        "어린이집", "유치원", "학부모", "부모", "아이", "친구", "선생님", "가정",
+        "매주", "오전", "오후", "종일", "요일", "월요일", "화요일", "수요일", "목요일", "금요일",
+        "함께", "대상", "관련", "통신문", "말씀", "감사", "부탁", "확인",
+    ]
+
+    private static func extractTokens(from text: String) -> Set<String> {
+        let raw = text.components(separatedBy: CharacterSet(charactersIn: " \n\t()[]{}<>·•,.:;~-‘’\"'“”!?/|"))
+        return Set(raw
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { token in
+                token.count >= 2 && token.count <= 8
+                    && token.unicodeScalars.allSatisfy { (0xAC00...0xD7A3).contains($0.value) }
+                    && !tokenStopwords.contains(token)
+            })
+    }
+
     static func parse(lines: [String], referenceDate: Date = Date(),
                       docTitle: String? = nil) -> [ScannedEvent] {
         var events: [ScannedEvent] = []

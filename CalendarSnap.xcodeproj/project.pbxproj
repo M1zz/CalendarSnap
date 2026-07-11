@@ -25,6 +25,7 @@
 		AA000000000000000000060E /* ChildAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000513 /* ChildAvatarView.swift */; };
 		AA000000000000000000060F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000514 /* Assets.xcassets */; };
 		AA0000000000000000000610 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000516 /* AddEventView.swift */; };
+		AA0000000000000000000611 /* PhotoViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000517 /* PhotoViewerView.swift */; };
 		AA0000000000000000000614 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000504 /* EventStore.swift */; };
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
@@ -80,6 +81,7 @@
 		AA0000000000000000000514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0000000000000000000515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0000000000000000000516 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000517 /* PhotoViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				AA0000000000000000000512 /* ChildAvatarStore.swift */,
 				AA0000000000000000000513 /* ChildAvatarView.swift */,
 				AA0000000000000000000516 /* AddEventView.swift */,
+				AA0000000000000000000517 /* PhotoViewerView.swift */,
 				AA0000000000000000000514 /* Assets.xcassets */,
 				AA0000000000000000000515 /* Info.plist */,
 				AA0000000000000000000507 /* CalendarSnap.entitlements */,
@@ -278,6 +281,7 @@
 				AA000000000000000000060D /* ChildAvatarStore.swift in Sources */,
 				AA000000000000000000060E /* ChildAvatarView.swift in Sources */,
 				AA0000000000000000000610 /* AddEventView.swift in Sources */,
+				AA0000000000000000000611 /* PhotoViewerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
