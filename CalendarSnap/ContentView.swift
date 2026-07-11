@@ -44,6 +44,28 @@ struct ContentView: View {
         .onOpenURL { url in
             handleIncomingFile(url)
         }
+        // 설정 시트와 오류 알림은 어느 탭에서든 열리도록 탭 공통 레벨에 부착
+        .sheet(isPresented: $showSettings, onDismiss: {
+            settings.childNames = settings.childNames
+                .map { $0.trimmingCharacters(in: .whitespaces) }
+                .filter { !$0.isEmpty }
+            ReminderSettingsStore.save(settings)
+            adoptOrphanEventsIfPossible()
+            refreshScanned()   // 반이 바뀌었을 수 있으니 필터 재적용
+        }) {
+            SettingsView(settings: $settings,
+                         childEventCount: { name in
+                             savedEvents.filter { $0.childName == name }.count
+                         },
+                         onDeleteChild: { name in
+                             deleteChild(name)
+                         })
+        }
+        .alert("오류", isPresented: .constant(errorMessage != nil)) {
+            Button("확인") { errorMessage = nil }
+        } message: {
+            Text(errorMessage ?? "")
+        }
         .alert("가져오기 완료", isPresented: .constant(importMessage != nil)) {
             Button("확인") { importMessage = nil }
         } message: {
@@ -162,27 +184,6 @@ struct ContentView: View {
             .navigationTitle("아이일정")
             .toolbar { toolbarContent }
             .overlay { if isProcessing { processingOverlay } }
-            .alert("오류", isPresented: .constant(errorMessage != nil)) {
-                Button("확인") { errorMessage = nil }
-            } message: {
-                Text(errorMessage ?? "")
-            }
-            .sheet(isPresented: $showSettings, onDismiss: {
-                settings.childNames = settings.childNames
-                    .map { $0.trimmingCharacters(in: .whitespaces) }
-                    .filter { !$0.isEmpty }
-                ReminderSettingsStore.save(settings)
-                adoptOrphanEventsIfPossible()
-                refreshScanned()   // 반이 바뀌었을 수 있으니 필터 재적용
-            }) {
-                SettingsView(settings: $settings,
-                             childEventCount: { name in
-                                 savedEvents.filter { $0.childName == name }.count
-                             },
-                             onDeleteChild: { name in
-                                 deleteChild(name)
-                             })
-            }
             .sheet(isPresented: $showCamera) {
                 CameraPicker { captured in
                     image = captured
