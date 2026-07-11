@@ -36,36 +36,84 @@ enum EventParser {
                 rows.append([line])
             }
         }
-        return rows.map { row in
+
+        // 표의 셀은 여러 줄에 걸치기도 함: 날짜가 있는 다열(≥2 관측) 행은
+        // 바로 아래의 날짜 없는 행을 최대 2줄까지 흡수 (장소·반 이름 연결).
+        // 통신문 문장(관측 1개짜리 긴 줄)은 흡수하지 않아 제목이 오염되지 않음.
+        let datePattern = #"\d{1,2}\s*월\s*\d{1,2}\s*일|\d{1,2}\s*일(?![간양])"#
+        func hasDate(_ row: [RecognizedLine]) -> Bool {
+            row.contains { $0.text.range(of: datePattern, options: .regularExpression) != nil }
+        }
+        var mergedRows: [[RecognizedLine]] = []
+        var i = 0
+        while i < rows.count {
+            var row = rows[i]
+            if row.count >= 2, hasDate(row) {
+                var absorbed = 0
+                while absorbed < 2, i + 1 < rows.count,
+                      !hasDate(rows[i + 1]),
+                      let cur = row.map(\.box.midY).min(),
+                      let next = rows[i + 1].first.map({ $0.box.midY }),
+                      cur - next < 0.035 {
+                    row += rows[i + 1]
+                    i += 1
+                    absorbed += 1
+                }
+            }
+            mergedRows.append(row)
+            i += 1
+        }
+
+        return mergedRows.map { row in
             row.sorted { $0.box.minX < $1.box.minX }.map(\.text).joined(separator: " ")
         }
     }
 
     // MARK: - 반(클래스) 필터
 
-    /// 다른 반 전용 일정 제외. 문서에서 "OO반" 형태로 언급된 반 이름들을 수집한 뒤,
-    /// 반 언급이 있는 일정 중 내 아이 반이 없는 것만 제외합니다 (반 언급 없는 일정은 유지).
+    /// 유치원·어린이집에서 흔한 반 이름 사전.
+    /// "OO반" 표기 없이 "민들레, 들국화"처럼만 쓰인 표에서도 반을 인식하기 위함.
+    private static let commonClassNames: Set<String> = [
+        "무궁화", "목련", "튤립", "장미", "민들레", "들국화", "개나리", "진달래",
+        "백합", "수선화", "해바라기", "코스모스", "채송화", "봉숭아", "라일락",
+        "프리지아", "카네이션", "연꽃", "매화", "동백", "벚꽃", "제비꽃", "안개꽃",
+        "햇님", "달님", "별님", "무지개", "구름", "하늘", "바다", "숲속",
+        "토끼", "다람쥐", "사슴", "꿀벌", "나비", "병아리", "참새", "기린",
+        "코끼리", "판다", "돌고래", "고래", "펭귄", "아기새", "슬기", "지혜", "사랑",
+    ]
+
+    /// 다른 반 전용 일정 제외.
+    /// 문서에서 "OO반" 표기 + 흔한 반 이름 사전으로 반 이름들을 수집한 뒤,
+    /// 반이 언급된 일정 중 내 아이 반이 없는 것만 제외합니다 (반 언급 없는 일정은 유지).
     static func filterForClass(_ events: [ScannedEvent], className: String) -> [ScannedEvent] {
         let mine = className.trimmingCharacters(in: .whitespaces)
             .replacingOccurrences(of: "반", with: "")
         guard !mine.isEmpty else { return events }
 
-        // 문서 전체에서 언급된 반 이름 수집 ("무궁화반", "튤립반" …)
+        // 문서 전체에서 언급된 반 이름 수집
         var classSet: Set<String> = [mine]
-        for event in events {
-            for m in allMatches(in: event.rawText + " " + event.title,
-                                pattern: #"([가-힣]{2,4})\s*반"#) {
-                if let name = m[1] { classSet.insert(name) }
-            }
+        let batchText = events.map { "\($0.title) \($0.notes) \($0.rawText)" }.joined(separator: "\n")
+        for m in allMatches(in: batchText, pattern: #"([가-힣]{2,4})\s*반"#) {
+            if let name = m[1] { classSet.insert(name) }
+        }
+        for name in commonClassNames where mentionsToken(name, in: batchText) {
+            classSet.insert(name)
         }
         guard classSet.count > 1 else { return events }   // 반 정보가 없는 문서는 그대로
 
         return events.filter { event in
             // rawText는 한 줄에서 나온 여러 일정이 공유하므로, 이벤트 고유 텍스트로만 판정
             let text = "\(event.title) \(event.notes)"
-            let mentioned = classSet.filter { text.contains($0) }
+            let mentioned = classSet.filter { mentionsToken($0, in: text) }
             return mentioned.isEmpty || mentioned.contains(mine)
         }
+    }
+
+    /// 단어 경계를 고려한 반 이름 매칭 ("장미공원"의 "장미"는 매칭하지 않음).
+    private static func mentionsToken(_ token: String, in text: String) -> Bool {
+        let escaped = NSRegularExpression.escapedPattern(for: token)
+        return text.range(of: "(^|[^가-힣])\(escaped)(반)?($|[^가-힣])",
+                          options: .regularExpression) != nil
     }
 
     static func parse(lines: [String], referenceDate: Date = Date(),
