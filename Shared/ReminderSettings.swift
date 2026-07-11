@@ -69,11 +69,20 @@ enum ReminderOption: String, CaseIterable, Codable, Identifiable {
 struct ReminderSettings: Codable, Equatable {
     /// 등록된 아이 이름 목록 (다자녀 지원).
     var childNames: [String] = []
+    /// 아이 이름 → 반 이름 (예: "지호" → "무궁화"). 매년 반이 바뀌면 여기만 수정.
+    var childClasses: [String: String] = [:]
     var options: Set<ReminderOption> = [.dayBeforeEvening, .morningOf]
     /// 애플 캘린더에도 일정을 추가할지 여부 (아이별 캘린더로 분리 생성).
     var mirrorToCalendar: Bool = true
 
     static let `default` = ReminderSettings()
+
+    /// 아이의 반 이름 ("반" 접미사 제거된 형태).
+    func className(for child: String) -> String {
+        (childClasses[child] ?? "")
+            .trimmingCharacters(in: .whitespaces)
+            .replacingOccurrences(of: "반", with: "")
+    }
 
     /// 해당 일정에 대해 (옵션, 알림시각) 쌍 목록. 시간순 정렬.
     func reminders(for event: ScannedEvent, calendar: Calendar = .current) -> [(option: ReminderOption, fireDate: Date)] {
@@ -87,7 +96,7 @@ struct ReminderSettings: Codable, Equatable {
 // 구버전(childName 단일 문자열) 저장 데이터 마이그레이션.
 extension ReminderSettings {
     enum CodingKeys: String, CodingKey {
-        case childNames, childName, options, mirrorToCalendar
+        case childNames, childName, childClasses, options, mirrorToCalendar
     }
 
     init(from decoder: Decoder) throws {
@@ -100,6 +109,7 @@ extension ReminderSettings {
         } else {
             childNames = []
         }
+        childClasses = try c.decodeIfPresent([String: String].self, forKey: .childClasses) ?? [:]
         options = try c.decodeIfPresent(Set<ReminderOption>.self, forKey: .options)
             ?? [.dayBeforeEvening, .morningOf]
         mirrorToCalendar = try c.decodeIfPresent(Bool.self, forKey: .mirrorToCalendar) ?? true
@@ -108,6 +118,7 @@ extension ReminderSettings {
     func encode(to encoder: Encoder) throws {
         var c = encoder.container(keyedBy: CodingKeys.self)
         try c.encode(childNames, forKey: .childNames)
+        try c.encode(childClasses, forKey: .childClasses)
         try c.encode(options, forKey: .options)
         try c.encode(mirrorToCalendar, forKey: .mirrorToCalendar)
     }

@@ -6,7 +6,9 @@ struct ContentView: View {
     @State private var image: UIImage?
     /// 저장된 일정 (달력 탭·위젯·공유의 원본)
     @State private var savedEvents: [ScannedEvent] = EventStore.load()
-    /// 이번에 추가한 사진에서 추출된 일정만 (스캔 탭 작업 공간 — 저장하면 비워짐)
+    /// 이번에 추가한 사진에서 추출된 일정 원본 (반 필터 적용 전)
+    @State private var scannedAll: [ScannedEvent] = []
+    /// 스캔 탭에 표시되는 일정 (아이 반에 맞게 필터됨 — 저장하면 비워짐)
     @State private var scanned: [ScannedEvent] = []
     @State private var settings: ReminderSettings = ReminderSettingsStore.load()
     @State private var isProcessing = false
@@ -171,6 +173,7 @@ struct ContentView: View {
                     .filter { !$0.isEmpty }
                 ReminderSettingsStore.save(settings)
                 adoptOrphanEventsIfPossible()
+                refreshScanned()   // 반이 바뀌었을 수 있으니 필터 재적용
             }) {
                 SettingsView(settings: $settings)
             }
@@ -181,13 +184,22 @@ struct ContentView: View {
                 }
                 .ignoresSafeArea()
             }
-            // 위에서 아이를 바꾸면 이번 스캔에서 추출된 일정 전체를 그 아이로 재배정
+            // 위에서 아이를 바꾸면 추출된 일정 전체를 그 아이로 재배정하고 반 필터도 다시 적용
             .onChange(of: selectedChild) { _, newChild in
-                guard !newChild.isEmpty, !scanned.isEmpty else { return }
-                scanned = scanned.map { event in
+                guard !newChild.isEmpty, !scannedAll.isEmpty else { return }
+                scannedAll = scannedAll.map { event in
                     var e = event
                     e.childName = newChild
                     return e
+                }
+                refreshScanned()
+            }
+            // 목록에서의 편집(제목·시간·아이 등)을 원본에도 반영
+            .onChange(of: scanned) { _, edited in
+                for event in edited {
+                    if let i = scannedAll.firstIndex(where: { $0.id == event.id }) {
+                        scannedAll[i] = event
+                    }
                 }
             }
             .onChange(of: pickedItems) { _, items in
@@ -287,7 +299,11 @@ struct ContentView: View {
                 ForEach($scanned) { $event in
                     EventRow(event: $event, children: registeredChildren)
                 }
-                .onDelete { scanned.remove(atOffsets: $0) }
+                .onDelete { offsets in
+                    let ids = offsets.map { scanned[$0].id }
+                    scanned.remove(atOffsets: offsets)
+                    scannedAll.removeAll { ids.contains($0.id) }
+                }
             } header: {
                 Text("이번 사진에서 추출된 일정 \(scanned.count)개")
             } footer: {
@@ -416,6 +432,7 @@ struct ContentView: View {
             }
             if !scanned.isEmpty {
                 Button(role: .destructive) {
+                    scannedAll = []
                     scanned = []
                     image = nil
                     resultMessage = nil
@@ -477,9 +494,10 @@ struct ContentView: View {
                 if e.childName.isEmpty { e.childName = assignChild }
                 return e
             }
-            let existingKeys = Set((savedEvents + scanned).map(dedupKey))
+            let existingKeys = Set((savedEvents + scannedAll).map(dedupKey))
             let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
-            scanned = (scanned + fresh).sorted { $0.date < $1.date }
+            scannedAll = (scannedAll + fresh).sorted { $0.date < $1.date }
+            refreshScanned()
             return fresh.count
         } catch {
             errorMessage = error.localizedDescription
@@ -512,6 +530,7 @@ struct ContentView: View {
         EventStore.save(savedEvents)   // 위젯 갱신
 
         // 스캔 작업 공간 비우기 — 저장된 일정은 달력 탭에서
+        scannedAll = []
         scanned = []
         image = nil
 
@@ -554,6 +573,14 @@ struct ContentView: View {
 
     private func dedupKey(_ event: ScannedEvent) -> String {
         "\(event.title)|\(event.date.timeIntervalSince1970)|\(event.childName)"
+    }
+
+    /// 선택된 아이의 반에 맞게 추출 목록 필터 (다른 반 전용 견학 등 제외).
+    private func refreshScanned() {
+        let className = settings.className(for: selectedChild)
+        scanned = className.isEmpty
+            ? scannedAll
+            : EventParser.filterForClass(scannedAll, className: className)
     }
 }
 

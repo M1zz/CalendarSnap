@@ -13,16 +13,59 @@ import Foundation
 enum EventParser {
 
     /// OCR 관측(바운딩 박스 포함)으로 파싱.
-    /// 안내문·전단지처럼 날짜 줄에 라벨("일정 :", "교육일시")만 있는 경우
-    /// 가장 큰 글씨 헤딩을 문서 제목으로 찾아 일정 제목으로 사용합니다.
+    /// - 같은 가로줄(행)의 관측을 하나로 합쳐 표(날짜|장소|반명) 구조를 지원
+    /// - 안내문·전단지처럼 날짜 줄에 라벨("일정 :", "교육일시")만 있는 경우
+    ///   가장 큰 글씨 헤딩을 문서 제목으로 찾아 일정 제목으로 사용
     static func parse(recognized: [RecognizedLine], referenceDate: Date = Date()) -> [ScannedEvent] {
-        let ordered = recognized.sorted {
-            if abs($0.box.midY - $1.box.midY) > 0.02 { return $0.box.midY > $1.box.midY }
-            return $0.box.minX < $1.box.minX
+        parse(lines: mergeRows(recognized),
+              referenceDate: referenceDate,
+              docTitle: documentTitle(in: recognized))
+    }
+
+    /// 세로 위치(midY)가 비슷한 관측을 왼쪽→오른쪽 순으로 한 줄로 병합.
+    /// 견학 안내 표처럼 "7월 7일 | 경주안전체험관 | 무궁화, 목련"이
+    /// 별개 관측으로 나뉘어도 하나의 논리 행이 됩니다.
+    private static func mergeRows(_ lines: [RecognizedLine]) -> [String] {
+        let sorted = lines.sorted { $0.box.midY > $1.box.midY }
+        var rows: [[RecognizedLine]] = []
+        for line in sorted {
+            if let ref = rows.last?.first,
+               abs(ref.box.midY - line.box.midY) < max(0.008, min(ref.box.height, line.box.height) * 0.6) {
+                rows[rows.count - 1].append(line)
+            } else {
+                rows.append([line])
+            }
         }
-        return parse(lines: ordered.map(\.text),
-                     referenceDate: referenceDate,
-                     docTitle: documentTitle(in: recognized))
+        return rows.map { row in
+            row.sorted { $0.box.minX < $1.box.minX }.map(\.text).joined(separator: " ")
+        }
+    }
+
+    // MARK: - 반(클래스) 필터
+
+    /// 다른 반 전용 일정 제외. 문서에서 "OO반" 형태로 언급된 반 이름들을 수집한 뒤,
+    /// 반 언급이 있는 일정 중 내 아이 반이 없는 것만 제외합니다 (반 언급 없는 일정은 유지).
+    static func filterForClass(_ events: [ScannedEvent], className: String) -> [ScannedEvent] {
+        let mine = className.trimmingCharacters(in: .whitespaces)
+            .replacingOccurrences(of: "반", with: "")
+        guard !mine.isEmpty else { return events }
+
+        // 문서 전체에서 언급된 반 이름 수집 ("무궁화반", "튤립반" …)
+        var classSet: Set<String> = [mine]
+        for event in events {
+            for m in allMatches(in: event.rawText + " " + event.title,
+                                pattern: #"([가-힣]{2,4})\s*반"#) {
+                if let name = m[1] { classSet.insert(name) }
+            }
+        }
+        guard classSet.count > 1 else { return events }   // 반 정보가 없는 문서는 그대로
+
+        return events.filter { event in
+            // rawText는 한 줄에서 나온 여러 일정이 공유하므로, 이벤트 고유 텍스트로만 판정
+            let text = "\(event.title) \(event.notes)"
+            let mentioned = classSet.filter { text.contains($0) }
+            return mentioned.isEmpty || mentioned.contains(mine)
+        }
     }
 
     static func parse(lines: [String], referenceDate: Date = Date(),

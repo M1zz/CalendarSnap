@@ -26,8 +26,14 @@ struct SettingsView: View {
                                     .id(avatarRefresh)
                             }
                             .buttonStyle(.plain)
-                            TextField("이름 (예: 지호)", text: $settings.childNames[i])
-                                .textInputAutocapitalization(.never)
+                            VStack(spacing: 2) {
+                                TextField("이름 (예: 지호)", text: $settings.childNames[i])
+                                    .textInputAutocapitalization(.never)
+                                TextField("반 이름 (예: 무궁화)", text: classBinding(for: i))
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .textInputAutocapitalization(.never)
+                            }
                         }
                     }
                     .onDelete { settings.childNames.remove(atOffsets: $0) }
@@ -39,7 +45,7 @@ struct SettingsView: View {
                 } header: {
                     Text("아이")
                 } footer: {
-                    Text("동그라미를 누르면 프로필 사진을 넣을 수 있어요. 아이별로 일정을 색으로 구분하고, 캘린더도 아이마다 따로 만들어드려요. 밀어서 삭제할 수 있어요.")
+                    Text("동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요.")
                 }
 
                 Section {
@@ -103,6 +109,19 @@ struct SettingsView: View {
             .filter { !$0.isEmpty }
         guard !names.isEmpty else { return "‘어린이집’" }
         return names.map { "‘\($0) 어린이집’" }.joined(separator: ", ")
+    }
+
+    /// i번째 아이의 반 이름 바인딩 (이름 키 기반 저장).
+    private func classBinding(for index: Int) -> Binding<String> {
+        Binding(
+            get: {
+                guard settings.childNames.indices.contains(index) else { return "" }
+                return settings.childClasses[settings.childNames[index]] ?? ""
+            },
+            set: { newValue in
+                guard settings.childNames.indices.contains(index) else { return }
+                settings.childClasses[settings.childNames[index]] = newValue
+            })
     }
 
     private func binding(for option: ReminderOption) -> Binding<Bool> {
