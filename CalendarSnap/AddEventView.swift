@@ -25,7 +25,17 @@ struct AddEventView: View {
     var body: some View {
         NavigationStack {
             Form {
-                if !children.isEmpty {
+                if children.isEmpty {
+                    // 아이가 아직 없으면 이름부터 물어보고 함께 등록
+                    Section {
+                        TextField("아이 이름 (예: 지호)", text: $childName)
+                            .textInputAutocapitalization(.never)
+                    } header: {
+                        Text("누구의 일정인가요?")
+                    } footer: {
+                        Text("아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 표시돼요.")
+                    }
+                } else {
                     Section("누구의 일정인가요?") {
                         HStack(spacing: 18) {
                             ForEach(children, id: \.self) { name in
@@ -66,11 +76,13 @@ struct AddEventView: View {
                                             date: date,
                                             isAllDay: isAllDay,
                                             notes: notes.trimmingCharacters(in: .whitespacesAndNewlines),
-                                            childName: childName,
+                                            childName: childName.trimmingCharacters(in: .whitespaces),
                                             rawText: "직접 추가"))
                         dismiss()
                     }
-                    .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
+                    // 제목 필수 + 아이 미등록 상태면 아이 이름도 필수
+                    .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty
+                              || (children.isEmpty && childName.trimmingCharacters(in: .whitespaces).isEmpty))
                 }
             }
         }

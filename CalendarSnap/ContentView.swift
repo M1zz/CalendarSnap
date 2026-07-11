@@ -23,6 +23,9 @@ struct ContentView: View {
     @State private var addEventDate = Date()
     // 스캔 후 아직 저장하지 않은 변경이 있는지 (하단 저장 바 노출 조건)
     @State private var hasUnsavedScan = false
+    // 아이 미등록 상태에서 저장 시 이름을 물어보는 팝업
+    @State private var showAskChild = false
+    @State private var newChildName = ""
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -50,10 +53,34 @@ struct ContentView: View {
                 addManualEvent(newEvent)
             }
         }
+        // 아이가 등록돼 있지 않으면 저장 전에 누구의 일정인지 물어봄
+        .alert("누구의 일정인가요?", isPresented: $showAskChild) {
+            TextField("아이 이름 (예: 지호)", text: $newChildName)
+            Button("저장") {
+                let name = newChildName.trimmingCharacters(in: .whitespaces)
+                newChildName = ""
+                guard !name.isEmpty else { return }
+                settings.childNames.append(name)
+                ReminderSettingsStore.save(settings)
+                selectedChild = name
+                Task { await addAllEvents() }
+            }
+            Button("취소", role: .cancel) { newChildName = "" }
+        } message: {
+            Text("아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 함께 표시돼요.")
+        }
     }
 
     /// 직접 추가한 일정은 즉시 저장 + 위젯 갱신 + (권한 있으면) 알림 예약.
+    /// 새 아이 이름이 입력됐다면 아이도 함께 등록.
     private func addManualEvent(_ event: ScannedEvent) {
+        let name = event.childName.trimmingCharacters(in: .whitespaces)
+        if !name.isEmpty, !settings.childNames.contains(name) {
+            settings.childNames.append(name)
+            ReminderSettingsStore.save(settings)
+        }
+        if selectedChild.isEmpty { selectedChild = name }
+
         events = (events + [event]).sorted { $0.date < $1.date }
         EventStore.save(events)
         Task {
@@ -61,6 +88,20 @@ struct ContentView: View {
                 await NotificationManager.schedule(for: events, settings: settings)
             }
         }
+    }
+
+    /// 주인 없는(공통) 일정 복구: 등록된 아이가 정확히 1명이면 그 아이에게 자동 배정.
+    /// (아이 없이 일정을 만들었다가 나중에 아이를 등록한 경우,
+    ///  통합에는 보이는데 아이 필터에는 없는 모순을 방지)
+    private func adoptOrphanEventsIfPossible() {
+        let names = registeredChildren
+        guard names.count == 1, events.contains(where: { $0.childName.isEmpty }) else { return }
+        events = events.map { event in
+            var e = event
+            if e.childName.isEmpty { e.childName = names[0] }
+            return e
+        }
+        EventStore.save(events)
     }
 
     /// 다른 아이일정 사용자가 공유한 데이터 파일 가져오기.
@@ -123,7 +164,13 @@ struct ContentView: View {
             } message: {
                 Text(errorMessage ?? "")
             }
-            .sheet(isPresented: $showSettings, onDismiss: { ReminderSettingsStore.save(settings) }) {
+            .sheet(isPresented: $showSettings, onDismiss: {
+                settings.childNames = settings.childNames
+                    .map { $0.trimmingCharacters(in: .whitespaces) }
+                    .filter { !$0.isEmpty }
+                ReminderSettingsStore.save(settings)
+                adoptOrphanEventsIfPossible()
+            }) {
                 SettingsView(settings: $settings)
             }
             .sheet(isPresented: $showCamera) {
@@ -307,7 +354,11 @@ struct ContentView: View {
     private var saveBar: some View {
         VStack(spacing: 6) {
             Button {
-                Task { await addAllEvents() }
+                if registeredChildren.isEmpty {
+                    showAskChild = true   // 아이부터 물어보고 저장
+                } else {
+                    Task { await addAllEvents() }
+                }
             } label: {
                 HStack(spacing: 8) {
                     Image(systemName: savedBanner ? "checkmark.circle.fill" : "calendar.badge.plus")
@@ -404,10 +455,11 @@ struct ContentView: View {
                 parsed = EventParser.parse(recognized: recognized)
             }
 
-            // 선택된 아이로 표시 후 기존 목록에 누적 (중복 제외)
+            // 선택된 아이(미선택이면 첫 아이)로 표시 후 기존 목록에 누적 (중복 제외)
+            let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
             let stamped = parsed.map { event in
                 var e = event
-                if e.childName.isEmpty { e.childName = selectedChild }
+                if e.childName.isEmpty { e.childName = assignChild }
                 return e
             }
             let existingKeys = Set(events.map(dedupKey))
@@ -430,11 +482,12 @@ struct ContentView: View {
 
         ReminderSettingsStore.save(settings)
 
-        // 아이 미지정 일정은 현재 선택된 아이로 표시
-        if !selectedChild.isEmpty {
+        // 아이 미지정 일정은 현재 선택된 아이(미선택이면 첫 아이)로 표시
+        let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
+        if !assignChild.isEmpty {
             events = events.map { event in
                 var stamped = event
-                if stamped.childName.isEmpty { stamped.childName = selectedChild }
+                if stamped.childName.isEmpty { stamped.childName = assignChild }
                 return stamped
             }
         }
