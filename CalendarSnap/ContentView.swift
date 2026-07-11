@@ -181,6 +181,15 @@ struct ContentView: View {
                 }
                 .ignoresSafeArea()
             }
+            // 위에서 아이를 바꾸면 이번 스캔에서 추출된 일정 전체를 그 아이로 재배정
+            .onChange(of: selectedChild) { _, newChild in
+                guard !newChild.isEmpty, !scanned.isEmpty else { return }
+                scanned = scanned.map { event in
+                    var e = event
+                    e.childName = newChild
+                    return e
+                }
+            }
             .onChange(of: pickedItems) { _, items in
                 guard !items.isEmpty else { return }
                 Task {
