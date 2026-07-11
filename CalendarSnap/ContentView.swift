@@ -18,6 +18,9 @@ struct ContentView: View {
     @State private var selectedChild = ""
     // 다른 아이일정 사용자에게 받은 데이터 가져오기 결과
     @State private var importMessage: String?
+    // 일정 직접 추가
+    @State private var showAddEvent = false
+    @State private var addEventDate = Date()
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -37,6 +40,24 @@ struct ContentView: View {
             Button("확인") { importMessage = nil }
         } message: {
             Text(importMessage ?? "")
+        }
+        .sheet(isPresented: $showAddEvent) {
+            AddEventView(children: registeredChildren,
+                         initialDate: addEventDate,
+                         initialChild: selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild) { newEvent in
+                addManualEvent(newEvent)
+            }
+        }
+    }
+
+    /// 직접 추가한 일정은 즉시 저장 + 위젯 갱신 + (권한 있으면) 알림 예약.
+    private func addManualEvent(_ event: ScannedEvent) {
+        events = (events + [event]).sorted { $0.date < $1.date }
+        EventStore.save(events)
+        Task {
+            if await NotificationManager.authorizationStatus() == .authorized {
+                await NotificationManager.schedule(for: events, settings: settings)
+            }
         }
     }
 
@@ -127,7 +148,10 @@ struct ContentView: View {
 
     private var calendarTab: some View {
         NavigationStack {
-            MonthCalendarView(events: events, children: settings.childNames)
+            MonthCalendarView(events: events, children: settings.childNames) { date in
+                addEventDate = date
+                showAddEvent = true
+            }
                 .navigationTitle("달력")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
@@ -191,17 +215,29 @@ struct ContentView: View {
         if !events.isEmpty {
             Section {
                 ForEach($events) { $event in
-                    EventRow(event: $event)
+                    EventRow(event: $event, children: registeredChildren)
                 }
                 .onDelete { events.remove(atOffsets: $0) }
             } header: {
                 Text("추출된 일정 \(events.count)개")
             } footer: {
-                Text("제목·시간·준비물을 확인하고 필요 없는 일정은 밀어서 삭제하세요.")
+                Text("제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요.")
             }
 
             reminderSummarySection
             actionSection
+        }
+        addEventSection
+    }
+
+    private var addEventSection: some View {
+        Section {
+            Button {
+                addEventDate = Date()
+                showAddEvent = true
+            } label: {
+                Label("일정 직접 추가", systemImage: "plus.circle.fill")
+            }
         }
     }
 
@@ -433,11 +469,28 @@ struct ContentView: View {
 
 private struct EventRow: View {
     @Binding var event: ScannedEvent
+    let children: [String]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            TextField("제목", text: $event.title)
-                .font(.headline)
+            HStack(spacing: 10) {
+                // 아이 변경 메뉴 (아바타 탭)
+                if !children.isEmpty {
+                    Menu {
+                        Picker("아이", selection: $event.childName) {
+                            ForEach(children, id: \.self) { name in
+                                Text(name).tag(name)
+                            }
+                            Text("공통").tag("")
+                        }
+                    } label: {
+                        ChildAvatarView(name: event.childName.isEmpty ? nil : event.childName,
+                                        children: children, size: 30, isSelected: false)
+                    }
+                }
+                TextField("제목", text: $event.title)
+                    .font(.headline)
+            }
 
             Toggle(isOn: $event.isAllDay) {
                 Text("종일")

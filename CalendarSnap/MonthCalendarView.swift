@@ -5,6 +5,8 @@ import SwiftUI
 struct MonthCalendarView: View {
     let events: [ScannedEvent]
     let children: [String]
+    /// 선택한 날짜에 일정 직접 추가 (달력 탭 → "이 날 일정 추가")
+    var onAddEvent: ((Date) -> Void)?
 
     @State private var displayedMonth = Date()
     @State private var selectedDay: Date? = Calendar.current.startOfDay(for: Date())
@@ -240,6 +242,16 @@ struct MonthCalendarView: View {
                     }
                 } header: {
                     Text(selectedDay, format: .dateTime.month().day().weekday(.wide).locale(koKR))
+                }
+
+                if let onAddEvent {
+                    Section {
+                        Button {
+                            onAddEvent(selectedDay)
+                        } label: {
+                            Label("이 날 일정 추가", systemImage: "plus.circle.fill")
+                        }
+                    }
                 }
 
                 // 선택한 날에 일정이 없으면 다음 일정을 미리 보여줌
