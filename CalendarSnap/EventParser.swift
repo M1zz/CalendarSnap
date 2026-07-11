@@ -12,7 +12,21 @@ import Foundation
 /// - NSDataDetector가 잡는 일반 날짜 표현 (영문 포함)
 enum EventParser {
 
-    static func parse(lines: [String], referenceDate: Date = Date()) -> [ScannedEvent] {
+    /// OCR 관측(바운딩 박스 포함)으로 파싱.
+    /// 안내문·전단지처럼 날짜 줄에 라벨("일정 :", "교육일시")만 있는 경우
+    /// 가장 큰 글씨 헤딩을 문서 제목으로 찾아 일정 제목으로 사용합니다.
+    static func parse(recognized: [RecognizedLine], referenceDate: Date = Date()) -> [ScannedEvent] {
+        let ordered = recognized.sorted {
+            if abs($0.box.midY - $1.box.midY) > 0.02 { return $0.box.midY > $1.box.midY }
+            return $0.box.minX < $1.box.minX
+        }
+        return parse(lines: ordered.map(\.text),
+                     referenceDate: referenceDate,
+                     docTitle: documentTitle(in: recognized))
+    }
+
+    static func parse(lines: [String], referenceDate: Date = Date(),
+                      docTitle: String? = nil) -> [ScannedEvent] {
         var events: [ScannedEvent] = []
         let calendar = Calendar.current
         let refComponents = calendar.dateComponents([.year, .month], from: referenceDate)
@@ -48,11 +62,48 @@ enum EventParser {
             }
         }
 
+        // 단건 안내문(일정이 적은 문서)은 라벨뿐인 제목을 문서 헤딩으로 대체
+        if let docTitle, !docTitle.isEmpty, events.count <= 3 {
+            events = events.map { event in
+                var e = event
+                if e.title == "일정" {
+                    e.title = docTitle
+                } else if let m = firstMatch(in: e.title,
+                                             pattern: #"^([고교]육|행사)?\s*(일시|일정|날짜)\s*[::]?\s*"#) {
+                    var leftover = e.title
+                    leftover.removeSubrange(m.range)
+                    leftover = cleanTitle(leftover)
+                    e.title = docTitle
+                    if e.notes.isEmpty { e.notes = leftover }   // 남은 텍스트(장소 등)는 메모로
+                }
+                return e
+            }
+        }
+
         // 중복 제거 (같은 날짜 + 같은 제목)
         var seen = Set<String>()
         return events.filter { event in
             seen.insert("\(event.title)|\(event.date.timeIntervalSince1970)").inserted
         }.sorted { $0.date < $1.date }
+    }
+
+    /// 문서에서 가장 큰 글씨의 짧은 한글 줄을 제목 후보로 선택.
+    private static func documentTitle(in lines: [RecognizedLine]) -> String? {
+        lines
+            .filter { line in
+                let t = line.text.trimmingCharacters(in: .whitespacesAndNewlines)
+                let hangul = t.unicodeScalars.filter { (0xAC00...0xD7A3).contains($0.value) }.count
+                guard hangul >= 2, (2...20).contains(t.count) else { return false }
+                // 날짜·시간이 들어있는 줄과 통신문류 제목은 제외
+                guard t.range(of: #"\d\s*[월일]|\d{1,2}\s*:\s*\d{2}"#, options: .regularExpression) == nil,
+                      t.range(of: #"통신문|알림장|가정통신"#, options: .regularExpression) == nil
+                else { return false }
+                return true
+            }
+            .max { $0.box.height < $1.box.height }
+            .map {
+                $0.text.trimmingCharacters(in: CharacterSet(charactersIn: " \t[]《》〈〉“”\"'*※·•-"))
+            }
     }
 
     // MARK: - 한국어 패턴 (한 줄 → 여러 일정 가능)
@@ -61,7 +112,8 @@ enum EventParser {
                                     calendar: Calendar) -> [ScannedEvent] {
         // 1. 라인의 날짜 위치 전부 수집
         var dates: [(month: Int, day: Int, range: Range<String.Index>)] = []
-        let monthDayMatches = allMatches(in: line, pattern: #"(\d{1,2})\s*월\s*(\d{1,2})\s*일"#)
+        // "2026년 7월 8일" 처럼 연도가 붙으면 연도까지 날짜로 흡수 (제목에 남지 않도록)
+        let monthDayMatches = allMatches(in: line, pattern: #"(?:20\d{2}\s*년?\s*)?(\d{1,2})\s*월\s*(\d{1,2})\s*일"#)
         if !monthDayMatches.isEmpty {
             for m in monthDayMatches {
                 if let month = Int(m[1] ?? ""), let day = Int(m[2] ?? ""),
@@ -84,7 +136,7 @@ enum EventParser {
         var hour: Int?
         var minute = 0
         var timeRange: Range<String.Index>?
-        if let m = firstMatch(in: line, pattern: #"(오전|오후)?\s*(\d{1,2})\s*:\s*(\d{2})"#),
+        if let m = firstMatch(in: line, pattern: #"(오전|오후|[AaPp][Mm])?\s*(\d{1,2})\s*:\s*(\d{2})"#),
            let h = Int(m[2] ?? ""), let min = Int(m[3] ?? ""), h <= 23, min <= 59 {
             hour = adjust(h, marker: m[1]); minute = min; timeRange = m.range
         } else if let m = firstMatch(in: line, pattern: #"(오전|오후)?\s*(\d{1,2})\s*시(?!간)(?:\s*(\d{1,2})\s*분)?"#),
@@ -162,6 +214,10 @@ enum EventParser {
         t = t.replacingOccurrences(of: #"\(\s*[월화수목금토일]\s*\)"#,
                                    with: " ", options: .regularExpression)
 
+        // 남아 있는 시간 표기 제거 ("~ 오후 15:00" 등 — 시간은 이미 추출됨)
+        t = t.replacingOccurrences(of: #"(오전|오후|[AaPp][Mm])?\s*\d{1,2}\s*:\s*\d{2}"#,
+                                   with: " ", options: .regularExpression)
+
         // 문장 어미부터 끝까지 제거 (통신문 존댓말)
         let endings = [
             #"(활동|행사|교육|일정)?\s*(이|가)?\s*(있는|열리는|진행되는|하는)\s*날\s*입니다.*$"#,
@@ -177,7 +233,7 @@ enum EventParser {
         }
 
         // 앞쪽 불릿·기호 제거 (조사 제거보다 먼저!)
-        t = t.replacingOccurrences(of: #"^[\s\-–—·•※◦▶►*:：,.]+"#,
+        t = t.replacingOccurrences(of: #"^[\s\-–—·•※◦▶►*:：,.~∼]+"#,
                                    with: "", options: .regularExpression)
 
         // 날짜 바로 뒤에 붙는 조사 제거 ("…일(금)은 브레인아토밍" → "브레인아토밍")
@@ -199,8 +255,9 @@ enum EventParser {
 
     /// 오전/오후 표기 없는 1~6시는 어린이집 활동 특성상 오후로 간주.
     private static func adjust(_ hour: Int, marker: String?) -> Int {
-        if marker == "오후", hour < 12 { return hour + 12 }
-        if marker == "오전" { return hour }
+        let normalized = marker?.lowercased()
+        if normalized == "오후" || normalized == "pm", hour < 12 { return hour + 12 }
+        if normalized == "오전" || normalized == "am" { return hour }
         return (1...6).contains(hour) ? hour + 12 : hour
     }
 
@@ -213,6 +270,10 @@ enum EventParser {
               let date = match.date,
               let matchRange = Range(match.range, in: line)
         else { return nil }
+
+        // "15:30" 처럼 시간뿐인 표현은 날짜가 아님 (시간표 행 오인 방지)
+        let matchedText = String(line[matchRange]).trimmingCharacters(in: .whitespaces)
+        guard matchedText.range(of: #"^[\d:.\s~\-]+$"#, options: .regularExpression) == nil else { return nil }
 
         var title = line
         title.removeSubrange(matchRange)

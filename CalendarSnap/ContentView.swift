@@ -294,11 +294,10 @@ struct ContentView: View {
         do {
             let recognized = try await OCRService.recognizeLines(in: image)
 
-            // 달력 격자 사진이면 셀 위치 기반 파싱, 아니면 줄 단위(통신문) 파싱으로 폴백
+            // 달력 격자 사진이면 셀 위치 기반 파싱, 아니면 줄 단위(통신문·안내문) 파싱으로 폴백
             var parsed = CalendarGridParser.parse(lines: recognized)
             if parsed.isEmpty {
-                let texts = OCRService.readingOrder(recognized).map(\.text)
-                parsed = EventParser.parse(lines: texts)
+                parsed = EventParser.parse(recognized: recognized)
             }
 
             // 선택된 아이로 표시 후 기존 목록에 누적 (중복 제외)
