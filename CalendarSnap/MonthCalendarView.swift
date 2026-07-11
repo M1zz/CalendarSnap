@@ -14,6 +14,9 @@ struct MonthCalendarView: View {
     @State private var selectedDay: Date? = Calendar.current.startOfDay(for: Date())
     @State private var childFilter: String?          // nil = 통합(전체)
     @State private var typeFilter: TypeFilter = .all
+    /// true면 선택한 주만 보이는 접힌 상태 (목록 스크롤 시 자동 접힘)
+    @State private var isWeekMode = false
+    @State private var lastListOffset: CGFloat = 0
 
     private var calendar: Calendar { .current }
     private let koKR = Locale(identifier: "ko_KR")
@@ -44,12 +47,30 @@ struct MonthCalendarView: View {
                     .padding(.bottom, 10)
             }
             weekdayHeader
-            monthGrid
-                .padding(.horizontal, 8)
+            Group {
+                if isWeekMode {
+                    weekGrid
+                } else {
+                    monthGrid
+                }
+            }
+            .padding(.horizontal, 8)
+            // 달력 영역을 위로 쓸면 주간으로 접고, 아래로 쓸면 월간으로 펼침
+            .gesture(
+                DragGesture(minimumDistance: 15)
+                    .onEnded { value in
+                        if value.translation.height < -20 {
+                            setWeekMode(true)
+                        } else if value.translation.height > 20 {
+                            setWeekMode(false)
+                        }
+                    }
+            )
+            collapseHandle
             Divider()
-                .padding(.top, 8)
             eventList
         }
+        .animation(.snappy(duration: 0.25), value: isWeekMode)
         // 앱 문구가 모두 한국어이므로 날짜 표기도 한국어로 고정
         .environment(\.locale, koKR)
         .toolbar {
@@ -154,7 +175,14 @@ struct MonthCalendarView: View {
     }
 
     private func moveMonth(_ delta: Int) {
-        if let next = calendar.date(byAdding: .month, value: delta, to: displayedMonth) {
+        if isWeekMode {
+            // 주간 모드에서는 한 주씩 이동
+            let anchor = selectedDay ?? displayedMonth
+            if let next = calendar.date(byAdding: .weekOfYear, value: delta, to: anchor) {
+                selectedDay = calendar.startOfDay(for: next)
+                displayedMonth = next
+            }
+        } else if let next = calendar.date(byAdding: .month, value: delta, to: displayedMonth) {
             displayedMonth = next
             selectedDay = nil
         }
@@ -170,6 +198,44 @@ struct MonthCalendarView: View {
             }
         }
         .padding(.bottom, 4)
+    }
+
+    // MARK: - 접이식 (월간 ↔ 주간)
+
+    private func setWeekMode(_ collapsed: Bool) {
+        guard isWeekMode != collapsed else { return }
+        withAnimation(.snappy(duration: 0.25)) { isWeekMode = collapsed }
+    }
+
+    /// 접힘/펼침 핸들 (탭으로도 전환 가능)
+    private var collapseHandle: some View {
+        Button {
+            setWeekMode(!isWeekMode)
+        } label: {
+            Image(systemName: isWeekMode ? "chevron.compact.down" : "chevron.compact.up")
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(.tertiary)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 3)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(isWeekMode ? "월간 달력으로 펼치기" : "주간 달력으로 접기")
+    }
+
+    /// 선택한 날(없으면 오늘)이 속한 주.
+    private var weekDays: [Date] {
+        let anchor = selectedDay ?? displayedMonth
+        guard let interval = calendar.dateInterval(of: .weekOfYear, for: anchor) else { return [] }
+        return (0..<7).compactMap { calendar.date(byAdding: .day, value: $0, to: interval.start) }
+    }
+
+    private var weekGrid: some View {
+        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 7), spacing: 4) {
+            ForEach(weekDays, id: \.self) { date in
+                dayCell(date)
+            }
+        }
     }
 
     // MARK: - 그리드
@@ -232,6 +298,19 @@ struct MonthCalendarView: View {
 
     private var eventList: some View {
         List {
+            // 스크롤 오프셋 마커: 목록을 위로 스크롤하면 달력을 주간으로 접음
+            Color.clear
+                .frame(height: 0)
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
+                .background(
+                    GeometryReader { geo in
+                        Color.clear.preference(key: ListScrollOffsetKey.self,
+                                               value: geo.frame(in: .global).minY)
+                    }
+                )
+
             if let selectedDay {
                 Section {
                     if selectedDayEvents.isEmpty {
@@ -293,6 +372,17 @@ struct MonthCalendarView: View {
             }
         }
         .listStyle(.plain)
+        .environment(\.defaultMinListRowHeight, 1)   // 마커 행이 공간을 차지하지 않도록
+        .onPreferenceChange(ListScrollOffsetKey.self) { y in
+            defer { lastListOffset = y }
+            guard lastListOffset != 0 else { return }
+            let delta = y - lastListOffset
+            // 목록을 위로 스크롤(내용이 올라감) → 주간으로 접기
+            if delta < -6, !isWeekMode {
+                lastListOffset = 0   // 접히면서 생기는 레이아웃 변화 무시
+                setWeekMode(true)
+            }
+        }
     }
 
     private func eventRow(_ event: ScannedEvent) -> some View {
@@ -328,6 +418,14 @@ struct MonthCalendarView: View {
             }
         }
         .padding(.vertical, 2)
+    }
+}
+
+/// 일정 목록 스크롤 감지용 (위로 스크롤 시 달력 접기).
+private struct ListScrollOffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
     }
 }
 

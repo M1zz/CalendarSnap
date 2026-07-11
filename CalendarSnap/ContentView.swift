@@ -175,7 +175,13 @@ struct ContentView: View {
                 adoptOrphanEventsIfPossible()
                 refreshScanned()   // 반이 바뀌었을 수 있으니 필터 재적용
             }) {
-                SettingsView(settings: $settings)
+                SettingsView(settings: $settings,
+                             childEventCount: { name in
+                                 savedEvents.filter { $0.childName == name }.count
+                             },
+                             onDeleteChild: { name in
+                                 deleteChild(name)
+                             })
             }
             .sheet(isPresented: $showCamera) {
                 CameraPicker { captured in
@@ -573,6 +579,23 @@ struct ContentView: View {
 
     private func dedupKey(_ event: ScannedEvent) -> String {
         "\(event.title)|\(event.date.timeIntervalSince1970)|\(event.childName)"
+    }
+
+    /// 아이 삭제 확정 시 연쇄 정리: 그 아이의 일정·프로필 사진 삭제 + 알림 재예약.
+    private func deleteChild(_ name: String) {
+        savedEvents.removeAll { $0.childName == name }
+        EventStore.save(savedEvents)
+        scannedAll.removeAll { $0.childName == name }
+        scanned.removeAll { $0.childName == name }
+        ChildAvatarStore.delete(for: name)
+        if selectedChild == name {
+            selectedChild = registeredChildren.first ?? ""
+        }
+        Task {
+            if await NotificationManager.authorizationStatus() == .authorized {
+                await NotificationManager.schedule(for: savedEvents, settings: settings)
+            }
+        }
     }
 
     /// 선택된 아이의 반에 맞게 추출 목록 필터 (다른 반 전용 견학 등 제외).

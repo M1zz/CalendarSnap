@@ -1,14 +1,20 @@
 import SwiftUI
 import PhotosUI
 
-/// 아이 프로필(이름·사진) · 알림 시점 · 캘린더 미러링 설정 화면.
+/// 아이 프로필(이름·사진·반) · 알림 시점 · 캘린더 미러링 설정 화면.
 struct SettingsView: View {
     @Binding var settings: ReminderSettings
+    /// 해당 아이의 저장된 일정 수 (삭제 확인 문구용)
+    var childEventCount: (String) -> Int = { _ in 0 }
+    /// 아이 삭제 확정 시 호출 — 일정·프로필 사진 등 연쇄 삭제
+    var onDeleteChild: (String) -> Void = { _ in }
+
     @Environment(\.dismiss) private var dismiss
     @State private var avatarTargetIndex: Int?
     @State private var showAvatarPicker = false
     @State private var avatarItem: PhotosPickerItem?
     @State private var avatarRefresh = 0   // 사진 변경 후 아바타 다시 그리기용
+    @State private var pendingDeleteIndex: Int?   // 삭제 확인 대기 중인 아이
 
     var body: some View {
         NavigationStack {
@@ -36,7 +42,10 @@ struct SettingsView: View {
                             }
                         }
                     }
-                    .onDelete { settings.childNames.remove(atOffsets: $0) }
+                    .onDelete { offsets in
+                        // 바로 지우지 않고 확인부터 (일정도 함께 삭제되므로)
+                        pendingDeleteIndex = offsets.first
+                    }
                     Button {
                         settings.childNames.append("")
                     } label: {
@@ -86,6 +95,16 @@ struct SettingsView: View {
                     Button("완료") { dismiss() }
                 }
             }
+            .confirmationDialog(deleteDialogTitle,
+                                isPresented: .constant(pendingDeleteIndex != nil),
+                                titleVisibility: .visible) {
+                Button("삭제", role: .destructive) {
+                    confirmDeleteChild()
+                }
+                Button("취소", role: .cancel) { pendingDeleteIndex = nil }
+            } message: {
+                Text(deleteDialogMessage)
+            }
             .photosPicker(isPresented: $showAvatarPicker, selection: $avatarItem, matching: .images)
             .onChange(of: avatarItem) { _, item in
                 guard let item else { return }
@@ -109,6 +128,38 @@ struct SettingsView: View {
             .filter { !$0.isEmpty }
         guard !names.isEmpty else { return "‘어린이집’" }
         return names.map { "‘\($0) 어린이집’" }.joined(separator: ", ")
+    }
+
+    // MARK: - 아이 삭제 확인
+
+    private var pendingDeleteName: String {
+        guard let i = pendingDeleteIndex, settings.childNames.indices.contains(i) else { return "" }
+        return settings.childNames[i].trimmingCharacters(in: .whitespaces)
+    }
+
+    private var deleteDialogTitle: String {
+        pendingDeleteName.isEmpty ? "아이 삭제" : "'\(pendingDeleteName)' 삭제"
+    }
+
+    private var deleteDialogMessage: String {
+        let name = pendingDeleteName
+        guard !name.isEmpty else { return "이 아이를 삭제할까요?" }
+        let count = childEventCount(name)
+        return count > 0
+            ? "\(name)의 일정 \(count)개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요."
+            : "\(name)의 프로필이 삭제됩니다. 되돌릴 수 없어요."
+    }
+
+    private func confirmDeleteChild() {
+        defer { pendingDeleteIndex = nil }
+        guard let i = pendingDeleteIndex, settings.childNames.indices.contains(i) else { return }
+        let rawName = settings.childNames[i]
+        let name = rawName.trimmingCharacters(in: .whitespaces)
+        settings.childClasses[rawName] = nil
+        settings.childNames.remove(at: i)
+        if !name.isEmpty {
+            onDeleteChild(name)   // 일정·프로필 사진 연쇄 삭제
+        }
     }
 
     /// i번째 아이의 반 이름 바인딩 (이름 키 기반 저장).
