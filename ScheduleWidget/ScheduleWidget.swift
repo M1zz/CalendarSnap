@@ -42,6 +42,9 @@ struct ScheduleWidgetEntryView: View {
     var entry: ScheduleEntry
     @Environment(\.widgetFamily) private var family
 
+    /// 아이별 색상 구분용 (설정에 등록된 아이 순서 기준)
+    private var children: [String] { ReminderSettingsStore.load().childNames }
+
     var body: some View {
         if entry.events.isEmpty {
             emptyView
@@ -70,6 +73,11 @@ struct ScheduleWidgetEntryView: View {
             header
             if let next = entry.events.first {
                 Spacer(minLength: 2)
+                if !next.childName.isEmpty {
+                    Text(next.childName)
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(next.color(children: children))
+                }
                 Text(next.title)
                     .font(.headline)
                     .lineLimit(2)
@@ -91,12 +99,20 @@ struct ScheduleWidgetEntryView: View {
             ForEach(entry.events.prefix(3)) { event in
                 HStack(spacing: 8) {
                     RoundedRectangle(cornerRadius: 2)
-                        .fill(.tint)
+                        .fill(event.childName.isEmpty ? AnyShapeStyle(.tint)
+                              : AnyShapeStyle(event.color(children: children)))
                         .frame(width: 3, height: 26)
                     VStack(alignment: .leading, spacing: 1) {
-                        Text(event.title)
-                            .font(.subheadline.weight(.medium))
-                            .lineLimit(1)
+                        HStack(spacing: 4) {
+                            if !event.childName.isEmpty {
+                                Text(event.childName)
+                                    .font(.caption2.weight(.semibold))
+                                    .foregroundStyle(event.color(children: children))
+                            }
+                            Text(event.title)
+                                .font(.subheadline.weight(.medium))
+                                .lineLimit(1)
+                        }
                         Text(event.date, format: .dateTime.month().day().weekday().hour().minute())
                             .font(.caption2)
                             .foregroundStyle(.secondary)
@@ -132,8 +148,8 @@ struct ScheduleWidget: Widget {
             ScheduleWidgetEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .configurationDisplayName("일정 알림")
-        .description("달력 사진에서 추출한 다가오는 일정을 보여줍니다.")
+        .configurationDisplayName("아이 일정")
+        .description("어린이집 달력에서 추출한 다가오는 일정을 보여줍니다.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

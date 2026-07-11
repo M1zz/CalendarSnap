@@ -15,6 +15,15 @@
 		AA0000000000000000000604 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000504 /* EventStore.swift */; };
 		AA0000000000000000000605 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000505 /* NotificationManager.swift */; };
 		AA0000000000000000000606 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
+		AA0000000000000000000607 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050C /* CalendarService.swift */; };
+		AA0000000000000000000608 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050D /* SettingsView.swift */; };
+		AA0000000000000000000609 /* ReminderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050E /* ReminderSettings.swift */; };
+		AA000000000000000000060A /* CalendarGridParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050F /* CalendarGridParser.swift */; };
+		AA000000000000000000060B /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000510 /* MonthCalendarView.swift */; };
+		AA000000000000000000060C /* EventSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000511 /* EventSharing.swift */; };
+		AA000000000000000000060D /* ChildAvatarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000512 /* ChildAvatarStore.swift */; };
+		AA000000000000000000060E /* ChildAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000513 /* ChildAvatarView.swift */; };
+		AA0000000000000000000619 /* ReminderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050E /* ReminderSettings.swift */; };
 		AA0000000000000000000614 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000504 /* EventStore.swift */; };
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
@@ -56,6 +65,14 @@
 		AA0000000000000000000506 /* ScannedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedEvent.swift; sourceTree = "<group>"; };
 		AA0000000000000000000507 /* CalendarSnap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarSnap.entitlements; sourceTree = "<group>"; };
 		AA0000000000000000000508 /* ScheduleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWidget.swift; sourceTree = "<group>"; };
+		AA000000000000000000050C /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		AA000000000000000000050D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA000000000000000000050E /* ReminderSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderSettings.swift; sourceTree = "<group>"; };
+		AA000000000000000000050F /* CalendarGridParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGridParser.swift; sourceTree = "<group>"; };
+		AA0000000000000000000510 /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000511 /* EventSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSharing.swift; sourceTree = "<group>"; };
+		AA0000000000000000000512 /* ChildAvatarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildAvatarStore.swift; sourceTree = "<group>"; };
+		AA0000000000000000000513 /* ChildAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildAvatarView.swift; sourceTree = "<group>"; };
 		AA0000000000000000000509 /* ScheduleWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScheduleWidget.entitlements; sourceTree = "<group>"; };
 		AA000000000000000000050B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +121,14 @@
 				AA0000000000000000000501 /* ContentView.swift */,
 				AA0000000000000000000502 /* OCRService.swift */,
 				AA0000000000000000000503 /* EventParser.swift */,
+				AA000000000000000000050F /* CalendarGridParser.swift */,
 				AA0000000000000000000505 /* NotificationManager.swift */,
+				AA000000000000000000050C /* CalendarService.swift */,
+				AA000000000000000000050D /* SettingsView.swift */,
+				AA0000000000000000000510 /* MonthCalendarView.swift */,
+				AA0000000000000000000511 /* EventSharing.swift */,
+				AA0000000000000000000512 /* ChildAvatarStore.swift */,
+				AA0000000000000000000513 /* ChildAvatarView.swift */,
 				AA0000000000000000000507 /* CalendarSnap.entitlements */,
 			);
 			path = CalendarSnap;
@@ -125,6 +149,7 @@
 			children = (
 				AA0000000000000000000506 /* ScannedEvent.swift */,
 				AA0000000000000000000504 /* EventStore.swift */,
+				AA000000000000000000050E /* ReminderSettings.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -235,6 +260,14 @@
 				AA0000000000000000000604 /* EventStore.swift in Sources */,
 				AA0000000000000000000605 /* NotificationManager.swift in Sources */,
 				AA0000000000000000000606 /* ScannedEvent.swift in Sources */,
+				AA0000000000000000000607 /* CalendarService.swift in Sources */,
+				AA0000000000000000000608 /* SettingsView.swift in Sources */,
+				AA0000000000000000000609 /* ReminderSettings.swift in Sources */,
+				AA000000000000000000060A /* CalendarGridParser.swift in Sources */,
+				AA000000000000000000060B /* MonthCalendarView.swift in Sources */,
+				AA000000000000000000060C /* EventSharing.swift in Sources */,
+				AA000000000000000000060D /* ChildAvatarStore.swift in Sources */,
+				AA000000000000000000060E /* ChildAvatarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +278,7 @@
 				AA0000000000000000000618 /* ScheduleWidget.swift in Sources */,
 				AA0000000000000000000614 /* EventStore.swift in Sources */,
 				AA0000000000000000000616 /* ScannedEvent.swift in Sources */,
+				AA0000000000000000000619 /* ReminderSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +302,9 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "아이일정";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +332,9 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "아이일정";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -322,7 +362,7 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScheduleWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "일정 알림";
+				INFOPLIST_KEY_CFBundleDisplayName = "아이일정";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,7 +387,7 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScheduleWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "일정 알림";
+				INFOPLIST_KEY_CFBundleDisplayName = "아이일정";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

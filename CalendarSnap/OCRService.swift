@@ -15,40 +15,61 @@ enum OCRService {
         }
     }
 
-    /// 이미지에서 인식된 텍스트 라인 배열을 반환.
-    /// 달력 레이아웃 특성상 위→아래, 왼→오른쪽 순으로 정렬됩니다.
-    static func recognizeText(in image: UIImage) async throws -> [String] {
+    /// 이미지에서 텍스트 + 바운딩 박스를 반환.
+    /// 사진이 옆으로 저장된 경우(EXIF 누락 스크린샷 등)를 대비해
+    /// 인식량이 적으면 다른 방향으로도 시도해 가장 좋은 결과를 사용합니다.
+    static func recognizeLines(in image: UIImage) async throws -> [RecognizedLine] {
         guard let cgImage = image.cgImage else { throw OCRError.invalidImage }
+        let base = CGImagePropertyOrientation(image.imageOrientation)
 
-        return try await withCheckedThrowingContinuation { continuation in
+        var best = (try? await recognize(cgImage: cgImage, orientation: base)) ?? []
+        if best.count < 15 {
+            for orientation in [CGImagePropertyOrientation.up, .right, .left, .down] where orientation != base {
+                if let alt = try? await recognize(cgImage: cgImage, orientation: orientation),
+                   alt.count > best.count {
+                    best = alt
+                }
+            }
+        }
+        guard !best.isEmpty else { throw OCRError.noText }
+        return best
+    }
+
+    /// 인식된 텍스트를 읽기 순서(위→아래, 왼→오른쪽) 문자열 배열로 반환.
+    static func recognizeText(in image: UIImage) async throws -> [String] {
+        readingOrder(try await recognizeLines(in: image)).map(\.text)
+    }
+
+    /// 위→아래, 왼→오른쪽 순 정렬 (달력 셀 읽기 순서).
+    static func readingOrder(_ lines: [RecognizedLine]) -> [RecognizedLine] {
+        lines.sorted {
+            let a = $0.box, b = $1.box
+            if abs(a.midY - b.midY) > 0.02 { return a.midY > b.midY }
+            return a.minX < b.minX
+        }
+    }
+
+    private static func recognize(cgImage: CGImage,
+                                  orientation: CGImagePropertyOrientation) async throws -> [RecognizedLine] {
+        try await withCheckedThrowingContinuation { continuation in
             let request = VNRecognizeTextRequest { request, error in
                 if let error {
                     continuation.resume(throwing: error)
                     return
                 }
                 let observations = (request.results as? [VNRecognizedTextObservation]) ?? []
-
-                // 위에서 아래, 왼쪽에서 오른쪽 순 정렬 (달력 셀 읽기 순서)
-                let sorted = observations.sorted {
-                    let a = $0.boundingBox, b = $1.boundingBox
-                    if abs(a.midY - b.midY) > 0.02 { return a.midY > b.midY }
-                    return a.minX < b.minX
+                let lines = observations.compactMap { obs -> RecognizedLine? in
+                    guard let candidate = obs.topCandidates(1).first else { return nil }
+                    return RecognizedLine(text: candidate.string, box: obs.boundingBox)
                 }
-
-                let lines = sorted.compactMap { $0.topCandidates(1).first?.string }
-                if lines.isEmpty {
-                    continuation.resume(throwing: OCRError.noText)
-                } else {
-                    continuation.resume(returning: lines)
-                }
+                continuation.resume(returning: lines)
             }
 
             request.recognitionLevel = .accurate
             request.recognitionLanguages = ["ko-KR", "en-US"]
             request.usesLanguageCorrection = true
 
-            let handler = VNImageRequestHandler(cgImage: cgImage,
-                                                orientation: CGImagePropertyOrientation(image.imageOrientation))
+            let handler = VNImageRequestHandler(cgImage: cgImage, orientation: orientation)
             DispatchQueue.global(qos: .userInitiated).async {
                 do { try handler.perform([request]) }
                 catch { continuation.resume(throwing: error) }
