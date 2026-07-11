@@ -4,7 +4,10 @@ import PhotosUI
 struct ContentView: View {
     @State private var pickedItems: [PhotosPickerItem] = []
     @State private var image: UIImage?
-    @State private var events: [ScannedEvent] = EventStore.load()
+    /// 저장된 일정 (달력 탭·위젯·공유의 원본)
+    @State private var savedEvents: [ScannedEvent] = EventStore.load()
+    /// 이번에 추가한 사진에서 추출된 일정만 (스캔 탭 작업 공간 — 저장하면 비워짐)
+    @State private var scanned: [ScannedEvent] = []
     @State private var settings: ReminderSettings = ReminderSettingsStore.load()
     @State private var isProcessing = false
     @State private var showCamera = false
@@ -21,8 +24,6 @@ struct ContentView: View {
     // 일정 직접 추가
     @State private var showAddEvent = false
     @State private var addEventDate = Date()
-    // 스캔 후 아직 저장하지 않은 변경이 있는지 (하단 저장 바 노출 조건)
-    @State private var hasUnsavedScan = false
     // 아이 미등록 상태에서 저장 시 이름을 물어보는 팝업
     @State private var showAskChild = false
     @State private var newChildName = ""
@@ -81,11 +82,11 @@ struct ContentView: View {
         }
         if selectedChild.isEmpty { selectedChild = name }
 
-        events = (events + [event]).sorted { $0.date < $1.date }
-        EventStore.save(events)
+        savedEvents = (savedEvents + [event]).sorted { $0.date < $1.date }
+        EventStore.save(savedEvents)
         Task {
             if await NotificationManager.authorizationStatus() == .authorized {
-                await NotificationManager.schedule(for: events, settings: settings)
+                await NotificationManager.schedule(for: savedEvents, settings: settings)
             }
         }
     }
@@ -95,13 +96,13 @@ struct ContentView: View {
     ///  통합에는 보이는데 아이 필터에는 없는 모순을 방지)
     private func adoptOrphanEventsIfPossible() {
         let names = registeredChildren
-        guard names.count == 1, events.contains(where: { $0.childName.isEmpty }) else { return }
-        events = events.map { event in
+        guard names.count == 1, savedEvents.contains(where: { $0.childName.isEmpty }) else { return }
+        savedEvents = savedEvents.map { event in
             var e = event
             if e.childName.isEmpty { e.childName = names[0] }
             return e
         }
-        EventStore.save(events)
+        EventStore.save(savedEvents)
     }
 
     /// 다른 아이일정 사용자가 공유한 데이터 파일 가져오기.
@@ -120,10 +121,10 @@ struct ContentView: View {
             ReminderSettingsStore.save(settings)
 
             // 일정 병합 (중복 제외)
-            let existingKeys = Set(events.map(dedupKey))
+            let existingKeys = Set(savedEvents.map(dedupKey))
             let fresh = package.events.filter { !existingKeys.contains(dedupKey($0)) }
-            events = (events + fresh).sorted { $0.date < $1.date }
-            EventStore.save(events)
+            savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
+            EventStore.save(savedEvents)
 
             selectedTab = 1
             let skipped = package.events.count - fresh.count
@@ -133,7 +134,7 @@ struct ContentView: View {
             // 알림 권한이 이미 있으면 가져온 일정까지 포함해 재예약
             Task {
                 if await NotificationManager.authorizationStatus() == .authorized {
-                    await NotificationManager.schedule(for: events, settings: settings)
+                    await NotificationManager.schedule(for: savedEvents, settings: settings)
                 }
             }
         } catch {
@@ -152,7 +153,7 @@ struct ContentView: View {
             }
             // 스캔 후 저장을 놓치지 않도록 화면 하단에 항상 보이는 저장 바
             .safeAreaInset(edge: .bottom) {
-                if !events.isEmpty, hasUnsavedScan || savedBanner {
+                if !scanned.isEmpty || savedBanner {
                     saveBar
                 }
             }
@@ -203,10 +204,15 @@ struct ContentView: View {
 
     private var calendarTab: some View {
         NavigationStack {
-            MonthCalendarView(events: events, children: settings.childNames) { date in
-                addEventDate = date
-                showAddEvent = true
-            }
+            MonthCalendarView(events: savedEvents, children: settings.childNames,
+                              onAddEvent: { date in
+                                  addEventDate = date
+                                  showAddEvent = true
+                              },
+                              onDelete: { event in
+                                  savedEvents.removeAll { $0.id == event.id }
+                                  EventStore.save(savedEvents)
+                              })
                 .navigationTitle("달력")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
@@ -227,21 +233,21 @@ struct ContentView: View {
     /// 배우자·가족에게 일정 공유: 아이일정 데이터 / 캘린더 파일(.ics) / 텍스트 요약.
     private var shareMenu: some View {
         Menu {
-            ShareLink(item: ScheduleDataFile(events: events, children: settings.childNames),
+            ShareLink(item: ScheduleDataFile(events: savedEvents, children: settings.childNames),
                       preview: SharePreview("아이일정 데이터", image: Image(systemName: "square.and.arrow.down.on.square"))) {
                 Label("아이일정 사용자에게 보내기", systemImage: "person.crop.circle.badge.plus")
             }
-            ShareLink(item: EventICSFile(events: events),
+            ShareLink(item: EventICSFile(events: savedEvents),
                       preview: SharePreview("아이일정 캘린더", image: Image(systemName: "calendar"))) {
                 Label("캘린더 파일로 공유 (.ics)", systemImage: "calendar.badge.plus")
             }
-            ShareLink(item: EventSharing.textSummary(for: events)) {
+            ShareLink(item: EventSharing.textSummary(for: savedEvents)) {
                 Label("텍스트로 공유", systemImage: "text.bubble")
             }
         } label: {
             Image(systemName: "square.and.arrow.up")
         }
-        .disabled(events.isEmpty)
+        .disabled(savedEvents.isEmpty)
     }
 
     // MARK: - Sections
@@ -267,16 +273,16 @@ struct ContentView: View {
 
     @ViewBuilder
     private var eventsSection: some View {
-        if !events.isEmpty {
+        if !scanned.isEmpty {
             Section {
-                ForEach($events) { $event in
+                ForEach($scanned) { $event in
                     EventRow(event: $event, children: registeredChildren)
                 }
-                .onDelete { events.remove(atOffsets: $0) }
+                .onDelete { scanned.remove(atOffsets: $0) }
             } header: {
-                Text("추출된 일정 \(events.count)개")
+                Text("이번 사진에서 추출된 일정 \(scanned.count)개")
             } footer: {
-                Text("제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요.")
+                Text("제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요. 저장하면 달력으로 이동합니다.")
             }
 
             reminderSummarySection
@@ -363,7 +369,7 @@ struct ContentView: View {
                 HStack(spacing: 8) {
                     Image(systemName: savedBanner ? "checkmark.circle.fill" : "calendar.badge.plus")
                     Text(savedBanner ? "저장 완료! 달력·위젯에서 확인하세요"
-                         : "일정 \(events.count)개 저장 + 알림 받기")
+                         : "일정 \(scanned.count)개 저장 + 알림 받기")
                         .fontWeight(.semibold)
                 }
                 .frame(maxWidth: .infinity)
@@ -399,13 +405,12 @@ struct ContentView: View {
             } label: {
                 Image(systemName: "gearshape")
             }
-            if !events.isEmpty {
+            if !scanned.isEmpty {
                 Button(role: .destructive) {
-                    events = []
+                    scanned = []
                     image = nil
                     resultMessage = nil
                     savedBanner = false
-                    hasUnsavedScan = false
                 } label: {
                     Image(systemName: "trash")
                 }
@@ -455,17 +460,17 @@ struct ContentView: View {
                 parsed = EventParser.parse(recognized: recognized)
             }
 
-            // 선택된 아이(미선택이면 첫 아이)로 표시 후 기존 목록에 누적 (중복 제외)
+            // 선택된 아이(미선택이면 첫 아이)로 표시 후 이번 스캔 목록에 누적
+            // (이미 저장돼 있거나 이번 스캔에 있는 일정은 중복 제외)
             let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
             let stamped = parsed.map { event in
                 var e = event
                 if e.childName.isEmpty { e.childName = assignChild }
                 return e
             }
-            let existingKeys = Set(events.map(dedupKey))
+            let existingKeys = Set((savedEvents + scanned).map(dedupKey))
             let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
-            events = (events + fresh).sorted { $0.date < $1.date }
-            if !fresh.isEmpty { hasUnsavedScan = true }   // 하단 저장 바 노출
+            scanned = (scanned + fresh).sorted { $0.date < $1.date }
             return fresh.count
         } catch {
             errorMessage = error.localizedDescription
@@ -473,9 +478,10 @@ struct ContentView: View {
         }
     }
 
-    /// 위젯 저장 + 로컬 알림 예약 + (옵션) 애플 캘린더 미러링을 한 번에 수행.
+    /// 이번 스캔 결과를 저장소에 병합 + 알림 예약 + (옵션) 애플 캘린더 미러링.
+    /// 저장이 끝나면 스캔 작업 공간(사진·추출 목록)은 비워짐.
     private func addAllEvents() async {
-        guard !events.isEmpty else { return }
+        guard !scanned.isEmpty else { return }
         isProcessing = true
         savedBanner = false
         defer { isProcessing = false }
@@ -484,14 +490,21 @@ struct ContentView: View {
 
         // 아이 미지정 일정은 현재 선택된 아이(미선택이면 첫 아이)로 표시
         let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
-        if !assignChild.isEmpty {
-            events = events.map { event in
-                var stamped = event
-                if stamped.childName.isEmpty { stamped.childName = assignChild }
-                return stamped
-            }
+        let stamped = scanned.map { event in
+            var e = event
+            if e.childName.isEmpty { e.childName = assignChild }
+            return e
         }
-        EventStore.save(events)   // 위젯 갱신
+
+        // 저장소에 병합 (중복 제외)
+        let existingKeys = Set(savedEvents.map(dedupKey))
+        let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
+        savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
+        EventStore.save(savedEvents)   // 위젯 갱신
+
+        // 스캔 작업 공간 비우기 — 저장된 일정은 달력 탭에서
+        scanned = []
+        image = nil
 
         var messages: [String] = []
 
@@ -501,7 +514,7 @@ struct ContentView: View {
         } else {
             let granted = await NotificationManager.requestAuthorization()
             if granted {
-                let n = await NotificationManager.schedule(for: events, settings: settings)
+                let n = await NotificationManager.schedule(for: savedEvents, settings: settings)
                 messages.append("알림 \(n)개 예약")
             } else {
                 messages.append("알림 권한이 필요해요 (설정에서 허용)")
@@ -513,7 +526,7 @@ struct ContentView: View {
             let calGranted = await CalendarService.requestAccess()
             if calGranted {
                 do {
-                    let result = try CalendarService.addEvents(events)
+                    let result = try CalendarService.addEvents(savedEvents)
                     var msg = "캘린더 \(result.added)개 추가"
                     if result.skipped > 0 { msg += " (중복 \(result.skipped)개 제외)" }
                     messages.append(msg)
@@ -527,10 +540,7 @@ struct ContentView: View {
         }
 
         resultMessage = messages.joined(separator: " · ")
-        withAnimation {
-            hasUnsavedScan = false
-            savedBanner = true
-        }
+        withAnimation { savedBanner = true }
     }
 
     private func dedupKey(_ event: ScannedEvent) -> String {

@@ -7,6 +7,8 @@ struct MonthCalendarView: View {
     let children: [String]
     /// 선택한 날짜에 일정 직접 추가 (달력 탭 → "이 날 일정 추가")
     var onAddEvent: ((Date) -> Void)?
+    /// 저장된 일정 삭제 (행을 밀어서)
+    var onDelete: ((ScannedEvent) -> Void)?
 
     @State private var displayedMonth = Date()
     @State private var selectedDay: Date? = Calendar.current.startOfDay(for: Date())
@@ -238,6 +240,15 @@ struct MonthCalendarView: View {
                     } else {
                         ForEach(selectedDayEvents) { event in
                             eventRow(event)
+                                .swipeActions(edge: .trailing) {
+                                    if let onDelete {
+                                        Button(role: .destructive) {
+                                            onDelete(event)
+                                        } label: {
+                                            Label("삭제", systemImage: "trash")
+                                        }
+                                    }
+                                }
                         }
                     }
                 } header: {
