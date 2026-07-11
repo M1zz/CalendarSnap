@@ -50,8 +50,21 @@ enum CalendarService {
         let cal = Calendar.current
         var result = AddResult(added: 0, skipped: 0)
 
-        // 아이별로 캘린더를 분리 (iCloud 캘린더 공유로 가족과 자동 동기화 가능)
-        for (childName, group) in Dictionary(grouping: events, by: \.childName) {
+        // 아이별로 캘린더를 분리 (iCloud 캘린더 공유로 가족과 자동 동기화 가능).
+        // 아이 미지정(공통) 일정은 별도 달력을 만들지 않고 모든 아이 달력에 넣음.
+        var groups = Dictionary(grouping: events, by: \.childName)
+        if let common = groups.removeValue(forKey: ""), !groups.isEmpty {
+            for key in groups.keys { groups[key, default: []] += common }
+        } else if let common = groups[""], groups.count == 1 {
+            groups = ["": common]   // 아이가 아예 없으면 기본 "어린이집" 달력 사용
+        }
+
+        // 아이 달력이 있는데 과거에 만들어진 기본 "어린이집" 달력이 남아 있으면 정리
+        if !groups.keys.contains("") {
+            removeLegacyDefaultCalendar(in: store)
+        }
+
+        for (childName, group) in groups {
             let calendar = try targetCalendar(in: store, childName: childName)
             let partial = try add(group, to: calendar, in: store, cal: cal)
             result.added += partial.added
@@ -59,6 +72,14 @@ enum CalendarService {
         }
         try store.commit()
         return result
+    }
+
+    /// 아이 이름 없이 저장하던 시절의 기본 "어린이집" 달력 제거.
+    /// (그 안의 일정은 이 앱이 미러링한 사본이며, 아이 달력에 다시 등록됨)
+    private static func removeLegacyDefaultCalendar(in store: EKEventStore) {
+        guard let legacy = store.calendars(for: .event).first(where: { $0.title == "어린이집" })
+        else { return }
+        try? store.removeCalendar(legacy, commit: false)
     }
 
     private static func add(_ events: [ScannedEvent], to calendar: EKCalendar,
