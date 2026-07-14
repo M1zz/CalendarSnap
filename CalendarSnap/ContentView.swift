@@ -34,6 +34,8 @@ struct ContentView: View {
     @State private var newChildName = ""
     // 자동 아이 추정으로 인한 선택 변경 시, 전체 재배정을 건너뛰기 위한 플래그
     @State private var suppressRestamp = false
+    // 가족 공유 상태 (참여/종료 안내 메시지 표시용)
+    @ObservedObject private var syncManager = FamilySyncManager.shared
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -48,6 +50,16 @@ struct ContentView: View {
         // 다른 사용자가 보낸 .aischedule 파일을 열면 일정을 채워줌
         .onOpenURL { url in
             handleIncomingFile(url)
+        }
+        // 가족 공유로 받은 원격 변경을 화면·알림·캘린더에 반영
+        .onReceive(NotificationCenter.default.publisher(for: .familyDataDidChange)) { _ in
+            applyFamilyDataChange()
+        }
+        // 공유 참여/종료 등 가족 공유 안내
+        .alert("가족 공유", isPresented: .constant(syncManager.infoMessage != nil)) {
+            Button("확인") { syncManager.infoMessage = nil }
+        } message: {
+            Text(syncManager.infoMessage ?? "")
         }
         // 설정 시트와 오류 알림은 어느 탭에서든 열리도록 탭 공통 레벨에 부착
         .sheet(isPresented: $showSettings, onDismiss: {
@@ -136,6 +148,21 @@ struct ContentView: View {
             return e
         }
         EventStore.save(savedEvents)
+    }
+
+    /// 가족 공유 원격 변경 반영: 로컬 스토어를 다시 읽고 알림·캘린더 미러링을 갱신.
+    private func applyFamilyDataChange() {
+        savedEvents = EventStore.load()
+        settings = ReminderSettingsStore.load()
+        refreshScanned()
+        Task {
+            if await NotificationManager.authorizationStatus() == .authorized {
+                await NotificationManager.schedule(for: savedEvents, settings: settings)
+            }
+            if settings.mirrorToCalendar, await CalendarService.requestAccess() {
+                _ = try? CalendarService.addEvents(savedEvents)   // 기존 중복 제외 로직 활용
+            }
+        }
     }
 
     /// 다른 아이일정 사용자가 공유한 데이터 파일 가져오기.

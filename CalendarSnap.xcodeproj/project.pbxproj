@@ -30,6 +30,12 @@
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
 		AA0000000000000000000619 /* ReminderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050E /* ReminderSettings.swift */; };
+		AA0000000000000000000620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000518 /* AppDelegate.swift */; };
+		AA0000000000000000000621 /* CloudSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000519 /* CloudSharingView.swift */; };
+		AA0000000000000000000622 /* FamilySharingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051A /* FamilySharingSection.swift */; };
+		AA0000000000000000000623 /* FamilySyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051B /* FamilySyncManager.swift */; };
+		AA0000000000000000000624 /* RecordMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051C /* RecordMapper.swift */; };
+		AA0000000000000000000625 /* SyncStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051D /* SyncStateStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +88,12 @@
 		AA0000000000000000000515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0000000000000000000516 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		AA0000000000000000000517 /* PhotoViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0000000000000000000519 /* CloudSharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSharingView.swift; sourceTree = "<group>"; };
+		AA000000000000000000051A /* FamilySharingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySharingSection.swift; sourceTree = "<group>"; };
+		AA000000000000000000051B /* FamilySyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySyncManager.swift; sourceTree = "<group>"; };
+		AA000000000000000000051C /* RecordMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMapper.swift; sourceTree = "<group>"; };
+		AA000000000000000000051D /* SyncStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStateStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,7 @@
 			children = (
 				AA0000000000000000000500 /* CalendarSnapApp.swift */,
 				AA0000000000000000000501 /* ContentView.swift */,
+				AA0000000000000000000106 /* FamilySharing */,
 				AA0000000000000000000502 /* OCRService.swift */,
 				AA0000000000000000000503 /* EventParser.swift */,
 				AA000000000000000000050F /* CalendarGridParser.swift */,
@@ -163,6 +176,19 @@
 				AA000000000000000000050E /* ReminderSettings.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000106 /* FamilySharing */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000518 /* AppDelegate.swift */,
+				AA0000000000000000000519 /* CloudSharingView.swift */,
+				AA000000000000000000051A /* FamilySharingSection.swift */,
+				AA000000000000000000051B /* FamilySyncManager.swift */,
+				AA000000000000000000051C /* RecordMapper.swift */,
+				AA000000000000000000051D /* SyncStateStore.swift */,
+			);
+			path = FamilySharing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +308,12 @@
 				AA000000000000000000060E /* ChildAvatarView.swift in Sources */,
 				AA0000000000000000000610 /* AddEventView.swift in Sources */,
 				AA0000000000000000000611 /* PhotoViewerView.swift in Sources */,
+				AA0000000000000000000620 /* AppDelegate.swift in Sources */,
+				AA0000000000000000000621 /* CloudSharingView.swift in Sources */,
+				AA0000000000000000000622 /* FamilySharingSection.swift in Sources */,
+				AA0000000000000000000623 /* FamilySyncManager.swift in Sources */,
+				AA0000000000000000000624 /* RecordMapper.swift in Sources */,
+				AA0000000000000000000625 /* SyncStateStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,6 +56,8 @@ struct SettingsView: View {
                     Text("동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요.")
                 }
 
+                FamilySharingSection()
+
                 Section {
                     ForEach(ReminderOption.allCases) { option in
                         Toggle(isOn: binding(for: option)) {
