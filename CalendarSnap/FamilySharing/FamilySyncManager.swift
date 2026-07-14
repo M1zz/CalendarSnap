@@ -232,7 +232,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         }
 
         let newShare = CKShare(recordZoneID: zoneID)
-        newShare[CKShare.SystemFieldKey.title] = "아이일정 가족 공유"
+        newShare[CKShare.SystemFieldKey.title] = "아이일정 함께 보기"
         newShare.publicPermission = .none
         let result = try await container.privateCloudDatabase.modifyRecords(
             saving: [newShare], deleting: [])
@@ -251,7 +251,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         _ = try? await container.privateCloudDatabase.modifyRecords(
             saving: [], deleting: [share.recordID])
         self.share = nil
-        infoMessage = "가족 공유를 중지했어요. 내 데이터는 그대로 유지돼요."
+        infoMessage = "일정 공유를 중지했어요. 내 데이터는 그대로 유지돼요."
     }
 
     /// 공유 나가기 (참여자): shared DB에서 존 제거 → 참여 해제. 로컬 데이터는 유지.
@@ -259,7 +259,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         guard state.role == .participant, let zoneID else { return }
         _ = try? await container.sharedCloudDatabase.modifyRecordZones(
             saving: [], deleting: [zoneID])
-        detachFromShare(message: "가족 공유에서 나왔어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+        detachFromShare(message: "일정 공유에서 나왔어요. 지금까지의 일정은 이 기기에 남아 있어요.")
     }
 
     /// 참여 상태 해제 (존 삭제 감지·나가기 공통). 로컬 데이터는 건드리지 않음.
@@ -307,7 +307,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
                 await refreshShare()
                 let count = EventStore.load().count
-                infoMessage = "가족 공유에 참여했어요. 일정 \(count)개를 함께 관리해요."
+                infoMessage = "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요."
             } catch {
                 infoMessage = "공유 참여에 실패했어요. 잠시 후 다시 시도해주세요."
             }
@@ -389,7 +389,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
             } else if name == CKRecordNameZoneWideShare {
                 // 공유 레코드 삭제 = 소유자가 공유를 중지 (소유자 자신은 stopSharing에서 처리)
                 if state.role == .participant {
-                    detachFromShare(message: "가족 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+                    detachFromShare(message: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
                 } else {
                     share = nil
                 }
@@ -459,7 +459,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
                 privateEngine = nil
                 sharedEngine = nil
                 if state.isActive {
-                    detachFromShare(message: "iCloud 계정이 바뀌어 가족 공유가 중단됐어요.")
+                    detachFromShare(message: "iCloud 계정이 바뀌어 일정 공유가 중단됐어요.")
                 }
             default:
                 break
@@ -473,7 +473,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
             // 참여 중이던 존이 삭제됨 = 공유 종료 또는 내보내짐
             for deletion in changes.deletions where deletion.zoneID.zoneName == RecordMapper.zoneName {
                 if state.role == .participant {
-                    detachFromShare(message: "가족 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+                    detachFromShare(message: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
                 }
             }
 
@@ -514,7 +514,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
                 engine.state.add(pendingDatabaseChanges: [.saveZone(CKRecordZone(zoneID: recordID.zoneID))])
                 engine.state.add(pendingRecordZoneChanges: [.saveRecord(recordID)])
             } else if state.role == .participant {
-                detachFromShare(message: "가족 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+                detachFromShare(message: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
             }
         case .unknownItem:
             // 서버에서 이미 삭제된 레코드 갱신 시도 — 캐시를 비우고 새 레코드로 재저장
@@ -576,7 +576,7 @@ enum FamilySharingError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .alreadyParticipant:
-            return "이미 다른 가족의 공유에 참여 중이에요. 먼저 공유에서 나간 뒤 초대할 수 있어요."
+            return "이미 다른 사람이 공유한 일정에 참여 중이에요. 먼저 공유에서 나간 뒤 초대할 수 있어요."
         }
     }
 }

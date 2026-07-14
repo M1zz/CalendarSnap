@@ -59,8 +59,8 @@ struct ContentView: View {
         .onReceive(NotificationCenter.default.publisher(for: .familyDataDidChange)) { _ in
             applyFamilyDataChange()
         }
-        // 공유 참여/종료 등 가족 공유 안내
-        .alert("가족 공유", isPresented: .constant(syncManager.infoMessage != nil)) {
+        // 공유 참여/종료 등 일정 공유 안내
+        .alert("일정 공유", isPresented: .constant(syncManager.infoMessage != nil)) {
             Button("확인") { syncManager.infoMessage = nil }
         } message: {
             Text(syncManager.infoMessage ?? "")
