@@ -1,5 +1,10 @@
 # CalendarSnap TODO
 
+## 반 필터
+- [x] 아이 1명일 때 반 필터 미작동 버그 수정 (selectedChild 폴백)
+- [x] rawText에만 남은 반 표기 감지
+- [x] 저장된 다른 반 일정 정리 제안 (앱 시작·설정 변경 시)
+
 ## 가족 공유 (CloudKit CKShare)
 - [x] Capability 설정 (entitlements·Info.plist·AppDelegate/SceneDelegate)
 - [x] 동기화 코어 (RecordMapper·SyncStateStore·FamilySyncManager, CKSyncEngine)

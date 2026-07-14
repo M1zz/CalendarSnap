@@ -334,12 +334,20 @@ struct MonthCalendarView: View {
                     Text(selectedDay, format: .dateTime.month().day().weekday(.wide).locale(koKR))
                 }
 
-                if let onAddEvent {
+                if onAddEvent != nil || !selectedDayEvents.isEmpty {
                     Section {
-                        Button {
-                            onAddEvent(selectedDay)
-                        } label: {
-                            Label("이 날 일정 추가", systemImage: "plus.circle.fill")
+                        if let onAddEvent {
+                            Button {
+                                onAddEvent(selectedDay)
+                            } label: {
+                                Label("이 날 일정 추가", systemImage: "plus.circle.fill")
+                            }
+                        }
+                        // 선택한 날 일정을 카카오톡 등으로 텍스트 공유
+                        if !selectedDayEvents.isEmpty {
+                            ShareLink(item: EventSharing.daySummary(for: selectedDayEvents, on: selectedDay)) {
+                                Label("이 날 일정 공유하기", systemImage: "square.and.arrow.up")
+                            }
                         }
                     }
                 }

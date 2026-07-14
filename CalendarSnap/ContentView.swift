@@ -337,9 +337,6 @@ struct ContentView: View {
                 .navigationTitle("달력")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        shareMenu
-                    }
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             showSettings = true
@@ -349,26 +346,6 @@ struct ContentView: View {
                     }
                 }
         }
-    }
-
-    /// 배우자·가족에게 일정 공유: 아이일정 데이터 / 캘린더 파일(.ics) / 텍스트 요약.
-    private var shareMenu: some View {
-        Menu {
-            ShareLink(item: ScheduleDataFile(events: savedEvents, children: settings.childNames),
-                      preview: SharePreview("아이일정 데이터", image: Image(systemName: "square.and.arrow.down.on.square"))) {
-                Label("아이일정 사용자에게 보내기", systemImage: "person.crop.circle.badge.plus")
-            }
-            ShareLink(item: EventICSFile(events: savedEvents),
-                      preview: SharePreview("아이일정 캘린더", image: Image(systemName: "calendar"))) {
-                Label("캘린더 파일로 공유 (.ics)", systemImage: "calendar.badge.plus")
-            }
-            ShareLink(item: EventSharing.textSummary(for: savedEvents)) {
-                Label("텍스트로 공유", systemImage: "text.bubble")
-            }
-        } label: {
-            Image(systemName: "square.and.arrow.up")
-        }
-        .disabled(savedEvents.isEmpty)
     }
 
     // MARK: - Sections
