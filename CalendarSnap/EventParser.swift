@@ -102,11 +102,34 @@ enum EventParser {
         guard classSet.count > 1 else { return events }   // 반 정보가 없는 문서는 그대로
 
         return events.filter { event in
-            // rawText는 한 줄에서 나온 여러 일정이 공유하므로, 이벤트 고유 텍스트로만 판정
-            let text = "\(event.title) \(event.notes)"
+            // 제목에서 반 표기가 분리돼 rawText에만 남는 경우가 있어 rawText까지 검사.
+            // (한 줄에 여러 반이 함께 언급되면 mentioned에 내 반도 포함돼 유지됨 — 과잉 제외 없음)
+            let text = "\(event.title) \(event.notes) \(event.rawText)"
             let mentioned = classSet.filter { mentionsToken($0, in: text) }
             return mentioned.isEmpty || mentioned.contains(mine)
         }
+    }
+
+    /// 저장된 일정 중 "OO반" 표기가 명시된, 내 아이들 반이 아닌 일정을 찾음 (정리 제안용).
+    /// 오탐을 피하려고 반 사전은 쓰지 않고 명시적 "반" 표기만 신뢰합니다.
+    static func otherClassEvents(in events: [ScannedEvent],
+                                 myClasses: [String]) -> (events: [ScannedEvent], classes: Set<String>) {
+        let mine = Set(myClasses
+            .map { $0.trimmingCharacters(in: .whitespaces).replacingOccurrences(of: "반", with: "") }
+            .filter { !$0.isEmpty })
+        guard !mine.isEmpty else { return ([], []) }
+
+        var foundEvents: [ScannedEvent] = []
+        var foundClasses: Set<String> = []
+        for event in events {
+            let text = "\(event.title) \(event.notes) \(event.rawText)"
+            let mentioned = Set(allMatches(in: text, pattern: #"([가-힣]{2,4})\s*반"#)
+                .compactMap { $0[1] })
+            guard !mentioned.isEmpty, mentioned.isDisjoint(with: mine) else { continue }
+            foundEvents.append(event)
+            foundClasses.formUnion(mentioned)
+        }
+        return (foundEvents, foundClasses)
     }
 
     /// 단어 경계를 고려한 반 이름 매칭 ("장미공원"의 "장미"는 매칭하지 않음).

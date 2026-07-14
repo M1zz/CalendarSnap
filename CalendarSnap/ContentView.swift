@@ -36,6 +36,10 @@ struct ContentView: View {
     @State private var suppressRestamp = false
     // 가족 공유 상태 (참여/종료 안내 메시지 표시용)
     @ObservedObject private var syncManager = FamilySyncManager.shared
+    // 저장된 일정 중 다른 반 전용으로 보이는 것 정리 제안
+    @State private var otherClassEvents: [ScannedEvent] = []
+    @State private var otherClassNames: Set<String> = []
+    @State private var showClassCleanup = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -61,6 +65,21 @@ struct ContentView: View {
         } message: {
             Text(syncManager.infoMessage ?? "")
         }
+        // 앱 시작 시 이미 저장돼 있는 다른 반 일정을 발견하면 정리 제안
+        .onAppear {
+            offerOtherClassCleanup()
+        }
+        .confirmationDialog("다른 반 일정 정리", isPresented: $showClassCleanup, titleVisibility: .visible) {
+            Button("일정 \(otherClassEvents.count)개 삭제", role: .destructive) {
+                removeOtherClassEvents()
+            }
+            Button("남겨두기", role: .cancel) {
+                otherClassEvents = []
+                otherClassNames = []
+            }
+        } message: {
+            Text("등록된 아이의 반이 아닌 \(otherClassSummary) 일정 \(otherClassEvents.count)개가 저장돼 있어요. 삭제할까요?")
+        }
         // 설정 시트와 오류 알림은 어느 탭에서든 열리도록 탭 공통 레벨에 부착
         .sheet(isPresented: $showSettings, onDismiss: {
             settings.childNames = settings.childNames
@@ -69,6 +88,7 @@ struct ContentView: View {
             ReminderSettingsStore.save(settings)
             adoptOrphanEventsIfPossible()
             refreshScanned()   // 반이 바뀌었을 수 있으니 필터 재적용
+            offerOtherClassCleanup()   // 반 입력/변경 시 기존 저장분도 정리 제안
         }) {
             SettingsView(settings: $settings,
                          childEventCount: { name in
@@ -148,6 +168,37 @@ struct ContentView: View {
             return e
         }
         EventStore.save(savedEvents)
+    }
+
+    // MARK: - 다른 반 일정 정리
+
+    /// 저장된 일정 중 "OO반" 표기가 명시된, 등록된 아이들 반이 아닌 일정을 찾아 삭제를 제안.
+    private func offerOtherClassCleanup() {
+        let myClasses = registeredChildren.compactMap { settings.childClasses[$0] }
+        guard !myClasses.isEmpty else { return }
+        let found = EventParser.otherClassEvents(in: savedEvents, myClasses: myClasses)
+        guard !found.events.isEmpty else { return }
+        otherClassEvents = found.events
+        otherClassNames = found.classes
+        showClassCleanup = true
+    }
+
+    private var otherClassSummary: String {
+        otherClassNames.sorted().prefix(3).map { "\($0)반" }.joined(separator: "·")
+    }
+
+    private func removeOtherClassEvents() {
+        let ids = Set(otherClassEvents.map(\.id))
+        otherClassEvents = []
+        otherClassNames = []
+        guard !ids.isEmpty else { return }
+        savedEvents.removeAll { ids.contains($0.id) }
+        EventStore.save(savedEvents)
+        Task {
+            if await NotificationManager.authorizationStatus() == .authorized {
+                await NotificationManager.schedule(for: savedEvents, settings: settings)
+            }
+        }
     }
 
     /// 가족 공유 원격 변경 반영: 로컬 스토어를 다시 읽고 알림·캘린더 미러링을 갱신.
@@ -672,8 +723,12 @@ struct ContentView: View {
     }
 
     /// 선택된 아이의 반에 맞게 추출 목록 필터 (다른 반 전용 견학 등 제외).
+    /// 아이가 1명이라 선택 UI가 없는 경우에도 첫 아이의 반으로 필터.
     private func refreshScanned() {
-        let className = settings.className(for: selectedChild)
+        let effectiveChild = selectedChild.isEmpty
+            ? (registeredChildren.first ?? "")
+            : selectedChild
+        let className = settings.className(for: effectiveChild)
         scanned = className.isEmpty
             ? scannedAll
             : EventParser.filterForClass(scannedAll, className: className)
