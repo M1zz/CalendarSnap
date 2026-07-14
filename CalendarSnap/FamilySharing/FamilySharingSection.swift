@@ -6,14 +6,7 @@ import SwiftUI
 /// iCloud 계정으로 수락하면 함께 볼 수 있습니다.
 /// iCloud 상태·역할(소유자/참여자)에 따라 초대·참여자 관리·나가기 UI를 보여줍니다.
 struct FamilySharingSection: View {
-    /// sheet(item:)용 래퍼 (CKShare에 Identifiable을 소급 채택하지 않기 위함).
-    private struct SharePresentation: Identifiable {
-        let id = UUID()
-        let share: CKShare
-    }
-
     @ObservedObject private var syncManager = FamilySyncManager.shared
-    @State private var shareToPresent: SharePresentation?
     @State private var isPreparingShare = false
     @State private var showStopConfirm = false
     @State private var showLeaveConfirm = false
@@ -26,13 +19,6 @@ struct FamilySharingSection: View {
             Text("일정 공유")
         } footer: {
             footerText
-        }
-        .sheet(item: $shareToPresent) { presentation in
-            CloudSharingView(share: presentation.share,
-                             container: CKContainer(identifier: FamilySyncManager.containerIdentifier),
-                             onStopSharing: {
-                                 Task { await syncManager.stopSharing() }
-                             })
         }
         .confirmationDialog("일정 공유를 중지할까요?", isPresented: $showStopConfirm, titleVisibility: .visible) {
             Button("공유 중지", role: .destructive) {
@@ -177,7 +163,13 @@ struct FamilySharingSection: View {
         Task {
             defer { isPreparingShare = false }
             do {
-                shareToPresent = SharePresentation(share: try await syncManager.createShare())
+                let share = try await syncManager.createShare()
+                // UICloudSharingController는 SwiftUI 시트로 감싸면 설정 시트 위에서
+                // 즉시 닫히므로, 최상단 화면에서 직접 present 한다.
+                CloudSharingPresenter.present(
+                    share: share,
+                    container: CKContainer(identifier: FamilySyncManager.containerIdentifier),
+                    onStopSharing: { Task { await syncManager.stopSharing() } })
             } catch let error as FamilySharingError {
                 errorMessage = error.errorDescription
             } catch {

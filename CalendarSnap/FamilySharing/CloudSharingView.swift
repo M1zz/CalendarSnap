@@ -1,33 +1,59 @@
 import CloudKit
-import SwiftUI
 import UIKit
 
-/// UICloudSharingController 래퍼 — 초대 링크 보내기·참여자 관리·공유 중지를
-/// 시스템 표준(한국어 자동 지원) UI로 제공합니다.
+/// UICloudSharingController를 최상단 뷰 컨트롤러에서 직접 present.
+///
+/// SwiftUI `.sheet`로 감싸면, 이미 시트로 떠 있는 설정 화면 위에 겹쳐 present 하려다
+/// "already presenting" 충돌로 초대 창이 즉시 사라집니다. UICloudSharingController는
+/// 자신이 초대·관리 UI를 present 하는 컨트롤러이므로 UIKit 레벨에서 직접 표시합니다.
 ///
 /// 애플 가족 공유와 무관하게 원하는 사람 누구나 초대할 수 있도록,
 /// "초대한 사람만"(.allowPrivate)과 "링크가 있는 누구나"(.allowPublic)를 모두 허용하고
 /// 항상 읽기+쓰기(.allowReadWrite)로 공유합니다.
-struct CloudSharingView: UIViewControllerRepresentable {
-    let share: CKShare
-    let container: CKContainer
-    /// 시스템 UI에서 "공유 중지"를 눌렀을 때 호출.
-    var onStopSharing: () -> Void = {}
+enum CloudSharingPresenter {
+    @MainActor
+    static func present(share: CKShare,
+                        container: CKContainer,
+                        onStopSharing: @escaping () -> Void) {
+        guard let presenter = topViewController() else { return }
 
-    func makeUIViewController(context: Context) -> UICloudSharingController {
         let controller = UICloudSharingController(share: share, container: container)
         controller.availablePermissions = [.allowReadWrite, .allowPrivate, .allowPublic]
-        controller.delegate = context.coordinator
-        return controller
+
+        // 델리게이트를 컨트롤러 수명 동안 살려두기 (연관 객체로 강한 참조)
+        let delegate = Delegate(onStopSharing: onStopSharing)
+        controller.delegate = delegate
+        objc_setAssociatedObject(controller, &Delegate.associationKey, delegate, .OBJC_ASSOCIATION_RETAIN)
+
+        // iPad에서 팝오버 앵커 (iPhone에서는 무시됨)
+        if let popover = controller.popoverPresentationController {
+            popover.sourceView = presenter.view
+            popover.sourceRect = CGRect(x: presenter.view.bounds.midX,
+                                        y: presenter.view.bounds.midY,
+                                        width: 0, height: 0)
+            popover.permittedArrowDirections = []
+        }
+        presenter.present(controller, animated: true)
     }
 
-    func updateUIViewController(_ uiViewController: UICloudSharingController, context: Context) {}
+    /// 현재 화면에서 가장 위에 present 된 뷰 컨트롤러 (설정 시트 위에 올리기 위함).
+    @MainActor
+    private static func topViewController() -> UIViewController? {
+        let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+        let scene = scenes.first { $0.activationState == .foregroundActive } ?? scenes.first
+        guard var top = scene?.keyWindow?.rootViewController
+                ?? scene?.windows.first(where: \.isKeyWindow)?.rootViewController
+        else { return nil }
+        while let presented = top.presentedViewController, !presented.isBeingDismissed {
+            top = presented
+        }
+        return top
+    }
 
-    func makeCoordinator() -> Coordinator { Coordinator(self) }
-
-    final class Coordinator: NSObject, UICloudSharingControllerDelegate {
-        let parent: CloudSharingView
-        init(_ parent: CloudSharingView) { self.parent = parent }
+    private final class Delegate: NSObject, UICloudSharingControllerDelegate {
+        static var associationKey = 0
+        let onStopSharing: () -> Void
+        init(onStopSharing: @escaping () -> Void) { self.onStopSharing = onStopSharing }
 
         func itemTitle(for csc: UICloudSharingController) -> String? {
             "아이일정 함께 보기"
@@ -51,7 +77,7 @@ struct CloudSharingView: UIViewControllerRepresentable {
         }
 
         func cloudSharingControllerDidStopSharing(_ csc: UICloudSharingController) {
-            parent.onStopSharing()
+            onStopSharing()
         }
     }
 }
