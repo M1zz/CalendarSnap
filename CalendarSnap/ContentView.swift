@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var settings: ReminderSettings = ReminderSettingsStore.load()
     @State private var isProcessing = false
     @State private var showCamera = false
+    @State private var showPasteText = false
     @State private var showSettings = false
     @State private var errorMessage: String?
     @State private var resultMessage: String?
@@ -200,6 +201,12 @@ struct ContentView: View {
                 }
                 .ignoresSafeArea()
             }
+            // 어린이집 문자·카카오톡 메시지를 붙여넣어 일정으로 추출
+            .sheet(isPresented: $showPasteText) {
+                PasteTextView { text in
+                    Task { await runParse(on: text) }
+                }
+            }
             // 위에서 아이를 바꾸면 추출된 일정 전체를 그 아이로 재배정하고 반 필터도 다시 적용
             .onChange(of: selectedChild) { _, newChild in
                 // 자동 추정에 의한 변경은 해당 사진 분량만 배정되므로 전체 재배정 생략
@@ -298,11 +305,14 @@ struct ContentView: View {
     @ViewBuilder
     private var imageSection: some View {
         if scannedImages.isEmpty {
-            Section {
-                ContentUnavailableView(
-                    "어린이집 알림장을 찍어보세요",
-                    systemImage: "calendar.badge.plus",
-                    description: Text("한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요."))
+            // 문자 붙여넣기로 추출된 일정만 있을 땐 안내 카드를 숨김
+            if scanned.isEmpty {
+                Section {
+                    ContentUnavailableView(
+                        "어린이집 알림장을 찍거나 문자를 붙여넣어 보세요",
+                        systemImage: "calendar.badge.plus",
+                        description: Text("한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요."))
+                }
             }
         } else {
             Section {
@@ -483,6 +493,12 @@ struct ContentView: View {
             }
         }
         ToolbarItemGroup(placement: .topBarTrailing) {
+            // 문자·카카오톡 메시지 붙여넣기
+            Button {
+                showPasteText = true
+            } label: {
+                Image(systemName: "doc.on.clipboard")
+            }
             Button {
                 showCamera = true
             } label: {
@@ -525,36 +541,58 @@ struct ContentView: View {
             if parsed.isEmpty {
                 parsed = EventParser.parse(recognized: recognized)
             }
-
-            // 과거 일정 패턴(반 이름·고유 어휘)으로 어느 아이의 문서인지 자동 추정
-            if registeredChildren.count >= 2,
-               let guessed = EventParser.guessChild(for: parsed,
-                                                    history: savedEvents,
-                                                    children: registeredChildren,
-                                                    classes: settings.childClasses),
-               guessed != selectedChild {
-                suppressRestamp = true
-                selectedChild = guessed
-                resultMessage = "일정 패턴을 보고 '\(guessed)'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
-            }
-
-            // 선택된 아이(미선택이면 첫 아이)로 표시 후 이번 스캔 목록에 누적
-            // (이미 저장돼 있거나 이번 스캔에 있는 일정은 중복 제외)
-            let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
-            let stamped = parsed.map { event in
-                var e = event
-                if e.childName.isEmpty { e.childName = assignChild }
-                return e
-            }
-            let existingKeys = Set((savedEvents + scannedAll).map(dedupKey))
-            let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
-            scannedAll = (scannedAll + fresh).sorted { $0.date < $1.date }
-            refreshScanned()
-            return fresh.count
+            return ingest(parsed)
         } catch {
             errorMessage = error.localizedDescription
             return 0
         }
+    }
+
+    /// 붙여넣은 문자·카카오톡 메시지를 파싱해 현재 목록에 누적. 추가된 일정 수를 반환.
+    @discardableResult
+    private func runParse(on text: String) async -> Int {
+        isProcessing = true
+        savedBanner = false
+        resultMessage = nil
+        defer { isProcessing = false }
+
+        let parsed = EventParser.parseMessage(text)
+        let added = ingest(parsed)
+        if added == 0 {
+            errorMessage = "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요."
+        }
+        return added
+    }
+
+    /// 파싱된 일정을 아이 자동추정·중복제거 후 이번 스캔 목록에 누적. 추가된 개수 반환.
+    /// (사진 OCR·문자 붙여넣기 두 입력 경로가 공통으로 사용)
+    @discardableResult
+    private func ingest(_ parsed: [ScannedEvent]) -> Int {
+        // 과거 일정 패턴(반 이름·고유 어휘)으로 어느 아이의 문서인지 자동 추정
+        if registeredChildren.count >= 2,
+           let guessed = EventParser.guessChild(for: parsed,
+                                                history: savedEvents,
+                                                children: registeredChildren,
+                                                classes: settings.childClasses),
+           guessed != selectedChild {
+            suppressRestamp = true
+            selectedChild = guessed
+            resultMessage = "일정 패턴을 보고 '\(guessed)'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
+        }
+
+        // 선택된 아이(미선택이면 첫 아이)로 표시 후 이번 스캔 목록에 누적
+        // (이미 저장돼 있거나 이번 스캔에 있는 일정은 중복 제외)
+        let assignChild = selectedChild.isEmpty ? (registeredChildren.first ?? "") : selectedChild
+        let stamped = parsed.map { event -> ScannedEvent in
+            var e = event
+            if e.childName.isEmpty { e.childName = assignChild }
+            return e
+        }
+        let existingKeys = Set((savedEvents + scannedAll).map(dedupKey))
+        let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
+        scannedAll = (scannedAll + fresh).sorted { $0.date < $1.date }
+        refreshScanned()
+        return fresh.count
     }
 
     /// 이번 스캔 결과를 저장소에 병합 + 알림 예약 + (옵션) 애플 캘린더 미러링.
@@ -708,6 +746,66 @@ private struct EventRow: View {
             }
         }
         .padding(.vertical, 2)
+    }
+}
+
+// MARK: - 문자 붙여넣기
+
+/// 어린이집 문자·카카오톡 메시지를 붙여넣어 일정으로 추출하는 시트.
+struct PasteTextView: View {
+    var onExtract: (String) -> Void
+    @Environment(\.dismiss) private var dismiss
+    @State private var text = ""
+    @FocusState private var focused: Bool
+
+    private var isEmpty: Bool {
+        text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
+    var body: some View {
+        NavigationStack {
+            TextEditor(text: $text)
+                .focused($focused)
+                .font(.body)
+                .padding(.horizontal, 12)
+                .overlay(alignment: .topLeading) {
+                    if text.isEmpty {
+                        Text("여기에 어린이집 문자·카카오톡 메시지를 붙여넣으세요.\n예) 내일은 비가 예정된 만큼 장화, 우의, 우산에 이름을 적어 보내주세요.")
+                            .foregroundStyle(.secondary)
+                            .padding(.horizontal, 17)
+                            .padding(.vertical, 10)
+                            .allowsHitTesting(false)
+                    }
+                }
+                .navigationTitle("문자로 일정 추가")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button("취소") { dismiss() }
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("일정 추출") {
+                            let captured = text
+                            dismiss()
+                            onExtract(captured)
+                        }
+                        .fontWeight(.semibold)
+                        .disabled(isEmpty)
+                    }
+                    ToolbarItemGroup(placement: .keyboard) {
+                        Button {
+                            if let clip = UIPasteboard.general.string { text = clip }
+                        } label: {
+                            Label("클립보드에서 붙여넣기", systemImage: "doc.on.clipboard")
+                        }
+                        .disabled(!UIPasteboard.general.hasStrings)
+                        Spacer()
+                        Button("지우기") { text = "" }
+                            .disabled(text.isEmpty)
+                    }
+                }
+                .onAppear { focused = true }
+        }
     }
 }
 

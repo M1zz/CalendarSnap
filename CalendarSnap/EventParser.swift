@@ -22,6 +22,114 @@ enum EventParser {
               docTitle: documentTitle(in: recognized))
     }
 
+    // MARK: - 문자·메시지 (자유 서술형) 파싱
+
+    /// 카카오톡·문자 메시지처럼 자유 서술형 텍스트에서 일정을 추출.
+    /// - 명시적 날짜("7월 12일"…)가 있으면 기존 줄 파서로 여러 일정을 잡고,
+    /// - 없으면 "내일·모레·이번 주 금요일" 같은 상대 날짜와 문서 제목으로
+    ///   종일 일정 1건을 만들어 누락을 막는다 (재현율 우선).
+    static func parseMessage(_ text: String, referenceDate: Date = Date()) -> [ScannedEvent] {
+        let lines = text.components(separatedBy: .newlines)
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+        let title = messageTitle(in: lines)
+
+        // 1) 명시적 날짜 기반 (여러 일정 목록도 그대로 대응)
+        var events = parse(lines: lines, referenceDate: referenceDate, docTitle: title)
+
+        // 2) 명시적 날짜가 없으면 상대 날짜로 종일 일정 1건 (본문은 준비물·메모로 보존)
+        if events.isEmpty, let date = firstRelativeDate(in: text, referenceDate: referenceDate) {
+            events = [ScannedEvent(title: title ?? "일정",
+                                   date: date,
+                                   isAllDay: true,
+                                   notes: messageNotes(from: lines, title: title),
+                                   rawText: text)]
+        }
+        return events
+    }
+
+    /// 상대 날짜 표현(오늘·내일·모레·글피·요일)을 실제 날짜로 변환.
+    /// 여러 표현이 있으면 텍스트에서 가장 먼저 나오는 것을 사용한다.
+    private static func firstRelativeDate(in text: String, referenceDate: Date) -> Date? {
+        let cal = Calendar.current
+        let today = cal.startOfDay(for: referenceDate)
+
+        var best: (loc: Int, date: Date)?
+        func consider(_ range: Range<String.Index>, _ date: Date?) {
+            guard let date else { return }
+            let loc = text.distance(from: text.startIndex, to: range.lowerBound)
+            if best == nil || loc < best!.loc { best = (loc, date) }
+        }
+
+        // 오늘/내일/모레/글피
+        let dayOffsets: [(String, Int)] = [
+            ("오늘", 0), ("금일", 0), ("내일", 1), ("명일", 1), ("모레", 2), ("글피", 3),
+        ]
+        for (kw, off) in dayOffsets {
+            if let r = text.range(of: kw) {
+                consider(r, cal.date(byAdding: .day, value: off, to: today))
+            }
+        }
+
+        // 요일 ("다음 주·담주·차주"가 있으면 다음 주로)
+        let nextWeek = text.range(of: #"다음\s*주|담주|차주"#, options: .regularExpression) != nil
+        let weekdays = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"]
+        for (i, wd) in weekdays.enumerated() {
+            if let r = text.range(of: wd) {
+                consider(r, weekdayDate(weekday: i + 1, from: today, calendar: cal, addWeek: nextWeek))
+            }
+        }
+        return best?.date
+    }
+
+    /// 오늘 기준 다가오는 특정 요일(1=일…7=토)의 날짜. 오늘이 해당 요일이면 오늘.
+    private static func weekdayDate(weekday: Int, from today: Date, calendar: Calendar, addWeek: Bool) -> Date? {
+        let current = calendar.component(.weekday, from: today)
+        var diff = (weekday - current + 7) % 7
+        if addWeek { diff += 7 }
+        return calendar.date(byAdding: .day, value: diff, to: today)
+    }
+
+    /// 메시지에서 제목 후보(첫 의미 있는 줄)를 골라 이모지·장식 문자를 정리.
+    private static func messageTitle(in lines: [String]) -> String? {
+        for line in lines {
+            let t = cleanHeading(line)
+            let hangul = t.unicodeScalars.filter { (0xAC00...0xD7A3).contains($0.value) }.count
+            guard hangul >= 2, t.count <= 40 else { continue }
+            if t == "제목없음" || t == "제목 없음" { continue }
+            // 날짜·시간 줄은 제목이 아니라 일정 본문이므로 건너뜀
+            if t.range(of: #"\d\s*[월일]|\d{1,2}\s*:\s*\d{2}"#, options: .regularExpression) != nil { continue }
+            return t
+        }
+        return nil
+    }
+
+    /// 제목·공유 아티팩트를 제외한 나머지 본문을 준비물·메모로 요약 (내용 누락 방지).
+    private static func messageNotes(from lines: [String], title: String?) -> String {
+        let body = lines.filter { line in
+            if line == "제목없음" || line == "제목 없음" { return false }
+            if let title, cleanHeading(line) == title { return false }
+            return true
+        }.joined(separator: " ")
+        let collapsed = body.replacingOccurrences(of: #"\s{2,}"#, with: " ", options: .regularExpression)
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        return String(collapsed.prefix(300))
+    }
+
+    /// 제목 후보에서 한글·영숫자·공백만 남기고 이모지·장식 기호를 제거.
+    private static func cleanHeading(_ raw: String) -> String {
+        let out = String(raw.unicodeScalars.filter { s in
+            let v = s.value
+            return (0xAC00...0xD7A3).contains(v)      // 한글
+                || (0x0030...0x0039).contains(v)      // 0-9
+                || (0x0041...0x005A).contains(v)      // A-Z
+                || (0x0061...0x007A).contains(v)      // a-z
+                || s == " " || s == "\t"
+        })
+        return out.replacingOccurrences(of: #"\s{2,}"#, with: " ", options: .regularExpression)
+            .trimmingCharacters(in: .whitespaces)
+    }
+
     /// 세로 위치(midY)가 비슷한 관측을 왼쪽→오른쪽 순으로 한 줄로 병합.
     /// 견학 안내 표처럼 "7월 7일 | 경주안전체험관 | 무궁화, 목련"이
     /// 별개 관측으로 나뉘어도 하나의 논리 행이 됩니다.
