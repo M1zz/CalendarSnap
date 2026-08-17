@@ -21,4 +21,15 @@ enum CalendarSnapSpec: LeeoAppSpec {
     static let feedback = LeeoFeedbackConfig(
         containerIdentifier: "iCloud.com.Ysoup.FeedbackHub", appIdentifier: "com.devkoan.CalendarSnap"
     )
+
+    /// docs/ 를 GitHub Pages로 서비스한다 (docs/privacy.html, docs/support.html).
+    /// 계정 개념이 없는 앱이라 createsAccounts = false, 삭제 안내 페이지도 불필요.
+    static let legal = LeeoLegalConfig(
+        privacyURL: URL(string: "https://m1zz.github.io/CalendarSnap/privacy.html")!,
+        supportURL: URL(string: "https://m1zz.github.io/CalendarSnap/support.html")!,
+        marketingURL: URL(string: "https://m1zz.github.io/CalendarSnap/")!
+    )
+
+    /// 완전 무료 — 앱에 StoreKit·결제 코드가 없다. 페이월/복원 의무도 없음.
+    static let monetization = LeeoMonetization.free
 }
