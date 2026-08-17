@@ -16,21 +16,35 @@ enum OCRService {
     }
 
     /// 이미지에서 텍스트 + 바운딩 박스를 반환.
-    /// 사진이 옆으로 저장된 경우(EXIF 누락 스크린샷 등)를 대비해
-    /// 인식량이 적으면 다른 방향으로도 시도해 가장 좋은 결과를 사용합니다.
+    ///
+    /// 달력을 옆으로 눕혀 찍은 사진(EXIF 회전정보 없는 스크린샷 포함)은
+    /// 잘못된 방향에서도 글자 수는 꽤 나오지만 날짜 숫자가 거의 안 읽힙니다.
+    /// 그래서 "줄 수"가 아니라 달력 격자로 얼마나 잘 읽혔는지(`calendarScore`)로
+    /// 방향을 고르고, 달력이 아닌 사진(통신문 등)일 때만 줄 수로 판단합니다.
     static func recognizeLines(in image: UIImage) async throws -> [RecognizedLine] {
         guard let cgImage = image.cgImage else { throw OCRError.invalidImage }
         let base = CGImagePropertyOrientation(image.imageOrientation)
 
         var best = (try? await recognize(cgImage: cgImage, orientation: base)) ?? []
-        if best.count < 15 {
+        var bestScore = CalendarGridParser.calendarScore(lines: best)
+
+        // 이미 달력으로 잘 읽혔으면 추가 인식 없이 그대로 사용
+        if !CalendarGridParser.isConfidentCalendar(score: bestScore) {
             for orientation in [CGImagePropertyOrientation.up, .right, .left, .down] where orientation != base {
-                if let alt = try? await recognize(cgImage: cgImage, orientation: orientation),
-                   alt.count > best.count {
+                guard let alt = try? await recognize(cgImage: cgImage, orientation: orientation) else { continue }
+                let altScore = CalendarGridParser.calendarScore(lines: alt)
+                // 달력으로 읽힌 방향이 있으면 그중 최고점, 아니면 종전대로 줄 수로 비교
+                let better = (altScore > 0 || bestScore > 0)
+                    ? altScore > bestScore
+                    : alt.count > best.count
+                if better {
                     best = alt
+                    bestScore = altScore
                 }
+                if CalendarGridParser.isConfidentCalendar(score: bestScore) { break }
             }
         }
+
         guard !best.isEmpty else { throw OCRError.noText }
         return best
     }

@@ -46,16 +46,19 @@ enum CalendarGridParser {
         let rowSpacing = medianSpacing(of: rowCenters) ?? 0.12
 
         // 3. 격자 오프셋(1일이 놓인 컬럼) 최빈값 — 오인식된 숫자 방어
+        //    첫 주 행이 통째로 안 읽히면(1일이 토요일인데 그림에 가려진 경우 등)
+        //    행 인덱스가 한 주씩 밀려 offset이 음수로 나온다. 7의 배수만큼 밀린
+        //    것이므로 날짜 산술(row*7 + col - offset + 1)은 그대로 성립한다.
         var offsetVotes: [Int: Int] = [:]
         for dn in dayNumbers {
             guard let row = rowIndex(forDayNumberY: dn.y, rowCenters: rowCenters, rowSpacing: rowSpacing) else { continue }
             offsetVotes[row * 7 + dn.col - (dn.day - 1), default: 0] += 1
         }
         guard let offset = offsetVotes.max(by: { $0.value < $1.value })?.key,
-              (0...6).contains(offset) else { return [] }
+              (-28...6).contains(offset) else { return [] }
 
         // 4. 월/년 결정 (헤더 텍스트 + 1일 요일 배치 교차 검증)
-        let firstWeekday = (header.startWeekday + offset) % 7
+        let firstWeekday = (header.startWeekday + offset % 7 + 7) % 7
         let (year, month) = resolveMonthYear(lines: lines, headerY: header.y,
                                              firstWeekday: firstWeekday,
                                              referenceDate: referenceDate, calendar: calendar)
@@ -69,7 +72,13 @@ enum CalendarGridParser {
         var cells: [Int: [RecognizedLine]] = [:]
         var unassigned: [RecognizedLine] = []
         for line in textLines {
-            guard hasContent(line.text) else { continue }
+            guard hasContent(line.text), !isNoise(line.text) else { continue }
+            // 특별활동 시간표 범례는 격자 왼쪽에 붙어 있어 첫 주 셀로 빨려들어간다.
+            // 셀 배정보다 먼저 걸러 매주 반복 일정으로 전개되게 한다.
+            if firstMatch(in: line.text, pattern: recurringPattern) != nil {
+                unassigned.append(line)
+                continue
+            }
             guard let col = nearestColumn(x: line.centerX, centers: header.columnCenters, maxDistance: colSpacing * 0.75)
             else { unassigned.append(line); continue }
 
@@ -157,14 +166,17 @@ enum CalendarGridParser {
 
     // MARK: - 매주 반복 특별활동
 
+    /// "*월요일 3시 : 꼬미꼬미 오감퍼포먼스", "목요일 3시30분 : 드림 유아체육"
+    private static let recurringPattern =
+        #"(월|화|수|목|금|토|일)\s*요일\s*[::]?\s*(\d{1,2})\s*시\s*(?:(\d{1,2})\s*분)?\s*[::]?\s*(.+)"#
+
     private static func recurringEvents(from unassigned: [RecognizedLine],
                                         year: Int, month: Int, daysInMonth: Int,
                                         calendar: Calendar) -> [ScannedEvent] {
         let koreanWeekdays = ["일", "월", "화", "수", "목", "금", "토"]
         var events: [ScannedEvent] = []
         for line in unassigned {
-            guard let m = firstMatch(in: line.text,
-                                     pattern: #"(월|화|수|목|금|토|일)\s*요일\s*[::]?\s*(\d{1,2})\s*시\s*(?:(\d{1,2})\s*분)?\s*[::]?\s*(.+)"#),
+            guard let m = firstMatch(in: line.text, pattern: recurringPattern),
                   let weekdayStr = m[1],
                   let weekdayIndex = koreanWeekdays.firstIndex(of: weekdayStr),
                   let rawHour = Int(m[2] ?? "")
@@ -188,6 +200,34 @@ enum CalendarGridParser {
         }
         return events
     }
+
+    // MARK: - 방향 선택용 점수
+
+    /// 이 관측 묶음이 "달력 격자"로 얼마나 잘 읽혔는지 점수화 (0 = 달력 아님).
+    ///
+    /// 옆으로 찍힌 사진은 잘못된 방향에서도 글자 수는 꽤 나오지만
+    /// 날짜 숫자가 거의 안 읽힌다. 줄 수 대신 이 점수로 방향을 고르면
+    /// 회전된 달력 사진도 제대로 된 방향을 찾을 수 있다.
+    static func calendarScore(lines: [RecognizedLine]) -> Int {
+        var weekdayYs: [CGFloat] = []
+        var dayNumbers = 0
+        for line in lines {
+            let t = line.text.trimmingCharacters(in: .whitespacesAndNewlines)
+            if weekdayIndex(of: t) != nil {
+                weekdayYs.append(line.centerY)
+            } else if let d = Int(t), (1...31).contains(d) {
+                dayNumbers += 1
+            }
+        }
+        // 요일 헤더는 한 줄에 나란히 있어야 인정 (본문 속 "월"·"토" 오검출 방어)
+        let headerHits = weekdayYs.map { y in weekdayYs.filter { abs($0 - y) < 0.02 }.count }.max() ?? 0
+        guard headerHits >= 4 else { return 0 }
+        return headerHits * 10 + dayNumbers
+    }
+
+    /// 더 볼 것 없이 이 방향을 써도 되는 수준인지.
+    /// (요일 헤더 5개 + 날짜 숫자 20개 수준. 똑바로 찍힌 달력은 대개 90점을 넘는다.)
+    static func isConfidentCalendar(score: Int) -> Bool { score >= 70 }
 
     // MARK: - 요일 헤더
 
@@ -357,6 +397,20 @@ enum CalendarGridParser {
 
     private static func hasContent(_ text: String) -> Bool {
         text.unicodeScalars.contains { CharacterSet.alphanumerics.contains($0) }
+    }
+
+    /// 일정이 될 수 없는 장식·표기 텍스트.
+    /// 일정 누락 방지가 1순위이므로 확실한 것만 최소한으로 거른다.
+    private static func isNoise(_ text: String) -> Bool {
+        let t = cleanCellText(text)
+        // "23/30", "24/31" 처럼 두 날짜를 한 칸에 표기한 것
+        if firstMatch(in: t, pattern: #"^\d{1,2}\s*/\s*\d{1,2}$"#) != nil { return true }
+        // 템플릿 워터마크 ("Designed by Pngtree")
+        let lower = t.lowercased()
+        if lower.contains("designed by") || lower.contains("pngtree") { return true }
+        // 특별활동 시간표 범례의 제목 줄 (실제 일정은 recurringEvents가 만든다)
+        if t.contains("특별활동") && t.contains("시간표") { return true }
+        return false
     }
 
     private static func cleanCellText(_ text: String) -> String {
