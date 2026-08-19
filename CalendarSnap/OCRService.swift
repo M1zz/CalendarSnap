@@ -17,32 +17,31 @@ enum OCRService {
 
     /// 이미지에서 텍스트 + 바운딩 박스를 반환.
     ///
-    /// 달력을 옆으로 눕혀 찍은 사진(EXIF 회전정보 없는 스크린샷 포함)은
-    /// 잘못된 방향에서도 글자 수는 꽤 나오지만 날짜 숫자가 거의 안 읽힙니다.
-    /// 그래서 "줄 수"가 아니라 달력 격자로 얼마나 잘 읽혔는지(`calendarScore`)로
-    /// 방향을 고르고, 달력이 아닌 사진(통신문 등)일 때만 줄 수로 판단합니다.
+    /// 달력을 옆으로 눕혀 찍은 사진(EXIF 회전정보 없는 스크린샷 포함)은 네 방향
+    /// 모두 시도해 가장 잘 읽힌 방향을 씁니다. 이때 "요일 헤더·날짜 숫자가 몇 개
+    /// 읽혔나"만 보면 안 됩니다 — 180° 뒤집힌 방향도 헤더와 숫자는 멀쩡히 읽히지만
+    /// 헤더가 격자 아래에 오고 요일 순서가 좌우 반대라 일정은 하나도 안 나옵니다.
+    /// 그래서 방향마다 실제로 격자 파싱까지 해보고 **일정이 가장 많이 나온 방향**을
+    /// 고릅니다. 달력이 아닌 사진(통신문 등)은 예전처럼 줄 수로 판단합니다.
     static func recognizeLines(in image: UIImage) async throws -> [RecognizedLine] {
         guard let cgImage = image.cgImage else { throw OCRError.invalidImage }
         let base = CGImagePropertyOrientation(image.imageOrientation)
+        let orientations = [base] + [CGImagePropertyOrientation.up, .right, .left, .down]
+            .filter { $0 != base }
 
-        var best = (try? await recognize(cgImage: cgImage, orientation: base)) ?? []
-        var bestScore = CalendarGridParser.calendarScore(lines: best)
+        var best: [RecognizedLine] = []
+        var bestQuality: CalendarGridParser.Quality?
 
-        // 이미 달력으로 잘 읽혔으면 추가 인식 없이 그대로 사용
-        if !CalendarGridParser.isConfidentCalendar(score: bestScore) {
-            for orientation in [CGImagePropertyOrientation.up, .right, .left, .down] where orientation != base {
-                guard let alt = try? await recognize(cgImage: cgImage, orientation: orientation) else { continue }
-                let altScore = CalendarGridParser.calendarScore(lines: alt)
-                // 달력으로 읽힌 방향이 있으면 그중 최고점, 아니면 종전대로 줄 수로 비교
-                let better = (altScore > 0 || bestScore > 0)
-                    ? altScore > bestScore
-                    : alt.count > best.count
-                if better {
-                    best = alt
-                    bestScore = altScore
-                }
-                if CalendarGridParser.isConfidentCalendar(score: bestScore) { break }
+        for orientation in orientations {
+            guard let lines = try? await recognize(cgImage: cgImage, orientation: orientation),
+                  !lines.isEmpty else { continue }
+            let quality = CalendarGridParser.quality(of: lines)
+            if bestQuality.map({ quality > $0 }) ?? true {
+                best = lines
+                bestQuality = quality
             }
+            // 이미 달력으로 잘 읽혔으면 나머지 방향은 볼 필요 없음
+            if let bestQuality, CalendarGridParser.isConfidentCalendar(bestQuality) { break }
         }
 
         guard !best.isEmpty else { throw OCRError.noText }

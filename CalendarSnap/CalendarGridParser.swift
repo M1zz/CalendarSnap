@@ -203,11 +203,36 @@ enum CalendarGridParser {
 
     // MARK: - 방향 선택용 점수
 
-    /// 이 관측 묶음이 "달력 격자"로 얼마나 잘 읽혔는지 점수화 (0 = 달력 아님).
+    /// 한 방향에서 읽은 결과의 품질. 큰 쪽이 좋은 방향이다.
     ///
-    /// 옆으로 찍힌 사진은 잘못된 방향에서도 글자 수는 꽤 나오지만
-    /// 날짜 숫자가 거의 안 읽힌다. 줄 수 대신 이 점수로 방향을 고르면
-    /// 회전된 달력 사진도 제대로 된 방향을 찾을 수 있다.
+    /// **실제로 뽑힌 일정 수가 1순위**다. 옆으로 눕혀 찍은 달력은 180° 뒤집힌
+    /// 방향에서도 요일 헤더와 날짜 숫자가 멀쩡히 읽혀 `calendarScore`만으로는
+    /// 구분되지 않는다 (뒤집힌 쪽은 헤더가 격자 *아래*에 오고 요일 순서도
+    /// 좌우가 반대라 파싱하면 0개가 나온다). 파싱까지 해보고 고르면
+    /// 이 함정에 빠지지 않는다. OCR에 비하면 파싱 비용은 무시할 수준이다.
+    struct Quality: Comparable {
+        let eventCount: Int
+        let calendarScore: Int
+        let lineCount: Int
+
+        static func < (a: Quality, b: Quality) -> Bool {
+            (a.eventCount, a.calendarScore, a.lineCount)
+                < (b.eventCount, b.calendarScore, b.lineCount)
+        }
+    }
+
+    static func quality(of lines: [RecognizedLine], referenceDate: Date = Date()) -> Quality {
+        Quality(eventCount: parse(lines: lines, referenceDate: referenceDate).count,
+                calendarScore: calendarScore(lines: lines),
+                lineCount: lines.count)
+    }
+
+    /// 더 볼 것 없이 이 방향을 써도 되는 수준인지.
+    /// (한 달 치 달력이 제대로 읽히면 보통 10개를 훌쩍 넘는다.)
+    static func isConfidentCalendar(_ quality: Quality) -> Bool { quality.eventCount >= 8 }
+
+    /// 이 관측 묶음이 "달력 격자"로 얼마나 잘 읽혔는지 점수화 (0 = 달력 아님).
+    /// 일정 수가 같을 때의 보조 지표.
     static func calendarScore(lines: [RecognizedLine]) -> Int {
         var weekdayYs: [CGFloat] = []
         var dayNumbers = 0
@@ -224,10 +249,6 @@ enum CalendarGridParser {
         guard headerHits >= 4 else { return 0 }
         return headerHits * 10 + dayNumbers
     }
-
-    /// 더 볼 것 없이 이 방향을 써도 되는 수준인지.
-    /// (요일 헤더 5개 + 날짜 숫자 20개 수준. 똑바로 찍힌 달력은 대개 90점을 넘는다.)
-    static func isConfidentCalendar(score: Int) -> Bool { score >= 70 }
 
     // MARK: - 요일 헤더
 
@@ -288,8 +309,9 @@ enum CalendarGridParser {
         if let i = korean.firstIndex(where: { t == $0 || t == $0 + "요일" }) { return i }
         guard (2...5).contains(t.count), t.allSatisfy({ $0.isLetter }) else { return nil }
         let english: [(prefixes: [String], index: Int)] = [
-            (["sun", "son"], 0), (["mon"], 1), (["tue", "tus"], 2), (["wed"], 3),
-            (["thu", "tho"], 4), (["fri"], 5), (["sat"], 6),
+            (["sun", "son", "sum"], 0), (["mon", "men", "mou"], 1),
+            (["tue", "tus", "tuc"], 2), (["wed", "wod", "wcd"], 3),
+            (["thu", "tho", "thn"], 4), (["fri", "fni"], 5), (["sat", "sot", "sar"], 6),
         ]
         for (prefixes, i) in english where prefixes.contains(where: { t.hasPrefix($0) }) { return i }
         return nil
