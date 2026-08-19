@@ -27,6 +27,8 @@
 		AA000000000000000000060F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000514 /* Assets.xcassets */; };
 		AA0000000000000000000610 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000516 /* AddEventView.swift */; };
 		AA0000000000000000000611 /* PhotoViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000517 /* PhotoViewerView.swift */; };
+		AA000000000000000000061A /* FamilyShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000518 /* FamilyShareService.swift */; };
+		AA000000000000000000061B /* FamilyShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000519 /* FamilyShareView.swift */; };
 		AA0000000000000000000614 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000504 /* EventStore.swift */; };
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
@@ -84,6 +86,8 @@
 		AA0000000000000000000515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0000000000000000000516 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		AA0000000000000000000517 /* PhotoViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000518 /* FamilyShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShareService.swift; sourceTree = "<group>"; };
+		AA0000000000000000000519 /* FamilyShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShareView.swift; sourceTree = "<group>"; };
 		C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,8 @@
 				AA000000000000000000050D /* SettingsView.swift */,
 				AA0000000000000000000510 /* MonthCalendarView.swift */,
 				AA0000000000000000000511 /* EventSharing.swift */,
+				AA0000000000000000000518 /* FamilyShareService.swift */,
+				AA0000000000000000000519 /* FamilyShareView.swift */,
 				AA0000000000000000000512 /* ChildAvatarStore.swift */,
 				AA0000000000000000000513 /* ChildAvatarView.swift */,
 				AA0000000000000000000516 /* AddEventView.swift */,
@@ -289,6 +295,8 @@
 				AA000000000000000000060A /* CalendarGridParser.swift in Sources */,
 				AA000000000000000000060B /* MonthCalendarView.swift in Sources */,
 				AA000000000000000000060C /* EventSharing.swift in Sources */,
+				AA000000000000000000061A /* FamilyShareService.swift in Sources */,
+				AA000000000000000000061B /* FamilyShareView.swift in Sources */,
 				AA000000000000000000060D /* ChildAvatarStore.swift in Sources */,
 				AA000000000000000000060E /* ChildAvatarView.swift in Sources */,
 				AA0000000000000000000610 /* AddEventView.swift in Sources */,

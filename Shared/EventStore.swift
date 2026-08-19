@@ -6,6 +6,9 @@ import WidgetKit
 struct EventStore {
     private static let key = "scannedEvents"
 
+    /// 일정이 저장될 때마다 보내는 알림 — 가족 공유 동기화가 이를 듣고 변경분을 올린다.
+    static let didSaveNotification = Notification.Name("EventStoreDidSave")
+
     private static var defaults: UserDefaults? {
         UserDefaults(suiteName: AppGroup.identifier)
     }
@@ -21,6 +24,7 @@ struct EventStore {
         guard let data = try? JSONEncoder().encode(events) else { return }
         defaults?.set(data, forKey: key)
         WidgetCenter.shared.reloadAllTimelines()
+        NotificationCenter.default.post(name: didSaveNotification, object: nil)
     }
 
     static func upcoming(limit: Int = 5) -> [ScannedEvent] {

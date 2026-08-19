@@ -11,6 +11,7 @@ struct SettingsView: View {
     var onDeleteChild: (String) -> Void = { _ in }
 
     @Environment(\.dismiss) private var dismiss
+    @ObservedObject private var familyShare = FamilyShareService.shared
     @State private var avatarTargetIndex: Int?
     @State private var showAvatarPicker = false
     @State private var avatarItem: PhotosPickerItem?
@@ -89,6 +90,27 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    NavigationLink {
+                        FamilyShareView()
+                    } label: {
+                        Label {
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("가족 초대해서 함께 보기")
+                                Text(familyShareStatus)
+                                    .font(.caption2)
+                                    .foregroundStyle(.secondary)
+                            }
+                        } icon: {
+                            Image(systemName: "person.2.badge.plus")
+                        }
+                    }
+                } header: {
+                    Text("가족 공유")
+                } footer: {
+                    Text("초대 링크를 보내면 배우자·조부모도 같은 일정을 보고 고칠 수 있어요. 한쪽에서 일정을 바꾸면 양쪽에 자동으로 반영됩니다.")
+                }
+
+                Section {
                     // 피드백 보내기 + 리뷰 남기기 + 버전(7탭→개발자 모드→인박스). 전부 LeeoKit 제공.
                     LeeoSupportSection<CalendarSnapSpec>()
                 } header: {
@@ -144,6 +166,19 @@ struct SettingsView: View {
                     avatarItem = nil
                 }
             }
+        }
+    }
+
+    /// 가족 공유 현재 상태 한 줄 요약.
+    private var familyShareStatus: String {
+        switch familyShare.state.role {
+        case .none:
+            return "아직 초대하지 않았어요"
+        case .owner:
+            return "초대한 가족과 함께 보는 중"
+        case .participant:
+            let name = familyShare.state.ownerDisplayName.trimmingCharacters(in: .whitespaces)
+            return name.isEmpty ? "가족의 일정과 연결됨" : "\(name)님과 함께 보는 중"
         }
     }
 

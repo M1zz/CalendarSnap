@@ -35,6 +35,8 @@ struct ContentView: View {
     @State private var newChildName = ""
     // 자동 아이 추정으로 인한 선택 변경 시, 전체 재배정을 건너뛰기 위한 플래그
     @State private var suppressRestamp = false
+    // 가족 초대(CloudKit 공유) 화면
+    @State private var showFamilyShare = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -80,6 +82,21 @@ struct ContentView: View {
         // 올린 사진 크게 보기 (스와이프 + 핀치 줌)
         .fullScreenCover(isPresented: $showPhotoViewer) {
             PhotoViewerView(images: scannedImages, index: photoViewerIndex)
+        }
+        // 가족 공유로 상대가 바꾼 일정이 내려오면 화면을 다시 읽어온다
+        .onReceive(NotificationCenter.default.publisher(for: FamilyShareService.didChangeNotification)) { _ in
+            savedEvents = EventStore.load()
+            settings = ReminderSettingsStore.load()
+        }
+        .sheet(isPresented: $showFamilyShare) {
+            NavigationStack {
+                FamilyShareView()
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("완료") { showFamilyShare = false }
+                        }
+                    }
+            }
         }
         .sheet(isPresented: $showAddEvent) {
             AddEventView(children: registeredChildren,
@@ -283,6 +300,12 @@ struct ContentView: View {
     /// 배우자·가족에게 일정 공유: 아이일정 데이터 / 캘린더 파일(.ics) / 텍스트 요약.
     private var shareMenu: some View {
         Menu {
+            Button {
+                showFamilyShare = true
+            } label: {
+                Label("가족 초대해서 함께 보기", systemImage: "person.2.badge.plus")
+            }
+            Divider()
             ShareLink(item: ScheduleDataFile(events: savedEvents, children: settings.childNames),
                       preview: SharePreview("아이일정 데이터", image: Image(systemName: "square.and.arrow.down.on.square"))) {
                 Label("아이일정 사용자에게 보내기", systemImage: "person.crop.circle.badge.plus")
