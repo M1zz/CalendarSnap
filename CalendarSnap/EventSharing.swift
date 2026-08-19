@@ -151,7 +151,13 @@ extension UTType {
     }
 
     /// Info.plist의 UTExportedTypeDeclarations와 일치해야 함.
+    ///
+    /// 내용은 JSON이지만 **public.json으로 선언하면 안 된다.** public.json은
+    /// public.text를 상속하므로, 카카오톡·메시지처럼 텍스트를 받는 앱이 공유 시트에서
+    /// 이 파일을 "텍스트"로 가져가 JSON 원문을 그대로 메시지로 보내버린다
+    /// (NSItemProvider가 상속 관계에 맞춰 자동 변환해준다).
+    /// public.data로 선언해야 통짜 파일로만 취급되어 첨부로 전달된다.
     static var aischedule: UTType {
-        UTType(exportedAs: "com.devkoan.calendarsnap.schedule", conformingTo: .json)
+        UTType(exportedAs: "com.devkoan.calendarsnap.schedule", conformingTo: .data)
     }
 }
