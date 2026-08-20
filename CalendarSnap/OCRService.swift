@@ -16,21 +16,34 @@ enum OCRService {
     }
 
     /// 이미지에서 텍스트 + 바운딩 박스를 반환.
-    /// 사진이 옆으로 저장된 경우(EXIF 누락 스크린샷 등)를 대비해
-    /// 인식량이 적으면 다른 방향으로도 시도해 가장 좋은 결과를 사용합니다.
+    ///
+    /// 달력을 옆으로 눕혀 찍은 사진(EXIF 회전정보 없는 스크린샷 포함)은 네 방향
+    /// 모두 시도해 가장 잘 읽힌 방향을 씁니다. 이때 "요일 헤더·날짜 숫자가 몇 개
+    /// 읽혔나"만 보면 안 됩니다 — 180° 뒤집힌 방향도 헤더와 숫자는 멀쩡히 읽히지만
+    /// 헤더가 격자 아래에 오고 요일 순서가 좌우 반대라 일정은 하나도 안 나옵니다.
+    /// 그래서 방향마다 실제로 격자 파싱까지 해보고 **일정이 가장 많이 나온 방향**을
+    /// 고릅니다. 달력이 아닌 사진(통신문 등)은 예전처럼 줄 수로 판단합니다.
     static func recognizeLines(in image: UIImage) async throws -> [RecognizedLine] {
         guard let cgImage = image.cgImage else { throw OCRError.invalidImage }
         let base = CGImagePropertyOrientation(image.imageOrientation)
+        let orientations = [base] + [CGImagePropertyOrientation.up, .right, .left, .down]
+            .filter { $0 != base }
 
-        var best = (try? await recognize(cgImage: cgImage, orientation: base)) ?? []
-        if best.count < 15 {
-            for orientation in [CGImagePropertyOrientation.up, .right, .left, .down] where orientation != base {
-                if let alt = try? await recognize(cgImage: cgImage, orientation: orientation),
-                   alt.count > best.count {
-                    best = alt
-                }
+        var best: [RecognizedLine] = []
+        var bestQuality: CalendarGridParser.Quality?
+
+        for orientation in orientations {
+            guard let lines = try? await recognize(cgImage: cgImage, orientation: orientation),
+                  !lines.isEmpty else { continue }
+            let quality = CalendarGridParser.quality(of: lines)
+            if bestQuality.map({ quality > $0 }) ?? true {
+                best = lines
+                bestQuality = quality
             }
+            // 이미 달력으로 잘 읽혔으면 나머지 방향은 볼 필요 없음
+            if let bestQuality, CalendarGridParser.isConfidentCalendar(bestQuality) { break }
         }
+
         guard !best.isEmpty else { throw OCRError.noText }
         return best
     }

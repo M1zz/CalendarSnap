@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D2C986A796DAD4B1446BF9 /* CalendarSnapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */; };
 		AA000000000000000000030A /* ScheduleWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000301 /* ScheduleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA0000000000000000000600 /* CalendarSnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000500 /* CalendarSnapApp.swift */; };
 		AA0000000000000000000601 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000501 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 		AA0000000000000000000623 /* FamilySyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051B /* FamilySyncManager.swift */; };
 		AA0000000000000000000624 /* RecordMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051C /* RecordMapper.swift */; };
 		AA0000000000000000000625 /* SyncStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051D /* SyncStateStore.swift */; };
+		E1C5F672852FF09136BD4D9B /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF95EE5532C71DF5DD453D9E /* LeeoKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,7 @@
 		AA000000000000000000051B /* FamilySyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySyncManager.swift; sourceTree = "<group>"; };
 		AA000000000000000000051C /* RecordMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMapper.swift; sourceTree = "<group>"; };
 		AA000000000000000000051D /* SyncStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStateStore.swift; sourceTree = "<group>"; };
+		C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C5F672852FF09136BD4D9B /* LeeoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,7 @@
 				AA0000000000000000000514 /* Assets.xcassets */,
 				AA0000000000000000000515 /* Info.plist */,
 				AA0000000000000000000507 /* CalendarSnap.entitlements */,
+				C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */,
 			);
 			path = CalendarSnap;
 			sourceTree = "<group>";
@@ -209,6 +214,9 @@
 				AA0000000000000000000308 /* PBXTargetDependency */,
 			);
 			name = CalendarSnap;
+			packageProductDependencies = (
+				FF95EE5532C71DF5DD453D9E /* LeeoKit */,
+			);
 			productName = CalendarSnap;
 			productReference = AA0000000000000000000201 /* CalendarSnap.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +266,9 @@
 				Base,
 			);
 			mainGroup = AA0000000000000000000101;
+			packageReferences = (
+				1F7ACFDF89A1EE027A90FC24 /* XCRemoteSwiftPackageReference "LeeoKit" */,
+			);
 			productRefGroup = AA0000000000000000000102 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,6 +325,7 @@
 				AA0000000000000000000623 /* FamilySyncManager.swift in Sources */,
 				AA0000000000000000000624 /* RecordMapper.swift in Sources */,
 				AA0000000000000000000625 /* SyncStateStore.swift in Sources */,
+				16D2C986A796DAD4B1446BF9 /* CalendarSnapSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CalendarSnap/CalendarSnap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -381,7 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CalendarSnap/CalendarSnap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,7 +428,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ScheduleWidget/ScheduleWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScheduleWidget/Info.plist;
@@ -445,7 +457,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ScheduleWidget/ScheduleWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScheduleWidget/Info.plist;
@@ -551,6 +563,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F7ACFDF89A1EE027A90FC24 /* XCRemoteSwiftPackageReference "LeeoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF95EE5532C71DF5DD453D9E /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7ACFDF89A1EE027A90FC24 /* XCRemoteSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA0000000000000000000100 /* Project object */;
 }

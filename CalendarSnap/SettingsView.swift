@@ -1,5 +1,6 @@
 import SwiftUI
 import PhotosUI
+import LeeoKit
 
 /// 아이 프로필(이름·사진·반) · 알림 시점 · 캘린더 미러링 설정 화면.
 struct SettingsView: View {
@@ -87,6 +88,13 @@ struct SettingsView: View {
                     }
                 } footer: {
                     Text("켜면 \(calendarNamesDescription) 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다.")
+                }
+
+                Section {
+                    // 피드백 보내기 + 리뷰 남기기 + 버전(7탭→개발자 모드→인박스). 전부 LeeoKit 제공.
+                    LeeoSupportSection<CalendarSnapSpec>()
+                } header: {
+                    Text("지원")
                 }
             }
             .navigationTitle("알림 설정")
