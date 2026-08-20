@@ -14,8 +14,10 @@ struct MonthCalendarView: View {
     @State private var selectedDay: Date? = Calendar.current.startOfDay(for: Date())
     @State private var childFilter: String?          // nil = 통합(전체)
     @State private var typeFilter: TypeFilter = .all
-    /// true면 선택한 주만 보이는 접힌 상태 (목록 스크롤 시 자동 접힘)
-    @State private var isWeekMode = false
+    /// true면 선택한 주만 보이는 접힌 상태.
+    /// 달력 탭의 본래 목적이 "오늘 무슨 일정이 있는지" 보는 것이라,
+    /// 기본은 주간으로 접어 오늘 일정에 화면을 내준다. (핸들·스와이프로 월간 펼침)
+    @State private var isWeekMode = true
     @State private var lastListOffset: CGFloat = 0
 
     private var calendar: Calendar { .current }
@@ -313,9 +315,11 @@ struct MonthCalendarView: View {
 
             if let selectedDay {
                 Section {
+                    dayHeadline(selectedDay)
+                        .listRowSeparator(.hidden)
                     if selectedDayEvents.isEmpty {
-                        Text("이 날은 일정이 없어요")
-                            .foregroundStyle(.secondary)
+                        emptyDayRow(selectedDay)
+                            .listRowSeparator(.hidden)
                     } else {
                         ForEach(selectedDayEvents) { event in
                             eventRow(event)
@@ -330,8 +334,6 @@ struct MonthCalendarView: View {
                                 }
                         }
                     }
-                } header: {
-                    Text(selectedDay, format: .dateTime.month().day().weekday(.wide).locale(koKR))
                 }
 
                 if onAddEvent != nil || !selectedDayEvents.isEmpty {
@@ -393,25 +395,67 @@ struct MonthCalendarView: View {
         }
     }
 
+    /// 선택한 날(기본 오늘)을 큼지막하게 알려주는 머리글.
+    private func dayHeadline(_ day: Date) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 8) {
+            Text(dayLabel(day))
+                .font(.largeTitle.bold())
+                .foregroundStyle(calendar.isDateInToday(day) ? AnyShapeStyle(.tint)
+                                                             : AnyShapeStyle(.primary))
+            Text(day, format: .dateTime.month().day().weekday(.wide).locale(koKR))
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            Spacer()
+            if !selectedDayEvents.isEmpty {
+                Text("\(selectedDayEvents.count)개")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding(.top, 4)
+        .padding(.bottom, 2)
+        .accessibilityElement(children: .combine)
+    }
+
+    /// "오늘"·"내일"·"어제"는 그대로, 나머지는 요일로.
+    private func dayLabel(_ day: Date) -> String {
+        if calendar.isDateInToday(day) { return "오늘" }
+        if calendar.isDateInTomorrow(day) { return "내일" }
+        if calendar.isDateInYesterday(day) { return "어제" }
+        return day.formatted(.dateTime.weekday(.wide).locale(koKR))
+    }
+
+    private func emptyDayRow(_ day: Date) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark.circle")
+                .font(.title2)
+                .foregroundStyle(.secondary)
+            Text(calendar.isDateInToday(day) ? "오늘은 챙길 일정이 없어요" : "이 날은 일정이 없어요")
+                .font(.title3)
+                .foregroundStyle(.secondary)
+        }
+        .padding(.vertical, 8)
+    }
+
     private func eventRow(_ event: ScannedEvent) -> some View {
         HStack(alignment: .top, spacing: 12) {
             Text(event.isAllDay ? "종일" : event.date.formatted(.dateTime.hour().minute().locale(koKR)))
-                .font(.caption.weight(.semibold))
+                .font(.headline)
                 .foregroundStyle(.tint)
-                .frame(width: 64, alignment: .leading)
-                .padding(.top, 1)
+                .frame(width: 76, alignment: .leading)
+                .padding(.top, 2)
             VStack(alignment: .leading, spacing: 2) {
                 HStack(spacing: 6) {
                     if !event.childName.isEmpty {
                         Text(event.childName)
-                            .font(.caption2.weight(.semibold))
+                            .font(.caption.weight(.semibold))
                             .foregroundStyle(.white)
-                            .padding(.horizontal, 6)
-                            .padding(.vertical, 1.5)
+                            .padding(.horizontal, 7)
+                            .padding(.vertical, 2)
                             .background(event.color(children: registeredChildren), in: Capsule())
                     }
                     Text(event.title)
-                        .font(.subheadline.weight(.medium))
+                        .font(.title3.weight(.semibold))
                     if event.isRecurring {
                         Image(systemName: "repeat")
                             .font(.caption2)
@@ -420,12 +464,12 @@ struct MonthCalendarView: View {
                 }
                 if !event.notes.isEmpty {
                     Text(event.notes)
-                        .font(.caption)
+                        .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
             }
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, 6)
     }
 }
 
