@@ -15,7 +15,7 @@ import LeeoKit
 
 enum CalendarSnapSpec: LeeoAppSpec {
     static let appName = "CalendarSnap"
-    static let developerEmail = "mizzking75@gmail.com"
+    static let developerEmail = "leeo@kakao.com"
 
     /// 앱 전용 iCloud 컨테이너 (번들 ID 기반). 포털에서 동일 식별자로 생성 필요.
     static let feedback = LeeoFeedbackConfig(
