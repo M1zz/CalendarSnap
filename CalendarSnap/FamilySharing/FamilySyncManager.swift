@@ -28,6 +28,8 @@ final class FamilySyncManager: NSObject, ObservableObject {
     private var privateEngine: CKSyncEngine?
     private var sharedEngine: CKSyncEngine?
     private var started = false
+    /// 참여 직후 원격에서 실제로 받아온 레코드 수 (공유 존 노출 지연 재시도 판단용).
+    private var appliedRemoteRecordCount = 0
 
     var isSharingActive: Bool { role != .none }
 
@@ -227,13 +229,19 @@ final class FamilySyncManager: NSObject, ObservableObject {
         // 기존 공유가 있으면 재사용 (존 전체 공유의 recordName은 고정)
         let shareID = CKRecord.ID(recordName: CKRecordNameZoneWideShare, zoneID: zoneID)
         if let existing = try? await container.privateCloudDatabase.record(for: shareID) as? CKShare {
-            share = existing
-            return existing
+            // 예전 버전에서 "초대한 사람만"으로 만들어진 공유는 링크만 받은 사람이 수락할 수 없으므로
+            // 링크 공유가 가능하도록 승격한다.
+            let upgraded = (try? await ensureLinkShareable(existing)) ?? existing
+            share = upgraded
+            return upgraded
         }
 
         let newShare = CKShare(recordZoneID: zoneID)
         newShare[CKShare.SystemFieldKey.title] = "아이일정 함께 보기"
-        newShare.publicPermission = .none
+        // 카카오톡·메시지로 링크만 받아도 수락할 수 있어야 하므로 "링크가 있는 누구나"로 만든다.
+        // (.none이면 UICloudSharingController가 "초대한 사람만"으로 시작해서, 링크를 그냥 전달받은
+        //  상대방은 iCloud 웹에서 "초대가 필요합니다"로 막히고 앱으로 데이터가 넘어오지 않는다.)
+        newShare.publicPermission = .readWrite
         let result = try await container.privateCloudDatabase.modifyRecords(
             saving: [newShare], deleting: [])
         if case .success(let saved) = result.saveResults[newShare.recordID] ?? .failure(CKError(.internalError)),
@@ -243,6 +251,19 @@ final class FamilySyncManager: NSObject, ObservableObject {
         }
         share = newShare
         return newShare
+    }
+
+    /// 공유 레코드가 "링크가 있는 누구나" 수락 가능한 상태인지 보장.
+    private func ensureLinkShareable(_ existing: CKShare) async throws -> CKShare {
+        guard existing.publicPermission == .none else { return existing }
+        existing.publicPermission = .readWrite
+        let result = try await container.privateCloudDatabase.modifyRecords(
+            saving: [existing], deleting: [], savePolicy: .changedKeys)
+        if case .success(let saved) = result.saveResults[existing.recordID] ?? .failure(CKError(.internalError)),
+           let savedShare = saved as? CKShare {
+            return savedShare
+        }
+        return existing
     }
 
     /// 공유 중지 (소유자): 공유 레코드만 삭제 — 데이터(존)는 유지되어 내 iCloud 백업으로 남음.
@@ -285,20 +306,46 @@ final class FamilySyncManager: NSObject, ObservableObject {
     // MARK: - 공유 수락 (참여자)
 
     func accept(_ metadata: CKShare.Metadata) {
-        guard metadata.containerIdentifier == Self.containerIdentifier else { return }
-        // 내가 만든 공유를 내가 수락하는 경우는 무시
-        if state.role == .owner { return }
+        guard metadata.containerIdentifier == Self.containerIdentifier else {
+            infoMessage = "아이일정의 초대 링크가 아니에요."
+            return
+        }
+        // 내가 만든 링크를 내가 누른 경우 — 조용히 무시하지 않고 이유를 알려준다.
+        if metadata.participantRole == .owner {
+            infoMessage = "내가 만든 초대 링크예요. 이 링크를 함께 볼 사람에게 보내주세요."
+            return
+        }
+        // 이미 내 일정을 공유 중인 소유자는 다른 사람의 공유에 참여할 수 없다.
+        if state.role == .owner {
+            infoMessage = "이미 내 일정을 공유 중이에요. 설정 > 일정 공유에서 '공유 중지'를 한 뒤 초대 링크를 다시 눌러주세요."
+            return
+        }
+        let shareZoneID = metadata.share.recordID.zoneID
+        // 같은 공유에 이미 참여 중이면 재수락 대신 새로고침만.
+        if state.role == .participant, state.zoneOwnerName == shareZoneID.ownerName {
+            infoMessage = "이미 참여 중인 공유예요. 최신 일정을 가져올게요."
+            fetchChangesNow()
+            return
+        }
         Task {
             do {
-                try await container.accept(metadata)
-                let zoneID = metadata.share.recordID.zoneID
+                _ = try await container.accept(metadata)
                 state.role = .participant
-                state.zoneOwnerName = zoneID.ownerName
+                state.zoneOwnerName = shareZoneID.ownerName
                 role = .participant
                 saveState()
 
                 let engine = participantEngine
+                appliedRemoteRecordCount = 0
                 try await engine.fetchChanges()
+
+                // 수락 직후에는 공유 DB에 존이 아직 안 보일 수 있어 잠깐 재시도한다.
+                var attempt = 0
+                while appliedRemoteRecordCount == 0, attempt < 4 {
+                    attempt += 1
+                    try? await Task.sleep(nanoseconds: 1_500_000_000)
+                    try? await engine.fetchChanges()
+                }
 
                 // 원격에 없는 로컬 데이터(기존 사용자였던 경우)를 공유 존에 업로드
                 enqueueEventsSnapshot(EventStore.load())
@@ -306,10 +353,15 @@ final class FamilySyncManager: NSObject, ObservableObject {
                 try? await engine.sendChanges()
 
                 await refreshShare()
-                let count = EventStore.load().count
-                infoMessage = "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요."
+                if appliedRemoteRecordCount == 0 {
+                    infoMessage = "공유에 참여했어요. 아직 받아온 일정이 없어요 — 잠시 후 앱을 다시 열면 반영돼요."
+                } else {
+                    let count = EventStore.load().count
+                    infoMessage = "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요."
+                }
             } catch {
-                infoMessage = "공유 참여에 실패했어요. 잠시 후 다시 시도해주세요."
+                // 실패 원인을 그대로 보여줘야 iCloud 로그인·권한 문제를 구분할 수 있다.
+                infoMessage = "공유 참여에 실패했어요. (\(error.localizedDescription))"
             }
         }
     }
@@ -325,6 +377,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
         for record in records {
             cacheSystemFields(of: record)
+            appliedRemoteRecordCount += 1
 
             if let event = RecordMapper.event(from: record) {
                 // 같은 내용의 다른 UUID 로컬 일정(파일 공유로 미리 받은 경우)은 원격 UUID로 통일
@@ -447,8 +500,12 @@ extension FamilySyncManager: CKSyncEngineDelegate {
             let data = try? JSONEncoder().encode(update.stateSerialization)
             if syncEngine === privateEngine {
                 state.privateEngineState = data
-            } else {
+            } else if syncEngine === sharedEngine {
                 state.sharedEngineState = data
+            } else if state.role == .participant {
+                state.sharedEngineState = data
+            } else {
+                state.privateEngineState = data
             }
             saveState()
 

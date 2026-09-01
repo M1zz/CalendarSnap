@@ -18,6 +18,15 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         configuration.delegateClass = SceneDelegate.self
         return configuration
     }
+
+    /// 씬을 쓰지 않는 경로로 초대가 전달되는 경우의 안전망.
+    /// (씬 기반 앱에서는 보통 SceneDelegate 쪽이 호출된다)
+    func application(_ application: UIApplication,
+                     userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShare.Metadata) {
+        Task { @MainActor in
+            FamilySyncManager.shared.accept(cloudKitShareMetadata)
+        }
+    }
 }
 
 final class SceneDelegate: NSObject, UIWindowSceneDelegate {

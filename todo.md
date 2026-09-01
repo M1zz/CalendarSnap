@@ -26,4 +26,11 @@
 - [x] pbxproj 새 파일 등록 + 빌드·시뮬레이터 실행 검증 (미로그인 상태 UI 확인)
 - [ ] 수동: Xcode에서 iCloud(CloudKit)·Push Notifications capability 추가 확인 (팀 QGAQ3AY3R3 — entitlements는 이미 반영됨, Xcode가 포털에 컨테이너 등록하는지 확인 필요)
 - [ ] 수동: 출시 전 CloudKit Console에서 스키마 Development → Production 배포
+- [x] 초대 링크를 눌러도 데이터가 안 들어오는 문제 수정
+      - CKShare.publicPermission을 .none → .readWrite (링크만 받은 사람도 수락 가능)
+      - 기존에 .none으로 만들어진 공유는 재사용 시 자동 승격
+      - accept()의 조용한 early return 제거 → 실패/거절 사유를 항상 안내
+      - 수락 직후 공유 존 노출 지연 대비 fetch 재시도(최대 4회)
+      - AppDelegate에도 userDidAcceptCloudKitShareWith 안전망 추가
 - [ ] 실기기 2대(서로 다른 Apple ID)로 초대→수락→양방향 동기화 테스트
+- [ ] 확인 필요: 두 기기가 같은 CloudKit 환경인지 (Xcode 설치=Development / TestFlight=Production은 서로 안 보임)
