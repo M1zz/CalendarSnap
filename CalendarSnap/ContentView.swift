@@ -233,8 +233,7 @@ struct ContentView: View {
             ReminderSettingsStore.save(settings)
 
             // 일정 병합 (중복 제외)
-            let existingKeys = Set(savedEvents.map(dedupKey))
-            let fresh = package.events.filter { !existingKeys.contains(dedupKey($0)) }
+            let fresh = newEvents(package.events, excluding: savedEvents)
             savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
             EventStore.save(savedEvents)
 
@@ -643,8 +642,7 @@ struct ContentView: View {
             if e.childName.isEmpty { e.childName = assignChild }
             return e
         }
-        let existingKeys = Set((savedEvents + scannedAll).map(dedupKey))
-        let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
+        let fresh = newEvents(stamped, excluding: savedEvents + scannedAll)
         scannedAll = (scannedAll + fresh).sorted { $0.date < $1.date }
         refreshScanned()
         return fresh.count
@@ -669,8 +667,7 @@ struct ContentView: View {
         }
 
         // 저장소에 병합 (중복 제외)
-        let existingKeys = Set(savedEvents.map(dedupKey))
-        let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
+        let fresh = newEvents(stamped, excluding: savedEvents)
         savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
         EventStore.save(savedEvents)   // 위젯 갱신
 
@@ -702,6 +699,7 @@ struct ContentView: View {
                     let result = try CalendarService.addEvents(savedEvents)
                     var msg = "캘린더 \(result.added)개 추가"
                     if result.skipped > 0 { msg += " (중복 \(result.skipped)개 제외)" }
+                    if result.removed > 0 { msg += " · 쌓여 있던 중복 \(result.removed)개 정리" }
                     messages.append(msg)
                 } catch {
                     messages.append("캘린더 추가 실패")
@@ -716,8 +714,15 @@ struct ContentView: View {
         withAnimation { savedBanner = true }
     }
 
-    private func dedupKey(_ event: ScannedEvent) -> String {
-        "\(event.title)|\(event.date.timeIntervalSince1970)|\(event.childName)"
+    /// `candidates` 중 `existing`이나 앞선 후보와 중복(`ScannedEvent.isDuplicate`)이 아닌 것만.
+    private func newEvents(_ candidates: [ScannedEvent], excluding existing: [ScannedEvent]) -> [ScannedEvent] {
+        var kept = existing
+        var fresh: [ScannedEvent] = []
+        for event in candidates where !kept.contains(where: { $0.isDuplicate(of: event) }) {
+            kept.append(event)
+            fresh.append(event)
+        }
+        return fresh
     }
 
     /// 아이 삭제 확정 시 연쇄 정리: 그 아이의 일정·프로필 사진 삭제 + 알림 재예약.

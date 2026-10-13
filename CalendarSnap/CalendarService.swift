@@ -23,6 +23,7 @@ enum CalendarService {
     struct AddResult {
         var added: Int
         var skipped: Int   // 이미 등록되어 건너뛴 개수
+        var removed: Int = 0   // 달력에 이미 쌓여 있던 중복 사본을 지운 개수
     }
 
     // MARK: - 권한
@@ -40,7 +41,8 @@ enum CalendarService {
     // MARK: - 일괄 등록
 
     /// 한 달치 일정을 아이별 전용 달력에 한 번에 추가.
-    /// 같은 날짜·같은 제목은 중복으로 보고 건너뜁니다.
+    /// 같은 날 같은 제목이거나 같은 시각에 제목이 비슷하면 중복으로 보고 건너뜁니다
+    /// (`EventDuplicate`). 달력에 이미 쌓인 중복 사본도 하나만 남기고 정리합니다.
     @discardableResult
     static func addEvents(_ events: [ScannedEvent]) throws -> AddResult {
         guard isAuthorized else { throw CalendarError.accessDenied }
@@ -69,6 +71,7 @@ enum CalendarService {
             let partial = try add(group, to: calendar, in: store, cal: cal)
             result.added += partial.added
             result.skipped += partial.skipped
+            result.removed += partial.removed
         }
         try store.commit()
         return result
@@ -82,19 +85,45 @@ enum CalendarService {
         try? store.removeCalendar(legacy, commit: false)
     }
 
+    /// 달력 안에서 중복 비교에 쓰는 최소 정보.
+    private struct Entry {
+        var title: String
+        var date: Date
+        var isAllDay: Bool
+
+        func isDuplicate(of other: Entry) -> Bool {
+            EventDuplicate.isDuplicate(titleA: title, dateA: date, allDayA: isAllDay,
+                                       titleB: other.title, dateB: other.date, allDayB: other.isAllDay)
+        }
+    }
+
     private static func add(_ events: [ScannedEvent], to calendar: EKCalendar,
                             in store: EKEventStore, cal: Calendar) throws -> AddResult {
-        // 중복 방지: 대상 기간의 기존 이벤트 키(제목 + 날짜) 수집
+        var result = AddResult(added: 0, skipped: 0)
+
+        // 대상 기간의 기존 이벤트 수집
         let sorted = events.sorted { $0.date < $1.date }
         let rangeStart = cal.startOfDay(for: sorted.first!.date)
         let rangeEnd = cal.date(byAdding: .day, value: 1, to: cal.startOfDay(for: sorted.last!.date)) ?? sorted.last!.date
         let predicate = store.predicateForEvents(withStart: rangeStart, end: rangeEnd, calendars: [calendar])
-        var existingKeys = Set(store.events(matching: predicate).map { dedupKey(title: $0.title ?? "", date: $0.startDate, calendar: cal) })
+        let existingEvents = store.events(matching: predicate)
+            .sorted { ($0.creationDate ?? .distantPast) < ($1.creationDate ?? .distantPast) }
 
-        var result = AddResult(added: 0, skipped: 0)
+        // 이미 쌓인 중복 사본 정리: 먼저 만들어진 것 하나만 남김 (반복 일정은 건드리지 않음)
+        var existing: [Entry] = []
+        for ekEvent in existingEvents {
+            let entry = Entry(title: ekEvent.title ?? "", date: ekEvent.startDate, isAllDay: ekEvent.isAllDay)
+            if !ekEvent.hasRecurrenceRules, existing.contains(where: { $0.isDuplicate(of: entry) }) {
+                try store.remove(ekEvent, span: .thisEvent, commit: false)
+                result.removed += 1
+            } else {
+                existing.append(entry)
+            }
+        }
+
         for event in events {
-            let key = dedupKey(title: event.title, date: event.date, calendar: cal)
-            if existingKeys.contains(key) {
+            let entry = Entry(title: event.title, date: event.date, isAllDay: event.isAllDay)
+            if existing.contains(where: { $0.isDuplicate(of: entry) }) {
                 result.skipped += 1
                 continue
             }
@@ -114,7 +143,7 @@ enum CalendarService {
             }
 
             try store.save(ekEvent, span: .thisEvent, commit: false)
-            existingKeys.insert(key)
+            existing.append(entry)
             result.added += 1
         }
         return result
@@ -153,10 +182,5 @@ enum CalendarService {
         }
         return store.sources.first(where: { $0.sourceType == .calDAV })
             ?? store.sources.first
-    }
-
-    private static func dedupKey(title: String, date: Date, calendar: Calendar) -> String {
-        let day = calendar.startOfDay(for: date)
-        return "\(title.trimmingCharacters(in: .whitespaces))|\(Int(day.timeIntervalSince1970))"
     }
 }
