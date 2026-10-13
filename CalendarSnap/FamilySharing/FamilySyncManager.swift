@@ -215,16 +215,36 @@ final class FamilySyncManager: NSObject, ObservableObject {
         _ = try await container.privateCloudDatabase.modifyRecordZones(
             saving: [CKRecordZone(zoneID: zoneID)], deleting: [])
 
-        if state.role != .owner {
+        let becameOwner = state.role != .owner
+        if becameOwner {
             state.role = .owner
             role = .owner
             saveState()
         }
+        do {
+            return try await prepareOwnerShare(zoneID: zoneID)
+        } catch {
+            // 공유 레코드를 못 만들었으면 소유자로 남지 않게 되돌림
+            // (소유자로 남으면 이후 다른 사람의 초대를 수락할 수 없음)
+            if becameOwner { resetToNone() }
+            throw error
+        }
+    }
 
-        // 현재 로컬 데이터 전체를 업로드 대기열에 등록
+    private func prepareOwnerShare(zoneID: CKRecordZone.ID) async throws -> CKShare {
+        // 현재 로컬 데이터 전체를 업로드 대기열에 등록.
+        // 저장된 지문이 "이미 올림"이라고 해도 서버가 비어 있을 수 있으므로
+        // (개발 빌드 → 앱스토어 빌드 전환, 서버 존 초기화 등) 공유를 시작할 때마다 전부 다시 올린다.
+        // 키는 남겨 두어야 로컬에서 지운 일정의 삭제도 함께 전달된다.
+        for key in state.syncedEventFingerprints.keys { state.syncedEventFingerprints[key] = "" }
+        for key in state.syncedChildFingerprints.keys { state.syncedChildFingerprints[key] = "" }
         enqueueEventsSnapshot(EventStore.load())
         enqueueChildrenSnapshot(ReminderSettingsStore.load())
-        try? await ownerEngine.sendChanges()
+        do {
+            try await ownerEngine.sendChanges()
+        } catch {
+            infoMessage = "일정을 iCloud에 올리지 못했어요. 함께 보는 사람에게 일정이 보이지 않을 수 있어요. (\(error.localizedDescription))"
+        }
 
         // 기존 공유가 있으면 재사용 (존 전체 공유의 recordName은 고정)
         let shareID = CKRecord.ID(recordName: CKRecordNameZoneWideShare, zoneID: zoneID)
@@ -268,10 +288,13 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
     /// 공유 중지 (소유자): 공유 레코드만 삭제 — 데이터(존)는 유지되어 내 iCloud 백업으로 남음.
     func stopSharing() async {
-        guard state.role == .owner, let share else { return }
+        guard state.role == .owner else { return }
+        let shareID = CKRecord.ID(recordName: CKRecordNameZoneWideShare,
+                                  zoneID: CKRecordZone.ID(zoneName: RecordMapper.zoneName))
         _ = try? await container.privateCloudDatabase.modifyRecords(
-            saving: [], deleting: [share.recordID])
-        self.share = nil
+            saving: [], deleting: [shareID])
+        // 역할까지 초기화해야 이후 다른 사람의 초대를 수락할 수 있다.
+        resetToNone()
         infoMessage = "일정 공유를 중지했어요. 내 데이터는 그대로 유지돼요."
     }
 
@@ -285,12 +308,18 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
     /// 참여 상태 해제 (존 삭제 감지·나가기 공통). 로컬 데이터는 건드리지 않음.
     private func detachFromShare(message: String?) {
+        resetToNone()
+        if let message { infoMessage = message }
+    }
+
+    /// 공유 안 함 상태로 초기화 (동기화 엔진·상태 파일 정리). 로컬 데이터는 건드리지 않음.
+    private func resetToNone() {
+        privateEngine = nil
         sharedEngine = nil
         share = nil
         state = SyncState()
         role = .none
         SyncStateStore.reset()
-        if let message { infoMessage = message }
     }
 
     /// 현재 존의 공유 레코드 로드 (참여자 목록 표시용).
@@ -316,8 +345,19 @@ final class FamilySyncManager: NSObject, ObservableObject {
             return
         }
         // 이미 내 일정을 공유 중인 소유자는 다른 사람의 공유에 참여할 수 없다.
+        // 단, 초대 화면만 열어 봤거나 아무도 수락하지 않은 공유라면 자동으로 접고 참여한다.
         if state.role == .owner {
-            infoMessage = "이미 내 일정을 공유 중이에요. 설정 > 일정 공유에서 '공유 중지'를 한 뒤 초대 링크를 다시 눌러주세요."
+            Task {
+                await refreshShare()
+                let hasAcceptedParticipant = participants.contains { $0.acceptanceStatus == .accepted }
+                if hasAcceptedParticipant {
+                    infoMessage = "이미 내 일정을 다른 사람과 공유 중이에요. 설정 > 일정 공유에서 '공유 중지'를 한 뒤 초대 링크를 다시 눌러주세요."
+                    return
+                }
+                await stopSharing()
+                infoMessage = nil
+                accept(metadata)
+            }
             return
         }
         let shareZoneID = metadata.share.recordID.zoneID
@@ -381,8 +421,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
             if let event = RecordMapper.event(from: record) {
                 // 같은 내용의 다른 UUID 로컬 일정(파일 공유로 미리 받은 경우)은 원격 UUID로 통일
-                let key = dedupKey(event)
-                events.removeAll { $0.id != event.id && dedupKey($0) == key }
+                events.removeAll { $0.id != event.id && $0.isDuplicate(of: event) }
                 if let index = events.firstIndex(where: { $0.id == event.id }) {
                     events[index] = event
                 } else {
@@ -485,10 +524,6 @@ final class FamilySyncManager: NSObject, ObservableObject {
         else { return nil }
         return CKRecord(coder: unarchiver)
     }
-
-    private func dedupKey(_ event: ScannedEvent) -> String {
-        "\(event.title)|\(event.date.timeIntervalSince1970)|\(event.childName)"
-    }
 }
 
 // MARK: - CKSyncEngineDelegate
@@ -577,8 +612,12 @@ extension FamilySyncManager: CKSyncEngineDelegate {
             // 서버에서 이미 삭제된 레코드 갱신 시도 — 캐시를 비우고 새 레코드로 재저장
             state.recordSystemFields[recordID.recordName] = nil
             engine.state.add(pendingRecordZoneChanges: [.saveRecord(recordID)])
+        case .networkFailure, .networkUnavailable, .serviceUnavailable,
+             .requestRateLimited, .zoneBusy:
+            break   // 일시 오류는 CKSyncEngine이 알아서 재시도
         default:
-            break   // 네트워크·용량 등 일시 오류는 CKSyncEngine이 알아서 재시도
+            // 스키마 미배포(운영 환경) 등 재시도로 풀리지 않는 오류 — 조용히 넘기면 상대에게 일정이 안 보인다.
+            infoMessage = "일정 공유 업로드에 실패했어요. (\(failure.error.code.rawValue): \(failure.error.localizedDescription))"
         }
     }
 

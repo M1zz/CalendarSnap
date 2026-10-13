@@ -120,7 +120,6 @@ struct FamilySharingSection: View {
             Text(participantName(participant))
             Spacer()
             Text(participant.acceptanceStatus == .accepted ? "참여 중" : "수락 대기")
-                .font(.caption)
                 .foregroundStyle(participant.acceptanceStatus == .accepted ? .green : .secondary)
         }
     }
@@ -150,7 +149,7 @@ struct FamilySharingSection: View {
     private var footerText: Text {
         switch syncManager.role {
         case .none:
-            return Text("배우자·조부모·돌봄 선생님 등 원하는 사람을 초대해 모든 아이·일정을 실시간으로 함께 관리할 수 있어요. 애플 가족 공유와 무관하며, 초대 링크는 메시지·카카오톡으로 보낼 수 있어요.")
+            return Text("배우자·조부모·돌봄 선생님 등 원하는 사람을 초대해 모든 아이·일정을 실시간으로 함께 관리할 수 있어요. 애플 가족 공유와 무관하며, 초대 링크는 메시지로 보내는 게 가장 확실해요. 카카오톡으로 받았다면 링크를 길게 눌러 Safari로 열어주세요.")
         case .owner:
             return Text("초대한 사람이 일정을 추가·수정하면 내 기기에도 바로 반영돼요.")
         case .participant:
