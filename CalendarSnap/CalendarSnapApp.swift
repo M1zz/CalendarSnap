@@ -10,8 +10,8 @@ struct CalendarSnapApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
     init() {
-        // 리뷰/만족도 프롬프트 타이밍용 실행 기록
-        LeeoEngagement.shared.registerLaunch()
+        // 실행 기록(리뷰/만족도 프롬프트 타이밍) · 익명 사용 통계 · 크래시 진단 (FeedbackHub)
+        LeeoKit.bootstrap(CalendarSnapSpec.self)
     }
 
     var body: some Scene {
