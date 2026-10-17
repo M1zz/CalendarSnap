@@ -113,6 +113,7 @@ struct SettingsView: View {
                 Section {
                     // 피드백 보내기 + 리뷰 남기기 + 버전(7탭→개발자 모드→인박스). 전부 LeeoKit 제공.
                     LeeoSupportSection<CalendarSnapSpec>()
+                    NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
                 } header: {
                     Text("지원")
                 }

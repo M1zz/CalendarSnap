@@ -1,0 +1,584 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "Face ID 잠금" : {
+      "comment" : "Roadmap item: Face ID lock",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID lock"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID 잠금"
+          }
+        }
+      }
+    },
+    "Face ID나 Touch ID로 앱을 잠가 아이 일정을 지켜요." : {
+      "comment" : "Roadmap item detail: Face ID lock",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lock the app with Face ID or Touch ID to keep your kids’ schedules private."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID나 Touch ID로 앱을 잠가 아이 일정을 지켜요."
+          }
+        }
+      }
+    },
+    "Siri에게 물어 아이의 오늘 일정을 바로 확인해요." : {
+      "comment" : "Roadmap item detail: Siri and Shortcuts",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask Siri what’s on your child’s schedule today."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri에게 물어 아이의 오늘 일정을 바로 확인해요."
+          }
+        }
+      }
+    },
+    "Siri와 단축어" : {
+      "comment" : "Roadmap item: Siri and Shortcuts",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri and Shortcuts"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri와 단축어"
+          }
+        }
+      }
+    },
+    "VoiceOver가 달력과 일정을 빠짐없이, 알맞은 순서로 읽어 줘요." : {
+      "comment" : "Roadmap item detail: better VoiceOver support",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver reads the whole calendar and every event, in the right order."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver가 달력과 일정을 빠짐없이, 알맞은 순서로 읽어 줘요."
+          }
+        }
+      }
+    },
+    "VoiceOver로 더 편하게" : {
+      "comment" : "Roadmap item: better VoiceOver support",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Better VoiceOver support"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver로 더 편하게"
+          }
+        }
+      }
+    },
+    "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요." : {
+      "comment" : "Roadmap item detail: layouts for larger text",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screens rearrange neatly instead of getting cut off when you enlarge text."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
+          }
+        }
+      }
+    },
+    "내 일정 한 번에 지우기" : {
+      "comment" : "Roadmap item: delete all my data",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete all my events"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "내 일정 한 번에 지우기"
+          }
+        }
+      }
+    },
+    "다크 모드" : {
+      "comment" : "Roadmap item: dark mode",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark Mode"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다크 모드"
+          }
+        }
+      }
+    },
+    "대비를 높이거나 색을 구별하기 어려워도 아이별 일정을 알아볼 수 있어요." : {
+      "comment" : "Roadmap item detail: better colors and contrast",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tell each child’s events apart, even with Increase Contrast on or if colors are hard to distinguish."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "대비를 높이거나 색을 구별하기 어려워도 아이별 일정을 알아볼 수 있어요."
+          }
+        }
+      }
+    },
+    "더 많은 나라 말로 앱을 쓸 수 있게 해요." : {
+      "comment" : "Roadmap item detail: more languages",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the app in more languages."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "더 많은 나라 말로 앱을 쓸 수 있게 해요."
+          }
+        }
+      }
+    },
+    "더 많은 언어" : {
+      "comment" : "Roadmap item: more languages",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More languages"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "더 많은 언어"
+          }
+        }
+      }
+    },
+    "백업과 내보내기" : {
+      "comment" : "Roadmap item: backup and export",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Backup and export"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "백업과 내보내기"
+          }
+        }
+      }
+    },
+    "보기 편한 색과 대비" : {
+      "comment" : "Roadmap item: better colors and contrast",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Easier colors and contrast"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "보기 편한 색과 대비"
+          }
+        }
+      }
+    },
+    "손끝으로 느끼는 반응" : {
+      "comment" : "Roadmap item: haptic feedback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haptic feedback"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "손끝으로 느끼는 반응"
+          }
+        }
+      }
+    },
+    "쓰는 요령 알려 주기" : {
+      "comment" : "Roadmap item: in-app tips",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handy tips"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쓰는 요령 알려 주기"
+          }
+        }
+      }
+    },
+    "쓰던 일정 이어 쓰기" : {
+      "comment" : "Roadmap item: keep unsaved drafts",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick up your event where you left off"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쓰던 일정 이어 쓰기"
+          }
+        }
+      }
+    },
+    "아이 일정을 파일로 저장하고 다시 불러올 수 있어요." : {
+      "comment" : "Roadmap item detail: backup and export",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save your kids’ schedules to a file and bring them back later."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아이 일정을 파일로 저장하고 다시 불러올 수 있어요."
+          }
+        }
+      }
+    },
+    "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요." : {
+      "comment" : "Roadmap item detail: in-app tips",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gentle hints about useful features, right when you need them."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
+          }
+        }
+      }
+    },
+    "앱을 영어로도 쓸 수 있어요." : {
+      "comment" : "Roadmap item detail: English language",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the whole app in English."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱을 영어로도 쓸 수 있어요."
+          }
+        }
+      }
+    },
+    "어두운 화면에서도 달력과 일정이 또렷하게 보여요." : {
+      "comment" : "Roadmap item detail: dark mode",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The calendar and events stay crisp and readable in Dark Mode."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "어두운 화면에서도 달력과 일정이 또렷하게 보여요."
+          }
+        }
+      }
+    },
+    "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요." : {
+      "comment" : "Roadmap item detail: what's new after an update",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The first time you open the app after an update, see what’s new."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
+          }
+        }
+      }
+    },
+    "업데이트 소식" : {
+      "comment" : "Roadmap item: what's new after an update",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What’s new"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "업데이트 소식"
+          }
+        }
+      }
+    },
+    "영어 지원" : {
+      "comment" : "Roadmap item: English language",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full English support"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "영어 지원"
+          }
+        }
+      }
+    },
+    "움직임 줄이기" : {
+      "comment" : "Roadmap item: respect Reduce Motion",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduce Motion"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "움직임 줄이기"
+          }
+        }
+      }
+    },
+    "움직임 줄이기를 켜면 화면 효과가 차분해져요." : {
+      "comment" : "Roadmap item detail: respect Reduce Motion",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With Reduce Motion on, screen effects calm down."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "움직임 줄이기를 켜면 화면 효과가 차분해져요."
+          }
+        }
+      }
+    },
+    "원하면 앱 안에서 저장한 일정을 모두 지울 수 있어요." : {
+      "comment" : "Roadmap item detail: delete all my data",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erase all saved events right in the app whenever you want."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "원하면 앱 안에서 저장한 일정을 모두 지울 수 있어요."
+          }
+        }
+      }
+    },
+    "일정을 넣거나 저장했을 때 가볍게 떨려서 알려 줘요." : {
+      "comment" : "Roadmap item detail: haptic feedback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A gentle tap lets you know when an event is added or saved."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일정을 넣거나 저장했을 때 가볍게 떨려서 알려 줘요."
+          }
+        }
+      }
+    },
+    "일정을 적다가 앱이 꺼져도 쓰던 내용이 남아 있어요." : {
+      "comment" : "Roadmap item detail: keep unsaved drafts",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What you were typing stays put, even if the app closes mid-way."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일정을 적다가 앱이 꺼져도 쓰던 내용이 남아 있어요."
+          }
+        }
+      }
+    },
+    "처음 쓰는 분을 위한 안내" : {
+      "comment" : "Roadmap item: first-run guide",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A quick tour for newcomers"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "처음 쓰는 분을 위한 안내"
+          }
+        }
+      }
+    },
+    "처음 열었을 때 사진으로 일정을 넣는 법을 짧게 보여 줘요." : {
+      "comment" : "Roadmap item detail: first-run guide",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A short guide to adding events from a photo, the first time you open the app."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "처음 열었을 때 사진으로 일정을 넣는 법을 짧게 보여 줘요."
+          }
+        }
+      }
+    },
+    "큰 글씨에 맞춘 화면" : {
+      "comment" : "Roadmap item: layouts for larger text",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layouts for larger text"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "큰 글씨에 맞춘 화면"
+          }
+        }
+      }
+    },
+    "펼치는 아이폰 화면" : {
+      "comment" : "Roadmap item: foldable iPhone layout",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foldable iPhone layout"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "펼치는 아이폰 화면"
+          }
+        }
+      }
+    },
+    "펼치는 아이폰에서 달력과 일정을 두 쪽으로 나눠 봐요." : {
+      "comment" : "Roadmap item detail: foldable iPhone layout",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See the calendar and events side by side on a foldable iPhone."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "펼치는 아이폰에서 달력과 일정을 두 쪽으로 나눠 봐요."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
