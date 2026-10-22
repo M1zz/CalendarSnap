@@ -44,6 +44,12 @@ Polished the app to run more reliably.
 Политика и поддержка — в приложении.
 Приложение стало стабильнее.
 
+### 앱스토어 (Spanish, es)
+
+Lee en la app lo que te respondimos.
+Abre privacidad y soporte en la app.
+Pulimos la app para más estabilidad.
+
 ## 1.0.4
 
 ### 새로운 기능

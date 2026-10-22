@@ -15,6 +15,12 @@
             "value": "Upcoming"
           }
         },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximos"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -59,6 +65,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Snap a calendar\nto add events"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz una foto al calendario\ny añade los eventos"
           }
         },
         "ja": {
@@ -107,6 +119,12 @@
             "value": "Kids’ Schedule"
           }
         },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda de los peques"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -151,6 +169,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Shows upcoming events pulled from a nursery calendar."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muestra los próximos eventos extraídos del calendario de la guardería."
           }
         },
         "ja": {

@@ -406,3 +406,61 @@ https://m1zz.github.io/CalendarSnap/
 Ближайшие события видны прямо на экране «Домой».
 
 Распознавание текста на фото полностью происходит на вашем устройстве. Фото не отправляются на сервер.
+
+## es
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Agenda Peques: Guardería
+
+### 부제
+
+Foto del aviso, mes resuelto
+
+### 키워드
+
+calendario,recordatorios,colegio,padres,excursión,comida,familia,widget,escáner,hijos,clase,abuelos
+
+### 프로모션 텍스트
+
+Haz una foto al calendario de la guardería y todo el mes pasa a tu calendario, con un aviso la tarde anterior para preparar lo necesario. Compártelo con tu familia.
+
+### 설명
+
+Haz una foto al calendario mensual de la guardería o la escuela infantil y Agenda Peques lee los eventos y los añade a tu calendario de una vez.
+Recibe un recordatorio la tarde anterior y no se te olvidará ni la fiambrera de la excursión ni la ropa de deporte.
+
+Una foto, todo el mes
+Haz la foto o elige una de tu fototeca y se leen las fechas, las horas y los títulos. Si la foto está girada, la app encuentra la orientación correcta.
+Si la hoja está dividida por clases, solo se recogen los eventos de la clase de tu hijo o hija.
+Antes de guardar, puedes editar el título, la fecha, si es de todo el día y la nota de lo que hay que llevar, y deslizar para borrar lo que no necesites.
+
+También puedes pegar un mensaje
+Pega un mensaje de la guardería y la app encuentra las fechas y lo que hay que llevar y lo convierte en eventos. Expresiones como «mañana» o «este viernes» se convierten en fechas reales.
+
+Calendario y recordatorios
+Los eventos van a un calendario propio para cada niño, y los que ya habías añadido no se duplican.
+Elige entre recordatorios la tarde anterior, por la mañana, 1 hora antes o justo a la hora. Tus notas de lo que hay que llevar aparecen en el aviso.
+
+Más de un hijo
+Mantén separados los eventos de cada niño. La app se fija en los eventos anteriores para adivinar a qué niño corresponde un aviso nuevo.
+
+Compartido en familia
+Envía un enlace de invitación por mensaje y tu pareja, los abuelos o la persona que cuide a tus hijos podrán ver y editar los mismos eventos. Los cambios de un lado se reflejan en el otro.
+
+Widget
+Consulta los próximos eventos desde la pantalla de inicio con el widget.
+
+El reconocimiento del texto de las fotos se hace por completo en tu dispositivo. Tus fotos nunca se envían a ningún servidor.

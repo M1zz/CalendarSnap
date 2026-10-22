@@ -15,6 +15,12 @@
             "value": "Kids Schedule"
           }
         },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Peques"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -59,6 +65,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendar access is needed to add the extracted nursery events to your calendar and check for duplicates."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se necesita acceso al calendario para añadir los eventos de la guardería y comprobar si están duplicados."
           }
         },
         "ja": {
@@ -107,6 +119,12 @@
             "value": "Calendar access is needed to add the extracted nursery events to your calendar."
           }
         },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se necesita acceso al calendario para añadir los eventos de la guardería."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -151,6 +169,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "The camera is used to take photos of calendars and extract events."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La cámara se usa para hacer fotos de calendarios y extraer los eventos."
           }
         },
         "ja": {
