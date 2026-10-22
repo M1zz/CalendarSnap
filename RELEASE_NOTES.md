@@ -98,6 +98,12 @@ Læs svar på din feedback i appen.
 Åbn privatliv og support i appen.
 Appen kører nu endnu mere stabilt.
 
+### 앱스토어 (Greek, el)
+
+Διάβασε τις απαντήσεις στην εφαρμογή.
+Απόρρητο και υποστήριξη στην εφαρμογή.
+Βελτιώσαμε τη σταθερότητα της εφαρμογής.
+
 ## 1.0.4
 
 ### 새로운 기능

@@ -21,6 +21,12 @@
             "value": "Demnächst"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επερχόμενα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -119,6 +125,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalender fotografieren,\nTermine eintragen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φωτογραφίστε ένα ημερολόγιο\nγια να προσθέσετε συμβάντα"
           }
         },
         "en": {
@@ -221,6 +233,12 @@
             "value": "Termine der Kinder"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόγραμμα παιδιών"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -319,6 +337,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zeigt anstehende Termine, die aus einem Kita-Kalender ausgelesen wurden."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφανίζει τα επερχόμενα συμβάντα που εξήχθησαν από ένα ημερολόγιο παιδικού σταθμού."
           }
         },
         "en": {

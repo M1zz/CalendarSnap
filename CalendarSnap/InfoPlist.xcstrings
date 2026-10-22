@@ -21,6 +21,12 @@
             "value": "Kita-Planer"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόγραμμα Παιδιού"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -119,6 +125,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Der Kalenderzugriff wird benötigt, um die ausgelesenen Kita-Termine einzutragen und Duplikate zu erkennen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Απαιτείται πρόσβαση στο ημερολόγιο για να προστεθούν τα συμβάντα του παιδικού σταθμού που εξήχθησαν και να ελεγχθούν τα διπλότυπα."
           }
         },
         "en": {
@@ -221,6 +233,12 @@
             "value": "Der Kalenderzugriff wird benötigt, um die ausgelesenen Kita-Termine einzutragen."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Απαιτείται πρόσβαση στο ημερολόγιο για να προστεθούν τα συμβάντα του παιδικού σταθμού που εξήχθησαν."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -319,6 +337,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Die Kamera wird verwendet, um Kalender zu fotografieren und Termine auszulesen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η κάμερα χρησιμοποιείται για να φωτογραφίζετε ημερολόγια και να εξάγονται συμβάντα."
           }
         },
         "en": {

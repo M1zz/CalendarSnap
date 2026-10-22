@@ -45,6 +45,24 @@
             }
           }
         },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (παραλείφθηκε %lld ήδη αποθηκευμένο)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (παραλείφθηκαν %lld ήδη αποθηκευμένα)"
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -241,6 +259,24 @@
             }
           }
         },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (παραλείφθηκε %lld διπλότυπο)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (παραλείφθηκαν %lld διπλότυπα)"
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -413,6 +449,12 @@
             "value": " · Auch im Kalender eingetragen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Προστίθεται και στο Ημερολόγιο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -508,6 +550,12 @@
           }
         },
         "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "el": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -613,6 +661,12 @@
             "value": "Geteilt mit %@"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κοινή χρήση με %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -708,6 +762,12 @@
           }
         },
         "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "el": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -811,6 +871,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gruppe von %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τμήμα: %@"
           }
         },
         "en": {
@@ -932,6 +998,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Auch die %2$lld Termine von %1$@ und das Profilfoto werden gelöscht. Das lässt sich nicht rückgängig machen."
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Θα διαγραφούν επίσης το %2$lld συμβάν του/της %1$@ και η φωτογραφία προφίλ. Δεν είναι δυνατή η αναίρεση."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Θα διαγραφούν επίσης τα %2$lld συμβάντα του/της %1$@ και η φωτογραφία προφίλ. Δεν είναι δυνατή η αναίρεση."
                 }
               }
             }
@@ -1109,6 +1193,12 @@
             "value": "Mit den Terminen von %@ verbunden. Ihr könnt sie jetzt gemeinsam verwalten."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνδέθηκε με τα συμβάντα του/της %@. Τώρα μπορείτε να τα διαχειρίζεστε μαζί και από τις δύο πλευρές."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -1207,6 +1297,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Das Profil von %@ wird gelöscht. Das lässt sich nicht rückgängig machen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το προφίλ του/της %@ θα διαγραφεί. Δεν είναι δυνατή η αναίρεση."
           }
         },
         "en": {
@@ -1309,6 +1405,12 @@
             "value": "„%@“ löschen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διαγραφή «%@»"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -1407,6 +1509,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Beginnt in 1 Stunde."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ξεκινά σε 1 ώρα."
           }
         },
         "en": {
@@ -1509,6 +1617,12 @@
             "value": "1 Stunde vorher"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 ώρα πριν"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -1607,6 +1721,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Einmalig"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μία φορά"
           }
         },
         "en": {
@@ -1710,6 +1830,12 @@
             "value": "Face-ID-Sperre"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κλείδωμα με Face ID"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -1809,6 +1935,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sperre die App mit Face ID oder Touch ID, damit die Termine deiner Kinder privat bleiben."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κλειδώστε την εφαρμογή με Face ID ή Touch ID για να μένει το πρόγραμμα των παιδιών σας ιδιωτικό."
           }
         },
         "en": {
@@ -1912,6 +2044,12 @@
             "value": "Frag Siri, was heute bei deinem Kind ansteht."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ρωτήστε τη Siri τι έχει σήμερα το παιδί σας στο πρόγραμμά του."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -2011,6 +2149,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri und Kurzbefehle"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri και Συντομεύσεις"
           }
         },
         "en": {
@@ -2114,6 +2258,12 @@
             "value": "VoiceOver liest den ganzen Kalender und jeden Termin in der richtigen Reihenfolge vor."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το VoiceOver διαβάζει ολόκληρο το ημερολόγιο και κάθε συμβάν, με τη σωστή σειρά."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -2213,6 +2363,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bessere VoiceOver-Unterstützung"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Καλύτερη υποστήριξη VoiceOver"
           }
         },
         "en": {
@@ -2315,6 +2471,12 @@
             "value": "Der iCloud-Status konnte nicht geprüft werden. Versuche es gleich noch einmal."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατός ο έλεγχος της κατάστασης του iCloud. Δοκιμάστε ξανά σε λίγο."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -2413,6 +2575,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nicht genug iCloud-Speicher, um die Termine hochzuladen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν υπάρχει αρκετός χώρος στο iCloud για να ανεβούν τα συμβάντα."
           }
         },
         "en": {
@@ -2515,6 +2683,12 @@
             "value": "Melde dich bei iCloud an, um die Familienfreigabe zu nutzen."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνδεθείτε στο iCloud για να χρησιμοποιήσετε την οικογενειακή κοινή χρήση."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -2613,6 +2787,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Melde dich bei iCloud an, um die Familienfreigabe zu nutzen. Anmelden unter Einstellungen > Apple-Account."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνδεθείτε στο iCloud για να χρησιμοποιήσετε την οικογενειακή κοινή χρήση. Συνδεθείτε από τις Ρυθμίσεις > λογαριασμός Apple."
           }
         },
         "en": {
@@ -2715,6 +2895,12 @@
             "value": "Melde dich bei iCloud an, um Termine mit deiner Familie zu teilen.\nAnmelden unter Einstellungen > Apple-Account."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνδεθείτε στο iCloud για να μοιράζεστε συμβάντα με την οικογένειά σας.\nΣυνδεθείτε από τις Ρυθμίσεις > λογαριασμός Apple."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -2813,6 +2999,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Import abgeschlossen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η εισαγωγή ολοκληρώθηκε"
           }
         },
         "en": {
@@ -2915,6 +3107,12 @@
             "value": "Familie"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οικογένεια"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -3013,6 +3211,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Familienfreigabe"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οικογενειακή κοινή χρήση"
           }
         },
         "en": {
@@ -3115,6 +3319,12 @@
             "value": "Die Familienfreigabe ist beendet. Bereits erhaltene Termine bleiben erhalten."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η οικογενειακή κοινή χρήση τερματίστηκε. Τα συμβάντα που έχετε ήδη λάβει παραμένουν."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -3213,6 +3423,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Die Familienfreigabe wurde beendet. Die bisherigen Termine bleiben erhalten."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η οικογενειακή κοινή χρήση διακόπηκε. Τα υπάρχοντα συμβάντα παραμένουν."
           }
         },
         "en": {
@@ -3315,6 +3531,12 @@
             "value": "Familie einladen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόσκληση οικογένειας"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -3413,6 +3635,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Familie zum Mitsehen einladen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόσκληση οικογένειας"
           }
         },
         "en": {
@@ -3515,6 +3743,12 @@
             "value": "Mit den Terminen einer Familie verbunden"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνδεδεμένο με τα συμβάντα μιας οικογένειας"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -3613,6 +3847,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Freigabe verlassen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποχώρηση από την κοινή χρήση"
           }
         },
         "en": {
@@ -3715,6 +3955,12 @@
             "value": "Die Freigabeinformationen wurden zurückgesetzt. Bitte lade erneut ein."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι πληροφορίες κοινής χρήσης επαναφέρθηκαν. Στείλτε ξανά πρόσκληση."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -3813,6 +4059,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Teilen beenden"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διακοπή κοινής χρήσης"
           }
         },
         "en": {
@@ -3915,6 +4167,12 @@
             "value": "Du hast die Freigabe verlassen. Bereits erhaltene Termine bleiben erhalten."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποχωρήσατε από την κοινή χρήση. Τα συμβάντα που έχετε ήδη λάβει παραμένουν."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -4015,6 +4273,12 @@
             "value": "Es gibt keine Termine zum Teilen."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν υπάρχουν συμβάντα για κοινοποίηση."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -4113,6 +4377,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Alle"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όλα"
           }
         },
         "en": {
@@ -4216,6 +4486,12 @@
             "value": "Bei größerer Schrift ordnen sich die Bildschirme sauber neu an, statt abgeschnitten zu werden."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι οθόνες αναδιατάσσονται όμορφα αντί να κόβονται όταν μεγεθύνετε το κείμενο."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -4314,6 +4590,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wähle ein Datum, um die Termine zu sehen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επιλέξτε ημερομηνία για να δείτε τα συμβάντα της"
           }
         },
         "en": {
@@ -4417,6 +4699,12 @@
             "value": "Alle meine Termine löschen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διαγραφή όλων των συμβάντων μου"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -4515,6 +4803,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Du hast bereits eine eigene Familienfreigabe. Tippe zuerst auf „Teilen beenden“ und nimm dann die Einladung an."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Έχετε ήδη δική σας οικογενειακή κοινή χρήση. Πατήστε πρώτα «Διακοπή κοινής χρήσης» και μετά αποδεχτείτε την πρόσκληση."
           }
         },
         "en": {
@@ -4617,6 +4911,12 @@
             "value": "Morgen ist es so weit. Bereite alles rechtzeitig vor."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Είναι αύριο. Ετοιμάστε τα πράγματα από νωρίς."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -4715,6 +5015,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Für wen ist der Termin?"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τίνος είναι το συμβάν;"
           }
         },
         "en": {
@@ -4817,6 +5123,12 @@
             "value": "Demnächst"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επερχόμενα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -4915,6 +5227,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Demnächst"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επερχόμενα"
           }
         },
         "en": {
@@ -5018,6 +5336,12 @@
             "value": "Dunkelmodus"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σκούρος τρόπος λειτουργίας"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -5116,6 +5440,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalender"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ημερολόγιο"
           }
         },
         "en": {
@@ -5218,6 +5548,12 @@
             "value": "Kalender fotografieren,\nTermine eintragen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φωτογραφίστε ένα ημερολόγιο\nγια να προσθέσετε συμβάντα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -5316,6 +5652,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Am Morgen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το πρωί της ημέρας"
           }
         },
         "en": {
@@ -5419,6 +5761,12 @@
             "value": "Erkenne die Termine jedes Kindes auch bei aktiviertem „Kontrast erhöhen“ oder wenn Farben schwer zu unterscheiden sind."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ξεχωρίστε τα συμβάντα κάθε παιδιού ακόμη και με ενεργή την Αύξηση αντίθεσης ή αν δυσκολεύεστε να ξεχωρίσετε χρώματα."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -5518,6 +5866,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nutze die App in weiteren Sprachen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χρησιμοποιήστε την εφαρμογή σε περισσότερες γλώσσες."
           }
         },
         "en": {
@@ -5621,6 +5975,12 @@
             "value": "Weitere Sprachen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Περισσότερες γλώσσες"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -5719,6 +6079,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tippe auf den Kreis, um ein Profilfoto hinzuzufügen. Wenn du eine Gruppe angibst, werden Termine, die nur für andere Gruppen gelten (z. B. Ausflüge), automatisch aus den Aushängen herausgefiltert. Wechselt die Gruppe im neuen Kita-Jahr, ändere sie einfach hier."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πατήστε τον κύκλο για να προσθέσετε φωτογραφία προφίλ. Αν εισαγάγετε τμήμα, τα συμβάντα που αφορούν μόνο άλλα τμήματα (π.χ. εκδρομές) φιλτράρονται αυτόματα από τις ανακοινώσεις. Όταν αλλάξει το τμήμα τη νέα σχολική χρονιά, διορθώστε το απλώς εδώ."
           }
         },
         "en": {
@@ -5821,6 +6187,12 @@
             "value": "Die Synchronisierung ist fehlgeschlagen. Versuche es gleich noch einmal."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ο συγχρονισμός απέτυχε. Δοκιμάστε ξανά σε λίγο."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -5919,6 +6291,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zuletzt synchronisiert: %@ · Wird beim Öffnen der App und bei Terminänderungen automatisch synchronisiert."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τελευταίος συγχρονισμός: %@ · Γίνεται αυτόματα όταν ανοίγετε την εφαρμογή και όταν αλλάζουν συμβάντα."
           }
         },
         "en": {
@@ -6021,6 +6399,12 @@
             "value": "Aus Nachricht hinzufügen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη από μήνυμα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -6119,6 +6503,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gruppenname (z. B. Sonnenblumen)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όνομα τμήματος (π.χ. Ηλιοτρόπια)"
           }
         },
         "en": {
@@ -6221,6 +6611,12 @@
             "value": "Gruppe eingeben"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εισαγωγή τμήματος"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -6319,6 +6715,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wiederholt"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επαναλαμβανόμενα"
           }
         },
         "en": {
@@ -6421,6 +6823,12 @@
             "value": "Gib eine Gruppe an, um Termine, die nur für andere Gruppen gelten, automatisch herauszufiltern."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εισαγάγετε τμήμα για να φιλτράρονται αυτόματα τα συμβάντα που αφορούν μόνο άλλα τμήματα."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -6521,6 +6929,12 @@
             "value": "Gruppe hinzufügen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη τμήματος"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -6619,6 +7033,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mit Partner und Großeltern teilen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μοιραστείτε με το/τη σύντροφο και τους παππούδες"
           }
         },
         "en": {
@@ -6722,6 +7142,12 @@
             "value": "Backup und Export"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αντίγραφο ασφαλείας και εξαγωγή"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -6820,6 +7246,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nur ansehen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μόνο προβολή"
           }
         },
         "en": {
@@ -6921,6 +7353,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bessere Farben und Kontraste"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πιο άνετα χρώματα και αντίθεση"
           }
         },
         "en": {
@@ -7042,6 +7480,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "%lld Fotos – zum Durchblättern wischen, zum Vergrößern tippen."
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld φωτογραφία – πατήστε την για μεγέθυνση."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld φωτογραφίες – σύρετε για να τις δείτε, πατήστε για μεγέθυνση."
                 }
               }
             }
@@ -7219,6 +7675,12 @@
             "value": "Im Foto wurde kein Text gefunden."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν βρέθηκε κείμενο στη φωτογραφία."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -7319,6 +7781,12 @@
             "value": "Tippe auf das Foto, um es zu vergrößern."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πατήστε τη φωτογραφία για να τη δείτε μεγαλύτερη."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -7417,6 +7885,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Löschen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διαγραφή"
           }
         },
         "en": {
@@ -7520,6 +7994,12 @@
             "value": "Haptisches Feedback"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Απτική ανάδραση"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -7618,6 +8098,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ausstehend"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σε αναμονή"
           }
         },
         "en": {
@@ -7720,6 +8206,12 @@
             "value": "Scannen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σάρωση"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -7818,6 +8310,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gilt nur für Termine mit Uhrzeit"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ισχύει μόνο για συμβάντα με συγκεκριμένη ώρα"
           }
         },
         "en": {
@@ -7921,6 +8419,12 @@
             "value": "Nützliche Tipps"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χρήσιμες συμβουλές"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -8020,6 +8524,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termin dort fortsetzen, wo du aufgehört hast"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνεχίστε το συμβάν από εκεί που μείνατε"
           }
         },
         "en": {
@@ -8122,6 +8632,12 @@
             "value": "Kind"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παιδί"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -8220,6 +8736,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kind löschen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διαγραφή παιδιού"
           }
         },
         "en": {
@@ -8322,6 +8844,12 @@
             "value": "Name des Kindes (z. B. Emil)"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όνομα παιδιού (π.χ. Νίκος)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -8420,6 +8948,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termine der Kinder"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόγραμμα παιδιών"
           }
         },
         "en": {
@@ -8523,6 +9057,12 @@
             "value": "Speichere die Termine deiner Kinder in einer Datei und hole sie später zurück."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποθηκεύστε το πρόγραμμα των παιδιών σας σε αρχείο και επαναφέρετέ το αργότερα."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -8621,6 +9161,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kind hinzufügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη παιδιού"
           }
         },
         "en": {
@@ -8723,6 +9269,12 @@
             "value": "Lege ein Kind an, damit Termine pro Kind geordnet werden und der Name in den Erinnerungen erscheint."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθέστε ένα παιδί για να οργανώνονται τα συμβάντα ανά παιδί και να εμφανίζεται το όνομά του στις υπενθυμίσεις."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -8821,6 +9373,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lege ein Kind an, damit Termine pro Kind geordnet werden und der Name in den Erinnerungen erscheint."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθέστε ένα παιδί για να οργανώνονται τα συμβάντα ανά παιδί και να εμφανίζεται το όνομά του στις υπενθυμίσεις."
           }
         },
         "en": {
@@ -8923,6 +9481,12 @@
             "value": "Kita-Planer"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόγραμμα Παιδιού"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -9021,6 +9585,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kita-Planer-Daten"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεδομένα Πρόγραμμα Παιδιού"
           }
         },
         "en": {
@@ -9123,6 +9693,12 @@
             "value": "An Kita-Planer-Nutzer senden"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποστολή σε χρήστες του Πρόγραμμα Παιδιού"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -9221,6 +9797,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kita-Planer-Kalender"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ημερολόγιο Πρόγραμμα Παιδιού"
           }
         },
         "en": {
@@ -9323,6 +9905,12 @@
             "value": "Kita-Planer – geteilt"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόγραμμα Παιδιού – κοινόχρηστο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -9421,6 +10009,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Noch nicht synchronisiert."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν έχει γίνει ακόμη συγχρονισμός."
           }
         },
         "en": {
@@ -9523,6 +10117,12 @@
             "value": "Noch niemand ist beigetreten"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν έχει συμμετάσχει κανείς ακόμη"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -9623,6 +10223,12 @@
             "value": "Noch keine Einladung gesendet"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν έχει σταλεί ακόμη πρόσκληση"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -9721,6 +10327,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hinweis"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ειδοποίηση"
           }
         },
         "en": {
@@ -9842,6 +10454,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "%lld Erinnerungen geplant"
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Προγραμματίστηκε %lld υπενθύμιση"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Προγραμματίστηκαν %lld υπενθυμίσεις"
                 }
               }
             }
@@ -10019,6 +10649,12 @@
             "value": "Mitteilungen müssen erlaubt sein (in den Einstellungen aktivieren)"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χρειάζεται άδεια για ειδοποιήσεις (ενεργοποιήστε την στις Ρυθμίσεις)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -10117,6 +10753,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Erinnerungseinstellungen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ρυθμίσεις υπενθυμίσεων"
           }
         },
         "en": {
@@ -10219,6 +10861,12 @@
             "value": "Erinnern"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Υπενθύμιση"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -10319,6 +10967,12 @@
             "value": "Alle Erinnerungszeitpunkte sind ausgeschaltet"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όλες οι ώρες υπενθύμισης είναι απενεργοποιημένες"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -10417,6 +11071,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Keine Erinnerungen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χωρίς υπενθυμίσεις"
           }
         },
         "en": {
@@ -10520,6 +11180,12 @@
             "value": "Dezente Hinweise auf nützliche Funktionen – genau dann, wenn du sie brauchst."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διακριτικές υποδείξεις για χρήσιμες λειτουργίες, ακριβώς όταν τις χρειάζεστε."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -10618,6 +11284,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Auch zum Apple Kalender hinzufügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη και στο Ημερολόγιο της Apple"
           }
         },
         "en": {
@@ -10721,6 +11393,12 @@
             "value": "Nutze die ganze App auch auf Englisch."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χρησιμοποιήστε ολόκληρη την εφαρμογή και στα Αγγλικά."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -10820,6 +11498,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalender und Termine bleiben im Dunkelmodus klar und gut lesbar."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το ημερολόγιο και τα συμβάντα παραμένουν καθαρά και ευανάγνωστα στον σκούρο τρόπο λειτουργίας."
           }
         },
         "en": {
@@ -10922,6 +11606,12 @@
             "value": "Zeigt anstehende Termine, die aus einem Kita-Kalender ausgelesen wurden."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφανίζει τα επερχόμενα συμβάντα που εξήχθησαν από ένα ημερολόγιο παιδικού σταθμού."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -11020,6 +11710,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fotografiere einen Kita-Aushang oder füge eine Nachricht ein"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φωτογραφίστε μια ανακοίνωση του παιδικού σταθμού ή επικολλήστε ένα μήνυμα"
           }
         },
         "en": {
@@ -11123,6 +11819,12 @@
             "value": "Beim ersten Öffnen nach einem Update siehst du, was neu ist."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Την πρώτη φορά που ανοίγετε την εφαρμογή μετά από μια ενημέρωση, δείτε τι νέο υπάρχει."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -11224,6 +11926,12 @@
             "value": "Neuigkeiten"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τι νέο υπάρχει"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -11322,6 +12030,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Füge hier eine Nachricht von der Kita ein.\nz. B. Morgen ist Regen angesagt, bitte Gummistiefel, Regenjacke und Schirm mit Namen versehen."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επικολλήστε εδώ ένα μήνυμα από τον παιδικό σταθμό.\nΠ.χ. Αύριο αναμένεται βροχή, γράψτε το όνομα στις γαλότσες, το αδιάβροχο και την ομπρέλα."
           }
         },
         "en": {
@@ -11425,6 +12139,12 @@
             "value": "Vollständige Unterstützung für Englisch"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πλήρης υποστήριξη Αγγλικών"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -11523,6 +12243,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "z. B. Brotdose, Trinkflasche"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Π.χ. κολατσιό, παγουράκι"
           }
         },
         "en": {
@@ -11625,6 +12351,12 @@
             "value": "Heute"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σήμερα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -11723,6 +12455,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Heute ist es so weit."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Είναι σήμερα."
           }
         },
         "en": {
@@ -11825,6 +12563,12 @@
             "value": "Fehler"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σφάλμα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -11923,6 +12667,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fertig"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τέλος"
           }
         },
         "en": {
@@ -12026,6 +12776,12 @@
             "value": "Bewegung reduzieren"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μείωση κίνησης"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -12125,6 +12881,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mit „Bewegung reduzieren“ werden Bildschirmeffekte ruhiger."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Με ενεργή τη Μείωση κίνησης, τα εφέ της οθόνης γίνονται πιο ήρεμα."
           }
         },
         "en": {
@@ -12228,6 +12990,12 @@
             "value": "Lösche alle gespeicherten Termine jederzeit direkt in der App."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διαγράψτε όλα τα αποθηκευμένα συμβάντα απευθείας στην εφαρμογή όποτε θέλετε."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -12326,6 +13094,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zur Monatsansicht erweitern"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ανάπτυξη σε μηνιαία προβολή"
           }
         },
         "en": {
@@ -12428,6 +13202,12 @@
             "value": "Du erhältst keine Termine dieser Familie mehr. Bereits erhaltene Termine bleiben erhalten."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν θα λαμβάνετε πλέον τα συμβάντα αυτής της οικογένειας. Τα συμβάντα που έχετε ήδη λάβει παραμένουν."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -12526,6 +13306,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Du siehst die Termine dieser Familie gemeinsam. Termine, die du hinzufügst oder änderst, werden ebenfalls weitergegeben."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βλέπετε μαζί τα συμβάντα αυτής της οικογένειας. Τα συμβάντα που προσθέτετε ή αλλάζετε μεταφέρονται και σε αυτούς."
           }
         },
         "en": {
@@ -12628,6 +13414,12 @@
             "value": "Die Nutzung von iCloud ist auf diesem Gerät eingeschränkt."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η χρήση του iCloud περιορίζεται σε αυτή τη συσκευή."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -12726,6 +13518,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termin an diesem Tag hinzufügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη συμβάντος αυτή την ημέρα"
           }
         },
         "en": {
@@ -12828,6 +13626,12 @@
             "value": "An diesem Tag gibt es keine Termine"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν υπάρχουν συμβάντα αυτή την ημέρα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -12926,6 +13730,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "In dieser Nachricht wurden keine Termine mit Datum gefunden.\nPrüfe, ob sie ein Datum (z. B. 12. Juli) oder Wörter wie „morgen“ oder „Freitag“ enthält."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν βρέθηκαν συμβάντα με ημερομηνία σε αυτό το μήνυμα.\nΕλέγξτε ότι περιέχει ημερομηνία (π.χ. 12 Ιουλίου) ή λέξεις όπως «αύριο» ή «Παρασκευή»."
           }
         },
         "en": {
@@ -13028,6 +13838,12 @@
             "value": "Dieses Kind löschen?"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Να διαγραφεί αυτό το παιδί;"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -13126,6 +13942,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Name (z. B. Emil)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όνομα (π.χ. Νίκος)"
           }
         },
         "en": {
@@ -13228,6 +14050,12 @@
             "value": "Du bist bereits Teil einer anderen Familienfreigabe. Tippe zuerst auf „Freigabe verlassen“ und sende dann eine Einladung."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμμετέχετε ήδη στην κοινή χρήση άλλης οικογένειας. Πατήστε πρώτα «Αποχώρηση από την κοινή χρήση» και μετά στείλτε πρόσκληση."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -13326,6 +14154,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Das Bild konnte nicht verarbeitet werden."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατή η επεξεργασία της εικόνας."
           }
         },
         "en": {
@@ -13447,6 +14281,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "%lld Termine auf diesem Foto gefunden"
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Βρέθηκε %lld συμβάν σε αυτή τη φωτογραφία"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Βρέθηκαν %lld συμβάντα σε αυτή τη φωτογραφία"
                 }
               }
             }
@@ -13624,6 +14476,12 @@
             "value": "Datum und Uhrzeit"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ημερομηνία και ώρα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -13722,6 +14580,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termin"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμβάν"
           }
         },
         "en": {
@@ -13843,6 +14707,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "%lld Termine sichern + Erinnerungen erhalten"
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Αποθήκευση %lld συμβάντος + υπενθυμίσεις"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Αποθήκευση %lld συμβάντων + υπενθυμίσεις"
                 }
               }
             }
@@ -14044,6 +14926,24 @@
             }
           }
         },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Εισήχθη %lld συμβάν."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Εισήχθησαν %lld συμβάντα."
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -14216,6 +15116,12 @@
             "value": "Die Termindaten konnten nicht importiert werden.\nPrüfe, ob die Datei aus der App „Kita-Planer“ exportiert wurde."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατή η εισαγωγή των δεδομένων.\nΕλέγξτε ότι το αρχείο εξήχθη από την εφαρμογή Πρόγραμμα Παιδιού."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -14314,6 +15220,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zur Terminzeit"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Την ώρα του συμβάντος"
           }
         },
         "en": {
@@ -14416,6 +15328,12 @@
             "value": "Terminart"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τύπος συμβάντος"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -14514,6 +15432,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termin manuell hinzufügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χειροκίνητη προσθήκη συμβάντος"
           }
         },
         "en": {
@@ -14616,6 +15540,12 @@
             "value": "Termin hinzufügen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη συμβάντος"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -14714,6 +15644,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Termine auslesen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εξαγωγή συμβάντων"
           }
         },
         "en": {
@@ -14816,6 +15752,12 @@
             "value": "Nach den Terminen zu urteilen, gehört das zu %@. Falls nicht, ändere das oben."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Από τα συμβάντα, φαίνεται ότι είναι το έγγραφο του/της %@. Αν όχι, αλλάξτε το παραπάνω."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -14914,6 +15856,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Es wurde kein Text gefunden, der nach Terminen aussieht.\nMach das Foto bitte noch einmal, sodass die Schrift gut lesbar ist."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν βρέθηκε κείμενο που να μοιάζει με συμβάντα.\nΤραβήξτε ξανά τη φωτογραφία ώστε τα γράμματα να είναι καθαρά."
           }
         },
         "en": {
@@ -15017,6 +15965,12 @@
             "value": "Ein sanftes Tippen zeigt dir, wenn ein Termin hinzugefügt oder gesichert wurde."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ένα ελαφρύ χτύπημα σάς ειδοποιεί όταν προστίθεται ή αποθηκεύεται ένα συμβάν."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -15116,6 +16070,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Was du gerade eingibst, bleibt erhalten – auch wenn die App zwischendurch schließt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ό,τι πληκτρολογούσατε μένει στη θέση του, ακόμη κι αν η εφαρμογή κλείσει στη μέση."
           }
         },
         "en": {
@@ -15218,6 +16178,12 @@
             "value": "Es wurde kein Kalenderaccount gefunden, in den Termine eingetragen werden können."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν βρέθηκε λογαριασμός ημερολογίου στον οποίο να μπορούν να προστεθούν συμβάντα."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -15316,6 +16282,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sichern"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποθήκευση"
           }
         },
         "en": {
@@ -15418,6 +16390,12 @@
             "value": "Gesichert! Sieh es im Kalender und im Widget"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποθηκεύτηκε! Δείτε το στο ημερολόγιο και στο γραφικό στοιχείο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -15516,6 +16494,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Am Vorabend (zum Packen)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το προηγούμενο βράδυ (για να ετοιμάσετε τα πράγματα)"
           }
         },
         "en": {
@@ -15618,6 +16602,12 @@
             "value": "Alle"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όλα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -15716,6 +16706,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Titel"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τίτλος"
           }
         },
         "en": {
@@ -15818,6 +16814,12 @@
             "value": "Titel (z. B. Ausflug, Mitbringtag)"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τίτλος (π.χ. Εκδρομή, Ημέρα που φέρνουμε πράγματα)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -15916,6 +16918,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Prüfe Titel, Uhrzeiten und Mitbringsel. Tippe auf den Kreis, um das Kind zu wechseln, oder wische, um nicht benötigte Termine zu löschen. Nach dem Sichern geht es zum Kalender."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ελέγξτε τους τίτλους, τις ώρες και τι πρέπει να φέρετε. Πατήστε τον κύκλο για να αλλάξετε παιδί ή σύρετε για να διαγράψετε συμβάντα που δεν χρειάζεστε. Μετά την αποθήκευση μεταφέρεστε στο ημερολόγιο."
           }
         },
         "en": {
@@ -16018,6 +17026,12 @@
             "value": "Entfernt"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αφαιρέθηκε"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -16116,6 +17130,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ganztägig"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ολοήμερο"
           }
         },
         "en": {
@@ -16218,6 +17238,12 @@
             "value": "Für ganztägige Termine (z. B. Ausflüge) gibt es nur die Erinnerungen „am Vorabend“ und „am Morgen“."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τα ολοήμερα συμβάντα (π.χ. εκδρομές) λαμβάνουν μόνο τις υπενθυμίσεις «το προηγούμενο βράδυ» και «το πρωί της ημέρας»."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -16316,6 +17342,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zur Wochenansicht einklappen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σύμπτυξη σε εβδομαδιαία προβολή"
           }
         },
         "en": {
@@ -16418,6 +17450,12 @@
             "value": "Mitbringen / Notizen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τι να φέρω / σημειώσεις"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -16516,6 +17554,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mitbringen / Notizen (z. B. Brotdose)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τι να φέρω / σημειώσεις (π.χ. κολατσιό)"
           }
         },
         "en": {
@@ -16618,6 +17662,12 @@
             "value": "Jetzt synchronisieren"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συγχρονισμός τώρα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -16716,6 +17766,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Es geht jetzt los."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ξεκινά τώρα."
           }
         },
         "en": {
@@ -16818,6 +17874,12 @@
             "value": "Löschen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εκκαθάριση"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -16916,6 +17978,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Support"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Υποστήριξη"
           }
         },
         "en": {
@@ -17018,6 +18086,12 @@
             "value": "Manuell hinzugefügt"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προστέθηκε χειροκίνητα"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -17116,6 +18190,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Beigetreten"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συμμετέχετε"
           }
         },
         "en": {
@@ -17218,6 +18298,12 @@
             "value": "Zum Entfernen von Personen oder Ändern von Rechten tippe unten auf „Personen verwalten“."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Για να αφαιρέσετε κάποιον ή να αλλάξετε δικαιώματα, πατήστε «Διαχείριση ατόμων» παρακάτω."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -17316,6 +18402,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wird verarbeitet …"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επεξεργασία…"
           }
         },
         "en": {
@@ -17419,6 +18511,12 @@
             "value": "Eine kurze Einführung für Neulinge"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μια σύντομη ξενάγηση για όσους ξεκινούν"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -17518,6 +18616,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eine kurze Anleitung, wie du beim ersten Öffnen Termine per Foto hinzufügst."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ένας σύντομος οδηγός για την προσθήκη συμβάντων από φωτογραφία, την πρώτη φορά που ανοίγετε την εφαρμογή."
           }
         },
         "en": {
@@ -17620,6 +18724,12 @@
             "value": "Einladung senden · Personen verwalten"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποστολή πρόσκλησης · Διαχείριση ατόμων"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -17718,6 +18828,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Der Einladungslink konnte nicht erstellt werden. Versuche es gleich noch einmal."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατή η δημιουργία του συνδέσμου πρόσκλησης. Δοκιμάστε ξανά σε λίγο."
           }
         },
         "en": {
@@ -17820,6 +18936,12 @@
             "value": "Sende einen Einladungslink, dann können Partner oder Großeltern dieselben Termine sehen und bearbeiten. Eine Änderung auf einer Seite wird automatisch auf beiden aktualisiert."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Στείλτε έναν σύνδεσμο πρόσκλησης και ο/η σύντροφος ή οι παππούδες θα βλέπουν και θα επεξεργάζονται τα ίδια συμβάντα. Μια αλλαγή από τη μία πλευρά ενημερώνεται αυτόματα και στις δύο."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -17918,6 +19040,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Der Einladungslink konnte nicht gesendet werden.\n%@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατή η αποστολή του συνδέσμου πρόσκλησης.\n%@"
           }
         },
         "en": {
@@ -18020,6 +19148,12 @@
             "value": "Sende einen Einladungslink per Nachricht, dann können sie ihn in der App öffnen und sofort mitmachen. Danach werden Termine, die auf einer Seite hinzugefügt oder geändert werden, automatisch auf beiden aktualisiert."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Στείλτε έναν σύνδεσμο πρόσκλησης με μήνυμα και θα τον ανοίξουν στην εφαρμογή και θα συμμετάσχουν αμέσως. Έπειτα, τα συμβάντα που προστίθενται ή αλλάζουν από τη μία πλευρά ενημερώνονται αυτόματα και στις δύο."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -18118,6 +19252,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eingeladene können ebenfalls Termine hinzufügen und bearbeiten. Profilfotos der Kinder werden nicht geteilt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όσοι προσκληθούν μπορούν επίσης να προσθέτουν και να επεξεργάζονται συμβάντα. Οι φωτογραφίες προφίλ των παιδιών δεν κοινοποιούνται."
           }
         },
         "en": {
@@ -18220,6 +19360,12 @@
             "value": "Eingeladenes Familienmitglied"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσκεκλημένο μέλος οικογένειας"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -18318,6 +19464,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Geteilt mit den eingeladenen Personen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κοινή χρήση με τα άτομα που προσκαλέσατε"
           }
         },
         "en": {
@@ -18420,6 +19572,12 @@
             "value": "Die eingeladenen Personen können deine Termine nicht mehr sehen. Die bisherigen Termine bleiben auf beiden Geräten erhalten."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όσοι έχετε προσκαλέσει δεν θα βλέπουν πλέον τα συμβάντα σας. Τα υπάρχοντα συμβάντα παραμένουν και στις δύο συσκευές."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -18520,6 +19678,12 @@
             "value": "Hinzufügen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -18618,6 +19782,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Abbrechen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ακύρωση"
           }
         },
         "en": {
@@ -18739,6 +19909,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "%lld Termine zum Kalender hinzugefügt"
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Προστέθηκε %lld συμβάν στο Ημερολόγιο"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Προστέθηκαν %lld συμβάντα στο Ημερολόγιο"
                 }
               }
             }
@@ -18916,6 +20104,12 @@
             "value": "Kalenderzugriff muss erlaubt sein"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χρειάζεται άδεια πρόσβασης στο ημερολόγιο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -19014,6 +20208,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Der Zugriff auf den Kalender ist nicht erlaubt. Aktiviere ihn unter Einstellungen > CalendarSnap."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν επιτρέπεται η πρόσβαση στο ημερολόγιο. Ενεργοποιήστε την από τις Ρυθμίσεις > CalendarSnap."
           }
         },
         "en": {
@@ -19116,6 +20316,12 @@
             "value": "Konnte nicht zum Kalender hinzugefügt werden"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αποτυχία προσθήκης στο Ημερολόγιο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -19216,6 +20422,12 @@
             "value": "Als Kalenderdatei teilen (.ics)"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κοινοποίηση ως αρχείο ημερολογίου (.ics)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -19314,6 +20526,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wenn aktiviert, werden Termine im Kalender „%@“ eingetragen. Gib diesen Kalender in der iOS-Kalender-App frei, damit er automatisch mit Partner und Familie synchron bleibt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν είναι ενεργό, τα συμβάντα προστίθενται στο ημερολόγιο «%@». Μοιραστείτε αυτό το ημερολόγιο στην εφαρμογή Ημερολόγιο του iOS ώστε να συγχρονίζεται με το/τη σύντροφο και την οικογένεια."
           }
         },
         "en": {
@@ -19417,6 +20635,12 @@
             "value": "Layouts für größere Schrift"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διατάξεις για μεγαλύτερο κείμενο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -19517,6 +20741,12 @@
             "value": "Aus Zwischenablage einfügen"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επικόλληση από το πρόχειρο"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -19615,6 +20845,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Als Text teilen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κοινοποίηση ως κείμενο"
           }
         },
         "en": {
@@ -19718,6 +20954,12 @@
             "value": "Layout für faltbares iPhone"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διάταξη για αναδιπλούμενο iPhone"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -19817,6 +21059,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalender und Termine nebeneinander auf einem faltbaren iPhone."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δείτε το ημερολόγιο και τα συμβάντα δίπλα-δίπλα σε αναδιπλούμενο iPhone."
           }
         },
         "en": {
@@ -19919,6 +21167,12 @@
             "value": "Wir lesen alle Termine des Monats aus,\ntragen sie auf einmal in deinen Kalender ein und erinnern dich daran."
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Θα εξάγουμε όλα τα συμβάντα του μήνα,\nθα τα προσθέσουμε στο ημερολόγιο με μία κίνηση και θα σας τα υπενθυμίζουμε."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -20017,6 +21271,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Teilnehmende"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Άτομα που μοιράζονται"
           }
         },
         "en": {
@@ -20119,6 +21379,12 @@
             "value": "Darf bearbeiten"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μπορεί να επεξεργάζεται"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -20214,6 +21480,12 @@
           }
         },
         "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "el": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -20317,6 +21589,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Termine für %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Συμβάντα για %@"
           }
         },
         "en": {
