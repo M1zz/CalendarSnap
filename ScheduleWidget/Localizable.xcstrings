@@ -27,6 +27,12 @@
             "value": "Próximos"
           }
         },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À venir"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -83,6 +89,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Haz una foto al calendario\ny añade los eventos"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographiez un calendrier\npour ajouter des événements"
           }
         },
         "ja": {
@@ -143,6 +155,12 @@
             "value": "Agenda de los peques"
           }
         },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda des enfants"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -199,6 +217,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Muestra los próximos eventos extraídos del calendario de la guardería."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiche les prochains événements extraits d’un calendrier de crèche."
           }
         },
         "ja": {

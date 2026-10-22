@@ -56,6 +56,12 @@ Antworten auf dein Feedback in der App.
 Datenschutz und Support in der App.
 Die App läuft jetzt noch stabiler.
 
+### 앱스토어 (French, fr)
+
+Lisez les réponses à vos avis ici.
+Confidentialité et aide dans l’app.
+Une app encore plus stable.
+
 ## 1.0.4
 
 ### 새로운 기능

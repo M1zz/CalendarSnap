@@ -27,6 +27,12 @@
             "value": "Agenda Peques"
           }
         },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Bambin"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -83,6 +89,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se necesita acceso al calendario para añadir los eventos de la guardería y comprobar si están duplicados."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’accès au calendrier est nécessaire pour ajouter les événements extraits de la crèche et repérer les doublons."
           }
         },
         "ja": {
@@ -143,6 +155,12 @@
             "value": "Se necesita acceso al calendario para añadir los eventos de la guardería."
           }
         },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’accès au calendrier est nécessaire pour ajouter les événements extraits de la crèche."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -199,6 +217,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "La cámara se usa para hacer fotos de calendarios y extraer los eventos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’appareil photo sert à photographier les calendriers et à en extraire les événements."
           }
         },
         "ja": {

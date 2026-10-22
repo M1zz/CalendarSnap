@@ -522,3 +522,61 @@ Widget
 Sieh anstehende Termine direkt auf dem Home-Bildschirm.
 
 Die Texterkennung in Fotos läuft komplett auf deinem Gerät. Deine Fotos werden nie an einen Server gesendet.
+
+## fr
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Agenda Bambin : crèche
+
+### 부제
+
+Une photo, le mois organisé
+
+### 키워드
+
+calendrier,rappels,école,parents,sortie,cantine,famille,widget,scanner,maternelle,nounou,classe
+
+### 프로모션 텍스트
+
+Photographiez le calendrier de la crèche : tout le mois arrive dans votre calendrier, avec un rappel la veille au soir de ce qu’il faut apporter. Partagez-le en famille.
+
+### 설명
+
+Photographiez le planning mensuel de la crèche ou de l’école maternelle : Agenda Bambin lit tous les événements et les ajoute d’un coup à votre calendrier.
+Recevez un rappel la veille au soir, et plus aucun pique-nique de sortie ni tenue de sport n’est oublié.
+
+Une photo, tout le mois
+Prenez une photo ou choisissez-en une dans votre photothèque : dates, heures et titres sont lus pour vous. Une photo prise de travers est automatiquement redressée.
+Si le planning est découpé par classe, seuls les événements de la classe de votre enfant sont retenus.
+Avant d’enregistrer, vous pouvez modifier chaque titre, chaque date, l’option « toute la journée » et la note sur ce qu’il faut apporter, et balayer ce dont vous n’avez pas besoin.
+
+Collez aussi un message
+Collez un message de la crèche : l’app repère les dates et ce qu’il faut apporter, et en fait des événements. Des expressions comme « demain » ou « ce vendredi » deviennent de vraies dates.
+
+Calendrier et rappels
+Les événements vont dans un calendrier dédié à chaque enfant, et ceux déjà ajoutés ne le sont jamais deux fois.
+Choisissez des rappels la veille au soir, le matin même, 1 heure avant ou à l’heure pile. Vos notes sur ce qu’il faut apporter s’affichent dans le rappel.
+
+Plusieurs enfants
+Gardez les événements de chaque enfant séparés. L’app se base sur les événements passés pour deviner à quel enfant correspond un nouvel affichage.
+
+Partage en famille
+Envoyez un lien d’invitation par message : votre conjoint, les grands-parents ou la nounou voient et modifient les mêmes événements. Les changements d’un côté apparaissent des deux côtés.
+
+Widget
+Consultez les prochains événements directement depuis l’écran d’accueil.
+
+La reconnaissance du texte des photos s’effectue entièrement sur votre appareil. Vos photos ne sont jamais envoyées à un serveur.

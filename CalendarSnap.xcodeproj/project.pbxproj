@@ -262,6 +262,7 @@
 				ru,
 				es,
 				de,
+				fr,
 				Base,
 			);
 			mainGroup = AA0000000000000000000101;
