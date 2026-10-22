@@ -256,6 +256,7 @@
 				en,
 				ko,
 				"en-GB",
+				"zh-Hans",
 				Base,
 			);
 			mainGroup = AA0000000000000000000101;

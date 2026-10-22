@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -40,6 +40,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Check it once<br>before you save", "Fix titles, dates and notes in a tap"),
         ("03-calendar.png", "text-bottom", "Every child in<br>their own colour", "No more mixing up siblings’ plans"),
         ("04-reminders.png", "dark", "A reminder the<br>evening before", "Never forget the packed lunch or PE kit"),
+    ],
+    "zh-Hans": [
+        ("01-scan.png", "hero-bleed", "拍一张通知<br>整月日程搞定", "日期和需带物品，自动读取"),
+        ("02-events.png", "left-text", "保存前<br>再确认一遍", "标题、日期、备注，一点就改"),
+        ("03-calendar.png", "text-bottom", "每个孩子<br>一种颜色", "兄弟姐妹的安排不再混淆"),
+        ("04-reminders.png", "dark", "前一天晚上<br>提醒带东西", "午餐、运动服，再也不忘"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

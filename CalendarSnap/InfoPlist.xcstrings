@@ -20,6 +20,12 @@
             "state": "translated",
             "value": "아이일정"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "宝贝日程"
+          }
         }
       }
     },
@@ -41,6 +47,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要访问日历，以便将提取的幼儿园日程添加到日历并检查是否重复。"
           }
         }
       }
@@ -64,6 +76,12 @@
             "state": "translated",
             "value": "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要访问日历，以便将提取的幼儿园日程添加到日历。"
+          }
         }
       }
     },
@@ -85,6 +103,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用相机拍摄日历照片以提取日程。"
           }
         }
       }

@@ -20,6 +20,12 @@
             "state": "translated",
             "value": "다가오는 일정"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即将到来"
+          }
         }
       }
     },
@@ -41,6 +47,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력을 찍어\n일정을 등록하세요"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拍下日历\n添加日程"
           }
         }
       }
@@ -64,6 +76,12 @@
             "state": "translated",
             "value": "아이 일정"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "孩子日程"
+          }
         }
       }
     },
@@ -85,6 +103,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示从幼儿园日历中提取的近期日程。"
           }
         }
       }

@@ -8,17 +8,23 @@
 개인정보처리방침과 지원 페이지를 앱에서 바로 열 수 있어요.
 앱이 더 안정적으로 동작하도록 다듬었어요.
 
-### 앱스토어 (English)
+### 앱스토어 (English, en)
 
 Read replies to your feedback in-app.
 Open Privacy and Support in the app.
 Polished the app to run more reliably.
 
-### 앱스토어 (English (UK))
+### 앱스토어 (English UK, en-GB)
 
 Read replies to your feedback in-app.
 Open Privacy and Support in the app.
 Polished the app to run more reliably.
+
+### 앱스토어 (Chinese Simplified, zh-Hans)
+
+可在 App 中查看对反馈的回复。
+可在 App 中直接打开隐私政策和支持页。
+优化了 App，运行更稳定。
 
 ## 1.0.4
 
