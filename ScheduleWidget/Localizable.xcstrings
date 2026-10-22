@@ -87,6 +87,12 @@
             "value": "Kommende"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Binnenkort"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -209,6 +215,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ta bilde av en kalender\nfor å legge til avtaler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografeer een agenda\nom afspraken toe te voegen"
           }
         },
         "pt-BR": {
@@ -335,6 +347,12 @@
             "value": "Barnas plan"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanning"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -457,6 +475,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Viser kommende avtaler hentet fra en barnehagekalender."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toont aankomende afspraken uit een agenda van de opvang."
           }
         },
         "pt-BR": {

@@ -122,6 +122,12 @@ Les svar på tilbakemeldingen i appen.
 Åpne personvern og støtte i appen.
 Appen går nå enda stabilere.
 
+### 앱스토어 (Dutch, nl)
+
+Lees antwoorden op je feedback in-app.
+Open privacy en ondersteuning in de app.
+De app werkt nu nog stabieler.
+
 ## 1.0.4
 
 ### 새로운 기능

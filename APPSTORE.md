@@ -1160,3 +1160,61 @@ Widget
 Se de kommende avtalene rett fra hjemskjermen.
 
 Tekstgjenkjenningen i bilder skjer helt på enheten din. Bildene dine sendes aldri til en server.
+
+## nl
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Kinderplanner: Opvangkalender
+
+### 부제
+
+Foto van de brief, maand klaar
+
+### 키워드
+
+kinderdagverblijf,peuterspeelzaal,school,ouders,herinnering,schoolreisje,gezin,widget,scanner,groep
+
+### 프로모션 텍스트
+
+Fotografeer de kalender van de opvang en de hele maand staat in je agenda, met de avond ervoor een herinnering wat er mee moet. Deel hem met je gezin.
+
+### 설명
+
+Maak een foto van het maandoverzicht van het kinderdagverblijf of de peuterspeelzaal, en Kinderplanner leest alle afspraken en zet de hele maand in één keer in je agenda.
+Ontvang de avond ervoor een herinnering, zodat je nooit meer de lunchtrommel voor het uitstapje of de gymkleren vergeet.
+
+Eén foto, een hele maand
+Maak een foto of kies er een uit je fotobibliotheek, en data, tijden en titels worden voor je gelezen. Een scheef of zijwaarts genomen foto wordt automatisch goed gedraaid.
+Is het overzicht verdeeld per groep, dan worden alleen de afspraken van de groep van je kind overgenomen.
+Voor het bewaren kun je elke titel, datum, de hele-dagkeuze en de notitie over wat er mee moet bewerken, en overbodige afspraken wegvegen.
+
+Plak ook een bericht
+Plak een bericht van de opvang, en Kinderplanner vindt de data en wat er mee moet en maakt er afspraken van. Uitdrukkingen als ‘morgen’ of ‘aanstaande vrijdag’ worden echte data.
+
+Agenda en herinneringen
+Afspraken komen in een aparte agenda voor elk kind, en afspraken die er al in staan worden niet dubbel toegevoegd.
+Kies herinneringen de avond ervoor, die ochtend, 1 uur ervoor of precies op tijd. Je notities over wat er mee moet staan in de herinnering.
+
+Meer dan één kind
+Houd de afspraken van elk kind gescheiden. Kinderplanner kijkt naar eerdere afspraken en raadt voor welk kind een nieuw bericht is.
+
+Delen met je gezin
+Stuur een uitnodigingslink in een bericht, en je partner, opa’s en oma’s of oppas kunnen dezelfde afspraken zien en bewerken. Wijzigingen aan de ene kant verschijnen aan beide kanten.
+
+Widget
+Bekijk aankomende afspraken direct op je beginscherm.
+
+Tekstherkenning in foto’s gebeurt volledig op je apparaat. Je foto’s worden nooit naar een server gestuurd.

@@ -87,6 +87,12 @@
             "value": "Barneplan"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanner"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -209,6 +215,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tilgang til kalenderen trengs for å legge til de uthentede barnehageavtalene og sjekke for duplikater."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toegang tot de agenda is nodig om de opgehaalde afspraken van de opvang toe te voegen en op dubbelen te controleren."
           }
         },
         "pt-BR": {
@@ -335,6 +347,12 @@
             "value": "Tilgang til kalenderen trengs for å legge til de uthentede barnehageavtalene."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toegang tot de agenda is nodig om de opgehaalde afspraken van de opvang toe te voegen."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -457,6 +475,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kameraet brukes til å ta bilder av kalendere og hente ut avtaler."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De camera wordt gebruikt om agenda’s te fotograferen en afspraken eruit te halen."
           }
         },
         "pt-BR": {

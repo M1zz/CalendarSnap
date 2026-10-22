@@ -207,6 +207,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld al bewaarde overgeslagen)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld al bewaarde overgeslagen)"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -463,6 +481,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld dubbele overgeslagen)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld dubbele overgeslagen)"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -599,6 +635,12 @@
             "value": " · Legges også til i Kalender"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Ook toegevoegd aan Agenda"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -718,6 +760,12 @@
           }
         },
         "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -847,6 +895,12 @@
             "value": "Deler med %@"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delen met %@"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -966,6 +1020,12 @@
           }
         },
         "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -1093,6 +1153,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avdelingen til %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groep van %@"
           }
         },
         "pt-BR": {
@@ -1339,6 +1405,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "De %2$lld afspraak van %1$@ en de profielfoto worden ook verwijderd. Dit kan niet ongedaan worden gemaakt."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "De %2$lld afspraken van %1$@ en de profielfoto worden ook verwijderd. Dit kan niet ongedaan worden gemaakt."
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -1475,6 +1559,12 @@
             "value": "Koblet til %@ sine avtaler. Nå kan dere administrere dem sammen fra begge sider."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbonden met de afspraken van %@. Jullie kunnen ze nu samen beheren vanaf beide kanten."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1597,6 +1687,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Profilen til %@ slettes. Dette kan ikke angres."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het profiel van %@ wordt verwijderd. Dit kan niet ongedaan worden gemaakt."
           }
         },
         "pt-BR": {
@@ -1723,6 +1819,12 @@
             "value": "Slett «%@»"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘%@’ verwijderen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1845,6 +1947,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Starter om 1 time."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begint over 1 uur."
           }
         },
         "pt-BR": {
@@ -1971,6 +2079,12 @@
             "value": "1 time før"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 uur ervoor"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2093,6 +2207,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enkeltstående"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eenmalig"
           }
         },
         "pt-BR": {
@@ -2220,6 +2340,12 @@
             "value": "Face ID-lås"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID-vergrendeling"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2343,6 +2469,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lås appen med Face ID eller Touch ID, så barnas planer forblir private."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergrendel de app met Face ID of Touch ID zodat de planning van je kinderen privé blijft."
           }
         },
         "pt-BR": {
@@ -2470,6 +2602,12 @@
             "value": "Spør Siri hva barnet har på programmet i dag."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vraag Siri wat je kind vandaag op het programma heeft."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2593,6 +2731,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri og Snarveier"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri en Opdrachten"
           }
         },
         "pt-BR": {
@@ -2720,6 +2864,12 @@
             "value": "VoiceOver leser opp hele kalenderen og hver avtale i riktig rekkefølge."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver leest de hele agenda en elke afspraak voor, in de juiste volgorde."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2843,6 +2993,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bedre støtte for VoiceOver"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betere ondersteuning voor VoiceOver"
           }
         },
         "pt-BR": {
@@ -2969,6 +3125,12 @@
             "value": "Kunne ikke sjekke iCloud-status. Prøv igjen om litt."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De iCloud-status kon niet worden gecontroleerd. Probeer het zo meteen opnieuw."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3091,6 +3253,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ikke nok iCloud-lagring til å laste opp avtalene."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er is niet genoeg iCloud-opslag om de afspraken te uploaden."
           }
         },
         "pt-BR": {
@@ -3217,6 +3385,12 @@
             "value": "Logg på iCloud for å bruke familiedeling."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in bij iCloud om gezinsdeling te gebruiken."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3339,6 +3513,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Logg på iCloud for å bruke familiedeling. Logg på under Innstillinger > Apple-konto."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in bij iCloud om gezinsdeling te gebruiken. Log in via Instellingen > Apple-account."
           }
         },
         "pt-BR": {
@@ -3465,6 +3645,12 @@
             "value": "Logg på iCloud for å dele avtaler med familien.\nLogg på under Innstillinger > Apple-konto."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in bij iCloud om afspraken met je gezin te delen.\nLog in via Instellingen > Apple-account."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3587,6 +3773,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Import fullført"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importeren voltooid"
           }
         },
         "pt-BR": {
@@ -3713,6 +3905,12 @@
             "value": "Familie"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gezin"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3835,6 +4033,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Familiedeling"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gezinsdeling"
           }
         },
         "pt-BR": {
@@ -3961,6 +4165,12 @@
             "value": "Familiedelingen er avsluttet. Avtaler du allerede har mottatt, blir værende."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gezinsdeling is beëindigd. Afspraken die je al hebt ontvangen, blijven bestaan."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4083,6 +4293,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Familiedelingen er stoppet. De nåværende avtalene blir værende."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gezinsdeling is gestopt. De huidige afspraken blijven bestaan."
           }
         },
         "pt-BR": {
@@ -4209,6 +4425,12 @@
             "value": "Inviter familien"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nodig gezin uit"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4331,6 +4553,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Inviter familien"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nodig familie uit"
           }
         },
         "pt-BR": {
@@ -4457,6 +4685,12 @@
             "value": "Koblet til en families avtaler"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbonden met de afspraken van een gezin"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4579,6 +4813,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Forlat deling"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stap uit het delen"
           }
         },
         "pt-BR": {
@@ -4705,6 +4945,12 @@
             "value": "Delingsinformasjonen er tilbakestilt. Send invitasjonen på nytt."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De deelgegevens zijn gereset. Stuur de uitnodiging opnieuw."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4827,6 +5073,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stopp deling"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop met delen"
           }
         },
         "pt-BR": {
@@ -4953,6 +5205,12 @@
             "value": "Du har forlatt delingen. Avtaler du allerede har mottatt, blir værende."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je bent uit het delen gestapt. Afspraken die je al hebt ontvangen, blijven bestaan."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5077,6 +5335,12 @@
             "value": "Ingen avtaler å dele."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er zijn geen afspraken om te delen."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5199,6 +5463,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Alle"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iedereen"
           }
         },
         "pt-BR": {
@@ -5326,6 +5596,12 @@
             "value": "Skjermene ordner seg pent i stedet for å bli kuttet når du gjør teksten større."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schermen ordenen zich netjes opnieuw in plaats van afgesneden te worden als je de tekst vergroot."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5448,6 +5724,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Velg en dato for å se avtalene"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies een datum om de afspraken te zien"
           }
         },
         "pt-BR": {
@@ -5575,6 +5857,12 @@
             "value": "Slett alle avtalene mine"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder al mijn afspraken"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5697,6 +5985,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Du har allerede en egen familiedeling. Trykk først på «Stopp deling», og godta deretter invitasjonen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je hebt al een eigen gezinsdeling. Tik eerst op ‘Delen stoppen’ en accepteer daarna de uitnodiging."
           }
         },
         "pt-BR": {
@@ -5823,6 +6117,12 @@
             "value": "Det er i morgen. Gjør klart tingene i god tid."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het is morgen. Leg de spullen op tijd klaar."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5945,6 +6245,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hvem sin avtale er dette?"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Van wie is deze afspraak?"
           }
         },
         "pt-BR": {
@@ -6071,6 +6377,12 @@
             "value": "Kommende"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Binnenkort"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6193,6 +6505,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kommende"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Binnenkort"
           }
         },
         "pt-BR": {
@@ -6320,6 +6638,12 @@
             "value": "Mørk modus"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Donkere modus"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6442,6 +6766,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalender"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda"
           }
         },
         "pt-BR": {
@@ -6568,6 +6898,12 @@
             "value": "Ta bilde av en kalender\nfor å legge til avtaler"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografeer een agenda\nom afspraken toe te voegen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6690,6 +7026,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Samme morgen"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die ochtend"
           }
         },
         "pt-BR": {
@@ -6817,6 +7159,12 @@
             "value": "Se forskjell på hvert barns avtaler, selv med Øk kontrast på eller om det er vanskelig å skille farger."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Houd de afspraken van elk kind uit elkaar, ook met Verhoog contrast aan of als kleuren moeilijk te onderscheiden zijn."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6940,6 +7288,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bruk appen på flere språk."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebruik de app in meer talen."
           }
         },
         "pt-BR": {
@@ -7067,6 +7421,12 @@
             "value": "Flere språk"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meer talen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7189,6 +7549,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Trykk på sirkelen for å legge til et profilbilde. Hvis du skriver inn en avdeling, filtreres avtaler som bare gjelder andre avdelinger (f.eks. turer) automatisk bort fra oppslagene. Når avdelingen endres i det nye barnehageåret, er det bare å rette den her."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tik op de cirkel om een profielfoto toe te voegen. Als je een groep invult, worden afspraken die alleen voor andere groepen gelden (zoals uitstapjes) automatisch uit de berichten gefilterd. Verandert de groep in het nieuwe schooljaar, pas het dan hier aan."
           }
         },
         "pt-BR": {
@@ -7315,6 +7681,12 @@
             "value": "Synkroniseringen mislyktes. Prøv igjen om litt."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synchroniseren mislukt. Probeer het zo meteen opnieuw."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7437,6 +7809,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sist synkronisert: %@ · Synkroniserer automatisk når du åpner appen eller endrer avtaler."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laatst gesynchroniseerd: %@ · Wordt automatisch gesynchroniseerd bij het openen van de app en bij wijzigingen."
           }
         },
         "pt-BR": {
@@ -7563,6 +7941,12 @@
             "value": "Legg til fra melding"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toevoegen uit bericht"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7685,6 +8069,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avdelingens navn (f.eks. Solsikkene)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam van de groep (bijv. Zonnebloemen)"
           }
         },
         "pt-BR": {
@@ -7811,6 +8201,12 @@
             "value": "Skriv inn avdeling"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groep invullen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7933,6 +8329,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gjentakende"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herhalend"
           }
         },
         "pt-BR": {
@@ -8059,6 +8461,12 @@
             "value": "Skriv inn en avdeling for automatisk å filtrere bort avtaler som bare gjelder andre avdelinger."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vul een groep in om afspraken die alleen voor andere groepen gelden automatisch weg te filteren."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8183,6 +8591,12 @@
             "value": "Legg til avdeling"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groep toevoegen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8305,6 +8719,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Del med partner og besteforeldre"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deel met je partner en opa’s en oma’s"
           }
         },
         "pt-BR": {
@@ -8432,6 +8852,12 @@
             "value": "Sikkerhetskopi og eksport"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back-up en export"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8554,6 +8980,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kun visning"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alleen bekijken"
           }
         },
         "pt-BR": {
@@ -8679,6 +9111,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bedre farger og kontrast"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prettigere kleuren en contrast"
           }
         },
         "pt-BR": {
@@ -8925,6 +9363,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld foto – tik om te vergroten."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld foto’s – veeg om te bladeren, tik om te vergroten."
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -9061,6 +9517,12 @@
             "value": "Fant ingen tekst i bildet."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er is geen tekst gevonden in de foto."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9185,6 +9647,12 @@
             "value": "Trykk på bildet for å se det større."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tik op de foto om hem groter te bekijken."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9307,6 +9775,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Slett"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder"
           }
         },
         "pt-BR": {
@@ -9434,6 +9908,12 @@
             "value": "Haptisk tilbakemelding"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptische feedback"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9556,6 +10036,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Venter"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In afwachting"
           }
         },
         "pt-BR": {
@@ -9682,6 +10168,12 @@
             "value": "Skann"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9804,6 +10296,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gjelder bare avtaler med klokkeslett"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geldt alleen voor afspraken met een vaste tijd"
           }
         },
         "pt-BR": {
@@ -9931,6 +10429,12 @@
             "value": "Nyttige tips"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handige tips"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10054,6 +10558,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fortsett avtalen der du slapp"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ga verder waar je gebleven was"
           }
         },
         "pt-BR": {
@@ -10180,6 +10690,12 @@
             "value": "Barn"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kind"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10302,6 +10818,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Slett barn"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kind verwijderen"
           }
         },
         "pt-BR": {
@@ -10428,6 +10950,12 @@
             "value": "Barnets navn (f.eks. Emil)"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam van het kind (bijv. Sem)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10550,6 +11078,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Barnas plan"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanning"
           }
         },
         "pt-BR": {
@@ -10677,6 +11211,12 @@
             "value": "Lagre barnas planer i en fil og hent dem tilbake senere."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar de planning van je kinderen in een bestand en haal die later terug."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10799,6 +11339,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Legg til barn"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kind toevoegen"
           }
         },
         "pt-BR": {
@@ -10925,6 +11471,12 @@
             "value": "Legg til et barn for å sortere avtaler per barn og se navnet i påminnelsene."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg een kind toe om afspraken per kind te ordenen en de naam in herinneringen te zien."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11047,6 +11599,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Legg til et barn for å sortere avtaler per barn og se navnet i påminnelsene."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg een kind toe om afspraken per kind te ordenen en de naam in herinneringen te zien."
           }
         },
         "pt-BR": {
@@ -11173,6 +11731,12 @@
             "value": "Barneplan"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanner"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11295,6 +11859,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Barneplan-data"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanner-gegevens"
           }
         },
         "pt-BR": {
@@ -11421,6 +11991,12 @@
             "value": "Send til Barneplan-brukere"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verstuur naar gebruikers van Kinderplanner"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11543,6 +12119,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Barneplan-kalender"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanner-agenda"
           }
         },
         "pt-BR": {
@@ -11669,6 +12251,12 @@
             "value": "Barneplan – delt"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kinderplanner – gedeeld"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11791,6 +12379,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ikke synkronisert ennå."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog niet gesynchroniseerd."
           }
         },
         "pt-BR": {
@@ -11917,6 +12511,12 @@
             "value": "Ingen har blitt med ennå"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er heeft nog niemand meegedaan"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12041,6 +12641,12 @@
             "value": "Ingen invitasjon er sendt ennå"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog geen uitnodiging verstuurd"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12160,6 +12766,12 @@
           }
         },
         "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melding"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "Melding"
@@ -12409,6 +13021,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld herinnering gepland"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld herinneringen gepland"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -12545,6 +13175,12 @@
             "value": "Varsler må tillates (slå dem på i Innstillinger)"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toestemming voor meldingen is nodig (zet dit aan in Instellingen)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12667,6 +13303,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Innstillinger for påminnelser"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herinneringsinstellingen"
           }
         },
         "pt-BR": {
@@ -12793,6 +13435,12 @@
             "value": "Minn meg på"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herinner mij"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12917,6 +13565,12 @@
             "value": "Alle tidspunkter for påminnelser er slått av"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle herinneringstijden staan uit"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13039,6 +13693,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ingen påminnelser"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen herinneringen"
           }
         },
         "pt-BR": {
@@ -13166,6 +13826,12 @@
             "value": "Diskrete tips om nyttige funksjoner akkurat når du trenger dem."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtiele hints over handige functies, precies wanneer je ze nodig hebt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13288,6 +13954,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Legg også til i Apple Kalender"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ook toevoegen aan Apple Agenda"
           }
         },
         "pt-BR": {
@@ -13415,6 +14087,12 @@
             "value": "Bruk hele appen på engelsk også."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebruik de hele app ook in het Engels."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13538,6 +14216,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalenderen og avtalene forblir skarpe og lesbare i mørk modus."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De agenda en afspraken blijven scherp en leesbaar in de donkere modus."
           }
         },
         "pt-BR": {
@@ -13664,6 +14348,12 @@
             "value": "Viser kommende avtaler hentet fra en barnehagekalender."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toont aankomende afspraken uit een agenda van de opvang."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13786,6 +14476,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ta bilde av oppslaget fra barnehagen, eller lim inn en melding"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maak een foto van een bericht van de opvang of plak een bericht"
           }
         },
         "pt-BR": {
@@ -13913,6 +14609,12 @@
             "value": "Første gang du åpner appen etter en oppdatering, ser du hva som er nytt."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De eerste keer dat je de app opent na een update, zie je wat er nieuw is."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14038,6 +14740,12 @@
             "value": "Nytt"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wat is er nieuw"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14160,6 +14868,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lim inn en melding fra barnehagen her.\nF.eks. I morgen er det meldt regn, så skriv navn på gummistøvler, regntøy og paraply."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plak hier een bericht van de opvang.\nBijv. Morgen wordt regen verwacht, schrijf daarom de naam op laarzen, regenjas en paraplu."
           }
         },
         "pt-BR": {
@@ -14287,6 +15001,12 @@
             "value": "Full støtte for engelsk"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volledige ondersteuning voor Engels"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14409,6 +15129,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "F.eks. matpakke, drikkeflaske"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bijv. lunchtrommel, drinkfles"
           }
         },
         "pt-BR": {
@@ -14535,6 +15261,12 @@
             "value": "I dag"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vandaag"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14657,6 +15389,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Det er i dag."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het is vandaag."
           }
         },
         "pt-BR": {
@@ -14783,6 +15521,12 @@
             "value": "Feil"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fout"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14905,6 +15649,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ferdig"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klaar"
           }
         },
         "pt-BR": {
@@ -15032,6 +15782,12 @@
             "value": "Reduser bevegelse"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beperk beweging"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15155,6 +15911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Med Reduser bevegelse på blir skjermeffektene roligere."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Met Beperk beweging aan worden schermeffecten rustiger."
           }
         },
         "pt-BR": {
@@ -15282,6 +16044,12 @@
             "value": "Slett alle lagrede avtaler rett i appen når du vil."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder alle bewaarde afspraken wanneer je wilt, direct in de app."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15404,6 +16172,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Utvid til månedsvisning"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitvouwen naar maandweergave"
           }
         },
         "pt-BR": {
@@ -15530,6 +16304,12 @@
             "value": "Du mottar ikke lenger denne familiens avtaler. Avtaler du allerede har mottatt, blir værende."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ontvangt de afspraken van dit gezin niet meer. Afspraken die je al hebt ontvangen, blijven bestaan."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15652,6 +16432,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dere ser denne familiens avtaler sammen. Avtaler du legger til eller endrer, sendes også videre til dem."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je bekijkt de afspraken van dit gezin samen. Afspraken die je toevoegt of wijzigt, worden ook naar hen doorgestuurd."
           }
         },
         "pt-BR": {
@@ -15778,6 +16564,12 @@
             "value": "Bruk av iCloud er begrenset på denne enheten."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het gebruik van iCloud is beperkt op dit apparaat."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15900,6 +16692,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Legg til avtale denne dagen"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afspraak toevoegen op deze dag"
           }
         },
         "pt-BR": {
@@ -16026,6 +16824,12 @@
             "value": "Ingen avtaler denne dagen"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen afspraken op deze dag"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16148,6 +16952,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fant ingen avtaler med dato i denne meldingen.\nSjekk at den inneholder en dato (f.eks. 12. juli) eller ord som «i morgen» eller «fredag»."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In dit bericht zijn geen afspraken met een datum gevonden.\nControleer of er een datum (bijv. 12 juli) of woorden als ‘morgen’ of ‘vrijdag’ in staan."
           }
         },
         "pt-BR": {
@@ -16274,6 +17084,12 @@
             "value": "Vil du slette dette barnet?"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit kind verwijderen?"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16396,6 +17212,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Navn (f.eks. Emil)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam (bijv. Sem)"
           }
         },
         "pt-BR": {
@@ -16522,6 +17344,12 @@
             "value": "Du er allerede med i en annen families deling. Trykk først på «Forlat deling», og send deretter en invitasjon."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je doet al mee aan het delen van een ander gezin. Tik eerst op ‘Stop met delen’ en stuur daarna een uitnodiging."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16644,6 +17472,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kunne ikke behandle bildet."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De afbeelding kon niet worden verwerkt."
           }
         },
         "pt-BR": {
@@ -16890,6 +17724,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld afspraak gevonden in deze foto"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld afspraken gevonden in deze foto"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -17026,6 +17878,12 @@
             "value": "Dato og tid"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum en tijd"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17148,6 +18006,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avtale"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afspraak"
           }
         },
         "pt-BR": {
@@ -17389,6 +18253,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Lagre %lld avtaler + få påminnelser"
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bewaar %lld afspraak + ontvang herinneringen"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bewaar %lld afspraken + ontvang herinneringen"
                 }
               }
             }
@@ -17650,6 +18532,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld afspraak geïmporteerd."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld afspraken geïmporteerd."
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -17786,6 +18686,12 @@
             "value": "Kunne ikke importere timeplandataene.\nSjekk at filen er eksportert fra appen Barneplan."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De plannergegevens konden niet worden geïmporteerd.\nControleer of het bestand is geëxporteerd uit de app Kinderplanner."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17908,6 +18814,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "På tidspunktet"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Op het tijdstip zelf"
           }
         },
         "pt-BR": {
@@ -18034,6 +18946,12 @@
             "value": "Avtaletype"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type afspraak"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18156,6 +19074,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Legg til avtale manuelt"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afspraak handmatig toevoegen"
           }
         },
         "pt-BR": {
@@ -18282,6 +19206,12 @@
             "value": "Legg til avtale"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afspraak toevoegen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18404,6 +19334,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hent ut avtaler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afspraken ophalen"
           }
         },
         "pt-BR": {
@@ -18530,6 +19466,12 @@
             "value": "Ut fra avtalene ser dette ut som %@ sitt dokument. Hvis ikke, endrer du det ovenfor."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Op basis van de afspraken lijkt dit het document van %@. Zo niet, wijzig het dan hierboven."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18652,6 +19594,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fant ingen tekst som ser ut som avtaler.\nTa bildet på nytt, slik at skriften blir skarp."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er is geen tekst gevonden die op afspraken lijkt.\nMaak de foto opnieuw, zodat de tekst scherp is."
           }
         },
         "pt-BR": {
@@ -18779,6 +19727,12 @@
             "value": "Et lett trykk gir beskjed når en avtale er lagt til eller lagret."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een zacht tikje laat je weten wanneer een afspraak is toegevoegd of bewaard."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18902,6 +19856,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Det du skrev, blir stående, selv om appen lukkes underveis."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wat je aan het typen was, blijft staan, ook als de app halverwege sluit."
           }
         },
         "pt-BR": {
@@ -19028,6 +19988,12 @@
             "value": "Fant ingen kalenderkonto der avtaler kan legges til."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er is geen agenda-account gevonden waaraan afspraken kunnen worden toegevoegd."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19150,6 +20116,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lagre"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar"
           }
         },
         "pt-BR": {
@@ -19276,6 +20248,12 @@
             "value": "Lagret! Se det i kalenderen og widgeten"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaard! Bekijk het in de agenda en de widget"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19400,6 +20378,12 @@
             "value": "Kvelden før (for å pakke)"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De avond ervoor (om in te pakken)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19519,6 +20503,12 @@
           }
         },
         "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "Alle"
@@ -19648,6 +20638,12 @@
             "value": "Tittel"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19770,6 +20766,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tittel (f.eks. Tur, Ta-med-dag)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel (bijv. Uitstapje, Neem-iets-mee-dag)"
           }
         },
         "pt-BR": {
@@ -19896,6 +20898,12 @@
             "value": "Sjekk titler, tidspunkter og hva som skal med. Trykk på sirkelen for å bytte barn, eller sveip for å slette avtaler du ikke trenger. Når du lagrer, går du til kalenderen."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controleer de titels, tijden en wat er mee moet. Tik op de cirkel om van kind te wisselen, of veeg om afspraken te verwijderen die je niet nodig hebt. Na het bewaren ga je naar de agenda."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20018,6 +21026,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fjernet"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijderd"
           }
         },
         "pt-BR": {
@@ -20144,6 +21158,12 @@
             "value": "Hele dagen"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hele dag"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20266,6 +21286,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Heldagsavtaler (f.eks. turer) får bare påminnelsene «kvelden før» og «samme morgen»."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voor afspraken van een hele dag (zoals uitstapjes) komen alleen de herinneringen ‘de avond ervoor’ en ‘die ochtend’."
           }
         },
         "pt-BR": {
@@ -20392,6 +21418,12 @@
             "value": "Slå sammen til ukevisning"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samenvouwen naar weekweergave"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20514,6 +21546,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ting å ta med / notater"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meenemen / notities"
           }
         },
         "pt-BR": {
@@ -20640,6 +21678,12 @@
             "value": "Ting å ta med / notater (f.eks. matpakke)"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meenemen / notities (bijv. lunchtrommel)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20762,6 +21806,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Synkroniser nå"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nu synchroniseren"
           }
         },
         "pt-BR": {
@@ -20888,6 +21938,12 @@
             "value": "Starter nå."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begint nu."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21010,6 +22066,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tøm"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wis"
           }
         },
         "pt-BR": {
@@ -21136,6 +22198,12 @@
             "value": "Støtte"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ondersteuning"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21258,6 +22326,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lagt til manuelt"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handmatig toegevoegd"
           }
         },
         "pt-BR": {
@@ -21384,6 +22458,12 @@
             "value": "Med"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deelnemer"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21508,6 +22588,12 @@
             "value": "For å fjerne noen eller endre tillatelser trykker du på «Administrer personer» nedenfor."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om iemand te verwijderen of rechten te wijzigen, tik je hieronder op ‘Personen beheren’."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21630,6 +22716,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Behandler …"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bezig met verwerken…"
           }
         },
         "pt-BR": {
@@ -21757,6 +22849,12 @@
             "value": "En kort omvisning for nybegynnere"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een korte rondleiding voor nieuwkomers"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21880,6 +22978,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "En kort veiledning i å legge til avtaler fra et bilde første gang du åpner appen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een korte uitleg over het toevoegen van afspraken via een foto, de eerste keer dat je de app opent."
           }
         },
         "pt-BR": {
@@ -22006,6 +23110,12 @@
             "value": "Send invitasjon · Administrer personer"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitnodiging sturen · Personen beheren"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22128,6 +23238,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kunne ikke lage invitasjonslenken. Prøv igjen om litt."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De uitnodigingslink kon niet worden gemaakt. Probeer het zo meteen opnieuw."
           }
         },
         "pt-BR": {
@@ -22254,6 +23370,12 @@
             "value": "Send en invitasjonslenke, så kan partneren din eller besteforeldrene se og redigere de samme avtalene. En endring på den ene siden oppdateres automatisk på begge."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur een uitnodigingslink, dan kunnen je partner of opa’s en oma’s dezelfde afspraken zien en bewerken. Een wijziging aan de ene kant wordt automatisch aan beide kanten bijgewerkt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22376,6 +23498,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kunne ikke sende invitasjonslenken.\n%@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De uitnodigingslink kon niet worden verstuurd.\n%@"
           }
         },
         "pt-BR": {
@@ -22502,6 +23630,12 @@
             "value": "Send en invitasjonslenke i en melding, så kan de åpne den i appen og bli med med en gang. Etter det oppdateres avtaler som legges til eller endres på den ene siden, automatisk på begge sider."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur een uitnodigingslink in een bericht, dan openen ze die in de app en doen ze meteen mee. Daarna worden afspraken die aan één kant worden toegevoegd of gewijzigd automatisch aan beide kanten bijgewerkt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22624,6 +23758,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Inviterte kan også legge til og redigere avtaler. Barnas profilbilder deles ikke."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitgenodigden kunnen ook afspraken toevoegen en wijzigen. Profielfoto’s van kinderen worden niet gedeeld."
           }
         },
         "pt-BR": {
@@ -22750,6 +23890,12 @@
             "value": "Invitert familiemedlem"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitgenodigd gezinslid"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22872,6 +24018,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Deler med de inviterte"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delen met de uitgenodigde personen"
           }
         },
         "pt-BR": {
@@ -22998,6 +24150,12 @@
             "value": "De inviterte kan ikke lenger se avtalene dine. De nåværende avtalene blir værende på begge enhetene."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De uitgenodigde personen kunnen je afspraken niet meer zien. De huidige afspraken blijven op beide apparaten bestaan."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23122,6 +24280,12 @@
             "value": "Legg til"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg toe"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23244,6 +24408,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avbryt"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuleer"
           }
         },
         "pt-BR": {
@@ -23490,6 +24660,24 @@
             }
           }
         },
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld afspraak toegevoegd aan Agenda"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld afspraken toegevoegd aan Agenda"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -23626,6 +24814,12 @@
             "value": "Tilgang til kalenderen må tillates"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toestemming voor de agenda is nodig"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23748,6 +24942,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tilgang til kalenderen er ikke tillatt. Slå den på i Innstillinger > CalendarSnap."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toegang tot de agenda is niet toegestaan. Zet dit aan via Instellingen > CalendarSnap."
           }
         },
         "pt-BR": {
@@ -23874,6 +25074,12 @@
             "value": "Kunne ikke legge til i Kalender"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toevoegen aan Agenda mislukt"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23998,6 +25204,12 @@
             "value": "Del som kalenderfil (.ics)"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deel als agendabestand (.ics)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24120,6 +25332,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Når dette er på, legges avtalene til i kalenderen «%@». Del den kalenderen i Kalender-appen i iOS for å holde den synkronisert med partner og familie."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als dit aanstaat, worden afspraken toegevoegd aan de agenda ‘%@’. Deel die agenda in de iOS-app Agenda om hem automatisch te synchroniseren met je partner en gezin."
           }
         },
         "pt-BR": {
@@ -24247,6 +25465,12 @@
             "value": "Oppsett for større tekst"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indelingen voor grotere tekst"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24371,6 +25595,12 @@
             "value": "Lim inn fra utklippstavlen"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plak vanaf klembord"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24493,6 +25723,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Del som tekst"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deel als tekst"
           }
         },
         "pt-BR": {
@@ -24620,6 +25856,12 @@
             "value": "Oppsett for sammenleggbar iPhone"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indeling voor opvouwbare iPhone"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24743,6 +25985,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se kalenderen og avtalene side om side på en sammenleggbar iPhone."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekijk de agenda en afspraken naast elkaar op een opvouwbare iPhone."
           }
         },
         "pt-BR": {
@@ -24869,6 +26117,12 @@
             "value": "Vi henter ut alle avtalene i måneden,\nlegger dem inn i kalenderen på én gang og minner deg på dem."
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We halen alle afspraken van de maand eruit,\nzetten ze in één keer in je agenda en herinneren je eraan."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24991,6 +26245,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Personer som deler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personen die delen"
           }
         },
         "pt-BR": {
@@ -25117,6 +26377,12 @@
             "value": "Kan redigere"
           }
         },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kan bewerken"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -25236,6 +26502,12 @@
           }
         },
         "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "nl": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -25363,6 +26635,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Avtaler for %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Afspraken van %@"
           }
         },
         "pt-BR": {
