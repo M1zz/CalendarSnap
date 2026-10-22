@@ -1334,3 +1334,61 @@ Widget
 Se kommande händelser direkt från hemskärmen.
 
 Textigenkänningen i bilder sker helt på din enhet. Dina bilder skickas aldrig till någon server.
+
+## tr
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Çocuk Takvimi: Kreş Programı
+
+### 부제
+
+Duyuruyu çek, ay hazır
+
+### 키워드
+
+hatırlatıcı,anaokulu,okul,veli,gezi,beslenme,aile,widget,tarayıcı,sınıf,anneanne,dadı,etkinlik,ocr
+
+### 프로모션 텍스트
+
+Kreşin gönderdiği takvimin fotoğrafını çekin, tüm ay takviminize eklensin; bir gün önce akşam neyin getirileceği hatırlatılsın. Aile ile paylaşın.
+
+### 설명
+
+Kreşin ya da anaokulunun aylık programının fotoğrafını çekin; Çocuk Takvimi tüm etkinlikleri okuyup bütün ayı takviminize tek seferde ekler.
+Bir gün önce akşam hatırlatma alın, gezi için beslenme çantası da spor kıyafeti de bir daha unutulmasın.
+
+Tek fotoğraf, koca bir ay
+Fotoğraf çekin ya da kitaplığınızdan seçin; tarihler, saatler ve başlıklar sizin için okunur. Yan çekilmiş fotoğraflar otomatik olarak doğru yöne çevrilir.
+Tablo sınıflara göre ayrılmışsa yalnızca çocuğunuzun sınıfının etkinlikleri alınır.
+Kaydetmeden önce her başlığı, tarihi, tüm gün seçeneğini ve getirilecekler notunu düzenleyebilir, gerekmeyenleri kaydırıp silebilirsiniz.
+
+Mesaj da yapıştırabilirsiniz
+Kreşten gelen bir mesajı yapıştırın; uygulama tarihleri ve getirilecek şeyleri bulup etkinliğe dönüştürür. “Yarın” ya da “bu cuma” gibi ifadeler gerçek tarihlere çevrilir.
+
+Takvim ve hatırlatıcılar
+Etkinlikler her çocuk için ayrı bir takvime eklenir; zaten eklenmiş olanlar ikinci kez eklenmez.
+Bir gün önce akşam, o gün sabah, 1 saat önce ya da tam saatinde hatırlatma seçin. Getirilecekler notunuz hatırlatıcıda görünür.
+
+Birden fazla çocuk
+Her çocuğun etkinliklerini ayrı tutun. Uygulama geçmiş etkinliklere bakıp yeni duyurunun hangi çocuğa ait olduğunu tahmin eder.
+
+Aile ile paylaşım
+Mesajla bir davet bağlantısı gönderin; eşiniz, büyükanne-büyükbabalar ya da bakıcı aynı etkinlikleri görüp düzenleyebilir. Bir taraftaki değişiklikler iki tarafta da görünür.
+
+Widget
+Yaklaşan etkinlikleri ana ekrandan hemen görün.
+
+Fotoğraflardaki metin tanıma tamamen cihazınızda gerçekleşir. Fotoğraflarınız hiçbir zaman bir sunucuya gönderilmez.

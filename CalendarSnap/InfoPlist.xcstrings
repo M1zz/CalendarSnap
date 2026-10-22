@@ -123,6 +123,12 @@
             "value": "ตารางลูกน้อย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Takvimi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -263,6 +269,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ต้องเข้าถึงปฏิทินเพื่อเพิ่มกำหนดการของโรงเรียนที่ดึงมา และตรวจสอบรายการซ้ำ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çıkarılan kreş etkinliklerini eklemek ve yinelenenleri denetlemek için takvim erişimi gerekir."
           }
         },
         "vi": {
@@ -407,6 +419,12 @@
             "value": "ต้องเข้าถึงปฏิทินเพื่อเพิ่มกำหนดการของโรงเรียนที่ดึงมา"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çıkarılan kreş etkinliklerini eklemek için takvim erişimi gerekir."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -547,6 +565,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ใช้กล้องถ่ายรูปปฏิทินเพื่อดึงกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamera, takvim fotoğrafları çekip etkinlikleri çıkarmak için kullanılır."
           }
         },
         "vi": {

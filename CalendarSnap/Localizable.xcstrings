@@ -279,6 +279,12 @@
             "value": " (ข้าม %lld รายการที่มีอยู่แล้ว)"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (zaten kayıtlı olan %lld etkinlik atlandı)"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -577,6 +583,12 @@
             "value": " (ข้ามรายการซ้ำ %lld รายการ)"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (%lld yinelenen etkinlik atlandı)"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -719,6 +731,12 @@
             "value": " · เพิ่มลงแอปปฏิทินด้วย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Takvim’e de eklenir"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -856,6 +874,12 @@
           }
         },
         "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -1003,6 +1027,12 @@
             "value": "แชร์กับ %@"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ile paylaşılıyor"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -1140,6 +1170,12 @@
           }
         },
         "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -1285,6 +1321,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ชั้นเรียนของ %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sınıfı"
           }
         },
         "vi": {
@@ -1585,6 +1627,12 @@
             "value": "กำหนดการ %2$lld รายการของ %1$@ และรูปโปรไฟล์จะถูกลบไปด้วย ไม่สามารถย้อนกลับได้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ çocuğunun %2$lld etkinliği ve profil fotoğrafı da silinecek. Bu işlem geri alınamaz."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -1725,6 +1773,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เชื่อมต่อกับกำหนดการของ %@ แล้ว ตอนนี้ทั้งสองฝั่งช่วยกันจัดการได้เลย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kişisinin etkinlikleriyle bağlantı kuruldu. Artık iki taraftan birlikte yönetebilirsiniz."
           }
         },
         "vi": {
@@ -1869,6 +1923,12 @@
             "value": "โปรไฟล์ของ %@ จะถูกลบ ไม่สามารถย้อนกลับได้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ çocuğunun profili silinecek. Bu işlem geri alınamaz."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -2009,6 +2069,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ลบ “%@”"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” Sil"
           }
         },
         "vi": {
@@ -2153,6 +2219,12 @@
             "value": "จะเริ่มในอีก 1 ชั่วโมง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 saat sonra başlıyor."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -2295,6 +2367,12 @@
             "value": "1 ชั่วโมงก่อน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 saat önce"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -2435,6 +2513,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ครั้งเดียว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tek seferlik"
           }
         },
         "vi": {
@@ -2580,6 +2664,12 @@
             "value": "ล็อกด้วย Face ID"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID kilidi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -2721,6 +2811,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ล็อกแอปด้วย Face ID หรือ Touch ID เพื่อรักษากำหนดการของลูกให้เป็นส่วนตัว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuklarınızın programı gizli kalsın diye uygulamayı Face ID veya Touch ID ile kilitleyin."
           }
         },
         "vi": {
@@ -2866,6 +2962,12 @@
             "value": "ถาม Siri ว่าวันนี้ลูกมีอะไรบ้าง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri’ye sorun, çocuğunuzun bugün neler var?"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -3007,6 +3109,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri และคำสั่งลัด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri ve Kestirmeler"
           }
         },
         "vi": {
@@ -3152,6 +3260,12 @@
             "value": "VoiceOver อ่านปฏิทินและกำหนดการทั้งหมดครบถ้วนตามลำดับที่ถูกต้อง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver tüm takvimi ve her etkinliği doğru sırayla okur."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -3293,6 +3407,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ใช้ VoiceOver ได้สะดวกขึ้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha iyi VoiceOver desteği"
           }
         },
         "vi": {
@@ -3437,6 +3557,12 @@
             "value": "ตรวจสอบสถานะ iCloud ไม่สำเร็จ โปรดลองใหม่อีกครั้งในอีกสักครู่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud durumu denetlenemedi. Lütfen biraz sonra tekrar deneyin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -3577,6 +3703,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "พื้นที่ iCloud ไม่พอสำหรับอัปโหลดกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlikleri yüklemek için iCloud’da yeterli alan yok."
           }
         },
         "vi": {
@@ -3721,6 +3853,12 @@
             "value": "ลงชื่อเข้าใช้ iCloud เพื่อใช้การแชร์ครอบครัว"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aile paylaşımını kullanmak için iCloud’da oturum açın."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -3861,6 +3999,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ลงชื่อเข้าใช้ iCloud เพื่อใช้การแชร์ครอบครัว ลงชื่อเข้าใช้ได้ที่ การตั้งค่า > บัญชี Apple"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aile paylaşımını kullanmak için iCloud’da oturum açın. Ayarlar > Apple Hesabı üzerinden oturum açabilirsiniz."
           }
         },
         "vi": {
@@ -4005,6 +4149,12 @@
             "value": "ลงชื่อเข้าใช้ iCloud เพื่อแชร์กำหนดการกับครอบครัว\nลงชื่อเข้าใช้ได้ที่ การตั้งค่า > บัญชี Apple"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlikleri ailenizle paylaşmak için iCloud’da oturum açın.\nAyarlar > Apple Hesabı üzerinden oturum açabilirsiniz."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -4145,6 +4295,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "นำเข้าเสร็จแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe Aktarma Tamamlandı"
           }
         },
         "vi": {
@@ -4289,6 +4445,12 @@
             "value": "ครอบครัว"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aile"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -4429,6 +4591,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "การแชร์ครอบครัว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aile Paylaşımı"
           }
         },
         "vi": {
@@ -4573,6 +4741,12 @@
             "value": "การแชร์ครอบครัวสิ้นสุดแล้ว กำหนดการที่ได้รับมาแล้วจะยังคงอยู่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aile paylaşımı sona erdi. Şimdiye kadar aldığınız etkinlikler olduğu gibi kalır."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -4713,6 +4887,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "หยุดการแชร์ครอบครัวแล้ว กำหนดการที่มีอยู่จะยังคงอยู่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aile paylaşımı durduruldu. Mevcut etkinlikler olduğu gibi kalır."
           }
         },
         "vi": {
@@ -4857,6 +5037,12 @@
             "value": "เชิญครอบครัว"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aileyi Davet Et"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -4997,6 +5183,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ชวนครอบครัวมาดูด้วยกัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aileyi Davet Et"
           }
         },
         "vi": {
@@ -5141,6 +5333,12 @@
             "value": "เชื่อมต่อกับกำหนดการของครอบครัว"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir ailenin etkinlikleriyle bağlı"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -5281,6 +5479,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ออกจากการแชร์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşımdan Ayrıl"
           }
         },
         "vi": {
@@ -5425,6 +5629,12 @@
             "value": "รีเซ็ตข้อมูลการแชร์แล้ว โปรดส่งคำเชิญอีกครั้ง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşım bilgileri sıfırlandı. Lütfen daveti yeniden gönderin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -5565,6 +5775,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "หยุดแชร์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşımı Durdur"
           }
         },
         "vi": {
@@ -5709,6 +5925,12 @@
             "value": "ออกจากการแชร์แล้ว กำหนดการที่ได้รับมาแล้วจะยังคงอยู่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşımdan ayrıldınız. Şimdiye kadar aldığınız etkinlikler olduğu gibi kalır."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -5851,6 +6073,12 @@
             "value": "ไม่มีกำหนดการให้แชร์"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşılacak etkinlik yok."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -5991,6 +6219,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ทุกคน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herkes"
           }
         },
         "vi": {
@@ -6136,6 +6370,12 @@
             "value": "เมื่อขยายตัวอักษร หน้าจอจะจัดเรียงใหม่อย่างเรียบร้อยโดยไม่ถูกตัด"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metni büyüttüğünüzde ekranlar kesilmek yerine düzgünce yeniden yerleşir."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -6276,6 +6516,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เลือกวันที่เพื่อดูกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliklerini görmek için bir tarih seçin"
           }
         },
         "vi": {
@@ -6421,6 +6667,12 @@
             "value": "ลบกำหนดการของฉันทั้งหมด"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm etkinliklerimi sil"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -6561,6 +6813,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "คุณมีการแชร์ครอบครัวของตัวเองอยู่แล้ว แตะ “หยุดแชร์” ก่อน แล้วค่อยรับคำเชิญ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaten kendi aile paylaşımınız var. Önce “Paylaşımı Durdur”a dokunun, ardından daveti kabul edin."
           }
         },
         "vi": {
@@ -6705,6 +6963,12 @@
             "value": "พรุ่งนี้มีกำหนดการ เตรียมของไว้ล่วงหน้านะ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik yarın. Eşyaları önceden hazırlayın."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -6845,6 +7109,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "กำหนดการนี้ของใคร"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu etkinlik kimin?"
           }
         },
         "vi": {
@@ -6989,6 +7259,12 @@
             "value": "ที่กำลังจะถึง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaklaşanlar"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -7129,6 +7405,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ที่กำลังจะถึง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaklaşanlar"
           }
         },
         "vi": {
@@ -7274,6 +7556,12 @@
             "value": "โหมดมืด"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koyu Mod"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -7414,6 +7702,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ปฏิทิน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim"
           }
         },
         "vi": {
@@ -7558,6 +7852,12 @@
             "value": "ถ่ายรูปปฏิทิน\nเพื่อเพิ่มกำหนดการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvimin fotoğrafını çekin,\netkinlikleri ekleyin"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -7698,6 +7998,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เช้าวันนั้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O gün sabah"
           }
         },
         "vi": {
@@ -7843,6 +8149,12 @@
             "value": "แยกกำหนดการของเด็กแต่ละคนออกได้ แม้เปิดเพิ่มคอนทราสต์หรือแยกสีได้ยาก"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrastı Artır açıkken ya da renkleri ayırt etmek zorsa bile her çocuğun etkinliklerini ayırt edin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -7984,6 +8296,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ใช้แอปได้หลายภาษามากขึ้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulamayı daha fazla dilde kullanın."
           }
         },
         "vi": {
@@ -8129,6 +8447,12 @@
             "value": "ภาษาเพิ่มเติม"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha fazla dil"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -8269,6 +8593,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แตะวงกลมเพื่อเพิ่มรูปโปรไฟล์ หากใส่ชั้นเรียน กำหนดการที่เฉพาะชั้นเรียนอื่น (เช่น ทัศนศึกษา) จะถูกกรองออกจากประกาศโดยอัตโนมัติ เมื่อขึ้นปีการศึกษาใหม่และเปลี่ยนชั้นเรียน แก้ไขที่นี่ได้เลย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil fotoğrafı eklemek için daireye dokunun. Sınıf girerseniz, yalnızca diğer sınıflara ait etkinlikler (gezi gibi) duyurulardan otomatik olarak ayıklanır. Yeni dönemde sınıf değişirse buradan düzeltmeniz yeterli."
           }
         },
         "vi": {
@@ -8413,6 +8743,12 @@
             "value": "ซิงค์ไม่สำเร็จ โปรดลองใหม่อีกครั้งในอีกสักครู่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eşitleme başarısız oldu. Lütfen biraz sonra tekrar deneyin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -8553,6 +8889,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ซิงค์ล่าสุด: %@ · ซิงค์อัตโนมัติเมื่อเปิดแอปและเมื่อเปลี่ยนกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son eşitleme: %@ · Uygulamayı açtığınızda ve etkinlikleri değiştirdiğinizde otomatik eşitlenir."
           }
         },
         "vi": {
@@ -8697,6 +9039,12 @@
             "value": "เพิ่มจากข้อความ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mesajdan Ekle"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -8837,6 +9185,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ชื่อชั้นเรียน (เช่น ห้องทานตะวัน)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınıf adı (örn. Papatyalar)"
           }
         },
         "vi": {
@@ -8981,6 +9335,12 @@
             "value": "ใส่ชั้นเรียน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınıf Gir"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -9121,6 +9481,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ซ้ำ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrarlayan"
           }
         },
         "vi": {
@@ -9265,6 +9631,12 @@
             "value": "ใส่ชั้นเรียนเพื่อกรองกำหนดการที่เฉพาะชั้นเรียนอื่นออกโดยอัตโนมัติ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca diğer sınıflara ait etkinlikleri otomatik ayıklamak için bir sınıf girin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -9407,6 +9779,12 @@
             "value": "เพิ่มชั้นเรียน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınıf ekle"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -9547,6 +9925,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แชร์กับคู่สมรสและปู่ย่าตายาย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eşiniz ve büyükanne-büyükbabalarla paylaşın"
           }
         },
         "vi": {
@@ -9692,6 +10076,12 @@
             "value": "สำรองและส่งออกข้อมูล"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yedekleme ve dışa aktarma"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -9832,6 +10222,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ดูอย่างเดียว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca görüntüleme"
           }
         },
         "vi": {
@@ -9975,6 +10371,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "สีและคอนทราสต์ที่ดูง่ายขึ้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha rahat renkler ve kontrast"
           }
         },
         "vi": {
@@ -10275,6 +10677,12 @@
             "value": "รูปภาพ %lld รูป — ปัดซ้ายขวาเพื่อดู แตะเพื่อขยาย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld fotoğraf – göz atmak için kaydırın, büyütmek için dokunun."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -10415,6 +10823,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ไม่พบข้อความในรูปภาพ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoğrafta metin bulunamadı."
           }
         },
         "vi": {
@@ -10559,6 +10973,12 @@
             "value": "แตะที่รูปเพื่อดูภาพขยาย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Büyük görmek için fotoğrafa dokunun."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -10699,6 +11119,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ลบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sil"
           }
         },
         "vi": {
@@ -10844,6 +11270,12 @@
             "value": "การตอบสนองแบบสัมผัส"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokunsal geri bildirim"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -10984,6 +11416,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "รอการตอบรับ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekliyor"
           }
         },
         "vi": {
@@ -11128,6 +11566,12 @@
             "value": "สแกน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tara"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -11268,6 +11712,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ใช้กับกำหนดการที่ระบุเวลาเท่านั้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca saati belirlenmiş etkinliklere uygulanır"
           }
         },
         "vi": {
@@ -11413,6 +11863,12 @@
             "value": "เคล็ดลับน่ารู้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faydalı ipuçları"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -11554,6 +12010,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ทำกำหนดการต่อจากที่ค้างไว้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliğe kaldığınız yerden devam edin"
           }
         },
         "vi": {
@@ -11698,6 +12160,12 @@
             "value": "เด็ก"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -11838,6 +12306,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ลบเด็ก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuğu Sil"
           }
         },
         "vi": {
@@ -11982,6 +12456,12 @@
             "value": "ชื่อเด็ก (เช่น น้องมิน)"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuğun adı (örn. Ali)"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -12122,6 +12602,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "กำหนดการของลูก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocukların Programı"
           }
         },
         "vi": {
@@ -12267,6 +12753,12 @@
             "value": "บันทึกกำหนดการของลูกเป็นไฟล์ แล้วนำกลับมาใช้ภายหลังได้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuklarınızın programını bir dosyaya kaydedin, sonra geri yükleyin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -12407,6 +12899,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เพิ่มเด็ก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Ekle"
           }
         },
         "vi": {
@@ -12551,6 +13049,12 @@
             "value": "เพิ่มเด็กเพื่อจัดกำหนดการแยกตามเด็ก และให้ชื่อแสดงในการแจ้งเตือนด้วย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliklerin çocuğa göre düzenlenmesi ve hatırlatıcılarda adının görünmesi için bir çocuk ekleyin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -12691,6 +13195,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เพิ่มเด็กเพื่อจัดกำหนดการแยกตามเด็ก และให้ชื่อแสดงในการแจ้งเตือนด้วย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliklerin çocuğa göre düzenlenmesi ve hatırlatıcılarda adının görünmesi için bir çocuk ekleyin."
           }
         },
         "vi": {
@@ -12835,6 +13345,12 @@
             "value": "ตารางลูกน้อย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Takvimi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -12975,6 +13491,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ข้อมูลตารางลูกน้อย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Takvimi Verileri"
           }
         },
         "vi": {
@@ -13119,6 +13641,12 @@
             "value": "ส่งให้ผู้ใช้ตารางลูกน้อย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Takvimi Kullanıcılarına Gönder"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -13259,6 +13787,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ปฏิทินตารางลูกน้อย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Takvimi Etkinlikleri"
           }
         },
         "vi": {
@@ -13403,6 +13937,12 @@
             "value": "ตารางลูกน้อย – แชร์"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocuk Takvimi – Paylaşıldı"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -13543,6 +14083,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ยังไม่เคยซิงค์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz eşitlenmedi."
           }
         },
         "vi": {
@@ -13687,6 +14233,12 @@
             "value": "ยังไม่มีใครเข้าร่วม"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz katılan yok"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -13829,6 +14381,12 @@
             "value": "ยังไม่ได้ส่งคำเชิญ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz davet gönderilmedi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -13969,6 +14527,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แจ้งให้ทราบ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirim"
           }
         },
         "vi": {
@@ -14269,6 +14833,12 @@
             "value": "ตั้งการแจ้งเตือนไว้ %lld รายการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld hatırlatıcı planlandı"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -14409,6 +14979,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ต้องอนุญาตการแจ้งเตือน (เปิดได้ในการตั้งค่า)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirim izni gerekli (Ayarlar’dan açın)"
           }
         },
         "vi": {
@@ -14553,6 +15129,12 @@
             "value": "ตั้งค่าการแจ้งเตือน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatırlatıcı Ayarları"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -14693,6 +15275,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แจ้งเตือนฉัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatırlat"
           }
         },
         "vi": {
@@ -14837,6 +15425,12 @@
             "value": "ปิดเวลาแจ้งเตือนทั้งหมดอยู่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm hatırlatma zamanları kapalı"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -14977,6 +15571,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ไม่มีการแจ้งเตือน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatırlatıcı yok"
           }
         },
         "vi": {
@@ -15122,6 +15722,12 @@
             "value": "คำแนะนำเบา ๆ เกี่ยวกับฟีเจอร์ที่มีประโยชน์ ในจังหวะที่ใช่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tam ihtiyaç duyduğunuz anda faydalı özelliklere dair ince ipuçları."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -15262,6 +15868,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เพิ่มลงปฏิทินของ Apple ด้วย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Takvim’e de ekle"
           }
         },
         "vi": {
@@ -15407,6 +16019,12 @@
             "value": "ใช้แอปเป็นภาษาอังกฤษได้ด้วย"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulamanın tamamını İngilizce de kullanın."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -15548,6 +16166,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ปฏิทินและกำหนดการยังคมชัดอ่านง่ายในโหมดมืด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim ve etkinlikler Koyu Mod’da net ve okunaklı kalır."
           }
         },
         "vi": {
@@ -15692,6 +16316,12 @@
             "value": "แสดงกำหนดการที่กำลังจะถึงซึ่งดึงมาจากปฏิทินของโรงเรียน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir kreş takviminden çıkarılan yaklaşan etkinlikleri gösterir."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -15832,6 +16462,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ถ่ายรูปประกาศจากโรงเรียน หรือวางข้อความที่ได้รับ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreşten gelen duyurunun fotoğrafını çekin ya da bir mesaj yapıştırın"
           }
         },
         "vi": {
@@ -15977,6 +16613,12 @@
             "value": "เปิดแอปครั้งแรกหลังอัปเดต จะเห็นว่ามีอะไรใหม่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güncellemeden sonra uygulamayı ilk açtığınızda neyin yeni olduğunu görün."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -16120,6 +16762,12 @@
             "value": "มีอะไรใหม่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yenilikler"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -16260,6 +16908,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "วางข้อความจากโรงเรียนที่นี่\nเช่น พรุ่งนี้ฝนอาจตก โปรดเขียนชื่อบนรองเท้าบู๊ต เสื้อกันฝน และร่ม"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreşten gelen mesajı buraya yapıştırın.\nÖrn. Yarın yağmur bekleniyor, lütfen çizme, yağmurluk ve şemsiyenin üzerine isim yazın."
           }
         },
         "vi": {
@@ -16405,6 +17059,12 @@
             "value": "รองรับภาษาอังกฤษเต็มรูปแบบ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tam İngilizce desteği"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -16545,6 +17205,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เช่น ปิ่นโต กระติกน้ำ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Örn. beslenme çantası, su matarası"
           }
         },
         "vi": {
@@ -16689,6 +17355,12 @@
             "value": "วันนี้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugün"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -16829,6 +17501,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "วันนี้มีกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik bugün."
           }
         },
         "vi": {
@@ -16973,6 +17651,12 @@
             "value": "ข้อผิดพลาด"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hata"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -17113,6 +17797,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เสร็จสิ้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitti"
           }
         },
         "vi": {
@@ -17258,6 +17948,12 @@
             "value": "ลดการเคลื่อนไหว"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareketi Azalt"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -17399,6 +18095,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เมื่อเปิดลดการเคลื่อนไหว เอฟเฟกต์บนหน้าจอจะนุ่มนวลขึ้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareketi Azalt açıkken ekran efektleri sakinleşir."
           }
         },
         "vi": {
@@ -17544,6 +18246,12 @@
             "value": "ลบกำหนดการที่บันทึกไว้ทั้งหมดได้ในแอปเมื่อต้องการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydedilen tüm etkinlikleri istediğiniz zaman doğrudan uygulamadan silin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -17684,6 +18392,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ขยายเป็นมุมมองเดือน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aylık görünüme genişlet"
           }
         },
         "vi": {
@@ -17828,6 +18542,12 @@
             "value": "คุณจะไม่ได้รับกำหนดการของครอบครัวนี้อีก กำหนดการที่ได้รับมาแล้วจะยังคงอยู่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu ailenin etkinliklerini artık almayacaksınız. Şimdiye kadar aldığınız etkinlikler olduğu gibi kalır."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -17968,6 +18688,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "คุณกำลังดูกำหนดการของครอบครัวนี้ร่วมกัน กำหนดการที่คุณเพิ่มหรือแก้ไขก็จะส่งไปถึงอีกฝ่ายเช่นกัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu ailenin etkinliklerini birlikte görüyorsunuz. Eklediğiniz ya da değiştirdiğiniz etkinlikler onlara da iletilir."
           }
         },
         "vi": {
@@ -18112,6 +18838,12 @@
             "value": "อุปกรณ์เครื่องนี้จำกัดการใช้ iCloud"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu cihazda iCloud kullanımı kısıtlanmış."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -18252,6 +18984,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เพิ่มกำหนดการในวันนี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu Güne Etkinlik Ekle"
           }
         },
         "vi": {
@@ -18396,6 +19134,12 @@
             "value": "ไม่มีกำหนดการในวันนี้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu gün için etkinlik yok"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -18536,6 +19280,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ไม่พบกำหนดการที่มีวันที่ในข้อความนี้\nโปรดตรวจสอบว่ามีวันที่ (เช่น 12 ก.ค.) หรือคำอย่าง “พรุ่งนี้” “วันศุกร์”"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu mesajda tarihli etkinlik bulunamadı.\nMesajda bir tarih (örn. 12 Temmuz) ya da “yarın”, “cuma” gibi ifadeler olup olmadığını kontrol edin."
           }
         },
         "vi": {
@@ -18680,6 +19430,12 @@
             "value": "ลบเด็กคนนี้ไหม"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu çocuk silinsin mi?"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -18820,6 +19576,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ชื่อ (เช่น น้องมิน)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad (örn. Ali)"
           }
         },
         "vi": {
@@ -18964,6 +19726,12 @@
             "value": "คุณเข้าร่วมการแชร์ของครอบครัวอื่นอยู่แล้ว แตะ “ออกจากการแชร์” ก่อน แล้วค่อยส่งคำเชิญ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaten başka bir ailenin paylaşımına katılıyorsunuz. Önce “Paylaşımdan Ayrıl”a dokunun, ardından davet gönderin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -19104,6 +19872,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ประมวลผลรูปภาพไม่สำเร็จ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görsel işlenemedi."
           }
         },
         "vi": {
@@ -19404,6 +20178,12 @@
             "value": "พบกำหนดการในรูปนี้ %lld รายการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu fotoğraftan %lld etkinlik bulundu"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -19546,6 +20326,12 @@
             "value": "วันที่และเวลา"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarih ve saat"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -19686,6 +20472,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "กำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik"
           }
         },
         "vi": {
@@ -19986,6 +20778,12 @@
             "value": "บันทึกกำหนดการ %lld รายการ + รับการแจ้งเตือน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Etkinliği Kaydet + Hatırlatıcı Al"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -20284,6 +21082,12 @@
             "value": "นำเข้ากำหนดการแล้ว %lld รายการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld etkinlik içe aktarıldı."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -20424,6 +21228,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "นำเข้าข้อมูลกำหนดการไม่สำเร็จ\nโปรดตรวจสอบว่าไฟล์นี้ส่งออกจากแอปตารางลูกน้อย"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Program verileri içe aktarılamadı.\nDosyanın Çocuk Takvimi uygulamasından dışa aktarıldığından emin olun."
           }
         },
         "vi": {
@@ -20568,6 +21378,12 @@
             "value": "ตรงเวลาที่เริ่ม"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik saatinde"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -20708,6 +21524,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ประเภทกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik Türü"
           }
         },
         "vi": {
@@ -20852,6 +21674,12 @@
             "value": "เพิ่มกำหนดการด้วยตนเอง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliği Elle Ekle"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -20992,6 +21820,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เพิ่มกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik Ekle"
           }
         },
         "vi": {
@@ -21136,6 +21970,12 @@
             "value": "ดึงกำหนดการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlikleri Çıkar"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -21278,6 +22118,12 @@
             "value": "จากกำหนดการ ดูเหมือนเป็นเอกสารของ %@ หากไม่ใช่ ให้เปลี่ยนด้านบน"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliklere bakılırsa bu, %@ çocuğuna ait bir belge gibi görünüyor. Değilse yukarıdan değiştirin."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -21418,6 +22264,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ไม่พบข้อความที่ดูเป็นกำหนดการ\nลองถ่ายรูปใหม่ให้ตัวอักษรคมชัด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinliğe benzeyen bir metin bulunamadı.\nYazılar net çıksın diye fotoğrafı yeniden çekin."
           }
         },
         "vi": {
@@ -21563,6 +22415,12 @@
             "value": "สั่นเบา ๆ เมื่อเพิ่มหรือบันทึกกำหนดการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir etkinlik eklendiğinde ya da kaydedildiğinde hafif bir titreşim sizi bilgilendirir."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -21704,6 +22562,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "สิ่งที่พิมพ์ค้างไว้ยังอยู่ แม้แอปจะปิดไปกลางคัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yazdıklarınız, uygulama yarıda kapansa bile yerinde kalır."
           }
         },
         "vi": {
@@ -21848,6 +22712,12 @@
             "value": "ไม่พบบัญชีปฏิทินที่เพิ่มกำหนดการได้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etkinlik eklenebilecek bir takvim hesabı bulunamadı."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -21988,6 +22858,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "บันทึก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydet"
           }
         },
         "vi": {
@@ -22132,6 +23008,12 @@
             "value": "บันทึกแล้ว! ดูได้ในปฏิทินและวิดเจ็ต"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydedildi! Takvimde ve widget’ta görün"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -22272,6 +23154,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เย็นวันก่อน (เตรียมของ)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir gün önce akşam (eşyaları hazırlamak için)"
           }
         },
         "vi": {
@@ -22416,6 +23304,12 @@
             "value": "ทั้งหมด"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tümü"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -22556,6 +23450,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ชื่อเรื่อง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlık"
           }
         },
         "vi": {
@@ -22700,6 +23600,12 @@
             "value": "ชื่อเรื่อง (เช่น ทัศนศึกษา วันนำของมาโรงเรียน)"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlık (örn. Gezi, Oyuncak getirme günü)"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -22840,6 +23746,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ตรวจสอบชื่อเรื่อง เวลา และของที่ต้องเตรียม แตะวงกลมเพื่อเปลี่ยนเด็ก หรือปัดเพื่อลบรายการที่ไม่ต้องการ เมื่อบันทึกแล้วจะไปที่ปฏิทิน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlıkları, saatleri ve getirilecekleri kontrol edin. Çocuğu değiştirmek için daireye dokunun, gerekmeyen etkinlikleri silmek için kaydırın. Kaydedince takvime geçersiniz."
           }
         },
         "vi": {
@@ -22984,6 +23896,12 @@
             "value": "นำออกแล้ว"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çıkarıldı"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -23124,6 +24042,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ทั้งวัน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm gün"
           }
         },
         "vi": {
@@ -23268,6 +24192,12 @@
             "value": "กำหนดการทั้งวัน (เช่น ทัศนศึกษา) จะมีแค่การแจ้งเตือน “เย็นวันก่อน” และ “เช้าวันนั้น”"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm gün süren etkinlikler (gezi gibi) yalnızca “bir gün önce akşam” ve “o gün sabah” hatırlatıcılarını alır."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -23408,6 +24338,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ย่อเป็นมุมมองสัปดาห์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haftalık görünüme daralt"
           }
         },
         "vi": {
@@ -23552,6 +24488,12 @@
             "value": "ของที่ต้องเตรียม / บันทึก"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getirilecekler / notlar"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -23692,6 +24634,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ของที่ต้องเตรียม / บันทึก (เช่น นำปิ่นโตไป)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getirilecekler / notlar (örn. beslenme çantası)"
           }
         },
         "vi": {
@@ -23836,6 +24784,12 @@
             "value": "ซิงค์เดี๋ยวนี้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi Eşitle"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -23976,6 +24930,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เริ่มแล้วตอนนี้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi başlıyor."
           }
         },
         "vi": {
@@ -24120,6 +25080,12 @@
             "value": "ล้าง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temizle"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -24260,6 +25226,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ฝ่ายสนับสนุน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destek"
           }
         },
         "vi": {
@@ -24404,6 +25376,12 @@
             "value": "เพิ่มด้วยตนเอง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elle eklendi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -24544,6 +25522,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เข้าร่วมแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katıldı"
           }
         },
         "vi": {
@@ -24688,6 +25672,12 @@
             "value": "หากต้องการนำใครออกหรือเปลี่ยนสิทธิ์ ให้แตะ “จัดการผู้ร่วมแชร์” ด้านล่าง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birini çıkarmak ya da izinleri değiştirmek için aşağıdaki “Kişileri Yönet”e dokunun."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -24828,6 +25818,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "กำลังประมวลผล…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşleniyor…"
           }
         },
         "vi": {
@@ -24973,6 +25969,12 @@
             "value": "คู่มือสั้น ๆ สำหรับผู้เริ่มต้น"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni başlayanlar için kısa bir tur"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -25114,6 +26116,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "คำแนะนำสั้น ๆ ในการเพิ่มกำหนดการจากรูปถ่าย เมื่อเปิดแอปครั้งแรก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulamayı ilk açtığınızda fotoğraftan etkinlik eklemeyi gösteren kısa bir rehber."
           }
         },
         "vi": {
@@ -25258,6 +26266,12 @@
             "value": "ส่งคำเชิญ · จัดการผู้ร่วมแชร์"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet Gönder · Kişileri Yönet"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -25398,6 +26412,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "สร้างลิงก์คำเชิญไม่สำเร็จ โปรดลองใหม่อีกครั้งในอีกสักครู่"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet bağlantısı oluşturulamadı. Lütfen biraz sonra tekrar deneyin."
           }
         },
         "vi": {
@@ -25542,6 +26562,12 @@
             "value": "ส่งลิงก์คำเชิญ แล้วคู่สมรสหรือปู่ย่าตายายจะเห็นและแก้ไขกำหนดการเดียวกันได้ การเปลี่ยนแปลงฝั่งหนึ่งจะอัปเดตทั้งสองฝั่งอัตโนมัติ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir davet bağlantısı gönderin; eşiniz ya da büyükanne-büyükbabalar aynı etkinlikleri görebilir ve düzenleyebilir. Bir taraftaki değişiklik iki tarafta da otomatik güncellenir."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -25682,6 +26708,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ส่งลิงก์คำเชิญไม่สำเร็จ\n%@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet bağlantısı gönderilemedi.\n%@"
           }
         },
         "vi": {
@@ -25826,6 +26858,12 @@
             "value": "ส่งลิงก์คำเชิญทางข้อความ อีกฝ่ายเปิดในแอปแล้วเข้าร่วมได้ทันที หลังจากนั้นกำหนดการที่เพิ่มหรือแก้ไขฝั่งใดฝั่งหนึ่งจะอัปเดตทั้งสองฝั่งอัตโนมัติ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mesajla bir davet bağlantısı gönderin; karşı taraf uygulamada açıp hemen katılabilir. Sonrasında bir tarafta eklenen ya da değiştirilen etkinlikler iki tarafta da otomatik güncellenir."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -25966,6 +27004,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ผู้ที่ได้รับเชิญเพิ่มและแก้ไขกำหนดการได้เช่นกัน รูปโปรไฟล์ของเด็กจะไม่ถูกแชร์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet edilenler de etkinlik ekleyip düzenleyebilir. Çocukların profil fotoğrafları paylaşılmaz."
           }
         },
         "vi": {
@@ -26110,6 +27154,12 @@
             "value": "สมาชิกครอบครัวที่ได้รับเชิญ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet edilen aile üyesi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -26250,6 +27300,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แชร์กับผู้ที่คุณเชิญ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet ettiğiniz kişilerle paylaşılıyor"
           }
         },
         "vi": {
@@ -26394,6 +27450,12 @@
             "value": "ผู้ที่คุณเชิญจะดูกำหนดการของคุณไม่ได้อีก กำหนดการที่มีอยู่จะยังอยู่ในอุปกรณ์ทั้งสองเครื่อง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Davet ettiğiniz kişiler artık etkinliklerinizi göremeyecek. Mevcut etkinlikler iki cihazda da kalır."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -26536,6 +27598,12 @@
             "value": "เพิ่ม"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekle"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -26676,6 +27744,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ยกเลิก"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vazgeç"
           }
         },
         "vi": {
@@ -26976,6 +28050,12 @@
             "value": "เพิ่มลงปฏิทิน %lld รายการ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim’e %lld etkinlik eklendi"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -27116,6 +28196,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ต้องอนุญาตการเข้าถึงปฏิทิน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim izni gerekli"
           }
         },
         "vi": {
@@ -27260,6 +28346,12 @@
             "value": "ไม่ได้รับอนุญาตให้เข้าถึงปฏิทิน โปรดเปิดที่ การตั้งค่า > CalendarSnap"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim erişimine izin verilmemiş. Ayarlar > CalendarSnap bölümünden açın."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -27400,6 +28492,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เพิ่มลงปฏิทินไม่สำเร็จ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim’e eklenemedi"
           }
         },
         "vi": {
@@ -27544,6 +28642,12 @@
             "value": "แชร์เป็นไฟล์ปฏิทิน (.ics)"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim Dosyası Olarak Paylaş (.ics)"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -27684,6 +28788,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "เมื่อเปิด กำหนดการจะถูกเพิ่มลงปฏิทิน “%@” แชร์ปฏิทินนั้นในแอปปฏิทินของ iOS เพื่อซิงค์กับคู่สมรสและครอบครัวโดยอัตโนมัติ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açıkken etkinlikler “%@” takvimine eklenir. Eşiniz ve ailenizle otomatik eşitlenmesi için bu takvimi iOS Takvim uygulamasında paylaşın."
           }
         },
         "vi": {
@@ -27829,6 +28939,12 @@
             "value": "หน้าจอที่รองรับตัวอักษรขนาดใหญ่"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Büyük metne uygun düzenler"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -27971,6 +29087,12 @@
             "value": "วางจากคลิปบอร์ด"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panodan Yapıştır"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -28111,6 +29233,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แชร์เป็นข้อความ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metin Olarak Paylaş"
           }
         },
         "vi": {
@@ -28256,6 +29384,12 @@
             "value": "เลย์เอาต์สำหรับ iPhone แบบพับได้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katlanabilir iPhone düzeni"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -28397,6 +29531,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ดูปฏิทินและกำหนดการเคียงข้างกันบน iPhone แบบพับได้"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katlanabilir iPhone’da takvimi ve etkinlikleri yan yana görün."
           }
         },
         "vi": {
@@ -28541,6 +29681,12 @@
             "value": "เราจะดึงกำหนดการทั้งเดือนให้\nเพิ่มลงปฏิทินในครั้งเดียว และแจ้งเตือนให้คุณ"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayın tüm etkinliklerini çıkaracak,\ntakvime tek seferde ekleyecek ve size hatırlatacağız."
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -28681,6 +29827,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ผู้ร่วมแชร์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşan kişiler"
           }
         },
         "vi": {
@@ -28825,6 +29977,12 @@
             "value": "แก้ไขได้"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Düzenleyebilir"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -28967,6 +30125,12 @@
             "value": "ตกลง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamam"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -29107,6 +30271,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 กำหนดการของ %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 %@ için etkinlikler"
           }
         },
         "vi": {

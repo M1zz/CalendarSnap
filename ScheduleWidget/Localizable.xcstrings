@@ -123,6 +123,12 @@
             "value": "ที่กำลังจะถึง"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaklaşanlar"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -263,6 +269,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ถ่ายรูปปฏิทิน\nเพื่อเพิ่มกำหนดการ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvimin fotoğrafını çekin,\netkinlikleri ekleyin"
           }
         },
         "vi": {
@@ -407,6 +419,12 @@
             "value": "กำหนดการของลูก"
           }
         },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çocukların Programı"
+          }
+        },
         "vi": {
           "stringUnit": {
             "state": "translated",
@@ -547,6 +565,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แสดงกำหนดการที่กำลังจะถึงซึ่งดึงมาจากปฏิทินของโรงเรียน"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir kreş takviminden çıkarılan yaklaşan etkinlikleri gösterir."
           }
         },
         "vi": {

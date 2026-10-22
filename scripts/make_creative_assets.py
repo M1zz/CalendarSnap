@@ -55,6 +55,7 @@ SEARCH = {
     "nl": ("opvang kalender", "Foto maken en<br>de maand is klaar", "Wat er mee moet, de avond ervoor herinnerd"),
     "pl": ("kalendarz przedszkola", "Zrób zdjęcie,<br>miesiąc gotowy", "Co zabrać? Przypomnimy wieczorem wcześniej"),
     "sv": ("förskolekalender", "Fota så är<br>månaden klar", "Vad som ska med, påminnelse kvällen före"),
+    "tr": ("kreş takvimi", "Fotoğrafı çek,<br>ay hazır", "Getirilecekler bir gün önce akşam hatırlanır"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -82,6 +83,7 @@ HEADER = {
     "nl": ("De planning van mijn kind", "Eén foto van de brief,<br>de hele maand klaar"),
     "pl": ("Plan mojego dziecka", "Jedno zdjęcie ogłoszenia,<br>cały miesiąc gotowy"),
     "sv": ("Mitt barns schema", "En bild på lappen,<br>hela månaden klar"),
+    "tr": ("Çocuğumun programı", "Duyurunun tek fotoğrafı,<br>koca bir ay hazır"),
 }
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)

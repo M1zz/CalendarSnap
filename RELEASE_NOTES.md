@@ -140,6 +140,12 @@ Läs svaren på din feedback i appen.
 Öppna integritet och support i appen.
 Appen går nu ännu stabilare.
 
+### 앱스토어 (Turkish, tr)
+
+Geri bildirim yanıtlarını okuyun.
+Gizlilik ve destek sayfaları uygulamada.
+Uygulama daha kararlı çalışıyor.
+
 ## 1.0.4
 
 ### 새로운 기능
