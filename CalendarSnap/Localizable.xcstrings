@@ -123,6 +123,24 @@
             "value": " (이미 있는 %lld개 제외)"
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld já salvo, ignorado)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld já salvos, ignorados)"
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -265,6 +283,24 @@
             "value": " (중복 %lld개 제외)"
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplicado ignorado)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplicados ignorados)"
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -333,6 +369,12 @@
           "stringUnit": {
             "state": "translated",
             "value": " · 캘린더에도 추가"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Também adicionado ao Calendário"
           }
         },
         "ru": {
@@ -405,6 +447,12 @@
             "value": "%@님"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -473,6 +521,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@님과 함께 보는 중"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhando com %@"
           }
         },
         "ru": {
@@ -545,6 +599,12 @@
             "value": "%@반"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -613,6 +673,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@의 반"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turma de %@"
           }
         },
         "ru": {
@@ -757,6 +823,24 @@
             "value": "%@의 일정 %lld개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요."
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "O evento de %1$@ (%2$lld) e a foto de perfil também serão excluídos. Não é possível desfazer."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os %2$lld eventos de %1$@ e a foto de perfil também serão excluídos. Não é possível desfazer."
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -825,6 +909,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectado aos eventos de %@. Agora vocês podem gerenciá-los juntos dos dois lados."
           }
         },
         "ru": {
@@ -897,6 +987,12 @@
             "value": "%@의 프로필이 삭제됩니다. 되돌릴 수 없어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O perfil de %@ será excluído. Não é possível desfazer."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -965,6 +1061,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "'%@' 삭제"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir “%@”"
           }
         },
         "ru": {
@@ -1037,6 +1139,12 @@
             "value": "1시간 뒤 일정이에요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Começa em 1 hora."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1107,6 +1215,12 @@
             "value": "1시간 전"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 hora antes"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1175,6 +1289,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "1회성"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Únicos"
           }
         },
         "ru": {
@@ -1248,6 +1368,12 @@
             "value": "Face ID 잠금"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloqueio com Face ID"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1317,6 +1443,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Face ID나 Touch ID로 앱을 잠가 아이 일정을 지켜요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloqueie o app com Face ID ou Touch ID para manter a agenda dos seus filhos privada."
           }
         },
         "ru": {
@@ -1390,6 +1522,12 @@
             "value": "Siri에게 물어 아이의 오늘 일정을 바로 확인해요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pergunte à Siri o que seu filho tem hoje na agenda."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1459,6 +1597,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri와 단축어"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri e Atalhos"
           }
         },
         "ru": {
@@ -1532,6 +1676,12 @@
             "value": "VoiceOver가 달력과 일정을 빠짐없이, 알맞은 순서로 읽어 줘요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O VoiceOver lê o calendário inteiro e cada evento, na ordem certa."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1601,6 +1751,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "VoiceOver로 더 편하게"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhor suporte ao VoiceOver"
           }
         },
         "ru": {
@@ -1673,6 +1829,12 @@
             "value": "iCloud 상태를 확인하지 못했어요. 잠시 후 다시 시도해주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível verificar o status do iCloud. Tente novamente em instantes."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1741,6 +1903,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud 저장 공간이 부족해 일정을 올리지 못했어요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não há espaço suficiente no iCloud para enviar os eventos."
           }
         },
         "ru": {
@@ -1813,6 +1981,12 @@
             "value": "iCloud에 로그인해야 가족 공유를 쓸 수 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entre no iCloud para usar o compartilhamento familiar."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -1881,6 +2055,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud에 로그인해야 가족 공유를 쓸 수 있어요. 설정 앱 > Apple 계정에서 로그인해주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entre no iCloud para usar o compartilhamento familiar. Entre em Ajustes > conta Apple."
           }
         },
         "ru": {
@@ -1953,6 +2133,12 @@
             "value": "iCloud에 로그인해야 가족과 일정을 공유할 수 있어요.\n설정 앱 > Apple 계정에서 로그인해주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entre no iCloud para compartilhar eventos com a família.\nEntre em Ajustes > conta Apple."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2021,6 +2207,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가져오기 완료"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importação concluída"
           }
         },
         "ru": {
@@ -2093,6 +2285,12 @@
             "value": "가족"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Família"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2161,6 +2359,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 공유"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhamento familiar"
           }
         },
         "ru": {
@@ -2233,6 +2437,12 @@
             "value": "가족 공유가 종료됐어요. 지금까지 받은 일정은 그대로 남아 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O compartilhamento familiar terminou. Os eventos já recebidos continuam."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2301,6 +2511,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O compartilhamento familiar foi encerrado. Os eventos atuais continuam."
           }
         },
         "ru": {
@@ -2373,6 +2589,12 @@
             "value": "가족 초대하기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convidar família"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2441,6 +2663,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 초대해서 함께 보기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convidar a família"
           }
         },
         "ru": {
@@ -2513,6 +2741,12 @@
             "value": "가족의 일정과 연결됨"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectado aos eventos de uma família"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2581,6 +2815,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공유 나가기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sair do compartilhamento"
           }
         },
         "ru": {
@@ -2653,6 +2893,12 @@
             "value": "공유 정보가 초기화됐어요. 다시 초대해주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As informações de compartilhamento foram redefinidas. Envie o convite novamente."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2721,6 +2967,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공유 중단"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parar de compartilhar"
           }
         },
         "ru": {
@@ -2793,6 +3045,12 @@
             "value": "공유에서 나왔어요. 지금까지 받은 일정은 그대로 남아 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você saiu do compartilhamento. Os eventos já recebidos continuam."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2863,6 +3121,12 @@
             "value": "공유할 일정이 없어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não há eventos para compartilhar."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -2931,6 +3195,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공통"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos"
           }
         },
         "ru": {
@@ -3004,6 +3274,12 @@
             "value": "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As telas se reorganizam direitinho, sem cortar, quando você aumenta o texto."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3072,6 +3348,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "날짜를 선택하면 일정이 표시됩니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha uma data para ver os eventos"
           }
         },
         "ru": {
@@ -3145,6 +3427,12 @@
             "value": "내 일정 한 번에 지우기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apagar todos os meus eventos"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3213,6 +3501,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você já tem um compartilhamento familiar próprio. Toque primeiro em “Parar de compartilhar” e depois aceite o convite."
           }
         },
         "ru": {
@@ -3285,6 +3579,12 @@
             "value": "내일 일정이에요. 준비물을 미리 챙겨주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É amanhã. Deixe tudo preparado com antecedência."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3353,6 +3653,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "누구의 일정인가요?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De quem é este evento?"
           }
         },
         "ru": {
@@ -3425,6 +3731,12 @@
             "value": "다가오는 일정"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximos"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3493,6 +3805,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다음 일정"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximos"
           }
         },
         "ru": {
@@ -3566,6 +3884,12 @@
             "value": "다크 모드"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo escuro"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3634,6 +3958,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendário"
           }
         },
         "ru": {
@@ -3706,6 +4036,12 @@
             "value": "달력을 찍어\n일정을 등록하세요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografe um calendário\npara adicionar eventos"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3774,6 +4110,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "당일 아침"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na manhã do dia"
           }
         },
         "ru": {
@@ -3847,6 +4189,12 @@
             "value": "대비를 높이거나 색을 구별하기 어려워도 아이별 일정을 알아볼 수 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diferencie os eventos de cada criança mesmo com Aumentar contraste ativado ou se tiver dificuldade com as cores."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -3916,6 +4264,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "더 많은 나라 말로 앱을 쓸 수 있게 해요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use o app em mais idiomas."
           }
         },
         "ru": {
@@ -3989,6 +4343,12 @@
             "value": "더 많은 언어"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mais idiomas"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4057,6 +4417,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toque no círculo para adicionar uma foto de perfil. Se você informar a turma, os eventos só de outras turmas (como passeios) são filtrados automaticamente dos avisos. Quando a turma mudar no ano seguinte, é só atualizar aqui."
           }
         },
         "ru": {
@@ -4129,6 +4495,12 @@
             "value": "동기화에 실패했어요. 잠시 후 다시 시도해주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Falha na sincronização. Tente novamente em instantes."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4197,6 +4569,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마지막 동기화 %@ · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Última sincronização: %@ · Sincroniza automaticamente ao abrir o app e ao alterar eventos."
           }
         },
         "ru": {
@@ -4269,6 +4647,12 @@
             "value": "문자로 일정 추가"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar de mensagem"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4337,6 +4721,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "반 이름 (예: 무궁화)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome da turma (ex.: Girassóis)"
           }
         },
         "ru": {
@@ -4409,6 +4799,12 @@
             "value": "반 입력"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informar turma"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4477,6 +4873,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "반복"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recorrentes"
           }
         },
         "ru": {
@@ -4549,6 +4951,12 @@
             "value": "반을 입력하면 통신문에서 다른 반 전용 일정을 자동으로 걸러줘요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informe a turma para filtrar automaticamente os eventos só de outras turmas."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4619,6 +5027,12 @@
             "value": "반을 추가해주세요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar turma"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4687,6 +5101,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "배우자·조부모와 함께 보기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhe com o cônjuge e os avós"
           }
         },
         "ru": {
@@ -4760,6 +5180,12 @@
             "value": "백업과 내보내기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup e exportação"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -4828,6 +5254,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "보기 전용"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somente leitura"
           }
         },
         "ru": {
@@ -4899,6 +5331,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "보기 편한 색과 대비"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cores e contraste mais confortáveis"
           }
         },
         "ru": {
@@ -5043,6 +5481,24 @@
             "value": "사진 %lld장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요."
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld foto: toque nela para ampliar."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld fotos: deslize para ver todas e toque para ampliar."
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5111,6 +5567,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "사진에서 텍스트를 찾지 못했습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi encontrado texto na foto."
           }
         },
         "ru": {
@@ -5183,6 +5645,12 @@
             "value": "사진을 탭하면 크게 볼 수 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toque na foto para ampliá-la."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5251,6 +5719,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "삭제"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir"
           }
         },
         "ru": {
@@ -5324,6 +5798,12 @@
             "value": "손끝으로 느끼는 반응"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resposta tátil"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5392,6 +5872,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "수락 대기 중"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pendente"
           }
         },
         "ru": {
@@ -5464,6 +5950,12 @@
             "value": "스캔"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escanear"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5532,6 +6024,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시간이 지정된 일정에만 적용돼요"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vale apenas para eventos com horário"
           }
         },
         "ru": {
@@ -5605,6 +6103,12 @@
             "value": "쓰는 요령 알려 주기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dicas úteis"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5674,6 +6178,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "쓰던 일정 이어 쓰기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue o evento de onde parou"
           }
         },
         "ru": {
@@ -5746,6 +6256,12 @@
             "value": "아이"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Criança"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5814,6 +6330,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 삭제"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir criança"
           }
         },
         "ru": {
@@ -5886,6 +6408,12 @@
             "value": "아이 이름 (예: 지호)"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome da criança (ex.: Pedro)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -5954,6 +6482,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 일정"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda das crianças"
           }
         },
         "ru": {
@@ -6027,6 +6561,12 @@
             "value": "아이 일정을 파일로 저장하고 다시 불러올 수 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salve a agenda dos seus filhos em um arquivo e recupere quando quiser."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6095,6 +6635,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 추가"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar criança"
           }
         },
         "ru": {
@@ -6167,6 +6713,12 @@
             "value": "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 표시돼요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadastre uma criança para organizar os eventos por criança e ver o nome nos lembretes."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6235,6 +6787,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 함께 표시돼요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadastre uma criança para organizar os eventos por criança e ver o nome nos lembretes."
           }
         },
         "ru": {
@@ -6307,6 +6865,12 @@
             "value": "아이일정"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Kids"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6375,6 +6939,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이일정 데이터"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dados do Agenda Kids"
           }
         },
         "ru": {
@@ -6447,6 +7017,12 @@
             "value": "아이일정 사용자에게 보내기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar para usuários do Agenda Kids"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6515,6 +7091,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이일정 캘린더"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendário do Agenda Kids"
           }
         },
         "ru": {
@@ -6587,6 +7169,12 @@
             "value": "아이일정 함께 보기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Kids – compartilhada"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6655,6 +7243,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 동기화한 적이 없어요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ainda não sincronizado."
           }
         },
         "ru": {
@@ -6727,6 +7321,12 @@
             "value": "아직 참여한 사람이 없어요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ninguém entrou ainda"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6797,6 +7397,12 @@
             "value": "아직 초대하지 않았어요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum convite enviado ainda"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -6865,6 +7471,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aviso"
           }
         },
         "ru": {
@@ -7009,6 +7621,24 @@
             "value": "알림 %lld개 예약"
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld lembrete agendado"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld lembretes agendados"
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7077,6 +7707,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 권한이 필요해요 (설정에서 허용)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É preciso permitir as notificações (ative em Ajustes)"
           }
         },
         "ru": {
@@ -7149,6 +7785,12 @@
             "value": "알림 설정"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes de lembretes"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7217,6 +7859,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 시점"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lembrar"
           }
         },
         "ru": {
@@ -7289,6 +7937,12 @@
             "value": "알림 시점이 꺼져 있어요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos os horários de lembrete estão desativados"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7357,6 +8011,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 없음"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sem lembretes"
           }
         },
         "ru": {
@@ -7430,6 +8090,12 @@
             "value": "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dicas discretas sobre recursos úteis, na hora certa."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7498,6 +8164,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "애플 캘린더에도 추가"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar também ao Calendário da Apple"
           }
         },
         "ru": {
@@ -7571,6 +8243,12 @@
             "value": "앱을 영어로도 쓸 수 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use o app inteiro também em inglês."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7640,6 +8318,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어두운 화면에서도 달력과 일정이 또렷하게 보여요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O calendário e os eventos continuam nítidos e legíveis no modo escuro."
           }
         },
         "ru": {
@@ -7712,6 +8396,12 @@
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra os próximos eventos extraídos do calendário da escolinha."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7780,6 +8470,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 알림장을 찍거나 문자를 붙여넣어 보세요"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tire uma foto do aviso da escolinha ou cole uma mensagem"
           }
         },
         "ru": {
@@ -7853,6 +8549,12 @@
             "value": "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na primeira vez que abrir o app depois de uma atualização, veja o que há de novo."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7924,6 +8626,12 @@
             "value": "업데이트 소식"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novidades"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -7992,6 +8700,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "여기에 어린이집 문자·카카오톡 메시지를 붙여넣으세요.\n예) 내일은 비가 예정된 만큼 장화, 우의, 우산에 이름을 적어 보내주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cole aqui uma mensagem da escolinha.\nEx.: Amanhã está prevista chuva, então escrevam o nome nas botas, na capa de chuva e no guarda-chuva."
           }
         },
         "ru": {
@@ -8065,6 +8779,12 @@
             "value": "영어 지원"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suporte completo ao inglês"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8133,6 +8853,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: 도시락, 물통 지참"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ex.: lanche, garrafinha de água"
           }
         },
         "ru": {
@@ -8205,6 +8931,12 @@
             "value": "오늘"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hoje"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8273,6 +9005,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 일정이에요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É hoje."
           }
         },
         "ru": {
@@ -8345,6 +9083,12 @@
             "value": "오류"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erro"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8413,6 +9157,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
           }
         },
         "ru": {
@@ -8486,6 +9236,12 @@
             "value": "움직임 줄이기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reduzir movimento"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8555,6 +9311,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "움직임 줄이기를 켜면 화면 효과가 차분해져요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com Reduzir movimento ativado, os efeitos de tela ficam mais discretos."
           }
         },
         "ru": {
@@ -8628,6 +9390,12 @@
             "value": "원하면 앱 안에서 저장한 일정을 모두 지울 수 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apague todos os eventos salvos direto no app quando quiser."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8696,6 +9464,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "월간 달력으로 펼치기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expandir para o mês"
           }
         },
         "ru": {
@@ -8768,6 +9542,12 @@
             "value": "이 가족의 일정을 더 이상 받지 않습니다. 지금까지 받은 일정은 그대로 남아요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você não receberá mais os eventos desta família. Os eventos já recebidos continuam."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8836,6 +9616,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 가족의 일정을 함께 보고 있어요. 내가 추가하거나 고친 일정도 상대에게 그대로 전달됩니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você está vendo os eventos desta família em conjunto. Os eventos que você adicionar ou editar também chegam a eles."
           }
         },
         "ru": {
@@ -8908,6 +9694,12 @@
             "value": "이 기기에서는 iCloud 사용이 제한돼 있어요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O uso do iCloud está restrito neste dispositivo."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -8976,6 +9768,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 날 일정 추가"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar evento neste dia"
           }
         },
         "ru": {
@@ -9048,6 +9846,12 @@
             "value": "이 날은 일정이 없어요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum evento neste dia"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9116,6 +9920,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum evento com data foi encontrado nesta mensagem.\nConfira se ela tem uma data (ex.: 12 de julho) ou expressões como “amanhã” ou “sexta-feira”."
           }
         },
         "ru": {
@@ -9188,6 +9998,12 @@
             "value": "이 아이를 삭제할까요?"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir esta criança?"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9256,6 +10072,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이름 (예: 지호)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome (ex.: Pedro)"
           }
         },
         "ru": {
@@ -9328,6 +10150,12 @@
             "value": "이미 다른 가족의 공유에 참여하고 있어요. 먼저 ‘공유 나가기’를 한 뒤 초대해주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você já participa do compartilhamento de outra família. Toque primeiro em “Sair do compartilhamento” e depois envie o convite."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9396,6 +10224,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이미지를 처리할 수 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível processar a imagem."
           }
         },
         "ru": {
@@ -9540,6 +10374,24 @@
             "value": "이번 사진에서 추출된 일정 %lld개"
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld evento encontrado nesta foto"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld eventos encontrados nesta foto"
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9610,6 +10462,12 @@
             "value": "일시"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data e hora"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9678,6 +10536,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evento"
           }
         },
         "ru": {
@@ -9822,6 +10686,24 @@
             "value": "일정 %lld개 저장 + 알림 받기"
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Salvar %lld evento e ativar lembretes"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Salvar %lld eventos e ativar lembretes"
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -9964,6 +10846,24 @@
             "value": "일정 %lld개를 가져왔어요."
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld evento importado."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld eventos importados."
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10032,6 +10932,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível importar os dados da agenda.\nConfira se o arquivo foi exportado do app Agenda Kids."
           }
         },
         "ru": {
@@ -10104,6 +11010,12 @@
             "value": "일정 시각 정각"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No horário do evento"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10172,6 +11084,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 유형"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipo de evento"
           }
         },
         "ru": {
@@ -10244,6 +11162,12 @@
             "value": "일정 직접 추가"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar evento manualmente"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10312,6 +11236,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 추가"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar evento"
           }
         },
         "ru": {
@@ -10384,6 +11314,12 @@
             "value": "일정 추출"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extrair eventos"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10454,6 +11390,12 @@
             "value": "일정 패턴을 보고 '%@'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pelos eventos, parece ser o documento de %@. Se não for, altere acima."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10522,6 +11464,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi encontrado nenhum texto que pareça um evento.\nTire a foto de novo, de modo que a escrita fique nítida."
           }
         },
         "ru": {
@@ -10595,6 +11543,12 @@
             "value": "일정을 넣거나 저장했을 때 가볍게 떨려서 알려 줘요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um toque suave avisa quando um evento é adicionado ou salvo."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10664,6 +11618,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정을 적다가 앱이 꺼져도 쓰던 내용이 남아 있어요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que você estava digitando continua lá, mesmo que o app feche no meio."
           }
         },
         "ru": {
@@ -10736,6 +11696,12 @@
             "value": "일정을 추가할 수 있는 캘린더 계정을 찾지 못했습니다."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi encontrada uma conta de calendário para adicionar eventos."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10804,6 +11770,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvar"
           }
         },
         "ru": {
@@ -10876,6 +11848,12 @@
             "value": "저장 완료! 달력·위젯에서 확인하세요"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvo! Veja no calendário e no widget"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -10944,6 +11922,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전날 저녁 (준비물 챙기기)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na noite anterior (para preparar as coisas)"
           }
         },
         "ru": {
@@ -11016,6 +12000,12 @@
             "value": "전체"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11084,6 +12074,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제목"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Título"
           }
         },
         "ru": {
@@ -11156,6 +12152,12 @@
             "value": "제목 (예: 소풍, 준비물의 날)"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Título (ex.: Passeio, Dia de trazer brinquedo)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11224,6 +12226,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요. 저장하면 달력으로 이동합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confira títulos, horários e o que levar. Toque no círculo para trocar de criança ou deslize para excluir eventos de que não precisa. Ao salvar, você vai para o calendário."
           }
         },
         "ru": {
@@ -11296,6 +12304,12 @@
             "value": "제외됨"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Removido"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11364,6 +12378,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "종일"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dia inteiro"
           }
         },
         "ru": {
@@ -11436,6 +12456,12 @@
             "value": "종일 일정(소풍·현장학습 등)은 ‘전날 저녁’과 ‘당일 아침’ 알림만 울립니다."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eventos de dia inteiro (como passeios) só recebem os lembretes “na noite anterior” e “na manhã do dia”."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11504,6 +12530,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "주간 달력으로 접기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recolher para a semana"
           }
         },
         "ru": {
@@ -11576,6 +12608,12 @@
             "value": "준비물·메모"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que levar / anotações"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11644,6 +12682,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "준비물·메모 (예: 도시락 지참)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O que levar / anotações (ex.: lanche)"
           }
         },
         "ru": {
@@ -11716,6 +12760,12 @@
             "value": "지금 동기화"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sincronizar agora"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11784,6 +12834,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지금 시작하는 일정이에요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Começando agora."
           }
         },
         "ru": {
@@ -11856,6 +12912,12 @@
             "value": "지우기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limpar"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -11924,6 +12986,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지원"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suporte"
           }
         },
         "ru": {
@@ -11996,6 +13064,12 @@
             "value": "직접 추가"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionado manualmente"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12064,6 +13138,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "참여 중"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Participando"
           }
         },
         "ru": {
@@ -12136,6 +13216,12 @@
             "value": "참여자를 빼거나 권한을 바꾸려면 아래 ‘참여자 관리’를 눌러주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para remover alguém ou mudar permissões, toque em “Gerenciar pessoas” abaixo."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12204,6 +13290,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처리 중…"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processando…"
           }
         },
         "ru": {
@@ -12277,6 +13369,12 @@
             "value": "처음 쓰는 분을 위한 안내"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um tour rápido para quem está começando"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12346,6 +13444,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처음 열었을 때 사진으로 일정을 넣는 법을 짧게 보여 줘요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um guia curto de como adicionar eventos por foto, na primeira vez que abrir o app."
           }
         },
         "ru": {
@@ -12418,6 +13522,12 @@
             "value": "초대 링크 보내기 · 참여자 관리"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enviar convite · Gerenciar pessoas"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12486,6 +13596,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível criar o link de convite. Tente novamente em instantes."
           }
         },
         "ru": {
@@ -12558,6 +13674,12 @@
             "value": "초대 링크를 보내면 배우자·조부모도 같은 일정을 보고 고칠 수 있어요. 한쪽에서 일정을 바꾸면 양쪽에 자동으로 반영됩니다."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envie um link de convite e seu cônjuge ou os avós poderão ver e editar os mesmos eventos. Uma alteração de um lado é atualizada automaticamente nos dois."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12626,6 +13748,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대 링크를 보내지 못했어요.\n%@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível enviar o link de convite.\n%@"
           }
         },
         "ru": {
@@ -12698,6 +13826,12 @@
             "value": "초대 링크를 카카오톡·메시지로 보내면, 상대가 아이일정 앱에서 열어 바로 참여할 수 있어요. 이후에는 어느 쪽에서 일정을 추가하거나 고쳐도 양쪽에 자동으로 반영됩니다."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Envie um link de convite por mensagem e a pessoa abre no app e entra na hora. Depois disso, os eventos adicionados ou editados de um lado são atualizados automaticamente nos dois."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12766,6 +13900,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대받은 사람도 일정을 추가·수정할 수 있어요. 아이 프로필 사진은 공유되지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quem for convidado também pode adicionar e editar eventos. As fotos de perfil das crianças não são compartilhadas."
           }
         },
         "ru": {
@@ -12838,6 +13978,12 @@
             "value": "초대한 가족"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiar convidado"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -12906,6 +14052,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대한 가족과 함께 보는 중"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhando com as pessoas convidadas"
           }
         },
         "ru": {
@@ -12978,6 +14130,12 @@
             "value": "초대한 가족이 더 이상 일정을 볼 수 없게 됩니다. 지금까지의 일정은 양쪽 기기에 그대로 남아요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As pessoas convidadas não poderão mais ver seus eventos. Os eventos atuais continuam nos dois dispositivos."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13048,6 +14206,12 @@
             "value": "추가"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13116,6 +14280,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
           }
         },
         "ru": {
@@ -13260,6 +14430,24 @@
             "value": "캘린더 %lld개 추가"
           }
         },
+        "pt-BR": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld evento adicionado ao Calendário"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld eventos adicionados ao Calendário"
+                }
+              }
+            }
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13328,6 +14516,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "캘린더 권한이 필요해요"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "É preciso permitir o acesso ao calendário"
           }
         },
         "ru": {
@@ -13400,6 +14594,12 @@
             "value": "캘린더 접근 권한이 없습니다. 설정 > CalendarSnap에서 허용해주세요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O acesso ao calendário não está permitido. Ative em Ajustes > CalendarSnap."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13468,6 +14668,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "캘린더 추가 실패"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não foi possível adicionar ao Calendário"
           }
         },
         "ru": {
@@ -13540,6 +14746,12 @@
             "value": "캘린더 파일로 공유 (.ics)"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhar como arquivo de calendário (.ics)"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13608,6 +14820,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "켜면 %@ 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se ativado, os eventos são adicionados ao calendário “%@”. Compartilhe esse calendário no app Calendário do iOS para manter tudo sincronizado com o cônjuge e a família."
           }
         },
         "ru": {
@@ -13681,6 +14899,12 @@
             "value": "큰 글씨에 맞춘 화면"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telas para texto maior"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13751,6 +14975,12 @@
             "value": "클립보드에서 붙여넣기"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colar da área de transferência"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13819,6 +15049,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "텍스트로 공유"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartilhar como texto"
           }
         },
         "ru": {
@@ -13892,6 +15128,12 @@
             "value": "펼치는 아이폰 화면"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout para iPhone dobrável"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -13961,6 +15203,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "펼치는 아이폰에서 달력과 일정을 두 쪽으로 나눠 봐요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja o calendário e os eventos lado a lado em um iPhone dobrável."
           }
         },
         "ru": {
@@ -14033,6 +15281,12 @@
             "value": "한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vamos extrair os eventos do mês inteiro,\nadicioná-los ao calendário de uma vez e avisar você."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14101,6 +15355,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "함께 보는 사람"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pessoas compartilhando"
           }
         },
         "ru": {
@@ -14173,6 +15433,12 @@
             "value": "함께 편집"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pode editar"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14243,6 +15509,12 @@
             "value": "확인"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -14311,6 +15583,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 %@ 아이 일정"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Eventos de %@"
           }
         },
         "ru": {

@@ -638,3 +638,61 @@ Widget
 Controlla i prossimi eventi direttamente dalla schermata Home.
 
 Il riconoscimento del testo nelle foto avviene interamente sul tuo dispositivo. Le tue foto non vengono mai inviate a un server.
+
+## pt-BR
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Agenda Kids: Escolinha
+
+### 부제
+
+Foto do aviso, mês organizado
+
+### 키워드
+
+calendário,lembretes,creche,escola,pais,passeio,lanche,família,widget,scanner,turma,avós,babá,rotina
+
+### 프로모션 텍스트
+
+Fotografe o calendário da escolinha e o mês inteiro vai para o seu calendário, com um lembrete na noite anterior do que levar. Compartilhe com a família.
+
+### 설명
+
+Fotografe o calendário mensal da escolinha ou da creche e o Agenda Kids lê todos os eventos e os adiciona ao seu calendário de uma vez.
+Receba um lembrete na noite anterior e nunca mais esqueça o lanche do passeio nem o uniforme de educação física.
+
+Uma foto, o mês inteiro
+Tire a foto ou escolha uma da sua biblioteca, e datas, horários e títulos são lidos para você. Se a foto estiver de lado, o app encontra a orientação certa.
+Se a folha for dividida por turma, só os eventos da turma do seu filho são aproveitados.
+Antes de salvar, você pode editar título, data, opção de dia inteiro e a anotação do que levar, e deslizar para apagar o que não precisa.
+
+Também dá para colar uma mensagem
+Cole uma mensagem da escolinha e o app encontra as datas e o que levar e transforma tudo em eventos. Expressões como “amanhã” ou “esta sexta” viram datas de verdade.
+
+Calendário e lembretes
+Os eventos vão para um calendário próprio de cada criança, e os que já foram adicionados não se repetem.
+Escolha lembretes na noite anterior, na manhã do dia, 1 hora antes ou na hora exata. Suas anotações do que levar aparecem no lembrete.
+
+Mais de uma criança
+Mantenha os eventos de cada criança separados. O app olha os eventos anteriores para adivinhar de qual criança é um aviso novo.
+
+Compartilhe com a família
+Envie um link de convite por mensagem e seu cônjuge, os avós ou a babá poderão ver e editar os mesmos eventos. As mudanças feitas de um lado aparecem dos dois.
+
+Widget
+Veja os próximos eventos direto na tela de início.
+
+O reconhecimento de texto nas fotos acontece totalmente no seu dispositivo. Suas fotos nunca são enviadas a um servidor.

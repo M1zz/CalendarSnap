@@ -68,6 +68,12 @@ Leggi nell’app le risposte ai commenti.
 Apri privacy e supporto dall’app.
 Abbiamo reso l’app più stabile.
 
+### 앱스토어 (Portuguese Brazil, pt-BR)
+
+Leia no app as respostas aos recados.
+Abra privacidade e suporte no app.
+Deixamos o app ainda mais estável.
+
 ## 1.0.4
 
 ### 새로운 기능

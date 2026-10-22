@@ -51,6 +51,12 @@
             "value": "아이일정"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Kids"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -119,6 +125,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O acesso ao calendário é necessário para adicionar os eventos extraídos da escolinha e checar duplicados."
           }
         },
         "ru": {
@@ -191,6 +203,12 @@
             "value": "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다."
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O acesso ao calendário é necessário para adicionar os eventos extraídos da escolinha."
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -259,6 +277,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A câmera é usada para fotografar calendários e extrair os eventos."
           }
         },
         "ru": {

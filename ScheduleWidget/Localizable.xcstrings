@@ -51,6 +51,12 @@
             "value": "다가오는 일정"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Próximos"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -119,6 +125,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력을 찍어\n일정을 등록하세요"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografe um calendário\npara adicionar eventos"
           }
         },
         "ru": {
@@ -191,6 +203,12 @@
             "value": "아이 일정"
           }
         },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda das crianças"
+          }
+        },
         "ru": {
           "stringUnit": {
             "state": "translated",
@@ -259,6 +277,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra os próximos eventos extraídos do calendário da escolinha."
           }
         },
         "ru": {
