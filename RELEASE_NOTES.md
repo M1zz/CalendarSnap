@@ -80,6 +80,12 @@ Deixamos o app ainda mais estável.
 เปิดนโยบายส่วนตัวและฝ่ายสนับสนุนในแอป
 ปรับแอปให้ทำงานเสถียรยิ่งขึ้น
 
+### 앱스토어 (Vietnamese, vi)
+
+Đọc trả lời góp ý ngay trong ứng dụng.
+Mở chính sách riêng tư và hỗ trợ.
+Ứng dụng chạy ổn định hơn.
+
 ## 1.0.4
 
 ### 새로운 기능

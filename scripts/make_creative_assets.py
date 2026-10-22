@@ -45,6 +45,7 @@ SEARCH = {
     "it": ("calendario nido", "Scatta e<br>il mese è pronto", "Cosa portare, ricordato la sera prima"),
     "pt-BR": ("calendário da escolinha", "Tirou foto,<br>o mês está pronto", "O que levar, lembrado na noite anterior"),
     "th": ("ปฏิทินโรงเรียนลูก", "ถ่ายรูปเดียว<br>ได้ตารางทั้งเดือน", "ของที่ต้องเตรียม แจ้งเตือนเย็นวันก่อน"),
+    "vi": ("lịch trường mầm non", "Chụp một tấm,<br>xong cả tháng", "Đồ cần mang, nhắc từ tối hôm trước"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -62,6 +63,7 @@ HEADER = {
     "it": ("L’agenda del mio bimbo", "Una foto dell’avviso<br>e il mese è pronto"),
     "pt-BR": ("A agenda do meu filho", "Uma foto do aviso,<br>o mês inteiro pronto"),
     "th": ("ตารางของลูกน้อย", "ถ่ายประกาศใบเดียว<br>ได้กำหนดการทั้งเดือน"),
+    "vi": ("Lịch của con tôi", "Chụp một thông báo,<br>có ngay lịch cả tháng"),
 }
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)

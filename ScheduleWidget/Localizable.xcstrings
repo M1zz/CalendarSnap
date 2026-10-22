@@ -69,6 +69,12 @@
             "value": "ที่กำลังจะถึง"
           }
         },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sắp tới"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -149,6 +155,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ถ่ายรูปปฏิทิน\nเพื่อเพิ่มกำหนดการ"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chụp lịch\nđể thêm sự kiện"
           }
         },
         "zh-Hans": {
@@ -233,6 +245,12 @@
             "value": "กำหนดการของลูก"
           }
         },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lịch của bé"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -313,6 +331,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "แสดงกำหนดการที่กำลังจะถึงซึ่งดึงมาจากปฏิทินของโรงเรียน"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị các sự kiện sắp tới được trích xuất từ lịch của trường mầm non."
           }
         },
         "zh-Hans": {

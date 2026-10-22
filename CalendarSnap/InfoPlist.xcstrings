@@ -69,6 +69,12 @@
             "value": "ตารางลูกน้อย"
           }
         },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lịch Của Bé"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -149,6 +155,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ต้องเข้าถึงปฏิทินเพื่อเพิ่มกำหนดการของโรงเรียนที่ดึงมา และตรวจสอบรายการซ้ำ"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần truy cập Lịch để thêm các sự kiện của trường đã trích xuất và kiểm tra trùng lặp."
           }
         },
         "zh-Hans": {
@@ -233,6 +245,12 @@
             "value": "ต้องเข้าถึงปฏิทินเพื่อเพิ่มกำหนดการของโรงเรียนที่ดึงมา"
           }
         },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cần truy cập Lịch để thêm các sự kiện của trường đã trích xuất."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -313,6 +331,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "ใช้กล้องถ่ายรูปปฏิทินเพื่อดึงกำหนดการ"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera được dùng để chụp lịch và trích xuất sự kiện."
           }
         },
         "zh-Hans": {

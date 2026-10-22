@@ -754,3 +754,61 @@ https://m1zz.github.io/CalendarSnap/
 ดูกำหนดการที่กำลังจะถึงได้ทันทีจากหน้าจอโฮม
 
 การอ่านข้อความจากรูปถ่ายทำงานทั้งหมดในอุปกรณ์ของคุณ รูปถ่ายไม่ถูกส่งไปยังเซิร์ฟเวอร์
+
+## vi
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Lịch Của Bé: Trường mầm non
+
+### 부제
+
+Chụp thông báo, xong cả tháng
+
+### 키워드
+
+nhắc nhở,phụ huynh,đón đưa,dã ngoại,cơm hộp,gia đình,widget,quét,lớp học,ông bà,bảo mẫu,OCR,tiểu học
+
+### 프로모션 텍스트
+
+Chụp lịch trường mầm non gửi về, cả tháng sẽ vào lịch của bạn, kèm nhắc tối hôm trước để chuẩn bị đồ. Chia sẻ cho cả nhà cùng xem.
+
+### 설명
+
+Chụp lịch hoạt động hằng tháng của trường mầm non, Lịch Của Bé sẽ đọc mọi sự kiện và thêm cả tháng vào lịch của bạn chỉ một lần.
+Nhận lời nhắc vào tối hôm trước, từ nay không còn quên cơm hộp đi dã ngoại hay đồ thể dục.
+
+Một tấm ảnh, cả tháng
+Chụp ảnh hoặc chọn từ thư viện, ngày, giờ và tiêu đề được đọc giúp bạn. Ảnh chụp ngang cũng được tự động xoay đúng hướng.
+Nếu bảng chia theo lớp, chỉ sự kiện của lớp con bạn được lấy vào.
+Trước khi lưu, bạn có thể sửa tiêu đề, ngày, tùy chọn cả ngày và ghi chú đồ cần mang, rồi vuốt xóa những gì không cần.
+
+Dán tin nhắn cũng thành sự kiện
+Dán tin nhắn của trường, ứng dụng sẽ tìm ngày và đồ cần mang rồi tạo thành sự kiện. Những cách nói như “ngày mai” hay “thứ Sáu này” sẽ được đổi thành ngày cụ thể.
+
+Lịch và lời nhắc
+Sự kiện được thêm vào một lịch riêng cho từng bé, và những sự kiện đã thêm sẽ không bị thêm lại.
+Chọn nhắc vào tối hôm trước, sáng hôm đó, trước 1 giờ hoặc đúng giờ. Ghi chú đồ cần mang hiện ngay trong lời nhắc.
+
+Nhiều bé cũng không rối
+Quản lý sự kiện riêng cho từng bé. Ứng dụng xem các sự kiện trước đó để đoán thông báo mới là của bé nào.
+
+Chia sẻ với gia đình
+Gửi liên kết mời qua tin nhắn, vợ/chồng, ông bà hoặc người trông trẻ sẽ xem và sửa được cùng các sự kiện. Thay đổi ở bên nào cũng hiện ở cả hai bên.
+
+Widget
+Xem các sự kiện sắp tới ngay trên Màn hình chính.
+
+Việc nhận dạng chữ trong ảnh hoàn toàn diễn ra trên thiết bị của bạn. Ảnh không bao giờ được gửi lên máy chủ.
