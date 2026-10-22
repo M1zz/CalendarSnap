@@ -111,6 +111,12 @@
             "value": "Расписание малыша"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnschema"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -245,6 +251,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нужен доступ к календарю, чтобы добавлять найденные события детского сада и проверять повторы."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åtkomst till kalendern behövs för att lägga till de hämtade förskolehändelserna och kontrollera dubbletter."
           }
         },
         "th": {
@@ -383,6 +395,12 @@
             "value": "Нужен доступ к календарю, чтобы добавлять найденные события детского сада."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åtkomst till kalendern behövs för att lägga till de hämtade förskolehändelserna."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -517,6 +535,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Камера нужна, чтобы фотографировать календари и находить в них события."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameran används för att fota kalendrar och hämta händelser."
           }
         },
         "th": {

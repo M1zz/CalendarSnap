@@ -255,6 +255,24 @@
             "value": " (уже сохранённых, пропущено: %lld)"
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld redan sparad hoppades över)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld redan sparade hoppades över)"
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -535,6 +553,24 @@
             "value": " (пропущено повторов: %lld)"
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld dubblett hoppades över)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld dubbletter hoppades över)"
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -671,6 +707,12 @@
             "value": " · Также добавляется в «Календарь»"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Läggs även till i Kalender"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -802,6 +844,12 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "sv": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -943,6 +991,12 @@
             "value": "Общий доступ с пользователем %@"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delar med %@"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -1074,6 +1128,12 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "sv": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -1213,6 +1273,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Группа: %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@s avdelning"
           }
         },
         "th": {
@@ -1495,6 +1561,24 @@
             "value": "Вместе с профилем будут удалены фото и события (%2$lld) ребёнка: %1$@. Это нельзя отменить."
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@s %2$lld händelse och profilbild tas också bort. Det går inte att ångra."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@s %2$lld händelser och profilbild tas också bort. Det går inte att ångra."
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -1629,6 +1713,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Подключено к событиям: %@. Теперь вы можете вести их вместе."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ansluten till %@s händelser. Nu kan ni hantera dem tillsammans från båda håll."
           }
         },
         "th": {
@@ -1767,6 +1857,12 @@
             "value": "Профиль ребёнка «%@» будет удалён. Это нельзя отменить."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@s profil tas bort. Det går inte att ångra."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -1901,6 +1997,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Удалить «%@»"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bort ”%@”"
           }
         },
         "th": {
@@ -2039,6 +2141,12 @@
             "value": "Начнётся через час."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Börjar om 1 timme."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -2175,6 +2283,12 @@
             "value": "За 1 час"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 timme före"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -2309,6 +2423,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Разовые"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engångs"
           }
         },
         "th": {
@@ -2448,6 +2568,12 @@
             "value": "Блокировка по Face ID"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID-lås"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -2583,6 +2709,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Блокируйте приложение с помощью Face ID или Touch ID, чтобы расписание детей оставалось личным."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lås appen med Face ID eller Touch ID så att barnens scheman förblir privata."
           }
         },
         "th": {
@@ -2722,6 +2854,12 @@
             "value": "Спросите Siri, что сегодня в расписании у ребёнка."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fråga Siri vad barnet har på schemat idag."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -2857,6 +2995,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri и Быстрые команды"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri och Genvägar"
           }
         },
         "th": {
@@ -2996,6 +3140,12 @@
             "value": "VoiceOver читает весь календарь и каждое событие в правильном порядке."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver läser upp hela kalendern och varje händelse i rätt ordning."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -3131,6 +3281,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Удобнее с VoiceOver"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bättre stöd för VoiceOver"
           }
         },
         "th": {
@@ -3269,6 +3425,12 @@
             "value": "Не удалось проверить состояние iCloud. Повторите попытку чуть позже."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det gick inte att kontrollera iCloud-status. Försök igen om en stund."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -3403,6 +3565,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "В iCloud не хватает места, чтобы загрузить события."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det finns inte tillräckligt med iCloud-utrymme för att ladda upp händelserna."
           }
         },
         "th": {
@@ -3541,6 +3709,12 @@
             "value": "Чтобы пользоваться семейным доступом, войдите в iCloud."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logga in på iCloud för att använda familjedelning."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -3675,6 +3849,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Чтобы пользоваться семейным доступом, войдите в iCloud. Войти можно в «Настройки» > Учётная запись Apple."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logga in på iCloud för att använda familjedelning. Logga in under Inställningar > Apple-konto."
           }
         },
         "th": {
@@ -3813,6 +3993,12 @@
             "value": "Чтобы делиться событиями с семьёй, войдите в iCloud.\nВойдите в «Настройки» > Учётная запись Apple."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logga in på iCloud för att dela händelser med familjen.\nLogga in under Inställningar > Apple-konto."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -3947,6 +4133,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Импорт завершён"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importen klar"
           }
         },
         "th": {
@@ -4085,6 +4277,12 @@
             "value": "Семья"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familj"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -4219,6 +4417,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Семейный доступ"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familjedelning"
           }
         },
         "th": {
@@ -4357,6 +4561,12 @@
             "value": "Семейный доступ завершён. Полученные события остаются на месте."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familjedelningen har tagit slut. Händelser du redan fått finns kvar."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -4491,6 +4701,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Семейный доступ закрыт. Все события остаются на месте."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familjedelningen har avslutats. De nuvarande händelserna finns kvar."
           }
         },
         "th": {
@@ -4629,6 +4845,12 @@
             "value": "Пригласить семью"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bjud in familjen"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -4763,6 +4985,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Пригласить семью"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bjud in familjen"
           }
         },
         "th": {
@@ -4901,6 +5129,12 @@
             "value": "Подключено к событиям семьи"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ansluten till en familjs händelser"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -5035,6 +5269,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Выйти из общего доступа"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lämna delning"
           }
         },
         "th": {
@@ -5173,6 +5413,12 @@
             "value": "Данные общего доступа сброшены. Отправьте приглашение ещё раз."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delningsinformationen har återställts. Skicka inbjudan igen."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -5307,6 +5553,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Закрыть общий доступ"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avsluta delning"
           }
         },
         "th": {
@@ -5445,6 +5697,12 @@
             "value": "Вы вышли из общего доступа. Полученные события остаются на месте."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du har lämnat delningen. Händelser du redan fått finns kvar."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -5581,6 +5839,12 @@
             "value": "Нет событий, которыми можно поделиться."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det finns inga händelser att dela."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -5715,6 +5979,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Для всех"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alla"
           }
         },
         "th": {
@@ -5854,6 +6124,12 @@
             "value": "При увеличении текста экраны аккуратно перестраиваются, а не обрезаются."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skärmarna ordnar om sig snyggt i stället för att klippas av när du förstorar texten."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -5988,6 +6264,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Выберите дату, чтобы увидеть события"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Välj ett datum för att se dess händelser"
           }
         },
         "th": {
@@ -6127,6 +6409,12 @@
             "value": "Удалить все мои события"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bort alla mina händelser"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -6261,6 +6549,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "У вас уже есть собственный семейный доступ. Сначала нажмите «Закрыть общий доступ», затем примите приглашение."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du har redan en egen familjedelning. Tryck först på ”Avsluta delning” och acceptera sedan inbjudan."
           }
         },
         "th": {
@@ -6399,6 +6693,12 @@
             "value": "Событие завтра. Подготовьте всё заранее."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det är i morgon. Gör i ordning sakerna i god tid."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -6533,6 +6833,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Чьё это событие?"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vems händelse är det?"
           }
         },
         "th": {
@@ -6671,6 +6977,12 @@
             "value": "Ближайшие"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommande"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -6805,6 +7117,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ближайшие"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommande"
           }
         },
         "th": {
@@ -6944,6 +7262,12 @@
             "value": "Тёмная тема"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mörkt läge"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -7078,6 +7402,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Календарь"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender"
           }
         },
         "th": {
@@ -7216,6 +7546,12 @@
             "value": "Сфотографируйте календарь,\nчтобы добавить события"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fota en kalender\nför att lägga till händelser"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -7350,6 +7686,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Утром в тот же день"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "På morgonen samma dag"
           }
         },
         "th": {
@@ -7489,6 +7831,12 @@
             "value": "Различайте события каждого ребёнка даже с повышенной контрастностью или при трудностях с цветами."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skilj på varje barns händelser, även med Öka kontrast på eller om det är svårt att skilja på färger."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -7624,6 +7972,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Приложение на других языках."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Använd appen på fler språk."
           }
         },
         "th": {
@@ -7763,6 +8117,12 @@
             "value": "Больше языков"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fler språk"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -7897,6 +8257,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нажмите на кружок, чтобы добавить фото профиля. Если указать группу, события только для других групп (например, экскурсии) будут автоматически убираться из объявлений. Когда группа меняется в новом учебном году, просто поправьте её здесь."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryck på cirkeln för att lägga till en profilbild. Om du anger en avdelning filtreras händelser som bara gäller andra avdelningar (t.ex. utflykter) bort automatiskt från anslagen. När avdelningen byts under nästa läsår behöver du bara ändra den här."
           }
         },
         "th": {
@@ -8035,6 +8401,12 @@
             "value": "Не удалось синхронизировать. Повторите попытку чуть позже."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkroniseringen misslyckades. Försök igen om en stund."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -8169,6 +8541,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Последняя синхронизация: %@ · Выполняется автоматически при открытии приложения и изменении событий."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senast synkroniserad: %@ · Synkroniseras automatiskt när du öppnar appen eller ändrar händelser."
           }
         },
         "th": {
@@ -8307,6 +8685,12 @@
             "value": "Из сообщения"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till från meddelande"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -8441,6 +8825,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Название группы (например, «Подсолнухи»)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avdelningens namn (t.ex. Solrosen)"
           }
         },
         "th": {
@@ -8579,6 +8969,12 @@
             "value": "Укажите группу"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ange avdelning"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -8713,6 +9109,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Повторяющиеся"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Återkommande"
           }
         },
         "th": {
@@ -8851,6 +9253,12 @@
             "value": "Укажите группу, чтобы автоматически убирать события, предназначенные только для других групп."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ange en avdelning för att automatiskt filtrera bort händelser som bara gäller andra avdelningar."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -8987,6 +9395,12 @@
             "value": "Добавьте группу"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till avdelning"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -9121,6 +9535,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Делитесь с партнёром и бабушками-дедушками"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dela med partner och far- och morföräldrar"
           }
         },
         "th": {
@@ -9260,6 +9680,12 @@
             "value": "Резервная копия и экспорт"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Säkerhetskopiering och export"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -9394,6 +9820,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Только просмотр"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endast visning"
           }
         },
         "th": {
@@ -9531,6 +9963,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Удобные цвета и контраст"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekvämare färger och kontrast"
           }
         },
         "th": {
@@ -9813,6 +10251,24 @@
             "value": "Фото: %lld — листайте влево и вправо, нажмите, чтобы увеличить."
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld bild – tryck för att förstora."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld bilder – svep för att bläddra, tryck för att förstora."
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -9947,6 +10403,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось найти текст на фото."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hittade ingen text i bilden."
           }
         },
         "th": {
@@ -10085,6 +10547,12 @@
             "value": "Нажмите на фото, чтобы увеличить."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryck på bilden för att se den större."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -10219,6 +10687,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Удалить"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bort"
           }
         },
         "th": {
@@ -10358,6 +10832,12 @@
             "value": "Тактильный отклик"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptisk respons"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -10492,6 +10972,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ожидает ответа"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Väntar"
           }
         },
         "th": {
@@ -10630,6 +11116,12 @@
             "value": "Скан"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skanna"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -10764,6 +11256,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Только для событий с указанным временем"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gäller bara händelser med en bestämd tid"
           }
         },
         "th": {
@@ -10903,6 +11401,12 @@
             "value": "Полезные советы"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bra tips"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -11038,6 +11542,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Продолжить с того места, где остановились"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsätt händelsen där du slutade"
           }
         },
         "th": {
@@ -11176,6 +11686,12 @@
             "value": "Ребёнок"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barn"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -11310,6 +11826,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Удалить ребёнка"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bort barn"
           }
         },
         "th": {
@@ -11448,6 +11970,12 @@
             "value": "Имя ребёнка (например, Миша)"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnets namn (t.ex. Elias)"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -11582,6 +12110,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "События малыша"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnens schema"
           }
         },
         "th": {
@@ -11721,6 +12255,12 @@
             "value": "Сохраняйте расписание детей в файл и возвращайте его позже."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spara barnens scheman i en fil och hämta dem tillbaka senare."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -11855,6 +12395,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Добавить ребёнка"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till barn"
           }
         },
         "th": {
@@ -11993,6 +12539,12 @@
             "value": "Добавьте ребёнка, и события будут храниться по детям, а в напоминаниях появится имя."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till ett barn för att sortera händelser per barn och se namnet i påminnelserna."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -12127,6 +12679,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Добавьте ребёнка, и события будут храниться по детям, а в напоминаниях появится имя."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till ett barn för att sortera händelser per barn och se namnet i påminnelserna."
           }
         },
         "th": {
@@ -12265,6 +12823,12 @@
             "value": "Расписание малыша"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnschema"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -12399,6 +12963,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Данные «Расписания малыша»"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnschema-data"
           }
         },
         "th": {
@@ -12537,6 +13107,12 @@
             "value": "Отправить пользователю «Расписания малыша»"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skicka till användare av Barnschema"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -12671,6 +13247,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Календарь «Расписания малыша»"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnschema-kalender"
           }
         },
         "th": {
@@ -12809,6 +13391,12 @@
             "value": "Расписание малыша — общий доступ"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnschema – delat"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -12943,6 +13531,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ещё не синхронизировано."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inte synkroniserad än."
           }
         },
         "th": {
@@ -13081,6 +13675,12 @@
             "value": "Пока никто не присоединился"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen har gått med ännu"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -13217,6 +13817,12 @@
             "value": "Приглашение ещё не отправлено"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen inbjudan har skickats än"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -13351,6 +13957,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Уведомление"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meddelande"
           }
         },
         "th": {
@@ -13633,6 +14245,24 @@
             "value": "Запланировано напоминаний: %lld"
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld påminnelse schemalagd"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld påminnelser schemalagda"
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -13767,6 +14397,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нужно разрешение на уведомления (включите его в «Настройках»)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillstånd för aviseringar behövs (slå på i Inställningar)"
           }
         },
         "th": {
@@ -13905,6 +14541,12 @@
             "value": "Настройки напоминаний"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Påminnelseinställningar"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -14039,6 +14681,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Напоминать"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Påminn mig"
           }
         },
         "th": {
@@ -14177,6 +14825,12 @@
             "value": "Все напоминания выключены"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alla påminnelsetider är avstängda"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -14311,6 +14965,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Без напоминаний"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inga påminnelser"
           }
         },
         "th": {
@@ -14450,6 +15110,12 @@
             "value": "Ненавязчивые подсказки о полезных функциях — в нужный момент."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diskreta tips om användbara funktioner, precis när du behöver dem."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -14584,6 +15250,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Добавлять и в календарь Apple"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg även till i Apple Kalender"
           }
         },
         "th": {
@@ -14723,6 +15395,12 @@
             "value": "Приложение теперь и на английском."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Använd hela appen även på engelska."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -14858,6 +15536,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "В тёмной теме календарь и события остаются чёткими и читаемыми."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalendern och händelserna förblir skarpa och läsbara i mörkt läge."
           }
         },
         "th": {
@@ -14996,6 +15680,12 @@
             "value": "Показывает ближайшие события из календаря детского сада."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visar kommande händelser som hämtats från en förskolekalender."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -15130,6 +15820,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Сфотографируйте объявление из детского сада или вставьте сообщение"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fota ett anslag från förskolan eller klistra in ett meddelande"
           }
         },
         "th": {
@@ -15269,6 +15965,12 @@
             "value": "При первом запуске после обновления вы увидите, что нового."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Första gången du öppnar appen efter en uppdatering ser du vad som är nytt."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -15406,6 +16108,12 @@
             "value": "Что нового"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nytt"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -15540,6 +16248,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Вставьте сюда сообщение из детского сада.\nНапример: завтра ожидается дождь, подпишите, пожалуйста, сапоги, дождевик и зонт."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klistra in ett meddelande från förskolan här.\nT.ex. I morgon väntas regn, så skriv namn på gummistövlar, regnkläder och paraply."
           }
         },
         "th": {
@@ -15679,6 +16393,12 @@
             "value": "Поддержка английского"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fullt stöd för engelska"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -15813,6 +16533,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Например: обед с собой, бутылка с водой"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "T.ex. matlåda, vattenflaska"
           }
         },
         "th": {
@@ -15951,6 +16677,12 @@
             "value": "Сегодня"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idag"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -16085,6 +16817,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Событие сегодня."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det är idag."
           }
         },
         "th": {
@@ -16223,6 +16961,12 @@
             "value": "Ошибка"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fel"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -16357,6 +17101,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Готово"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klar"
           }
         },
         "th": {
@@ -16496,6 +17246,12 @@
             "value": "Уменьшение движения"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minska rörelser"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -16631,6 +17387,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Если включить «Уменьшение движения», эффекты на экране станут спокойнее."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Minska rörelser på blir skärmeffekterna lugnare."
           }
         },
         "th": {
@@ -16770,6 +17532,12 @@
             "value": "В любой момент удалите все сохранённые события прямо в приложении."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bort alla sparade händelser direkt i appen när du vill."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -16904,6 +17672,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Развернуть до месяца"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa hela månaden"
           }
         },
         "th": {
@@ -17042,6 +17816,12 @@
             "value": "Вы больше не будете получать события этой семьи. Полученные события останутся на месте."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du får inte längre den här familjens händelser. Händelser du redan fått finns kvar."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -17176,6 +17956,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Вы вместе просматриваете события этой семьи. События, которые вы добавляете или меняете, тоже передаются им."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ni tittar på den här familjens händelser tillsammans. Händelser du lägger till eller ändrar skickas också vidare till dem."
           }
         },
         "th": {
@@ -17314,6 +18100,12 @@
             "value": "На этом устройстве использование iCloud ограничено."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Användning av iCloud är begränsad på den här enheten."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -17448,6 +18240,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Добавить событие на этот день"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till händelse den här dagen"
           }
         },
         "th": {
@@ -17586,6 +18384,12 @@
             "value": "В этот день событий нет"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inga händelser den här dagen"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -17720,6 +18524,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "В этом сообщении не найдено событий с датой.\nПроверьте, есть ли в нём дата (например, 12 июля) или слова вроде «завтра» или «в пятницу»."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hittade inga händelser med datum i det här meddelandet.\nKontrollera att det innehåller ett datum (t.ex. 12 juli) eller ord som ”i morgon” eller ”fredag”."
           }
         },
         "th": {
@@ -17858,6 +18668,12 @@
             "value": "Удалить этого ребёнка?"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vill du ta bort det här barnet?"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -17992,6 +18808,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Имя (например, Миша)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namn (t.ex. Elias)"
           }
         },
         "th": {
@@ -18130,6 +18952,12 @@
             "value": "Вы уже участвуете в общем доступе другой семьи. Сначала нажмите «Выйти из общего доступа», затем отправьте приглашение."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du är redan med i en annan familjs delning. Tryck först på ”Lämna delning” och skicka sedan en inbjudan."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -18264,6 +19092,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось обработать изображение."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilden kunde inte bearbetas."
           }
         },
         "th": {
@@ -18546,6 +19380,24 @@
             "value": "Событий на этом фото: %lld"
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld händelse hittades i den här bilden"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld händelser hittades i den här bilden"
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -18682,6 +19534,12 @@
             "value": "Дата и время"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datum och tid"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -18816,6 +19674,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Событие"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Händelse"
           }
         },
         "th": {
@@ -19098,6 +19962,24 @@
             "value": "Сохранить события (%lld) и включить напоминания"
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Spara %lld händelse + få påminnelser"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Spara %lld händelser + få påminnelser"
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -19378,6 +20260,24 @@
             "value": "Импортировано событий: %lld."
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld händelse importerad."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld händelser importerade."
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -19512,6 +20412,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось импортировать данные расписания.\nУбедитесь, что файл экспортирован из приложения «Расписание малыша»."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schemadatan kunde inte importeras.\nKontrollera att filen exporterats från appen Barnschema."
           }
         },
         "th": {
@@ -19650,6 +20556,12 @@
             "value": "В момент начала"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vid starttiden"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -19784,6 +20696,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Тип события"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typ av händelse"
           }
         },
         "th": {
@@ -19922,6 +20840,12 @@
             "value": "Добавить событие вручную"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till händelse manuellt"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -20056,6 +20980,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Новое событие"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till händelse"
           }
         },
         "th": {
@@ -20194,6 +21124,12 @@
             "value": "Найти события"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hämta händelser"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -20330,6 +21266,12 @@
             "value": "Судя по событиям, это документ для ребёнка: %@. Если это не так, измените выше."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utifrån händelserna ser det ut som %@s dokument. Om inte, ändra det ovan."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -20464,6 +21406,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось найти текст, похожий на события.\nСфотографируйте ещё раз так, чтобы текст был чётким."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hittade ingen text som liknar händelser.\nTa om bilden så att texten blir skarp."
           }
         },
         "th": {
@@ -20603,6 +21551,12 @@
             "value": "Лёгкая вибрация сообщит, что событие добавлено или сохранено."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En lätt vibration visar när en händelse har lagts till eller sparats."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -20738,6 +21692,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Набранный текст не пропадёт, даже если приложение закроется."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det du skrev finns kvar, även om appen stängs halvvägs."
           }
         },
         "th": {
@@ -20876,6 +21836,12 @@
             "value": "Не найдена учётная запись календаря, в которую можно добавлять события."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hittade inget kalenderkonto där händelser kan läggas till."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -21010,6 +21976,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Сохранить"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spara"
           }
         },
         "th": {
@@ -21148,6 +22120,12 @@
             "value": "Сохранено! Смотрите в календаре и виджете"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sparat! Se det i kalendern och widgeten"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -21282,6 +22260,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Накануне вечером (собрать вещи)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kvällen före (för att packa)"
           }
         },
         "th": {
@@ -21420,6 +22404,12 @@
             "value": "Все"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alla"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -21554,6 +22544,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Название"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel"
           }
         },
         "th": {
@@ -21692,6 +22688,12 @@
             "value": "Название (например, Экскурсия, День своих вещей)"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel (t.ex. Utflykt, Ta-med-dag)"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -21826,6 +22828,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Проверьте названия, время и что нужно взять. Нажмите на кружок, чтобы сменить ребёнка, или смахните ненужное событие, чтобы удалить. После сохранения откроется календарь."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrollera titlar, tider och vad som ska med. Tryck på cirkeln för att byta barn, eller svep för att ta bort händelser du inte behöver. När du sparar kommer du till kalendern."
           }
         },
         "th": {
@@ -21964,6 +22972,12 @@
             "value": "Удалён"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borttagen"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -22098,6 +23112,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Весь день"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heldag"
           }
         },
         "th": {
@@ -22236,6 +23256,12 @@
             "value": "Для событий на весь день (например, экскурсий) приходят только напоминания «накануне вечером» и «утром в тот же день»."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heldagshändelser (t.ex. utflykter) får bara påminnelserna ”kvällen före” och ”på morgonen samma dag”."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -22370,6 +23396,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Свернуть до недели"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa bara veckan"
           }
         },
         "th": {
@@ -22508,6 +23540,12 @@
             "value": "Что взять / заметки"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att ta med / anteckningar"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -22642,6 +23680,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Что взять / заметки (например, обед с собой)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Att ta med / anteckningar (t.ex. matlåda)"
           }
         },
         "th": {
@@ -22780,6 +23824,12 @@
             "value": "Синхронизировать"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkronisera nu"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -22914,6 +23964,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Начинается прямо сейчас."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Börjar nu."
           }
         },
         "th": {
@@ -23052,6 +24108,12 @@
             "value": "Очистить"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rensa"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -23186,6 +24248,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Поддержка"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
           }
         },
         "th": {
@@ -23324,6 +24392,12 @@
             "value": "Добавлено вручную"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillagd manuellt"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -23458,6 +24532,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Участвуете"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med"
           }
         },
         "th": {
@@ -23596,6 +24676,12 @@
             "value": "Чтобы удалить участника или изменить права, нажмите «Участники» ниже."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om du vill ta bort någon eller ändra behörigheter trycker du på ”Hantera personer” nedan."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -23730,6 +24816,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Обработка…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bearbetar …"
           }
         },
         "th": {
@@ -23869,6 +24961,12 @@
             "value": "Краткая экскурсия для новичков"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En kort rundtur för nybörjare"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -24004,6 +25102,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Короткая инструкция, как добавить события с фото, при первом запуске."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En kort guide för att lägga till händelser från en bild, första gången du öppnar appen."
           }
         },
         "th": {
@@ -24142,6 +25246,12 @@
             "value": "Отправить приглашение · Участники"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skicka inbjudan · Hantera personer"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -24276,6 +25386,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось создать ссылку-приглашение. Повторите попытку чуть позже."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbjudningslänken kunde inte skapas. Försök igen om en stund."
           }
         },
         "th": {
@@ -24414,6 +25530,12 @@
             "value": "Отправьте ссылку-приглашение, и партнёр или бабушки-дедушки смогут видеть и менять те же события. Изменения с одной стороны автоматически появятся у обоих."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skicka en inbjudningslänk, så kan din partner eller far- och morföräldrar se och redigera samma händelser. En ändring på ena sidan uppdateras automatiskt på båda."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -24548,6 +25670,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось отправить ссылку-приглашение.\n%@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbjudningslänken kunde inte skickas.\n%@"
           }
         },
         "th": {
@@ -24686,6 +25814,12 @@
             "value": "Отправьте ссылку-приглашение в сообщении, и человек сможет сразу присоединиться в приложении. После этого события, добавленные или изменённые с любой стороны, автоматически обновляются у обоих."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skicka en inbjudningslänk i ett meddelande, så öppnar de den i appen och går med direkt. Därefter uppdateras händelser som läggs till eller ändras på ena sidan automatiskt på båda."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -24820,6 +25954,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Приглашённые тоже могут добавлять и менять события. Фото профиля детей не передаются."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbjudna kan också lägga till och redigera händelser. Barnens profilbilder delas inte."
           }
         },
         "th": {
@@ -24958,6 +26098,12 @@
             "value": "Приглашённый член семьи"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inbjuden familjemedlem"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -25092,6 +26238,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Общий доступ с приглашёнными"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delar med de inbjudna"
           }
         },
         "th": {
@@ -25230,6 +26382,12 @@
             "value": "Приглашённые больше не смогут видеть события. Все события останутся на обоих устройствах."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De inbjudna kan inte längre se dina händelser. De nuvarande händelserna finns kvar på båda enheterna."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -25366,6 +26524,12 @@
             "value": "Добавить"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -25500,6 +26664,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Отмена"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avbryt"
           }
         },
         "th": {
@@ -25782,6 +26952,24 @@
             "value": "Добавлено в календарь событий: %lld"
           }
         },
+        "sv": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld händelse lades till i Kalender"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld händelser lades till i Kalender"
+                }
+              }
+            }
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -25916,6 +27104,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нужно разрешение на доступ к календарю"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillstånd för kalendern behövs"
           }
         },
         "th": {
@@ -26054,6 +27248,12 @@
             "value": "Нет доступа к календарю. Разрешите его в «Настройки > CalendarSnap»."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åtkomst till kalendern är inte tillåten. Slå på den i Inställningar > CalendarSnap."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -26188,6 +27388,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Не удалось добавить в календарь"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunde inte läggas till i Kalender"
           }
         },
         "th": {
@@ -26326,6 +27532,12 @@
             "value": "Поделиться файлом календаря (.ics)"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dela som kalenderfil (.ics)"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -26460,6 +27672,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Если включено, события попадут в календарь «%@». Откройте общий доступ к нему в приложении «Календарь» на iOS, и он автоматически синхронизируется с партнёром и семьёй."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När det är på läggs händelserna till i kalendern ”%@”. Dela den kalendern i appen Kalender i iOS för att hålla den synkad med partner och familj."
           }
         },
         "th": {
@@ -26599,6 +27817,12 @@
             "value": "Экраны для крупного текста"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layouter för större text"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -26735,6 +27959,12 @@
             "value": "Вставить из буфера обмена"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klistra in från urklipp"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -26869,6 +28099,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Поделиться текстом"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dela som text"
           }
         },
         "th": {
@@ -27008,6 +28244,12 @@
             "value": "Экран для складного iPhone"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout för vikbar iPhone"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -27143,6 +28385,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "На складном iPhone календарь и события показываются рядом."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se kalendern och händelserna sida vid sida på en vikbar iPhone."
           }
         },
         "th": {
@@ -27281,6 +28529,12 @@
             "value": "Мы найдём все события месяца,\nодним махом добавим их в календарь и напомним о них."
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vi hämtar alla månadens händelser,\nlägger in dem i kalendern på en gång och påminner dig om dem."
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -27415,6 +28669,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Участники"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personer som delar"
           }
         },
         "th": {
@@ -27553,6 +28813,12 @@
             "value": "Можно редактировать"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kan redigera"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -27684,6 +28950,12 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "sv": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -27823,6 +29095,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 События ребёнка: %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Händelser för %@"
           }
         },
         "th": {

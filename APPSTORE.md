@@ -1276,3 +1276,61 @@ Widżet
 Zobacz nadchodzące wydarzenia prosto z ekranu początkowego.
 
 Rozpoznawanie tekstu na zdjęciach odbywa się w całości na Twoim urządzeniu. Twoje zdjęcia nigdy nie są wysyłane na serwer.
+
+## sv
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Barnschema: Förskolekalender
+
+### 부제
+
+Fota lappen, månaden är klar
+
+### 키워드
+
+påminnelser,skola,föräldrar,utflykt,matlåda,familj,widget,skanner,avdelning,mormor,farmor,fritids
+
+### 프로모션 텍스트
+
+Fota kalendern från förskolan, så hamnar hela månaden i din kalender, med en påminnelse kvällen före om vad som ska med. Dela den med familjen.
+
+### 설명
+
+Fota månadsplaneringen från förskolan eller dagis, så läser Barnschema alla händelser och lägger in hela månaden i din kalender på en gång.
+Få en påminnelse kvällen före, så glömmer du aldrig matlådan till utflykten eller gympakläderna.
+
+En bild, en hel månad
+Fota eller välj en bild från ditt bildbibliotek, så läses datum, tider och titlar åt dig. Bilder tagna på sidan vänds automatiskt rätt.
+Om översikten är indelad per avdelning tas bara händelserna för ditt barns avdelning med.
+Innan du sparar kan du redigera varje titel, datum, heldagsvalet och anteckningen om vad som ska med, och svepa bort det du inte behöver.
+
+Klistra in ett meddelande också
+Klistra in ett meddelande från förskolan, så hittar Barnschema datum och saker som ska med och gör dem till händelser. Uttryck som ”i morgon” eller ”på fredag” blir riktiga datum.
+
+Kalender och påminnelser
+Händelserna läggs i en egen kalender för varje barn, och sådana som redan lagts till läggs inte till två gånger.
+Välj påminnelser kvällen före, på morgonen, 1 timme före eller exakt på tiden. Dina anteckningar om vad som ska med visas i påminnelsen.
+
+Fler än ett barn
+Håll varje barns händelser isär. Barnschema tittar på tidigare händelser och gissar vilket barn ett nytt anslag gäller.
+
+Dela med familjen
+Skicka en inbjudningslänk i ett meddelande, så kan din partner, far- och morföräldrar eller barnvakt se och redigera samma händelser. Ändringar på ena sidan syns på båda.
+
+Widget
+Se kommande händelser direkt från hemskärmen.
+
+Textigenkänningen i bilder sker helt på din enhet. Dina bilder skickas aldrig till någon server.

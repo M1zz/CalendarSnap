@@ -134,6 +134,12 @@ Odpowiedzi na opinie są w aplikacji.
 Prywatność i pomoc w aplikacji.
 Aplikacja działa teraz stabilniej.
 
+### 앱스토어 (Swedish, sv)
+
+Läs svaren på din feedback i appen.
+Öppna integritet och support i appen.
+Appen går nu ännu stabilare.
+
 ## 1.0.4
 
 ### 새로운 기능

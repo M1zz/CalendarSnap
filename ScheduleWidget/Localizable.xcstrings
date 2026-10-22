@@ -111,6 +111,12 @@
             "value": "Ближайшие"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommande"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -245,6 +251,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Сфотографируйте календарь,\nчтобы добавить события"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fota en kalender\nför att lägga till händelser"
           }
         },
         "th": {
@@ -383,6 +395,12 @@
             "value": "События малыша"
           }
         },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnens schema"
+          }
+        },
         "th": {
           "stringUnit": {
             "state": "translated",
@@ -517,6 +535,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Показывает ближайшие события из календаря детского сада."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visar kommande händelser som hämtats från en förskolekalender."
           }
         },
         "th": {
