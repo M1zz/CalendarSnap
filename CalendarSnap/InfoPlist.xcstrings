@@ -15,6 +15,12 @@
             "value": "Kids Schedule"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもスケジュール"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -47,6 +53,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendar access is needed to add the extracted nursery events to your calendar and check for duplicates."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み取った保育園の予定をカレンダーに追加し、重複を確認するために、カレンダーへのアクセスが必要です。"
           }
         },
         "ko": {
@@ -83,6 +95,12 @@
             "value": "Calendar access is needed to add the extracted nursery events to your calendar."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み取った保育園の予定をカレンダーに追加するために、カレンダーへのアクセスが必要です。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -115,6 +133,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "The camera is used to take photos of calendars and extract events."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーの写真を撮影して予定を読み取るために、カメラを使用します。"
           }
         },
         "ko": {

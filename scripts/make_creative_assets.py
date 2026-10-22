@@ -37,6 +37,7 @@ SEARCH = {
     "en-GB": ("nursery calendar", "Snap it.<br>Get the whole month", "Packing reminders the evening before"),
     "zh-Hans": ("幼儿园通知", "拍一下<br>整月日程搞定", "准备物品前一天晚上提醒你"),
     "zh-Hant": ("幼兒園通知", "拍一下<br>整月行程搞定", "準備物品前一天晚上提醒你"),
+    "ja": ("保育園 連絡帳", "撮るだけで<br>1か月の予定を整理", "持ち物は前日の夜にお知らせ"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -46,6 +47,7 @@ HEADER = {
     "en-GB": ("My child’s schedule", "One photo of the notice,<br>a whole month of events"),
     "zh-Hans": ("我家宝贝的日程", "拍一张通知<br>整月日程就绪"),
     "zh-Hant": ("我家寶貝的行程", "拍一張通知<br>整月行程就緒"),
+    "ja": ("うちの子の予定", "お知らせを1枚撮れば<br>1か月分の予定が完成"),
 }
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)

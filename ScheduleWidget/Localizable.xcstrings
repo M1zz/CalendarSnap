@@ -15,6 +15,12 @@
             "value": "Upcoming"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今後の予定"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -47,6 +53,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Snap a calendar\nto add events"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーを撮影して\n予定を登録しましょう"
           }
         },
         "ko": {
@@ -83,6 +95,12 @@
             "value": "Kids’ Schedule"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもの予定"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -115,6 +133,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Shows upcoming events pulled from a nursery calendar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保育園のカレンダーから読み取った今後の予定を表示します。"
           }
         },
         "ko": {

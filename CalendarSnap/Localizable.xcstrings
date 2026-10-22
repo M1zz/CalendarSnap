@@ -39,6 +39,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（登録済みの%lld件は除きました）"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -97,6 +103,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（重複する%lld件は除きました）"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -129,6 +141,12 @@
           "stringUnit": {
             "state": "translated",
             "value": " · Also added to Calendar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " ・「カレンダー」にも追加"
           }
         },
         "ko": {
@@ -165,6 +183,12 @@
             "value": "%@"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@さん"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -197,6 +221,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sharing with %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@さんと一緒に見ています"
           }
         },
         "ko": {
@@ -233,6 +263,12 @@
             "value": "%@"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@さん"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -265,6 +301,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@’s Class"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@さんのクラス"
           }
         },
         "ko": {
@@ -325,6 +367,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@さんの予定%2$lld件とプロフィール写真も一緒に削除されます。この操作は取り消せません。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -357,6 +405,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Connected to %@’s events. You can now manage them together on both sides."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@の予定とつながりました。これからは双方で一緒に管理できます。"
           }
         },
         "ko": {
@@ -393,6 +447,12 @@
             "value": "%@’s profile will be deleted. This can’t be undone."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@さんのプロフィールが削除されます。この操作は取り消せません。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -425,6 +485,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Delete “%@”"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「%@」を削除"
           }
         },
         "ko": {
@@ -461,6 +527,12 @@
             "value": "Starts in 1 hour."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1時間後に始まります。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -495,6 +567,12 @@
             "value": "1 hour before"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1時間前"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -527,6 +605,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "One-time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1回のみ"
           }
         },
         "ko": {
@@ -564,6 +648,12 @@
             "value": "Face ID lock"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDロック"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -597,6 +687,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lock the app with Face ID or Touch ID to keep your kids’ schedules private."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDやTouch IDでアプリをロックして、お子さまの予定を守れます。"
           }
         },
         "ko": {
@@ -634,6 +730,12 @@
             "value": "Ask Siri what’s on your child’s schedule today."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siriに聞いて、お子さまの今日の予定をすぐに確認できます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -667,6 +769,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri and Shortcuts"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siriとショートカット"
           }
         },
         "ko": {
@@ -704,6 +812,12 @@
             "value": "VoiceOver reads the whole calendar and every event, in the right order."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOverがカレンダーと予定を漏れなく、正しい順序で読み上げます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -737,6 +851,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Better VoiceOver support"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOverでもっと使いやすく"
           }
         },
         "ko": {
@@ -773,6 +893,12 @@
             "value": "Couldn’t check iCloud status. Please try again in a moment."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloudの状態を確認できませんでした。しばらくしてからもう一度お試しください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -805,6 +931,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Not enough iCloud storage to upload your events."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloudの空き容量が足りず、予定をアップロードできませんでした。"
           }
         },
         "ko": {
@@ -841,6 +973,12 @@
             "value": "Sign in to iCloud to use Family Sharing."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族共有を使うには、iCloudにサインインしてください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -873,6 +1011,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sign in to iCloud to use Family Sharing. Sign in under Settings > Apple Account."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族共有を使うには、iCloudにサインインしてください。「設定」App > Apple アカウントからサインインできます。"
           }
         },
         "ko": {
@@ -909,6 +1053,12 @@
             "value": "Sign in to iCloud to share events with your family.\nSign in under Settings > Apple Account."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族と予定を共有するには、iCloudにサインインしてください。\n「設定」App > Apple アカウントからサインインできます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -941,6 +1091,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Import Complete"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み込み完了"
           }
         },
         "ko": {
@@ -977,6 +1133,12 @@
             "value": "Family"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1009,6 +1171,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Family Sharing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族共有"
           }
         },
         "ko": {
@@ -1045,6 +1213,12 @@
             "value": "Family sharing has ended. Events you’ve received so far stay as they are."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族共有が終了しました。これまでに受け取った予定はそのまま残ります。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1077,6 +1251,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Family sharing has stopped. Events so far stay as they are."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族共有を停止しました。これまでの予定はそのまま残ります。"
           }
         },
         "ko": {
@@ -1113,6 +1293,12 @@
             "value": "Invite Family"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族を招待"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1145,6 +1331,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Invite Family to Share"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族を招待して一緒に見る"
           }
         },
         "ko": {
@@ -1181,6 +1373,12 @@
             "value": "Connected to a family’s events"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家族の予定とつながっています"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1213,6 +1411,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Leave Sharing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有から退出"
           }
         },
         "ko": {
@@ -1249,6 +1453,12 @@
             "value": "Sharing info was reset. Please send an invitation again."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有情報がリセットされました。もう一度招待してください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1281,6 +1491,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stop Sharing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有を停止"
           }
         },
         "ko": {
@@ -1317,6 +1533,12 @@
             "value": "You’ve left sharing. Events you’ve received so far stay as they are."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有から退出しました。これまでに受け取った予定はそのまま残ります。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1351,6 +1573,12 @@
             "value": "There are no events to share."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有できる予定がありません。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1383,6 +1611,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Everyone"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共通"
           }
         },
         "ko": {
@@ -1420,6 +1654,12 @@
             "value": "Screens rearrange neatly instead of getting cut off when you enlarge text."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文字サイズを大きくしても、切れずに見やすくレイアウトが整います。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1452,6 +1692,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Select a date to see its events"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日付を選ぶと予定が表示されます"
           }
         },
         "ko": {
@@ -1489,6 +1735,12 @@
             "value": "Delete all my events"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分の予定をまとめて削除"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1521,6 +1773,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "You already have a family sharing of your own. Tap “Stop Sharing” first, then accept the invitation."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ご自身で作成した家族共有がすでにあります。先に「共有を停止」してから招待を承認してください。"
           }
         },
         "ko": {
@@ -1557,6 +1815,12 @@
             "value": "Happening tomorrow. Get things ready ahead of time."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明日の予定です。持ち物を準備しておきましょう。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1589,6 +1853,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Whose schedule is this?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "誰の予定ですか？"
           }
         },
         "ko": {
@@ -1625,6 +1895,12 @@
             "value": "Upcoming"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今後の予定"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1657,6 +1933,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Upcoming"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今後の予定"
           }
         },
         "ko": {
@@ -1694,6 +1976,12 @@
             "value": "Dark Mode"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダークモード"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1726,6 +2014,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダー"
           }
         },
         "ko": {
@@ -1762,6 +2056,12 @@
             "value": "Snap a calendar\nto add events"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーを撮影して\n予定を登録しましょう"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1794,6 +2094,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Morning of"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当日の朝"
           }
         },
         "ko": {
@@ -1831,6 +2137,12 @@
             "value": "Tell each child’s events apart, even with Increase Contrast on or if colours are hard to distinguish."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コントラストを上げたり、色の区別が難しい場合でも、お子さまごとの予定を見分けられます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1864,6 +2176,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Use the app in more languages."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "より多くの言語でアプリを使えるようにします。"
           }
         },
         "ko": {
@@ -1901,6 +2219,12 @@
             "value": "More languages"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "対応言語の追加"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1933,6 +2257,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tap the circle to add a profile photo. If you enter a class, events meant only for other classes (such as outings) are filtered out of notices automatically. When the class changes in a new school year, just update it here."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "丸いアイコンをタップするとプロフィール写真を設定できます。クラスを入力すると、お知らせに含まれる他のクラス専用の予定（見学など）が自動で除外されます。進級でクラスが変わったら、ここだけ直してください。"
           }
         },
         "ko": {
@@ -1969,6 +2299,12 @@
             "value": "Sync failed. Please try again in a moment."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同期に失敗しました。しばらくしてからもう一度お試しください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2001,6 +2337,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Last synced %@ · Syncs automatically when you open the app or change events."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最終同期：%@ ・ アプリを開いたときと予定を変更したときに自動で同期されます。"
           }
         },
         "ko": {
@@ -2037,6 +2379,12 @@
             "value": "Add from Message"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メッセージから追加"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2069,6 +2417,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Class name (e.g. Sunflowers)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラス名（例：ひまわり組）"
           }
         },
         "ko": {
@@ -2105,6 +2459,12 @@
             "value": "Enter Class"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラスを入力"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2137,6 +2497,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Repeating"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繰り返し"
           }
         },
         "ko": {
@@ -2173,6 +2539,12 @@
             "value": "Enter a class to automatically filter out events meant only for other classes."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラスを入力すると、他のクラス専用の予定が自動で除外されます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2207,6 +2579,12 @@
             "value": "Add a class"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラスを追加してください"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2239,6 +2617,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Share with your partner and grandparents"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "配偶者・祖父母と一緒に見る"
           }
         },
         "ko": {
@@ -2276,6 +2660,12 @@
             "value": "Backup and export"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バックアップと書き出し"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2308,6 +2698,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "View only"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "閲覧のみ"
           }
         },
         "ko": {
@@ -2343,6 +2739,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Easier colours and contrast"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見やすい色とコントラスト"
           }
         },
         "ko": {
@@ -2403,6 +2805,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真%lld枚 — 左右にスワイプして見られます。タップで拡大できます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2435,6 +2843,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t find any text in the photo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真から文字が見つかりませんでした。"
           }
         },
         "ko": {
@@ -2471,6 +2885,12 @@
             "value": "Tap the photo to view it larger."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真をタップすると拡大して見られます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2503,6 +2923,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Delete"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除"
           }
         },
         "ko": {
@@ -2540,6 +2966,12 @@
             "value": "Haptic feedback"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触覚フィードバック"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2572,6 +3004,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pending"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "承認待ち"
           }
         },
         "ko": {
@@ -2608,6 +3046,12 @@
             "value": "Scan"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキャン"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2640,6 +3084,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Only applies to events with a set time"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "時間を指定した予定にのみ適用されます"
           }
         },
         "ko": {
@@ -2677,6 +3127,12 @@
             "value": "Handy tips"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使い方のヒント"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2710,6 +3166,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pick up your event where you left off"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "入力中の予定を続きから"
           }
         },
         "ko": {
@@ -2746,6 +3208,12 @@
             "value": "Child"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さま"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2778,6 +3246,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Delete Child"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さまを削除"
           }
         },
         "ko": {
@@ -2814,6 +3288,12 @@
             "value": "Child’s name (e.g. Emma)"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さまの名前（例：ゆうた）"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2846,6 +3326,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kids’ Schedule"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもの予定"
           }
         },
         "ko": {
@@ -2883,6 +3369,12 @@
             "value": "Save your kids’ schedules to a file and bring them back later."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さまの予定をファイルに保存して、あとで読み込めます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2915,6 +3407,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Add Child"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さまを追加"
           }
         },
         "ko": {
@@ -2951,6 +3449,12 @@
             "value": "Add a child to keep events organised by child and see their name in reminders."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さまを登録すると、予定がお子さまごとに管理され、通知にも名前が表示されます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2983,6 +3487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Add a child to keep events organised by child and see their name in reminders."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お子さまを登録すると、予定がお子さまごとに管理され、通知にも名前が表示されます。"
           }
         },
         "ko": {
@@ -3019,6 +3529,12 @@
             "value": "Kids Schedule"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもスケジュール"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3051,6 +3567,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kids Schedule Data"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもスケジュールのデータ"
           }
         },
         "ko": {
@@ -3087,6 +3609,12 @@
             "value": "Send to Kids Schedule Users"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもスケジュールのユーザーに送る"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3119,6 +3647,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kids Schedule Calendar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもスケジュールのカレンダー"
           }
         },
         "ko": {
@@ -3155,6 +3689,12 @@
             "value": "Kids Schedule – Shared"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こどもスケジュール（共有）"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3187,6 +3727,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Not synced yet."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ同期していません。"
           }
         },
         "ko": {
@@ -3223,6 +3769,12 @@
             "value": "No one has joined yet"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ参加している人はいません"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3257,6 +3809,12 @@
             "value": "No invitation sent yet"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ招待していません"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3289,6 +3847,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Notice"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お知らせ"
           }
         },
         "ko": {
@@ -3349,6 +3913,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知を%lld件予約しました"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3381,6 +3951,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Notification permission needed (allow it in Settings)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知の許可が必要です（設定で許可してください）"
           }
         },
         "ko": {
@@ -3417,6 +3993,12 @@
             "value": "Reminder Settings"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知の設定"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3449,6 +4031,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Remind Me"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知のタイミング"
           }
         },
         "ko": {
@@ -3485,6 +4073,12 @@
             "value": "Reminder times are all turned off"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知のタイミングがすべてオフになっています"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3517,6 +4111,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No reminders"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知なし"
           }
         },
         "ko": {
@@ -3554,6 +4154,12 @@
             "value": "Gentle hints about useful features, right when you need them."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "知っておくと便利な機能を、ちょうどよいタイミングでそっとお知らせします。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3586,6 +4192,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Also add to Apple Calendar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleのカレンダーにも追加"
           }
         },
         "ko": {
@@ -3623,6 +4235,12 @@
             "value": "Use the whole app in English."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリを英語でも使えます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3656,6 +4274,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "The calendar and events stay crisp and readable in Dark Mode."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暗い画面でも、カレンダーと予定がくっきり見えます。"
           }
         },
         "ko": {
@@ -3692,6 +4316,12 @@
             "value": "Shows upcoming events pulled from a nursery calendar."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保育園のカレンダーから読み取った今後の予定を表示します。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3724,6 +4354,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Take a photo of a nursery notice or paste a message"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保育園のお知らせを撮影するか、メッセージを貼り付けてみましょう"
           }
         },
         "ko": {
@@ -3761,6 +4397,12 @@
             "value": "The first time you open the app after an update, see what’s new."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデート後に初めて開いたとき、新しくなった点をお知らせします。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3796,6 +4438,12 @@
             "value": "What’s new"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アップデート情報"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3828,6 +4476,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Paste a message from your nursery here.\ne.g. Rain is expected tomorrow, so please label your child’s boots, raincoat and umbrella."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ここに保育園からのメッセージを貼り付けてください。\n例）明日は雨の予報です。長靴・レインコート・傘に名前を書いてお持ちください。"
           }
         },
         "ko": {
@@ -3865,6 +4519,12 @@
             "value": "Full English support"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英語に対応"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3897,6 +4557,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "e.g. Packed lunch, water bottle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例：お弁当、水筒を持参"
           }
         },
         "ko": {
@@ -3933,6 +4599,12 @@
             "value": "Today"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3965,6 +4637,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Happening today."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の予定です。"
           }
         },
         "ko": {
@@ -4001,6 +4679,12 @@
             "value": "Error"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エラー"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4033,6 +4717,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Done"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
           }
         },
         "ko": {
@@ -4070,6 +4760,12 @@
             "value": "Reduce Motion"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "視差効果を減らす"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4103,6 +4799,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "With Reduce Motion on, screen effects calm down."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「視差効果を減らす」をオンにすると、画面の動きが控えめになります。"
           }
         },
         "ko": {
@@ -4140,6 +4842,12 @@
             "value": "Erase all saved events right in the app whenever you want."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "必要なときに、アプリ内で保存した予定をすべて削除できます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4172,6 +4880,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Expand to month view"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月表示に広げる"
           }
         },
         "ko": {
@@ -4208,6 +4922,12 @@
             "value": "You’ll stop receiving this family’s events. Events you’ve received so far stay as they are."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この家族の予定を受け取らなくなります。これまでに受け取った予定はそのまま残ります。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4240,6 +4960,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "You’re viewing this family’s events together. Events you add or edit are passed on to them as well."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この家族と予定を一緒に見ています。あなたが追加・編集した予定も相手にそのまま届きます。"
           }
         },
         "ko": {
@@ -4276,6 +5002,12 @@
             "value": "iCloud is restricted on this device."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスではiCloudの使用が制限されています。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4308,6 +5040,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Add Event on This Day"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この日に予定を追加"
           }
         },
         "ko": {
@@ -4344,6 +5082,12 @@
             "value": "No events on this day"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この日は予定がありません"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4376,6 +5120,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t find any events with dates in this message.\nCheck that it includes a date (e.g. July 12) or words like “tomorrow” or “Friday”."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このメッセージから日付のある予定が見つかりませんでした。\n日付（例：7月12日）や「明日」「金曜日」などの表現が含まれているかご確認ください。"
           }
         },
         "ko": {
@@ -4412,6 +5162,12 @@
             "value": "Delete this child?"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このお子さまを削除しますか？"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4444,6 +5200,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Name (e.g. Emma)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前（例：ゆうた）"
           }
         },
         "ko": {
@@ -4480,6 +5242,12 @@
             "value": "You’re already part of another family’s sharing. Tap “Leave Sharing” first, then send an invitation."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すでに別の家族の共有に参加しています。先に「共有から退出」してから招待してください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4512,6 +5280,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t process the image."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画像を処理できませんでした。"
           }
         },
         "ko": {
@@ -4572,6 +5346,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この写真から読み取った予定：%lld件"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4606,6 +5386,12 @@
             "value": "Date & time"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日時"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4638,6 +5424,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Event"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定"
           }
         },
         "ko": {
@@ -4698,6 +5490,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定%lld件を保存して通知を受け取る"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4756,6 +5554,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を%lld件読み込みました。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4788,6 +5592,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t import the schedule data.\nMake sure the file was exported from the Kids Schedule app."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定データを読み込めませんでした。\nこどもスケジュールから書き出したファイルかご確認ください。"
           }
         },
         "ko": {
@@ -4824,6 +5634,12 @@
             "value": "At event time"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定の時刻ちょうど"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4856,6 +5672,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Event Type"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定の種類"
           }
         },
         "ko": {
@@ -4892,6 +5714,12 @@
             "value": "Add Event Manually"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を手動で追加"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4924,6 +5752,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Add Event"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を追加"
           }
         },
         "ko": {
@@ -4960,6 +5794,12 @@
             "value": "Extract Events"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を読み取る"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -4994,6 +5834,12 @@
             "value": "Based on the events, this looks like %@’s document. If not, change it above."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定の内容から、%@のプリントと判断しました。違う場合は上で変更してください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5026,6 +5872,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t find any text that looks like events.\nTry taking the photo again so the writing is sharp."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定として読み取れる文字が見つかりませんでした。\n文字がはっきり写るように撮り直してみてください。"
           }
         },
         "ko": {
@@ -5063,6 +5915,12 @@
             "value": "A gentle tap lets you know when an event is added or saved."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を追加・保存したとき、軽い振動でお知らせします。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5096,6 +5954,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "What you were typing stays put, even if the app closes mid-way."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を入力中にアプリが終了しても、入力した内容が残ります。"
           }
         },
         "ko": {
@@ -5132,6 +5996,12 @@
             "value": "Couldn’t find a calendar account that events can be added to."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予定を追加できるカレンダーアカウントが見つかりませんでした。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5164,6 +6034,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Save"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
           }
         },
         "ko": {
@@ -5200,6 +6076,12 @@
             "value": "Saved! See it in the calendar and widget"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存しました！カレンダーとウィジェットで確認できます"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5232,6 +6114,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Evening before (to pack things)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "前日の夜（持ち物の準備に）"
           }
         },
         "ko": {
@@ -5268,6 +6156,12 @@
             "value": "All"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべて"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5300,6 +6194,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Title"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タイトル"
           }
         },
         "ko": {
@@ -5336,6 +6236,12 @@
             "value": "Title (e.g. School trip, Bring-your-own day)"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タイトル（例：遠足、持ち物の日）"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5368,6 +6274,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Check the titles, times and things to bring. Tap the circle to change the child, or swipe to delete events you don’t need. Saving takes you to the calendar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タイトル・時間・持ち物を確認しましょう。丸いアイコンをタップするとお子さまを変更でき、不要な予定はスワイプで削除できます。保存するとカレンダーに移動します。"
           }
         },
         "ko": {
@@ -5404,6 +6316,12 @@
             "value": "Removed"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除済み"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5436,6 +6354,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "All day"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "終日"
           }
         },
         "ko": {
@@ -5472,6 +6396,12 @@
             "value": "All-day events (such as school trips) only get the “evening before” and “morning of” reminders."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "終日の予定（遠足・校外学習など）には、「前日の夜」と「当日の朝」の通知だけが届きます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5504,6 +6434,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Collapse to week view"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "週表示にたたむ"
           }
         },
         "ko": {
@@ -5540,6 +6476,12 @@
             "value": "Things to bring / notes"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "持ち物・メモ"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5572,6 +6514,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Things to bring / notes (e.g. packed lunch)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "持ち物・メモ（例：お弁当を持参）"
           }
         },
         "ko": {
@@ -5608,6 +6556,12 @@
             "value": "Sync Now"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今すぐ同期"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5640,6 +6594,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Starting now."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まもなく始まります。"
           }
         },
         "ko": {
@@ -5676,6 +6636,12 @@
             "value": "Clear"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消去"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5708,6 +6674,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Support"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サポート"
           }
         },
         "ko": {
@@ -5744,6 +6716,12 @@
             "value": "Added manually"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手動で追加"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5776,6 +6754,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Joined"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "参加中"
           }
         },
         "ko": {
@@ -5812,6 +6796,12 @@
             "value": "To remove someone or change permissions, tap “Manage People” below."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "参加者の削除や権限の変更は、下の「参加者を管理」から行えます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5844,6 +6834,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Processing…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "処理中…"
           }
         },
         "ko": {
@@ -5881,6 +6877,12 @@
             "value": "A quick tour for newcomers"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめて使う方へのガイド"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5914,6 +6916,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "A short guide to adding events from a photo, the first time you open the app."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初めて開いたときに、写真から予定を追加する方法を簡単にご案内します。"
           }
         },
         "ko": {
@@ -5950,6 +6958,12 @@
             "value": "Send Invitation · Manage People"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待リンクを送る・参加者を管理"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -5982,6 +6996,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t create the invitation link. Please try again in a moment."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待リンクを作成できませんでした。しばらくしてからもう一度お試しください。"
           }
         },
         "ko": {
@@ -6018,6 +7038,12 @@
             "value": "Send an invitation link and your partner or grandparents can see and edit the same events. A change on one side updates both automatically."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待リンクを送ると、配偶者や祖父母も同じ予定を見て編集できます。どちらかで変更すると、双方に自動で反映されます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6050,6 +7076,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t send the invitation link.\n%@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待リンクを送信できませんでした。\n%@"
           }
         },
         "ko": {
@@ -6086,6 +7118,12 @@
             "value": "Send an invitation link by message and they can open it in the app and join right away. After that, events added or edited on either side update on both automatically."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待リンクをメッセージで送ると、相手がアプリで開いてすぐに参加できます。その後は、どちらで予定を追加・編集しても双方に自動で反映されます。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6118,6 +7156,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "People you invite can add and edit events too. Children’s profile photos aren’t shared."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待された人も予定を追加・編集できます。お子さまのプロフィール写真は共有されません。"
           }
         },
         "ko": {
@@ -6154,6 +7198,12 @@
             "value": "Invited family member"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待した家族"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6186,6 +7236,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sharing with the people you invited"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待した家族と一緒に見ています"
           }
         },
         "ko": {
@@ -6222,6 +7278,12 @@
             "value": "The people you invited will no longer see your events. Events so far stay on both devices."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "招待した家族は予定を見られなくなります。これまでの予定は双方のデバイスにそのまま残ります。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6256,6 +7318,12 @@
             "value": "Add"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "追加"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6288,6 +7356,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cancel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
           }
         },
         "ko": {
@@ -6348,6 +7422,12 @@
             }
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーに%lld件追加しました"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6380,6 +7460,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendar permission needed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーの許可が必要です"
           }
         },
         "ko": {
@@ -6416,6 +7502,12 @@
             "value": "Calendar access isn’t allowed. Turn it on in Settings > CalendarSnap."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーへのアクセスが許可されていません。「設定 > CalendarSnap」で許可してください。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6448,6 +7540,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t add to Calendar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーに追加できませんでした"
           }
         },
         "ko": {
@@ -6484,6 +7582,12 @@
             "value": "Share as Calendar File (.ics)"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カレンダーファイル（.ics）で共有"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6516,6 +7620,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "When on, events are added to the %@ calendar. Share that calendar in the iOS Calendar app to keep it in sync with your partner and family."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オンにすると、予定が「%@」カレンダーに登録されます。iOSの「カレンダー」Appでこのカレンダーを共有すると、配偶者や家族と自動で同期できます。"
           }
         },
         "ko": {
@@ -6553,6 +7663,12 @@
             "value": "Layouts for larger text"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大きい文字に合わせた画面"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6587,6 +7703,12 @@
             "value": "Paste from Clipboard"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリップボードから貼り付け"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6619,6 +7741,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Share as Text"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テキストで共有"
           }
         },
         "ko": {
@@ -6656,6 +7784,12 @@
             "value": "Foldable iPhone layout"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "折りたたみ式iPhoneの画面"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6689,6 +7823,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "See the calendar and events side by side on a foldable iPhone."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "折りたたみ式iPhoneで、カレンダーと予定を2画面に並べて見られます。"
           }
         },
         "ko": {
@@ -6725,6 +7865,12 @@
             "value": "We’ll pull out the whole month’s events,\nadd them to your calendar at once, and remind you."
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1か月分の予定を自動で読み取り、\nカレンダーにまとめて追加して、通知でお知らせします。"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6757,6 +7903,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "People sharing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一緒に見ている人"
           }
         },
         "ko": {
@@ -6793,6 +7945,12 @@
             "value": "Can edit"
           }
         },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共同編集"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -6822,6 +7980,12 @@
           }
         },
         "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -6859,6 +8023,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Kids’ events for %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 %@のお子さまの予定"
           }
         },
         "ko": {
