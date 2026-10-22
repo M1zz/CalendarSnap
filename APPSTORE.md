@@ -812,3 +812,61 @@ Widget
 Xem các sự kiện sắp tới ngay trên Màn hình chính.
 
 Việc nhận dạng chữ trong ảnh hoàn toàn diễn ra trên thiết bị của bạn. Ảnh không bao giờ được gửi lên máy chủ.
+
+## cs
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Rozvrh školky: akce z fotky
+
+### 부제
+
+Vyfoťte oznámení, měsíc hotov
+
+### 키워드
+
+kalendář,připomínky,jesle,škola,rodiče,výlet,svačina,rodina,widget,skener,třída,babička,chůva,OCR
+
+### 프로모션 텍스트
+
+Vyfoťte kalendář ze školky a celý měsíc se objeví ve vašem kalendáři, večer předem přijde připomínka, co vzít s sebou. Sdílejte ho s rodinou.
+
+### 설명
+
+Vyfoťte měsíční plán ze školky nebo jeslí a Rozvrh školky přečte všechny události a najednou je přidá do vašeho kalendáře.
+Večer předem dostanete připomínku, takže už nikdy nezapomenete na svačinu na výlet ani na cvičební oblečení.
+
+Jedna fotka, celý měsíc
+Vyfoťte plán nebo vyberte snímek z fotek a data, časy i názvy se přečtou za vás. I fotka pořízená na bok se otočí správně.
+Pokud je tabulka rozdělená po třídách, převezmou se jen události třídy vašeho dítěte.
+Před uložením můžete upravit každý název, datum, volbu celého dne i poznámku, co vzít s sebou, a nepotřebné události odsunout přejetím.
+
+Vložit můžete i zprávu
+Vložte zprávu ze školky a aplikace v ní najde data a věci, které je třeba vzít, a vytvoří z nich události. Slova jako „zítra“ nebo „tento pátek“ se změní ve skutečná data.
+
+Kalendář a připomínky
+Události se přidají do samostatného kalendáře každého dítěte a ty, které už tam jsou, se znovu nepřidají.
+Vyberte si připomínky večer předem, ráno téhož dne, hodinu předem nebo přesně v čas. Vaše poznámky, co vzít s sebou, se zobrazí přímo v připomínce.
+
+Více dětí
+Události každého dítěte zůstávají zvlášť. Aplikace podle dřívějších událostí odhadne, komu nové oznámení patří.
+
+Sdílení s rodinou
+Pošlete odkaz s pozvánkou ve zprávě a partner, prarodiče nebo chůva uvidí a mohou upravovat stejné události. Změny na jedné straně se objeví na obou.
+
+Widget
+Nadcházející události uvidíte rovnou na ploše.
+
+Rozpoznávání textu na fotkách probíhá celé ve vašem zařízení. Vaše fotky se nikdy neodesílají na žádný server.

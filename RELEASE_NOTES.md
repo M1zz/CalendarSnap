@@ -86,6 +86,12 @@ Deixamos o app ainda mais estável.
 Mở chính sách riêng tư và hỗ trợ.
 Ứng dụng chạy ổn định hơn.
 
+### 앱스토어 (Czech, cs)
+
+Odpovědi na podněty najdete v aplikaci.
+Zásady soukromí a podpora v aplikaci.
+Aplikace je teď stabilnější.
+
 ## 1.0.4
 
 ### 새로운 기능

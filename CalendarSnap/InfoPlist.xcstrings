@@ -3,6 +3,12 @@
   "strings": {
     "CFBundleDisplayName": {
       "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozvrh školky"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -91,6 +97,12 @@
     },
     "NSCalendarsFullAccessUsageDescription": {
       "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je potřeba přístup ke kalendáři, aby bylo možné přidat vyčtené události ze školky a kontrolovat duplicity."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -179,6 +191,12 @@
     },
     "NSCalendarsUsageDescription": {
       "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je potřeba přístup ke kalendáři, aby bylo možné přidat vyčtené události ze školky."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -267,6 +285,12 @@
     },
     "NSCameraUsageDescription": {
       "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoaparát slouží k focení kalendářů a vyčítání událostí."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",

@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -106,6 +106,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Kiểm tra lại<br>trước khi lưu", "Sửa tiêu đề, ngày, ghi chú chỉ một chạm"),
         ("03-calendar.png", "text-bottom", "Mỗi bé<br>một màu riêng", "Lịch anh chị em không bị lẫn"),
         ("04-reminders.png", "dark", "Nhắc từ<br>tối hôm trước", "Không còn quên cơm hộp, đồ thể dục"),
+    ],
+    "cs": [
+        ("01-scan.png", "hero-bleed", "Jedna fotka oznámení,<br>celý měsíc hotový", "Data a věci s sebou přečteme za vás"),
+        ("02-events.png", "left-text", "Zkontrolujte<br>před uložením", "Název, datum a poznámky upravíte jedním klepnutím"),
+        ("03-calendar.png", "text-bottom", "Každé dítě<br>má svou barvu", "Plány sourozenců se nepomíchají"),
+        ("04-reminders.png", "dark", "Připomínka<br>večer předem", "Na svačinu a cvičební oblečení už nezapomenete"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────
