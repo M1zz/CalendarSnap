@@ -62,6 +62,12 @@ Lisez les réponses à vos avis ici.
 Confidentialité et aide dans l’app.
 Une app encore plus stable.
 
+### 앱스토어 (Italian, it)
+
+Leggi nell’app le risposte ai commenti.
+Apri privacy e supporto dall’app.
+Abbiamo reso l’app più stabile.
+
 ## 1.0.4
 
 ### 새로운 기능

@@ -42,6 +42,7 @@ SEARCH = {
     "es": ("calendario guardería", "Haz la foto y<br>el mes queda listo", "Aviso la tarde anterior para preparar todo"),
     "de": ("Kita Kalender", "Fotografieren,<br>Monat fertig", "Mitbringsel am Vorabend im Blick"),
     "fr": ("calendrier crèche", "Une photo,<br>tout le mois est prêt", "Rappel la veille au soir pour les affaires"),
+    "it": ("calendario nido", "Scatta e<br>il mese è pronto", "Cosa portare, ricordato la sera prima"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -56,6 +57,7 @@ HEADER = {
     "es": ("La agenda de mi peque", "Una foto del aviso<br>y todo el mes listo"),
     "de": ("Die Termine meines Kindes", "Ein Foto vom Aushang,<br>der ganze Monat fertig"),
     "fr": ("L’agenda de mon enfant", "Une photo de l’affichage,<br>tout le mois organisé"),
+    "it": ("L’agenda del mio bimbo", "Una foto dell’avviso<br>e il mese è pronto"),
 }
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)

@@ -93,6 +93,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld già salvato, ignorato)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld già salvati, ignorati)"
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -217,6 +235,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplicato ignorato)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplicati ignorati)"
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -281,6 +317,12 @@
             "value": " · Aussi ajouté à Calendrier"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Aggiunto anche a Calendario"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -340,6 +382,12 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "it": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -409,6 +457,12 @@
             "value": "Partage avec %@"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In condivisione con %@"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -468,6 +522,12 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "it": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -535,6 +595,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Classe de %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sezione di %@"
           }
         },
         "ja": {
@@ -661,6 +727,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Verranno eliminati anche l’evento di %1$@ (%2$lld) e la foto profilo. L’operazione non si può annullare."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Verranno eliminati anche i %2$lld eventi di %1$@ e la foto profilo. L’operazione non si può annullare."
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -723,6 +807,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Connecté aux événements de %@. Vous pouvez désormais les gérer ensemble des deux côtés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collegato agli eventi di %@. Ora potete gestirli insieme da entrambe le parti."
           }
         },
         "ja": {
@@ -789,6 +879,12 @@
             "value": "Le profil de %@ sera supprimé. Cette action est irréversible."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il profilo di %@ verrà eliminato. L’operazione non si può annullare."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -851,6 +947,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Supprimer « %@ »"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina «%@»"
           }
         },
         "ja": {
@@ -917,6 +1019,12 @@
             "value": "Commence dans 1 heure."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia tra 1 ora."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -981,6 +1089,12 @@
             "value": "1 heure avant"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 ora prima"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1043,6 +1157,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ponctuels"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Singoli"
           }
         },
         "ja": {
@@ -1110,6 +1230,12 @@
             "value": "Verrouillage Face ID"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocco con Face ID"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1173,6 +1299,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verrouillez l’app avec Face ID ou Touch ID pour garder l’agenda de vos enfants privé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocca l’app con Face ID o Touch ID per mantenere privata l’agenda dei tuoi bambini."
           }
         },
         "ja": {
@@ -1240,6 +1372,12 @@
             "value": "Demandez à Siri ce qui est prévu aujourd’hui pour votre enfant."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiedi a Siri cosa c’è oggi in agenda per tuo figlio."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1303,6 +1441,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri et Raccourcis"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri e Comandi rapidi"
           }
         },
         "ja": {
@@ -1370,6 +1514,12 @@
             "value": "VoiceOver lit tout le calendrier et chaque événement, dans le bon ordre."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver legge tutto il calendario e ogni evento, nell’ordine giusto."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1433,6 +1583,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Meilleure prise en charge de VoiceOver"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliore supporto per VoiceOver"
           }
         },
         "ja": {
@@ -1499,6 +1655,12 @@
             "value": "Impossible de vérifier l’état d’iCloud. Réessayez dans un instant."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile verificare lo stato di iCloud. Riprova tra un momento."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1561,6 +1723,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Espace iCloud insuffisant pour envoyer vos événements."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spazio iCloud insufficiente per caricare gli eventi."
           }
         },
         "ja": {
@@ -1627,6 +1795,12 @@
             "value": "Connectez-vous à iCloud pour utiliser le partage familial."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi a iCloud per usare la condivisione familiare."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1689,6 +1863,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Connectez-vous à iCloud pour utiliser le partage familial. Connectez-vous dans Réglages > compte Apple."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi a iCloud per usare la condivisione familiare. Accedi da Impostazioni > account Apple."
           }
         },
         "ja": {
@@ -1755,6 +1935,12 @@
             "value": "Connectez-vous à iCloud pour partager des événements avec votre famille.\nConnectez-vous dans Réglages > compte Apple."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi a iCloud per condividere gli eventi con la famiglia.\nAccedi da Impostazioni > account Apple."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1817,6 +2003,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Importation terminée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importazione completata"
           }
         },
         "ja": {
@@ -1883,6 +2075,12 @@
             "value": "Famille"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Famiglia"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -1945,6 +2143,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partage familial"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condivisione familiare"
           }
         },
         "ja": {
@@ -2011,6 +2215,12 @@
             "value": "Le partage familial est terminé. Les événements déjà reçus sont conservés."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La condivisione familiare è terminata. Gli eventi già ricevuti restano."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2073,6 +2283,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le partage familial est arrêté. Les événements actuels sont conservés."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La condivisione familiare è stata interrotta. Gli eventi attuali restano."
           }
         },
         "ja": {
@@ -2139,6 +2355,12 @@
             "value": "Inviter la famille"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invita la famiglia"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2201,6 +2423,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Inviter la famille"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invita la famiglia"
           }
         },
         "ja": {
@@ -2267,6 +2495,12 @@
             "value": "Connecté aux événements d’une famille"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collegato agli eventi di una famiglia"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2329,6 +2563,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Quitter le partage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esci dalla condivisione"
           }
         },
         "ja": {
@@ -2395,6 +2635,12 @@
             "value": "Les informations de partage ont été réinitialisées. Envoyez à nouveau une invitation."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le informazioni di condivisione sono state reimpostate. Invia di nuovo l’invito."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2457,6 +2703,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Arrêter le partage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interrompi condivisione"
           }
         },
         "ja": {
@@ -2523,6 +2775,12 @@
             "value": "Vous avez quitté le partage. Les événements déjà reçus sont conservés."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sei uscito dalla condivisione. Gli eventi già ricevuti restano."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2587,6 +2845,12 @@
             "value": "Aucun événement à partager."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ci sono eventi da condividere."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2649,6 +2913,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tous"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti"
           }
         },
         "ja": {
@@ -2716,6 +2986,12 @@
             "value": "Les écrans se réorganisent proprement au lieu d’être coupés quand vous agrandissez le texte."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le schermate si riorganizzano bene invece di tagliarsi quando ingrandisci il testo."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2778,6 +3054,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Choisissez une date pour voir ses événements"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli una data per vedere i suoi eventi"
           }
         },
         "ja": {
@@ -2845,6 +3127,12 @@
             "value": "Supprimer tous mes événements"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina tutti i miei eventi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -2907,6 +3195,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vous avez déjà un partage familial à vous. Touchez d’abord « Arrêter le partage », puis acceptez l’invitation."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai già una condivisione familiare tua. Tocca prima «Interrompi condivisione», poi accetta l’invito."
           }
         },
         "ja": {
@@ -2973,6 +3267,12 @@
             "value": "C’est demain. Préparez les affaires à l’avance."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È per domani. Prepara per tempo quello che serve."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3035,6 +3335,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À qui est cet événement ?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di chi è questo evento?"
           }
         },
         "ja": {
@@ -3101,6 +3407,12 @@
             "value": "À venir"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In arrivo"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3163,6 +3475,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À venir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In arrivo"
           }
         },
         "ja": {
@@ -3230,6 +3548,12 @@
             "value": "Mode sombre"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modalità scura"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3292,6 +3616,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendrier"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendario"
           }
         },
         "ja": {
@@ -3358,6 +3688,12 @@
             "value": "Photographiez un calendrier\npour ajouter des événements"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografa un calendario\nper aggiungere gli eventi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3420,6 +3756,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le matin même"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mattina stessa"
           }
         },
         "ja": {
@@ -3487,6 +3829,12 @@
             "value": "Distinguez les événements de chaque enfant, même avec Contraste accru ou si les couleurs sont difficiles à différencier."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distingui gli eventi di ogni bambino anche con Aumenta contrasto attivo o se fai fatica a distinguere i colori."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3550,6 +3898,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Utilisez l’app dans d’autres langues."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa l’app in più lingue."
           }
         },
         "ja": {
@@ -3617,6 +3971,12 @@
             "value": "Plus de langues"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Più lingue"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3679,6 +4039,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Touchez le cercle pour ajouter une photo de profil. Si vous indiquez une classe, les événements réservés à d’autres classes (comme les sorties) sont automatiquement écartés des affichages. Quand la classe change à la rentrée, modifiez-la simplement ici."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tocca il cerchio per aggiungere una foto profilo. Se inserisci la sezione, gli eventi riservati ad altre sezioni (come le gite) vengono esclusi in automatico dagli avvisi. Quando la sezione cambia nel nuovo anno, aggiornala qui."
           }
         },
         "ja": {
@@ -3745,6 +4111,12 @@
             "value": "Échec de la synchronisation. Réessayez dans un instant."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sincronizzazione non riuscita. Riprova tra un momento."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3807,6 +4179,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dernière synchronisation : %@ · Synchronisation automatique à l’ouverture de l’app et à chaque modification."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ultima sincronizzazione: %@ · Si sincronizza da solo all’apertura dell’app e quando cambi gli eventi."
           }
         },
         "ja": {
@@ -3873,6 +4251,12 @@
             "value": "Ajouter depuis un message"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi da messaggio"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -3935,6 +4319,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nom de la classe (ex. : Tournesols)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome della sezione (es. Girasoli)"
           }
         },
         "ja": {
@@ -4001,6 +4391,12 @@
             "value": "Saisir la classe"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inserisci sezione"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4063,6 +4459,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Récurrents"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricorrenti"
           }
         },
         "ja": {
@@ -4129,6 +4531,12 @@
             "value": "Indiquez une classe pour écarter automatiquement les événements réservés à d’autres classes."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inserisci una sezione per escludere in automatico gli eventi riservati ad altre sezioni."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4193,6 +4601,12 @@
             "value": "Ajouter une classe"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi una sezione"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4255,6 +4669,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partager avec votre conjoint et les grands-parents"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi con il partner e i nonni"
           }
         },
         "ja": {
@@ -4322,6 +4742,12 @@
             "value": "Sauvegarde et exportation"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup ed esportazione"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4384,6 +4810,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lecture seule"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo lettura"
           }
         },
         "ja": {
@@ -4449,6 +4881,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couleurs et contraste plus confortables"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colori e contrasto più comodi"
           }
         },
         "ja": {
@@ -4575,6 +5013,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld foto: toccala per ingrandirla."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld foto: scorri per sfogliarle, tocca per ingrandire."
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4637,6 +5093,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun texte trouvé dans la photo."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun testo trovato nella foto."
           }
         },
         "ja": {
@@ -4703,6 +5165,12 @@
             "value": "Touchez la photo pour l’agrandir."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tocca la foto per ingrandirla."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4765,6 +5233,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Supprimer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina"
           }
         },
         "ja": {
@@ -4832,6 +5306,12 @@
             "value": "Retour haptique"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback aptico"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -4894,6 +5374,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "En attente"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In attesa"
           }
         },
         "ja": {
@@ -4960,6 +5446,12 @@
             "value": "Scanner"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scansiona"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5022,6 +5514,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "S’applique uniquement aux événements avec une heure"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vale solo per gli eventi con un orario"
           }
         },
         "ja": {
@@ -5089,6 +5587,12 @@
             "value": "Astuces pratiques"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggerimenti utili"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5152,6 +5656,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Reprenez votre événement là où vous l’aviez laissé"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riprendi l’evento da dove l’avevi lasciato"
           }
         },
         "ja": {
@@ -5218,6 +5728,12 @@
             "value": "Enfant"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bambino"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5280,6 +5796,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Supprimer l’enfant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina bambino"
           }
         },
         "ja": {
@@ -5346,6 +5868,12 @@
             "value": "Prénom de l’enfant (ex. : Léo)"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome del bambino (es. Luca)"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5408,6 +5936,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Agenda des enfants"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda dei bimbi"
           }
         },
         "ja": {
@@ -5475,6 +6009,12 @@
             "value": "Enregistrez l’agenda de vos enfants dans un fichier et retrouvez-le plus tard."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva l’agenda dei tuoi bambini in un file e recuperala quando vuoi."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5537,6 +6077,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un enfant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi bambino"
           }
         },
         "ja": {
@@ -5603,6 +6149,12 @@
             "value": "Ajoutez un enfant pour classer les événements par enfant et voir son prénom dans les rappels."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi un bambino per organizzare gli eventi per bambino e vedere il suo nome nei promemoria."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5665,6 +6217,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajoutez un enfant pour classer les événements par enfant et voir son prénom dans les rappels."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi un bambino per organizzare gli eventi per bambino e vedere il suo nome nei promemoria."
           }
         },
         "ja": {
@@ -5731,6 +6289,12 @@
             "value": "Agenda Bambin"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Bimbi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5793,6 +6357,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Données Agenda Bambin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dati di Agenda Bimbi"
           }
         },
         "ja": {
@@ -5859,6 +6429,12 @@
             "value": "Envoyer aux utilisateurs d’Agenda Bambin"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia agli utenti di Agenda Bimbi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -5921,6 +6497,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendrier Agenda Bambin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendario di Agenda Bimbi"
           }
         },
         "ja": {
@@ -5987,6 +6569,12 @@
             "value": "Agenda Bambin – partagé"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda Bimbi – condivisa"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6049,6 +6637,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pas encore synchronisé."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ancora sincronizzato."
           }
         },
         "ja": {
@@ -6115,6 +6709,12 @@
             "value": "Personne n’a encore rejoint"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessuno si è ancora unito"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6179,6 +6779,12 @@
             "value": "Aucune invitation envoyée"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun invito inviato"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6241,6 +6847,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Information"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avviso"
           }
         },
         "ja": {
@@ -6367,6 +6979,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld promemoria programmato"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld promemoria programmati"
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6429,6 +7059,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "L’autorisation des notifications est nécessaire (à activer dans Réglages)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serve il permesso per le notifiche (consentilo in Impostazioni)"
           }
         },
         "ja": {
@@ -6495,6 +7131,12 @@
             "value": "Réglages des rappels"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impostazioni promemoria"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6557,6 +7199,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Me rappeler"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricordami"
           }
         },
         "ja": {
@@ -6623,6 +7271,12 @@
             "value": "Tous les moments de rappel sont désactivés"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti i momenti dei promemoria sono disattivati"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6685,6 +7339,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun rappel"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun promemoria"
           }
         },
         "ja": {
@@ -6752,6 +7412,12 @@
             "value": "De discrètes astuces sur les fonctions utiles, au bon moment."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piccoli suggerimenti sulle funzioni utili, proprio quando servono."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6814,6 +7480,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter aussi au Calendrier Apple"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi anche a Calendario Apple"
           }
         },
         "ja": {
@@ -6881,6 +7553,12 @@
             "value": "Utilisez toute l’app aussi en anglais."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa tutta l’app anche in inglese."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -6944,6 +7622,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le calendrier et les événements restent nets et lisibles en mode sombre."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendario ed eventi restano nitidi e leggibili in modalità scura."
           }
         },
         "ja": {
@@ -7010,6 +7694,12 @@
             "value": "Affiche les prochains événements extraits d’un calendrier de crèche."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra i prossimi eventi estratti da un calendario del nido."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7072,6 +7762,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Photographiez l’affichage de la crèche ou collez un message"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografa l’avviso del nido o incolla un messaggio"
           }
         },
         "ja": {
@@ -7139,6 +7835,12 @@
             "value": "À la première ouverture après une mise à jour, découvrez les nouveautés."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La prima volta che apri l’app dopo un aggiornamento, scopri cosa c’è di nuovo."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7204,6 +7906,12 @@
             "value": "Nouveautés"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novità"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7266,6 +7974,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Collez ici un message de la crèche.\nEx. : de la pluie est prévue demain, merci de marquer le nom sur les bottes, l’imperméable et le parapluie."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incolla qui un messaggio del nido.\nEs. Domani è prevista pioggia: scrivete il nome su stivali, impermeabile e ombrello."
           }
         },
         "ja": {
@@ -7333,6 +8047,12 @@
             "value": "Prise en charge complète de l’anglais"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supporto completo per l’inglese"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7395,6 +8115,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ex. : pique-nique, gourde"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es. pranzo al sacco, borraccia"
           }
         },
         "ja": {
@@ -7461,6 +8187,12 @@
             "value": "Aujourd’hui"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oggi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7523,6 +8255,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "C’est aujourd’hui."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È per oggi."
           }
         },
         "ja": {
@@ -7589,6 +8327,12 @@
             "value": "Erreur"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Errore"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7651,6 +8395,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fine"
           }
         },
         "ja": {
@@ -7718,6 +8468,12 @@
             "value": "Réduire les animations"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riduci movimento"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7781,6 +8537,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avec Réduire les animations activé, les effets d’écran se font plus discrets."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con Riduci movimento attivo, gli effetti sullo schermo diventano più sobri."
           }
         },
         "ja": {
@@ -7848,6 +8610,12 @@
             "value": "Effacez tous les événements enregistrés directement dans l’app quand vous le souhaitez."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella tutti gli eventi salvati direttamente nell’app quando vuoi."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -7910,6 +8678,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afficher le mois"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espandi alla vista mensile"
           }
         },
         "ja": {
@@ -7976,6 +8750,12 @@
             "value": "Vous ne recevrez plus les événements de cette famille. Les événements déjà reçus sont conservés."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non riceverai più gli eventi di questa famiglia. Gli eventi già ricevuti restano."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8038,6 +8818,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vous consultez ensemble les événements de cette famille. Ceux que vous ajoutez ou modifiez leur sont aussi transmis."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stai vedendo insieme gli eventi di questa famiglia. Anche gli eventi che aggiungi o modifichi vengono inviati a loro."
           }
         },
         "ja": {
@@ -8104,6 +8890,12 @@
             "value": "L’utilisation d’iCloud est restreinte sur cet appareil."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’uso di iCloud è limitato su questo dispositivo."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8166,6 +8958,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un événement ce jour-là"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi evento in questo giorno"
           }
         },
         "ja": {
@@ -8232,6 +9030,12 @@
             "value": "Aucun événement ce jour-là"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun evento in questo giorno"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8294,6 +9098,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun événement avec une date n’a été trouvé dans ce message.\nVérifiez qu’il contient une date (ex. : 12 juillet) ou des mots comme « demain » ou « vendredi »."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non sono stati trovati eventi con una data in questo messaggio.\nVerifica che contenga una data (es. 12 luglio) o parole come «domani» o «venerdì»."
           }
         },
         "ja": {
@@ -8360,6 +9170,12 @@
             "value": "Supprimer cet enfant ?"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminare questo bambino?"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8422,6 +9238,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Prénom (ex. : Léo)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome (es. Luca)"
           }
         },
         "ja": {
@@ -8488,6 +9310,12 @@
             "value": "Vous participez déjà au partage d’une autre famille. Touchez d’abord « Quitter le partage », puis envoyez une invitation."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai già parte della condivisione di un’altra famiglia. Tocca prima «Esci dalla condivisione», poi invia un invito."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8550,6 +9378,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible de traiter l’image."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile elaborare l’immagine."
           }
         },
         "ja": {
@@ -8676,6 +9510,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld evento trovato in questa foto"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld eventi trovati in questa foto"
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8740,6 +9592,12 @@
             "value": "Date et heure"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data e ora"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -8802,6 +9660,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Événement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evento"
           }
         },
         "ja": {
@@ -8923,6 +9787,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Enregistrer %lld événements + activer les rappels"
+                }
+              }
+            }
+          }
+        },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Salva %lld evento e attiva i promemoria"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Salva %lld eventi e attiva i promemoria"
                 }
               }
             }
@@ -9052,6 +9934,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld evento importato."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld eventi importati."
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9114,6 +10014,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible d’importer les données du planning.\nVérifiez que le fichier a bien été exporté depuis l’app Agenda Bambin."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile importare i dati dell’agenda.\nVerifica che il file sia stato esportato dall’app Agenda Bimbi."
           }
         },
         "ja": {
@@ -9180,6 +10086,12 @@
             "value": "À l’heure de l’événement"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All’ora dell’evento"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9242,6 +10154,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Type d’événement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipo di evento"
           }
         },
         "ja": {
@@ -9308,6 +10226,12 @@
             "value": "Ajouter un événement manuellement"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi evento a mano"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9370,6 +10294,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un événement"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi evento"
           }
         },
         "ja": {
@@ -9436,6 +10366,12 @@
             "value": "Extraire les événements"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estrai eventi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9500,6 +10436,12 @@
             "value": "D’après les événements, il s’agit du document de %@. Sinon, modifiez-le ci-dessus."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In base agli eventi, sembra il documento di %@. Se non è così, cambialo qui sopra."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9562,6 +10504,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun texte ressemblant à des événements n’a été trouvé.\nReprenez la photo pour que l’écriture soit bien nette."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non è stato trovato testo che somigli a degli eventi.\nRiprova a scattare la foto in modo che la scrittura sia nitida."
           }
         },
         "ja": {
@@ -9629,6 +10577,12 @@
             "value": "Une légère vibration vous prévient quand un événement est ajouté ou enregistré."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un lieve tocco ti avvisa quando un evento viene aggiunto o salvato."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9692,6 +10646,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ce que vous saisissiez reste en place, même si l’app se ferme en cours de route."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quello che stavi scrivendo resta lì, anche se l’app si chiude a metà."
           }
         },
         "ja": {
@@ -9758,6 +10718,12 @@
             "value": "Impossible de trouver un compte de calendrier où ajouter des événements."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non è stato trovato nessun account calendario in cui aggiungere eventi."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9820,6 +10786,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enregistrer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva"
           }
         },
         "ja": {
@@ -9886,6 +10858,12 @@
             "value": "Enregistré ! À retrouver dans le calendrier et le widget"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvato! Lo trovi nel calendario e nel widget"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -9948,6 +10926,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "La veille au soir (pour préparer les affaires)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La sera prima (per preparare le cose)"
           }
         },
         "ja": {
@@ -10014,6 +10998,12 @@
             "value": "Tous"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10076,6 +11066,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Titre"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titolo"
           }
         },
         "ja": {
@@ -10142,6 +11138,12 @@
             "value": "Titre (ex. : Sortie, Journée « apporte ton jouet »)"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titolo (es. Gita, Giorno del porta-e-mostra)"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10204,6 +11206,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vérifiez les titres, les heures et ce qu’il faut apporter. Touchez le cercle pour changer d’enfant, ou balayez pour supprimer un événement inutile. L’enregistrement vous mène au calendrier."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla titoli, orari e cosa portare. Tocca il cerchio per cambiare bambino o scorri per eliminare gli eventi che non ti servono. Dopo il salvataggio passi al calendario."
           }
         },
         "ja": {
@@ -10270,6 +11278,12 @@
             "value": "Retiré"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rimosso"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10332,6 +11346,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toute la journée"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutto il giorno"
           }
         },
         "ja": {
@@ -10398,6 +11418,12 @@
             "value": "Les événements sur toute la journée (comme les sorties) ne reçoivent que les rappels « la veille au soir » et « le matin même »."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli eventi di tutto il giorno (come le gite) ricevono solo i promemoria «la sera prima» e «la mattina stessa»."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10460,6 +11486,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Réduire à la semaine"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riduci alla vista settimanale"
           }
         },
         "ja": {
@@ -10526,6 +11558,12 @@
             "value": "À apporter / notes"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa portare / note"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10588,6 +11626,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À apporter / notes (ex. : pique-nique)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa portare / note (es. pranzo al sacco)"
           }
         },
         "ja": {
@@ -10654,6 +11698,12 @@
             "value": "Synchroniser maintenant"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sincronizza ora"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10716,6 +11766,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ça commence maintenant."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia adesso."
           }
         },
         "ja": {
@@ -10782,6 +11838,12 @@
             "value": "Effacer"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10844,6 +11906,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Assistance"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supporto"
           }
         },
         "ja": {
@@ -10910,6 +11978,12 @@
             "value": "Ajouté manuellement"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiunto a mano"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -10972,6 +12046,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Membre"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partecipi"
           }
         },
         "ja": {
@@ -11038,6 +12118,12 @@
             "value": "Pour retirer quelqu’un ou modifier les droits, touchez « Gérer les personnes » ci-dessous."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per rimuovere qualcuno o cambiare i permessi, tocca «Gestisci persone» qui sotto."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11100,6 +12186,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Traitement…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elaborazione…"
           }
         },
         "ja": {
@@ -11167,6 +12259,12 @@
             "value": "Une petite visite guidée pour les débutants"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una breve guida per chi comincia"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11230,6 +12328,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Un court guide pour ajouter des événements depuis une photo, à la première ouverture."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una breve guida per aggiungere eventi da una foto, alla prima apertura dell’app."
           }
         },
         "ja": {
@@ -11296,6 +12400,12 @@
             "value": "Envoyer l’invitation · Gérer les personnes"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia invito · Gestisci persone"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11358,6 +12468,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible de créer le lien d’invitation. Réessayez dans un instant."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile creare il link d’invito. Riprova tra un momento."
           }
         },
         "ja": {
@@ -11424,6 +12540,12 @@
             "value": "Envoyez un lien d’invitation : votre conjoint ou les grands-parents peuvent voir et modifier les mêmes événements. Une modification d’un côté est mise à jour automatiquement des deux côtés."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia un link d’invito e il partner o i nonni potranno vedere e modificare gli stessi eventi. Una modifica da una parte si aggiorna automaticamente da entrambe."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11486,6 +12608,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible d’envoyer le lien d’invitation.\n%@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile inviare il link d’invito.\n%@"
           }
         },
         "ja": {
@@ -11552,6 +12680,12 @@
             "value": "Envoyez un lien d’invitation par message : la personne l’ouvre dans l’app et rejoint aussitôt. Ensuite, les événements ajoutés ou modifiés d’un côté sont mis à jour automatiquement des deux côtés."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invia un link d’invito con un messaggio: l’altra persona lo apre nell’app e si unisce subito. Da allora, gli eventi aggiunti o modificati da una parte si aggiornano automaticamente anche dall’altra."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11614,6 +12748,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Les personnes invitées peuvent aussi ajouter et modifier des événements. Les photos de profil des enfants ne sont pas partagées."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anche le persone invitate possono aggiungere e modificare eventi. Le foto profilo dei bambini non vengono condivise."
           }
         },
         "ja": {
@@ -11680,6 +12820,12 @@
             "value": "Membre invité de la famille"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiare invitato"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11742,6 +12888,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partage avec les personnes invitées"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In condivisione con le persone invitate"
           }
         },
         "ja": {
@@ -11808,6 +12960,12 @@
             "value": "Les personnes invitées ne verront plus vos événements. Les événements actuels restent sur les deux appareils."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le persone invitate non potranno più vedere i tuoi eventi. Gli eventi attuali restano su entrambi i dispositivi."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11872,6 +13030,12 @@
             "value": "Ajouter"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -11934,6 +13098,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Annuler"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla"
           }
         },
         "ja": {
@@ -12060,6 +13230,24 @@
             }
           }
         },
+        "it": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld evento aggiunto a Calendario"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld eventi aggiunti a Calendario"
+                }
+              }
+            }
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12122,6 +13310,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "L’autorisation d’accès au calendrier est nécessaire"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serve il permesso per il calendario"
           }
         },
         "ja": {
@@ -12188,6 +13382,12 @@
             "value": "L’accès au calendrier n’est pas autorisé. Activez-le dans Réglages > CalendarSnap."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’accesso al calendario non è consentito. Attivalo in Impostazioni > CalendarSnap."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12250,6 +13450,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible d’ajouter à Calendrier"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile aggiungere a Calendario"
           }
         },
         "ja": {
@@ -12316,6 +13522,12 @@
             "value": "Partager un fichier calendrier (.ics)"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi come file calendario (.ics)"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12378,6 +13590,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Si activé, les événements sont ajoutés au calendrier « %@ ». Partagez ce calendrier dans l’app Calendrier d’iOS pour le synchroniser avec votre conjoint et votre famille."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se attivo, gli eventi vengono aggiunti al calendario «%@». Condividi quel calendario nell’app Calendario di iOS per mantenerlo sincronizzato con il partner e la famiglia."
           }
         },
         "ja": {
@@ -12445,6 +13663,12 @@
             "value": "Mises en page pour texte agrandi"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout per testo più grande"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12509,6 +13733,12 @@
             "value": "Coller depuis le presse-papiers"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incolla dagli appunti"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12571,6 +13801,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partager en texte"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi come testo"
           }
         },
         "ja": {
@@ -12638,6 +13874,12 @@
             "value": "Mise en page pour iPhone pliable"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout per iPhone pieghevole"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12701,6 +13943,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Voyez le calendrier et les événements côte à côte sur un iPhone pliable."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vedi calendario ed eventi affiancati su un iPhone pieghevole."
           }
         },
         "ja": {
@@ -12767,6 +14015,12 @@
             "value": "Nous repérons tous les événements du mois,\nles ajoutons d’un coup à votre calendrier et vous les rappelons."
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estraiamo tutti gli eventi del mese,\nli aggiungiamo al calendario in un colpo solo e ti ricordiamo ogni cosa."
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12829,6 +14083,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Personnes en partage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Persone in condivisione"
           }
         },
         "ja": {
@@ -12895,6 +14155,12 @@
             "value": "Peut modifier"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Può modificare"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -12954,6 +14220,12 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "it": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -13021,6 +14293,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Événements de %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Eventi di %@"
           }
         },
         "ja": {

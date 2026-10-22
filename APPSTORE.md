@@ -580,3 +580,61 @@ Widget
 Consultez les prochains événements directement depuis l’écran d’accueil.
 
 La reconnaissance du texte des photos s’effectue entièrement sur votre appareil. Vos photos ne sont jamais envoyées à un serveur.
+
+## it
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Agenda Bimbi: Nido e Asilo
+
+### 부제
+
+Foto dell’avviso, mese pronto
+
+### 키워드
+
+calendario,promemoria,scuola,genitori,gita,pranzo,famiglia,widget,scanner,materna,nonni,tata,classe
+
+### 프로모션 텍스트
+
+Fotografa il calendario del nido: tutto il mese arriva nel tuo calendario, con un promemoria la sera prima su cosa portare. Condividilo con la famiglia.
+
+### 설명
+
+Fotografa il piano mensile del nido o della scuola dell’infanzia e Agenda Bimbi legge tutti gli eventi e li aggiunge al tuo calendario in un colpo solo.
+Ricevi un promemoria la sera prima e non dimenticherai più né il pranzo al sacco della gita né la tuta da ginnastica.
+
+Una foto, un mese intero
+Scatta una foto o sceglila dalla libreria: date, orari e titoli vengono letti per te. Se la foto è storta o girata, l’app trova l’orientamento giusto.
+Se il foglio è diviso per sezione, vengono presi solo gli eventi della sezione di tuo figlio.
+Prima di salvare puoi modificare titolo, data, opzione «tutto il giorno» e nota su cosa portare, e far scorrere via ciò che non serve.
+
+Puoi anche incollare un messaggio
+Incolla un messaggio del nido e l’app trova le date e cosa portare, trasformandoli in eventi. Espressioni come «domani» o «questo venerdì» diventano date vere.
+
+Calendario e promemoria
+Gli eventi vanno in un calendario dedicato a ogni bambino e quelli già aggiunti non vengono duplicati.
+Scegli i promemoria della sera prima, della mattina stessa, 1 ora prima o puntuali. Le note su cosa portare compaiono nel promemoria.
+
+Più di un bambino
+Tieni separati gli eventi di ogni bambino. L’app guarda gli eventi passati per capire a quale bambino si riferisce un nuovo avviso.
+
+Condividi con la famiglia
+Invia un link d’invito con un messaggio e il partner, i nonni o la tata potranno vedere e modificare gli stessi eventi. Le modifiche fatte da una parte appaiono anche dall’altra.
+
+Widget
+Controlla i prossimi eventi direttamente dalla schermata Home.
+
+Il riconoscimento del testo nelle foto avviene interamente sul tuo dispositivo. Le tue foto non vengono mai inviate a un server.

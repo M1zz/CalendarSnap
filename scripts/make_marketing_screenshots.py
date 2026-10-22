@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -82,6 +82,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Vérifiez avant<br>d’enregistrer", "Titre, date et notes à modifier d’un geste"),
         ("03-calendar.png", "text-bottom", "Chaque enfant<br>a sa couleur", "Plus de confusion entre frères et sœurs"),
         ("04-reminders.png", "dark", "Un rappel<br>la veille au soir", "Plus d’oubli de pique-nique ni de tenue de sport"),
+    ],
+    "it": [
+        ("01-scan.png", "hero-bleed", "Una foto dell’avviso<br>e il mese è pronto", "Date e cose da portare, lette per te"),
+        ("02-events.png", "left-text", "Controlla prima<br>di salvare", "Titolo, data e note da correggere in un tocco"),
+        ("03-calendar.png", "text-bottom", "Ogni bambino<br>con il suo colore", "Gli impegni dei fratelli non si confondono"),
+        ("04-reminders.png", "dark", "Un promemoria<br>la sera prima", "Mai più pranzo al sacco dimenticato"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

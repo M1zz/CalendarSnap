@@ -33,6 +33,12 @@
             "value": "À venir"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In arrivo"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -95,6 +101,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Photographiez un calendrier\npour ajouter des événements"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografa un calendario\nper aggiungere gli eventi"
           }
         },
         "ja": {
@@ -161,6 +173,12 @@
             "value": "Agenda des enfants"
           }
         },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agenda dei bimbi"
+          }
+        },
         "ja": {
           "stringUnit": {
             "state": "translated",
@@ -223,6 +241,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Affiche les prochains événements extraits d’un calendrier de crèche."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra i prossimi eventi estratti da un calendario del nido."
           }
         },
         "ja": {
