@@ -464,3 +464,61 @@ Widget
 Consulta los próximos eventos desde la pantalla de inicio con el widget.
 
 El reconocimiento del texto de las fotos se hace por completo en tu dispositivo. Tus fotos nunca se envían a ningún servidor.
+
+## de
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Kita-Planer: Termine per Foto
+
+### 부제
+
+Aushang knipsen, Monat fertig
+
+### 키워드
+
+Kalender,Erinnerung,Kindergarten,Schule,Eltern,Ausflug,Brotdose,Familie,Widget,Scanner,Hort,Gruppe
+
+### 프로모션 텍스트
+
+Fotografiere den Monatskalender der Kita und alle Termine landen in deinem Kalender – mit Erinnerung am Vorabend, was mitzubringen ist. Teile sie mit der Familie.
+
+### 설명
+
+Fotografiere den Monatsplan deiner Kita oder deines Kindergartens, und Kita-Planer liest alle Termine aus und trägt den ganzen Monat auf einmal in deinen Kalender ein.
+Am Vorabend kommt die Erinnerung ans Mitbringen – so werden Brotdose beim Ausflug und Sportzeug nicht mehr vergessen.
+
+Ein Foto, ein ganzer Monat
+Mach ein Foto oder wähle eines aus deiner Mediathek, und Datum, Uhrzeit und Titel werden für dich ausgelesen. Seitlich aufgenommene Fotos werden automatisch gedreht.
+Ist der Plan nach Gruppen aufgeteilt, werden nur die Termine der Gruppe deines Kindes übernommen.
+Vor dem Sichern kannst du jeden Titel, jedes Datum, die Ganztägig-Einstellung und die Notiz zum Mitbringen bearbeiten und nicht benötigte Termine einfach wegwischen.
+
+Auch Nachrichten einfügen
+Füge eine Nachricht oder SMS der Kita ein, und Kita-Planer findet Datum und Mitbringsel und macht daraus Termine. Formulierungen wie „morgen“ oder „diesen Freitag“ werden zu echten Daten.
+
+Kalender und Erinnerungen
+Die Termine landen in einem eigenen Kalender für jedes Kind. Bereits eingetragene Termine werden nicht doppelt hinzugefügt.
+Wähle Erinnerungen am Vorabend, am Morgen, 1 Stunde vorher oder pünktlich zur Terminzeit. Deine Notizen zum Mitbringen erscheinen direkt in der Erinnerung.
+
+Mehrere Kinder
+Halte die Termine jedes Kindes getrennt. Kita-Planer schaut auf frühere Termine und errät, für welches Kind ein neuer Aushang gilt.
+
+Mit der Familie teilen
+Sende einen Einladungslink per Nachricht, und Partner, Großeltern oder Betreuer sehen und bearbeiten dieselben Termine. Änderungen auf einer Seite erscheinen auf beiden.
+
+Widget
+Sieh anstehende Termine direkt auf dem Home-Bildschirm.
+
+Die Texterkennung in Fotos läuft komplett auf deinem Gerät. Deine Fotos werden nie an einen Server gesendet.

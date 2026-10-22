@@ -3,6 +3,12 @@
   "strings": {
     "CFBundleDisplayName": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kita-Planer"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -55,6 +61,12 @@
     },
     "NSCalendarsFullAccessUsageDescription": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Kalenderzugriff wird benötigt, um die ausgelesenen Kita-Termine einzutragen und Duplikate zu erkennen."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -107,6 +119,12 @@
     },
     "NSCalendarsUsageDescription": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Kalenderzugriff wird benötigt, um die ausgelesenen Kita-Termine einzutragen."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -159,6 +177,12 @@
     },
     "NSCameraUsageDescription": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Kamera wird verwendet, um Kalender zu fotografieren und Termine auszulesen."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",

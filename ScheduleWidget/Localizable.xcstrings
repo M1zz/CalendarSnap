@@ -3,6 +3,12 @@
   "strings": {
     "다가오는 일정": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Demnächst"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -55,6 +61,12 @@
     },
     "달력을 찍어\n일정을 등록하세요": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender fotografieren,\nTermine eintragen"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -107,6 +119,12 @@
     },
     "아이 일정": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termine der Kinder"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -159,6 +177,12 @@
     },
     "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다.": {
       "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeigt anstehende Termine, die aus einem Kita-Kalender ausgelesen wurden."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",

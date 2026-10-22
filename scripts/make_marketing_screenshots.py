@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -70,6 +70,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Revísalo una vez<br>antes de guardar", "Edita título, fecha y notas con un toque"),
         ("03-calendar.png", "text-bottom", "Cada peque,<br>con su color", "Sin mezclar los planes de los hermanos"),
         ("04-reminders.png", "dark", "Un aviso la<br>tarde anterior", "Que no se olvide la fiambrera ni el chándal"),
+    ],
+    "de": [
+        ("01-scan.png", "hero-bleed", "Ein Foto vom Aushang,<br>der ganze Monat fertig", "Datum und Mitbringsel werden ausgelesen"),
+        ("02-events.png", "left-text", "Vor dem Sichern<br>noch einmal prüfen", "Titel, Datum und Notizen im Nu ändern"),
+        ("03-calendar.png", "text-bottom", "Jedes Kind<br>in seiner Farbe", "Geschwister-Termine bleiben getrennt"),
+        ("04-reminders.png", "dark", "Erinnerung<br>am Vorabend", "Brotdose und Sportzeug nie mehr vergessen"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

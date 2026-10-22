@@ -50,6 +50,12 @@ Lee en la app lo que te respondimos.
 Abre privacidad y soporte en la app.
 Pulimos la app para más estabilidad.
 
+### 앱스토어 (German, de)
+
+Antworten auf dein Feedback in der App.
+Datenschutz und Support in der App.
+Die App läuft jetzt noch stabiler.
+
 ## 1.0.4
 
 ### 새로운 기능
