@@ -63,6 +63,12 @@
             "value": "Ближайшие"
           }
         },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ที่กำลังจะถึง"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -137,6 +143,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Сфотографируйте календарь,\nчтобы добавить события"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ่ายรูปปฏิทิน\nเพื่อเพิ่มกำหนดการ"
           }
         },
         "zh-Hans": {
@@ -215,6 +227,12 @@
             "value": "События малыша"
           }
         },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กำหนดการของลูก"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -289,6 +307,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Показывает ближайшие события из календаря детского сада."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงกำหนดการที่กำลังจะถึงซึ่งดึงมาจากปฏิทินของโรงเรียน"
           }
         },
         "zh-Hans": {

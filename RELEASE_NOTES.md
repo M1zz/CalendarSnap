@@ -74,6 +74,12 @@ Leia no app as respostas aos recados.
 Abra privacidade e suporte no app.
 Deixamos o app ainda mais estável.
 
+### 앱스토어 (Thai, th)
+
+อ่านคำตอบต่อความเห็นของคุณในแอปได้
+เปิดนโยบายส่วนตัวและฝ่ายสนับสนุนในแอป
+ปรับแอปให้ทำงานเสถียรยิ่งขึ้น
+
 ## 1.0.4
 
 ### 새로운 기능
