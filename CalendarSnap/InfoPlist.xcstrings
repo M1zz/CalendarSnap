@@ -81,6 +81,12 @@
             "value": "아이일정"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barneplan"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -197,6 +203,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilgang til kalenderen trengs for å legge til de uthentede barnehageavtalene og sjekke for duplikater."
           }
         },
         "pt-BR": {
@@ -317,6 +329,12 @@
             "value": "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilgang til kalenderen trengs for å legge til de uthentede barnehageavtalene."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -433,6 +451,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameraet brukes til å ta bilder av kalendere og hente ut avtaler."
           }
         },
         "pt-BR": {

@@ -189,6 +189,24 @@
             "value": " (이미 있는 %lld개 제외)"
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld allerede lagret hoppet over)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld allerede lagrede hoppet over)"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -427,6 +445,24 @@
             "value": " (중복 %lld개 제외)"
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplikat hoppet over)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplikater hoppet over)"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -557,6 +593,12 @@
             "value": " · 캘린더에도 추가"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Legges også til i Kalender"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -673,6 +715,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@님"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
           }
         },
         "pt-BR": {
@@ -793,6 +841,12 @@
             "value": "%@님과 함께 보는 중"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deler med %@"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -911,6 +965,12 @@
             "value": "%@반"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1027,6 +1087,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@의 반"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avdelingen til %@"
           }
         },
         "pt-BR": {
@@ -1255,6 +1321,24 @@
             "value": "%@의 일정 %lld개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요."
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@ sin %2$lld avtale og profilbildet slettes også. Dette kan ikke angres."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@ sine %2$lld avtaler og profilbildet slettes også. Dette kan ikke angres."
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -1385,6 +1469,12 @@
             "value": "%@의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koblet til %@ sine avtaler. Nå kan dere administrere dem sammen fra begge sider."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1501,6 +1591,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@의 프로필이 삭제됩니다. 되돌릴 수 없어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profilen til %@ slettes. Dette kan ikke angres."
           }
         },
         "pt-BR": {
@@ -1621,6 +1717,12 @@
             "value": "'%@' 삭제"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slett «%@»"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1737,6 +1839,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "1시간 뒤 일정이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starter om 1 time."
           }
         },
         "pt-BR": {
@@ -1857,6 +1965,12 @@
             "value": "1시간 전"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 time før"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1973,6 +2087,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "1회성"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enkeltstående"
           }
         },
         "pt-BR": {
@@ -2094,6 +2214,12 @@
             "value": "Face ID 잠금"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID-lås"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2211,6 +2337,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Face ID나 Touch ID로 앱을 잠가 아이 일정을 지켜요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lås appen med Face ID eller Touch ID, så barnas planer forblir private."
           }
         },
         "pt-BR": {
@@ -2332,6 +2464,12 @@
             "value": "Siri에게 물어 아이의 오늘 일정을 바로 확인해요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spør Siri hva barnet har på programmet i dag."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2449,6 +2587,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri와 단축어"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri og Snarveier"
           }
         },
         "pt-BR": {
@@ -2570,6 +2714,12 @@
             "value": "VoiceOver가 달력과 일정을 빠짐없이, 알맞은 순서로 읽어 줘요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver leser opp hele kalenderen og hver avtale i riktig rekkefølge."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2687,6 +2837,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "VoiceOver로 더 편하게"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedre støtte for VoiceOver"
           }
         },
         "pt-BR": {
@@ -2807,6 +2963,12 @@
             "value": "iCloud 상태를 확인하지 못했어요. 잠시 후 다시 시도해주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke sjekke iCloud-status. Prøv igjen om litt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2923,6 +3085,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud 저장 공간이 부족해 일정을 올리지 못했어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikke nok iCloud-lagring til å laste opp avtalene."
           }
         },
         "pt-BR": {
@@ -3043,6 +3211,12 @@
             "value": "iCloud에 로그인해야 가족 공유를 쓸 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logg på iCloud for å bruke familiedeling."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3159,6 +3333,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud에 로그인해야 가족 공유를 쓸 수 있어요. 설정 앱 > Apple 계정에서 로그인해주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logg på iCloud for å bruke familiedeling. Logg på under Innstillinger > Apple-konto."
           }
         },
         "pt-BR": {
@@ -3279,6 +3459,12 @@
             "value": "iCloud에 로그인해야 가족과 일정을 공유할 수 있어요.\n설정 앱 > Apple 계정에서 로그인해주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logg på iCloud for å dele avtaler med familien.\nLogg på under Innstillinger > Apple-konto."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3395,6 +3581,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가져오기 완료"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import fullført"
           }
         },
         "pt-BR": {
@@ -3515,6 +3707,12 @@
             "value": "가족"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familie"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3631,6 +3829,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 공유"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiedeling"
           }
         },
         "pt-BR": {
@@ -3751,6 +3955,12 @@
             "value": "가족 공유가 종료됐어요. 지금까지 받은 일정은 그대로 남아 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiedelingen er avsluttet. Avtaler du allerede har mottatt, blir værende."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3867,6 +4077,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiedelingen er stoppet. De nåværende avtalene blir værende."
           }
         },
         "pt-BR": {
@@ -3987,6 +4203,12 @@
             "value": "가족 초대하기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviter familien"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4103,6 +4325,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 초대해서 함께 보기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviter familien"
           }
         },
         "pt-BR": {
@@ -4223,6 +4451,12 @@
             "value": "가족의 일정과 연결됨"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koblet til en families avtaler"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4339,6 +4573,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공유 나가기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forlat deling"
           }
         },
         "pt-BR": {
@@ -4459,6 +4699,12 @@
             "value": "공유 정보가 초기화됐어요. 다시 초대해주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delingsinformasjonen er tilbakestilt. Send invitasjonen på nytt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4575,6 +4821,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공유 중단"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stopp deling"
           }
         },
         "pt-BR": {
@@ -4695,6 +4947,12 @@
             "value": "공유에서 나왔어요. 지금까지 받은 일정은 그대로 남아 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du har forlatt delingen. Avtaler du allerede har mottatt, blir værende."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4813,6 +5071,12 @@
             "value": "공유할 일정이 없어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen avtaler å dele."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4929,6 +5193,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공통"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
           }
         },
         "pt-BR": {
@@ -5050,6 +5320,12 @@
             "value": "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skjermene ordner seg pent i stedet for å bli kuttet når du gjør teksten større."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5166,6 +5442,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "날짜를 선택하면 일정이 표시됩니다"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velg en dato for å se avtalene"
           }
         },
         "pt-BR": {
@@ -5287,6 +5569,12 @@
             "value": "내 일정 한 번에 지우기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slett alle avtalene mine"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5403,6 +5691,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du har allerede en egen familiedeling. Trykk først på «Stopp deling», og godta deretter invitasjonen."
           }
         },
         "pt-BR": {
@@ -5523,6 +5817,12 @@
             "value": "내일 일정이에요. 준비물을 미리 챙겨주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det er i morgen. Gjør klart tingene i god tid."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5639,6 +5939,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "누구의 일정인가요?"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvem sin avtale er dette?"
           }
         },
         "pt-BR": {
@@ -5759,6 +6065,12 @@
             "value": "다가오는 일정"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommende"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5875,6 +6187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다음 일정"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommende"
           }
         },
         "pt-BR": {
@@ -5996,6 +6314,12 @@
             "value": "다크 모드"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mørk modus"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6112,6 +6436,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender"
           }
         },
         "pt-BR": {
@@ -6232,6 +6562,12 @@
             "value": "달력을 찍어\n일정을 등록하세요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bilde av en kalender\nfor å legge til avtaler"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6348,6 +6684,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "당일 아침"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samme morgen"
           }
         },
         "pt-BR": {
@@ -6469,6 +6811,12 @@
             "value": "대비를 높이거나 색을 구별하기 어려워도 아이별 일정을 알아볼 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se forskjell på hvert barns avtaler, selv med Øk kontrast på eller om det er vanskelig å skille farger."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6586,6 +6934,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "더 많은 나라 말로 앱을 쓸 수 있게 해요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk appen på flere språk."
           }
         },
         "pt-BR": {
@@ -6707,6 +7061,12 @@
             "value": "더 많은 언어"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flere språk"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6823,6 +7183,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trykk på sirkelen for å legge til et profilbilde. Hvis du skriver inn en avdeling, filtreres avtaler som bare gjelder andre avdelinger (f.eks. turer) automatisk bort fra oppslagene. Når avdelingen endres i det nye barnehageåret, er det bare å rette den her."
           }
         },
         "pt-BR": {
@@ -6943,6 +7309,12 @@
             "value": "동기화에 실패했어요. 잠시 후 다시 시도해주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkroniseringen mislyktes. Prøv igjen om litt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7059,6 +7431,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마지막 동기화 %@ · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sist synkronisert: %@ · Synkroniserer automatisk når du åpner appen eller endrer avtaler."
           }
         },
         "pt-BR": {
@@ -7179,6 +7557,12 @@
             "value": "문자로 일정 추가"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til fra melding"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7295,6 +7679,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "반 이름 (예: 무궁화)"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avdelingens navn (f.eks. Solsikkene)"
           }
         },
         "pt-BR": {
@@ -7415,6 +7805,12 @@
             "value": "반 입력"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skriv inn avdeling"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7531,6 +7927,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "반복"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gjentakende"
           }
         },
         "pt-BR": {
@@ -7651,6 +8053,12 @@
             "value": "반을 입력하면 통신문에서 다른 반 전용 일정을 자동으로 걸러줘요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skriv inn en avdeling for automatisk å filtrere bort avtaler som bare gjelder andre avdelinger."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7769,6 +8177,12 @@
             "value": "반을 추가해주세요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til avdeling"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7885,6 +8299,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "배우자·조부모와 함께 보기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del med partner og besteforeldre"
           }
         },
         "pt-BR": {
@@ -8006,6 +8426,12 @@
             "value": "백업과 내보내기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sikkerhetskopi og eksport"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8122,6 +8548,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "보기 전용"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun visning"
           }
         },
         "pt-BR": {
@@ -8241,6 +8673,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "보기 편한 색과 대비"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedre farger og kontrast"
           }
         },
         "pt-BR": {
@@ -8469,6 +8907,24 @@
             "value": "사진 %lld장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요."
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld bilde – trykk på det for å forstørre."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld bilder – sveip for å bla, trykk for å forstørre."
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -8599,6 +9055,12 @@
             "value": "사진에서 텍스트를 찾지 못했습니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fant ingen tekst i bildet."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8717,6 +9179,12 @@
             "value": "사진을 탭하면 크게 볼 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trykk på bildet for å se det større."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8833,6 +9301,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "삭제"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slett"
           }
         },
         "pt-BR": {
@@ -8954,6 +9428,12 @@
             "value": "손끝으로 느끼는 반응"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptisk tilbakemelding"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9070,6 +9550,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "수락 대기 중"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Venter"
           }
         },
         "pt-BR": {
@@ -9190,6 +9676,12 @@
             "value": "스캔"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skann"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9306,6 +9798,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시간이 지정된 일정에만 적용돼요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gjelder bare avtaler med klokkeslett"
           }
         },
         "pt-BR": {
@@ -9427,6 +9925,12 @@
             "value": "쓰는 요령 알려 주기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nyttige tips"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9544,6 +10048,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "쓰던 일정 이어 쓰기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsett avtalen der du slapp"
           }
         },
         "pt-BR": {
@@ -9664,6 +10174,12 @@
             "value": "아이"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barn"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9780,6 +10296,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 삭제"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slett barn"
           }
         },
         "pt-BR": {
@@ -9900,6 +10422,12 @@
             "value": "아이 이름 (예: 지호)"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnets navn (f.eks. Emil)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10016,6 +10544,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 일정"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnas plan"
           }
         },
         "pt-BR": {
@@ -10137,6 +10671,12 @@
             "value": "아이 일정을 파일로 저장하고 다시 불러올 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lagre barnas planer i en fil og hent dem tilbake senere."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10253,6 +10793,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 추가"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til barn"
           }
         },
         "pt-BR": {
@@ -10373,6 +10919,12 @@
             "value": "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 표시돼요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til et barn for å sortere avtaler per barn og se navnet i påminnelsene."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10489,6 +11041,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 함께 표시돼요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til et barn for å sortere avtaler per barn og se navnet i påminnelsene."
           }
         },
         "pt-BR": {
@@ -10609,6 +11167,12 @@
             "value": "아이일정"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barneplan"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10725,6 +11289,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이일정 데이터"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barneplan-data"
           }
         },
         "pt-BR": {
@@ -10845,6 +11415,12 @@
             "value": "아이일정 사용자에게 보내기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send til Barneplan-brukere"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10961,6 +11537,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이일정 캘린더"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barneplan-kalender"
           }
         },
         "pt-BR": {
@@ -11081,6 +11663,12 @@
             "value": "아이일정 함께 보기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barneplan – delt"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11197,6 +11785,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 동기화한 적이 없어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikke synkronisert ennå."
           }
         },
         "pt-BR": {
@@ -11317,6 +11911,12 @@
             "value": "아직 참여한 사람이 없어요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen har blitt med ennå"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11435,6 +12035,12 @@
             "value": "아직 초대하지 않았어요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen invitasjon er sendt ennå"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11551,6 +12157,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melding"
           }
         },
         "pt-BR": {
@@ -11779,6 +12391,24 @@
             "value": "알림 %lld개 예약"
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld påminnelse planlagt"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld påminnelser planlagt"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -11909,6 +12539,12 @@
             "value": "알림 권한이 필요해요 (설정에서 허용)"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varsler må tillates (slå dem på i Innstillinger)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12025,6 +12661,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 설정"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Innstillinger for påminnelser"
           }
         },
         "pt-BR": {
@@ -12145,6 +12787,12 @@
             "value": "알림 시점"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minn meg på"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12263,6 +12911,12 @@
             "value": "알림 시점이 꺼져 있어요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle tidspunkter for påminnelser er slått av"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12379,6 +13033,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 없음"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen påminnelser"
           }
         },
         "pt-BR": {
@@ -12500,6 +13160,12 @@
             "value": "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diskrete tips om nyttige funksjoner akkurat når du trenger dem."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12616,6 +13282,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "애플 캘린더에도 추가"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg også til i Apple Kalender"
           }
         },
         "pt-BR": {
@@ -12737,6 +13409,12 @@
             "value": "앱을 영어로도 쓸 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk hele appen på engelsk også."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12854,6 +13532,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어두운 화면에서도 달력과 일정이 또렷하게 보여요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenderen og avtalene forblir skarpe og lesbare i mørk modus."
           }
         },
         "pt-BR": {
@@ -12974,6 +13658,12 @@
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viser kommende avtaler hentet fra en barnehagekalender."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13090,6 +13780,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 알림장을 찍거나 문자를 붙여넣어 보세요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bilde av oppslaget fra barnehagen, eller lim inn en melding"
           }
         },
         "pt-BR": {
@@ -13211,6 +13907,12 @@
             "value": "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Første gang du åpner appen etter en oppdatering, ser du hva som er nytt."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13330,6 +14032,12 @@
             "value": "업데이트 소식"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nytt"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13446,6 +14154,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "여기에 어린이집 문자·카카오톡 메시지를 붙여넣으세요.\n예) 내일은 비가 예정된 만큼 장화, 우의, 우산에 이름을 적어 보내주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lim inn en melding fra barnehagen her.\nF.eks. I morgen er det meldt regn, så skriv navn på gummistøvler, regntøy og paraply."
           }
         },
         "pt-BR": {
@@ -13567,6 +14281,12 @@
             "value": "영어 지원"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full støtte for engelsk"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13683,6 +14403,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: 도시락, 물통 지참"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F.eks. matpakke, drikkeflaske"
           }
         },
         "pt-BR": {
@@ -13803,6 +14529,12 @@
             "value": "오늘"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I dag"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13919,6 +14651,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 일정이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det er i dag."
           }
         },
         "pt-BR": {
@@ -14039,6 +14777,12 @@
             "value": "오류"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feil"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14155,6 +14899,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ferdig"
           }
         },
         "pt-BR": {
@@ -14276,6 +15026,12 @@
             "value": "움직임 줄이기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reduser bevegelse"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14393,6 +15149,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "움직임 줄이기를 켜면 화면 효과가 차분해져요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Reduser bevegelse på blir skjermeffektene roligere."
           }
         },
         "pt-BR": {
@@ -14514,6 +15276,12 @@
             "value": "원하면 앱 안에서 저장한 일정을 모두 지울 수 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slett alle lagrede avtaler rett i appen når du vil."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14630,6 +15398,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "월간 달력으로 펼치기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utvid til månedsvisning"
           }
         },
         "pt-BR": {
@@ -14750,6 +15524,12 @@
             "value": "이 가족의 일정을 더 이상 받지 않습니다. 지금까지 받은 일정은 그대로 남아요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du mottar ikke lenger denne familiens avtaler. Avtaler du allerede har mottatt, blir værende."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14866,6 +15646,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 가족의 일정을 함께 보고 있어요. 내가 추가하거나 고친 일정도 상대에게 그대로 전달됩니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dere ser denne familiens avtaler sammen. Avtaler du legger til eller endrer, sendes også videre til dem."
           }
         },
         "pt-BR": {
@@ -14986,6 +15772,12 @@
             "value": "이 기기에서는 iCloud 사용이 제한돼 있어요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk av iCloud er begrenset på denne enheten."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15102,6 +15894,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 날 일정 추가"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til avtale denne dagen"
           }
         },
         "pt-BR": {
@@ -15222,6 +16020,12 @@
             "value": "이 날은 일정이 없어요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen avtaler denne dagen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15338,6 +16142,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fant ingen avtaler med dato i denne meldingen.\nSjekk at den inneholder en dato (f.eks. 12. juli) eller ord som «i morgen» eller «fredag»."
           }
         },
         "pt-BR": {
@@ -15458,6 +16268,12 @@
             "value": "이 아이를 삭제할까요?"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vil du slette dette barnet?"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15574,6 +16390,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이름 (예: 지호)"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navn (f.eks. Emil)"
           }
         },
         "pt-BR": {
@@ -15694,6 +16516,12 @@
             "value": "이미 다른 가족의 공유에 참여하고 있어요. 먼저 ‘공유 나가기’를 한 뒤 초대해주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du er allerede med i en annen families deling. Trykk først på «Forlat deling», og send deretter en invitasjon."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15810,6 +16638,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이미지를 처리할 수 없습니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke behandle bildet."
           }
         },
         "pt-BR": {
@@ -16038,6 +16872,24 @@
             "value": "이번 사진에서 추출된 일정 %lld개"
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld avtale funnet i dette bildet"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld avtaler funnet i dette bildet"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -16168,6 +17020,12 @@
             "value": "일시"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dato og tid"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16284,6 +17142,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avtale"
           }
         },
         "pt-BR": {
@@ -16510,6 +17374,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 %lld개 저장 + 알림 받기"
+          }
+        },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Lagre %lld avtale + få påminnelser"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Lagre %lld avtaler + få påminnelser"
+                }
+              }
+            }
           }
         },
         "pt-BR": {
@@ -16750,6 +17632,24 @@
             "value": "일정 %lld개를 가져왔어요."
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld avtale importert."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld avtaler importert."
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -16880,6 +17780,12 @@
             "value": "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke importere timeplandataene.\nSjekk at filen er eksportert fra appen Barneplan."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16996,6 +17902,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 시각 정각"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "På tidspunktet"
           }
         },
         "pt-BR": {
@@ -17116,6 +18028,12 @@
             "value": "일정 유형"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avtaletype"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17232,6 +18150,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 직접 추가"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til avtale manuelt"
           }
         },
         "pt-BR": {
@@ -17352,6 +18276,12 @@
             "value": "일정 추가"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til avtale"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17468,6 +18398,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 추출"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hent ut avtaler"
           }
         },
         "pt-BR": {
@@ -17588,6 +18524,12 @@
             "value": "일정 패턴을 보고 '%@'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ut fra avtalene ser dette ut som %@ sitt dokument. Hvis ikke, endrer du det ovenfor."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17704,6 +18646,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fant ingen tekst som ser ut som avtaler.\nTa bildet på nytt, slik at skriften blir skarp."
           }
         },
         "pt-BR": {
@@ -17825,6 +18773,12 @@
             "value": "일정을 넣거나 저장했을 때 가볍게 떨려서 알려 줘요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et lett trykk gir beskjed når en avtale er lagt til eller lagret."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17942,6 +18896,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정을 적다가 앱이 꺼져도 쓰던 내용이 남아 있어요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det du skrev, blir stående, selv om appen lukkes underveis."
           }
         },
         "pt-BR": {
@@ -18062,6 +19022,12 @@
             "value": "일정을 추가할 수 있는 캘린더 계정을 찾지 못했습니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fant ingen kalenderkonto der avtaler kan legges til."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18178,6 +19144,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lagre"
           }
         },
         "pt-BR": {
@@ -18298,6 +19270,12 @@
             "value": "저장 완료! 달력·위젯에서 확인하세요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lagret! Se det i kalenderen og widgeten"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18414,6 +19392,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전날 저녁 (준비물 챙기기)"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kvelden før (for å pakke)"
           }
         },
         "pt-BR": {
@@ -18534,6 +19518,12 @@
             "value": "전체"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18650,6 +19640,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제목"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tittel"
           }
         },
         "pt-BR": {
@@ -18770,6 +19766,12 @@
             "value": "제목 (예: 소풍, 준비물의 날)"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tittel (f.eks. Tur, Ta-med-dag)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18886,6 +19888,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요. 저장하면 달력으로 이동합니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sjekk titler, tidspunkter og hva som skal med. Trykk på sirkelen for å bytte barn, eller sveip for å slette avtaler du ikke trenger. Når du lagrer, går du til kalenderen."
           }
         },
         "pt-BR": {
@@ -19006,6 +20014,12 @@
             "value": "제외됨"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fjernet"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19122,6 +20136,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "종일"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hele dagen"
           }
         },
         "pt-BR": {
@@ -19242,6 +20262,12 @@
             "value": "종일 일정(소풍·현장학습 등)은 ‘전날 저녁’과 ‘당일 아침’ 알림만 울립니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heldagsavtaler (f.eks. turer) får bare påminnelsene «kvelden før» og «samme morgen»."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19358,6 +20384,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "주간 달력으로 접기"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå sammen til ukevisning"
           }
         },
         "pt-BR": {
@@ -19478,6 +20510,12 @@
             "value": "준비물·메모"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ting å ta med / notater"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19594,6 +20632,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "준비물·메모 (예: 도시락 지참)"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ting å ta med / notater (f.eks. matpakke)"
           }
         },
         "pt-BR": {
@@ -19714,6 +20758,12 @@
             "value": "지금 동기화"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkroniser nå"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19830,6 +20880,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지금 시작하는 일정이에요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starter nå."
           }
         },
         "pt-BR": {
@@ -19950,6 +21006,12 @@
             "value": "지우기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tøm"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20066,6 +21128,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지원"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Støtte"
           }
         },
         "pt-BR": {
@@ -20186,6 +21254,12 @@
             "value": "직접 추가"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lagt til manuelt"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20302,6 +21376,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "참여 중"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med"
           }
         },
         "pt-BR": {
@@ -20422,6 +21502,12 @@
             "value": "참여자를 빼거나 권한을 바꾸려면 아래 ‘참여자 관리’를 눌러주세요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For å fjerne noen eller endre tillatelser trykker du på «Administrer personer» nedenfor."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20538,6 +21624,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처리 중…"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behandler …"
           }
         },
         "pt-BR": {
@@ -20659,6 +21751,12 @@
             "value": "처음 쓰는 분을 위한 안내"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En kort omvisning for nybegynnere"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20776,6 +21874,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처음 열었을 때 사진으로 일정을 넣는 법을 짧게 보여 줘요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En kort veiledning i å legge til avtaler fra et bilde første gang du åpner appen."
           }
         },
         "pt-BR": {
@@ -20896,6 +22000,12 @@
             "value": "초대 링크 보내기 · 참여자 관리"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send invitasjon · Administrer personer"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21012,6 +22122,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke lage invitasjonslenken. Prøv igjen om litt."
           }
         },
         "pt-BR": {
@@ -21132,6 +22248,12 @@
             "value": "초대 링크를 보내면 배우자·조부모도 같은 일정을 보고 고칠 수 있어요. 한쪽에서 일정을 바꾸면 양쪽에 자동으로 반영됩니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send en invitasjonslenke, så kan partneren din eller besteforeldrene se og redigere de samme avtalene. En endring på den ene siden oppdateres automatisk på begge."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21248,6 +22370,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대 링크를 보내지 못했어요.\n%@"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke sende invitasjonslenken.\n%@"
           }
         },
         "pt-BR": {
@@ -21368,6 +22496,12 @@
             "value": "초대 링크를 카카오톡·메시지로 보내면, 상대가 아이일정 앱에서 열어 바로 참여할 수 있어요. 이후에는 어느 쪽에서 일정을 추가하거나 고쳐도 양쪽에 자동으로 반영됩니다."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send en invitasjonslenke i en melding, så kan de åpne den i appen og bli med med en gang. Etter det oppdateres avtaler som legges til eller endres på den ene siden, automatisk på begge sider."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21484,6 +22618,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대받은 사람도 일정을 추가·수정할 수 있어요. 아이 프로필 사진은 공유되지 않습니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviterte kan også legge til og redigere avtaler. Barnas profilbilder deles ikke."
           }
         },
         "pt-BR": {
@@ -21604,6 +22744,12 @@
             "value": "초대한 가족"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitert familiemedlem"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21720,6 +22866,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대한 가족과 함께 보는 중"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deler med de inviterte"
           }
         },
         "pt-BR": {
@@ -21840,6 +22992,12 @@
             "value": "초대한 가족이 더 이상 일정을 볼 수 없게 됩니다. 지금까지의 일정은 양쪽 기기에 그대로 남아요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De inviterte kan ikke lenger se avtalene dine. De nåværende avtalene blir værende på begge enhetene."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21958,6 +23116,12 @@
             "value": "추가"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22074,6 +23238,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avbryt"
           }
         },
         "pt-BR": {
@@ -22302,6 +23472,24 @@
             "value": "캘린더 %lld개 추가"
           }
         },
+        "nb": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld avtale lagt til i Kalender"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld avtaler lagt til i Kalender"
+                }
+              }
+            }
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -22432,6 +23620,12 @@
             "value": "캘린더 권한이 필요해요"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilgang til kalenderen må tillates"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22548,6 +23742,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "캘린더 접근 권한이 없습니다. 설정 > CalendarSnap에서 허용해주세요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilgang til kalenderen er ikke tillatt. Slå den på i Innstillinger > CalendarSnap."
           }
         },
         "pt-BR": {
@@ -22668,6 +23868,12 @@
             "value": "캘린더 추가 실패"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke legge til i Kalender"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22786,6 +23992,12 @@
             "value": "캘린더 파일로 공유 (.ics)"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del som kalenderfil (.ics)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22902,6 +24114,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "켜면 %@ 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når dette er på, legges avtalene til i kalenderen «%@». Del den kalenderen i Kalender-appen i iOS for å holde den synkronisert med partner og familie."
           }
         },
         "pt-BR": {
@@ -23023,6 +24241,12 @@
             "value": "큰 글씨에 맞춘 화면"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oppsett for større tekst"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23141,6 +24365,12 @@
             "value": "클립보드에서 붙여넣기"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lim inn fra utklippstavlen"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23257,6 +24487,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "텍스트로 공유"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del som tekst"
           }
         },
         "pt-BR": {
@@ -23378,6 +24614,12 @@
             "value": "펼치는 아이폰 화면"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oppsett for sammenleggbar iPhone"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23495,6 +24737,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "펼치는 아이폰에서 달력과 일정을 두 쪽으로 나눠 봐요."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se kalenderen og avtalene side om side på en sammenleggbar iPhone."
           }
         },
         "pt-BR": {
@@ -23615,6 +24863,12 @@
             "value": "한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요."
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vi henter ut alle avtalene i måneden,\nlegger dem inn i kalenderen på én gang og minner deg på dem."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23731,6 +24985,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "함께 보는 사람"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personer som deler"
           }
         },
         "pt-BR": {
@@ -23851,6 +25111,12 @@
             "value": "함께 편집"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kan redigere"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23969,6 +25235,12 @@
             "value": "확인"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24085,6 +25357,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 %@ 아이 일정"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Avtaler for %@"
           }
         },
         "pt-BR": {

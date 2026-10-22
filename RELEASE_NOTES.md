@@ -116,6 +116,12 @@ Baca balasan atas masukan di aplikasi.
 Buka privasi dan dukungan di aplikasi.
 Aplikasi dirapikan agar lebih stabil.
 
+### 앱스토어 (Norwegian Bokmal, nb)
+
+Les svar på tilbakemeldingen i appen.
+Åpne personvern og støtte i appen.
+Appen går nå enda stabilere.
+
 ## 1.0.4
 
 ### 새로운 기능

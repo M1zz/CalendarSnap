@@ -1102,3 +1102,61 @@ Widget
 Lihat acara mendatang langsung dari layar utama.
 
 Pengenalan teks pada foto berlangsung sepenuhnya di perangkat Anda. Foto Anda tidak pernah dikirim ke server.
+
+## nb
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Barneplan: Barnehagekalender
+
+### 부제
+
+Bilde av lappen, måneden klar
+
+### 키워드
+
+påminnelse,skole,foreldre,tur,matpakke,familie,widget,skanner,avdeling,besteforeldre,SFO,ocr
+
+### 프로모션 텍스트
+
+Ta bilde av kalenderen fra barnehagen, så havner hele måneden i kalenderen din, med en påminnelse kvelden før om hva som skal med. Del den med familien.
+
+### 설명
+
+Ta bilde av månedsplanen fra barnehagen, så leser Barneplan alle avtalene og legger hele måneden inn i kalenderen din på én gang.
+Få en påminnelse kvelden før, så glemmer du aldri matpakken til turen eller gymtøyet.
+
+Ett bilde, én hel måned
+Ta et bilde eller velg ett fra bildebiblioteket, så leses datoer, tidspunkter og titler for deg. Bilder tatt på tvers blir snudd riktig automatisk.
+Hvis oversikten er delt opp etter avdeling, tas bare avtalene for barnets avdeling med.
+Før du lagrer, kan du redigere hver tittel, dato, heldagsvalget og notatet om hva som skal med, og sveipe bort det du ikke trenger.
+
+Lim inn en melding også
+Lim inn en melding fra barnehagen, så finner Barneplan datoer og ting som skal med, og gjør dem om til avtaler. Uttrykk som «i morgen» eller «denne fredagen» blir til ekte datoer.
+
+Kalender og påminnelser
+Avtalene legges i en egen kalender for hvert barn, og de som allerede er lagt til, legges ikke til to ganger.
+Velg påminnelser kvelden før, samme morgen, 1 time før eller akkurat på tidspunktet. Notatene dine om hva som skal med, vises i påminnelsen.
+
+Flere barn
+Hold hvert barns avtaler adskilt. Barneplan ser på tidligere avtaler og gjetter hvilket barn et nytt oppslag gjelder.
+
+Del med familien
+Send en invitasjonslenke i en melding, så kan partneren din, besteforeldrene eller barnevakten se og redigere de samme avtalene. Endringer på den ene siden vises på begge.
+
+Widget
+Se de kommende avtalene rett fra hjemskjermen.
+
+Tekstgjenkjenningen i bilder skjer helt på enheten din. Bildene dine sendes aldri til en server.

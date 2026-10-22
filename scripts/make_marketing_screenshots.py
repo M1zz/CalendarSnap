@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -136,6 +136,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Periksa dulu<br>sebelum menyimpan", "Ubah judul, tanggal, dan catatan dengan sekali ketuk"),
         ("03-calendar.png", "text-bottom", "Tiap anak<br>punya warnanya", "Jadwal kakak dan adik tidak tercampur"),
         ("04-reminders.png", "dark", "Pengingat<br>malam sebelumnya", "Bekal dan baju olahraga tak lagi terlupa"),
+    ],
+    "nb": [
+        ("01-scan.png", "hero-bleed", "Ett bilde av lappen,<br>hele måneden klar", "Datoer og ting som skal med leses for deg"),
+        ("02-events.png", "left-text", "Sjekk én gang<br>før du lagrer", "Endre tittel, dato og notater med ett trykk"),
+        ("03-calendar.png", "text-bottom", "Hvert barn<br>har sin farge", "Søskens planer blandes ikke sammen"),
+        ("04-reminders.png", "dark", "Påminnelse<br>kvelden før", "Aldri glem matpakken og gymtøyet"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

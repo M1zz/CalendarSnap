@@ -81,6 +81,12 @@
             "value": "다가오는 일정"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommende"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -197,6 +203,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력을 찍어\n일정을 등록하세요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta bilde av en kalender\nfor å legge til avtaler"
           }
         },
         "pt-BR": {
@@ -317,6 +329,12 @@
             "value": "아이 일정"
           }
         },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnas plan"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -433,6 +451,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viser kommende avtaler hentet fra en barnehagekalender."
           }
         },
         "pt-BR": {
