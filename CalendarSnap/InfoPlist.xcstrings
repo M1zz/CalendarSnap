@@ -93,6 +93,12 @@
             "value": "Kinderplanner"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan Malucha"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -221,6 +227,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toegang tot de agenda is nodig om de opgehaalde afspraken van de opvang toe te voegen en op dubbelen te controleren."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostęp do kalendarza jest potrzebny, aby dodać wyodrębnione wydarzenia z przedszkola i sprawdzić duplikaty."
           }
         },
         "pt-BR": {
@@ -353,6 +365,12 @@
             "value": "Toegang tot de agenda is nodig om de opgehaalde afspraken van de opvang toe te voegen."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostęp do kalendarza jest potrzebny, aby dodać wyodrębnione wydarzenia z przedszkola."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -481,6 +499,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "De camera wordt gebruikt om agenda’s te fotograferen en afspraken eruit te halen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aparat służy do fotografowania kalendarzy i wyodrębniania wydarzeń."
           }
         },
         "pt-BR": {

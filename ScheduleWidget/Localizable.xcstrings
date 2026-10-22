@@ -93,6 +93,12 @@
             "value": "Binnenkort"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadchodzące"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -221,6 +227,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fotografeer een agenda\nom afspraken toe te voegen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrób zdjęcie kalendarza,\naby dodać wydarzenia"
           }
         },
         "pt-BR": {
@@ -353,6 +365,12 @@
             "value": "Kinderplanning"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan dzieci"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -481,6 +499,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toont aankomende afspraken uit een agenda van de opvang."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuje nadchodzące wydarzenia wyodrębnione z kalendarza przedszkola."
           }
         },
         "pt-BR": {

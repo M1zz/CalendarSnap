@@ -128,6 +128,12 @@ Lees antwoorden op je feedback in-app.
 Open privacy en ondersteuning in de app.
 De app werkt nu nog stabieler.
 
+### 앱스토어 (Polish, pl)
+
+Odpowiedzi na opinie są w aplikacji.
+Prywatność i pomoc w aplikacji.
+Aplikacja działa teraz stabilniej.
+
 ## 1.0.4
 
 ### 새로운 기능

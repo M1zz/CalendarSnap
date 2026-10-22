@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl", "pl": "pl"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -148,6 +148,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Controleer het nog<br>één keer vóór het bewaren", "Titel, datum en notities pas je met één tik aan"),
         ("03-calendar.png", "text-bottom", "Elk kind<br>zijn eigen kleur", "Afspraken van broertjes en zusjes lopen niet door elkaar"),
         ("04-reminders.png", "dark", "Een herinnering<br>de avond ervoor", "Nooit meer de lunchtrommel of gymkleren vergeten"),
+    ],
+    "pl": [
+        ("01-scan.png", "hero-bleed", "Jedno zdjęcie ogłoszenia,<br>cały miesiąc gotowy", "Daty i rzeczy do zabrania odczytamy za Ciebie"),
+        ("02-events.png", "left-text", "Sprawdź raz<br>przed zapisaniem", "Tytuł, datę i notatki poprawisz jednym dotknięciem"),
+        ("03-calendar.png", "text-bottom", "Każde dziecko<br>ma swój kolor", "Plany rodzeństwa się nie mieszają"),
+        ("04-reminders.png", "dark", "Przypomnienie<br>wieczorem dzień wcześniej", "Nigdy nie zapomnisz śniadania ani stroju"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

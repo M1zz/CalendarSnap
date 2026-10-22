@@ -225,6 +225,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (pominięto już zapisanych: %lld)"
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -499,6 +505,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (pominięto duplikatów: %lld)"
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -641,6 +653,12 @@
             "value": " · Ook toegevoegd aan Agenda"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Dodawane także do Kalendarza"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -766,6 +784,12 @@
           }
         },
         "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "pl": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -901,6 +925,12 @@
             "value": "Delen met %@"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnianie z: %@"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1026,6 +1056,12 @@
           }
         },
         "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "pl": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -1159,6 +1195,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Groep van %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grupa: %@"
           }
         },
         "pt-BR": {
@@ -1423,6 +1465,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zostanie usunięte także zdjęcie profilowe i wydarzenia dziecka %1$@ (%2$lld). Nie można tego cofnąć."
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -1565,6 +1613,12 @@
             "value": "Verbonden met de afspraken van %@. Jullie kunnen ze nu samen beheren vanaf beide kanten."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połączono z wydarzeniami użytkownika %@. Teraz możecie zarządzać nimi razem po obu stronach."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1693,6 +1747,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Het profiel van %@ wordt verwijderd. Dit kan niet ongedaan worden gemaakt."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil dziecka %@ zostanie usunięty. Nie można tego cofnąć."
           }
         },
         "pt-BR": {
@@ -1825,6 +1885,12 @@
             "value": "‘%@’ verwijderen"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń „%@”"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -1953,6 +2019,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Begint over 1 uur."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaczyna się za godzinę."
           }
         },
         "pt-BR": {
@@ -2085,6 +2157,12 @@
             "value": "1 uur ervoor"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Godzinę wcześniej"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2213,6 +2291,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eenmalig"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jednorazowe"
           }
         },
         "pt-BR": {
@@ -2346,6 +2430,12 @@
             "value": "Face ID-vergrendeling"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blokada Face ID"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2475,6 +2565,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vergrendel de app met Face ID of Touch ID zodat de planning van je kinderen privé blijft."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zablokuj aplikację za pomocą Face ID lub Touch ID, aby plan dzieci pozostał prywatny."
           }
         },
         "pt-BR": {
@@ -2608,6 +2704,12 @@
             "value": "Vraag Siri wat je kind vandaag op het programma heeft."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapytaj Siri, co dziecko ma dziś w planie."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2737,6 +2839,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri en Opdrachten"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri i Skróty"
           }
         },
         "pt-BR": {
@@ -2870,6 +2978,12 @@
             "value": "VoiceOver leest de hele agenda en elke afspraak voor, in de juiste volgorde."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver czyta cały kalendarz i każde wydarzenie we właściwej kolejności."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -2999,6 +3113,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Betere ondersteuning voor VoiceOver"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lepsza obsługa VoiceOver"
           }
         },
         "pt-BR": {
@@ -3131,6 +3251,12 @@
             "value": "De iCloud-status kon niet worden gecontroleerd. Probeer het zo meteen opnieuw."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się sprawdzić stanu iCloud. Spróbuj ponownie za chwilę."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3259,6 +3385,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Er is niet genoeg iCloud-opslag om de afspraken te uploaden."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W iCloud brakuje miejsca na przesłanie wydarzeń."
           }
         },
         "pt-BR": {
@@ -3391,6 +3523,12 @@
             "value": "Log in bij iCloud om gezinsdeling te gebruiken."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaloguj się do iCloud, aby korzystać z udostępniania rodzinnego."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3519,6 +3657,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Log in bij iCloud om gezinsdeling te gebruiken. Log in via Instellingen > Apple-account."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaloguj się do iCloud, aby korzystać z udostępniania rodzinnego. Zaloguj się w Ustawieniach > konto Apple."
           }
         },
         "pt-BR": {
@@ -3651,6 +3795,12 @@
             "value": "Log in bij iCloud om afspraken met je gezin te delen.\nLog in via Instellingen > Apple-account."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaloguj się do iCloud, aby udostępniać wydarzenia rodzinie.\nZaloguj się w Ustawieniach > konto Apple."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -3779,6 +3929,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Importeren voltooid"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import zakończony"
           }
         },
         "pt-BR": {
@@ -3911,6 +4067,12 @@
             "value": "Gezin"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodzina"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4039,6 +4201,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gezinsdeling"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnianie rodzinne"
           }
         },
         "pt-BR": {
@@ -4171,6 +4339,12 @@
             "value": "Gezinsdeling is beëindigd. Afspraken die je al hebt ontvangen, blijven bestaan."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnianie rodzinne zakończyło się. Dotychczas otrzymane wydarzenia zostają."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4299,6 +4473,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gezinsdeling is gestopt. De huidige afspraken blijven bestaan."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnianie rodzinne zostało zakończone. Dotychczasowe wydarzenia zostają."
           }
         },
         "pt-BR": {
@@ -4431,6 +4611,12 @@
             "value": "Nodig gezin uit"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaproś rodzinę"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4559,6 +4745,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nodig familie uit"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaproś rodzinę"
           }
         },
         "pt-BR": {
@@ -4691,6 +4883,12 @@
             "value": "Verbonden met de afspraken van een gezin"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Połączono z wydarzeniami rodziny"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -4819,6 +5017,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stap uit het delen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opuść udostępnianie"
           }
         },
         "pt-BR": {
@@ -4951,6 +5155,12 @@
             "value": "De deelgegevens zijn gereset. Stuur de uitnodiging opnieuw."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacje o udostępnianiu zostały zresetowane. Wyślij zaproszenie ponownie."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5079,6 +5289,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stop met delen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zakończ udostępnianie"
           }
         },
         "pt-BR": {
@@ -5211,6 +5427,12 @@
             "value": "Je bent uit het delen gestapt. Afspraken die je al hebt ontvangen, blijven bestaan."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opuszczono udostępnianie. Dotychczas otrzymane wydarzenia zostają."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5341,6 +5563,12 @@
             "value": "Er zijn geen afspraken om te delen."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak wydarzeń do udostępnienia."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5469,6 +5697,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Iedereen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszyscy"
           }
         },
         "pt-BR": {
@@ -5602,6 +5836,12 @@
             "value": "Schermen ordenen zich netjes opnieuw in plaats van afgesneden te worden als je de tekst vergroot."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po powiększeniu tekstu ekrany układają się czytelnie, zamiast być ucinane."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5730,6 +5970,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kies een datum om de afspraken te zien"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz datę, aby zobaczyć jej wydarzenia"
           }
         },
         "pt-BR": {
@@ -5863,6 +6109,12 @@
             "value": "Verwijder al mijn afspraken"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń wszystkie moje wydarzenia"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -5991,6 +6243,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Je hebt al een eigen gezinsdeling. Tik eerst op ‘Delen stoppen’ en accepteer daarna de uitnodiging."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masz już własne udostępnianie rodzinne. Najpierw stuknij „Zakończ udostępnianie”, a potem zaakceptuj zaproszenie."
           }
         },
         "pt-BR": {
@@ -6123,6 +6381,12 @@
             "value": "Het is morgen. Leg de spullen op tijd klaar."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To już jutro. Przygotuj rzeczy z wyprzedzeniem."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6251,6 +6515,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Van wie is deze afspraak?"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czyje to wydarzenie?"
           }
         },
         "pt-BR": {
@@ -6383,6 +6653,12 @@
             "value": "Binnenkort"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadchodzące"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6511,6 +6787,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Binnenkort"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadchodzące"
           }
         },
         "pt-BR": {
@@ -6644,6 +6926,12 @@
             "value": "Donkere modus"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryb ciemny"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -6772,6 +7060,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Agenda"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalendarz"
           }
         },
         "pt-BR": {
@@ -6904,6 +7198,12 @@
             "value": "Fotografeer een agenda\nom afspraken toe te voegen"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrób zdjęcie kalendarza,\naby dodać wydarzenia"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7032,6 +7332,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Die ochtend"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rano tego dnia"
           }
         },
         "pt-BR": {
@@ -7165,6 +7471,12 @@
             "value": "Houd de afspraken van elk kind uit elkaar, ook met Verhoog contrast aan of als kleuren moeilijk te onderscheiden zijn."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozróżniaj wydarzenia każdego dziecka, nawet przy włączonym zwiększonym kontraście lub gdy trudno odróżniać kolory."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7294,6 +7606,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gebruik de app in meer talen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korzystaj z aplikacji w większej liczbie języków."
           }
         },
         "pt-BR": {
@@ -7427,6 +7745,12 @@
             "value": "Meer talen"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Więcej języków"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7555,6 +7879,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tik op de cirkel om een profielfoto toe te voegen. Als je een groep invult, worden afspraken die alleen voor andere groepen gelden (zoals uitstapjes) automatisch uit de berichten gefilterd. Verandert de groep in het nieuwe schooljaar, pas het dan hier aan."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuknij kółko, aby dodać zdjęcie profilowe. Jeśli podasz grupę, wydarzenia przeznaczone tylko dla innych grup (np. wycieczki) zostaną automatycznie odfiltrowane z ogłoszeń. Gdy grupa zmieni się w nowym roku szkolnym, popraw ją tutaj."
           }
         },
         "pt-BR": {
@@ -7687,6 +8017,12 @@
             "value": "Synchroniseren mislukt. Probeer het zo meteen opnieuw."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synchronizacja nie powiodła się. Spróbuj ponownie za chwilę."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -7815,6 +8151,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Laatst gesynchroniseerd: %@ · Wordt automatisch gesynchroniseerd bij het openen van de app en bij wijzigingen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatnia synchronizacja: %@ · Odbywa się automatycznie po otwarciu aplikacji i zmianie wydarzeń."
           }
         },
         "pt-BR": {
@@ -7947,6 +8289,12 @@
             "value": "Toevoegen uit bericht"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj z wiadomości"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8075,6 +8423,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Naam van de groep (bijv. Zonnebloemen)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nazwa grupy (np. Słoneczka)"
           }
         },
         "pt-BR": {
@@ -8207,6 +8561,12 @@
             "value": "Groep invullen"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wpisz grupę"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8335,6 +8695,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Herhalend"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cykliczne"
           }
         },
         "pt-BR": {
@@ -8467,6 +8833,12 @@
             "value": "Vul een groep in om afspraken die alleen voor andere groepen gelden automatisch weg te filteren."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podaj grupę, aby automatycznie odfiltrować wydarzenia przeznaczone tylko dla innych grup."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8597,6 +8969,12 @@
             "value": "Groep toevoegen"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj grupę"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8725,6 +9103,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Deel met je partner en opa’s en oma’s"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnij partnerowi i dziadkom"
           }
         },
         "pt-BR": {
@@ -8858,6 +9242,12 @@
             "value": "Back-up en export"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopia zapasowa i eksport"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -8986,6 +9376,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Alleen bekijken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tylko podgląd"
           }
         },
         "pt-BR": {
@@ -9117,6 +9513,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Prettigere kleuren en contrast"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wygodniejsze kolory i kontrast"
           }
         },
         "pt-BR": {
@@ -9381,6 +9783,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdjęcia: %lld – przesuwaj, aby przeglądać, stuknij, aby powiększyć."
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -9523,6 +9931,12 @@
             "value": "Er is geen tekst gevonden in de foto."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie znaleziono tekstu na zdjęciu."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9653,6 +10067,12 @@
             "value": "Tik op de foto om hem groter te bekijken."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuknij zdjęcie, aby je powiększyć."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -9781,6 +10201,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verwijder"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń"
           }
         },
         "pt-BR": {
@@ -9914,6 +10340,12 @@
             "value": "Haptische feedback"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpowiedź haptyczna"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10042,6 +10474,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "In afwachting"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oczekuje"
           }
         },
         "pt-BR": {
@@ -10174,6 +10612,12 @@
             "value": "Scan"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skanuj"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10302,6 +10746,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Geldt alleen voor afspraken met een vaste tijd"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dotyczy tylko wydarzeń z określoną godziną"
           }
         },
         "pt-BR": {
@@ -10435,6 +10885,12 @@
             "value": "Handige tips"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przydatne wskazówki"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10564,6 +11020,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ga verder waar je gebleven was"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontynuuj wydarzenie tam, gdzie skończyłeś"
           }
         },
         "pt-BR": {
@@ -10696,6 +11158,12 @@
             "value": "Kind"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dziecko"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -10824,6 +11292,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kind verwijderen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń dziecko"
           }
         },
         "pt-BR": {
@@ -10956,6 +11430,12 @@
             "value": "Naam van het kind (bijv. Sem)"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Imię dziecka (np. Staś)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11084,6 +11564,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kinderplanning"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan dzieci"
           }
         },
         "pt-BR": {
@@ -11217,6 +11703,12 @@
             "value": "Bewaar de planning van je kinderen in een bestand en haal die later terug."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisz plan dzieci do pliku i przywróć go później."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11345,6 +11837,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kind toevoegen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj dziecko"
           }
         },
         "pt-BR": {
@@ -11477,6 +11975,12 @@
             "value": "Voeg een kind toe om afspraken per kind te ordenen en de naam in herinneringen te zien."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj dziecko, aby wydarzenia były uporządkowane według dzieci, a jego imię pojawiało się w przypomnieniach."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11605,6 +12109,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Voeg een kind toe om afspraken per kind te ordenen en de naam in herinneringen te zien."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj dziecko, aby wydarzenia były uporządkowane według dzieci, a jego imię pojawiało się w przypomnieniach."
           }
         },
         "pt-BR": {
@@ -11737,6 +12247,12 @@
             "value": "Kinderplanner"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan Malucha"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -11865,6 +12381,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kinderplanner-gegevens"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dane Planu Malucha"
           }
         },
         "pt-BR": {
@@ -11997,6 +12519,12 @@
             "value": "Verstuur naar gebruikers van Kinderplanner"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyślij użytkownikom Planu Malucha"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12125,6 +12653,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kinderplanner-agenda"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalendarz Planu Malucha"
           }
         },
         "pt-BR": {
@@ -12257,6 +12791,12 @@
             "value": "Kinderplanner – gedeeld"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plan Malucha – udostępniono"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12385,6 +12925,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nog niet gesynchroniseerd."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeszcze nie zsynchronizowano."
           }
         },
         "pt-BR": {
@@ -12517,6 +13063,12 @@
             "value": "Er heeft nog niemand meegedaan"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nikt jeszcze nie dołączył"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12647,6 +13199,12 @@
             "value": "Nog geen uitnodiging verstuurd"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie wysłano jeszcze zaproszenia"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -12775,6 +13333,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Melding"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powiadomienie"
           }
         },
         "pt-BR": {
@@ -13039,6 +13603,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaplanowane przypomnienia: %lld"
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -13181,6 +13751,12 @@
             "value": "Toestemming voor meldingen is nodig (zet dit aan in Instellingen)"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potrzebna jest zgoda na powiadomienia (włącz ją w Ustawieniach)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13309,6 +13885,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Herinneringsinstellingen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ustawienia przypomnień"
           }
         },
         "pt-BR": {
@@ -13441,6 +14023,12 @@
             "value": "Herinner mij"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przypomnij mi"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13571,6 +14159,12 @@
             "value": "Alle herinneringstijden staan uit"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystkie terminy przypomnień są wyłączone"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13699,6 +14293,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Geen herinneringen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez przypomnień"
           }
         },
         "pt-BR": {
@@ -13832,6 +14432,12 @@
             "value": "Subtiele hints over handige functies, precies wanneer je ze nodig hebt."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dyskretne podpowiedzi o przydatnych funkcjach, dokładnie wtedy, gdy ich potrzebujesz."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -13960,6 +14566,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ook toevoegen aan Apple Agenda"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodawaj też do Kalendarza Apple"
           }
         },
         "pt-BR": {
@@ -14093,6 +14705,12 @@
             "value": "Gebruik de hele app ook in het Engels."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Używaj całej aplikacji także po angielsku."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14222,6 +14840,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "De agenda en afspraken blijven scherp en leesbaar in de donkere modus."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalendarz i wydarzenia pozostają wyraźne i czytelne w trybie ciemnym."
           }
         },
         "pt-BR": {
@@ -14354,6 +14978,12 @@
             "value": "Toont aankomende afspraken uit een agenda van de opvang."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuje nadchodzące wydarzenia wyodrębnione z kalendarza przedszkola."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14482,6 +15112,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Maak een foto van een bericht van de opvang of plak een bericht"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrób zdjęcie ogłoszenia z przedszkola albo wklej wiadomość"
           }
         },
         "pt-BR": {
@@ -14615,6 +15251,12 @@
             "value": "De eerste keer dat je de app opent na een update, zie je wat er nieuw is."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przy pierwszym otwarciu aplikacji po aktualizacji zobaczysz, co nowego."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14746,6 +15388,12 @@
             "value": "Wat is er nieuw"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co nowego"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -14874,6 +15522,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Plak hier een bericht van de opvang.\nBijv. Morgen wordt regen verwacht, schrijf daarom de naam op laarzen, regenjas en paraplu."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wklej tutaj wiadomość z przedszkola.\nNp. Jutro zapowiadany jest deszcz, prosimy podpisać kalosze, płaszcz przeciwdeszczowy i parasol."
           }
         },
         "pt-BR": {
@@ -15007,6 +15661,12 @@
             "value": "Volledige ondersteuning voor Engels"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pełna obsługa angielskiego"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15135,6 +15795,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bijv. lunchtrommel, drinkfles"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Np. drugie śniadanie, bidon"
           }
         },
         "pt-BR": {
@@ -15267,6 +15933,12 @@
             "value": "Vandaag"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dziś"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15395,6 +16067,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Het is vandaag."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To dziś."
           }
         },
         "pt-BR": {
@@ -15527,6 +16205,12 @@
             "value": "Fout"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Błąd"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15655,6 +16339,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Klaar"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gotowe"
           }
         },
         "pt-BR": {
@@ -15788,6 +16478,12 @@
             "value": "Beperk beweging"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogranicz ruch"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -15917,6 +16613,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Met Beperk beweging aan worden schermeffecten rustiger."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po włączeniu opcji Ogranicz ruch efekty na ekranie stają się spokojniejsze."
           }
         },
         "pt-BR": {
@@ -16050,6 +16752,12 @@
             "value": "Verwijder alle bewaarde afspraken wanneer je wilt, direct in de app."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usuń wszystkie zapisane wydarzenia bezpośrednio w aplikacji, kiedy chcesz."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16178,6 +16886,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uitvouwen naar maandweergave"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozwiń do widoku miesiąca"
           }
         },
         "pt-BR": {
@@ -16310,6 +17024,12 @@
             "value": "Je ontvangt de afspraken van dit gezin niet meer. Afspraken die je al hebt ontvangen, blijven bestaan."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie będziesz już otrzymywać wydarzeń tej rodziny. Dotychczas otrzymane wydarzenia zostają."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16438,6 +17158,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Je bekijkt de afspraken van dit gezin samen. Afspraken die je toevoegt of wijzigt, worden ook naar hen doorgestuurd."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wspólnie oglądasz wydarzenia tej rodziny. Wydarzenia, które dodasz lub zmienisz, trafią też do nich."
           }
         },
         "pt-BR": {
@@ -16570,6 +17296,12 @@
             "value": "Het gebruik van iCloud is beperkt op dit apparaat."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Korzystanie z iCloud jest ograniczone na tym urządzeniu."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16698,6 +17430,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afspraak toevoegen op deze dag"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj wydarzenie na ten dzień"
           }
         },
         "pt-BR": {
@@ -16830,6 +17568,12 @@
             "value": "Geen afspraken op deze dag"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tego dnia nie ma wydarzeń"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -16958,6 +17702,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "In dit bericht zijn geen afspraken met een datum gevonden.\nControleer of er een datum (bijv. 12 juli) of woorden als ‘morgen’ of ‘vrijdag’ in staan."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W tej wiadomości nie znaleziono wydarzeń z datą.\nSprawdź, czy zawiera datę (np. 12 lipca) lub słowa takie jak „jutro” albo „w piątek”."
           }
         },
         "pt-BR": {
@@ -17090,6 +17840,12 @@
             "value": "Dit kind verwijderen?"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunąć to dziecko?"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17218,6 +17974,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Naam (bijv. Sem)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Imię (np. Staś)"
           }
         },
         "pt-BR": {
@@ -17350,6 +18112,12 @@
             "value": "Je doet al mee aan het delen van een ander gezin. Tik eerst op ‘Stop met delen’ en stuur daarna een uitnodiging."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uczestniczysz już w udostępnianiu innej rodziny. Najpierw stuknij „Opuść udostępnianie”, a potem wyślij zaproszenie."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -17478,6 +18246,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "De afbeelding kon niet worden verwerkt."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się przetworzyć obrazu."
           }
         },
         "pt-BR": {
@@ -17742,6 +18516,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wydarzeń na tym zdjęciu: %lld"
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -17884,6 +18664,12 @@
             "value": "Datum en tijd"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data i godzina"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18012,6 +18798,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afspraak"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wydarzenie"
           }
         },
         "pt-BR": {
@@ -18274,6 +19066,12 @@
                 }
               }
             }
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisz wydarzenia (%lld) i włącz przypomnienia"
           }
         },
         "pt-BR": {
@@ -18550,6 +19348,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaimportowano wydarzeń: %lld."
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -18692,6 +19496,12 @@
             "value": "De plannergegevens konden niet worden geïmporteerd.\nControleer of het bestand is geëxporteerd uit de app Kinderplanner."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się zaimportować danych planu.\nSprawdź, czy plik został wyeksportowany z aplikacji Plan Malucha."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -18820,6 +19630,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Op het tijdstip zelf"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O godzinie wydarzenia"
           }
         },
         "pt-BR": {
@@ -18952,6 +19768,12 @@
             "value": "Type afspraak"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typ wydarzenia"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19080,6 +19902,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afspraak handmatig toevoegen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj wydarzenie ręcznie"
           }
         },
         "pt-BR": {
@@ -19212,6 +20040,12 @@
             "value": "Afspraak toevoegen"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj wydarzenie"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19340,6 +20174,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afspraken ophalen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyodrębnij wydarzenia"
           }
         },
         "pt-BR": {
@@ -19472,6 +20312,12 @@
             "value": "Op basis van de afspraken lijkt dit het document van %@. Zo niet, wijzig het dan hierboven."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na podstawie wydarzeń wygląda to na dokument dziecka: %@. Jeśli nie, zmień to powyżej."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19600,6 +20446,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Er is geen tekst gevonden die op afspraken lijkt.\nMaak de foto opnieuw, zodat de tekst scherp is."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie znaleziono tekstu przypominającego wydarzenia.\nZrób zdjęcie jeszcze raz, tak aby tekst był wyraźny."
           }
         },
         "pt-BR": {
@@ -19733,6 +20585,12 @@
             "value": "Een zacht tikje laat je weten wanneer een afspraak is toegevoegd of bewaard."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delikatne stuknięcie informuje, gdy wydarzenie zostanie dodane lub zapisane."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -19862,6 +20720,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Wat je aan het typen was, blijft staan, ook als de app halverwege sluit."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To, co wpisujesz, zostaje na miejscu, nawet jeśli aplikacja zamknie się w trakcie."
           }
         },
         "pt-BR": {
@@ -19994,6 +20858,12 @@
             "value": "Er is geen agenda-account gevonden waaraan afspraken kunnen worden toegevoegd."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie znaleziono konta kalendarza, do którego można dodawać wydarzenia."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20122,6 +20992,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bewaar"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisz"
           }
         },
         "pt-BR": {
@@ -20254,6 +21130,12 @@
             "value": "Bewaard! Bekijk het in de agenda en de widget"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapisano! Zobacz w kalendarzu i widżecie"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20382,6 +21264,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "De avond ervoor (om in te pakken)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wieczorem dzień wcześniej (na spakowanie rzeczy)"
           }
         },
         "pt-BR": {
@@ -20514,6 +21402,12 @@
             "value": "Alle"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszystkie"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20642,6 +21536,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Titel"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tytuł"
           }
         },
         "pt-BR": {
@@ -20774,6 +21674,12 @@
             "value": "Titel (bijv. Uitstapje, Neem-iets-mee-dag)"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tytuł (np. Wycieczka, Dzień zabawki)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -20902,6 +21808,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Controleer de titels, tijden en wat er mee moet. Tik op de cirkel om van kind te wisselen, of veeg om afspraken te verwijderen die je niet nodig hebt. Na het bewaren ga je naar de agenda."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprawdź tytuły, godziny i to, co trzeba zabrać. Stuknij kółko, aby zmienić dziecko, albo przesuń, aby usunąć zbędne wydarzenia. Po zapisaniu przejdziesz do kalendarza."
           }
         },
         "pt-BR": {
@@ -21034,6 +21946,12 @@
             "value": "Verwijderd"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usunięto"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21162,6 +22080,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hele dag"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cały dzień"
           }
         },
         "pt-BR": {
@@ -21294,6 +22218,12 @@
             "value": "Voor afspraken van een hele dag (zoals uitstapjes) komen alleen de herinneringen ‘de avond ervoor’ en ‘die ochtend’."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wydarzenia całodniowe (np. wycieczki) dostają tylko przypomnienia „wieczorem dzień wcześniej” i „rano tego dnia”."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21422,6 +22352,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Samenvouwen naar weekweergave"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwiń do widoku tygodnia"
           }
         },
         "pt-BR": {
@@ -21554,6 +22490,12 @@
             "value": "Meenemen / notities"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co zabrać / notatki"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21682,6 +22624,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Meenemen / notities (bijv. lunchtrommel)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Co zabrać / notatki (np. drugie śniadanie)"
           }
         },
         "pt-BR": {
@@ -21814,6 +22762,12 @@
             "value": "Nu synchroniseren"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synchronizuj teraz"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -21942,6 +22896,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Begint nu."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaczyna się teraz."
           }
         },
         "pt-BR": {
@@ -22074,6 +23034,12 @@
             "value": "Wis"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyczyść"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22202,6 +23168,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ondersteuning"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomoc"
           }
         },
         "pt-BR": {
@@ -22334,6 +23306,12 @@
             "value": "Handmatig toegevoegd"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodano ręcznie"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22462,6 +23440,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Deelnemer"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dołączono"
           }
         },
         "pt-BR": {
@@ -22594,6 +23578,12 @@
             "value": "Om iemand te verwijderen of rechten te wijzigen, tik je hieronder op ‘Personen beheren’."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aby kogoś usunąć lub zmienić uprawnienia, stuknij poniżej „Zarządzaj osobami”."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22722,6 +23712,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bezig met verwerken…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przetwarzanie…"
           }
         },
         "pt-BR": {
@@ -22855,6 +23851,12 @@
             "value": "Een korte rondleiding voor nieuwkomers"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krótkie wprowadzenie dla nowych użytkowników"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -22984,6 +23986,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Een korte uitleg over het toevoegen van afspraken via een foto, de eerste keer dat je de app opent."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krótki przewodnik po dodawaniu wydarzeń ze zdjęcia, przy pierwszym otwarciu aplikacji."
           }
         },
         "pt-BR": {
@@ -23116,6 +24124,12 @@
             "value": "Uitnodiging sturen · Personen beheren"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyślij zaproszenie · Zarządzaj osobami"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23244,6 +24258,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "De uitnodigingslink kon niet worden gemaakt. Probeer het zo meteen opnieuw."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się utworzyć linku z zaproszeniem. Spróbuj ponownie za chwilę."
           }
         },
         "pt-BR": {
@@ -23376,6 +24396,12 @@
             "value": "Stuur een uitnodigingslink, dan kunnen je partner of opa’s en oma’s dezelfde afspraken zien en bewerken. Een wijziging aan de ene kant wordt automatisch aan beide kanten bijgewerkt."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyślij link z zaproszeniem, a partner lub dziadkowie zobaczą i będą mogli edytować te same wydarzenia. Zmiana po jednej stronie aktualizuje się automatycznie po obu."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23504,6 +24530,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "De uitnodigingslink kon niet worden verstuurd.\n%@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się wysłać linku z zaproszeniem.\n%@"
           }
         },
         "pt-BR": {
@@ -23636,6 +24668,12 @@
             "value": "Stuur een uitnodigingslink in een bericht, dan openen ze die in de app en doen ze meteen mee. Daarna worden afspraken die aan één kant worden toegevoegd of gewijzigd automatisch aan beide kanten bijgewerkt."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyślij link z zaproszeniem w wiadomości, a druga osoba otworzy go w aplikacji i od razu dołączy. Potem wydarzenia dodane lub zmienione po jednej stronie aktualizują się automatycznie po obu."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -23764,6 +24802,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uitgenodigden kunnen ook afspraken toevoegen en wijzigen. Profielfoto’s van kinderen worden niet gedeeld."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaproszone osoby też mogą dodawać i edytować wydarzenia. Zdjęcia profilowe dzieci nie są udostępniane."
           }
         },
         "pt-BR": {
@@ -23896,6 +24940,12 @@
             "value": "Uitgenodigd gezinslid"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaproszony członek rodziny"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24024,6 +25074,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Delen met de uitgenodigde personen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnianie zaproszonym osobom"
           }
         },
         "pt-BR": {
@@ -24156,6 +25212,12 @@
             "value": "De uitgenodigde personen kunnen je afspraken niet meer zien. De huidige afspraken blijven op beide apparaten bestaan."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaproszone osoby nie będą już widzieć Twoich wydarzeń. Dotychczasowe wydarzenia zostają na obu urządzeniach."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24286,6 +25348,12 @@
             "value": "Voeg toe"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24414,6 +25482,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Annuleer"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anuluj"
           }
         },
         "pt-BR": {
@@ -24678,6 +25752,12 @@
             }
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wydarzeń dodanych do Kalendarza: %lld"
+          }
+        },
         "pt-BR": {
           "variations": {
             "plural": {
@@ -24820,6 +25900,12 @@
             "value": "Toestemming voor de agenda is nodig"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potrzebna jest zgoda na dostęp do kalendarza"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -24948,6 +26034,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toegang tot de agenda is niet toegestaan. Zet dit aan via Instellingen > CalendarSnap."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak zgody na dostęp do kalendarza. Włącz ją w Ustawieniach > CalendarSnap."
           }
         },
         "pt-BR": {
@@ -25080,6 +26172,12 @@
             "value": "Toevoegen aan Agenda mislukt"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie udało się dodać do Kalendarza"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -25210,6 +26308,12 @@
             "value": "Deel als agendabestand (.ics)"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnij jako plik kalendarza (.ics)"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -25338,6 +26442,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Als dit aanstaat, worden afspraken toegevoegd aan de agenda ‘%@’. Deel die agenda in de iOS-app Agenda om hem automatisch te synchroniseren met je partner en gezin."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gdy włączone, wydarzenia są dodawane do kalendarza „%@”. Udostępnij ten kalendarz w aplikacji Kalendarz w iOS, aby synchronizował się z partnerem i rodziną."
           }
         },
         "pt-BR": {
@@ -25471,6 +26581,12 @@
             "value": "Indelingen voor grotere tekst"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Układy dla większego tekstu"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -25601,6 +26717,12 @@
             "value": "Plak vanaf klembord"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wklej ze schowka"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -25729,6 +26851,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Deel als tekst"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udostępnij jako tekst"
           }
         },
         "pt-BR": {
@@ -25862,6 +26990,12 @@
             "value": "Indeling voor opvouwbare iPhone"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Układ dla składanego iPhone’a"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -25991,6 +27125,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bekijk de agenda en afspraken naast elkaar op een opvouwbare iPhone."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobacz kalendarz i wydarzenia obok siebie na składanym iPhonie."
           }
         },
         "pt-BR": {
@@ -26123,6 +27263,12 @@
             "value": "We halen alle afspraken van de maand eruit,\nzetten ze in één keer in je agenda en herinneren je eraan."
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyciągniemy wszystkie wydarzenia miesiąca,\ndodamy je do kalendarza za jednym razem i przypomnimy o nich."
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -26251,6 +27397,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Personen die delen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Osoby udostępniające"
           }
         },
         "pt-BR": {
@@ -26383,6 +27535,12 @@
             "value": "Kan bewerken"
           }
         },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Może edytować"
+          }
+        },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
@@ -26508,6 +27666,12 @@
           }
         },
         "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "pl": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -26641,6 +27805,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Afspraken van %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Wydarzenia: %@"
           }
         },
         "pt-BR": {

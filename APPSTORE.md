@@ -1218,3 +1218,61 @@ Widget
 Bekijk aankomende afspraken direct op je beginscherm.
 
 Tekstherkenning in foto’s gebeurt volledig op je apparaat. Je foto’s worden nooit naar een server gestuurd.
+
+## pl
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Plan Malucha: Żłobek i szkoła
+
+### 부제
+
+Zdjęcie i cały miesiąc gotowy
+
+### 키워드
+
+kalendarz,przypomnienia,rodzice,wycieczka,śniadanie,rodzina,widżet,skaner,grupa,babcia,niania,OCR
+
+### 프로모션 텍스트
+
+Zrób zdjęcie kalendarza z przedszkola, a cały miesiąc trafi do Twojego kalendarza, z przypomnieniem wieczorem dzień wcześniej, co zabrać. Udostępnij go rodzinie.
+
+### 설명
+
+Zrób zdjęcie miesięcznego planu z przedszkola lub żłobka, a Plan Malucha odczyta wszystkie wydarzenia i doda cały miesiąc do kalendarza za jednym razem.
+Dostaniesz przypomnienie wieczorem dzień wcześniej, więc nigdy więcej nie zapomnisz drugiego śniadania na wycieczkę ani stroju na gimnastykę.
+
+Jedno zdjęcie, cały miesiąc
+Zrób zdjęcie albo wybierz je z biblioteki, a daty, godziny i tytuły zostaną odczytane za Ciebie. Zdjęcie zrobione bokiem zostanie automatycznie obrócone we właściwą stronę.
+Jeśli tabela jest podzielona na grupy, uwzględnione zostaną tylko wydarzenia z grupy Twojego dziecka.
+Przed zapisaniem możesz poprawić każdy tytuł, datę, opcję całodniową i notatkę o tym, co zabrać, a niepotrzebne wydarzenia po prostu odsunąć.
+
+Możesz też wkleić wiadomość
+Wklej wiadomość z przedszkola, a aplikacja znajdzie daty i rzeczy do zabrania i zamieni je w wydarzenia. Wyrażenia takie jak „jutro” czy „w ten piątek” zamienią się w prawdziwe daty.
+
+Kalendarz i przypomnienia
+Wydarzenia trafiają do osobnego kalendarza każdego dziecka, a te, które już dodano, nie są dodawane drugi raz.
+Wybierz przypomnienia wieczorem dzień wcześniej, rano tego dnia, godzinę wcześniej albo punktualnie. Twoje notatki o tym, co zabrać, pojawiają się w przypomnieniu.
+
+Więcej niż jedno dziecko
+Trzymaj wydarzenia każdego dziecka osobno. Aplikacja patrzy na dawne wydarzenia i zgaduje, którego dziecka dotyczy nowe ogłoszenie.
+
+Udostępnianie rodzinie
+Wyślij link z zaproszeniem w wiadomości, a partner, dziadkowie lub opiekunka zobaczą i będą mogli edytować te same wydarzenia. Zmiany po jednej stronie pojawiają się po obu.
+
+Widżet
+Zobacz nadchodzące wydarzenia prosto z ekranu początkowego.
+
+Rozpoznawanie tekstu na zdjęciach odbywa się w całości na Twoim urządzeniu. Twoje zdjęcia nigdy nie są wysyłane na serwer.
