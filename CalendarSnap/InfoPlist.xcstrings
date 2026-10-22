@@ -45,6 +45,12 @@
             "value": "Agenda Peques"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen aikataulu"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -149,6 +155,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se necesita acceso al calendario para añadir los eventos de la guardería y comprobar si están duplicados."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenterin käyttö tarvitaan, jotta poimitut päiväkotitapahtumat voidaan lisätä ja kaksoiskappaleet tarkistaa."
           }
         },
         "fr": {
@@ -257,6 +269,12 @@
             "value": "Se necesita acceso al calendario para añadir los eventos de la guardería."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenterin käyttö tarvitaan, jotta poimitut päiväkotitapahtumat voidaan lisätä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -361,6 +379,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "La cámara se usa para hacer fotos de calendarios y extraer los eventos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameraa käytetään kalenterien kuvaamiseen ja tapahtumien poimimiseen."
           }
         },
         "fr": {

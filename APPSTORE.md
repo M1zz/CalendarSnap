@@ -986,3 +986,61 @@ https://m1zz.github.io/CalendarSnap/
 Δες τα επερχόμενα συμβάντα κατευθείαν από την αρχική οθόνη.
 
 Η αναγνώριση κειμένου στις φωτογραφίες γίνεται εξ ολοκλήρου στη συσκευή σου. Οι φωτογραφίες σου δεν στέλνονται ποτέ σε διακομιστή.
+
+## fi
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Lapsen aikataulu: Päiväkoti
+
+### 부제
+
+Kuvaa tiedote, kuukausi valmis
+
+### 키워드
+
+kalenteri,muistutus,eskari,koulu,vanhemmat,retki,eväät,perhe,widget,skanneri,ryhmä,isovanhemmat,OCR
+
+### 프로모션 텍스트
+
+Ota kuva päiväkodin kalenterista, niin koko kuukausi siirtyy kalenteriisi ja edellisenä iltana muistutus kertoo, mitä pitää ottaa mukaan. Jaa se perheen kanssa.
+
+### 설명
+
+Ota kuva päiväkodin tai esikoulun kuukausisuunnitelmasta, niin Lapsen aikataulu lukee kaikki tapahtumat ja lisää koko kuukauden kalenteriisi kerralla.
+Saat muistutuksen edellisenä iltana, joten retken eväät tai urheiluvaatteet eivät enää unohdu.
+
+Yksi kuva, koko kuukausi
+Ota kuva tai valitse se kirjastostasi, niin päivät, ajat ja otsikot luetaan puolestasi. Sivuttain otettu kuva käännetään automaattisesti oikein päin.
+Jos taulukko on jaettu ryhmittäin, mukaan otetaan vain lapsesi ryhmän tapahtumat.
+Ennen tallennusta voit muokata jokaista otsikkoa, päivää, koko päivän -valintaa ja mukaan otettavien tavaroiden muistiinpanoa sekä pyyhkäistä pois tarpeettoman.
+
+Voit myös liittää viestin
+Liitä päiväkodin viesti, niin sovellus löytää päivät ja mukaan otettavat tavarat ja tekee niistä tapahtumia. Ilmaukset kuten ”huomenna” tai ”tänä perjantaina” muuttuvat oikeiksi päiviksi.
+
+Kalenteri ja muistutukset
+Tapahtumat lisätään jokaiselle lapselle omaan kalenteriin, eikä jo lisättyjä lisätä uudelleen.
+Valitse muistutukset edellisenä iltana, aamulla, tuntia ennen tai tasan alkaessa. Mukaan otettavia tavaroita koskevat muistiinpanosi näkyvät muistutuksessa.
+
+Useampi lapsi
+Pidä jokaisen lapsen tapahtumat erillään. Sovellus katsoo aiempia tapahtumia ja arvaa, kenelle uusi tiedote kuuluu.
+
+Jaa perheen kanssa
+Lähetä kutsulinkki viestillä, niin puolisosi, isovanhempasi tai hoitaja näkevät ja voivat muokata samoja tapahtumia. Toisella puolella tehdyt muutokset näkyvät molemmilla.
+
+Widget
+Näe tulevat tapahtumat suoraan kotinäytöltä.
+
+Kuvien tekstintunnistus tapahtuu kokonaan laitteellasi. Kuviasi ei koskaan lähetetä palvelimelle.

@@ -117,6 +117,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld jo tallennettu ohitettu)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld jo tallennettua ohitettu)"
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -331,6 +349,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld kaksoiskappale ohitettu)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld kaksoiskappaletta ohitettu)"
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -473,6 +509,12 @@
             "value": " · También se añade a Calendario"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Lisätään myös Kalenteriin"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -574,6 +616,12 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "fi": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -685,6 +733,12 @@
             "value": "Compartiendo con %@"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaettu käyttäjän %@ kanssa"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -786,6 +840,12 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "fi": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -895,6 +955,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Clase de %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ryhmä: %@"
           }
         },
         "fr": {
@@ -1075,6 +1141,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Myös lapsen %1$@ %2$lld tapahtuma ja profiilikuva poistetaan. Tätä ei voi perua."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Myös lapsen %1$@ %2$lld tapahtumaa ja profiilikuva poistetaan. Tätä ei voi perua."
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -1217,6 +1301,12 @@
             "value": "Conectado con los eventos de %@. Ahora podéis gestionarlos juntos desde los dos lados."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yhdistetty käyttäjän %@ tapahtumiin. Nyt voitte hallita niitä yhdessä molemmin puolin."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -1321,6 +1411,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se eliminará el perfil de %@. No se puede deshacer."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen %@ profiili poistetaan. Tätä ei voi perua."
           }
         },
         "fr": {
@@ -1429,6 +1525,12 @@
             "value": "Eliminar «%@»"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista ”%@”"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -1533,6 +1635,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Empieza dentro de 1 hora."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alkaa tunnin päästä."
           }
         },
         "fr": {
@@ -1641,6 +1749,12 @@
             "value": "1 hora antes"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 tunti ennen"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -1745,6 +1859,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Puntuales"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kertaluonteiset"
           }
         },
         "fr": {
@@ -1854,6 +1974,12 @@
             "value": "Bloqueo con Face ID"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID -lukitus"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -1959,6 +2085,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bloquea la app con Face ID o Touch ID para mantener privada la agenda de tus hijos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lukitse sovellus Face ID:llä tai Touch ID:llä, niin lastesi aikataulut pysyvät yksityisinä."
           }
         },
         "fr": {
@@ -2068,6 +2200,12 @@
             "value": "Pregúntale a Siri qué tiene hoy tu hijo o hija en la agenda."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kysy Sirilta, mitä lapsella on tänään ohjelmassa."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -2173,6 +2311,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri y Atajos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri ja Pikakomennot"
           }
         },
         "fr": {
@@ -2282,6 +2426,12 @@
             "value": "VoiceOver lee todo el calendario y cada evento, en el orden correcto."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver lukee koko kalenterin ja jokaisen tapahtuman oikeassa järjestyksessä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -2387,6 +2537,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mejor compatibilidad con VoiceOver"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parempi VoiceOver-tuki"
           }
         },
         "fr": {
@@ -2495,6 +2651,12 @@
             "value": "No se pudo comprobar el estado de iCloud. Inténtalo de nuevo en un momento."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloudin tilaa ei voitu tarkistaa. Yritä hetken kuluttua uudelleen."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -2599,6 +2761,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No hay espacio suficiente en iCloud para subir los eventos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloudissa ei ole tarpeeksi tilaa tapahtumien lataamiseen."
           }
         },
         "fr": {
@@ -2707,6 +2875,12 @@
             "value": "Inicia sesión en iCloud para usar Compartir en familia."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirjaudu iCloudiin käyttääksesi perhejakoa."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -2811,6 +2985,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Inicia sesión en iCloud para usar Compartir en familia. Inicia sesión en Ajustes > cuenta de Apple."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirjaudu iCloudiin käyttääksesi perhejakoa. Kirjaudu kohdassa Asetukset > Apple-tili."
           }
         },
         "fr": {
@@ -2919,6 +3099,12 @@
             "value": "Inicia sesión en iCloud para compartir eventos con tu familia.\nInicia sesión en Ajustes > cuenta de Apple."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirjaudu iCloudiin jakaaksesi tapahtumia perheesi kanssa.\nKirjaudu kohdassa Asetukset > Apple-tili."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -3023,6 +3209,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Importación completada"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuonti valmis"
           }
         },
         "fr": {
@@ -3131,6 +3323,12 @@
             "value": "Familia"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perhe"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -3235,6 +3433,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Compartir en familia"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perhejako"
           }
         },
         "fr": {
@@ -3343,6 +3547,12 @@
             "value": "Se ha terminado el grupo familiar. Los eventos recibidos hasta ahora se conservan."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perhejako on päättynyt. Jo vastaanotetut tapahtumat säilyvät."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -3447,6 +3657,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Has dejado de compartir con la familia. Los eventos de hasta ahora se conservan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perhejako on lopetettu. Nykyiset tapahtumat säilyvät."
           }
         },
         "fr": {
@@ -3555,6 +3771,12 @@
             "value": "Invitar a la familia"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsu perhe"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -3659,6 +3881,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Invitar a la familia"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsu perhe mukaan"
           }
         },
         "fr": {
@@ -3767,6 +3995,12 @@
             "value": "Conectado con los eventos de una familia"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yhdistetty perheen tapahtumiin"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -3871,6 +4105,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Salir del grupo"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poistu jaosta"
           }
         },
         "fr": {
@@ -3979,6 +4219,12 @@
             "value": "Se ha restablecido la información de compartición. Envía la invitación de nuevo."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jakotiedot nollattiin. Lähetä kutsu uudelleen."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -4083,6 +4329,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dejar de compartir"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lopeta jako"
           }
         },
         "fr": {
@@ -4191,6 +4443,12 @@
             "value": "Has salido del grupo. Los eventos recibidos hasta ahora se conservan."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poistuit jaosta. Jo vastaanotetut tapahtumat säilyvät."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -4297,6 +4555,12 @@
             "value": "No hay eventos para compartir."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei jaettavia tapahtumia."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -4401,6 +4665,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Todos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaikki"
           }
         },
         "fr": {
@@ -4510,6 +4780,12 @@
             "value": "Las pantallas se reorganizan bien en lugar de cortarse al aumentar el texto."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytöt järjestyvät siististi uudelleen sen sijaan, että ne leikkautuisivat, kun suurennat tekstiä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -4614,6 +4890,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Elige una fecha para ver sus eventos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valitse päivä nähdäksesi sen tapahtumat"
           }
         },
         "fr": {
@@ -4723,6 +5005,12 @@
             "value": "Borrar todos mis eventos"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista kaikki tapahtumani"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -4827,6 +5115,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ya tienes un grupo familiar propio. Primero toca «Dejar de compartir» y luego acepta la invitación."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinulla on jo oma perhejako. Napauta ensin ”Lopeta jako” ja hyväksy sitten kutsu."
           }
         },
         "fr": {
@@ -4935,6 +5229,12 @@
             "value": "Es mañana. Ve preparando las cosas con tiempo."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtuma on huomenna. Valmistele tavarat hyvissä ajoin."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -5039,6 +5339,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "¿De quién es el evento?"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kenen tapahtuma tämä on?"
           }
         },
         "fr": {
@@ -5147,6 +5453,12 @@
             "value": "Próximos"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tulevat"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -5251,6 +5563,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Próximos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tulevat"
           }
         },
         "fr": {
@@ -5360,6 +5678,12 @@
             "value": "Modo oscuro"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tumma tila"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -5464,6 +5788,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendario"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenteri"
           }
         },
         "fr": {
@@ -5572,6 +5902,12 @@
             "value": "Haz una foto al calendario\ny añade los eventos"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ota kuva kalenterista\nlisätäksesi tapahtumat"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -5676,6 +6012,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Por la mañana"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aamulla"
           }
         },
         "fr": {
@@ -5785,6 +6127,12 @@
             "value": "Distingue los eventos de cada niño aunque tengas activado Aumentar contraste o te cueste diferenciar los colores."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erota jokaisen lapsen tapahtumat toisistaan, vaikka Lisää kontrastia olisi päällä tai värien erottaminen olisi vaikeaa."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -5890,6 +6238,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Usa la app en más idiomas."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käytä sovellusta useammalla kielellä."
           }
         },
         "fr": {
@@ -5999,6 +6353,12 @@
             "value": "Más idiomas"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää kieliä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -6103,6 +6463,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toca el círculo para añadir una foto de perfil. Si indicas la clase, los eventos que son solo de otras clases (como salidas) se filtran solos de los avisos. Cuando cambie de clase en el nuevo curso, solo tienes que actualizarla aquí."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Napauta ympyrää lisätäksesi profiilikuvan. Jos syötät ryhmän, vain muille ryhmille tarkoitetut tapahtumat (esim. retket) suodatetaan tiedotteista pois automaattisesti. Kun ryhmä vaihtuu uutena toimintavuotena, muuta se vain täällä."
           }
         },
         "fr": {
@@ -6211,6 +6577,12 @@
             "value": "Error de sincronización. Inténtalo de nuevo en un momento."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkronointi epäonnistui. Yritä hetken kuluttua uudelleen."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -6315,6 +6687,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Última sincronización: %@ · Se sincroniza automáticamente al abrir la app o cambiar eventos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viimeksi synkronoitu: %@ · Synkronoituu automaattisesti, kun avaat sovelluksen tai muutat tapahtumia."
           }
         },
         "fr": {
@@ -6423,6 +6801,12 @@
             "value": "Añadir desde mensaje"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää viestistä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -6527,6 +6911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nombre de la clase (p. ej., Girasoles)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ryhmän nimi (esim. Auringonkukat)"
           }
         },
         "fr": {
@@ -6635,6 +7025,12 @@
             "value": "Indicar clase"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syötä ryhmä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -6739,6 +7135,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Repetidos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toistuvat"
           }
         },
         "fr": {
@@ -6847,6 +7249,12 @@
             "value": "Indica la clase para filtrar automáticamente los eventos que son solo de otras clases."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Syötä ryhmä, niin vain muille ryhmille tarkoitetut tapahtumat suodatetaan automaattisesti pois."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -6953,6 +7361,12 @@
             "value": "Añade una clase"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää ryhmä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -7057,6 +7471,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Compártelo con tu pareja y los abuelos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaa puolison ja isovanhempien kanssa"
           }
         },
         "fr": {
@@ -7166,6 +7586,12 @@
             "value": "Copia de seguridad y exportación"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varmuuskopiointi ja vienti"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -7270,6 +7696,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Solo ver"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vain katselu"
           }
         },
         "fr": {
@@ -7377,6 +7809,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Colores y contraste más cómodos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Helpommat värit ja kontrasti"
           }
         },
         "fr": {
@@ -7557,6 +7995,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld kuva – suurenna napauttamalla."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld kuvaa – selaa pyyhkäisemällä, suurenna napauttamalla."
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -7699,6 +8155,12 @@
             "value": "No se encontró texto en la foto."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kuvasta ei löytynyt tekstiä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -7805,6 +8267,12 @@
             "value": "Toca la foto para verla más grande."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suurenna kuva napauttamalla sitä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -7909,6 +8377,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eliminar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista"
           }
         },
         "fr": {
@@ -8018,6 +8492,12 @@
             "value": "Respuesta háptica"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptinen palaute"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -8122,6 +8602,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pendiente"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odottaa"
           }
         },
         "fr": {
@@ -8230,6 +8716,12 @@
             "value": "Escanear"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skannaa"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -8334,6 +8826,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Solo se aplica a eventos con hora"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koskee vain tapahtumia, joilla on kellonaika"
           }
         },
         "fr": {
@@ -8443,6 +8941,12 @@
             "value": "Consejos útiles"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hyödyllisiä vinkkejä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -8548,6 +9052,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Retoma el evento donde lo dejaste"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jatka tapahtumaa siitä, mihin jäit"
           }
         },
         "fr": {
@@ -8656,6 +9166,12 @@
             "value": "Niño/a"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsi"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -8760,6 +9276,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Eliminar niño/a"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista lapsi"
           }
         },
         "fr": {
@@ -8868,6 +9390,12 @@
             "value": "Nombre del niño o la niña (p. ej., Lucas)"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen nimi (esim. Eino)"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -8972,6 +9500,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Agenda de los peques"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lasten aikataulu"
           }
         },
         "fr": {
@@ -9081,6 +9615,12 @@
             "value": "Guarda las agendas de tus hijos en un archivo y recupéralas más tarde."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tallenna lastesi aikataulut tiedostoon ja tuo ne takaisin myöhemmin."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -9185,6 +9725,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Añadir niño/a"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää lapsi"
           }
         },
         "fr": {
@@ -9293,6 +9839,12 @@
             "value": "Añade a tu hijo o hija para organizar los eventos por niño y ver su nombre en los recordatorios."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää lapsi, niin tapahtumat järjestyvät lapsittain ja nimi näkyy muistutuksissa."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -9397,6 +9949,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Añade a tu hijo o hija para organizar los eventos por niño y ver su nombre en los recordatorios."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää lapsi, niin tapahtumat järjestyvät lapsittain ja nimi näkyy muistutuksissa."
           }
         },
         "fr": {
@@ -9505,6 +10063,12 @@
             "value": "Agenda Peques"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen aikataulu"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -9609,6 +10173,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Datos de Agenda Peques"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen aikataulun tiedot"
           }
         },
         "fr": {
@@ -9717,6 +10287,12 @@
             "value": "Enviar a usuarios de Agenda Peques"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lähetä Lapsen aikataulun käyttäjille"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -9821,6 +10397,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendario de Agenda Peques"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen aikataulun kalenteri"
           }
         },
         "fr": {
@@ -9929,6 +10511,12 @@
             "value": "Agenda Peques (compartida)"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lapsen aikataulu – jaettu"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -10033,6 +10621,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aún no se ha sincronizado."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei vielä synkronoitu."
           }
         },
         "fr": {
@@ -10141,6 +10735,12 @@
             "value": "Todavía no se ha unido nadie"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kukaan ei ole vielä liittynyt"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -10247,6 +10847,12 @@
             "value": "Aún no has enviado ninguna invitación"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsua ei ole vielä lähetetty"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -10351,6 +10957,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aviso"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ilmoitus"
           }
         },
         "fr": {
@@ -10531,6 +11143,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld muistutus ajastettu"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld muistutusta ajastettu"
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -10673,6 +11303,12 @@
             "value": "Hace falta permiso para notificaciones (actívalo en Ajustes)"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ilmoitusten lupa tarvitaan (salli Asetuksissa)"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -10777,6 +11413,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajustes de recordatorios"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muistutusasetukset"
           }
         },
         "fr": {
@@ -10885,6 +11527,12 @@
             "value": "Avisarme"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muistuta"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -10991,6 +11639,12 @@
             "value": "Todos los momentos de recordatorio están desactivados"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaikki muistutusajat on kytketty pois"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -11095,6 +11749,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sin recordatorios"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei muistutuksia"
           }
         },
         "fr": {
@@ -11204,6 +11864,12 @@
             "value": "Pistas discretas sobre funciones útiles, justo cuando las necesitas."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hienovaraisia vinkkejä hyödyllisistä toiminnoista juuri silloin, kun tarvitset niitä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -11308,6 +11974,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Añadir también al Calendario de Apple"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää myös Applen Kalenteriin"
           }
         },
         "fr": {
@@ -11417,6 +12089,12 @@
             "value": "Usa toda la app también en inglés."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käytä koko sovellusta myös englanniksi."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -11522,6 +12200,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "El calendario y los eventos se ven nítidos y legibles en el modo oscuro."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenteri ja tapahtumat pysyvät terävinä ja luettavina tummassa tilassa."
           }
         },
         "fr": {
@@ -11630,6 +12314,12 @@
             "value": "Muestra los próximos eventos extraídos del calendario de la guardería."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näyttää päiväkodin kalenterista poimitut tulevat tapahtumat."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -11734,6 +12424,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Haz una foto del aviso de la guardería o pega un mensaje"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ota kuva päiväkodin tiedotteesta tai liitä viesti"
           }
         },
         "fr": {
@@ -11843,6 +12539,12 @@
             "value": "La primera vez que abras la app tras una actualización, verás las novedades."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun avaat sovelluksen ensimmäisen kerran päivityksen jälkeen, näet mikä on uutta."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -11950,6 +12652,12 @@
             "value": "Novedades"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uutta"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -12054,6 +12762,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pega aquí un mensaje de la guardería.\nP. ej., mañana se espera lluvia, así que marca con el nombre las botas, el chubasquero y el paraguas."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liitä tähän viesti päiväkodista.\nEsim. Huomenna on luvassa sadetta, kirjoittakaa nimi kumisaappaisiin, sadetakkiin ja sateenvarjoon."
           }
         },
         "fr": {
@@ -12163,6 +12877,12 @@
             "value": "Compatible con inglés"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Täysi englannin tuki"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -12267,6 +12987,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "P. ej., fiambrera, botella de agua"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esim. eväsrasia, juomapullo"
           }
         },
         "fr": {
@@ -12375,6 +13101,12 @@
             "value": "Hoy"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tänään"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -12479,6 +13211,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Es hoy."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtuma on tänään."
           }
         },
         "fr": {
@@ -12587,6 +13325,12 @@
             "value": "Error"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virhe"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -12691,6 +13435,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Listo"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valmis"
           }
         },
         "fr": {
@@ -12800,6 +13550,12 @@
             "value": "Reducir movimiento"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vähennä liikettä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -12905,6 +13661,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Con Reducir movimiento activado, los efectos de pantalla son más sutiles."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun Vähennä liikettä on päällä, näytön tehosteet rauhoittuvat."
           }
         },
         "fr": {
@@ -13014,6 +13776,12 @@
             "value": "Borra todos los eventos guardados desde la propia app cuando quieras."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista kaikki tallennetut tapahtumat suoraan sovelluksesta milloin haluat."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -13118,6 +13886,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ver el mes completo"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laajenna kuukausinäkymään"
           }
         },
         "fr": {
@@ -13226,6 +14000,12 @@
             "value": "Dejarás de recibir los eventos de esta familia. Los eventos recibidos hasta ahora se conservan."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et enää saa tämän perheen tapahtumia. Jo vastaanotetut tapahtumat säilyvät."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -13330,6 +14110,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Estás viendo los eventos de esta familia. Los eventos que añadas o edites también les llegarán a ellos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katsotte tämän perheen tapahtumia yhdessä. Lisäämäsi tai muokkaamasi tapahtumat välittyvät myös heille."
           }
         },
         "fr": {
@@ -13438,6 +14224,12 @@
             "value": "El uso de iCloud está restringido en este dispositivo."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloudin käyttö on rajoitettu tällä laitteella."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -13542,6 +14334,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Añadir evento este día"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää tapahtuma tälle päivälle"
           }
         },
         "fr": {
@@ -13650,6 +14448,12 @@
             "value": "No hay eventos este día"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei tapahtumia tänä päivänä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -13754,6 +14558,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No se encontraron eventos con fecha en este mensaje.\nComprueba que incluya una fecha (p. ej., 12 de julio) o expresiones como «mañana» o «el viernes»."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tästä viestistä ei löytynyt tapahtumia, joilla on päivämäärä.\nTarkista, että viestissä on päivämäärä (esim. 12. heinäkuuta) tai sanoja kuten ”huomenna” tai ”perjantaina”."
           }
         },
         "fr": {
@@ -13862,6 +14672,12 @@
             "value": "¿Eliminar a este niño o niña?"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poistetaanko tämä lapsi?"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -13966,6 +14782,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nombre (p. ej., Lucas)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nimi (esim. Eino)"
           }
         },
         "fr": {
@@ -14074,6 +14896,12 @@
             "value": "Ya formas parte del grupo familiar de otra persona. Primero toca «Salir del grupo» y luego envía la invitación."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olet jo mukana toisen perheen jaossa. Napauta ensin ”Poistu jaosta” ja lähetä sitten kutsu."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -14178,6 +15006,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No se pudo procesar la imagen."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kuvaa ei voitu käsitellä."
           }
         },
         "fr": {
@@ -14358,6 +15192,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Tästä kuvasta löytyi %lld tapahtuma"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Tästä kuvasta löytyi %lld tapahtumaa"
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -14500,6 +15352,12 @@
             "value": "Fecha y hora"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Päivä ja aika"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -14604,6 +15462,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Evento"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtuma"
           }
         },
         "fr": {
@@ -14779,6 +15643,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Guardar %lld eventos y activar recordatorios"
+                }
+              }
+            }
+          }
+        },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Tallenna %lld tapahtuma + saa muistutukset"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Tallenna %lld tapahtumaa + saa muistutukset"
                 }
               }
             }
@@ -14998,6 +15880,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld tapahtuma tuotu."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld tapahtumaa tuotu."
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -15140,6 +16040,12 @@
             "value": "No se pudieron importar los datos de la agenda.\nComprueba que el archivo se exportó desde la app Agenda Peques."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aikataulutietoja ei voitu tuoda.\nTarkista, että tiedosto on viety Lapsen aikataulu -sovelluksesta."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -15244,6 +16150,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "A la hora del evento"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtuman alkaessa"
           }
         },
         "fr": {
@@ -15352,6 +16264,12 @@
             "value": "Tipo de evento"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtumatyyppi"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -15456,6 +16374,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Añadir evento a mano"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää tapahtuma käsin"
           }
         },
         "fr": {
@@ -15564,6 +16488,12 @@
             "value": "Añadir evento"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää tapahtuma"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -15668,6 +16598,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Extraer eventos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poimi tapahtumat"
           }
         },
         "fr": {
@@ -15776,6 +16712,12 @@
             "value": "Por los eventos, parece el documento de %@. Si no es así, cámbialo arriba."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtumien perusteella tämä näyttää lapsen %@ asiakirjalta. Jos ei, vaihda se yltä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -15880,6 +16822,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No se encontró texto que parezca eventos.\nVuelve a hacer la foto para que se lea bien."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapahtumilta näyttävää tekstiä ei löytynyt.\nOta kuva uudelleen niin, että teksti on terävää."
           }
         },
         "fr": {
@@ -15989,6 +16937,12 @@
             "value": "Un toque suave te avisa cuando se añade o guarda un evento."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kevyt tärinä kertoo, kun tapahtuma on lisätty tai tallennettu."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -16094,6 +17048,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lo que estabas escribiendo se conserva aunque la app se cierre a medias."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirjoittamasi pysyy tallessa, vaikka sovellus sulkeutuisi kesken kaiken."
           }
         },
         "fr": {
@@ -16202,6 +17162,12 @@
             "value": "No se encontró ninguna cuenta de calendario donde añadir eventos."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenteritiliä, johon tapahtumia voi lisätä, ei löytynyt."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -16306,6 +17272,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Guardar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tallenna"
           }
         },
         "fr": {
@@ -16414,6 +17386,12 @@
             "value": "¡Guardado! Míralo en el calendario y el widget"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tallennettu! Näet sen kalenterissa ja widgetissä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -16518,6 +17496,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "La tarde anterior (para preparar cosas)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edellisenä iltana (pakkaamista varten)"
           }
         },
         "fr": {
@@ -16626,6 +17610,12 @@
             "value": "Todos"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaikki"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -16730,6 +17720,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Título"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otsikko"
           }
         },
         "fr": {
@@ -16838,6 +17834,12 @@
             "value": "Título (p. ej., Excursión, Día de traer cosas)"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otsikko (esim. Retki, Oma tavara -päivä)"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -16942,6 +17944,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Revisa los títulos, las horas y lo que hay que llevar. Toca el círculo para cambiar de niño o desliza para borrar los eventos que no necesites. Al guardar, pasarás al calendario."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarkista otsikot, ajat ja mitä on otettava mukaan. Vaihda lasta napauttamalla ympyrää tai poista tarpeettomat tapahtumat pyyhkäisemällä. Tallennuksen jälkeen siirryt kalenteriin."
           }
         },
         "fr": {
@@ -17050,6 +18058,12 @@
             "value": "Eliminado"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poistettu"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -17154,6 +18168,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Todo el día"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koko päivä"
           }
         },
         "fr": {
@@ -17262,6 +18282,12 @@
             "value": "Los eventos de todo el día (como excursiones) solo reciben los recordatorios «la tarde anterior» y «por la mañana»."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koko päivän tapahtumille (esim. retket) tulee vain muistutukset ”edellisenä iltana” ja ”aamulla”."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -17366,6 +18392,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ver solo la semana"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiivistä viikkonäkymään"
           }
         },
         "fr": {
@@ -17474,6 +18506,12 @@
             "value": "Qué llevar / notas"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitä mukaan / muistiinpanot"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -17578,6 +18616,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Qué llevar / notas (p. ej., fiambrera)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitä mukaan / muistiinpanot (esim. eväsrasia)"
           }
         },
         "fr": {
@@ -17686,6 +18730,12 @@
             "value": "Sincronizar ahora"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkronoi nyt"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -17790,6 +18840,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Empieza ahora."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alkaa nyt."
           }
         },
         "fr": {
@@ -17898,6 +18954,12 @@
             "value": "Borrar"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tyhjennä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -18002,6 +19064,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Soporte"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuki"
           }
         },
         "fr": {
@@ -18110,6 +19178,12 @@
             "value": "Añadido a mano"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisätty käsin"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -18214,6 +19288,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Te has unido"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mukana"
           }
         },
         "fr": {
@@ -18322,6 +19402,12 @@
             "value": "Para quitar a alguien o cambiar permisos, toca «Gestionar personas» más abajo."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poista joku tai muuta oikeuksia napauttamalla alla ”Hallitse henkilöitä”."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -18426,6 +19512,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Procesando…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käsitellään…"
           }
         },
         "fr": {
@@ -18535,6 +19627,12 @@
             "value": "Una breve guía para quienes empiezan"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lyhyt esittely aloittelijoille"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -18640,6 +19738,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Una guía corta para añadir eventos desde una foto la primera vez que abres la app."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lyhyt opas tapahtumien lisäämiseen kuvasta, kun avaat sovelluksen ensimmäisen kerran."
           }
         },
         "fr": {
@@ -18748,6 +19852,12 @@
             "value": "Enviar invitación · Gestionar personas"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lähetä kutsu · Hallitse henkilöitä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -18852,6 +19962,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No se pudo crear el enlace de invitación. Inténtalo de nuevo en un momento."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsulinkkiä ei voitu luoda. Yritä hetken kuluttua uudelleen."
           }
         },
         "fr": {
@@ -18960,6 +20076,12 @@
             "value": "Envía un enlace de invitación y tu pareja o los abuelos podrán ver y editar los mismos eventos. Un cambio en un lado se actualiza automáticamente en ambos."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lähetä kutsulinkki, niin puolisosi tai isovanhempasi näkevät ja voivat muokata samoja tapahtumia. Toisella puolella tehty muutos päivittyy automaattisesti molemmille."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -19064,6 +20186,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No se pudo enviar el enlace de invitación.\n%@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsulinkkiä ei voitu lähettää.\n%@"
           }
         },
         "fr": {
@@ -19172,6 +20300,12 @@
             "value": "Envía un enlace de invitación por mensaje y podrán abrirlo en la app y unirse al instante. Después, los eventos que se añadan o editen en cualquiera de los dos lados se actualizan automáticamente en ambos."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lähetä kutsulinkki viestillä, niin toinen avaa sen sovelluksessa ja liittyy heti mukaan. Sen jälkeen toisella puolella lisätyt tai muutetut tapahtumat päivittyvät automaattisesti molemmille."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -19276,6 +20410,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Las personas invitadas también pueden añadir y editar eventos. Las fotos de perfil de los niños no se comparten."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsutut voivat myös lisätä ja muokata tapahtumia. Lasten profiilikuvia ei jaeta."
           }
         },
         "fr": {
@@ -19384,6 +20524,12 @@
             "value": "Familiar invitado"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsuttu perheenjäsen"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -19488,6 +20634,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Compartiendo con las personas invitadas"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaettu kutsuttujen kanssa"
           }
         },
         "fr": {
@@ -19596,6 +20748,12 @@
             "value": "Las personas invitadas dejarán de ver tus eventos. Los eventos de hasta ahora se quedan en ambos dispositivos."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kutsutut eivät enää näe tapahtumiasi. Nykyiset tapahtumat säilyvät molemmilla laitteilla."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -19702,6 +20860,12 @@
             "value": "Añadir"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -19806,6 +20970,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cancelar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peruuta"
           }
         },
         "fr": {
@@ -19986,6 +21156,24 @@
             }
           }
         },
+        "fi": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld tapahtuma lisätty Kalenteriin"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld tapahtumaa lisätty Kalenteriin"
+                }
+              }
+            }
+          }
+        },
         "fr": {
           "variations": {
             "plural": {
@@ -20128,6 +21316,12 @@
             "value": "Hace falta permiso de calendario"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenterin käyttölupa tarvitaan"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -20232,6 +21426,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "No hay permiso para acceder al calendario. Actívalo en Ajustes > CalendarSnap."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenterin käyttö ei ole sallittu. Salli se kohdassa Asetukset > CalendarSnap."
           }
         },
         "fr": {
@@ -20340,6 +21540,12 @@
             "value": "No se pudo añadir a Calendario"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenteriin lisääminen epäonnistui"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -20446,6 +21652,12 @@
             "value": "Compartir como archivo de calendario (.ics)"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaa kalenteritiedostona (.ics)"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -20550,6 +21762,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Si lo activas, los eventos se añaden al calendario %@. Comparte ese calendario en la app Calendario de iOS para mantenerlo sincronizado con tu pareja y tu familia."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun päällä, tapahtumat lisätään kalenteriin ”%@”. Jaa kyseinen kalenteri iOS:n Kalenteri-sovelluksessa, niin se pysyy synkronoituna puolison ja perheen kanssa."
           }
         },
         "fr": {
@@ -20659,6 +21877,12 @@
             "value": "Pantallas para texto más grande"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asettelut suuremmalle tekstille"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -20765,6 +21989,12 @@
             "value": "Pegar del portapapeles"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liitä leikepöydältä"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -20869,6 +22099,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Compartir como texto"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaa tekstinä"
           }
         },
         "fr": {
@@ -20978,6 +22214,12 @@
             "value": "Diseño para iPhone plegable"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asettelu taitettavalle iPhonelle"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -21083,6 +22325,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mira el calendario y los eventos lado a lado en un iPhone plegable."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näe kalenteri ja tapahtumat rinnakkain taitettavalla iPhonella."
           }
         },
         "fr": {
@@ -21191,6 +22439,12 @@
             "value": "Sacaremos todos los eventos del mes,\nlos añadiremos al calendario de una vez y te avisaremos."
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poimimme koko kuukauden tapahtumat,\nlisäämme ne kalenteriin kerralla ja muistutamme niistä."
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -21295,6 +22549,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Personas que comparten"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jakavat henkilöt"
           }
         },
         "fr": {
@@ -21403,6 +22663,12 @@
             "value": "Puede editar"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voi muokata"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -21504,6 +22770,12 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "fi": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -21613,6 +22885,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Eventos de %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Tapahtumat: %@"
           }
         },
         "fr": {

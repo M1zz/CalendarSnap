@@ -104,6 +104,12 @@ Appen kører nu endnu mere stabilt.
 Απόρρητο και υποστήριξη στην εφαρμογή.
 Βελτιώσαμε τη σταθερότητα της εφαρμογής.
 
+### 앱스토어 (Finnish, fi)
+
+Lue vastaukset palautteeseen täällä.
+Avaa tietosuoja ja tuki sovelluksessa.
+Sovellus toimii nyt entistä vakaammin.
+
 ## 1.0.4
 
 ### 새로운 기능

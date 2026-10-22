@@ -45,6 +45,12 @@
             "value": "Próximos"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tulevat"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -149,6 +155,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Haz una foto al calendario\ny añade los eventos"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ota kuva kalenterista\nlisätäksesi tapahtumat"
           }
         },
         "fr": {
@@ -257,6 +269,12 @@
             "value": "Agenda de los peques"
           }
         },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lasten aikataulu"
+          }
+        },
         "fr": {
           "stringUnit": {
             "state": "translated",
@@ -361,6 +379,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Muestra los próximos eventos extraídos del calendario de la guardería."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näyttää päiväkodin kalenterista poimitut tulevat tapahtumat."
           }
         },
         "fr": {

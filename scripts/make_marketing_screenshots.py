@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -124,6 +124,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Έλεγξε μία φορά<br>πριν αποθηκεύσεις", "Άλλαξε τίτλο, ημερομηνία και σημειώσεις εύκολα"),
         ("03-calendar.png", "text-bottom", "Κάθε παιδί<br>με το χρώμα του", "Τα προγράμματα των αδελφών δεν μπερδεύονται"),
         ("04-reminders.png", "dark", "Υπενθύμιση το<br>προηγούμενο βράδυ", "Μην ξεχάσεις ποτέ το κολατσιό και τα αθλητικά"),
+    ],
+    "fi": [
+        ("01-scan.png", "hero-bleed", "Yksi kuva tiedotteesta,<br>koko kuukausi valmis", "Päivät ja mukaan otettavat luetaan puolestasi"),
+        ("02-events.png", "left-text", "Tarkista kerran<br>ennen tallennusta", "Muokkaa otsikkoa, päivää ja muistiinpanoja"),
+        ("03-calendar.png", "text-bottom", "Jokaisella lapsella<br>oma värinsä", "Sisarusten menot eivät mene sekaisin"),
+        ("04-reminders.png", "dark", "Muistutus<br>edellisenä iltana", "Eväät ja urheiluvaatteet eivät unohdu"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────
