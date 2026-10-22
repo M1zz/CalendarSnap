@@ -27,6 +27,12 @@
             "value": "다가오는 일정"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ближайшие"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -65,6 +71,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력을 찍어\n일정을 등록하세요"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сфотографируйте календарь,\nчтобы добавить события"
           }
         },
         "zh-Hans": {
@@ -107,6 +119,12 @@
             "value": "아이 일정"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "События малыша"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -145,6 +163,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показывает ближайшие события из календаря детского сада."
           }
         },
         "zh-Hans": {

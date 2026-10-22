@@ -51,6 +51,12 @@
             "value": " (이미 있는 %lld개 제외)"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (уже сохранённых, пропущено: %lld)"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -115,6 +121,12 @@
             "value": " (중복 %lld개 제외)"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (пропущено повторов: %lld)"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -153,6 +165,12 @@
           "stringUnit": {
             "state": "translated",
             "value": " · 캘린더에도 추가"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Также добавляется в «Календарь»"
           }
         },
         "zh-Hans": {
@@ -195,6 +213,12 @@
             "value": "%@님"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -233,6 +257,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@님과 함께 보는 중"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Общий доступ с пользователем %@"
           }
         },
         "zh-Hans": {
@@ -275,6 +305,12 @@
             "value": "%@반"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -313,6 +349,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@의 반"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Группа: %@"
           }
         },
         "zh-Hans": {
@@ -379,6 +421,12 @@
             "value": "%@의 일정 %lld개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вместе с профилем будут удалены фото и события (%2$lld) ребёнка: %1$@. Это нельзя отменить."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -417,6 +465,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подключено к событиям: %@. Теперь вы можете вести их вместе."
           }
         },
         "zh-Hans": {
@@ -459,6 +513,12 @@
             "value": "%@의 프로필이 삭제됩니다. 되돌릴 수 없어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Профиль ребёнка «%@» будет удалён. Это нельзя отменить."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -497,6 +557,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "'%@' 삭제"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить «%@»"
           }
         },
         "zh-Hans": {
@@ -539,6 +605,12 @@
             "value": "1시간 뒤 일정이에요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начнётся через час."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -579,6 +651,12 @@
             "value": "1시간 전"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За 1 час"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -617,6 +695,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "1회성"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разовые"
           }
         },
         "zh-Hans": {
@@ -660,6 +744,12 @@
             "value": "Face ID 잠금"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блокировка по Face ID"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -699,6 +789,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Face ID나 Touch ID로 앱을 잠가 아이 일정을 지켜요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блокируйте приложение с помощью Face ID или Touch ID, чтобы расписание детей оставалось личным."
           }
         },
         "zh-Hans": {
@@ -742,6 +838,12 @@
             "value": "Siri에게 물어 아이의 오늘 일정을 바로 확인해요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Спросите Siri, что сегодня в расписании у ребёнка."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -781,6 +883,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri와 단축어"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri и Быстрые команды"
           }
         },
         "zh-Hans": {
@@ -824,6 +932,12 @@
             "value": "VoiceOver가 달력과 일정을 빠짐없이, 알맞은 순서로 읽어 줘요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver читает весь календарь и каждое событие в правильном порядке."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -863,6 +977,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "VoiceOver로 더 편하게"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удобнее с VoiceOver"
           }
         },
         "zh-Hans": {
@@ -905,6 +1025,12 @@
             "value": "iCloud 상태를 확인하지 못했어요. 잠시 후 다시 시도해주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось проверить состояние iCloud. Повторите попытку чуть позже."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -943,6 +1069,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud 저장 공간이 부족해 일정을 올리지 못했어요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В iCloud не хватает места, чтобы загрузить события."
           }
         },
         "zh-Hans": {
@@ -985,6 +1117,12 @@
             "value": "iCloud에 로그인해야 가족 공유를 쓸 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы пользоваться семейным доступом, войдите в iCloud."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1023,6 +1161,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud에 로그인해야 가족 공유를 쓸 수 있어요. 설정 앱 > Apple 계정에서 로그인해주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы пользоваться семейным доступом, войдите в iCloud. Войти можно в «Настройки» > Учётная запись Apple."
           }
         },
         "zh-Hans": {
@@ -1065,6 +1209,12 @@
             "value": "iCloud에 로그인해야 가족과 일정을 공유할 수 있어요.\n설정 앱 > Apple 계정에서 로그인해주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы делиться событиями с семьёй, войдите в iCloud.\nВойдите в «Настройки» > Учётная запись Apple."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1103,6 +1253,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가져오기 완료"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Импорт завершён"
           }
         },
         "zh-Hans": {
@@ -1145,6 +1301,12 @@
             "value": "가족"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Семья"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1183,6 +1345,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 공유"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Семейный доступ"
           }
         },
         "zh-Hans": {
@@ -1225,6 +1393,12 @@
             "value": "가족 공유가 종료됐어요. 지금까지 받은 일정은 그대로 남아 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Семейный доступ завершён. Полученные события остаются на месте."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1263,6 +1437,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Семейный доступ закрыт. Все события остаются на месте."
           }
         },
         "zh-Hans": {
@@ -1305,6 +1485,12 @@
             "value": "가족 초대하기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пригласить семью"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1343,6 +1529,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "가족 초대해서 함께 보기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пригласить семью"
           }
         },
         "zh-Hans": {
@@ -1385,6 +1577,12 @@
             "value": "가족의 일정과 연결됨"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подключено к событиям семьи"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1423,6 +1621,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공유 나가기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выйти из общего доступа"
           }
         },
         "zh-Hans": {
@@ -1465,6 +1669,12 @@
             "value": "공유 정보가 초기화됐어요. 다시 초대해주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данные общего доступа сброшены. Отправьте приглашение ещё раз."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1503,6 +1713,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공유 중단"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Закрыть общий доступ"
           }
         },
         "zh-Hans": {
@@ -1545,6 +1761,12 @@
             "value": "공유에서 나왔어요. 지금까지 받은 일정은 그대로 남아 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы вышли из общего доступа. Полученные события остаются на месте."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1585,6 +1807,12 @@
             "value": "공유할 일정이 없어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет событий, которыми можно поделиться."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1623,6 +1851,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "공통"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для всех"
           }
         },
         "zh-Hans": {
@@ -1666,6 +1900,12 @@
             "value": "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При увеличении текста экраны аккуратно перестраиваются, а не обрезаются."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1704,6 +1944,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "날짜를 선택하면 일정이 표시됩니다"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите дату, чтобы увидеть события"
           }
         },
         "zh-Hans": {
@@ -1747,6 +1993,12 @@
             "value": "내 일정 한 번에 지우기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить все мои события"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1785,6 +2037,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У вас уже есть собственный семейный доступ. Сначала нажмите «Закрыть общий доступ», затем примите приглашение."
           }
         },
         "zh-Hans": {
@@ -1827,6 +2085,12 @@
             "value": "내일 일정이에요. 준비물을 미리 챙겨주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Событие завтра. Подготовьте всё заранее."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1865,6 +2129,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "누구의 일정인가요?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чьё это событие?"
           }
         },
         "zh-Hans": {
@@ -1907,6 +2177,12 @@
             "value": "다가오는 일정"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ближайшие"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -1945,6 +2221,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "다음 일정"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ближайшие"
           }
         },
         "zh-Hans": {
@@ -1988,6 +2270,12 @@
             "value": "다크 모드"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тёмная тема"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2026,6 +2314,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Календарь"
           }
         },
         "zh-Hans": {
@@ -2068,6 +2362,12 @@
             "value": "달력을 찍어\n일정을 등록하세요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сфотографируйте календарь,\nчтобы добавить события"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2106,6 +2406,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "당일 아침"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Утром в тот же день"
           }
         },
         "zh-Hans": {
@@ -2149,6 +2455,12 @@
             "value": "대비를 높이거나 색을 구별하기 어려워도 아이별 일정을 알아볼 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Различайте события каждого ребёнка даже с повышенной контрастностью или при трудностях с цветами."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2188,6 +2500,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "더 많은 나라 말로 앱을 쓸 수 있게 해요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приложение на других языках."
           }
         },
         "zh-Hans": {
@@ -2231,6 +2549,12 @@
             "value": "더 많은 언어"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Больше языков"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2269,6 +2593,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нажмите на кружок, чтобы добавить фото профиля. Если указать группу, события только для других групп (например, экскурсии) будут автоматически убираться из объявлений. Когда группа меняется в новом учебном году, просто поправьте её здесь."
           }
         },
         "zh-Hans": {
@@ -2311,6 +2641,12 @@
             "value": "동기화에 실패했어요. 잠시 후 다시 시도해주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось синхронизировать. Повторите попытку чуть позже."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2349,6 +2685,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "마지막 동기화 %@ · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Последняя синхронизация: %@ · Выполняется автоматически при открытии приложения и изменении событий."
           }
         },
         "zh-Hans": {
@@ -2391,6 +2733,12 @@
             "value": "문자로 일정 추가"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Из сообщения"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2429,6 +2777,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "반 이름 (예: 무궁화)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название группы (например, «Подсолнухи»)"
           }
         },
         "zh-Hans": {
@@ -2471,6 +2825,12 @@
             "value": "반 입력"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Укажите группу"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2509,6 +2869,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "반복"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повторяющиеся"
           }
         },
         "zh-Hans": {
@@ -2551,6 +2917,12 @@
             "value": "반을 입력하면 통신문에서 다른 반 전용 일정을 자동으로 걸러줘요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Укажите группу, чтобы автоматически убирать события, предназначенные только для других групп."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2591,6 +2963,12 @@
             "value": "반을 추가해주세요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте группу"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2629,6 +3007,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "배우자·조부모와 함께 보기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Делитесь с партнёром и бабушками-дедушками"
           }
         },
         "zh-Hans": {
@@ -2672,6 +3056,12 @@
             "value": "백업과 내보내기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резервная копия и экспорт"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2710,6 +3100,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "보기 전용"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только просмотр"
           }
         },
         "zh-Hans": {
@@ -2751,6 +3147,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "보기 편한 색과 대비"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удобные цвета и контраст"
           }
         },
         "zh-Hans": {
@@ -2817,6 +3219,12 @@
             "value": "사진 %lld장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фото: %lld — листайте влево и вправо, нажмите, чтобы увеличить."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2855,6 +3263,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "사진에서 텍스트를 찾지 못했습니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось найти текст на фото."
           }
         },
         "zh-Hans": {
@@ -2897,6 +3311,12 @@
             "value": "사진을 탭하면 크게 볼 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нажмите на фото, чтобы увеличить."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -2935,6 +3355,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "삭제"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить"
           }
         },
         "zh-Hans": {
@@ -2978,6 +3404,12 @@
             "value": "손끝으로 느끼는 반응"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тактильный отклик"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3016,6 +3448,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "수락 대기 중"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидает ответа"
           }
         },
         "zh-Hans": {
@@ -3058,6 +3496,12 @@
             "value": "스캔"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скан"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3096,6 +3540,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "시간이 지정된 일정에만 적용돼요"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только для событий с указанным временем"
           }
         },
         "zh-Hans": {
@@ -3139,6 +3589,12 @@
             "value": "쓰는 요령 알려 주기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Полезные советы"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3178,6 +3634,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "쓰던 일정 이어 쓰기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продолжить с того места, где остановились"
           }
         },
         "zh-Hans": {
@@ -3220,6 +3682,12 @@
             "value": "아이"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ребёнок"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3258,6 +3726,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 삭제"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить ребёнка"
           }
         },
         "zh-Hans": {
@@ -3300,6 +3774,12 @@
             "value": "아이 이름 (예: 지호)"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Имя ребёнка (например, Миша)"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3338,6 +3818,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 일정"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "События малыша"
           }
         },
         "zh-Hans": {
@@ -3381,6 +3867,12 @@
             "value": "아이 일정을 파일로 저장하고 다시 불러올 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохраняйте расписание детей в файл и возвращайте его позже."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3419,6 +3911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이 추가"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить ребёнка"
           }
         },
         "zh-Hans": {
@@ -3461,6 +3959,12 @@
             "value": "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 표시돼요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте ребёнка, и события будут храниться по детям, а в напоминаниях появится имя."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3499,6 +4003,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 함께 표시돼요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте ребёнка, и события будут храниться по детям, а в напоминаниях появится имя."
           }
         },
         "zh-Hans": {
@@ -3541,6 +4051,12 @@
             "value": "아이일정"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расписание малыша"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3579,6 +4095,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이일정 데이터"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данные «Расписания малыша»"
           }
         },
         "zh-Hans": {
@@ -3621,6 +4143,12 @@
             "value": "아이일정 사용자에게 보내기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправить пользователю «Расписания малыша»"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3659,6 +4187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아이일정 캘린더"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Календарь «Расписания малыша»"
           }
         },
         "zh-Hans": {
@@ -3701,6 +4235,12 @@
             "value": "아이일정 함께 보기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расписание малыша — общий доступ"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3739,6 +4279,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "아직 동기화한 적이 없어요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ещё не синхронизировано."
           }
         },
         "zh-Hans": {
@@ -3781,6 +4327,12 @@
             "value": "아직 참여한 사람이 없어요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пока никто не присоединился"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3821,6 +4373,12 @@
             "value": "아직 초대하지 않았어요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приглашение ещё не отправлено"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3859,6 +4417,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомление"
           }
         },
         "zh-Hans": {
@@ -3925,6 +4489,12 @@
             "value": "알림 %lld개 예약"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запланировано напоминаний: %lld"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -3963,6 +4533,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 권한이 필요해요 (설정에서 허용)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужно разрешение на уведомления (включите его в «Настройках»)"
           }
         },
         "zh-Hans": {
@@ -4005,6 +4581,12 @@
             "value": "알림 설정"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройки напоминаний"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4043,6 +4625,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 시점"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Напоминать"
           }
         },
         "zh-Hans": {
@@ -4085,6 +4673,12 @@
             "value": "알림 시점이 꺼져 있어요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все напоминания выключены"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4123,6 +4717,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "알림 없음"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без напоминаний"
           }
         },
         "zh-Hans": {
@@ -4166,6 +4766,12 @@
             "value": "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ненавязчивые подсказки о полезных функциях — в нужный момент."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4204,6 +4810,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "애플 캘린더에도 추가"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавлять и в календарь Apple"
           }
         },
         "zh-Hans": {
@@ -4247,6 +4859,12 @@
             "value": "앱을 영어로도 쓸 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приложение теперь и на английском."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4286,6 +4904,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어두운 화면에서도 달력과 일정이 또렷하게 보여요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В тёмной теме календарь и события остаются чёткими и читаемыми."
           }
         },
         "zh-Hans": {
@@ -4328,6 +4952,12 @@
             "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показывает ближайшие события из календаря детского сада."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4366,6 +4996,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "어린이집 알림장을 찍거나 문자를 붙여넣어 보세요"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сфотографируйте объявление из детского сада или вставьте сообщение"
           }
         },
         "zh-Hans": {
@@ -4409,6 +5045,12 @@
             "value": "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При первом запуске после обновления вы увидите, что нового."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4450,6 +5092,12 @@
             "value": "업데이트 소식"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что нового"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4488,6 +5136,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "여기에 어린이집 문자·카카오톡 메시지를 붙여넣으세요.\n예) 내일은 비가 예정된 만큼 장화, 우의, 우산에 이름을 적어 보내주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставьте сюда сообщение из детского сада.\nНапример: завтра ожидается дождь, подпишите, пожалуйста, сапоги, дождевик и зонт."
           }
         },
         "zh-Hans": {
@@ -4531,6 +5185,12 @@
             "value": "영어 지원"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поддержка английского"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4569,6 +5229,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "예: 도시락, 물통 지참"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Например: обед с собой, бутылка с водой"
           }
         },
         "zh-Hans": {
@@ -4611,6 +5277,12 @@
             "value": "오늘"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сегодня"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4649,6 +5321,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "오늘 일정이에요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Событие сегодня."
           }
         },
         "zh-Hans": {
@@ -4691,6 +5369,12 @@
             "value": "오류"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ошибка"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4729,6 +5413,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "완료"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Готово"
           }
         },
         "zh-Hans": {
@@ -4772,6 +5462,12 @@
             "value": "움직임 줄이기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уменьшение движения"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4811,6 +5507,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "움직임 줄이기를 켜면 화면 효과가 차분해져요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если включить «Уменьшение движения», эффекты на экране станут спокойнее."
           }
         },
         "zh-Hans": {
@@ -4854,6 +5556,12 @@
             "value": "원하면 앱 안에서 저장한 일정을 모두 지울 수 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В любой момент удалите все сохранённые события прямо в приложении."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4892,6 +5600,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "월간 달력으로 펼치기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Развернуть до месяца"
           }
         },
         "zh-Hans": {
@@ -4934,6 +5648,12 @@
             "value": "이 가족의 일정을 더 이상 받지 않습니다. 지금까지 받은 일정은 그대로 남아요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы больше не будете получать события этой семьи. Полученные события останутся на месте."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -4972,6 +5692,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 가족의 일정을 함께 보고 있어요. 내가 추가하거나 고친 일정도 상대에게 그대로 전달됩니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы вместе просматриваете события этой семьи. События, которые вы добавляете или меняете, тоже передаются им."
           }
         },
         "zh-Hans": {
@@ -5014,6 +5740,12 @@
             "value": "이 기기에서는 iCloud 사용이 제한돼 있어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На этом устройстве использование iCloud ограничено."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5052,6 +5784,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 날 일정 추가"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить событие на этот день"
           }
         },
         "zh-Hans": {
@@ -5094,6 +5832,12 @@
             "value": "이 날은 일정이 없어요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В этот день событий нет"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5132,6 +5876,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В этом сообщении не найдено событий с датой.\nПроверьте, есть ли в нём дата (например, 12 июля) или слова вроде «завтра» или «в пятницу»."
           }
         },
         "zh-Hans": {
@@ -5174,6 +5924,12 @@
             "value": "이 아이를 삭제할까요?"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить этого ребёнка?"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5212,6 +5968,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이름 (예: 지호)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Имя (например, Миша)"
           }
         },
         "zh-Hans": {
@@ -5254,6 +6016,12 @@
             "value": "이미 다른 가족의 공유에 참여하고 있어요. 먼저 ‘공유 나가기’를 한 뒤 초대해주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы уже участвуете в общем доступе другой семьи. Сначала нажмите «Выйти из общего доступа», затем отправьте приглашение."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5292,6 +6060,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "이미지를 처리할 수 없습니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось обработать изображение."
           }
         },
         "zh-Hans": {
@@ -5358,6 +6132,12 @@
             "value": "이번 사진에서 추출된 일정 %lld개"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Событий на этом фото: %lld"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5398,6 +6178,12 @@
             "value": "일시"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дата и время"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5436,6 +6222,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Событие"
           }
         },
         "zh-Hans": {
@@ -5502,6 +6294,12 @@
             "value": "일정 %lld개 저장 + 알림 받기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить события (%lld) и включить напоминания"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5566,6 +6364,12 @@
             "value": "일정 %lld개를 가져왔어요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Импортировано событий: %lld."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5604,6 +6408,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось импортировать данные расписания.\nУбедитесь, что файл экспортирован из приложения «Расписание малыша»."
           }
         },
         "zh-Hans": {
@@ -5646,6 +6456,12 @@
             "value": "일정 시각 정각"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В момент начала"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5684,6 +6500,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 유형"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тип события"
           }
         },
         "zh-Hans": {
@@ -5726,6 +6548,12 @@
             "value": "일정 직접 추가"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить событие вручную"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5764,6 +6592,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 추가"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новое событие"
           }
         },
         "zh-Hans": {
@@ -5806,6 +6640,12 @@
             "value": "일정 추출"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Найти события"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5846,6 +6686,12 @@
             "value": "일정 패턴을 보고 '%@'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Судя по событиям, это документ для ребёнка: %@. Если это не так, измените выше."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5884,6 +6730,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось найти текст, похожий на события.\nСфотографируйте ещё раз так, чтобы текст был чётким."
           }
         },
         "zh-Hans": {
@@ -5927,6 +6779,12 @@
             "value": "일정을 넣거나 저장했을 때 가볍게 떨려서 알려 줘요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лёгкая вибрация сообщит, что событие добавлено или сохранено."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -5966,6 +6824,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정을 적다가 앱이 꺼져도 쓰던 내용이 남아 있어요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Набранный текст не пропадёт, даже если приложение закроется."
           }
         },
         "zh-Hans": {
@@ -6008,6 +6872,12 @@
             "value": "일정을 추가할 수 있는 캘린더 계정을 찾지 못했습니다."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не найдена учётная запись календаря, в которую можно добавлять события."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6046,6 +6916,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранить"
           }
         },
         "zh-Hans": {
@@ -6088,6 +6964,12 @@
             "value": "저장 완료! 달력·위젯에서 확인하세요"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранено! Смотрите в календаре и виджете"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6126,6 +7008,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "전날 저녁 (준비물 챙기기)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Накануне вечером (собрать вещи)"
           }
         },
         "zh-Hans": {
@@ -6168,6 +7056,12 @@
             "value": "전체"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6206,6 +7100,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제목"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название"
           }
         },
         "zh-Hans": {
@@ -6248,6 +7148,12 @@
             "value": "제목 (예: 소풍, 준비물의 날)"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название (например, Экскурсия, День своих вещей)"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6286,6 +7192,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요. 저장하면 달력으로 이동합니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверьте названия, время и что нужно взять. Нажмите на кружок, чтобы сменить ребёнка, или смахните ненужное событие, чтобы удалить. После сохранения откроется календарь."
           }
         },
         "zh-Hans": {
@@ -6328,6 +7240,12 @@
             "value": "제외됨"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалён"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6366,6 +7284,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "종일"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Весь день"
           }
         },
         "zh-Hans": {
@@ -6408,6 +7332,12 @@
             "value": "종일 일정(소풍·현장학습 등)은 ‘전날 저녁’과 ‘당일 아침’ 알림만 울립니다."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для событий на весь день (например, экскурсий) приходят только напоминания «накануне вечером» и «утром в тот же день»."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6446,6 +7376,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "주간 달력으로 접기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свернуть до недели"
           }
         },
         "zh-Hans": {
@@ -6488,6 +7424,12 @@
             "value": "준비물·메모"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что взять / заметки"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6526,6 +7468,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "준비물·메모 (예: 도시락 지참)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что взять / заметки (например, обед с собой)"
           }
         },
         "zh-Hans": {
@@ -6568,6 +7516,12 @@
             "value": "지금 동기화"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Синхронизировать"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6606,6 +7560,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지금 시작하는 일정이에요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начинается прямо сейчас."
           }
         },
         "zh-Hans": {
@@ -6648,6 +7608,12 @@
             "value": "지우기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очистить"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6686,6 +7652,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "지원"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поддержка"
           }
         },
         "zh-Hans": {
@@ -6728,6 +7700,12 @@
             "value": "직접 추가"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавлено вручную"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6766,6 +7744,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "참여 중"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Участвуете"
           }
         },
         "zh-Hans": {
@@ -6808,6 +7792,12 @@
             "value": "참여자를 빼거나 권한을 바꾸려면 아래 ‘참여자 관리’를 눌러주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чтобы удалить участника или изменить права, нажмите «Участники» ниже."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6846,6 +7836,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처리 중…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обработка…"
           }
         },
         "zh-Hans": {
@@ -6889,6 +7885,12 @@
             "value": "처음 쓰는 분을 위한 안내"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Краткая экскурсия для новичков"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -6928,6 +7930,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "처음 열었을 때 사진으로 일정을 넣는 법을 짧게 보여 줘요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Короткая инструкция, как добавить события с фото, при первом запуске."
           }
         },
         "zh-Hans": {
@@ -6970,6 +7978,12 @@
             "value": "초대 링크 보내기 · 참여자 관리"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправить приглашение · Участники"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7008,6 +8022,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось создать ссылку-приглашение. Повторите попытку чуть позже."
           }
         },
         "zh-Hans": {
@@ -7050,6 +8070,12 @@
             "value": "초대 링크를 보내면 배우자·조부모도 같은 일정을 보고 고칠 수 있어요. 한쪽에서 일정을 바꾸면 양쪽에 자동으로 반영됩니다."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправьте ссылку-приглашение, и партнёр или бабушки-дедушки смогут видеть и менять те же события. Изменения с одной стороны автоматически появятся у обоих."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7088,6 +8114,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대 링크를 보내지 못했어요.\n%@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось отправить ссылку-приглашение.\n%@"
           }
         },
         "zh-Hans": {
@@ -7130,6 +8162,12 @@
             "value": "초대 링크를 카카오톡·메시지로 보내면, 상대가 아이일정 앱에서 열어 바로 참여할 수 있어요. 이후에는 어느 쪽에서 일정을 추가하거나 고쳐도 양쪽에 자동으로 반영됩니다."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправьте ссылку-приглашение в сообщении, и человек сможет сразу присоединиться в приложении. После этого события, добавленные или изменённые с любой стороны, автоматически обновляются у обоих."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7168,6 +8206,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대받은 사람도 일정을 추가·수정할 수 있어요. 아이 프로필 사진은 공유되지 않습니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приглашённые тоже могут добавлять и менять события. Фото профиля детей не передаются."
           }
         },
         "zh-Hans": {
@@ -7210,6 +8254,12 @@
             "value": "초대한 가족"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приглашённый член семьи"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7248,6 +8298,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "초대한 가족과 함께 보는 중"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Общий доступ с приглашёнными"
           }
         },
         "zh-Hans": {
@@ -7290,6 +8346,12 @@
             "value": "초대한 가족이 더 이상 일정을 볼 수 없게 됩니다. 지금까지의 일정은 양쪽 기기에 그대로 남아요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приглашённые больше не смогут видеть события. Все события останутся на обоих устройствах."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7330,6 +8392,12 @@
             "value": "추가"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7368,6 +8436,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отмена"
           }
         },
         "zh-Hans": {
@@ -7434,6 +8508,12 @@
             "value": "캘린더 %lld개 추가"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавлено в календарь событий: %lld"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7472,6 +8552,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "캘린더 권한이 필요해요"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужно разрешение на доступ к календарю"
           }
         },
         "zh-Hans": {
@@ -7514,6 +8600,12 @@
             "value": "캘린더 접근 권한이 없습니다. 설정 > CalendarSnap에서 허용해주세요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет доступа к календарю. Разрешите его в «Настройки > CalendarSnap»."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7552,6 +8644,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "캘린더 추가 실패"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось добавить в календарь"
           }
         },
         "zh-Hans": {
@@ -7594,6 +8692,12 @@
             "value": "캘린더 파일로 공유 (.ics)"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поделиться файлом календаря (.ics)"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7632,6 +8736,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "켜면 %@ 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если включено, события попадут в календарь «%@». Откройте общий доступ к нему в приложении «Календарь» на iOS, и он автоматически синхронизируется с партнёром и семьёй."
           }
         },
         "zh-Hans": {
@@ -7675,6 +8785,12 @@
             "value": "큰 글씨에 맞춘 화면"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экраны для крупного текста"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7715,6 +8831,12 @@
             "value": "클립보드에서 붙여넣기"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставить из буфера обмена"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7753,6 +8875,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "텍스트로 공유"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поделиться текстом"
           }
         },
         "zh-Hans": {
@@ -7796,6 +8924,12 @@
             "value": "펼치는 아이폰 화면"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экран для складного iPhone"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7835,6 +8969,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "펼치는 아이폰에서 달력과 일정을 두 쪽으로 나눠 봐요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На складном iPhone календарь и события показываются рядом."
           }
         },
         "zh-Hans": {
@@ -7877,6 +9017,12 @@
             "value": "한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мы найдём все события месяца,\nодним махом добавим их в календарь и напомним о них."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7915,6 +9061,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "함께 보는 사람"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Участники"
           }
         },
         "zh-Hans": {
@@ -7957,6 +9109,12 @@
             "value": "함께 편집"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Можно редактировать"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -7997,6 +9155,12 @@
             "value": "확인"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -8035,6 +9199,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 %@ 아이 일정"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 События ребёнка: %@"
           }
         },
         "zh-Hans": {

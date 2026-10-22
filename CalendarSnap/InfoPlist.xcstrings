@@ -27,6 +27,12 @@
             "value": "아이일정"
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расписание малыша"
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -65,6 +71,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужен доступ к календарю, чтобы добавлять найденные события детского сада и проверять повторы."
           }
         },
         "zh-Hans": {
@@ -107,6 +119,12 @@
             "value": "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다."
           }
         },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужен доступ к календарю, чтобы добавлять найденные события детского сада."
+          }
+        },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
@@ -145,6 +163,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Камера нужна, чтобы фотографировать календари и находить в них события."
           }
         },
         "zh-Hans": {
