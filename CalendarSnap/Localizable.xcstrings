@@ -50,6 +50,12 @@
             "state": "translated",
             "value": "（已存在的 %lld 个已跳过）"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（已存在的 %lld 個已略過）"
+          }
         }
       }
     },
@@ -102,6 +108,12 @@
             "state": "translated",
             "value": "（跳过 %lld 个重复项）"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（略過 %lld 個重複項目）"
+          }
         }
       }
     },
@@ -130,6 +142,12 @@
             "state": "translated",
             "value": " · 同时添加到“日历”"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · 同時加入「行事曆」"
+          }
         }
       }
     },
@@ -154,6 +172,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -186,6 +210,12 @@
             "state": "translated",
             "value": "正与 %@ 一起查看"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正與 %@ 一起查看"
+          }
         }
       }
     },
@@ -210,6 +240,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -241,6 +277,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ 的班级"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 的班級"
           }
         }
       }
@@ -294,6 +336,12 @@
             "state": "translated",
             "value": "%1$@ 的 %2$lld 个日程和头像将一并删除，且无法恢复。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ 的 %2$lld 個行程與大頭照將一併刪除，且無法復原。"
+          }
         }
       }
     },
@@ -321,6 +369,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "已与 %@ 的日程关联。现在双方可以一起管理了。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已與 %@ 的行程連結。現在雙方可以一起管理了。"
           }
         }
       }
@@ -350,6 +404,12 @@
             "state": "translated",
             "value": "%@ 的资料将被删除，且无法恢复。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 的資料將被刪除，且無法復原。"
+          }
         }
       }
     },
@@ -377,6 +437,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "删除“%@”"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刪除「%@」"
           }
         }
       }
@@ -406,6 +472,12 @@
             "state": "translated",
             "value": "1 小时后开始。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 小時後開始。"
+          }
         }
       }
     },
@@ -434,6 +506,12 @@
             "state": "translated",
             "value": "1 小时前"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 小時前"
+          }
         }
       }
     },
@@ -461,6 +539,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "单次"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "單次"
           }
         }
       }
@@ -491,6 +575,12 @@
             "state": "translated",
             "value": "Face ID 锁定"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID 鎖定"
+          }
         }
       }
     },
@@ -519,6 +609,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "用 Face ID 或 Touch ID 锁定 App，保护孩子的日程隐私。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用 Face ID 或 Touch ID 鎖定 App，保護孩子行程的隱私。"
           }
         }
       }
@@ -549,6 +645,12 @@
             "state": "translated",
             "value": "问问 Siri，随时了解孩子今天的日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "問問 Siri，隨時掌握孩子今天的行程。"
+          }
         }
       }
     },
@@ -577,6 +679,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri 与快捷指令"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri 與捷徑"
           }
         }
       }
@@ -607,6 +715,12 @@
             "state": "translated",
             "value": "VoiceOver 会按正确的顺序读出完整的日历和每个日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver 會依正確順序朗讀完整的行事曆與每個行程。"
+          }
         }
       }
     },
@@ -636,6 +750,12 @@
             "state": "translated",
             "value": "更好的 VoiceOver 支持"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更完善的 VoiceOver 支援"
+          }
         }
       }
     },
@@ -663,6 +783,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "无法确认 iCloud 状态，请稍后再试。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法確認 iCloud 狀態，請稍後再試。"
           }
         }
       }
@@ -692,6 +818,12 @@
             "state": "translated",
             "value": "iCloud 存储空间不足，无法上传日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud 儲存空間不足，無法上傳行程。"
+          }
         }
       }
     },
@@ -719,6 +851,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "登录 iCloud 后才能使用家庭共享。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 iCloud 後才能使用家庭共享。"
           }
         }
       }
@@ -748,6 +886,12 @@
             "state": "translated",
             "value": "登录 iCloud 后才能使用家庭共享。请前往“设置”App >“Apple 账户”登录。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 iCloud 後才能使用家庭共享。請前往「設定」App >「Apple 帳號」登入。"
+          }
         }
       }
     },
@@ -775,6 +919,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "登录 iCloud 后才能与家人共享日程。\n请前往“设置”App >“Apple 账户”登录。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入 iCloud 後才能與家人共享行程。\n請前往「設定」App >「Apple 帳號」登入。"
           }
         }
       }
@@ -804,6 +954,12 @@
             "state": "translated",
             "value": "导入完成"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "匯入完成"
+          }
         }
       }
     },
@@ -828,6 +984,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家人"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "家人"
@@ -860,6 +1022,12 @@
             "state": "translated",
             "value": "家庭共享"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家庭共享"
+          }
         }
       }
     },
@@ -887,6 +1055,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "家庭共享已结束。目前收到的日程会保留。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "家庭共享已結束。目前收到的行程會保留。"
           }
         }
       }
@@ -916,6 +1090,12 @@
             "state": "translated",
             "value": "已停止家庭共享。目前的日程会保留。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已停止家庭共享。目前的行程會保留。"
+          }
         }
       }
     },
@@ -943,6 +1123,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "邀请家人"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "邀請家人"
           }
         }
       }
@@ -972,6 +1158,12 @@
             "state": "translated",
             "value": "邀请家人一起查看"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "邀請家人一起查看"
+          }
         }
       }
     },
@@ -1000,6 +1192,12 @@
             "state": "translated",
             "value": "已关联家人的日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已連結家人的行程"
+          }
         }
       }
     },
@@ -1024,6 +1222,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "退出共享"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "退出共享"
@@ -1056,6 +1260,12 @@
             "state": "translated",
             "value": "共享信息已重置，请重新发送邀请。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共享資訊已重置，請重新傳送邀請。"
+          }
         }
       }
     },
@@ -1080,6 +1290,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "停止共享"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "停止共享"
@@ -1112,6 +1328,12 @@
             "state": "translated",
             "value": "已退出共享。目前收到的日程会保留。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已退出共享。目前收到的行程會保留。"
+          }
         }
       }
     },
@@ -1140,6 +1362,12 @@
             "state": "translated",
             "value": "没有可分享的日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沒有可分享的行程。"
+          }
         }
       }
     },
@@ -1164,6 +1392,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部孩子"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "全部孩子"
@@ -1197,6 +1431,12 @@
             "state": "translated",
             "value": "放大文字时，界面会重新排版，不再被截断。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "放大文字時，畫面會重新排版，不再被截斷。"
+          }
         }
       }
     },
@@ -1224,6 +1464,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "选择日期即可查看当天日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇日期即可查看當天行程"
           }
         }
       }
@@ -1254,6 +1500,12 @@
             "state": "translated",
             "value": "一键删除我的日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一鍵刪除我的行程"
+          }
         }
       }
     },
@@ -1281,6 +1533,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "你已经创建了自己的家庭共享。请先点“停止共享”，再接受邀请。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你已建立了自己的家庭共享。請先點「停止共享」，再接受邀請。"
           }
         }
       }
@@ -1310,6 +1568,12 @@
             "state": "translated",
             "value": "明天有日程，请提前准备好需带物品。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "明天有行程，請提前準備好需帶物品。"
+          }
         }
       }
     },
@@ -1337,6 +1601,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "这是谁的日程？"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "這是誰的行程？"
           }
         }
       }
@@ -1366,6 +1636,12 @@
             "state": "translated",
             "value": "即将到来"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即將到來"
+          }
         }
       }
     },
@@ -1394,6 +1670,12 @@
             "state": "translated",
             "value": "即将到来"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即將到來"
+          }
         }
       }
     },
@@ -1419,6 +1701,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "深色模式"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "深色模式"
@@ -1451,6 +1739,12 @@
             "state": "translated",
             "value": "日历"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行事曆"
+          }
         }
       }
     },
@@ -1479,6 +1773,12 @@
             "state": "translated",
             "value": "拍下日历\n添加日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拍下行事曆\n新增行程"
+          }
         }
       }
     },
@@ -1506,6 +1806,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "当天早上"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "當天早上"
           }
         }
       }
@@ -1536,6 +1842,12 @@
             "state": "translated",
             "value": "即使开启“增强对比度”或难以分辨颜色，也能分清每个孩子的日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即使開啟「提高對比」或不易分辨顏色，也能分清每個孩子的行程。"
+          }
         }
       }
     },
@@ -1564,6 +1876,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "支持更多语言使用 App。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支援更多語言使用 App。"
           }
         }
       }
@@ -1594,6 +1912,12 @@
             "state": "translated",
             "value": "更多语言"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更多語言"
+          }
         }
       }
     },
@@ -1621,6 +1945,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "点按圆圈可设置头像。填写班级后，通知中仅属于其他班级的日程（如参观活动）会被自动过滤。新学年换班时，只需在这里修改。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輕點圓圈即可設定大頭照。填寫班級後，通知中僅屬於其他班級的行程（如參訪活動）會被自動過濾。新學年換班時，只需在這裡修改。"
           }
         }
       }
@@ -1650,6 +1980,12 @@
             "state": "translated",
             "value": "同步失败，请稍后再试。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同步失敗，請稍後再試。"
+          }
         }
       }
     },
@@ -1677,6 +2013,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "上次同步：%@ · 打开 App 和修改日程时会自动同步。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "上次同步：%@ · 開啟 App 與修改行程時會自動同步。"
           }
         }
       }
@@ -1706,6 +2048,12 @@
             "state": "translated",
             "value": "从消息添加"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從訊息新增"
+          }
         }
       }
     },
@@ -1733,6 +2081,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "班级名称（例如：向日葵班）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "班級名稱（例如：向日葵班）"
           }
         }
       }
@@ -1762,6 +2116,12 @@
             "state": "translated",
             "value": "填写班级"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫班級"
+          }
         }
       }
     },
@@ -1789,6 +2149,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "重复"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重複"
           }
         }
       }
@@ -1818,6 +2184,12 @@
             "state": "translated",
             "value": "填写班级后，会自动过滤掉仅属于其他班级的日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫班級後，會自動過濾掉僅屬於其他班級的行程。"
+          }
         }
       }
     },
@@ -1846,6 +2218,12 @@
             "state": "translated",
             "value": "添加班级"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增班級"
+          }
         }
       }
     },
@@ -1873,6 +2251,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "与伴侣、祖父母一起查看"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "與另一半、祖父母一起查看"
           }
         }
       }
@@ -1903,6 +2287,12 @@
             "state": "translated",
             "value": "备份与导出"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "備份與匯出"
+          }
         }
       }
     },
@@ -1930,6 +2320,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "仅查看"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅供檢視"
           }
         }
       }
@@ -1959,6 +2355,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "更易看清的颜色与对比度"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更易辨識的顏色與對比"
           }
         }
       }
@@ -2012,6 +2414,12 @@
             "state": "translated",
             "value": "%lld 张照片 — 左右滑动浏览，点按可放大查看。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld 張照片 — 左右滑動瀏覽，輕點即可放大檢視。"
+          }
         }
       }
     },
@@ -2039,6 +2447,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "在照片中没有找到文字。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在照片中找不到文字。"
           }
         }
       }
@@ -2068,6 +2482,12 @@
             "state": "translated",
             "value": "点按照片即可放大查看。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輕點照片即可放大檢視。"
+          }
         }
       }
     },
@@ -2095,6 +2515,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "删除"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刪除"
           }
         }
       }
@@ -2125,6 +2551,12 @@
             "state": "translated",
             "value": "触感反馈"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "觸覺回饋"
+          }
         }
       }
     },
@@ -2149,6 +2581,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "等待接受"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "等待接受"
@@ -2181,6 +2619,12 @@
             "state": "translated",
             "value": "扫描"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "掃描"
+          }
         }
       }
     },
@@ -2208,6 +2652,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "仅适用于设定了时间的日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅適用於有設定時間的行程"
           }
         }
       }
@@ -2238,6 +2688,12 @@
             "state": "translated",
             "value": "使用小贴士"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用小提示"
+          }
         }
       }
     },
@@ -2267,6 +2723,12 @@
             "state": "translated",
             "value": "接着刚才的日程继续写"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接續剛剛寫到一半的行程"
+          }
         }
       }
     },
@@ -2291,6 +2753,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "孩子"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "孩子"
@@ -2323,6 +2791,12 @@
             "state": "translated",
             "value": "删除孩子"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刪除孩子"
+          }
         }
       }
     },
@@ -2347,6 +2821,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "孩子姓名（例如：小宇）"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "孩子姓名（例如：小宇）"
@@ -2379,6 +2859,12 @@
             "state": "translated",
             "value": "孩子日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "孩子行程"
+          }
         }
       }
     },
@@ -2408,6 +2894,12 @@
             "state": "translated",
             "value": "把孩子的日程保存为文件，以后可以再导入。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將孩子的行程儲存成檔案，之後可以再匯入。"
+          }
         }
       }
     },
@@ -2435,6 +2927,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "添加孩子"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增孩子"
           }
         }
       }
@@ -2464,6 +2962,12 @@
             "state": "translated",
             "value": "添加孩子后，日程会按孩子分别管理，提醒里也会显示孩子的名字。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增孩子後，行程會依孩子分別管理，提醒中也會顯示孩子的名字。"
+          }
         }
       }
     },
@@ -2491,6 +2995,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "添加孩子后，日程会按孩子分别管理，提醒里也会显示孩子的名字。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增孩子後，行程會依孩子分別管理，提醒中也會顯示孩子的名字。"
           }
         }
       }
@@ -2520,6 +3030,12 @@
             "state": "translated",
             "value": "宝贝日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寶貝日程"
+          }
         }
       }
     },
@@ -2547,6 +3063,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "宝贝日程数据"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寶貝日程資料"
           }
         }
       }
@@ -2576,6 +3098,12 @@
             "state": "translated",
             "value": "发送给宝贝日程用户"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳送給寶貝日程使用者"
+          }
         }
       }
     },
@@ -2603,6 +3131,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "宝贝日程日历"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寶貝日程行事曆"
           }
         }
       }
@@ -2632,6 +3166,12 @@
             "state": "translated",
             "value": "宝贝日程 – 共享"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寶貝日程 – 共享"
+          }
         }
       }
     },
@@ -2656,6 +3196,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未同步。"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "尚未同步。"
@@ -2688,6 +3234,12 @@
             "state": "translated",
             "value": "还没有人加入"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "還沒有人加入"
+          }
         }
       }
     },
@@ -2716,6 +3268,12 @@
             "state": "translated",
             "value": "还没有发出邀请"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未傳送邀請"
+          }
         }
       }
     },
@@ -2740,6 +3298,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "通知"
@@ -2796,6 +3360,12 @@
             "state": "translated",
             "value": "已预约 %lld 个提醒"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已預約 %lld 個提醒"
+          }
         }
       }
     },
@@ -2823,6 +3393,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "需要通知权限（请在“设置”中允许）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要通知權限（請在「設定」中允許）"
           }
         }
       }
@@ -2852,6 +3428,12 @@
             "state": "translated",
             "value": "提醒设置"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提醒設定"
+          }
         }
       }
     },
@@ -2879,6 +3461,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "提醒时间"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提醒時間"
           }
         }
       }
@@ -2908,6 +3496,12 @@
             "state": "translated",
             "value": "提醒时间已全部关闭"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "提醒時間已全部關閉"
+          }
         }
       }
     },
@@ -2935,6 +3529,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "无提醒"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無提醒"
           }
         }
       }
@@ -2965,6 +3565,12 @@
             "state": "translated",
             "value": "在合适的时候，轻轻提示实用功能。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在適當的時候，輕輕提示實用功能。"
+          }
         }
       }
     },
@@ -2992,6 +3598,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "同时添加到“日历”App"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "同時加入「行事曆」App"
           }
         }
       }
@@ -3022,6 +3634,12 @@
             "state": "translated",
             "value": "App 也可以使用英语。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App 也可以使用英文。"
+          }
         }
       }
     },
@@ -3051,6 +3669,12 @@
             "state": "translated",
             "value": "深色模式下，日历和日程依然清晰易读。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "深色模式下，行事曆與行程依然清晰易讀。"
+          }
         }
       }
     },
@@ -3079,6 +3703,12 @@
             "state": "translated",
             "value": "显示从幼儿园日历中提取的近期日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示從幼兒園行事曆擷取的近期行程。"
+          }
         }
       }
     },
@@ -3106,6 +3736,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "拍下幼儿园通知，或粘贴一段消息"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拍下幼兒園通知，或貼上一段訊息"
           }
         }
       }
@@ -3136,6 +3772,12 @@
             "state": "translated",
             "value": "更新后首次打开 App 时，告诉你有哪些新内容。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新後第一次開啟 App 時，告訴你有哪些新內容。"
+          }
         }
       }
     },
@@ -3165,6 +3807,12 @@
             "state": "translated",
             "value": "更新内容"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更新內容"
+          }
         }
       }
     },
@@ -3192,6 +3840,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "在此粘贴幼儿园发来的消息。\n例如：明天有雨，请给孩子的雨靴、雨衣和雨伞写上名字。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在此貼上幼兒園傳來的訊息。\n例如：明天預計下雨，請在孩子的雨鞋、雨衣和雨傘上寫好名字。"
           }
         }
       }
@@ -3222,6 +3876,12 @@
             "state": "translated",
             "value": "支持英语"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支援英文"
+          }
         }
       }
     },
@@ -3250,6 +3910,12 @@
             "state": "translated",
             "value": "例如：自带午餐、水壶"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例如：自備午餐、水壺"
+          }
         }
       }
     },
@@ -3274,6 +3940,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "今天"
@@ -3306,6 +3978,12 @@
             "state": "translated",
             "value": "今天有日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今天有行程。"
+          }
         }
       }
     },
@@ -3334,6 +4012,12 @@
             "state": "translated",
             "value": "出错了"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "錯誤"
+          }
         }
       }
     },
@@ -3358,6 +4042,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "完成"
@@ -3391,6 +4081,12 @@
             "state": "translated",
             "value": "减弱动态效果"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "減少動態效果"
+          }
         }
       }
     },
@@ -3419,6 +4115,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "开启“减弱动态效果”后，界面效果会更平静。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟「減少動態效果」後，畫面效果會更平靜。"
           }
         }
       }
@@ -3449,6 +4151,12 @@
             "state": "translated",
             "value": "需要时，可以在 App 内删除所有已保存的日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要時，可以在 App 內刪除所有已儲存的行程。"
+          }
         }
       }
     },
@@ -3476,6 +4184,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "展开为月视图"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "展開為月檢視"
           }
         }
       }
@@ -3505,6 +4219,12 @@
             "state": "translated",
             "value": "你将不再接收这个家庭的日程。目前收到的日程会保留。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你將不再接收這個家庭的行程。目前收到的行程會保留。"
+          }
         }
       }
     },
@@ -3532,6 +4252,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "你正在与这个家庭一起查看日程。你添加或修改的日程也会同步给对方。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你正與這個家庭一起查看行程。你新增或修改的行程也會同步給對方。"
           }
         }
       }
@@ -3561,6 +4287,12 @@
             "state": "translated",
             "value": "此设备限制使用 iCloud。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此裝置限制使用 iCloud。"
+          }
         }
       }
     },
@@ -3588,6 +4320,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "在这一天添加日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在這一天新增行程"
           }
         }
       }
@@ -3617,6 +4355,12 @@
             "state": "translated",
             "value": "这一天没有日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "這一天沒有行程"
+          }
         }
       }
     },
@@ -3644,6 +4388,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "在这条消息中没有找到带日期的日程。\n请确认其中包含日期（例如 7月12日）或“明天”“周五”这样的说法。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在這則訊息中找不到有日期的行程。\n請確認其中包含日期（例如 7月12日）或「明天」「週五」這類說法。"
           }
         }
       }
@@ -3673,6 +4423,12 @@
             "state": "translated",
             "value": "要删除这个孩子吗？"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要刪除這個孩子嗎？"
+          }
         }
       }
     },
@@ -3697,6 +4453,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "姓名（例如：小宇）"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "姓名（例如：小宇）"
@@ -3729,6 +4491,12 @@
             "state": "translated",
             "value": "你已经加入了另一个家庭的共享。请先点“退出共享”，再发送邀请。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你已加入另一個家庭的共享。請先點「退出共享」，再傳送邀請。"
+          }
         }
       }
     },
@@ -3756,6 +4524,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "无法处理这张图片。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法處理這張圖片。"
           }
         }
       }
@@ -3809,6 +4583,12 @@
             "state": "translated",
             "value": "这张照片中识别出 %lld 个日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "這張照片中辨識出 %lld 個行程"
+          }
         }
       }
     },
@@ -3837,6 +4617,12 @@
             "state": "translated",
             "value": "日期和时间"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日期與時間"
+          }
         }
       }
     },
@@ -3864,6 +4650,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行程"
           }
         }
       }
@@ -3917,6 +4709,12 @@
             "state": "translated",
             "value": "保存 %lld 个日程并开启提醒"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "儲存 %lld 個行程並開啟提醒"
+          }
         }
       }
     },
@@ -3969,6 +4767,12 @@
             "state": "translated",
             "value": "已导入 %lld 个日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已匯入 %lld 個行程。"
+          }
         }
       }
     },
@@ -3996,6 +4800,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "无法导入日程数据。\n请确认该文件是从宝贝日程 App 导出的。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法匯入行程資料。\n請確認該檔案是從寶貝日程 App 匯出的。"
           }
         }
       }
@@ -4025,6 +4835,12 @@
             "state": "translated",
             "value": "日程开始时"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行程開始時"
+          }
         }
       }
     },
@@ -4052,6 +4868,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "日程类型"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行程類型"
           }
         }
       }
@@ -4081,6 +4903,12 @@
             "state": "translated",
             "value": "手动添加日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手動新增行程"
+          }
         }
       }
     },
@@ -4108,6 +4936,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "添加日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增行程"
           }
         }
       }
@@ -4137,6 +4971,12 @@
             "state": "translated",
             "value": "提取日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "擷取行程"
+          }
         }
       }
     },
@@ -4165,6 +5005,12 @@
             "state": "translated",
             "value": "根据日程内容，这看起来是 %@ 的文件。如果不对，请在上方更改。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根據行程內容，這看起來是 %@ 的文件。若不是，請在上方更改。"
+          }
         }
       }
     },
@@ -4192,6 +5038,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "没有找到可识别为日程的文字。\n请重新拍摄，让字迹更清晰。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "找不到可辨識為行程的文字。\n請重新拍攝，讓字跡更清楚。"
           }
         }
       }
@@ -4222,6 +5074,12 @@
             "state": "translated",
             "value": "添加或保存日程时，轻轻震动一下提醒你。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增或儲存行程時，輕輕震動一下提醒你。"
+          }
         }
       }
     },
@@ -4251,6 +5109,12 @@
             "state": "translated",
             "value": "填写日程时即使 App 意外关闭，已输入的内容也会保留。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "填寫行程時即使 App 意外關閉，已輸入的內容也會保留。"
+          }
         }
       }
     },
@@ -4278,6 +5142,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "找不到可以添加日程的日历账户。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "找不到可新增行程的行事曆帳號。"
           }
         }
       }
@@ -4307,6 +5177,12 @@
             "state": "translated",
             "value": "保存"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "儲存"
+          }
         }
       }
     },
@@ -4334,6 +5210,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "已保存！可在日历和小组件中查看"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已儲存！可在行事曆與小工具中查看"
           }
         }
       }
@@ -4363,6 +5245,12 @@
             "state": "translated",
             "value": "前一天晚上（准备物品）"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "前一天晚上（準備物品）"
+          }
         }
       }
     },
@@ -4387,6 +5275,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "全部"
@@ -4419,6 +5313,12 @@
             "state": "translated",
             "value": "标题"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標題"
+          }
         }
       }
     },
@@ -4446,6 +5346,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "标题（例如：春游、自带物品日）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標題（例如：校外教學、自備物品日）"
           }
         }
       }
@@ -4475,6 +5381,12 @@
             "state": "translated",
             "value": "请核对标题、时间和需带物品。点按圆圈可更换孩子，不需要的日程向左滑动即可删除。保存后会跳转到日历。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "請確認標題、時間與需帶物品。輕點圓圈可更換孩子，不需要的行程向左滑動即可刪除。儲存後會跳到行事曆。"
+          }
         }
       }
     },
@@ -4499,6 +5411,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已移除"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "已移除"
@@ -4531,6 +5449,12 @@
             "state": "translated",
             "value": "全天"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "整天"
+          }
         }
       }
     },
@@ -4558,6 +5482,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "全天日程（如春游、校外活动）只会在“前一天晚上”和“当天早上”提醒。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "整天行程（如校外教學）只會在「前一天晚上」與「當天早上」提醒。"
           }
         }
       }
@@ -4587,6 +5517,12 @@
             "state": "translated",
             "value": "收起为周视图"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "收合為週檢視"
+          }
         }
       }
     },
@@ -4614,6 +5550,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "需带物品／备注"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需帶物品／備註"
           }
         }
       }
@@ -4643,6 +5585,12 @@
             "state": "translated",
             "value": "需带物品／备注（例如：自带午餐）"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需帶物品／備註（例如：自備午餐）"
+          }
         }
       }
     },
@@ -4667,6 +5615,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即同步"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "立即同步"
@@ -4699,6 +5653,12 @@
             "state": "translated",
             "value": "现在开始。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在開始。"
+          }
         }
       }
     },
@@ -4723,6 +5683,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "清除"
@@ -4755,6 +5721,12 @@
             "state": "translated",
             "value": "支持"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "支援"
+          }
         }
       }
     },
@@ -4783,6 +5755,12 @@
             "state": "translated",
             "value": "手动添加"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手動新增"
+          }
         }
       }
     },
@@ -4807,6 +5785,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已加入"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "已加入"
@@ -4839,6 +5823,12 @@
             "state": "translated",
             "value": "如需移除成员或更改权限，请点按下方的“管理成员”。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若要移除成員或更改權限，請輕點下方的「管理成員」。"
+          }
         }
       }
     },
@@ -4866,6 +5856,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "处理中…"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "處理中…"
           }
         }
       }
@@ -4896,6 +5892,12 @@
             "state": "translated",
             "value": "写给新用户的简短指引"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寫給新手的簡短導覽"
+          }
         }
       }
     },
@@ -4925,6 +5927,12 @@
             "state": "translated",
             "value": "首次打开时，简短演示如何通过照片添加日程。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "第一次開啟時，簡短示範如何用照片新增行程。"
+          }
         }
       }
     },
@@ -4952,6 +5960,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "发送邀请链接 · 管理成员"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳送邀請連結 · 管理成員"
           }
         }
       }
@@ -4981,6 +5995,12 @@
             "state": "translated",
             "value": "无法生成邀请链接，请稍后再试。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法建立邀請連結，請稍後再試。"
+          }
         }
       }
     },
@@ -5008,6 +6028,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "发送邀请链接后，伴侣和祖父母也能查看并修改同样的日程。任何一方修改，双方都会自动更新。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "傳送邀請連結後，另一半與祖父母也能查看並修改相同的行程。任何一方修改，雙方都會自動更新。"
           }
         }
       }
@@ -5037,6 +6063,12 @@
             "state": "translated",
             "value": "无法发送邀请链接。\n%@"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法傳送邀請連結。\n%@"
+          }
         }
       }
     },
@@ -5064,6 +6096,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "通过消息发送邀请链接，对方在 App 中打开即可加入。之后无论哪一方添加或修改日程，双方都会自动更新。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "透過訊息傳送邀請連結，對方在 App 中開啟即可加入。之後無論哪一方新增或修改行程，雙方都會自動更新。"
           }
         }
       }
@@ -5093,6 +6131,12 @@
             "state": "translated",
             "value": "被邀请的人也可以添加和修改日程。孩子的头像不会被共享。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受邀的人也可以新增與修改行程。孩子的大頭照不會被共享。"
+          }
         }
       }
     },
@@ -5117,6 +6161,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受邀家人"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "受邀家人"
@@ -5149,6 +6199,12 @@
             "state": "translated",
             "value": "正与受邀的家人一起查看"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正與受邀的家人一起查看"
+          }
         }
       }
     },
@@ -5176,6 +6232,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "被邀请的家人将无法再查看日程。目前的日程会保留在双方设备上。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受邀的家人將無法再查看行程。目前的行程會保留在雙方裝置上。"
           }
         }
       }
@@ -5205,6 +6267,12 @@
             "state": "translated",
             "value": "添加"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增"
+          }
         }
       }
     },
@@ -5229,6 +6297,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "取消"
@@ -5285,6 +6359,12 @@
             "state": "translated",
             "value": "已向日历添加 %lld 个日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已將 %lld 個行程加入行事曆"
+          }
         }
       }
     },
@@ -5312,6 +6392,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "需要日历权限"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要行事曆權限"
           }
         }
       }
@@ -5341,6 +6427,12 @@
             "state": "translated",
             "value": "未获得日历访问权限。请前往“设置 > CalendarSnap”开启。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未允許存取行事曆。請前往「設定 > CalendarSnap」開啟。"
+          }
         }
       }
     },
@@ -5368,6 +6460,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "添加到日历失败"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加入行事曆失敗"
           }
         }
       }
@@ -5397,6 +6495,12 @@
             "state": "translated",
             "value": "以日历文件分享 (.ics)"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以行事曆檔案分享 (.ics)"
+          }
         }
       }
     },
@@ -5424,6 +6528,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "开启后，日程会添加到 %@ 日历。在 iOS“日历”App 中共享该日历，即可与伴侣和家人自动同步。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟後，行程會加入 %@ 行事曆。在 iOS「行事曆」App 中共享該行事曆，即可與另一半和家人自動同步。"
           }
         }
       }
@@ -5454,6 +6564,12 @@
             "state": "translated",
             "value": "适配大号文字的界面"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "適合大字體的畫面"
+          }
         }
       }
     },
@@ -5482,6 +6598,12 @@
             "state": "translated",
             "value": "从剪贴板粘贴"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從剪貼簿貼上"
+          }
         }
       }
     },
@@ -5506,6 +6628,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以文字分享"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "以文字分享"
@@ -5539,6 +6667,12 @@
             "state": "translated",
             "value": "折叠屏 iPhone 布局"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "摺疊式 iPhone 版面"
+          }
         }
       }
     },
@@ -5568,6 +6702,12 @@
             "state": "translated",
             "value": "在折叠屏 iPhone 上，日历和日程左右并排显示。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在摺疊式 iPhone 上，行事曆與行程左右並排顯示。"
+          }
         }
       }
     },
@@ -5596,6 +6736,12 @@
             "state": "translated",
             "value": "自动提取整月日程，\n一次添加到日历，并按时提醒你。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動擷取整個月的行程，\n一次加入行事曆，並準時提醒你。"
+          }
         }
       }
     },
@@ -5620,6 +6766,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共同查看的人"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "共同查看的人"
@@ -5652,6 +6804,12 @@
             "state": "translated",
             "value": "可编辑"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可編輯"
+          }
         }
       }
     },
@@ -5676,6 +6834,12 @@
           }
         },
         "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "好"
+          }
+        },
+        "zh-Hant": {
           "stringUnit": {
             "state": "translated",
             "value": "好"
@@ -5707,6 +6871,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 %@ 的孩子日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 %@ 的孩子行程"
           }
         }
       }

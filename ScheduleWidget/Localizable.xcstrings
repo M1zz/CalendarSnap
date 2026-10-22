@@ -26,6 +26,12 @@
             "state": "translated",
             "value": "即将到来"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即將到來"
+          }
         }
       }
     },
@@ -53,6 +59,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "拍下日历\n添加日程"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拍下行事曆\n新增行程"
           }
         }
       }
@@ -82,6 +94,12 @@
             "state": "translated",
             "value": "孩子日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "孩子行程"
+          }
         }
       }
     },
@@ -109,6 +127,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "显示从幼儿园日历中提取的近期日程。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示從幼兒園行事曆擷取的近期行程。"
           }
         }
       }

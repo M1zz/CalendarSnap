@@ -26,6 +26,12 @@
             "state": "translated",
             "value": "宝贝日程"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "寶貝日程"
+          }
         }
       }
     },
@@ -53,6 +59,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "需要访问日历，以便将提取的幼儿园日程添加到日历并检查是否重复。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要存取行事曆，以便將擷取的幼兒園行程加入行事曆並檢查是否重複。"
           }
         }
       }
@@ -82,6 +94,12 @@
             "state": "translated",
             "value": "需要访问日历，以便将提取的幼儿园日程添加到日历。"
           }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要存取行事曆，以便將擷取的幼兒園行程加入行事曆。"
+          }
         }
       }
     },
@@ -109,6 +127,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "使用相机拍摄日历照片以提取日程。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用相機拍攝行事曆照片以擷取行程。"
           }
         }
       }

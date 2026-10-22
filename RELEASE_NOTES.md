@@ -26,6 +26,12 @@ Polished the app to run more reliably.
 可在 App 中直接打开隐私政策和支持页。
 优化了 App，运行更稳定。
 
+### 앱스토어 (Chinese Traditional, zh-Hant)
+
+可在 App 中查看對意見回饋的回覆。
+可在 App 中直接開啟隱私權政策與支援頁。
+優化了 App，運作更穩定。
+
 ## 1.0.4
 
 ### 새로운 기능
