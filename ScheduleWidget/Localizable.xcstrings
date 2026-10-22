@@ -9,6 +9,12 @@
             "value": "Nadcházející"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommende"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -101,6 +107,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vyfoťte kalendář\na přidejte události"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tag et billede af en kalender\nfor at tilføje begivenheder"
           }
         },
         "de": {
@@ -197,6 +209,12 @@
             "value": "Rozvrh dětí"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børnenes skema"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -289,6 +307,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zobrazuje nadcházející události vyčtené z kalendáře školky."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viser kommende begivenheder udtrukket fra en kalender fra børnehaven."
           }
         },
         "de": {

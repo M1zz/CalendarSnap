@@ -9,6 +9,24 @@
             "value": " (již uložených přeskočeno: %lld)"
           }
         },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld allerede gemt sprunget over)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld allerede gemte sprunget over)"
+                }
+              }
+            }
+          }
+        },
         "de": {
           "variations": {
             "plural": {
@@ -185,6 +203,24 @@
           "stringUnit": {
             "state": "translated",
             "value": " (přeskočeno duplicit: %lld)"
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld dublet sprunget over)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld dubletter sprunget over)"
+                }
+              }
+            }
           }
         },
         "de": {
@@ -365,6 +401,12 @@
             "value": " · Přidá se i do Kalendáře"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Tilføjes også til Kalender"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -454,6 +496,12 @@
     "%@님": {
       "localizations": {
         "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "da": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -553,6 +601,12 @@
             "value": "Sdílení s uživatelem %@"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deler med %@"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -642,6 +696,12 @@
     "%@반": {
       "localizations": {
         "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "da": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -741,6 +801,12 @@
             "value": "Třída: %@"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@s stue"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -833,6 +899,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Smaže se také profilová fotka a události dítěte %1$@ (%2$lld). Nelze vrátit zpět."
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@s %2$lld begivenhed og profilbillede slettes også. Det kan ikke fortrydes."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@s %2$lld begivenheder og profilbillede slettes også. Det kan ikke fortrydes."
+                }
+              }
+            }
           }
         },
         "de": {
@@ -1013,6 +1097,12 @@
             "value": "Propojeno s událostmi uživatele %@. Teď je můžete spravovat společně z obou stran."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbundet til %@s begivenheder. Nu kan I styre dem sammen fra begge sider."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -1105,6 +1195,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Profil dítěte %@ bude smazán. Nelze vrátit zpět."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@s profil slettes. Det kan ikke fortrydes."
           }
         },
         "de": {
@@ -1201,6 +1297,12 @@
             "value": "Smazat „%@“"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slet “%@”"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -1293,6 +1395,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Začíná za 1 hodinu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starter om 1 time."
           }
         },
         "de": {
@@ -1389,6 +1497,12 @@
             "value": "1 hodinu předem"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 time før"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -1481,6 +1595,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Jednorázové"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enkeltstående"
           }
         },
         "de": {
@@ -1578,6 +1698,12 @@
             "value": "Zámek přes Face ID"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID-lås"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -1671,6 +1797,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zamkněte aplikaci přes Face ID nebo Touch ID a mějte rozvrh dětí v soukromí."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lås appen med Face ID eller Touch ID, så dine børns skema forbliver privat."
           }
         },
         "de": {
@@ -1768,6 +1900,12 @@
             "value": "Zeptejte se Siri, co dítě dnes čeká."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spørg Siri, hvad der står på programmet for dit barn i dag."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -1861,6 +1999,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri a Zkratky"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri og Genveje"
           }
         },
         "de": {
@@ -1958,6 +2102,12 @@
             "value": "VoiceOver přečte celý kalendář i každou událost ve správném pořadí."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver læser hele kalenderen og alle begivenheder op i den rigtige rækkefølge."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -2051,6 +2201,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lepší podpora VoiceOveru"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedre understøttelse af VoiceOver"
           }
         },
         "de": {
@@ -2147,6 +2303,12 @@
             "value": "Stav iCloudu se nepodařilo zjistit. Zkuste to za chvíli znovu."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud-status kunne ikke tjekkes. Prøv igen om lidt."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -2239,6 +2401,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "V iCloudu není dost místa pro nahrání událostí."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der er ikke nok iCloud-plads til at uploade begivenhederne."
           }
         },
         "de": {
@@ -2335,6 +2503,12 @@
             "value": "Pro používání rodinného sdílení se přihlaste k iCloudu."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log ind på iCloud for at bruge familiedeling."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -2427,6 +2601,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pro používání rodinného sdílení se přihlaste k iCloudu. Přihlásit se můžete v Nastavení > účet Apple."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log ind på iCloud for at bruge familiedeling. Log ind under Indstillinger > Apple-konto."
           }
         },
         "de": {
@@ -2523,6 +2703,12 @@
             "value": "Pro sdílení událostí s rodinou se přihlaste k iCloudu.\nPřihlásit se můžete v Nastavení > účet Apple."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log ind på iCloud for at dele begivenheder med din familie.\nLog ind under Indstillinger > Apple-konto."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -2615,6 +2801,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Import dokončen"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import fuldført"
           }
         },
         "de": {
@@ -2711,6 +2903,12 @@
             "value": "Rodina"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familie"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -2803,6 +3001,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rodinné sdílení"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiedeling"
           }
         },
         "de": {
@@ -2899,6 +3103,12 @@
             "value": "Rodinné sdílení skončilo. Dosud přijaté události zůstávají."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiedelingen er afsluttet. Begivenheder, du allerede har modtaget, bliver liggende."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -2991,6 +3201,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rodinné sdílení bylo ukončeno. Dosavadní události zůstávají."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Familiedelingen er stoppet. De nuværende begivenheder bliver liggende."
           }
         },
         "de": {
@@ -3087,6 +3303,12 @@
             "value": "Pozvat rodinu"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviter familien"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -3179,6 +3401,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pozvat rodinu"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviter familien"
           }
         },
         "de": {
@@ -3275,6 +3503,12 @@
             "value": "Propojeno s událostmi rodiny"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbundet til en families begivenheder"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -3367,6 +3601,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Opustit sdílení"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forlad deling"
           }
         },
         "de": {
@@ -3463,6 +3703,12 @@
             "value": "Údaje o sdílení byly obnoveny. Pošlete pozvánku znovu."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delingsoplysningerne er nulstillet. Send invitationen igen."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -3555,6 +3801,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ukončit sdílení"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop deling"
           }
         },
         "de": {
@@ -3651,6 +3903,12 @@
             "value": "Opustili jste sdílení. Dosud přijaté události zůstávají."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du har forladt delingen. Begivenheder, du allerede har modtaget, bliver liggende."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -3745,6 +4003,12 @@
             "value": "Nejsou žádné události ke sdílení."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der er ingen begivenheder at dele."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -3837,6 +4101,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Všichni"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
           }
         },
         "de": {
@@ -3934,6 +4204,12 @@
             "value": "Při zvětšení písma se obrazovky přehledně uspořádají, místo aby se oříznuly."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skærmene omarrangeres pænt i stedet for at blive skåret af, når du gør teksten større."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -4026,6 +4302,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vyberte datum a zobrazí se jeho události"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vælg en dato for at se dens begivenheder"
           }
         },
         "de": {
@@ -4123,6 +4405,12 @@
             "value": "Smazat všechny moje události"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slet alle mine begivenheder"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -4215,6 +4503,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Už máte vlastní rodinné sdílení. Nejdřív klepněte na „Ukončit sdílení“ a pak přijměte pozvánku."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du har allerede en egen familiedeling. Tryk først på “Stop deling”, og accepter derefter invitationen."
           }
         },
         "de": {
@@ -4311,6 +4605,12 @@
             "value": "Je to zítra. Připravte si věci s předstihem."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det er i morgen. Gør tingene klar i god tid."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -4403,6 +4703,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Čí je to událost?"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis begivenhed er det?"
           }
         },
         "de": {
@@ -4499,6 +4805,12 @@
             "value": "Nadcházející"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommende"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -4591,6 +4903,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nadcházející"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommende"
           }
         },
         "de": {
@@ -4688,6 +5006,12 @@
             "value": "Tmavý režim"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mørk tilstand"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -4780,6 +5104,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalendář"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender"
           }
         },
         "de": {
@@ -4876,6 +5206,12 @@
             "value": "Vyfoťte kalendář\na přidejte události"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tag et billede af en kalender\nfor at tilføje begivenheder"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -4968,6 +5304,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ráno téhož dne"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om morgenen samme dag"
           }
         },
         "de": {
@@ -5065,6 +5407,12 @@
             "value": "Rozlišíte události jednotlivých dětí i se zapnutým Zvýšeným kontrastem nebo při potížích s rozlišením barev."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kend forskel på hvert barns begivenheder, også med Øg kontrast slået til, eller hvis farver er svære at skelne."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -5158,6 +5506,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Používejte aplikaci ve více jazycích."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brug appen på flere sprog."
           }
         },
         "de": {
@@ -5255,6 +5609,12 @@
             "value": "Více jazyků"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flere sprog"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -5347,6 +5707,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Klepnutím na kruh přidáte profilovou fotku. Když zadáte třídu, události určené jen pro jiné třídy (např. exkurze) se z oznámení automaticky odfiltrují. Když se třída v novém školním roce změní, stačí ji upravit tady."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryk på cirklen for at tilføje et profilbillede. Hvis du angiver en stue, bliver begivenheder, der kun gælder for andre stuer (f.eks. udflugter), automatisk filtreret fra opslagene. Når stuen skifter i det nye år, skal du bare rette den her."
           }
         },
         "de": {
@@ -5443,6 +5809,12 @@
             "value": "Synchronizace se nezdařila. Zkuste to za chvíli znovu."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkroniseringen mislykkedes. Prøv igen om lidt."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -5535,6 +5907,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Poslední synchronizace: %@ · Probíhá automaticky při otevření aplikace a při změně událostí."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senest synkroniseret: %@ · Synkroniserer automatisk, når du åbner appen eller ændrer begivenheder."
           }
         },
         "de": {
@@ -5631,6 +6009,12 @@
             "value": "Přidat ze zprávy"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj fra besked"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -5723,6 +6107,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Název třídy (např. Slunečnice)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuens navn (f.eks. Solsikkerne)"
           }
         },
         "de": {
@@ -5819,6 +6209,12 @@
             "value": "Zadat třídu"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angiv stue"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -5911,6 +6307,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Opakované"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gentagne"
           }
         },
         "de": {
@@ -6007,6 +6409,12 @@
             "value": "Zadejte třídu a události určené jen pro jiné třídy se automaticky odfiltrují."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angiv en stue for automatisk at filtrere begivenheder fra, der kun gælder for andre stuer."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -6101,6 +6509,12 @@
             "value": "Přidat třídu"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj en stue"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -6193,6 +6607,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sdílejte s partnerem a prarodiči"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del med partner og bedsteforældre"
           }
         },
         "de": {
@@ -6290,6 +6710,12 @@
             "value": "Záloha a export"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup og eksport"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -6382,6 +6808,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pouze čtení"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun visning"
           }
         },
         "de": {
@@ -6479,6 +6911,12 @@
             "value": "Příjemnější barvy a kontrast"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lettere farver og kontrast"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -6571,6 +7009,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fotky: %lld – listujte posunutím, klepnutím zvětšíte."
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld billede – tryk på det for at forstørre."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld billeder – stryg for at bladre, tryk for at forstørre."
+                }
+              }
+            }
           }
         },
         "de": {
@@ -6751,6 +7207,12 @@
             "value": "Na fotce nebyl nalezen žádný text."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der blev ikke fundet tekst på billedet."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -6845,6 +7307,12 @@
             "value": "Klepnutím na fotku ji zvětšíte."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryk på billedet for at se det større."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -6937,6 +7405,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Smazat"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slet"
           }
         },
         "de": {
@@ -7034,6 +7508,12 @@
             "value": "Haptická odezva"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptisk feedback"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -7126,6 +7606,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Čeká na přijetí"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afventer"
           }
         },
         "de": {
@@ -7222,6 +7708,12 @@
             "value": "Skenovat"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -7314,6 +7806,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Platí jen pro události s určeným časem"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gælder kun begivenheder med et fast tidspunkt"
           }
         },
         "de": {
@@ -7411,6 +7909,12 @@
             "value": "Užitečné tipy"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gode tips"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -7504,6 +8008,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pokračujte v události tam, kde jste skončili"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsæt, hvor du slap"
           }
         },
         "de": {
@@ -7600,6 +8110,12 @@
             "value": "Dítě"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barn"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -7692,6 +8208,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Smazat dítě"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slet barn"
           }
         },
         "de": {
@@ -7788,6 +8310,12 @@
             "value": "Jméno dítěte (např. Honza)"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Barnets navn (f.eks. Emil)"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -7880,6 +8408,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rozvrh dětí"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børnenes skema"
           }
         },
         "de": {
@@ -7977,6 +8511,12 @@
             "value": "Uložte rozvrhy dětí do souboru a později je obnovte."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gem dine børns skema i en fil, og hent det frem igen senere."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -8069,6 +8609,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přidat dítě"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj barn"
           }
         },
         "de": {
@@ -8165,6 +8711,12 @@
             "value": "Přidejte dítě, aby se události řadily podle dětí a jeho jméno bylo vidět v připomínkách."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj et barn for at sortere begivenheder efter barn og se navnet i påmindelserne."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -8257,6 +8809,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přidejte dítě, aby se události řadily podle dětí a jeho jméno bylo vidět v připomínkách."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj et barn for at sortere begivenheder efter barn og se navnet i påmindelserne."
           }
         },
         "de": {
@@ -8353,6 +8911,12 @@
             "value": "Rozvrh školky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børneskema"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -8445,6 +9009,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Data Rozvrhu školky"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børneskema-data"
           }
         },
         "de": {
@@ -8541,6 +9111,12 @@
             "value": "Poslat uživatelům Rozvrhu školky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send til brugere af Børneskema"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -8633,6 +9209,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalendář Rozvrhu školky"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børneskema-kalender"
           }
         },
         "de": {
@@ -8729,6 +9311,12 @@
             "value": "Rozvrh školky – sdíleno"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børneskema – delt"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -8821,6 +9409,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zatím nesynchronizováno."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikke synkroniseret endnu."
           }
         },
         "de": {
@@ -8917,6 +9511,12 @@
             "value": "Zatím se nikdo nepřipojil"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen er med endnu"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -9009,6 +9609,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zatím nebyla odeslána žádná pozvánka"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der er ikke sendt nogen invitation endnu"
           }
         },
         "de": {
@@ -9105,6 +9711,12 @@
             "value": "Oznámení"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Besked"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -9197,6 +9809,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Naplánováno připomínek: %lld"
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld påmindelse planlagt"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld påmindelser planlagt"
+                }
+              }
+            }
           }
         },
         "de": {
@@ -9377,6 +10007,12 @@
             "value": "Je potřeba povolit oznámení (zapněte je v Nastavení)"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifikationer skal tillades (slå dem til i Indstillinger)"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -9469,6 +10105,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nastavení připomínek"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indstillinger for påmindelser"
           }
         },
         "de": {
@@ -9565,6 +10207,12 @@
             "value": "Připomenout"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mind mig om"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -9659,6 +10307,12 @@
             "value": "Všechny časy připomínek jsou vypnuté"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle tidspunkter for påmindelser er slået fra"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -9751,6 +10405,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bez připomínek"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen påmindelser"
           }
         },
         "de": {
@@ -9848,6 +10508,12 @@
             "value": "Nenápadné rady k užitečným funkcím přesně ve chvíli, kdy se hodí."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diskrete hints om nyttige funktioner, lige når du får brug for dem."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -9940,6 +10606,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přidávat také do kalendáře Apple"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj også til Apple Kalender"
           }
         },
         "de": {
@@ -10037,6 +10709,12 @@
             "value": "Používejte celou aplikaci i v angličtině."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brug hele appen på engelsk."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -10130,6 +10808,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalendář i události zůstanou v tmavém režimu ostré a čitelné."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender og begivenheder forbliver skarpe og læsbare i mørk tilstand."
           }
         },
         "de": {
@@ -10226,6 +10910,12 @@
             "value": "Zobrazuje nadcházející události vyčtené z kalendáře školky."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viser kommende begivenheder udtrukket fra en kalender fra børnehaven."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -10318,6 +11008,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vyfoťte oznámení ze školky nebo vložte zprávu"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tag et billede af opslaget fra børnehaven, eller indsæt en besked"
           }
         },
         "de": {
@@ -10415,6 +11111,12 @@
             "value": "Při prvním otevření po aktualizaci uvidíte, co je nového."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Første gang du åbner appen efter en opdatering, kan du se, hvad der er nyt."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -10510,6 +11212,12 @@
             "value": "Novinky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nyheder"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -10602,6 +11310,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vložte sem zprávu ze školky.\nNapř. Zítra má pršet, podepište prosím holínky, pláštěnku a deštník."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indsæt en besked fra børnehaven her.\nF.eks. I morgen bliver det regnvejr, så skriv navn på gummistøvler, regntøj og paraply."
           }
         },
         "de": {
@@ -10699,6 +11413,12 @@
             "value": "Plná podpora angličtiny"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuld understøttelse af engelsk"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -10791,6 +11511,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Např. svačina, láhev na pití"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F.eks. madpakke, drikkedunk"
           }
         },
         "de": {
@@ -10887,6 +11613,12 @@
             "value": "Dnes"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I dag"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -10979,6 +11711,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Je to dnes."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det er i dag."
           }
         },
         "de": {
@@ -11075,6 +11813,12 @@
             "value": "Chyba"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fejl"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -11167,6 +11911,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hotovo"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Færdig"
           }
         },
         "de": {
@@ -11264,6 +12014,12 @@
             "value": "Omezit pohyb"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reducer bevægelse"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -11357,6 +12113,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se zapnutým Omezením pohybu jsou efekty na obrazovce klidnější."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Reducer bevægelse slået til bliver skærmeffekterne mere afdæmpede."
           }
         },
         "de": {
@@ -11454,6 +12216,12 @@
             "value": "Smažte všechny uložené události přímo v aplikaci, kdykoli budete chtít."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slet alle gemte begivenheder direkte i appen, når du vil."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -11546,6 +12314,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rozbalit na měsíc"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udvid til månedsvisning"
           }
         },
         "de": {
@@ -11642,6 +12416,12 @@
             "value": "Události této rodiny už nebudete dostávat. Dosud přijaté události zůstávají."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du modtager ikke længere denne families begivenheder. Begivenheder, du allerede har modtaget, bliver liggende."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -11734,6 +12514,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Události této rodiny sledujete společně. Události, které přidáte nebo upravíte, se jim také předají."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I ser denne families begivenheder sammen. Begivenheder, du tilføjer eller ændrer, sendes også videre til dem."
           }
         },
         "de": {
@@ -11830,6 +12616,12 @@
             "value": "Používání iCloudu je na tomto zařízení omezeno."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brug af iCloud er begrænset på denne enhed."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -11922,6 +12714,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přidat událost na tento den"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj begivenhed på denne dag"
           }
         },
         "de": {
@@ -12018,6 +12816,12 @@
             "value": "Tento den nejsou žádné události"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen begivenheder denne dag"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -12110,6 +12914,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "V této zprávě nebyly nalezeny žádné události s datem.\nZkontrolujte, zda obsahuje datum (např. 12. července) nebo slova jako „zítra“ či „v pátek“."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der blev ikke fundet begivenheder med dato i denne besked.\nTjek, at den indeholder en dato (f.eks. 12. juli) eller ord som “i morgen” eller “fredag”."
           }
         },
         "de": {
@@ -12206,6 +13016,12 @@
             "value": "Smazat toto dítě?"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vil du slette dette barn?"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -12298,6 +13114,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Jméno (např. Honza)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navn (f.eks. Emil)"
           }
         },
         "de": {
@@ -12394,6 +13216,12 @@
             "value": "Už jste součástí sdílení jiné rodiny. Nejdřív klepněte na „Opustit sdílení“ a pak pošlete pozvánku."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du er allerede med i en anden families deling. Tryk først på “Forlad deling”, og send derefter en invitation."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -12488,6 +13316,12 @@
             "value": "Obrázek se nepodařilo zpracovat."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Billedet kunne ikke behandles."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -12580,6 +13414,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Událostí na této fotce: %lld"
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld begivenhed fundet på dette billede"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld begivenheder fundet på dette billede"
+                }
+              }
+            }
           }
         },
         "de": {
@@ -12760,6 +13612,12 @@
             "value": "Datum a čas"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dato og tid"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -12854,6 +13712,12 @@
             "value": "Událost"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begivenhed"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -12946,6 +13810,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uložit události (%lld) a zapnout připomínky"
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Gem %lld begivenhed + få påmindelser"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Gem %lld begivenheder + få påmindelser"
+                }
+              }
+            }
           }
         },
         "de": {
@@ -13126,6 +14008,24 @@
             "value": "Importováno událostí: %lld."
           }
         },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld begivenhed importeret."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld begivenheder importeret."
+                }
+              }
+            }
+          }
+        },
         "de": {
           "variations": {
             "plural": {
@@ -13304,6 +14204,12 @@
             "value": "Data rozvrhu se nepodařilo importovat.\nZkontrolujte, zda byl soubor exportován z aplikace Rozvrh školky."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalenderdataene kunne ikke importeres.\nTjek, at filen er eksporteret fra appen Børneskema."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -13396,6 +14302,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "V čas události"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "På tidspunktet"
           }
         },
         "de": {
@@ -13492,6 +14404,12 @@
             "value": "Typ události"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begivenhedstype"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -13584,6 +14502,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přidat událost ručně"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj begivenhed manuelt"
           }
         },
         "de": {
@@ -13680,6 +14604,12 @@
             "value": "Přidat událost"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj begivenhed"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -13772,6 +14702,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vyčíst události"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udtræk begivenheder"
           }
         },
         "de": {
@@ -13868,6 +14804,12 @@
             "value": "Podle událostí to vypadá na dokument dítěte %@. Pokud ne, změňte to výše."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ud fra begivenhederne ser det ud til at være %@s dokument. Hvis ikke, så ændr det ovenfor."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -13960,6 +14902,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nebyl nalezen žádný text, který by vypadal jako události.\nVyfoťte to znovu tak, aby bylo písmo ostré."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der blev ikke fundet tekst, der ligner begivenheder.\nTag billedet igen, så skriften er skarp."
           }
         },
         "de": {
@@ -14057,6 +15005,12 @@
             "value": "Jemné cuknutí vám dá vědět, že se událost přidala nebo uložila."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et let tryk fortæller dig, når en begivenhed er tilføjet eller gemt."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -14150,6 +15104,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "To, co jste psali, zůstane, i když se aplikace uprostřed zavře."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det, du var i gang med at skrive, bliver stående, selv hvis appen lukker undervejs."
           }
         },
         "de": {
@@ -14246,6 +15206,12 @@
             "value": "Nebyl nalezen žádný účet kalendáře, do kterého lze události přidávat."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der blev ikke fundet en kalenderkonto, som begivenheder kan tilføjes til."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -14338,6 +15304,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uložit"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gem"
           }
         },
         "de": {
@@ -14434,6 +15406,12 @@
             "value": "Uloženo! Najdete to v kalendáři a ve widgetu"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemt! Se det i kalenderen og widgeten"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -14526,6 +15504,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Večer předem (na přípravu věcí)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aftenen før (så du kan pakke)"
           }
         },
         "de": {
@@ -14622,6 +15606,12 @@
             "value": "Vše"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -14714,6 +15704,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Název"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel"
           }
         },
         "de": {
@@ -14810,6 +15806,12 @@
             "value": "Název (např. Výlet, Den pro vlastní věci)"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titel (f.eks. Udflugt, Medbring-dag)"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -14902,6 +15904,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zkontrolujte názvy, časy a co vzít s sebou. Klepnutím na kruh změníte dítě, nepotřebné události smažete přejetím. Po uložení se otevře kalendář."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tjek titler, tidspunkter og hvad der skal medbringes. Tryk på cirklen for at skifte barn, eller stryg for at slette begivenheder, du ikke skal bruge. Når du gemmer, går du til kalenderen."
           }
         },
         "de": {
@@ -14998,6 +16006,12 @@
             "value": "Odebráno"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fjernet"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -15090,6 +16104,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Celý den"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hele dagen"
           }
         },
         "de": {
@@ -15186,6 +16206,12 @@
             "value": "U celodenních událostí (např. výletů) přijdou jen připomínky „večer předem“ a „ráno téhož dne“."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heldagsbegivenheder (f.eks. udflugter) får kun påmindelserne “aftenen før” og “om morgenen samme dag”."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -15278,6 +16304,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sbalit na týden"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fold sammen til ugevisning"
           }
         },
         "de": {
@@ -15374,6 +16406,12 @@
             "value": "Co vzít / poznámky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skal medbringes / noter"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -15466,6 +16504,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Co vzít / poznámky (např. svačina)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skal medbringes / noter (f.eks. madpakke)"
           }
         },
         "de": {
@@ -15562,6 +16606,12 @@
             "value": "Synchronizovat teď"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synkroniser nu"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -15654,6 +16704,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Právě začíná."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starter nu."
           }
         },
         "de": {
@@ -15750,6 +16806,12 @@
             "value": "Vymazat"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ryd"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -15842,6 +16904,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Podpora"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
           }
         },
         "de": {
@@ -15938,6 +17006,12 @@
             "value": "Přidáno ručně"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføjet manuelt"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -16030,6 +17104,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Připojeno"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deltager"
           }
         },
         "de": {
@@ -16126,6 +17206,12 @@
             "value": "Chcete-li někoho odebrat nebo změnit oprávnění, klepněte níže na „Správa lidí“."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryk på “Administrer personer” nedenfor for at fjerne nogen eller ændre rettigheder."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -16218,6 +17304,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zpracovávám…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behandler…"
           }
         },
         "de": {
@@ -16315,6 +17407,12 @@
             "value": "Krátký průvodce pro nováčky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En kort introduktion til nye brugere"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -16408,6 +17506,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Krátký návod, jak přidat události z fotky, při prvním otevření aplikace."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En kort guide til at tilføje begivenheder fra et billede, første gang du åbner appen."
           }
         },
         "de": {
@@ -16504,6 +17608,12 @@
             "value": "Poslat pozvánku · Správa lidí"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send invitation · Administrer personer"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -16596,6 +17706,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Odkaz s pozvánkou se nepodařilo vytvořit. Zkuste to za chvíli znovu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitationslinket kunne ikke oprettes. Prøv igen om lidt."
           }
         },
         "de": {
@@ -16692,6 +17808,12 @@
             "value": "Pošlete odkaz s pozvánkou a partner či prarodiče uvidí a budou moci upravovat stejné události. Změna na jedné straně se automaticky projeví na obou."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send et invitationslink, så kan din partner eller bedsteforældre se og redigere de samme begivenheder. En ændring på den ene side opdateres automatisk på begge."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -16784,6 +17906,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Odkaz s pozvánkou se nepodařilo odeslat.\n%@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invitationslinket kunne ikke sendes.\n%@"
           }
         },
         "de": {
@@ -16880,6 +18008,12 @@
             "value": "Pošlete odkaz s pozvánkou ve zprávě a druhá strana se po otevření v aplikaci hned připojí. Události přidané nebo upravené na jedné straně se pak automaticky aktualizují na obou."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send et invitationslink i en besked, så kan de åbne det i appen og være med med det samme. Derefter opdateres begivenheder, der tilføjes eller ændres på den ene side, automatisk på begge sider."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -16972,6 +18106,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pozvaní mohou události také přidávat a upravovat. Profilové fotky dětí se nesdílejí."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviterede kan også tilføje og redigere begivenheder. Børnenes profilbilleder deles ikke."
           }
         },
         "de": {
@@ -17068,6 +18208,12 @@
             "value": "Pozvaný člen rodiny"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inviteret familiemedlem"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -17160,6 +18306,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sdílení s pozvanými lidmi"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deler med de inviterede personer"
           }
         },
         "de": {
@@ -17256,6 +18408,12 @@
             "value": "Pozvaní už neuvidí vaše události. Dosavadní události zůstanou na obou zařízeních."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De inviterede kan ikke længere se dine begivenheder. De nuværende begivenheder bliver på begge enheder."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -17348,6 +18506,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přidat"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilføj"
           }
         },
         "de": {
@@ -17444,6 +18608,12 @@
             "value": "Zrušit"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuller"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -17536,6 +18706,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Událostí přidaných do Kalendáře: %lld"
+          }
+        },
+        "da": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld begivenhed tilføjet til Kalender"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld begivenheder tilføjet til Kalender"
+                }
+              }
+            }
           }
         },
         "de": {
@@ -17716,6 +18904,12 @@
             "value": "Je potřeba povolit přístup ke kalendáři"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adgang til kalenderen skal tillades"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -17808,6 +19002,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Přístup ke kalendáři není povolen. Zapněte ho v Nastavení > CalendarSnap."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adgang til kalenderen er ikke tilladt. Slå den til i Indstillinger > CalendarSnap."
           }
         },
         "de": {
@@ -17904,6 +19104,12 @@
             "value": "Přidání do Kalendáře se nepodařilo"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunne ikke tilføjes til Kalender"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -17998,6 +19204,12 @@
             "value": "Sdílet jako soubor kalendáře (.ics)"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del som kalenderfil (.ics)"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -18090,6 +19302,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Když je zapnuto, události se přidávají do kalendáře „%@“. Sdílejte tento kalendář v aplikaci Kalendář v iOS a bude se automaticky synchronizovat s partnerem a rodinou."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når det er slået til, tilføjes begivenhederne til kalenderen “%@”. Del den kalender i iOS-appen Kalender for at holde den synkroniseret med partner og familie."
           }
         },
         "de": {
@@ -18187,6 +19405,12 @@
             "value": "Rozvržení pro větší písmo"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout til større tekst"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -18281,6 +19505,12 @@
             "value": "Vložit ze schránky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indsæt fra udklipsholder"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -18373,6 +19603,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sdílet jako text"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del som tekst"
           }
         },
         "de": {
@@ -18470,6 +19706,12 @@
             "value": "Rozvržení pro skládací iPhone"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout til foldbar iPhone"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -18563,6 +19805,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kalendář a události vedle sebe na skládacím iPhonu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se kalender og begivenheder side om side på en foldbar iPhone."
           }
         },
         "de": {
@@ -18659,6 +19907,12 @@
             "value": "Vytáhneme všechny události měsíce,\nnajednou je přidáme do kalendáře a připomeneme je."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vi finder alle månedens begivenheder,\ntilføjer dem til din kalender på én gang og minder dig om dem."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -18751,6 +20005,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sdílející lidé"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personer, der deler"
           }
         },
         "de": {
@@ -18847,6 +20107,12 @@
             "value": "Může upravovat"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kan redigere"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -18936,6 +20202,12 @@
     "확인": {
       "localizations": {
         "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "da": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -19033,6 +20305,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Události: %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Begivenheder for %@"
           }
         },
         "de": {

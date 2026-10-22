@@ -92,6 +92,12 @@ Odpovědi na podněty najdete v aplikaci.
 Zásady soukromí a podpora v aplikaci.
 Aplikace je teď stabilnější.
 
+### 앱스토어 (Danish, da)
+
+Læs svar på din feedback i appen.
+Åbn privatliv og support i appen.
+Appen kører nu endnu mere stabilt.
+
 ## 1.0.4
 
 ### 새로운 기능

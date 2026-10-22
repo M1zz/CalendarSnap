@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -112,6 +112,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Zkontrolujte<br>před uložením", "Název, datum a poznámky upravíte jedním klepnutím"),
         ("03-calendar.png", "text-bottom", "Každé dítě<br>má svou barvu", "Plány sourozenců se nepomíchají"),
         ("04-reminders.png", "dark", "Připomínka<br>večer předem", "Na svačinu a cvičební oblečení už nezapomenete"),
+    ],
+    "da": [
+        ("01-scan.png", "hero-bleed", "Ét billede af opslaget,<br>og hele måneden er klar", "Datoer og ting, der skal med, læses for dig"),
+        ("02-events.png", "left-text", "Tjek det én gang<br>før du gemmer", "Ret titel, dato og noter med ét tryk"),
+        ("03-calendar.png", "text-bottom", "Hvert barn<br>har sin egen farve", "Søskendes planer bliver ikke blandet sammen"),
+        ("04-reminders.png", "dark", "En påmindelse<br>aftenen før", "Glem aldrig madpakken eller gymnastiktøjet"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

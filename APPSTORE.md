@@ -870,3 +870,61 @@ Widget
 Nadcházející události uvidíte rovnou na ploše.
 
 Rozpoznávání textu na fotkách probíhá celé ve vašem zařízení. Vaše fotky se nikdy neodesílají na žádný server.
+
+## da
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Børneskema: Børnehave-kalender
+
+### 부제
+
+Tag opslaget, måneden er klar
+
+### 키워드
+
+påmindelser,vuggestue,skole,forældre,udflugt,madpakke,familie,widget,scanner,stue,bedsteforældre,OCR
+
+### 프로모션 텍스트
+
+Tag et billede af kalenderen fra børnehaven, og hele måneden lander i din kalender med en påmindelse aftenen før om, hvad der skal med. Del den med familien.
+
+### 설명
+
+Tag et billede af månedsplanen fra børnehaven eller vuggestuen, så læser Børneskema alle begivenhederne og lægger hele måneden ind i din kalender på én gang.
+Få en påmindelse aftenen før, så du aldrig mere glemmer madpakken til udflugten eller gymnastiktøjet.
+
+Ét billede, hel måned
+Tag et billede eller vælg et fra dit fotobibliotek, så bliver datoer, tidspunkter og titler læst for dig. Billeder taget på siden bliver automatisk drejet rigtigt.
+Hvis planen er delt op efter stuer, tages kun begivenhederne for dit barns stue med.
+Før du gemmer, kan du redigere hver titel, dato, hele-dagen-valget og noten om, hvad der skal med, og stryge det væk, du ikke skal bruge.
+
+Indsæt også en besked
+Indsæt en besked fra børnehaven, så finder Børneskema datoer og ting, der skal med, og laver dem til begivenheder. Udtryk som “i morgen” eller “på fredag” bliver til rigtige datoer.
+
+Kalender og påmindelser
+Begivenhederne lægges i en særskilt kalender til hvert barn, og dem, der allerede er tilføjet, kommer ikke med to gange.
+Vælg påmindelser aftenen før, om morgenen, 1 time før eller lige på tidspunktet. Dine noter om, hvad der skal med, vises i påmindelsen.
+
+Flere børn
+Hold hvert barns begivenheder adskilt. Børneskema ser på tidligere begivenheder og gætter på, hvilket barn et nyt opslag gælder.
+
+Del med familien
+Send et invitationslink i en besked, så kan din partner, bedsteforældre eller dagplejer se og redigere de samme begivenheder. Ændringer på den ene side vises på begge.
+
+Widget
+Se de kommende begivenheder direkte fra hjemmeskærmen.
+
+Tekstgenkendelsen i billeder foregår helt på din enhed. Dine billeder sendes aldrig til en server.

@@ -9,6 +9,12 @@
             "value": "Rozvrh školky"
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Børneskema"
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -101,6 +107,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Je potřeba přístup ke kalendáři, aby bylo možné přidat vyčtené události ze školky a kontrolovat duplicity."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adgang til kalenderen er nødvendig for at tilføje de udtrukne begivenheder fra børnehaven og tjekke for dubletter."
           }
         },
         "de": {
@@ -197,6 +209,12 @@
             "value": "Je potřeba přístup ke kalendáři, aby bylo možné přidat vyčtené události ze školky."
           }
         },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adgang til kalenderen er nødvendig for at tilføje de udtrukne begivenheder fra børnehaven."
+          }
+        },
         "de": {
           "stringUnit": {
             "state": "translated",
@@ -289,6 +307,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fotoaparát slouží k focení kalendářů a vyčítání událostí."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameraet bruges til at tage billeder af kalendere og udtrække begivenheder."
           }
         },
         "de": {

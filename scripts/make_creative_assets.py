@@ -47,6 +47,7 @@ SEARCH = {
     "th": ("ปฏิทินโรงเรียนลูก", "ถ่ายรูปเดียว<br>ได้ตารางทั้งเดือน", "ของที่ต้องเตรียม แจ้งเตือนเย็นวันก่อน"),
     "vi": ("lịch trường mầm non", "Chụp một tấm,<br>xong cả tháng", "Đồ cần mang, nhắc từ tối hôm trước"),
     "cs": ("kalendář školky", "Vyfoťte a<br>měsíc je hotový", "Co vzít s sebou, připomeneme večer předem"),
+    "da": ("børnehave kalender", "Tag billedet,<br>så er måneden klar", "Det skal med – påmindelse aftenen før"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -66,6 +67,7 @@ HEADER = {
     "th": ("ตารางของลูกน้อย", "ถ่ายประกาศใบเดียว<br>ได้กำหนดการทั้งเดือน"),
     "vi": ("Lịch của con tôi", "Chụp một thông báo,<br>có ngay lịch cả tháng"),
     "cs": ("Rozvrh mého dítěte", "Jedna fotka oznámení,<br>celý měsíc hotový"),
+    "da": ("Mit barns skema", "Ét billede af opslaget,<br>og hele måneden er klar"),
 }
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)
