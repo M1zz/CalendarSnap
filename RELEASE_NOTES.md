@@ -11,7 +11,13 @@
 ### 앱스토어 (English)
 
 Read replies to your feedback in-app.
-Open Privacy and Support pages in the app.
+Open Privacy and Support in the app.
+Polished the app to run more reliably.
+
+### 앱스토어 (English (UK))
+
+Read replies to your feedback in-app.
+Open Privacy and Support in the app.
 Polished the app to run more reliably.
 
 ## 1.0.4

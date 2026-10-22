@@ -9,6 +9,12 @@
             "value": "Upcoming"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upcoming"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -20,6 +26,12 @@
     "달력을 찍어\n일정을 등록하세요": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snap a calendar\nto add events"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Snap a calendar\nto add events"
@@ -41,6 +53,12 @@
             "value": "Kids’ Schedule"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids’ Schedule"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -55,6 +73,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Shows upcoming events pulled from a daycare calendar."
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows upcoming events pulled from a nursery calendar."
           }
         },
         "ko": {

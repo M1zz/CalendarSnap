@@ -21,6 +21,24 @@
             }
           }
         },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld already saved, skipped)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld already saved, skipped)"
+                }
+              }
+            }
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -32,6 +50,24 @@
     " (중복 %lld개 제외)": {
       "localizations": {
         "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplicate skipped)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (%lld duplicates skipped)"
+                }
+              }
+            }
+          }
+        },
+        "en-GB": {
           "variations": {
             "plural": {
               "one": {
@@ -65,6 +101,12 @@
             "value": " · Also added to Calendar"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Also added to Calendar"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -76,6 +118,12 @@
     "%@님": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -97,6 +145,12 @@
             "value": "Sharing with %@"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sharing with %@"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -113,6 +167,12 @@
             "value": "%@"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -124,6 +184,12 @@
     "%@의 반": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@’s Class"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "%@’s Class"
@@ -157,6 +223,24 @@
             }
           }
         },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@’s %2$lld event and profile photo will be deleted too. This can’t be undone."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%1$@’s %2$lld events and profile photo will be deleted too. This can’t be undone."
+                }
+              }
+            }
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -168,6 +252,12 @@
     "%@의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connected to %@’s events. You can now manage them together on both sides."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Connected to %@’s events. You can now manage them together on both sides."
@@ -189,6 +279,12 @@
             "value": "%@’s profile will be deleted. This can’t be undone."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@’s profile will be deleted. This can’t be undone."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -200,6 +296,12 @@
     "'%@' 삭제": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete “%@”"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete “%@”"
@@ -221,6 +323,12 @@
             "value": "Starts in 1 hour."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starts in 1 hour."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -237,6 +345,12 @@
             "value": "1 hour before"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 hour before"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -248,6 +362,12 @@
     "1회성": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One-time"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "One-time"
@@ -270,6 +390,12 @@
             "value": "Face ID lock"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID lock"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -282,6 +408,12 @@
       "comment": "Roadmap item detail: Face ID lock",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lock the app with Face ID or Touch ID to keep your kids’ schedules private."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Lock the app with Face ID or Touch ID to keep your kids’ schedules private."
@@ -304,6 +436,12 @@
             "value": "Ask Siri what’s on your child’s schedule today."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask Siri what’s on your child’s schedule today."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -316,6 +454,12 @@
       "comment": "Roadmap item: Siri and Shortcuts",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and Shortcuts"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Siri and Shortcuts"
@@ -338,6 +482,12 @@
             "value": "VoiceOver reads the whole calendar and every event, in the right order."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver reads the whole calendar and every event, in the right order."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -350,6 +500,12 @@
       "comment": "Roadmap item: better VoiceOver support",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Better VoiceOver support"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Better VoiceOver support"
@@ -371,6 +527,12 @@
             "value": "Couldn’t check iCloud status. Please try again in a moment."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t check iCloud status. Please try again in a moment."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -382,6 +544,12 @@
     "iCloud 저장 공간이 부족해 일정을 올리지 못했어요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough iCloud storage to upload your events."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Not enough iCloud storage to upload your events."
@@ -403,6 +571,12 @@
             "value": "Sign in to iCloud to use Family Sharing."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to iCloud to use Family Sharing."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -414,6 +588,12 @@
     "iCloud에 로그인해야 가족 공유를 쓸 수 있어요. 설정 앱 > Apple 계정에서 로그인해주세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to iCloud to use Family Sharing. Sign in under Settings > Apple Account."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Sign in to iCloud to use Family Sharing. Sign in under Settings > Apple Account."
@@ -435,6 +615,12 @@
             "value": "Sign in to iCloud to share events with your family.\nSign in under Settings > Apple Account."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to iCloud to share events with your family.\nSign in under Settings > Apple Account."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -446,6 +632,12 @@
     "가져오기 완료": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Import Complete"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Import Complete"
@@ -467,6 +659,12 @@
             "value": "Family"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -478,6 +676,12 @@
     "가족 공유": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family Sharing"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Family Sharing"
@@ -499,6 +703,12 @@
             "value": "Family sharing has ended. Events you’ve received so far stay as they are."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family sharing has ended. Events you’ve received so far stay as they are."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -510,6 +720,12 @@
     "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Family sharing has stopped. Events so far stay as they are."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Family sharing has stopped. Events so far stay as they are."
@@ -531,6 +747,12 @@
             "value": "Invite Family"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invite Family"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -542,6 +764,12 @@
     "가족 초대해서 함께 보기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invite Family to Share"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Invite Family to Share"
@@ -563,6 +791,12 @@
             "value": "Connected to a family’s events"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connected to a family’s events"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -574,6 +808,12 @@
     "공유 나가기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leave Sharing"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Leave Sharing"
@@ -595,6 +835,12 @@
             "value": "Sharing info was reset. Please send an invitation again."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sharing info was reset. Please send an invitation again."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -606,6 +852,12 @@
     "공유 중단": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop Sharing"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Stop Sharing"
@@ -627,6 +879,12 @@
             "value": "You’ve left sharing. Events you’ve received so far stay as they are."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You’ve left sharing. Events you’ve received so far stay as they are."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -643,6 +901,12 @@
             "value": "There are no events to share."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There are no events to share."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -654,6 +918,12 @@
     "공통": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Everyone"
@@ -676,6 +946,12 @@
             "value": "Screens rearrange neatly instead of getting cut off when you enlarge text."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Screens rearrange neatly instead of getting cut off when you enlarge text."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -687,6 +963,12 @@
     "날짜를 선택하면 일정이 표시됩니다": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select a date to see its events"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Select a date to see its events"
@@ -709,6 +991,12 @@
             "value": "Delete all my events"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete all my events"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -720,6 +1008,12 @@
     "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You already have a family sharing of your own. Tap “Stop Sharing” first, then accept the invitation."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "You already have a family sharing of your own. Tap “Stop Sharing” first, then accept the invitation."
@@ -741,6 +1035,12 @@
             "value": "Happening tomorrow. Get things ready ahead of time."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Happening tomorrow. Get things ready ahead of time."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -752,6 +1052,12 @@
     "누구의 일정인가요?": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whose schedule is this?"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Whose schedule is this?"
@@ -773,6 +1079,12 @@
             "value": "Upcoming"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upcoming"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -784,6 +1096,12 @@
     "다음 일정": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upcoming"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Upcoming"
@@ -806,6 +1124,12 @@
             "value": "Dark Mode"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark Mode"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -817,6 +1141,12 @@
     "달력": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Calendar"
@@ -838,6 +1168,12 @@
             "value": "Snap a calendar\nto add events"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snap a calendar\nto add events"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -849,6 +1185,12 @@
     "당일 아침": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Morning of"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Morning of"
@@ -871,6 +1213,12 @@
             "value": "Tell each child’s events apart, even with Increase Contrast on or if colors are hard to distinguish."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tell each child’s events apart, even with Increase Contrast on or if colours are hard to distinguish."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -883,6 +1231,12 @@
       "comment": "Roadmap item detail: more languages",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use the app in more languages."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Use the app in more languages."
@@ -905,6 +1259,12 @@
             "value": "More languages"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More languages"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -916,6 +1276,12 @@
     "동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap the circle to add a profile photo. If you enter a class, events meant only for other classes (such as outings) are filtered out of notices automatically. When the class changes in a new school year, just update it here."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Tap the circle to add a profile photo. If you enter a class, events meant only for other classes (such as outings) are filtered out of notices automatically. When the class changes in a new school year, just update it here."
@@ -937,6 +1303,12 @@
             "value": "Sync failed. Please try again in a moment."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync failed. Please try again in a moment."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -948,6 +1320,12 @@
     "마지막 동기화 %@ · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last synced %@ · Syncs automatically when you open the app or change events."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Last synced %@ · Syncs automatically when you open the app or change events."
@@ -969,6 +1347,12 @@
             "value": "Add from Message"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add from Message"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -980,6 +1364,12 @@
     "반 이름 (예: 무궁화)": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Class name (e.g. Sunflowers)"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Class name (e.g. Sunflowers)"
@@ -1001,6 +1391,12 @@
             "value": "Enter Class"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter Class"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1012,6 +1408,12 @@
     "반복": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repeating"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Repeating"
@@ -1033,6 +1435,12 @@
             "value": "Enter a class to automatically filter out events meant only for other classes."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a class to automatically filter out events meant only for other classes."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1049,6 +1457,12 @@
             "value": "Add a class"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add a class"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1060,6 +1474,12 @@
     "배우자·조부모와 함께 보기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share with your partner and grandparents"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Share with your partner and grandparents"
@@ -1082,6 +1502,12 @@
             "value": "Backup and export"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup and export"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1093,6 +1519,12 @@
     "보기 전용": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View only"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "View only"
@@ -1115,6 +1547,12 @@
             "value": "Easier colors and contrast"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easier colours and contrast"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1126,6 +1564,24 @@
     "사진 %lld장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요.": {
       "localizations": {
         "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld photo — tap it to view larger."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld photos — swipe to browse, tap to view larger."
+                }
+              }
+            }
+          }
+        },
+        "en-GB": {
           "variations": {
             "plural": {
               "one": {
@@ -1159,6 +1615,12 @@
             "value": "Couldn’t find any text in the photo."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t find any text in the photo."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1175,6 +1637,12 @@
             "value": "Tap the photo to view it larger."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap the photo to view it larger."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1186,6 +1654,12 @@
     "삭제": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete"
@@ -1208,6 +1682,12 @@
             "value": "Haptic feedback"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptic feedback"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1219,6 +1699,12 @@
     "수락 대기 중": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pending"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Pending"
@@ -1240,6 +1726,12 @@
             "value": "Scan"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1251,6 +1743,12 @@
     "시간이 지정된 일정에만 적용돼요": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only applies to events with a set time"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Only applies to events with a set time"
@@ -1273,6 +1771,12 @@
             "value": "Handy tips"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Handy tips"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1285,6 +1789,12 @@
       "comment": "Roadmap item: keep unsaved drafts",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick up your event where you left off"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Pick up your event where you left off"
@@ -1306,6 +1816,12 @@
             "value": "Child"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Child"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1317,6 +1833,12 @@
     "아이 삭제": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Child"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Delete Child"
@@ -1338,6 +1860,12 @@
             "value": "Child’s name (e.g. Emma)"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Child’s name (e.g. Emma)"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1349,6 +1877,12 @@
     "아이 일정": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids’ Schedule"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Kids’ Schedule"
@@ -1371,6 +1905,12 @@
             "value": "Save your kids’ schedules to a file and bring them back later."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save your kids’ schedules to a file and bring them back later."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1382,6 +1922,12 @@
     "아이 추가": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Child"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Add Child"
@@ -1403,6 +1949,12 @@
             "value": "Add a child to keep events organized by child and see their name in reminders."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add a child to keep events organised by child and see their name in reminders."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1419,6 +1971,12 @@
             "value": "Add a child to keep events organized by child and see their name in reminders."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add a child to keep events organised by child and see their name in reminders."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1430,6 +1988,12 @@
     "아이일정": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids Schedule"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Kids Schedule"
@@ -1451,6 +2015,12 @@
             "value": "Kids Schedule Data"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids Schedule Data"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1462,6 +2032,12 @@
     "아이일정 사용자에게 보내기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send to Kids Schedule Users"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Send to Kids Schedule Users"
@@ -1483,6 +2059,12 @@
             "value": "Kids Schedule Calendar"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids Schedule Calendar"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1494,6 +2076,12 @@
     "아이일정 함께 보기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids Schedule – Shared"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Kids Schedule – Shared"
@@ -1515,6 +2103,12 @@
             "value": "Not synced yet."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not synced yet."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1526,6 +2120,12 @@
     "아직 참여한 사람이 없어요": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No one has joined yet"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "No one has joined yet"
@@ -1547,6 +2147,12 @@
             "value": "No invitation sent yet"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No invitation sent yet"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1558,6 +2164,12 @@
     "알림": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notice"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Notice"
@@ -1591,6 +2203,24 @@
             }
           }
         },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld reminder scheduled"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld reminders scheduled"
+                }
+              }
+            }
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1602,6 +2232,12 @@
     "알림 권한이 필요해요 (설정에서 허용)": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notification permission needed (allow it in Settings)"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Notification permission needed (allow it in Settings)"
@@ -1623,6 +2259,12 @@
             "value": "Reminder Settings"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminder Settings"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1634,6 +2276,12 @@
     "알림 시점": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remind Me"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Remind Me"
@@ -1655,6 +2303,12 @@
             "value": "Reminder times are all turned off"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reminder times are all turned off"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1666,6 +2320,12 @@
     "알림 없음": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No reminders"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "No reminders"
@@ -1688,6 +2348,12 @@
             "value": "Gentle hints about useful features, right when you need them."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gentle hints about useful features, right when you need them."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1699,6 +2365,12 @@
     "애플 캘린더에도 추가": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also add to Apple Calendar"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Also add to Apple Calendar"
@@ -1721,6 +2393,12 @@
             "value": "Use the whole app in English."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use the whole app in English."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1733,6 +2411,12 @@
       "comment": "Roadmap item detail: dark mode",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The calendar and events stay crisp and readable in Dark Mode."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "The calendar and events stay crisp and readable in Dark Mode."
@@ -1754,6 +2438,12 @@
             "value": "Shows upcoming events pulled from a daycare calendar."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows upcoming events pulled from a nursery calendar."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1770,6 +2460,12 @@
             "value": "Take a photo of a daycare notice or paste a message"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Take a photo of a nursery notice or paste a message"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1782,6 +2478,12 @@
       "comment": "Roadmap item detail: what's new after an update",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The first time you open the app after an update, see what’s new."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "The first time you open the app after an update, see what’s new."
@@ -1804,6 +2506,12 @@
             "value": "What’s new"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What’s new"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1820,6 +2528,12 @@
             "value": "Paste a message from your daycare here.\ne.g. Rain is expected tomorrow, so please label your child’s boots, raincoat and umbrella."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste a message from your nursery here.\ne.g. Rain is expected tomorrow, so please label your child’s boots, raincoat and umbrella."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1832,6 +2546,12 @@
       "comment": "Roadmap item: English language",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full English support"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Full English support"
@@ -1853,6 +2573,12 @@
             "value": "e.g. Packed lunch, water bottle"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "e.g. Packed lunch, water bottle"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1864,6 +2590,12 @@
     "오늘": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Today"
@@ -1885,6 +2617,12 @@
             "value": "Happening today."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Happening today."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1901,6 +2639,12 @@
             "value": "Error"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1912,6 +2656,12 @@
     "완료": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Done"
@@ -1934,6 +2684,12 @@
             "value": "Reduce Motion"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reduce Motion"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1946,6 +2702,12 @@
       "comment": "Roadmap item detail: respect Reduce Motion",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Reduce Motion on, screen effects calm down."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "With Reduce Motion on, screen effects calm down."
@@ -1968,6 +2730,12 @@
             "value": "Erase all saved events right in the app whenever you want."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erase all saved events right in the app whenever you want."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -1979,6 +2747,12 @@
     "월간 달력으로 펼치기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expand to month view"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Expand to month view"
@@ -2000,6 +2774,12 @@
             "value": "You’ll stop receiving this family’s events. Events you’ve received so far stay as they are."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You’ll stop receiving this family’s events. Events you’ve received so far stay as they are."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2011,6 +2791,12 @@
     "이 가족의 일정을 함께 보고 있어요. 내가 추가하거나 고친 일정도 상대에게 그대로 전달됩니다.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You’re viewing this family’s events together. Events you add or edit are passed on to them as well."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "You’re viewing this family’s events together. Events you add or edit are passed on to them as well."
@@ -2032,6 +2818,12 @@
             "value": "iCloud is restricted on this device."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud is restricted on this device."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2043,6 +2835,12 @@
     "이 날 일정 추가": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Event on This Day"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Add Event on This Day"
@@ -2064,6 +2862,12 @@
             "value": "No events on this day"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No events on this day"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2075,6 +2879,12 @@
     "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t find any events with dates in this message.\nCheck that it includes a date (e.g. July 12) or words like “tomorrow” or “Friday”."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t find any events with dates in this message.\nCheck that it includes a date (e.g. July 12) or words like “tomorrow” or “Friday”."
@@ -2096,6 +2906,12 @@
             "value": "Delete this child?"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete this child?"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2107,6 +2923,12 @@
     "이름 (예: 지호)": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name (e.g. Emma)"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Name (e.g. Emma)"
@@ -2128,6 +2950,12 @@
             "value": "You’re already part of another family’s sharing. Tap “Leave Sharing” first, then send an invitation."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You’re already part of another family’s sharing. Tap “Leave Sharing” first, then send an invitation."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2139,6 +2967,12 @@
     "이미지를 처리할 수 없습니다.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t process the image."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t process the image."
@@ -2172,6 +3006,24 @@
             }
           }
         },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld event found in this photo"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld events found in this photo"
+                }
+              }
+            }
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2183,6 +3035,12 @@
     "일시": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date & time"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Date & time"
@@ -2204,6 +3062,12 @@
             "value": "Event"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Event"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2215,6 +3079,24 @@
     "일정 %lld개 저장 + 알림 받기": {
       "localizations": {
         "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Save %lld Event + Get Reminders"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Save %lld Events + Get Reminders"
+                }
+              }
+            }
+          }
+        },
+        "en-GB": {
           "variations": {
             "plural": {
               "one": {
@@ -2260,6 +3142,24 @@
             }
           }
         },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Imported %lld event."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Imported %lld events."
+                }
+              }
+            }
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2271,6 +3171,12 @@
     "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t import the schedule data.\nMake sure the file was exported from the Kids Schedule app."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t import the schedule data.\nMake sure the file was exported from the Kids Schedule app."
@@ -2292,6 +3198,12 @@
             "value": "At event time"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At event time"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2303,6 +3215,12 @@
     "일정 유형": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Event Type"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Event Type"
@@ -2324,6 +3242,12 @@
             "value": "Add Event Manually"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Event Manually"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2335,6 +3259,12 @@
     "일정 추가": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Event"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Add Event"
@@ -2356,6 +3286,12 @@
             "value": "Extract Events"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extract Events"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2372,6 +3308,12 @@
             "value": "Based on the events, this looks like %@’s document. If not, change it above."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on the events, this looks like %@’s document. If not, change it above."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2383,6 +3325,12 @@
     "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t find any text that looks like events.\nTry taking the photo again so the writing is sharp."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t find any text that looks like events.\nTry taking the photo again so the writing is sharp."
@@ -2405,6 +3353,12 @@
             "value": "A gentle tap lets you know when an event is added or saved."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A gentle tap lets you know when an event is added or saved."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2417,6 +3371,12 @@
       "comment": "Roadmap item detail: keep unsaved drafts",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you were typing stays put, even if the app closes mid-way."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "What you were typing stays put, even if the app closes mid-way."
@@ -2438,6 +3398,12 @@
             "value": "Couldn’t find a calendar account that events can be added to."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t find a calendar account that events can be added to."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2449,6 +3415,12 @@
     "저장": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Save"
@@ -2470,6 +3442,12 @@
             "value": "Saved! See it in the calendar and widget"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved! See it in the calendar and widget"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2481,6 +3459,12 @@
     "전날 저녁 (준비물 챙기기)": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evening before (to pack things)"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Evening before (to pack things)"
@@ -2502,6 +3486,12 @@
             "value": "All"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2513,6 +3503,12 @@
     "제목": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Title"
@@ -2534,6 +3530,12 @@
             "value": "Title (e.g. Field trip, Bring-your-own day)"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Title (e.g. School trip, Bring-your-own day)"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2545,6 +3547,12 @@
     "제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요. 저장하면 달력으로 이동합니다.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check the titles, times and things to bring. Tap the circle to change the child, or swipe to delete events you don’t need. Saving takes you to the calendar."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Check the titles, times and things to bring. Tap the circle to change the child, or swipe to delete events you don’t need. Saving takes you to the calendar."
@@ -2566,6 +3574,12 @@
             "value": "Removed"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Removed"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2577,6 +3591,12 @@
     "종일": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All day"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "All day"
@@ -2598,6 +3618,12 @@
             "value": "All-day events (such as field trips) only get the “evening before” and “morning of” reminders."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All-day events (such as school trips) only get the “evening before” and “morning of” reminders."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2609,6 +3635,12 @@
     "주간 달력으로 접기": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collapse to week view"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Collapse to week view"
@@ -2630,6 +3662,12 @@
             "value": "Things to bring / notes"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Things to bring / notes"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2641,6 +3679,12 @@
     "준비물·메모 (예: 도시락 지참)": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Things to bring / notes (e.g. packed lunch)"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Things to bring / notes (e.g. packed lunch)"
@@ -2662,6 +3706,12 @@
             "value": "Sync Now"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync Now"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2673,6 +3723,12 @@
     "지금 시작하는 일정이에요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starting now."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Starting now."
@@ -2694,6 +3750,12 @@
             "value": "Clear"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2705,6 +3767,12 @@
     "지원": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Support"
@@ -2726,6 +3794,12 @@
             "value": "Added manually"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Added manually"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2737,6 +3811,12 @@
     "참여 중": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Joined"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Joined"
@@ -2758,6 +3838,12 @@
             "value": "To remove someone or change permissions, tap “Manage People” below."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To remove someone or change permissions, tap “Manage People” below."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2769,6 +3855,12 @@
     "처리 중…": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Processing…"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Processing…"
@@ -2791,6 +3883,12 @@
             "value": "A quick tour for newcomers"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A quick tour for newcomers"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2803,6 +3901,12 @@
       "comment": "Roadmap item detail: first-run guide",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A short guide to adding events from a photo, the first time you open the app."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "A short guide to adding events from a photo, the first time you open the app."
@@ -2824,6 +3928,12 @@
             "value": "Send Invitation · Manage People"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send Invitation · Manage People"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2835,6 +3945,12 @@
     "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t create the invitation link. Please try again in a moment."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t create the invitation link. Please try again in a moment."
@@ -2856,6 +3972,12 @@
             "value": "Send an invitation link and your partner or grandparents can see and edit the same events. A change on one side updates both automatically."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send an invitation link and your partner or grandparents can see and edit the same events. A change on one side updates both automatically."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2867,6 +3989,12 @@
     "초대 링크를 보내지 못했어요.\n%@": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t send the invitation link.\n%@"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t send the invitation link.\n%@"
@@ -2888,6 +4016,12 @@
             "value": "Send an invitation link by message and they can open it in the app and join right away. After that, events added or edited on either side update on both automatically."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send an invitation link by message and they can open it in the app and join right away. After that, events added or edited on either side update on both automatically."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2899,6 +4033,12 @@
     "초대받은 사람도 일정을 추가·수정할 수 있어요. 아이 프로필 사진은 공유되지 않습니다.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "People you invite can add and edit events too. Children’s profile photos aren’t shared."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "People you invite can add and edit events too. Children’s profile photos aren’t shared."
@@ -2920,6 +4060,12 @@
             "value": "Invited family member"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invited family member"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2931,6 +4077,12 @@
     "초대한 가족과 함께 보는 중": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sharing with the people you invited"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Sharing with the people you invited"
@@ -2952,6 +4104,12 @@
             "value": "The people you invited will no longer see your events. Events so far stay on both devices."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The people you invited will no longer see your events. Events so far stay on both devices."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2968,6 +4126,12 @@
             "value": "Add"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -2979,6 +4143,12 @@
     "취소": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Cancel"
@@ -3012,6 +4182,24 @@
             }
           }
         },
+        "en-GB": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld event added to Calendar"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld events added to Calendar"
+                }
+              }
+            }
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3023,6 +4211,12 @@
     "캘린더 권한이 필요해요": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar permission needed"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Calendar permission needed"
@@ -3044,6 +4238,12 @@
             "value": "Calendar access isn’t allowed. Turn it on in Settings > CalendarSnap."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar access isn’t allowed. Turn it on in Settings > CalendarSnap."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3055,6 +4255,12 @@
     "캘린더 추가 실패": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t add to Calendar"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Couldn’t add to Calendar"
@@ -3076,6 +4282,12 @@
             "value": "Share as Calendar File (.ics)"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share as Calendar File (.ics)"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3087,6 +4299,12 @@
     "켜면 %@ 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다.": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When on, events are added to the %@ calendar. Share that calendar in the iOS Calendar app to keep it in sync with your partner and family."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "When on, events are added to the %@ calendar. Share that calendar in the iOS Calendar app to keep it in sync with your partner and family."
@@ -3109,6 +4327,12 @@
             "value": "Layouts for larger text"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layouts for larger text"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3125,6 +4349,12 @@
             "value": "Paste from Clipboard"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste from Clipboard"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3136,6 +4366,12 @@
     "텍스트로 공유": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Share as Text"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "Share as Text"
@@ -3158,6 +4394,12 @@
             "value": "Foldable iPhone layout"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foldable iPhone layout"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3170,6 +4412,12 @@
       "comment": "Roadmap item detail: foldable iPhone layout",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See the calendar and events side by side on a foldable iPhone."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "See the calendar and events side by side on a foldable iPhone."
@@ -3191,6 +4439,12 @@
             "value": "We’ll pull out the whole month’s events,\nadd them to your calendar at once, and remind you."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We’ll pull out the whole month’s events,\nadd them to your calendar at once, and remind you."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3202,6 +4456,12 @@
     "함께 보는 사람": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "People sharing"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "People sharing"
@@ -3223,6 +4483,12 @@
             "value": "Can edit"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can edit"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3239,6 +4505,12 @@
             "value": "OK"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -3250,6 +4522,12 @@
     "📅 %@ 아이 일정": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Kids’ events for %@"
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "📅 Kids’ events for %@"

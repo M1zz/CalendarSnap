@@ -9,6 +9,12 @@
             "value": "Kids Schedule"
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids Schedule"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -23,6 +29,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendar access is needed to add the extracted daycare events to your calendar and check for duplicates."
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar access is needed to add the extracted nursery events to your calendar and check for duplicates."
           }
         },
         "ko": {
@@ -41,6 +53,12 @@
             "value": "Calendar access is needed to add the extracted daycare events to your calendar."
           }
         },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar access is needed to add the extracted nursery events to your calendar."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -52,6 +70,12 @@
     "NSCameraUsageDescription": {
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The camera is used to take photos of calendars and extract events."
+          }
+        },
+        "en-GB": {
           "stringUnit": {
             "state": "translated",
             "value": "The camera is used to take photos of calendars and extract events."
