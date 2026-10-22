@@ -57,6 +57,12 @@
             "value": "À venir"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mendatang"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -167,6 +173,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Photographiez un calendrier\npour ajouter des événements"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto kalender\nuntuk menambah acara"
           }
         },
         "it": {
@@ -281,6 +293,12 @@
             "value": "Agenda des enfants"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jadwal Anak"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -391,6 +409,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Affiche les prochains événements extraits d’un calendrier de crèche."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menampilkan acara mendatang yang diambil dari kalender sekolah."
           }
         },
         "it": {

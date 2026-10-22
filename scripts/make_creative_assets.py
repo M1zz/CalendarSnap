@@ -50,6 +50,7 @@ SEARCH = {
     "da": ("børnehave kalender", "Tag billedet,<br>så er måneden klar", "Det skal med – påmindelse aftenen før"),
     "el": ("ημερολόγιο παιδικού σταθμού", "Φωτογράφισε και<br>ο μήνας είναι έτοιμος", "Τι να φέρεις, υπενθύμιση το προηγούμενο βράδυ"),
     "fi": ("päiväkodin kalenteri", "Kuvaa, niin<br>kuukausi on valmis", "Mitä mukaan, muistutus edellisenä iltana"),
+    "id": ("kalender sekolah anak", "Foto saja,<br>jadwal sebulan beres", "Barang bawaan, diingatkan malam sebelumnya"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -72,6 +73,7 @@ HEADER = {
     "da": ("Mit barns skema", "Ét billede af opslaget,<br>og hele måneden er klar"),
     "el": ("Το πρόγραμμα του παιδιού μου", "Μία φωτογραφία ανακοίνωσης,<br>έτοιμος ολόκληρος ο μήνας"),
     "fi": ("Lapseni aikataulu", "Yksi kuva tiedotteesta,<br>koko kuukausi valmis"),
+    "id": ("Jadwal anakku", "Satu foto pengumuman,<br>acara sebulan penuh beres"),
 }
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)

@@ -110,6 +110,12 @@ Lue vastaukset palautteeseen täällä.
 Avaa tietosuoja ja tuki sovelluksessa.
 Sovellus toimii nyt entistä vakaammin.
 
+### 앱스토어 (Indonesian, id)
+
+Baca balasan atas masukan di aplikasi.
+Buka privasi dan dukungan di aplikasi.
+Aplikasi dirapikan agar lebih stabil.
+
 ## 1.0.4
 
 ### 새로운 기능

@@ -153,6 +153,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (%lld yang sudah tersimpan dilewati)"
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -385,6 +391,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " (%lld duplikat dilewati)"
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -521,6 +533,12 @@
             "value": " · Aussi ajouté à Calendrier"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · Ditambahkan juga ke Kalender"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -628,6 +646,12 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "id": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -745,6 +769,12 @@
             "value": "Partage avec %@"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berbagi dengan %@"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -852,6 +882,12 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
+        "id": {
           "stringUnit": {
             "state": "translated",
             "value": "%@"
@@ -967,6 +1003,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Classe de %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kelas %@"
           }
         },
         "it": {
@@ -1177,6 +1219,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld acara %1$@ dan foto profilnya juga akan dihapus. Tindakan ini tidak dapat dibatalkan."
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -1313,6 +1361,12 @@
             "value": "Connecté aux événements de %@. Vous pouvez désormais les gérer ensemble des deux côtés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terhubung ke acara %@. Sekarang kalian dapat mengelolanya bersama dari kedua sisi."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -1423,6 +1477,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le profil de %@ sera supprimé. Cette action est irréversible."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil %@ akan dihapus. Tindakan ini tidak dapat dibatalkan."
           }
         },
         "it": {
@@ -1537,6 +1597,12 @@
             "value": "Supprimer « %@ »"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus “%@”"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -1647,6 +1713,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Commence dans 1 heure."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dimulai 1 jam lagi."
           }
         },
         "it": {
@@ -1761,6 +1833,12 @@
             "value": "1 heure avant"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 jam sebelumnya"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -1871,6 +1949,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ponctuels"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sekali"
           }
         },
         "it": {
@@ -1986,6 +2070,12 @@
             "value": "Verrouillage Face ID"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunci Face ID"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -2097,6 +2187,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verrouillez l’app avec Face ID ou Touch ID pour garder l’agenda de vos enfants privé."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunci aplikasi dengan Face ID atau Touch ID agar jadwal anak Anda tetap pribadi."
           }
         },
         "it": {
@@ -2212,6 +2308,12 @@
             "value": "Demandez à Siri ce qui est prévu aujourd’hui pour votre enfant."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanya Siri apa jadwal anak Anda hari ini."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -2323,6 +2425,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Siri et Raccourcis"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri dan Pintasan"
           }
         },
         "it": {
@@ -2438,6 +2546,12 @@
             "value": "VoiceOver lit tout le calendrier et chaque événement, dans le bon ordre."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver membacakan seluruh kalender dan setiap acara dengan urutan yang tepat."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -2549,6 +2663,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Meilleure prise en charge de VoiceOver"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VoiceOver yang lebih nyaman"
           }
         },
         "it": {
@@ -2663,6 +2783,12 @@
             "value": "Impossible de vérifier l’état d’iCloud. Réessayez dans un instant."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Status iCloud tidak dapat diperiksa. Coba lagi sebentar lagi."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -2773,6 +2899,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Espace iCloud insuffisant pour envoyer vos événements."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penyimpanan iCloud tidak cukup untuk mengunggah acara."
           }
         },
         "it": {
@@ -2887,6 +3019,12 @@
             "value": "Connectez-vous à iCloud pour utiliser le partage familial."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masuk ke iCloud untuk menggunakan berbagi keluarga."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -2997,6 +3135,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Connectez-vous à iCloud pour utiliser le partage familial. Connectez-vous dans Réglages > compte Apple."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masuk ke iCloud untuk menggunakan berbagi keluarga. Masuk di Pengaturan > akun Apple."
           }
         },
         "it": {
@@ -3111,6 +3255,12 @@
             "value": "Connectez-vous à iCloud pour partager des événements avec votre famille.\nConnectez-vous dans Réglages > compte Apple."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Masuk ke iCloud untuk berbagi acara dengan keluarga.\nMasuk di Pengaturan > akun Apple."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -3221,6 +3371,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Importation terminée"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impor Selesai"
           }
         },
         "it": {
@@ -3335,6 +3491,12 @@
             "value": "Famille"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keluarga"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -3445,6 +3607,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partage familial"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berbagi Keluarga"
           }
         },
         "it": {
@@ -3559,6 +3727,12 @@
             "value": "Le partage familial est terminé. Les événements déjà reçus sont conservés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berbagi keluarga telah berakhir. Acara yang sudah diterima tetap tersimpan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -3669,6 +3843,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le partage familial est arrêté. Les événements actuels sont conservés."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berbagi keluarga dihentikan. Acara yang ada tetap tersimpan."
           }
         },
         "it": {
@@ -3783,6 +3963,12 @@
             "value": "Inviter la famille"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Undang Keluarga"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -3893,6 +4079,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Inviter la famille"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Undang Keluarga untuk Melihat Bersama"
           }
         },
         "it": {
@@ -4007,6 +4199,12 @@
             "value": "Connecté aux événements d’une famille"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terhubung ke acara sebuah keluarga"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -4117,6 +4315,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Quitter le partage"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keluar dari Berbagi"
           }
         },
         "it": {
@@ -4231,6 +4435,12 @@
             "value": "Les informations de partage ont été réinitialisées. Envoyez à nouveau une invitation."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info berbagi telah direset. Kirim undangan lagi."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -4341,6 +4551,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Arrêter le partage"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hentikan Berbagi"
           }
         },
         "it": {
@@ -4455,6 +4671,12 @@
             "value": "Vous avez quitté le partage. Les événements déjà reçus sont conservés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda sudah keluar dari berbagi. Acara yang sudah diterima tetap tersimpan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -4567,6 +4789,12 @@
             "value": "Aucun événement à partager."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ada acara untuk dibagikan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -4677,6 +4905,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tous"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua"
           }
         },
         "it": {
@@ -4792,6 +5026,12 @@
             "value": "Les écrans se réorganisent proprement au lieu d’être coupés quand vous agrandissez le texte."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilan tersusun ulang dengan rapi, tidak terpotong, saat teks diperbesar."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -4902,6 +5142,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Choisissez une date pour voir ses événements"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pilih tanggal untuk melihat acaranya"
           }
         },
         "it": {
@@ -5017,6 +5263,12 @@
             "value": "Supprimer tous mes événements"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus semua acara saya"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -5127,6 +5379,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vous avez déjà un partage familial à vous. Touchez d’abord « Arrêter le partage », puis acceptez l’invitation."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda sudah punya berbagi keluarga sendiri. Ketuk “Hentikan Berbagi” dulu, lalu terima undangan."
           }
         },
         "it": {
@@ -5241,6 +5499,12 @@
             "value": "C’est demain. Préparez les affaires à l’avance."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acara besok. Siapkan barang-barangnya dari sekarang."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -5351,6 +5615,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À qui est cet événement ?"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acara ini untuk siapa?"
           }
         },
         "it": {
@@ -5465,6 +5735,12 @@
             "value": "À venir"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mendatang"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -5575,6 +5851,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À venir"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mendatang"
           }
         },
         "it": {
@@ -5690,6 +5972,12 @@
             "value": "Mode sombre"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode Gelap"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -5800,6 +6088,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendrier"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender"
           }
         },
         "it": {
@@ -5914,6 +6208,12 @@
             "value": "Photographiez un calendrier\npour ajouter des événements"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto kalender\nuntuk menambah acara"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -6024,6 +6324,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le matin même"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagi harinya"
           }
         },
         "it": {
@@ -6139,6 +6445,12 @@
             "value": "Distinguez les événements de chaque enfant, même avec Contraste accru ou si les couleurs sont difficiles à différencier."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bedakan acara tiap anak, bahkan saat Tingkatkan Kontras aktif atau sulit membedakan warna."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -6250,6 +6562,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Utilisez l’app dans d’autres langues."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gunakan aplikasi dalam lebih banyak bahasa."
           }
         },
         "it": {
@@ -6365,6 +6683,12 @@
             "value": "Plus de langues"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lebih banyak bahasa"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -6475,6 +6799,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Touchez le cercle pour ajouter une photo de profil. Si vous indiquez une classe, les événements réservés à d’autres classes (comme les sorties) sont automatiquement écartés des affichages. Quand la classe change à la rentrée, modifiez-la simplement ici."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ketuk lingkaran untuk menambahkan foto profil. Jika kelas diisi, acara yang khusus untuk kelas lain (seperti karyawisata) otomatis disaring dari pengumuman. Saat kelas berganti di tahun ajaran baru, cukup ubah di sini."
           }
         },
         "it": {
@@ -6589,6 +6919,12 @@
             "value": "Échec de la synchronisation. Réessayez dans un instant."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinkronisasi gagal. Coba lagi sebentar lagi."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -6699,6 +7035,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dernière synchronisation : %@ · Synchronisation automatique à l’ouverture de l’app et à chaque modification."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terakhir disinkronkan: %@ · Disinkronkan otomatis saat aplikasi dibuka dan saat acara diubah."
           }
         },
         "it": {
@@ -6813,6 +7155,12 @@
             "value": "Ajouter depuis un message"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah dari Pesan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -6923,6 +7271,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nom de la classe (ex. : Tournesols)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nama kelas (mis. Matahari)"
           }
         },
         "it": {
@@ -7037,6 +7391,12 @@
             "value": "Saisir la classe"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isi Kelas"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -7147,6 +7507,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Récurrents"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berulang"
           }
         },
         "it": {
@@ -7261,6 +7627,12 @@
             "value": "Indiquez une classe pour écarter automatiquement les événements réservés à d’autres classes."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isi kelas untuk menyaring otomatis acara yang khusus untuk kelas lain."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -7373,6 +7745,12 @@
             "value": "Ajouter une classe"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah kelas"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -7483,6 +7861,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partager avec votre conjoint et les grands-parents"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bagikan dengan pasangan dan kakek-nenek"
           }
         },
         "it": {
@@ -7598,6 +7982,12 @@
             "value": "Sauvegarde et exportation"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadangan dan ekspor"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -7708,6 +8098,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lecture seule"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya lihat"
           }
         },
         "it": {
@@ -7821,6 +8217,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couleurs et contraste plus confortables"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warna dan kontras yang lebih nyaman"
           }
         },
         "it": {
@@ -8031,6 +8433,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld foto — geser untuk melihat, ketuk untuk memperbesar."
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -8167,6 +8575,12 @@
             "value": "Aucun texte trouvé dans la photo."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ditemukan teks pada foto."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -8279,6 +8693,12 @@
             "value": "Touchez la photo pour l’agrandir."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ketuk foto untuk memperbesarnya."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -8389,6 +8809,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Supprimer"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus"
           }
         },
         "it": {
@@ -8504,6 +8930,12 @@
             "value": "Retour haptique"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umpan balik haptik"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -8614,6 +9046,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "En attente"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menunggu"
           }
         },
         "it": {
@@ -8728,6 +9166,12 @@
             "value": "Scanner"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pindai"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -8838,6 +9282,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "S’applique uniquement aux événements avec une heure"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya berlaku untuk acara yang memiliki waktu"
           }
         },
         "it": {
@@ -8953,6 +9403,12 @@
             "value": "Astuces pratiques"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tips berguna"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -9064,6 +9520,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Reprenez votre événement là où vous l’aviez laissé"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lanjutkan acara dari tempat Anda berhenti"
           }
         },
         "it": {
@@ -9178,6 +9640,12 @@
             "value": "Enfant"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anak"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -9288,6 +9756,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Supprimer l’enfant"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus Anak"
           }
         },
         "it": {
@@ -9402,6 +9876,12 @@
             "value": "Prénom de l’enfant (ex. : Léo)"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nama anak (mis. Budi)"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -9512,6 +9992,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Agenda des enfants"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jadwal Anak"
           }
         },
         "it": {
@@ -9627,6 +10113,12 @@
             "value": "Enregistrez l’agenda de vos enfants dans un fichier et retrouvez-le plus tard."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simpan jadwal anak Anda ke berkas dan pulihkan nanti."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -9737,6 +10229,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un enfant"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Anak"
           }
         },
         "it": {
@@ -9851,6 +10349,12 @@
             "value": "Ajoutez un enfant pour classer les événements par enfant et voir son prénom dans les rappels."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambahkan anak agar acara terkelompok per anak dan namanya tampil di pengingat."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -9961,6 +10465,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajoutez un enfant pour classer les événements par enfant et voir son prénom dans les rappels."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambahkan anak agar acara terkelompok per anak dan namanya tampil di pengingat."
           }
         },
         "it": {
@@ -10075,6 +10585,12 @@
             "value": "Agenda Bambin"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jadwal Si Kecil"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -10185,6 +10701,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Données Agenda Bambin"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data Jadwal Si Kecil"
           }
         },
         "it": {
@@ -10299,6 +10821,12 @@
             "value": "Envoyer aux utilisateurs d’Agenda Bambin"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirim ke Pengguna Jadwal Si Kecil"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -10409,6 +10937,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Calendrier Agenda Bambin"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender Jadwal Si Kecil"
           }
         },
         "it": {
@@ -10523,6 +11057,12 @@
             "value": "Agenda Bambin – partagé"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jadwal Si Kecil – Dibagikan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -10633,6 +11173,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pas encore synchronisé."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Belum pernah disinkronkan."
           }
         },
         "it": {
@@ -10747,6 +11293,12 @@
             "value": "Personne n’a encore rejoint"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Belum ada yang bergabung"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -10859,6 +11411,12 @@
             "value": "Aucune invitation envoyée"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Belum ada undangan terkirim"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -10969,6 +11527,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Information"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan"
           }
         },
         "it": {
@@ -11179,6 +11743,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld pengingat dijadwalkan"
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -11315,6 +11885,12 @@
             "value": "L’autorisation des notifications est nécessaire (à activer dans Réglages)"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izin notifikasi diperlukan (aktifkan di Pengaturan)"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -11425,6 +12001,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Réglages des rappels"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengaturan Pengingat"
           }
         },
         "it": {
@@ -11539,6 +12121,12 @@
             "value": "Me rappeler"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingatkan Saya"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -11651,6 +12239,12 @@
             "value": "Tous les moments de rappel sont désactivés"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua waktu pengingat sedang dimatikan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -11761,6 +12355,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun rappel"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanpa pengingat"
           }
         },
         "it": {
@@ -11876,6 +12476,12 @@
             "value": "De discrètes astuces sur les fonctions utiles, au bon moment."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Petunjuk halus tentang fitur berguna, tepat saat Anda butuhkan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -11986,6 +12592,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter aussi au Calendrier Apple"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambahkan juga ke Kalender Apple"
           }
         },
         "it": {
@@ -12101,6 +12713,12 @@
             "value": "Utilisez toute l’app aussi en anglais."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gunakan seluruh aplikasi dalam bahasa Inggris."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -12212,6 +12830,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Le calendrier et les événements restent nets et lisibles en mode sombre."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalender dan acara tetap jelas dan mudah dibaca di Mode Gelap."
           }
         },
         "it": {
@@ -12326,6 +12950,12 @@
             "value": "Affiche les prochains événements extraits d’un calendrier de crèche."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menampilkan acara mendatang yang diambil dari kalender sekolah."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -12436,6 +13066,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Photographiez l’affichage de la crèche ou collez un message"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto pengumuman dari sekolah atau tempel sebuah pesan"
           }
         },
         "it": {
@@ -12551,6 +13187,12 @@
             "value": "À la première ouverture après une mise à jour, découvrez les nouveautés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saat pertama membuka aplikasi setelah pembaruan, lihat apa yang baru."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -12664,6 +13306,12 @@
             "value": "Nouveautés"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yang Baru"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -12774,6 +13422,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Collez ici un message de la crèche.\nEx. : de la pluie est prévue demain, merci de marquer le nom sur les bottes, l’imperméable et le parapluie."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tempel pesan dari sekolah di sini.\nMis. Besok diperkirakan hujan, mohon tuliskan nama pada sepatu bot, jas hujan, dan payung."
           }
         },
         "it": {
@@ -12889,6 +13543,12 @@
             "value": "Prise en charge complète de l’anglais"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dukungan penuh bahasa Inggris"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -12999,6 +13659,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ex. : pique-nique, gourde"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mis. bekal makan siang, botol minum"
           }
         },
         "it": {
@@ -13113,6 +13779,12 @@
             "value": "Aujourd’hui"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hari Ini"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -13223,6 +13895,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "C’est aujourd’hui."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acara hari ini."
           }
         },
         "it": {
@@ -13337,6 +14015,12 @@
             "value": "Erreur"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesalahan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -13447,6 +14131,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selesai"
           }
         },
         "it": {
@@ -13562,6 +14252,12 @@
             "value": "Réduire les animations"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurangi Gerakan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -13673,6 +14369,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Avec Réduire les animations activé, les effets d’écran se font plus discrets."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dengan Kurangi Gerakan aktif, efek layar menjadi lebih tenang."
           }
         },
         "it": {
@@ -13788,6 +14490,12 @@
             "value": "Effacez tous les événements enregistrés directement dans l’app quand vous le souhaitez."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus semua acara tersimpan langsung di aplikasi kapan saja."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -13898,6 +14606,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afficher le mois"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perluas ke tampilan bulan"
           }
         },
         "it": {
@@ -14012,6 +14726,12 @@
             "value": "Vous ne recevrez plus les événements de cette famille. Les événements déjà reçus sont conservés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda tidak akan menerima acara keluarga ini lagi. Acara yang sudah diterima tetap tersimpan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -14122,6 +14842,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vous consultez ensemble les événements de cette famille. Ceux que vous ajoutez ou modifiez leur sont aussi transmis."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda melihat acara keluarga ini bersama. Acara yang Anda tambah atau ubah juga diteruskan ke mereka."
           }
         },
         "it": {
@@ -14236,6 +14962,12 @@
             "value": "L’utilisation d’iCloud est restreinte sur cet appareil."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penggunaan iCloud dibatasi di perangkat ini."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -14346,6 +15078,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un événement ce jour-là"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Acara di Hari Ini"
           }
         },
         "it": {
@@ -14460,6 +15198,12 @@
             "value": "Aucun événement ce jour-là"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ada acara pada hari ini"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -14570,6 +15314,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun événement avec une date n’a été trouvé dans ce message.\nVérifiez qu’il contient une date (ex. : 12 juillet) ou des mots comme « demain » ou « vendredi »."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ditemukan acara bertanggal dalam pesan ini.\nPastikan ada tanggal (mis. 12 Juli) atau kata seperti “besok” atau “Jumat”."
           }
         },
         "it": {
@@ -14684,6 +15434,12 @@
             "value": "Supprimer cet enfant ?"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus anak ini?"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -14794,6 +15550,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Prénom (ex. : Léo)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nama (mis. Budi)"
           }
         },
         "it": {
@@ -14908,6 +15670,12 @@
             "value": "Vous participez déjà au partage d’une autre famille. Touchez d’abord « Quitter le partage », puis envoyez une invitation."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda sudah tergabung dalam berbagi keluarga lain. Ketuk “Keluar dari Berbagi” dulu, lalu kirim undangan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -15018,6 +15786,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible de traiter l’image."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gambar tidak dapat diproses."
           }
         },
         "it": {
@@ -15228,6 +16002,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld acara ditemukan di foto ini"
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -15364,6 +16144,12 @@
             "value": "Date et heure"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanggal dan waktu"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -15474,6 +16260,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Événement"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acara"
           }
         },
         "it": {
@@ -15682,6 +16474,12 @@
                 }
               }
             }
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simpan %lld Acara + Aktifkan Pengingat"
           }
         },
         "it": {
@@ -15916,6 +16714,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld acara berhasil diimpor."
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -16052,6 +16856,12 @@
             "value": "Impossible d’importer les données du planning.\nVérifiez que le fichier a bien été exporté depuis l’app Agenda Bambin."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data jadwal tidak dapat diimpor.\nPastikan berkas tersebut diekspor dari aplikasi Jadwal Si Kecil."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -16162,6 +16972,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À l’heure de l’événement"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tepat waktu acara"
           }
         },
         "it": {
@@ -16276,6 +17092,12 @@
             "value": "Type d’événement"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jenis Acara"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -16386,6 +17208,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un événement manuellement"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Acara Secara Manual"
           }
         },
         "it": {
@@ -16500,6 +17328,12 @@
             "value": "Ajouter un événement"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Acara"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -16610,6 +17444,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Extraire les événements"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ambil Acara"
           }
         },
         "it": {
@@ -16724,6 +17564,12 @@
             "value": "D’après les événements, il s’agit du document de %@. Sinon, modifiez-le ci-dessus."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dari acaranya, ini tampaknya dokumen milik %@. Jika bukan, ubah di atas."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -16834,6 +17680,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aucun texte ressemblant à des événements n’a été trouvé.\nReprenez la photo pour que l’écriture soit bien nette."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ditemukan teks yang tampak seperti acara.\nCoba foto lagi agar tulisannya jelas."
           }
         },
         "it": {
@@ -16949,6 +17801,12 @@
             "value": "Une légère vibration vous prévient quand un événement est ajouté ou enregistré."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getaran lembut memberi tahu saat acara ditambahkan atau disimpan."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -17060,6 +17918,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ce que vous saisissiez reste en place, même si l’app se ferme en cours de route."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yang sedang Anda ketik tetap ada, meski aplikasi tertutup di tengah jalan."
           }
         },
         "it": {
@@ -17174,6 +18038,12 @@
             "value": "Impossible de trouver un compte de calendrier où ajouter des événements."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ditemukan akun kalender untuk menambahkan acara."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -17284,6 +18154,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enregistrer"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simpan"
           }
         },
         "it": {
@@ -17398,6 +18274,12 @@
             "value": "Enregistré ! À retrouver dans le calendrier et le widget"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tersimpan! Lihat di kalender dan widget"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -17508,6 +18390,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "La veille au soir (pour préparer les affaires)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malam sebelumnya (untuk menyiapkan barang)"
           }
         },
         "it": {
@@ -17622,6 +18510,12 @@
             "value": "Tous"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -17732,6 +18626,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Titre"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Judul"
           }
         },
         "it": {
@@ -17846,6 +18746,12 @@
             "value": "Titre (ex. : Sortie, Journée « apporte ton jouet »)"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Judul (mis. Karyawisata, Hari bawa mainan)"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -17956,6 +18862,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Vérifiez les titres, les heures et ce qu’il faut apporter. Touchez le cercle pour changer d’enfant, ou balayez pour supprimer un événement inutile. L’enregistrement vous mène au calendrier."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Periksa judul, waktu, dan barang yang perlu dibawa. Ketuk lingkaran untuk mengganti anak, atau geser untuk menghapus acara yang tidak perlu. Setelah disimpan, Anda diarahkan ke kalender."
           }
         },
         "it": {
@@ -18070,6 +18982,12 @@
             "value": "Retiré"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dikeluarkan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -18180,6 +19098,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toute la journée"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seharian"
           }
         },
         "it": {
@@ -18294,6 +19218,12 @@
             "value": "Les événements sur toute la journée (comme les sorties) ne reçoivent que les rappels « la veille au soir » et « le matin même »."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acara seharian (seperti karyawisata) hanya mendapat pengingat “malam sebelumnya” dan “pagi harinya”."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -18404,6 +19334,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Réduire à la semaine"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciutkan ke tampilan minggu"
           }
         },
         "it": {
@@ -18518,6 +19454,12 @@
             "value": "À apporter / notes"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yang perlu dibawa / catatan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -18628,6 +19570,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "À apporter / notes (ex. : pique-nique)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yang perlu dibawa / catatan (mis. bekal makan siang)"
           }
         },
         "it": {
@@ -18742,6 +19690,12 @@
             "value": "Synchroniser maintenant"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinkronkan Sekarang"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -18852,6 +19806,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ça commence maintenant."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dimulai sekarang."
           }
         },
         "it": {
@@ -18966,6 +19926,12 @@
             "value": "Effacer"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hapus"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -19076,6 +20042,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Assistance"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dukungan"
           }
         },
         "it": {
@@ -19190,6 +20162,12 @@
             "value": "Ajouté manuellement"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ditambahkan manual"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -19300,6 +20278,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Membre"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bergabung"
           }
         },
         "it": {
@@ -19414,6 +20398,12 @@
             "value": "Pour retirer quelqu’un ou modifier les droits, touchez « Gérer les personnes » ci-dessous."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Untuk mengeluarkan seseorang atau mengubah izin, ketuk “Kelola Orang” di bawah."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -19524,6 +20514,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Traitement…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memproses…"
           }
         },
         "it": {
@@ -19639,6 +20635,12 @@
             "value": "Une petite visite guidée pour les débutants"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panduan singkat untuk pengguna baru"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -19750,6 +20752,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Un court guide pour ajouter des événements depuis une photo, à la première ouverture."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Panduan singkat menambah acara dari foto, saat pertama membuka aplikasi."
           }
         },
         "it": {
@@ -19864,6 +20872,12 @@
             "value": "Envoyer l’invitation · Gérer les personnes"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirim Undangan · Kelola Orang"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -19974,6 +20988,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible de créer le lien d’invitation. Réessayez dans un instant."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tautan undangan tidak dapat dibuat. Coba lagi sebentar lagi."
           }
         },
         "it": {
@@ -20088,6 +21108,12 @@
             "value": "Envoyez un lien d’invitation : votre conjoint ou les grands-parents peuvent voir et modifier les mêmes événements. Une modification d’un côté est mise à jour automatiquement des deux côtés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirim tautan undangan, lalu pasangan atau kakek-nenek dapat melihat dan mengedit acara yang sama. Perubahan di satu sisi diperbarui otomatis di kedua sisi."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -20198,6 +21224,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Impossible d’envoyer le lien d’invitation.\n%@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tautan undangan tidak dapat dikirim.\n%@"
           }
         },
         "it": {
@@ -20312,6 +21344,12 @@
             "value": "Envoyez un lien d’invitation par message : la personne l’ouvre dans l’app et rejoint aussitôt. Ensuite, les événements ajoutés ou modifiés d’un côté sont mis à jour automatiquement des deux côtés."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kirim tautan undangan lewat pesan, lalu mereka dapat membukanya di aplikasi dan langsung bergabung. Setelah itu, acara yang ditambah atau diubah di salah satu sisi diperbarui otomatis di kedua sisi."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -20422,6 +21460,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Les personnes invitées peuvent aussi ajouter et modifier des événements. Les photos de profil des enfants ne sont pas partagées."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orang yang diundang juga dapat menambah dan mengubah acara. Foto profil anak tidak dibagikan."
           }
         },
         "it": {
@@ -20536,6 +21580,12 @@
             "value": "Membre invité de la famille"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anggota keluarga yang diundang"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -20646,6 +21696,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partage avec les personnes invitées"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berbagi dengan orang yang Anda undang"
           }
         },
         "it": {
@@ -20760,6 +21816,12 @@
             "value": "Les personnes invitées ne verront plus vos événements. Les événements actuels restent sur les deux appareils."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orang yang diundang tidak dapat lagi melihat acara Anda. Acara yang ada tetap tersimpan di kedua perangkat."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -20872,6 +21934,12 @@
             "value": "Ajouter"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -20982,6 +22050,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Annuler"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Batal"
           }
         },
         "it": {
@@ -21192,6 +22266,12 @@
             }
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld acara ditambahkan ke Kalender"
+          }
+        },
         "it": {
           "variations": {
             "plural": {
@@ -21328,6 +22408,12 @@
             "value": "L’autorisation d’accès au calendrier est nécessaire"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izin akses kalender diperlukan"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -21438,6 +22524,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "L’accès au calendrier n’est pas autorisé. Activez-le dans Réglages > CalendarSnap."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akses ke kalender tidak diizinkan. Aktifkan di Pengaturan > CalendarSnap."
           }
         },
         "it": {
@@ -21552,6 +22644,12 @@
             "value": "Impossible d’ajouter à Calendrier"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gagal menambahkan ke Kalender"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -21664,6 +22762,12 @@
             "value": "Partager un fichier calendrier (.ics)"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bagikan sebagai Berkas Kalender (.ics)"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -21774,6 +22878,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Si activé, les événements sont ajoutés au calendrier « %@ ». Partagez ce calendrier dans l’app Calendrier d’iOS pour le synchroniser avec votre conjoint et votre famille."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika aktif, acara ditambahkan ke kalender “%@”. Bagikan kalender itu di aplikasi Kalender iOS agar tersinkron otomatis dengan pasangan dan keluarga."
           }
         },
         "it": {
@@ -21889,6 +22999,12 @@
             "value": "Mises en page pour texte agrandi"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tata letak untuk teks lebih besar"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -22001,6 +23117,12 @@
             "value": "Coller depuis le presse-papiers"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tempel dari Papan Klip"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -22111,6 +23233,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Partager en texte"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bagikan sebagai Teks"
           }
         },
         "it": {
@@ -22226,6 +23354,12 @@
             "value": "Mise en page pour iPhone pliable"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tata letak iPhone lipat"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -22337,6 +23471,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Voyez le calendrier et les événements côte à côte sur un iPhone pliable."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lihat kalender dan acara berdampingan di iPhone lipat."
           }
         },
         "it": {
@@ -22451,6 +23591,12 @@
             "value": "Nous repérons tous les événements du mois,\nles ajoutons d’un coup à votre calendrier et vous les rappelons."
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kami akan mengambil semua acara sebulan,\nmenambahkannya ke kalender sekaligus, dan mengingatkan Anda."
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -22561,6 +23707,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Personnes en partage"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orang yang berbagi"
           }
         },
         "it": {
@@ -22675,6 +23827,12 @@
             "value": "Peut modifier"
           }
         },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dapat mengedit"
+          }
+        },
         "it": {
           "stringUnit": {
             "state": "translated",
@@ -22782,6 +23940,12 @@
           }
         },
         "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "id": {
           "stringUnit": {
             "state": "translated",
             "value": "OK"
@@ -22897,6 +24061,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "📅 Événements de %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 Acara untuk %@"
           }
         },
         "it": {

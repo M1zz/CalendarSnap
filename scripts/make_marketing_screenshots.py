@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -130,6 +130,12 @@ SHOTS = {
         ("02-events.png", "left-text", "Tarkista kerran<br>ennen tallennusta", "Muokkaa otsikkoa, päivää ja muistiinpanoja"),
         ("03-calendar.png", "text-bottom", "Jokaisella lapsella<br>oma värinsä", "Sisarusten menot eivät mene sekaisin"),
         ("04-reminders.png", "dark", "Muistutus<br>edellisenä iltana", "Eväät ja urheiluvaatteet eivät unohdu"),
+    ],
+    "id": [
+        ("01-scan.png", "hero-bleed", "Satu foto pengumuman,<br>sebulan beres", "Tanggal dan barang bawaan dibaca otomatis"),
+        ("02-events.png", "left-text", "Periksa dulu<br>sebelum menyimpan", "Ubah judul, tanggal, dan catatan dengan sekali ketuk"),
+        ("03-calendar.png", "text-bottom", "Tiap anak<br>punya warnanya", "Jadwal kakak dan adik tidak tercampur"),
+        ("04-reminders.png", "dark", "Pengingat<br>malam sebelumnya", "Bekal dan baju olahraga tak lagi terlupa"),
     ],
 }
 # ─────────────────────────────────────────────────────────────────

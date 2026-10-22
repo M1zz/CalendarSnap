@@ -1044,3 +1044,61 @@ Widget
 Näe tulevat tapahtumat suoraan kotinäytöltä.
 
 Kuvien tekstintunnistus tapahtuu kokonaan laitteellasi. Kuviasi ei koskaan lähetetä palvelimelle.
+
+## id
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Jadwal Si Kecil: Agenda TK
+
+### 부제
+
+Foto pengumuman, sebulan beres
+
+### 키워드
+
+kalender,pengingat,paud,sekolah,orang tua,karyawisata,bekal,keluarga,widget,pemindai,kelas,ocr
+
+### 프로모션 텍스트
+
+Foto kalender dari sekolah, dan acara sebulan penuh masuk ke kalender Anda, lengkap dengan pengingat malam sebelumnya soal barang yang perlu dibawa. Bagikan ke keluarga.
+
+### 설명
+
+Foto jadwal bulanan dari sekolah atau tempat penitipan anak, lalu Jadwal Si Kecil membaca semua acara dan menambahkan satu bulan penuh ke kalender Anda sekaligus.
+Dapatkan pengingat malam sebelumnya, sehingga bekal karyawisata dan baju olahraga tidak lagi terlupa.
+
+Satu foto, sebulan penuh
+Ambil foto atau pilih dari pustaka foto, dan tanggal, waktu, serta judul dibacakan untuk Anda. Foto yang diambil menyamping pun otomatis diputar ke arah yang benar.
+Jika tabel dibagi per kelas, hanya acara kelas anak Anda yang diambil.
+Sebelum menyimpan, Anda bisa mengedit setiap judul, tanggal, pilihan seharian, dan catatan barang yang perlu dibawa, lalu geser untuk menghapus yang tidak perlu.
+
+Tempel pesan juga bisa
+Tempel pesan dari sekolah, dan aplikasi menemukan tanggal serta barang yang perlu dibawa, lalu mengubahnya menjadi acara. Ungkapan seperti “besok” atau “Jumat ini” berubah menjadi tanggal sebenarnya.
+
+Kalender dan pengingat
+Acara masuk ke kalender khusus tiap anak, dan acara yang sudah ditambahkan tidak akan ditambahkan dua kali.
+Pilih pengingat malam sebelumnya, pagi harinya, 1 jam sebelumnya, atau tepat waktu. Catatan barang yang perlu dibawa muncul di pengingat.
+
+Lebih dari satu anak
+Pisahkan acara tiap anak. Aplikasi melihat acara sebelumnya untuk menebak pengumuman baru ini milik anak yang mana.
+
+Bagikan dengan keluarga
+Kirim tautan undangan lewat pesan, dan pasangan, kakek-nenek, atau pengasuh dapat melihat dan mengedit acara yang sama. Perubahan di satu sisi muncul di kedua sisi.
+
+Widget
+Lihat acara mendatang langsung dari layar utama.
+
+Pengenalan teks pada foto berlangsung sepenuhnya di perangkat Anda. Foto Anda tidak pernah dikirim ke server.
