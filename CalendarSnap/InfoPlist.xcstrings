@@ -1,0 +1,70 @@
+{
+  "sourceLanguage": "ko",
+  "strings": {
+    "CFBundleDisplayName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids Schedule"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아이일정"
+          }
+        }
+      }
+    },
+    "NSCalendarsFullAccessUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar access is needed to add the extracted daycare events to your calendar and check for duplicates."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추출한 어린이집 일정을 캘린더에 추가하고 중복을 확인하기 위해 캘린더 접근이 필요합니다."
+          }
+        }
+      }
+    },
+    "NSCalendarsUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendar access is needed to add the extracted daycare events to your calendar."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추출한 어린이집 일정을 캘린더에 추가하기 위해 캘린더 접근이 필요합니다."
+          }
+        }
+      }
+    },
+    "NSCameraUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The camera is used to take photos of calendars and extract events."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달력 사진을 찍어 일정을 추출하기 위해 카메라를 사용합니다."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

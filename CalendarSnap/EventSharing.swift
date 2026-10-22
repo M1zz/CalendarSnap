@@ -56,22 +56,19 @@ enum EventSharing {
     // MARK: - 텍스트 요약 (메신저용)
 
     static func textSummary(for events: [ScannedEvent]) -> String {
-        guard !events.isEmpty else { return "공유할 일정이 없어요." }
+        guard !events.isEmpty else { return String(localized: "공유할 일정이 없어요.") }
 
         let dayFormatter = DateFormatter()
-        dayFormatter.locale = Locale(identifier: "ko_KR")
-        dayFormatter.dateFormat = "M/d(E)"
+        dayFormatter.setLocalizedDateFormatFromTemplate("Md E")
         let timeFormatter = DateFormatter()
-        timeFormatter.locale = Locale(identifier: "ko_KR")
-        timeFormatter.dateFormat = "a h:mm"
+        timeFormatter.setLocalizedDateFormatFromTemplate("jm")
 
         let monthFormatter = DateFormatter()
-        monthFormatter.locale = Locale(identifier: "ko_KR")
-        monthFormatter.dateFormat = "M월"
+        monthFormatter.setLocalizedDateFormatFromTemplate("MMMM")
         let sorted = events.sorted { $0.date < $1.date }
         let month = monthFormatter.string(from: sorted[0].date)
 
-        var out = ["📅 \(month) 아이 일정"]
+        var out = [String(localized: "📅 \(month) 아이 일정")]
         let grouped = Dictionary(grouping: sorted) { Calendar.current.startOfDay(for: $0.date) }
         for day in grouped.keys.sorted() {
             for event in grouped[day]!.sorted(by: { $0.date < $1.date }) {

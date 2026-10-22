@@ -36,6 +36,8 @@
 		AA000000000000000000061B /* FamilyShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000519 /* FamilyShareView.swift */; };
 		CA361DD2ED26E20A615CF1A0 /* CalendarSnapRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */; };
 		E1C5F672852FF09136BD4D9B /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF95EE5532C71DF5DD453D9E /* LeeoKit */; };
+		AA0000000000000000000701 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000700 /* InfoPlist.xcstrings */; };
+		AA0000000000000000000703 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000702 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		AA0000000000000000000518 /* FamilyShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShareService.swift; sourceTree = "<group>"; };
 		AA0000000000000000000519 /* FamilyShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShareView.swift; sourceTree = "<group>"; };
 		C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapSpec.swift; sourceTree = "<group>"; };
+		AA0000000000000000000700 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		AA0000000000000000000702 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */,
 				7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */,
 				0E5DD29BF2F4C5544146541E /* Localizable.xcstrings */,
+				AA0000000000000000000700 /* InfoPlist.xcstrings */,
 			);
 			path = CalendarSnap;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				AA0000000000000000000508 /* ScheduleWidget.swift */,
 				AA0000000000000000000509 /* ScheduleWidget.entitlements */,
 				AA000000000000000000050B /* Info.plist */,
+				AA0000000000000000000702 /* Localizable.xcstrings */,
 			);
 			path = ScheduleWidget;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			files = (
 				AA000000000000000000060F /* Assets.xcassets in Resources */,
 				3101DACA275E006000B16231 /* Localizable.xcstrings in Resources */,
+				AA0000000000000000000701 /* InfoPlist.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0000000000000000000703 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

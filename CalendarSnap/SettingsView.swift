@@ -174,12 +174,12 @@ struct SettingsView: View {
     private var familyShareStatus: String {
         switch familyShare.state.role {
         case .none:
-            return "아직 초대하지 않았어요"
+            return String(localized: "아직 초대하지 않았어요")
         case .owner:
-            return "초대한 가족과 함께 보는 중"
+            return String(localized: "초대한 가족과 함께 보는 중")
         case .participant:
             let name = familyShare.state.ownerDisplayName.trimmingCharacters(in: .whitespaces)
-            return name.isEmpty ? "가족의 일정과 연결됨" : "\(name)님과 함께 보는 중"
+            return name.isEmpty ? String(localized: "가족의 일정과 연결됨") : String(localized: "\(name)님과 함께 보는 중")
         }
     }
 
@@ -199,16 +199,16 @@ struct SettingsView: View {
     }
 
     private var deleteDialogTitle: String {
-        pendingDeleteName.isEmpty ? "아이 삭제" : "'\(pendingDeleteName)' 삭제"
+        pendingDeleteName.isEmpty ? String(localized: "아이 삭제") : String(localized: "'\(pendingDeleteName)' 삭제")
     }
 
     private var deleteDialogMessage: String {
         let name = pendingDeleteName
-        guard !name.isEmpty else { return "이 아이를 삭제할까요?" }
+        guard !name.isEmpty else { return String(localized: "이 아이를 삭제할까요?") }
         let count = childEventCount(name)
         return count > 0
-            ? "\(name)의 일정 \(count)개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요."
-            : "\(name)의 프로필이 삭제됩니다. 되돌릴 수 없어요."
+            ? String(localized: "\(name)의 일정 \(count)개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요.")
+            : String(localized: "\(name)의 프로필이 삭제됩니다. 되돌릴 수 없어요.")
     }
 
     private func confirmDeleteChild() {
@@ -240,7 +240,7 @@ struct SettingsView: View {
                     .foregroundStyle(.tint)
             } else {
                 HStack(spacing: 4) {
-                    Text(className.hasSuffix("반") ? className : "\(className)반")
+                    Text(className.hasSuffix("반") ? className : String(localized: "\(className)반"))
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(.white)
                         .padding(.horizontal, 8)
@@ -258,8 +258,8 @@ struct SettingsView: View {
     private var classAlertTitle: String {
         guard let i = classEditIndex, settings.childNames.indices.contains(i),
               !settings.childNames[i].trimmingCharacters(in: .whitespaces).isEmpty
-        else { return "반 입력" }
-        return "\(settings.childNames[i])의 반"
+        else { return String(localized: "반 입력") }
+        return String(localized: "\(settings.childNames[i])의 반")
     }
 
     private func binding(for option: ReminderOption) -> Binding<Bool> {

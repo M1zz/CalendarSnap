@@ -19,13 +19,21 @@ struct MonthCalendarView: View {
     @State private var lastListOffset: CGFloat = 0
 
     private var calendar: Calendar { .current }
-    private let koKR = Locale(identifier: "ko_KR")
+    private let koKR = Locale.current   // 이름은 그대로 두고 기기 언어를 따른다
 
     enum TypeFilter: String, CaseIterable, Identifiable {
         case all = "전체"
         case oneTime = "1회성"
         case recurring = "반복"
         var id: String { rawValue }
+
+        var title: LocalizedStringKey {
+            switch self {
+            case .all: return "전체"
+            case .oneTime: return "1회성"
+            case .recurring: return "반복"
+            }
+        }
 
         var icon: String {
             switch self {
@@ -79,7 +87,7 @@ struct MonthCalendarView: View {
                 Menu {
                     Picker("일정 유형", selection: $typeFilter) {
                         ForEach(TypeFilter.allCases) { type in
-                            Label(type.rawValue, systemImage: type.icon).tag(type)
+                            Label(type.title, systemImage: type.icon).tag(type)
                         }
                     }
                 } label: {
@@ -190,7 +198,7 @@ struct MonthCalendarView: View {
 
     private var weekdayHeader: some View {
         HStack(spacing: 0) {
-            ForEach(Array(["일", "월", "화", "수", "목", "금", "토"].enumerated()), id: \.offset) { i, name in
+            ForEach(Array(calendar.veryShortStandaloneWeekdaySymbols.enumerated()), id: \.offset) { i, name in
                 Text(name)
                     .font(.caption2.weight(.semibold))
                     .foregroundStyle(i == 0 ? .red : i == 6 ? .blue : .secondary)
@@ -220,7 +228,7 @@ struct MonthCalendarView: View {
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .accessibilityLabel(isWeekMode ? "월간 달력으로 펼치기" : "주간 달력으로 접기")
+        .accessibilityLabel(isWeekMode ? String(localized: "월간 달력으로 펼치기") : String(localized: "주간 달력으로 접기"))
     }
 
     /// 선택한 날(없으면 오늘)이 속한 주.
@@ -387,7 +395,7 @@ struct MonthCalendarView: View {
 
     private func eventRow(_ event: ScannedEvent) -> some View {
         HStack(alignment: .top, spacing: 12) {
-            Text(event.isAllDay ? "종일" : event.date.formatted(.dateTime.hour().minute().locale(koKR)))
+            Text(event.isAllDay ? String(localized: "종일") : event.date.formatted(.dateTime.hour().minute().locale(koKR)))
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.tint)
                 .frame(width: 64, alignment: .leading)

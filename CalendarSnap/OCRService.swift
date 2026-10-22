@@ -9,8 +9,8 @@ enum OCRService {
 
         var errorDescription: String? {
             switch self {
-            case .invalidImage: return "이미지를 처리할 수 없습니다."
-            case .noText: return "사진에서 텍스트를 찾지 못했습니다."
+            case .invalidImage: return String(localized: "이미지를 처리할 수 없습니다.")
+            case .noText: return String(localized: "사진에서 텍스트를 찾지 못했습니다.")
             }
         }
     }

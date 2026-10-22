@@ -1,0 +1,70 @@
+{
+  "sourceLanguage": "ko",
+  "strings": {
+    "다가오는 일정": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upcoming"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다가오는 일정"
+          }
+        }
+      }
+    },
+    "달력을 찍어\n일정을 등록하세요": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snap a calendar\nto add events"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "달력을 찍어\n일정을 등록하세요"
+          }
+        }
+      }
+    },
+    "아이 일정": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kids’ Schedule"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아이 일정"
+          }
+        }
+      }
+    },
+    "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows upcoming events pulled from a daycare calendar."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

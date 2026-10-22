@@ -179,8 +179,8 @@ struct ContentView: View {
 
             selectedTab = 1
             let skipped = package.events.count - fresh.count
-            importMessage = "일정 \(fresh.count)개를 가져왔어요."
-                + (skipped > 0 ? " (이미 있는 \(skipped)개 제외)" : "")
+            importMessage = String(localized: "일정 \(fresh.count)개를 가져왔어요.")
+                + (skipped > 0 ? String(localized: " (이미 있는 \(skipped)개 제외)") : "")
 
             // 알림 권한이 이미 있으면 가져온 일정까지 포함해 재예약
             Task {
@@ -189,7 +189,7 @@ struct ContentView: View {
                 }
             }
         } catch {
-            errorMessage = "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요."
+            errorMessage = String(localized: "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요.")
         }
     }
 
@@ -262,7 +262,7 @@ struct ContentView: View {
                     }
                     pickedItems = []
                     if added == 0 {
-                        errorMessage = "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요."
+                        errorMessage = String(localized: "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요.")
                     }
                 }
             }
@@ -359,8 +359,8 @@ struct ContentView: View {
                 .listRowInsets(EdgeInsets())
             } footer: {
                 Text(scannedImages.count > 1
-                     ? "사진 \(scannedImages.count)장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요."
-                     : "사진을 탭하면 크게 볼 수 있어요.")
+                     ? String(localized: "사진 \(scannedImages.count)장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요.")
+                     : String(localized: "사진을 탭하면 크게 볼 수 있어요."))
             }
         }
     }
@@ -466,8 +466,8 @@ struct ContentView: View {
             } label: {
                 HStack(spacing: 8) {
                     Image(systemName: savedBanner ? "checkmark.circle.fill" : "calendar.badge.plus")
-                    Text(savedBanner ? "저장 완료! 달력·위젯에서 확인하세요"
-                         : "일정 \(scanned.count)개 저장 + 알림 받기")
+                    Text(savedBanner ? String(localized: "저장 완료! 달력·위젯에서 확인하세요")
+                         : String(localized: "일정 \(scanned.count)개 저장 + 알림 받기"))
                         .fontWeight(.semibold)
                 }
                 .frame(maxWidth: .infinity)
@@ -490,8 +490,8 @@ struct ContentView: View {
 
     private var reminderSummaryText: String {
         let selected = ReminderOption.allCases.filter { settings.options.contains($0) }
-        let times = selected.isEmpty ? "알림 없음" : selected.map(\.title).joined(separator: ", ")
-        let cal = settings.mirrorToCalendar ? " · 캘린더에도 추가" : ""
+        let times = selected.isEmpty ? String(localized: "알림 없음") : selected.map(\.title).joined(separator: ", ")
+        let cal = settings.mirrorToCalendar ? String(localized: " · 캘린더에도 추가") : ""
         return times + cal
     }
 
@@ -582,7 +582,7 @@ struct ContentView: View {
         let parsed = EventParser.parseMessage(text)
         let added = ingest(parsed)
         if added == 0 {
-            errorMessage = "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요."
+            errorMessage = String(localized: "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요.")
         }
         return added
     }
@@ -600,7 +600,7 @@ struct ContentView: View {
            guessed != selectedChild {
             suppressRestamp = true
             selectedChild = guessed
-            resultMessage = "일정 패턴을 보고 '\(guessed)'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요."
+            resultMessage = String(localized: "일정 패턴을 보고 '\(guessed)'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요.")
         }
 
         // 선택된 아이(미선택이면 첫 아이)로 표시 후 이번 스캔 목록에 누적
@@ -651,14 +651,14 @@ struct ContentView: View {
 
         // 1) 로컬 알림 — 앱이 직접 알림을 담당
         if settings.options.isEmpty {
-            messages.append("알림 시점이 꺼져 있어요")
+            messages.append(String(localized: "알림 시점이 꺼져 있어요"))
         } else {
             let granted = await NotificationManager.requestAuthorization()
             if granted {
                 let n = await NotificationManager.schedule(for: savedEvents, settings: settings)
-                messages.append("알림 \(n)개 예약")
+                messages.append(String(localized: "알림 \(n)개 예약"))
             } else {
-                messages.append("알림 권한이 필요해요 (설정에서 허용)")
+                messages.append(String(localized: "알림 권한이 필요해요 (설정에서 허용)"))
             }
         }
 
@@ -668,15 +668,15 @@ struct ContentView: View {
             if calGranted {
                 do {
                     let result = try CalendarService.addEvents(savedEvents)
-                    var msg = "캘린더 \(result.added)개 추가"
-                    if result.skipped > 0 { msg += " (중복 \(result.skipped)개 제외)" }
+                    var msg = String(localized: "캘린더 \(result.added)개 추가")
+                    if result.skipped > 0 { msg += String(localized: " (중복 \(result.skipped)개 제외)") }
                     messages.append(msg)
                 } catch {
-                    messages.append("캘린더 추가 실패")
+                    messages.append(String(localized: "캘린더 추가 실패"))
                     errorMessage = error.localizedDescription
                 }
             } else {
-                messages.append("캘린더 권한이 필요해요")
+                messages.append(String(localized: "캘린더 권한이 필요해요"))
             }
         }
 

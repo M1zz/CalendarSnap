@@ -58,3 +58,61 @@ https://m1zz.github.io/CalendarSnap/
 
 사진 속 글자 인식은 모두 기기 안에서 처리되며, 사진을 따로 서버로 보내지 않습니다.
 
+
+## en
+
+### 지원 URL
+
+https://m1zz.github.io/CalendarSnap/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/CalendarSnap/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/CalendarSnap/
+
+### 이름
+
+Kids Schedule: Daycare Planner
+
+### 부제
+
+Snap the notice, get the month
+
+### 키워드
+
+preschool,calendar,school,reminders,scanner,family,sharing,parents,lunch,field trip,sync,ocr,nursery
+
+### 프로모션 텍스트
+
+Photograph the calendar your daycare sends home and the whole month lands in your calendar, with an evening-before reminder to pack what's needed. Share it with family.
+
+### 설명
+
+Take a photo of the monthly calendar from your child's daycare or preschool, and Kids Schedule reads every event and adds the whole month to your calendar at once.
+Get a reminder the evening before, and the packed lunch and gym clothes never get forgotten again.
+
+One photo, one month
+Take a picture or pick one from your library, and dates, times and titles are read for you. Photos taken sideways are turned the right way automatically.
+If the sheet is split by class, only your child's class events are picked up.
+Before saving, you can edit each title, date, all-day setting and note about what to bring, and swipe away anything you don't need.
+
+Paste a message, too
+Paste a text or message from the daycare and Kids Schedule finds the dates and things to bring and turns them into events. Phrases like "tomorrow" or "this Friday" become real dates.
+
+Calendar and reminders
+Events go into a dedicated calendar for each child, and ones you've already added are never added twice.
+Choose reminders for the evening before, the morning of, 1 hour before or right on time. Your notes about what to bring show up in the reminder.
+
+More than one child
+Keep each child's events separate. Kids Schedule looks at past events to guess which child a new notice is for.
+
+Share with family
+Send an invitation link by message, and your partner, grandparents or caregiver can see and edit the same events. Changes made on either side show up on both.
+
+Widget
+See upcoming events right from your Home Screen with the widget.
+
+Text recognition in photos happens entirely on your device. Your photos are never sent to a server.

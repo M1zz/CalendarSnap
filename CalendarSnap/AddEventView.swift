@@ -77,7 +77,7 @@ struct AddEventView: View {
                                             isAllDay: isAllDay,
                                             notes: notes.trimmingCharacters(in: .whitespacesAndNewlines),
                                             childName: childName.trimmingCharacters(in: .whitespaces),
-                                            rawText: "직접 추가"))
+                                            rawText: String(localized: "직접 추가")))
                         dismiss()
                     }
                     // 제목 필수 + 아이 미등록 상태면 아이 이름도 필수

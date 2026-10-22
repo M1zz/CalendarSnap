@@ -53,7 +53,7 @@ struct FamilyShareView: View {
         }) {
             if let share {
                 CloudSharingSheet(share: share, container: service.cloudContainer) { error in
-                    service.errorMessage = "초대 링크를 보내지 못했어요.\n\(error.localizedDescription)"
+                    service.errorMessage = String(localized: "초대 링크를 보내지 못했어요.\n\(error.localizedDescription)")
                 } onStopSharing: {
                     Task { await service.stopSharing() }
                 }
@@ -70,8 +70,8 @@ struct FamilyShareView: View {
             Button("취소", role: .cancel) {}
         } message: {
             Text(service.state.role == .owner
-                 ? "초대한 가족이 더 이상 일정을 볼 수 없게 됩니다. 지금까지의 일정은 양쪽 기기에 그대로 남아요."
-                 : "이 가족의 일정을 더 이상 받지 않습니다. 지금까지 받은 일정은 그대로 남아요.")
+                 ? String(localized: "초대한 가족이 더 이상 일정을 볼 수 없게 됩니다. 지금까지의 일정은 양쪽 기기에 그대로 남아요.")
+                 : String(localized: "이 가족의 일정을 더 이상 받지 않습니다. 지금까지 받은 일정은 그대로 남아요."))
         }
         .alert("알림", isPresented: .constant(service.infoMessage != nil)) {
             Button("확인") { service.infoMessage = nil }
@@ -111,7 +111,7 @@ struct FamilyShareView: View {
                 }
             } label: {
                 HStack {
-                    Label(service.state.role == .owner ? "초대 링크 보내기 · 참여자 관리" : "가족 초대하기",
+                    Label(service.state.role == .owner ? String(localized: "초대 링크 보내기 · 참여자 관리") : String(localized: "가족 초대하기"),
                           systemImage: "person.crop.circle.badge.plus")
                     Spacer()
                     if service.isBusy { ProgressView() }
@@ -193,22 +193,22 @@ struct FamilyShareView: View {
     // MARK: - 표시 문구
 
     private var stopTitle: String {
-        service.state.role == .owner ? "공유 중단" : "공유 나가기"
+        service.state.role == .owner ? String(localized: "공유 중단") : String(localized: "공유 나가기")
     }
 
     private var ownerTitle: String {
         let name = service.state.ownerDisplayName.trimmingCharacters(in: .whitespaces)
-        return name.isEmpty ? "가족의 일정과 연결됨" : "\(name)님과 함께 보는 중"
+        return name.isEmpty ? String(localized: "가족의 일정과 연결됨") : String(localized: "\(name)님과 함께 보는 중")
     }
 
     private var lastSyncedText: String {
         guard let date = service.state.lastSyncedAt else {
-            return "아직 동기화한 적이 없어요."
+            return String(localized: "아직 동기화한 적이 없어요.")
         }
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "ko_KR")
-        formatter.dateFormat = "M월 d일 a h:mm"
-        return "마지막 동기화 \(formatter.string(from: date)) · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요."
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return String(localized: "마지막 동기화 \(formatter.string(from: date)) · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요.")
     }
 
     // MARK: - 공유 정보 새로고침
@@ -239,11 +239,11 @@ struct ShareParticipantInfo: Identifiable {
             ?? participant.userIdentity.lookupInfo?.emailAddress
             ?? UUID().uuidString
         let resolved = FamilyShareService.displayName(for: participant.userIdentity)
-        name = resolved.isEmpty ? "초대한 가족" : resolved
+        name = resolved.isEmpty ? String(localized: "초대한 가족") : resolved
         switch participant.acceptanceStatus {
-        case .accepted:  status = participant.permission == .readOnly ? "보기 전용" : "함께 편집"
-        case .pending:   status = "수락 대기 중"
-        case .removed:   status = "제외됨"
+        case .accepted:  status = participant.permission == .readOnly ? String(localized: "보기 전용") : String(localized: "함께 편집")
+        case .pending:   status = String(localized: "수락 대기 중")
+        case .removed:   status = String(localized: "제외됨")
         default:         status = ""
         }
     }
@@ -275,7 +275,7 @@ struct CloudSharingSheet: UIViewControllerRepresentable {
         init(_ parent: CloudSharingSheet) { self.parent = parent }
 
         func itemTitle(for csc: UICloudSharingController) -> String? {
-            "아이일정 함께 보기"
+            String(localized: "아이일정 함께 보기")
         }
 
         func cloudSharingController(_ csc: UICloudSharingController,

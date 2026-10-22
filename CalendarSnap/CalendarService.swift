@@ -13,8 +13,8 @@ enum CalendarService {
 
         var errorDescription: String? {
             switch self {
-            case .accessDenied:     return "캘린더 접근 권한이 없습니다. 설정 > CalendarSnap에서 허용해주세요."
-            case .noWritableSource: return "일정을 추가할 수 있는 캘린더 계정을 찾지 못했습니다."
+            case .accessDenied:     return String(localized: "캘린더 접근 권한이 없습니다. 설정 > CalendarSnap에서 허용해주세요.")
+            case .noWritableSource: return String(localized: "일정을 추가할 수 있는 캘린더 계정을 찾지 못했습니다.")
             }
         }
     }

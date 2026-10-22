@@ -11,10 +11,10 @@ enum ReminderOption: String, CaseIterable, Codable, Identifiable {
 
     var title: String {
         switch self {
-        case .dayBeforeEvening: return "전날 저녁 (준비물 챙기기)"
-        case .morningOf:        return "당일 아침"
-        case .hourBefore:       return "1시간 전"
-        case .atTime:           return "일정 시각 정각"
+        case .dayBeforeEvening: return String(localized: "전날 저녁 (준비물 챙기기)")
+        case .morningOf:        return String(localized: "당일 아침")
+        case .hourBefore:       return String(localized: "1시간 전")
+        case .atTime:           return String(localized: "일정 시각 정각")
         }
     }
 
@@ -56,10 +56,10 @@ enum ReminderOption: String, CaseIterable, Codable, Identifiable {
     func notificationBody(for event: ScannedEvent) -> String {
         let base: String
         switch self {
-        case .dayBeforeEvening: base = "내일 일정이에요. 준비물을 미리 챙겨주세요."
-        case .morningOf:        base = "오늘 일정이에요."
-        case .hourBefore:       base = "1시간 뒤 일정이에요."
-        case .atTime:           base = "지금 시작하는 일정이에요."
+        case .dayBeforeEvening: base = String(localized: "내일 일정이에요. 준비물을 미리 챙겨주세요.")
+        case .morningOf:        base = String(localized: "오늘 일정이에요.")
+        case .hourBefore:       base = String(localized: "1시간 뒤 일정이에요.")
+        case .atTime:           base = String(localized: "지금 시작하는 일정이에요.")
         }
         return event.notes.isEmpty ? base : "\(base)\n📌 \(event.notes)"
     }

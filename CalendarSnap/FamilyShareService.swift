@@ -84,7 +84,7 @@ final class FamilyShareService: ObservableObject {
     private static let rootRecordName = "family-root"
     private static let familyType = "Family"
     private static let eventType = "SharedEvent"
-    private static let shareTitle = "아이일정 함께 보기"
+    private static let shareTitle = String(localized: "아이일정 함께 보기")
 
     /// 원격 변경을 로컬에 반영했을 때 알림 — 화면이 다시 읽어가도록.
     static let didChangeNotification = Notification.Name("FamilyShareDidChange")
@@ -126,7 +126,7 @@ final class FamilyShareService: ObservableObject {
     /// 전용 존·루트 레코드·CKShare를 준비한다. 초대 시트에 넘길 공유를 돌려준다.
     func startSharing() async -> CKShare? {
         guard state.role != .participant else {
-            errorMessage = "이미 다른 가족의 공유에 참여하고 있어요. 먼저 ‘공유 나가기’를 한 뒤 초대해주세요."
+            errorMessage = String(localized: "이미 다른 가족의 공유에 참여하고 있어요. 먼저 ‘공유 나가기’를 한 뒤 초대해주세요.")
             return nil
         }
         guard await ensureAccount() else { return nil }
@@ -159,7 +159,7 @@ final class FamilyShareService: ObservableObject {
             let result = try await container.privateCloudDatabase.modifyRecords(
                 saving: [root, share], deleting: [], savePolicy: .changedKeys, atomically: true)
             guard let saved = result.saveResults[share.recordID].flatMap({ try? $0.get() }) as? CKShare else {
-                errorMessage = "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요."
+                errorMessage = String(localized: "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요.")
                 return nil
             }
 
@@ -197,7 +197,7 @@ final class FamilyShareService: ObservableObject {
 
     func acceptShare(_ metadata: CKShare.Metadata) async {
         guard state.role != .owner else {
-            errorMessage = "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요."
+            errorMessage = String(localized: "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요.")
             return
         }
         isBusy = true
@@ -217,8 +217,8 @@ final class FamilyShareService: ObservableObject {
             persist()
 
             await sync()
-            let who = state.ownerDisplayName.isEmpty ? "가족" : "\(state.ownerDisplayName)님"
-            infoMessage = "\(who)의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요."
+            let who = state.ownerDisplayName.isEmpty ? String(localized: "가족") : String(localized: "\(state.ownerDisplayName)님")
+            infoMessage = String(localized: "\(who)의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요.")
         } catch {
             handle(error)
         }
@@ -240,8 +240,8 @@ final class FamilyShareService: ObservableObject {
         state = FamilyShareState()
         persist()
         infoMessage = wasOwner
-            ? "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요."
-            : "공유에서 나왔어요. 지금까지 받은 일정은 그대로 남아 있어요."
+            ? String(localized: "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요.")
+            : String(localized: "공유에서 나왔어요. 지금까지 받은 일정은 그대로 남아 있어요.")
     }
 
     // MARK: - 동기화
@@ -570,37 +570,37 @@ final class FamilyShareService: ObservableObject {
         case .available:
             return true
         case .noAccount:
-            errorMessage = "iCloud에 로그인해야 가족과 일정을 공유할 수 있어요.\n설정 앱 > Apple 계정에서 로그인해주세요."
+            errorMessage = String(localized: "iCloud에 로그인해야 가족과 일정을 공유할 수 있어요.\n설정 앱 > Apple 계정에서 로그인해주세요.")
         case .restricted:
-            errorMessage = "이 기기에서는 iCloud 사용이 제한돼 있어요."
+            errorMessage = String(localized: "이 기기에서는 iCloud 사용이 제한돼 있어요.")
         default:
-            errorMessage = "iCloud 상태를 확인하지 못했어요. 잠시 후 다시 시도해주세요."
+            errorMessage = String(localized: "iCloud 상태를 확인하지 못했어요. 잠시 후 다시 시도해주세요.")
         }
         return false
     }
 
     private func handle(_ error: Error) {
         guard let ckError = error as? CKError else {
-            errorMessage = "동기화에 실패했어요. 잠시 후 다시 시도해주세요."
+            errorMessage = String(localized: "동기화에 실패했어요. 잠시 후 다시 시도해주세요.")
             return
         }
         switch ckError.code {
         case .networkUnavailable, .networkFailure, .serviceUnavailable, .requestRateLimited:
             break   // 일시적 — 다음 동기화 때 자동으로 다시 시도
         case .notAuthenticated:
-            errorMessage = "iCloud에 로그인해야 가족 공유를 쓸 수 있어요."
+            errorMessage = String(localized: "iCloud에 로그인해야 가족 공유를 쓸 수 있어요.")
         case .quotaExceeded:
-            errorMessage = "iCloud 저장 공간이 부족해 일정을 올리지 못했어요."
+            errorMessage = String(localized: "iCloud 저장 공간이 부족해 일정을 올리지 못했어요.")
         case .zoneNotFound, .userDeletedZone:
             // 소유자가 공유를 끊었거나 존이 사라짐 — 로컬 일정은 유지하고 공유만 해제
             let wasParticipant = state.role == .participant
             state = FamilyShareState()
             persist()
             infoMessage = wasParticipant
-                ? "가족 공유가 종료됐어요. 지금까지 받은 일정은 그대로 남아 있어요."
-                : "공유 정보가 초기화됐어요. 다시 초대해주세요."
+                ? String(localized: "가족 공유가 종료됐어요. 지금까지 받은 일정은 그대로 남아 있어요.")
+                : String(localized: "공유 정보가 초기화됐어요. 다시 초대해주세요.")
         default:
-            errorMessage = "동기화에 실패했어요. 잠시 후 다시 시도해주세요."
+            errorMessage = String(localized: "동기화에 실패했어요. 잠시 후 다시 시도해주세요.")
         }
     }
 }
