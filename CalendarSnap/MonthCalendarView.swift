@@ -103,7 +103,7 @@ struct MonthCalendarView: View {
 
     private var childAvatarBar: some View {
         HStack(spacing: 18) {
-            ChildAvatarButton(name: nil, label: "전체",
+            ChildAvatarButton(name: nil, label: String(localized: "전체"),
                               children: registeredChildren,
                               isSelected: childFilter == nil) {
                 withAnimation { childFilter = nil }

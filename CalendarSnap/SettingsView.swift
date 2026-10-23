@@ -187,8 +187,8 @@ struct SettingsView: View {
         let names = settings.childNames
             .map { $0.trimmingCharacters(in: .whitespaces) }
             .filter { !$0.isEmpty }
-        guard !names.isEmpty else { return "‘어린이집’" }
-        return names.map { "‘\($0) 어린이집’" }.joined(separator: ", ")
+        guard !names.isEmpty else { return "‘\(CalendarService.calendarName(for: ""))’" }
+        return names.map { "‘\(CalendarService.calendarName(for: $0))’" }.joined(separator: ", ")
     }
 
     // MARK: - 아이 삭제 확인

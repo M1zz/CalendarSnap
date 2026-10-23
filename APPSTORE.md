@@ -63,15 +63,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/en/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/en/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/en/
 
 ### 이름
 
@@ -121,15 +121,15 @@ Text recognition in photos happens entirely on your device. Your photos are neve
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/en/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/en/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/en/
 
 ### 이름
 
@@ -179,15 +179,15 @@ Text recognition in photos happens entirely on your device. Your photos are neve
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/zh-Hans/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/zh-Hans/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/zh-Hans/
 
 ### 이름
 
@@ -237,15 +237,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/zh-Hant/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/zh-Hant/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/zh-Hant/
 
 ### 이름
 
@@ -295,15 +295,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/ja/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/ja/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/ja/
 
 ### 이름
 
@@ -353,15 +353,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/ru/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/ru/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/ru/
 
 ### 이름
 
@@ -411,15 +411,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/es/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/es/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/es/
 
 ### 이름
 
@@ -469,15 +469,15 @@ El reconocimiento del texto de las fotos se hace por completo en tu dispositivo.
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/de/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/de/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/de/
 
 ### 이름
 
@@ -527,15 +527,15 @@ Die Texterkennung in Fotos läuft komplett auf deinem Gerät. Deine Fotos werden
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/fr/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/fr/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/fr/
 
 ### 이름
 
@@ -585,15 +585,15 @@ La reconnaissance du texte des photos s’effectue entièrement sur votre appare
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/it/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/it/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/it/
 
 ### 이름
 
@@ -643,15 +643,15 @@ Il riconoscimento del testo nelle foto avviene interamente sul tuo dispositivo. 
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/pt-BR/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/pt-BR/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/pt-BR/
 
 ### 이름
 
@@ -701,15 +701,15 @@ O reconhecimento de texto nas fotos acontece totalmente no seu dispositivo. Suas
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/th/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/th/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/th/
 
 ### 이름
 
@@ -759,15 +759,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/vi/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/vi/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/vi/
 
 ### 이름
 
@@ -817,15 +817,15 @@ Việc nhận dạng chữ trong ảnh hoàn toàn diễn ra trên thiết bị 
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/cs/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/cs/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/cs/
 
 ### 이름
 
@@ -875,15 +875,15 @@ Rozpoznávání textu na fotkách probíhá celé ve vašem zařízení. Vaše f
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/da/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/da/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/da/
 
 ### 이름
 
@@ -933,15 +933,15 @@ Tekstgenkendelsen i billeder foregår helt på din enhed. Dine billeder sendes a
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/el/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/el/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/el/
 
 ### 이름
 
@@ -991,15 +991,15 @@ https://m1zz.github.io/CalendarSnap/
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/fi/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/fi/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/fi/
 
 ### 이름
 
@@ -1049,15 +1049,15 @@ Kuvien tekstintunnistus tapahtuu kokonaan laitteellasi. Kuviasi ei koskaan lähe
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/id/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/id/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/id/
 
 ### 이름
 
@@ -1107,15 +1107,15 @@ Pengenalan teks pada foto berlangsung sepenuhnya di perangkat Anda. Foto Anda ti
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/nb/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/nb/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/nb/
 
 ### 이름
 
@@ -1165,15 +1165,15 @@ Tekstgjenkjenningen i bilder skjer helt på enheten din. Bildene dine sendes ald
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/nl/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/nl/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/nl/
 
 ### 이름
 
@@ -1223,15 +1223,15 @@ Tekstherkenning in foto’s gebeurt volledig op je apparaat. Je foto’s worden 
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/pl/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/pl/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/pl/
 
 ### 이름
 
@@ -1281,15 +1281,15 @@ Rozpoznawanie tekstu na zdjęciach odbywa się w całości na Twoim urządzeniu.
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/sv/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/sv/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/sv/
 
 ### 이름
 
@@ -1339,15 +1339,15 @@ Textigenkänningen i bilder sker helt på din enhet. Dina bilder skickas aldrig 
 
 ### 지원 URL
 
-https://m1zz.github.io/CalendarSnap/support.html
+https://m1zz.github.io/CalendarSnap/tr/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/CalendarSnap/privacy.html
+https://m1zz.github.io/CalendarSnap/tr/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/CalendarSnap/
+https://m1zz.github.io/CalendarSnap/tr/
 
 ### 이름
 

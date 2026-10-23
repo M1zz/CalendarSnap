@@ -48,6 +48,9 @@ struct ContentView: View {
                 .tabItem { Label("달력", systemImage: "calendar") }
                 .tag(1)
         }
+        #if DEBUG
+        .onAppear { applyScreenshotDemo() }
+        #endif
         // 다른 사용자가 보낸 .aischedule 파일을 열면 일정을 채워줌
         .onOpenURL { url in
             handleIncomingFile(url)
@@ -197,10 +200,19 @@ struct ContentView: View {
 
     private var scanTab: some View {
         NavigationStack {
+            ScrollViewReader { proxy in
             List {
                 childPickerSection
                 imageSection
                 eventsSection
+            }
+            #if DEBUG
+            .task(id: scanned.isEmpty) {
+                guard ScreenshotDemo.screen == "events", let first = scanned.first?.id else { return }
+                try? await Task.sleep(for: .milliseconds(600))
+                proxy.scrollTo(first, anchor: .top)
+            }
+            #endif
             }
             // 스캔 후 저장을 놓치지 않도록 화면 하단에 항상 보이는 저장 바
             .safeAreaInset(edge: .bottom) {
@@ -705,6 +717,27 @@ struct ContentView: View {
         }
     }
 
+    #if DEBUG
+    /// 스토어 스크린샷용 예시 화면 (실행 인자 -demoScreen)
+    private func applyScreenshotDemo() {
+        guard ScreenshotDemo.isOn else { return }
+        switch ScreenshotDemo.screen {
+        case "scan", "events":
+            selectedTab = 0
+            suppressRestamp = true
+            selectedChild = registeredChildren.first ?? ""
+            if let image = ScreenshotDemo.noticeImage() { scannedImages = [image] }
+            scannedAll = ScreenshotDemo.scannedEvents()
+            scanned = scannedAll
+        case "settings":
+            selectedTab = 1
+            showSettings = true
+        default:
+            selectedTab = 1
+        }
+    }
+    #endif
+
     /// 선택된 아이의 반에 맞게 추출 목록 필터 (다른 반 전용 견학 등 제외).
     private func refreshScanned() {
         let className = settings.className(for: selectedChild)
@@ -870,3 +903,283 @@ struct CameraPicker: UIViewControllerRepresentable {
 #Preview {
     ContentView()
 }
+
+#if DEBUG
+// MARK: - 스토어 스크린샷용 예시 화면 (DEBUG 빌드 전용 · 출시 빌드에는 들어가지 않는다)
+//
+// 실행 인자: -demoLang <언어> -demoScreen scan|events|calendar|settings
+// 가상의 두 아이 이름·반·일정을 그 언어로 채우고, 알림장 사진 대신 그 언어로 그린 안내문을 보여 준다.
+enum ScreenshotDemo {
+    static var language: String? { UserDefaults.standard.string(forKey: "demoLang") }
+    static var screen: String? { UserDefaults.standard.string(forKey: "demoScreen") }
+    static var isOn: Bool { language != nil && screen != nil }
+
+    struct Content {
+        var children: (String, String)
+        var classes: (String, String)
+        var nursery: String
+        /// {M} = 그 언어의 달 이름(LLLL)
+        var noticeTitle: String
+        /// 안내문 네 줄: 11/5 종일 · 11/12 10시 · 11/18 종일 · 11/26 15시
+        var notice: [String]
+        var footnote: String
+        var todayTitle: String
+        var todayNotes: String
+        var recurringTitle: String
+        var others: [String]
+    }
+
+    static let contents: [String: Content] = [
+        "ko": .init(children: ("지호", "서아"), classes: ("햇살", "무지개"), nursery: "해바라기 어린이집",
+                    noticeTitle: "햇살반 {M} 행사 안내",
+                    notice: ["가을 운동회 (도시락, 운동화)", "인형극 관람", "김장 체험 (앞치마 지참)", "생일잔치"],
+                    footnote: "가정에서도 아이와 함께 일정을 확인해 주세요.",
+                    todayTitle: "숲 체험", todayNotes: "편한 운동화, 물병", recurringTitle: "영어 특별활동",
+                    others: ["도서관 가는 날", "수영", "건강검진", "현장학습", "음악 수업", "부모 상담"]),
+        "en": .init(children: ("Liam", "Emma"), classes: ("Sunflowers", "Rainbows"), nursery: "Little Acorns Daycare",
+                    noticeTitle: "Sunflower Class · {M} Events",
+                    notice: ["Fall sports day (lunch, sneakers)", "Puppet show", "Cookie baking (bring an apron)", "Birthday party"],
+                    footnote: "Please go over the schedule with your child at home.",
+                    todayTitle: "Nature walk", todayNotes: "comfy sneakers, water bottle", recurringTitle: "Spanish club",
+                    others: ["Library day", "Swimming", "Picture day", "Field trip", "Music class", "Parent meeting"]),
+        "en-GB": .init(children: ("Oliver", "Amelia"), classes: ("Sunflowers", "Rainbows"), nursery: "Little Acorns Nursery",
+                    noticeTitle: "Sunflower Class · {M} Events",
+                    notice: ["Autumn sports day (packed lunch, trainers)", "Puppet show", "Biscuit baking (bring an apron)", "Birthday party"],
+                    footnote: "Please go through the schedule with your child at home.",
+                    todayTitle: "Forest school walk", todayNotes: "wellies, water bottle", recurringTitle: "French club",
+                    others: ["Library day", "Swimming", "School photos", "Farm visit", "Music class", "Parents’ evening"]),
+        "zh-Hans": .init(children: ("小宇", "朵朵"), classes: ("向日葵", "彩虹"), nursery: "阳光幼儿园",
+                    noticeTitle: "向日葵班 {M}活动安排",
+                    notice: ["秋季运动会（带午餐、运动鞋）", "观看木偶剧", "烘焙体验（带围裙）", "生日会"],
+                    footnote: "请在家中和孩子一起确认日程。",
+                    todayTitle: "森林探索", todayNotes: "舒适运动鞋、水壶", recurringTitle: "英语兴趣班",
+                    others: ["图书日", "游泳课", "体检", "郊游", "音乐课", "家长会"]),
+        "zh-Hant": .init(children: ("小宇", "朵朵"), classes: ("向日葵", "彩虹"), nursery: "陽光幼兒園",
+                    noticeTitle: "向日葵班 {M}活動安排",
+                    notice: ["秋季運動會（帶午餐、運動鞋）", "觀賞布偶劇", "烘焙體驗（帶圍裙）", "慶生會"],
+                    footnote: "請在家中和孩子一起確認行程。",
+                    todayTitle: "森林探索", todayNotes: "舒適運動鞋、水壺", recurringTitle: "英語才藝課",
+                    others: ["圖書日", "游泳課", "健康檢查", "戶外教學", "音樂課", "親師座談會"]),
+        "ja": .init(children: ("はると", "ゆい"), classes: ("ひまわり", "にじ"), nursery: "たんぽぽ保育園",
+                    noticeTitle: "ひまわり組 {M}の行事予定",
+                    notice: ["秋の運動会（お弁当・運動靴）", "人形劇鑑賞", "クッキー作り（エプロン持参）", "お誕生日会"],
+                    footnote: "ご家庭でもお子さまと予定をご確認ください。",
+                    todayTitle: "森のおさんぽ", todayNotes: "運動靴・水筒", recurringTitle: "英語あそび",
+                    others: ["絵本の日", "プール", "健康診断", "遠足", "リトミック", "保護者会"]),
+        "ru": .init(children: ("Миша", "Аня"), classes: ("Солнышко", "Радуга"), nursery: "Детский сад «Ромашка»",
+                    noticeTitle: "Группа «Солнышко»: план на {M}",
+                    notice: ["Осенний спортивный праздник (обед, кроссовки)", "Кукольный театр", "Печём печенье (взять фартук)", "День рождения"],
+                    footnote: "Пожалуйста, обсудите расписание с ребёнком дома.",
+                    todayTitle: "Прогулка в лесу", todayNotes: "удобная обувь, бутылка воды", recurringTitle: "Английский кружок",
+                    others: ["День библиотеки", "Бассейн", "Медосмотр", "Экскурсия", "Музыкальное занятие", "Родительское собрание"]),
+        "es": .init(children: ("Mateo", "Lucía"), classes: ("Girasoles", "Arcoíris"), nursery: "Escuela Infantil Los Pinos",
+                    noticeTitle: "Clase Girasoles · Actividades de {M}",
+                    notice: ["Fiesta deportiva de otoño (almuerzo, zapatillas)", "Teatro de títeres", "Taller de galletas (traer delantal)", "Fiesta de cumpleaños"],
+                    footnote: "Repasad el calendario con vuestro peque en casa.",
+                    todayTitle: "Paseo por el bosque", todayNotes: "zapatillas cómodas, botella de agua", recurringTitle: "Inglés extraescolar",
+                    others: ["Día de la biblioteca", "Natación", "Revisión médica", "Excursión", "Música", "Reunión de familias"]),
+        "de": .init(children: ("Paul", "Mia"), classes: ("Sonnenblumen", "Regenbogen"), nursery: "Kita Kleine Strolche",
+                    noticeTitle: "Sonnenblumen-Gruppe · Termine im {M}",
+                    notice: ["Herbstsportfest (Brotdose, Turnschuhe)", "Puppentheater", "Plätzchen backen (Schürze mitbringen)", "Geburtstagsfeier"],
+                    footnote: "Bitte besprechen Sie die Termine zu Hause mit Ihrem Kind.",
+                    todayTitle: "Waldtag", todayNotes: "feste Schuhe, Trinkflasche", recurringTitle: "Englisch-AG",
+                    others: ["Büchereitag", "Schwimmen", "Vorsorgeuntersuchung", "Ausflug", "Musikstunde", "Elternabend"]),
+        "fr": .init(children: ("Léo", "Jade"), classes: ("Tournesols", "Arc-en-ciel"), nursery: "Crèche Les Petits Loups",
+                    noticeTitle: "Section des Tournesols · Programme de {M}",
+                    notice: ["Fête du sport d’automne (pique-nique, baskets)", "Spectacle de marionnettes", "Atelier biscuits (apporter un tablier)", "Fête des anniversaires"],
+                    footnote: "Merci de consulter le programme avec votre enfant à la maison.",
+                    todayTitle: "Balade en forêt", todayNotes: "baskets confortables, gourde", recurringTitle: "Éveil à l’anglais",
+                    others: ["Journée bibliothèque", "Piscine", "Visite médicale", "Sortie scolaire", "Éveil musical", "Réunion des parents"]),
+        "it": .init(children: ("Leonardo", "Sofia"), classes: ("Girasoli", "Arcobaleno"), nursery: "Asilo Nido Il Girotondo",
+                    noticeTitle: "Sezione Girasoli · Appuntamenti di {M}",
+                    notice: ["Festa dello sport (pranzo al sacco, scarpe da ginnastica)", "Spettacolo di burattini", "Laboratorio di biscotti (portare il grembiule)", "Festa di compleanno"],
+                    footnote: "Vi preghiamo di rivedere il calendario a casa con il vostro bambino.",
+                    todayTitle: "Passeggiata nel bosco", todayNotes: "scarpe comode, borraccia", recurringTitle: "Inglese",
+                    others: ["Giornata in biblioteca", "Piscina", "Visita pediatrica", "Gita", "Musica", "Colloqui con i genitori"]),
+        "pt-BR": .init(children: ("Miguel", "Helena"), classes: ("Girassol", "Arco-íris"), nursery: "Escolinha Pequeno Príncipe",
+                    noticeTitle: "Turma Girassol · Agenda de {M}",
+                    notice: ["Gincana da primavera (lanche, tênis)", "Teatro de fantoches", "Oficina de biscoitos (levar avental)", "Festa de aniversário"],
+                    footnote: "Confira a agenda com seu filho em casa.",
+                    todayTitle: "Passeio no bosque", todayNotes: "tênis confortável, garrafinha de água", recurringTitle: "Aula de inglês",
+                    others: ["Dia da biblioteca", "Natação", "Consulta médica", "Passeio escolar", "Musicalização", "Reunião de pais"]),
+        "th": .init(children: ("ภูมิ", "มะปราง"), classes: ("ทานตะวัน", "สายรุ้ง"), nursery: "โรงเรียนอนุบาลบ้านรัก",
+                    noticeTitle: "ห้องทานตะวัน · กิจกรรมเดือน{M}",
+                    notice: ["กีฬาสีประจำปี (ข้าวกล่อง รองเท้าผ้าใบ)", "ชมละครหุ่น", "ทำคุกกี้ (นำผ้ากันเปื้อนมา)", "งานวันเกิด"],
+                    footnote: "ผู้ปกครองโปรดทบทวนตารางกิจกรรมกับบุตรหลานที่บ้าน",
+                    todayTitle: "เดินชมธรรมชาติ", todayNotes: "รองเท้าผ้าใบ ขวดน้ำ", recurringTitle: "ชมรมภาษาอังกฤษ",
+                    others: ["วันห้องสมุด", "ว่ายน้ำ", "ตรวจสุขภาพ", "ทัศนศึกษา", "ดนตรี", "ประชุมผู้ปกครอง"]),
+        "vi": .init(children: ("Bin", "Na"), classes: ("Hướng Dương", "Cầu Vồng"), nursery: "Trường Mầm non Hoa Sen",
+                    noticeTitle: "Lớp Hướng Dương · Lịch hoạt động {M}",
+                    notice: ["Hội thao mùa thu (cơm hộp, giày thể thao)", "Xem múa rối", "Làm bánh quy (mang tạp dề)", "Tiệc sinh nhật"],
+                    footnote: "Phụ huynh vui lòng cùng bé xem lại lịch ở nhà.",
+                    todayTitle: "Dạo chơi trong rừng", todayNotes: "giày thoải mái, bình nước", recurringTitle: "Câu lạc bộ tiếng Anh",
+                    others: ["Ngày thư viện", "Bơi lội", "Khám sức khỏe", "Dã ngoại", "Âm nhạc", "Họp phụ huynh"]),
+        "cs": .init(children: ("Jakub", "Ema"), classes: ("Slunečnice", "Duha"), nursery: "Mateřská škola Sluníčko",
+                    noticeTitle: "Třída Slunečnice · Plán na {M}",
+                    notice: ["Podzimní sportovní den (svačina, tenisky)", "Loutkové divadlo", "Pečení sušenek (s sebou zástěru)", "Oslava narozenin"],
+                    footnote: "Projděte si prosím plán doma s dítětem.",
+                    todayTitle: "Vycházka do lesa", todayNotes: "pohodlné boty, láhev s vodou", recurringTitle: "Angličtina",
+                    others: ["Den v knihovně", "Plavání", "Prohlídka u lékaře", "Výlet", "Hudební výchova", "Třídní schůzka"]),
+        "da": .init(children: ("William", "Ida"), classes: ("Solsikkerne", "Regnbuen"), nursery: "Børnehaven Mælkebøtten",
+                    noticeTitle: "Solsikkestuen · Plan for {M}",
+                    notice: ["Efterårets idrætsdag (madpakke, kondisko)", "Dukketeater", "Vi bager småkager (medbring forklæde)", "Fødselsdagsfest"],
+                    footnote: "Gennemgå gerne planen med dit barn derhjemme.",
+                    todayTitle: "Tur i skoven", todayNotes: "gode sko, drikkedunk", recurringTitle: "Engelsk",
+                    others: ["Biblioteksdag", "Svømning", "Sundhedstjek", "Udflugt", "Musik", "Forældremøde"]),
+        "el": .init(children: ("Γιώργος", "Μαρία"), classes: ("Ηλιοτρόπια", "Ουράνιο Τόξο"), nursery: "Παιδικός Σταθμός «Τα Χαμόγελα»",
+                    noticeTitle: "Τμήμα Ηλιοτρόπια · Πρόγραμμα: {M}",
+                    notice: ["Φθινοπωρινή γιορτή αθλητισμού (φαγητό, αθλητικά)", "Κουκλοθέατρο", "Φτιάχνουμε μπισκότα (φέρτε ποδιά)", "Πάρτι γενεθλίων"],
+                    footnote: "Παρακαλούμε δείτε το πρόγραμμα μαζί με το παιδί σας στο σπίτι.",
+                    todayTitle: "Βόλτα στο δάσος", todayNotes: "άνετα παπούτσια, μπουκάλι νερό", recurringTitle: "Αγγλικά",
+                    others: ["Ημέρα βιβλιοθήκης", "Κολύμβηση", "Ιατρικός έλεγχος", "Εκδρομή", "Μουσική", "Συνάντηση γονέων"]),
+        "fi": .init(children: ("Eino", "Aino"), classes: ("Auringonkukat", "Sateenkaaret"), nursery: "Päiväkoti Satakieli",
+                    noticeTitle: "Auringonkukat · Tapahtumat: {M}",
+                    notice: ["Syysliikuntapäivä (eväät, lenkkarit)", "Nukketeatteri", "Pipareiden leivonta (ota esiliina)", "Synttärijuhlat"],
+                    footnote: "Käykää aikataulu läpi kotona yhdessä lapsen kanssa.",
+                    todayTitle: "Metsäretki", todayNotes: "hyvät kengät, juomapullo", recurringTitle: "Englannin kerho",
+                    others: ["Kirjastopäivä", "Uinti", "Terveystarkastus", "Retki", "Musiikkihetki", "Vanhempainilta"]),
+        "id": .init(children: ("Raka", "Kirana"), classes: ("Matahari", "Pelangi"), nursery: "TK Ceria",
+                    noticeTitle: "Kelas Matahari · Agenda {M}",
+                    notice: ["Lomba olahraga (bekal, sepatu olahraga)", "Pertunjukan boneka", "Membuat kue (bawa celemek)", "Pesta ulang tahun"],
+                    footnote: "Mohon tinjau jadwal ini bersama anak di rumah.",
+                    todayTitle: "Jalan-jalan ke hutan", todayNotes: "sepatu nyaman, botol minum", recurringTitle: "Klub bahasa Inggris",
+                    others: ["Hari perpustakaan", "Berenang", "Pemeriksaan kesehatan", "Karyawisata", "Kelas musik", "Pertemuan orang tua"]),
+        "nb": .init(children: ("Jakob", "Nora"), classes: ("Solsikkene", "Regnbuen"), nursery: "Barnehagen Løvetann",
+                    noticeTitle: "Solsikkene · Plan for {M}",
+                    notice: ["Høstidrettsdag (matpakke, joggesko)", "Dukketeater", "Vi baker kjeks (ta med forkle)", "Bursdagsfeiring"],
+                    footnote: "Gå gjerne gjennom planen sammen med barnet hjemme.",
+                    todayTitle: "Tur i skogen", todayNotes: "gode sko, drikkeflaske", recurringTitle: "Engelsk",
+                    others: ["Biblioteksdag", "Svømming", "Helsekontroll", "Utflukt", "Musikk", "Foreldremøte"]),
+        "nl": .init(children: ("Daan", "Julia"), classes: ("Zonnebloemen", "Regenboog"), nursery: "Kinderopvang De Speeltuin",
+                    noticeTitle: "Groep Zonnebloem · Planning {M}",
+                    notice: ["Herfstsportdag (lunchpakket, gymschoenen)", "Poppenkast", "Koekjes bakken (schort meenemen)", "Verjaardagsfeest"],
+                    footnote: "Neem de planning thuis samen met uw kind door.",
+                    todayTitle: "Boswandeling", todayNotes: "stevige schoenen, drinkfles", recurringTitle: "Engelse les",
+                    others: ["Bibliotheekdag", "Zwemmen", "Consultatiebureau", "Uitstapje", "Muziekles", "Ouderavond"]),
+        "pl": .init(children: ("Antek", "Zosia"), classes: ("Słoneczniki", "Tęcza"), nursery: "Przedszkole Słoneczko",
+                    noticeTitle: "Grupa Słoneczniki · Plan na {M}",
+                    notice: ["Jesienny dzień sportu (drugie śniadanie, trampki)", "Teatrzyk kukiełkowy", "Pieczenie ciasteczek (fartuszek)", "Urodziny w grupie"],
+                    footnote: "Prosimy przejrzeć plan razem z dzieckiem w domu.",
+                    todayTitle: "Spacer do lasu", todayNotes: "wygodne buty, bidon", recurringTitle: "Zajęcia z angielskiego",
+                    others: ["Dzień w bibliotece", "Basen", "Bilans zdrowia", "Wycieczka", "Rytmika", "Zebranie z rodzicami"]),
+        "sv": .init(children: ("Elias", "Alice"), classes: ("Solrosen", "Regnbågen"), nursery: "Förskolan Smultronstället",
+                    noticeTitle: "Avdelning Solrosen · Planering för {M}",
+                    notice: ["Höstens idrottsdag (matsäck, gympaskor)", "Dockteater", "Vi bakar kakor (ta med förkläde)", "Kalas"],
+                    footnote: "Gå gärna igenom planeringen med ditt barn hemma.",
+                    todayTitle: "Skogsutflykt", todayNotes: "bra skor, vattenflaska", recurringTitle: "Engelska",
+                    others: ["Biblioteksdag", "Simning", "Hälsokontroll", "Utflykt", "Musik", "Föräldramöte"]),
+        "tr": .init(children: ("Ege", "Elif"), classes: ("Ayçiçeği", "Gökkuşağı"), nursery: "Neşeli Adımlar Anaokulu",
+                    noticeTitle: "Ayçiçeği Sınıfı · {M} Etkinlikleri",
+                    notice: ["Sonbahar spor şenliği (beslenme, spor ayakkabı)", "Kukla gösterisi", "Kurabiye atölyesi (önlük getirin)", "Doğum günü kutlaması"],
+                    footnote: "Lütfen programı evde çocuğunuzla birlikte gözden geçirin.",
+                    todayTitle: "Orman yürüyüşü", todayNotes: "rahat ayakkabı, su matarası", recurringTitle: "İngilizce kulübü",
+                    others: ["Kütüphane günü", "Yüzme", "Sağlık taraması", "Gezi", "Müzik", "Veli toplantısı"]),
+    ]
+
+    static var content: Content? { language.flatMap { contents[$0] } }
+
+    private static var cal: Calendar { .current }
+
+    /// 다음 달 n일 (hour 가 있으면 그 시각)
+    private static func nextMonth(_ day: Int, hour: Int? = nil) -> Date {
+        let start = cal.date(from: cal.dateComponents([.year, .month], from: Date()))!
+        let next = cal.date(byAdding: .month, value: 1, to: start)!
+        var c = cal.dateComponents([.year, .month], from: next)
+        c.day = day; c.hour = hour ?? 0
+        return cal.date(from: c)!
+    }
+
+    private static func thisMonth(_ day: Int, hour: Int? = nil) -> Date {
+        var c = cal.dateComponents([.year, .month], from: Date())
+        c.day = day; c.hour = hour ?? 0
+        return cal.date(from: c)!
+    }
+
+    /// 앱 실행 직후, 화면이 저장소를 읽기 전에 부른다.
+    static func seedIfRequested() {
+        guard isOn, let c = content else { return }
+        var settings = ReminderSettings()
+        settings.childNames = [c.children.0, c.children.1]
+        settings.childClasses = [c.children.0: c.classes.0, c.children.1: c.classes.1]
+        settings.mirrorToCalendar = false
+        ReminderSettingsStore.save(settings)
+
+        let today = cal.component(.day, from: Date())
+        let lastDay = cal.range(of: .day, in: .month, for: Date())!.count
+        var events: [ScannedEvent] = [
+            ScannedEvent(title: c.todayTitle, date: thisMonth(today), isAllDay: true, notes: c.todayNotes,
+                         childName: c.children.0, rawText: c.todayTitle),
+            ScannedEvent(title: c.recurringTitle, date: thisMonth(today, hour: 11), childName: c.children.1,
+                         isRecurring: true, rawText: c.recurringTitle),
+        ]
+        // 달 전체에 고르게 흩는다 (오늘 뺀 날)
+        let days = [1, 2, 7, 9, 14, 15, 16, 21, 22, 27, 29, 30].filter { $0 != today && $0 <= lastDay }
+        for (i, day) in days.enumerated() {
+            let child = i % 2 == 0 ? c.children.0 : c.children.1
+            let title = c.others[i % c.others.count]
+            events.append(ScannedEvent(title: title, date: thisMonth(day), isAllDay: true,
+                                       childName: child, rawText: title))
+        }
+        EventStore.save(events)
+    }
+
+    /// 스캔 탭에 띄울 안내문 일정
+    static func scannedEvents() -> [ScannedEvent] {
+        guard let c = content else { return [] }
+        let specs: [(Int, Int?)] = [(5, nil), (12, 10), (18, nil), (26, 15)]
+        return zip(c.notice, specs).map { title, spec in
+            ScannedEvent(title: title, date: nextMonth(spec.0, hour: spec.1), isAllDay: spec.1 == nil,
+                         childName: c.children.0, rawText: line(title, spec.0, spec.1))
+        }
+    }
+
+    private static func line(_ title: String, _ day: Int, _ hour: Int?) -> String {
+        let f = DateFormatter()
+        f.locale = .current
+        f.setLocalizedDateFormatFromTemplate(hour == nil ? "MMMMd" : "MMMMdjmm")
+        return "\(f.string(from: nextMonth(day, hour: hour))) \(title)"
+    }
+
+    /// 어린이집에서 받은 안내문 사진 대신, 그 언어로 쓴 안내문을 그린다.
+    @MainActor static func noticeImage() -> UIImage? {
+        guard let c = content else { return nil }
+        let monthName: String = {
+            let f = DateFormatter(); f.locale = .current; f.dateFormat = "LLLL"
+            return f.string(from: nextMonth(1))
+        }()
+        let specs: [(Int, Int?)] = [(5, nil), (12, 10), (18, nil), (26, 15)]
+        let lines = zip(c.notice, specs).map { line($0, $1.0, $1.1) }
+        let view = ZStack {
+            Color(red: 0.80, green: 0.77, blue: 0.71)
+            VStack(alignment: .leading, spacing: 14) {
+                Text(c.noticeTitle.replacingOccurrences(of: "{M}", with: monthName))
+                    .font(.system(size: 22, weight: .bold))
+                    .foregroundStyle(Color(red: 0.2, green: 0.4, blue: 0.2))
+                    .frame(maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                Text(c.nursery)
+                    .font(.system(size: 11))
+                    .foregroundStyle(.secondary)
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 14)
+                ForEach(lines, id: \.self) { l in
+                    Text(l).font(.system(size: 15)).foregroundStyle(.black.opacity(0.85))
+                }
+                Spacer().frame(height: 24)
+                Text(c.footnote).font(.system(size: 11)).foregroundStyle(.black.opacity(0.55))
+                Spacer()
+            }
+            .padding(28)
+            .frame(width: 400, height: 560)
+            .background(Color(red: 0.99, green: 0.98, blue: 0.95))
+            .shadow(color: .black.opacity(0.25), radius: 8, x: 2, y: 4)
+            .rotationEffect(.degrees(-1.2))
+        }
+        .frame(width: 520, height: 680)
+        .environment(\.colorScheme, .light)
+        let renderer = ImageRenderer(content: view)
+        renderer.scale = 3
+        return renderer.uiImage
+    }
+}
+#endif

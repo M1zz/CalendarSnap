@@ -4,147 +4,171 @@
 
 ### 앱스토어 (한국어)
 
-설정에서 보낸 의견에 온 답장을 앱에서 읽을 수 있어요.
-개인정보처리방침과 지원 페이지를 앱에서 바로 열 수 있어요.
-앱이 더 안정적으로 동작하도록 다듬었어요.
+영어, 일본어 등 23개 언어를 새로 지원해요.
+설정에서 앞으로 나올 기능을 미리 볼 수 있어요.
+보내 주신 의견에 온 답장을 앱에서 읽을 수 있어요.
+개인정보처리방침과 지원 페이지를 앱에서 열 수 있어요.
 
 ### 앱스토어 (English, en)
 
+Now in English and 23 more languages.
+See what’s coming next in Settings.
 Read replies to your feedback in-app.
 Open Privacy and Support in the app.
-Polished the app to run more reliably.
 
-### 앱스토어 (English UK, en-GB)
+### App Store (en-GB)
 
+Now in English and 23 more languages.
+See what’s coming next in Settings.
 Read replies to your feedback in-app.
 Open Privacy and Support in the app.
-Polished the app to run more reliably.
 
 ### 앱스토어 (Chinese Simplified, zh-Hans)
 
-可在 App 中查看对反馈的回复。
-可在 App 中直接打开隐私政策和支持页。
-优化了 App，运行更稳定。
+现已支持简体中文等 24 种语言。
+可在设置中查看即将推出的功能。
+可在 App 内查看对反馈的回复。
+可在 App 内直接打开隐私政策和支持页。
 
 ### 앱스토어 (Chinese Traditional, zh-Hant)
 
-可在 App 中查看對意見回饋的回覆。
-可在 App 中直接開啟隱私權政策與支援頁。
-優化了 App，運作更穩定。
+現已支援繁體中文等 24 種語言。
+可在設定中查看即將推出的功能。
+可在 App 內查看對意見回饋的回覆。
+可在 App 內直接開啟隱私權政策與支援頁。
 
 ### 앱스토어 (Japanese, ja)
 
-設定から送った意見への返信を、アプリで読めます。
+日本語を含む24の言語で使えるようになりました。
+今後追加予定の機能を設定から確認できます。
+送ったご意見への返信をアプリで読めます。
 プライバシーポリシーとサポートをアプリから開けます。
-アプリがより安定して動くように整えました。
 
 ### 앱스토어 (Russian, ru)
 
-Ответы на отзывы — прямо в приложении.
-Политика и поддержка — в приложении.
-Приложение стало стабильнее.
+Теперь на русском и ещё 23 языках.
+В настройках видно, что появится дальше.
+Ответы на отзывы — в приложении.
+Конфиденциальность и помощь — тут же.
 
 ### 앱스토어 (Spanish, es)
 
-Lee en la app lo que te respondimos.
-Abre privacidad y soporte en la app.
-Pulimos la app para más estabilidad.
+Ahora en español y 23 idiomas más.
+Mira en Ajustes lo que está por llegar.
+Lee en la app lo que te respondemos.
+Abre privacidad y soporte desde la app.
 
 ### 앱스토어 (German, de)
 
+Jetzt auf Deutsch und 23 Sprachen mehr.
+Sieh in den Einstellungen, was kommt.
 Antworten auf dein Feedback in der App.
 Datenschutz und Support in der App.
-Die App läuft jetzt noch stabiler.
 
 ### 앱스토어 (French, fr)
 
-Lisez les réponses à vos avis ici.
+En français et 23 autres langues.
+Les nouveautés à venir, dans Réglages.
+Les réponses à vos avis, dans l’app.
 Confidentialité et aide dans l’app.
-Une app encore plus stable.
 
 ### 앱스토어 (Italian, it)
 
-Leggi nell’app le risposte ai commenti.
+Ora in italiano e in altre 23 lingue.
+Scopri nelle Impostazioni cosa arriverà.
+Leggi nell’app le nostre risposte.
 Apri privacy e supporto dall’app.
-Abbiamo reso l’app più stabile.
 
 ### 앱스토어 (Portuguese Brazil, pt-BR)
 
-Leia no app as respostas aos recados.
-Abra privacidade e suporte no app.
-Deixamos o app ainda mais estável.
+Agora em português e mais 23 idiomas.
+Veja nos Ajustes o que vem por aí.
+Leia no app as respostas ao feedback.
+Privacidade e suporte direto no app.
 
 ### 앱스토어 (Thai, th)
 
-อ่านคำตอบต่อความเห็นของคุณในแอปได้
-เปิดนโยบายส่วนตัวและฝ่ายสนับสนุนในแอป
-ปรับแอปให้ทำงานเสถียรยิ่งขึ้น
+ใช้งานเป็นภาษาไทยและอีก 23 ภาษาได้แล้ว
+ดูฟีเจอร์ที่กำลังจะมาได้ในการตั้งค่า
+อ่านคำตอบต่อความเห็นของคุณได้ในแอป
+เปิดหน้าความเป็นส่วนตัวและช่วยเหลือในแอป
 
 ### 앱스토어 (Vietnamese, vi)
 
-Đọc trả lời góp ý ngay trong ứng dụng.
-Mở chính sách riêng tư và hỗ trợ.
-Ứng dụng chạy ổn định hơn.
+Đã có tiếng Việt và 23 ngôn ngữ khác.
+Xem tính năng sắp ra mắt trong Cài đặt.
+Đọc phản hồi cho góp ý ngay trong app.
+Mở Quyền riêng tư, Hỗ trợ trong app.
 
 ### 앱스토어 (Czech, cs)
 
-Odpovědi na podněty najdete v aplikaci.
-Zásady soukromí a podpora v aplikaci.
-Aplikace je teď stabilnější.
+Nově v češtině a dalších 23 jazycích.
+V Nastavení uvidíte, co chystáme.
+Odpovědi na vaše podněty v aplikaci.
+Soukromí a podpora přímo v aplikaci.
 
 ### 앱스토어 (Danish, da)
 
+Nu på dansk og 23 andre sprog.
+Se i Indstillinger, hvad der er på vej.
 Læs svar på din feedback i appen.
 Åbn privatliv og support i appen.
-Appen kører nu endnu mere stabilt.
 
 ### 앱스토어 (Greek, el)
 
-Διάβασε τις απαντήσεις στην εφαρμογή.
+Τώρα στα ελληνικά και 23 ακόμη γλώσσες.
+Δες στις Ρυθμίσεις τι έρχεται σύντομα.
+Δες τις απαντήσεις μας στην εφαρμογή.
 Απόρρητο και υποστήριξη στην εφαρμογή.
-Βελτιώσαμε τη σταθερότητα της εφαρμογής.
 
 ### 앱스토어 (Finnish, fi)
 
-Lue vastaukset palautteeseen täällä.
-Avaa tietosuoja ja tuki sovelluksessa.
-Sovellus toimii nyt entistä vakaammin.
+Nyt suomeksi ja 23 muulla kielellä.
+Katso asetuksista, mitä on tulossa.
+Lue vastaukset palautteeseesi täällä.
+Tietosuoja ja tuki nyt sovelluksessa.
 
 ### 앱스토어 (Indonesian, id)
 
-Baca balasan atas masukan di aplikasi.
+Kini dalam bahasa Indonesia + 23 bahasa.
+Lihat fitur mendatang di Pengaturan.
+Baca balasan atas masukan Anda di sini.
 Buka privasi dan dukungan di aplikasi.
-Aplikasi dirapikan agar lebih stabil.
 
-### 앱스토어 (Norwegian Bokmal, nb)
+### 앱스토어 (Norwegian Bokmål, nb)
 
-Les svar på tilbakemeldingen i appen.
-Åpne personvern og støtte i appen.
-Appen går nå enda stabilere.
+Nå på norsk og 23 andre språk.
+Se i Innstillinger hva som kommer.
+Les svar på tilbakemeldinger i appen.
+Åpne personvern og hjelp rett i appen.
 
 ### 앱스토어 (Dutch, nl)
 
-Lees antwoorden op je feedback in-app.
-Open privacy en ondersteuning in de app.
-De app werkt nu nog stabieler.
+Nu in het Nederlands en 23 andere talen.
+Bekijk in Instellingen wat eraan komt.
+Lees reacties op je feedback in de app.
+Open privacy en support in de app.
 
 ### 앱스토어 (Polish, pl)
 
-Odpowiedzi na opinie są w aplikacji.
-Prywatność i pomoc w aplikacji.
-Aplikacja działa teraz stabilniej.
+Teraz po polsku i w 23 innych językach.
+W Ustawieniach zobaczysz, co planujemy.
+Odpowiedzi na Twoje opinie w aplikacji.
+Prywatność i pomoc prosto w aplikacji.
 
 ### 앱스토어 (Swedish, sv)
 
-Läs svaren på din feedback i appen.
+Nu på svenska och 23 andra språk.
+Se i Inställningar vad som är på gång.
+Läs svar på din feedback i appen.
 Öppna integritet och support i appen.
-Appen går nu ännu stabilare.
 
 ### 앱스토어 (Turkish, tr)
 
-Geri bildirim yanıtlarını okuyun.
-Gizlilik ve destek sayfaları uygulamada.
-Uygulama daha kararlı çalışıyor.
+Artık Türkçe ve 23 dilde daha.
+Yakında gelecekler Ayarlar’da.
+Geri bildirim yanıtları uygulamada.
+Gizlilik ve destek uygulamanın içinde.
 
 ## 1.0.4
 

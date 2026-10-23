@@ -122,9 +122,17 @@ enum CalendarService {
 
     // MARK: - 전용 달력
 
+    /// 아이 전용 달력 이름 (기기 언어로). 한국어는 예전과 같은 "지호 어린이집".
+    static func calendarName(for childName: String) -> String {
+        let trimmed = childName.trimmingCharacters(in: .whitespaces)
+        return trimmed.isEmpty
+            ? String(localized: "어린이집", comment: "애플 캘린더에 만드는 아이 전용 달력 이름")
+            : String(localized: "\(trimmed) 어린이집", comment: "애플 캘린더에 만드는 아이 전용 달력 이름")
+    }
+
     private static func targetCalendar(in store: EKEventStore, childName: String) throws -> EKCalendar {
         let trimmed = childName.trimmingCharacters(in: .whitespaces)
-        let name = trimmed.isEmpty ? "어린이집" : "\(trimmed) 어린이집"
+        let name = calendarName(for: trimmed)
 
         if let existing = store.calendars(for: .event).first(where: { $0.title == name }) {
             return existing

@@ -20,7 +20,10 @@ PROJECT="CalendarSnap.xcodeproj"
 # 시뮬레이터는 **가장 최신 iOS 런타임의 iPhone** 으로 고른다.
 # `grep iPhone | head -1` 로 고르면 구버전 런타임 기기가 먼저 잡혀
 # "Unable to find a destination matching..." (exit 70) 로 죽는다.
-DEST_ID="$(xcrun simctl list devices available --json | python3 -c '
+# PREDEPLOY_SIM_ID 로 시뮬레이터를 직접 고를 수 있다 (여러 작업이 한 Mac 을 함께 쓸 때).
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+DEST_ID="${PREDEPLOY_SIM_ID:-}"
+[ -n "$DEST_ID" ] || DEST_ID="$(xcrun simctl list devices available --json | python3 -c '
 import json, re, sys
 best = None
 for runtime, devices in json.load(sys.stdin)["devices"].items():

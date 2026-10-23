@@ -60,7 +60,7 @@ SHOTS = {
         ("04-reminders.png", "dark", "前日の夜に<br>持ち物をお知らせ", "お弁当も体操服も、もう忘れません"),
     ],
     "ru": [
-        ("01-scan.png", "hero-bleed", "Одно фото объявления —<br>и месяц в порядке", "Даты и что взять — считаем сами"),
+        ("01-scan.png", "hero-bleed", "Одно фото —<br>и месяц в порядке", "Даты и что взять — считаем сами"),
         ("02-events.png", "left-text", "Проверьте<br>перед сохранением", "Название, дату и заметки можно поправить"),
         ("03-calendar.png", "text-bottom", "Каждому ребёнку —<br>свой цвет", "Планы братьев и сестёр не перепутаются"),
         ("04-reminders.png", "dark", "Напоминание<br>накануне вечером", "Обед и форму больше не забудете"),
@@ -120,7 +120,7 @@ SHOTS = {
         ("04-reminders.png", "dark", "En påmindelse<br>aftenen før", "Glem aldrig madpakken eller gymnastiktøjet"),
     ],
     "el": [
-        ("01-scan.png", "hero-bleed", "Μία φωτογραφία ανακοίνωσης,<br>έτοιμος ο μήνας", "Ημερομηνίες και πράγματα που πρέπει να φέρεις"),
+        ("01-scan.png", "hero-bleed", "Μία φωτογραφία,<br>έτοιμος ο μήνας", "Ημερομηνίες και πράγματα που πρέπει να φέρεις"),
         ("02-events.png", "left-text", "Έλεγξε μία φορά<br>πριν αποθηκεύσεις", "Άλλαξε τίτλο, ημερομηνία και σημειώσεις εύκολα"),
         ("03-calendar.png", "text-bottom", "Κάθε παιδί<br>με το χρώμα του", "Τα προγράμματα των αδελφών δεν μπερδεύονται"),
         ("04-reminders.png", "dark", "Υπενθύμιση το<br>προηγούμενο βράδυ", "Μην ξεχάσεις ποτέ το κολατσιό και τα αθλητικά"),
@@ -145,15 +145,15 @@ SHOTS = {
     ],
     "nl": [
         ("01-scan.png", "hero-bleed", "Eén foto van de brief,<br>de hele maand klaar", "Data en wat er mee moet, voor je gelezen"),
-        ("02-events.png", "left-text", "Controleer het nog<br>één keer vóór het bewaren", "Titel, datum en notities pas je met één tik aan"),
+        ("02-events.png", "left-text", "Nog één keer<br>checken vóór bewaren", "Titel, datum en notities pas je met één tik aan"),
         ("03-calendar.png", "text-bottom", "Elk kind<br>zijn eigen kleur", "Afspraken van broertjes en zusjes lopen niet door elkaar"),
         ("04-reminders.png", "dark", "Een herinnering<br>de avond ervoor", "Nooit meer de lunchtrommel of gymkleren vergeten"),
     ],
     "pl": [
-        ("01-scan.png", "hero-bleed", "Jedno zdjęcie ogłoszenia,<br>cały miesiąc gotowy", "Daty i rzeczy do zabrania odczytamy za Ciebie"),
+        ("01-scan.png", "hero-bleed", "Jedno zdjęcie,<br>cały miesiąc gotowy", "Daty i rzeczy do zabrania odczytamy za Ciebie"),
         ("02-events.png", "left-text", "Sprawdź raz<br>przed zapisaniem", "Tytuł, datę i notatki poprawisz jednym dotknięciem"),
         ("03-calendar.png", "text-bottom", "Każde dziecko<br>ma swój kolor", "Plany rodzeństwa się nie mieszają"),
-        ("04-reminders.png", "dark", "Przypomnienie<br>wieczorem dzień wcześniej", "Nigdy nie zapomnisz śniadania ani stroju"),
+        ("04-reminders.png", "dark", "Przypomnienie<br>dzień wcześniej", "Nigdy nie zapomnisz śniadania ani stroju"),
     ],
     "sv": [
         ("01-scan.png", "hero-bleed", "En bild på lappen,<br>hela månaden klar", "Datum och saker som ska med läses åt dig"),
