@@ -35,8 +35,12 @@ struct ContentView: View {
     @State private var newChildName = ""
     // 자동 아이 추정으로 인한 선택 변경 시, 전체 재배정을 건너뛰기 위한 플래그
     @State private var suppressRestamp = false
-    // 가족 초대(CloudKit 공유) 화면
-    @State private var showFamilyShare = false
+    // 가족 공유 상태 (참여/종료 안내 메시지 표시용)
+    @ObservedObject private var syncManager = FamilySyncManager.shared
+    // 저장된 일정 중 다른 반 전용으로 보이는 것 정리 제안
+    @State private var otherClassEvents: [ScannedEvent] = []
+    @State private var otherClassNames: Set<String> = []
+    @State private var showClassCleanup = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -55,6 +59,31 @@ struct ContentView: View {
         .onOpenURL { url in
             handleIncomingFile(url)
         }
+        // 가족 공유로 받은 원격 변경을 화면·알림·캘린더에 반영
+        .onReceive(NotificationCenter.default.publisher(for: .familyDataDidChange)) { _ in
+            applyFamilyDataChange()
+        }
+        // 공유 참여/종료 등 일정 공유 안내
+        .alert("일정 공유", isPresented: .constant(syncManager.infoMessage != nil)) {
+            Button("확인") { syncManager.infoMessage = nil }
+        } message: {
+            Text(syncManager.infoMessage ?? "")
+        }
+        // 앱 시작 시 이미 저장돼 있는 다른 반 일정을 발견하면 정리 제안
+        .onAppear {
+            offerOtherClassCleanup()
+        }
+        .confirmationDialog("다른 반 일정 정리", isPresented: $showClassCleanup, titleVisibility: .visible) {
+            Button("일정 \(otherClassEvents.count)개 삭제", role: .destructive) {
+                removeOtherClassEvents()
+            }
+            Button("남겨두기", role: .cancel) {
+                otherClassEvents = []
+                otherClassNames = []
+            }
+        } message: {
+            Text("등록된 아이의 반이 아닌 \(otherClassSummary) 일정 \(otherClassEvents.count)개가 저장돼 있어요. 삭제할까요?")
+        }
         // 설정 시트와 오류 알림은 어느 탭에서든 열리도록 탭 공통 레벨에 부착
         .sheet(isPresented: $showSettings, onDismiss: {
             settings.childNames = settings.childNames
@@ -63,6 +92,7 @@ struct ContentView: View {
             ReminderSettingsStore.save(settings)
             adoptOrphanEventsIfPossible()
             refreshScanned()   // 반이 바뀌었을 수 있으니 필터 재적용
+            offerOtherClassCleanup()   // 반 입력/변경 시 기존 저장분도 정리 제안
         }) {
             SettingsView(settings: $settings,
                          childEventCount: { name in
@@ -85,21 +115,6 @@ struct ContentView: View {
         // 올린 사진 크게 보기 (스와이프 + 핀치 줌)
         .fullScreenCover(isPresented: $showPhotoViewer) {
             PhotoViewerView(images: scannedImages, index: photoViewerIndex)
-        }
-        // 가족 공유로 상대가 바꾼 일정이 내려오면 화면을 다시 읽어온다
-        .onReceive(NotificationCenter.default.publisher(for: FamilyShareService.didChangeNotification)) { _ in
-            savedEvents = EventStore.load()
-            settings = ReminderSettingsStore.load()
-        }
-        .sheet(isPresented: $showFamilyShare) {
-            NavigationStack {
-                FamilyShareView()
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("완료") { showFamilyShare = false }
-                        }
-                    }
-            }
         }
         .sheet(isPresented: $showAddEvent) {
             AddEventView(children: registeredChildren,
@@ -159,6 +174,52 @@ struct ContentView: View {
         EventStore.save(savedEvents)
     }
 
+    // MARK: - 다른 반 일정 정리
+
+    /// 저장된 일정 중 "OO반" 표기가 명시된, 등록된 아이들 반이 아닌 일정을 찾아 삭제를 제안.
+    private func offerOtherClassCleanup() {
+        let myClasses = registeredChildren.compactMap { settings.childClasses[$0] }
+        guard !myClasses.isEmpty else { return }
+        let found = EventParser.otherClassEvents(in: savedEvents, myClasses: myClasses)
+        guard !found.events.isEmpty else { return }
+        otherClassEvents = found.events
+        otherClassNames = found.classes
+        showClassCleanup = true
+    }
+
+    private var otherClassSummary: String {
+        otherClassNames.sorted().prefix(3).map { String(localized: "\($0)반") }.joined(separator: "·")
+    }
+
+    private func removeOtherClassEvents() {
+        let ids = Set(otherClassEvents.map(\.id))
+        otherClassEvents = []
+        otherClassNames = []
+        guard !ids.isEmpty else { return }
+        savedEvents.removeAll { ids.contains($0.id) }
+        EventStore.save(savedEvents)
+        Task {
+            if await NotificationManager.authorizationStatus() == .authorized {
+                await NotificationManager.schedule(for: savedEvents, settings: settings)
+            }
+        }
+    }
+
+    /// 가족 공유 원격 변경 반영: 로컬 스토어를 다시 읽고 알림·캘린더 미러링을 갱신.
+    private func applyFamilyDataChange() {
+        savedEvents = EventStore.load()
+        settings = ReminderSettingsStore.load()
+        refreshScanned()
+        Task {
+            if await NotificationManager.authorizationStatus() == .authorized {
+                await NotificationManager.schedule(for: savedEvents, settings: settings)
+            }
+            if settings.mirrorToCalendar, await CalendarService.requestAccess() {
+                _ = try? CalendarService.addEvents(savedEvents)   // 기존 중복 제외 로직 활용
+            }
+        }
+    }
+
     /// 다른 아이일정 사용자가 공유한 데이터 파일 가져오기.
     private func handleIncomingFile(_ url: URL) {
         guard url.pathExtension.lowercased() == EventSharing.packageExtension else { return }
@@ -175,8 +236,7 @@ struct ContentView: View {
             ReminderSettingsStore.save(settings)
 
             // 일정 병합 (중복 제외)
-            let existingKeys = Set(savedEvents.map(dedupKey))
-            let fresh = package.events.filter { !existingKeys.contains(dedupKey($0)) }
+            let fresh = newEvents(package.events, excluding: savedEvents)
             savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
             EventStore.save(savedEvents)
 
@@ -295,9 +355,6 @@ struct ContentView: View {
                 .navigationTitle("달력")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        shareMenu
-                    }
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             showSettings = true
@@ -307,32 +364,6 @@ struct ContentView: View {
                     }
                 }
         }
-    }
-
-    /// 배우자·가족에게 일정 공유: 아이일정 데이터 / 캘린더 파일(.ics) / 텍스트 요약.
-    private var shareMenu: some View {
-        Menu {
-            Button {
-                showFamilyShare = true
-            } label: {
-                Label("가족 초대해서 함께 보기", systemImage: "person.2.badge.plus")
-            }
-            Divider()
-            ShareLink(item: ScheduleDataFile(events: savedEvents, children: settings.childNames),
-                      preview: SharePreview("아이일정 데이터", image: Image(systemName: "square.and.arrow.down.on.square"))) {
-                Label("아이일정 사용자에게 보내기", systemImage: "person.crop.circle.badge.plus")
-            }
-            ShareLink(item: EventICSFile(events: savedEvents),
-                      preview: SharePreview("아이일정 캘린더", image: Image(systemName: "calendar"))) {
-                Label("캘린더 파일로 공유 (.ics)", systemImage: "calendar.badge.plus")
-            }
-            ShareLink(item: EventSharing.textSummary(for: savedEvents)) {
-                Label("텍스트로 공유", systemImage: "text.bubble")
-            }
-        } label: {
-            Image(systemName: "square.and.arrow.up")
-        }
-        .disabled(savedEvents.isEmpty)
     }
 
     // MARK: - Sections
@@ -623,8 +654,7 @@ struct ContentView: View {
             if e.childName.isEmpty { e.childName = assignChild }
             return e
         }
-        let existingKeys = Set((savedEvents + scannedAll).map(dedupKey))
-        let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
+        let fresh = newEvents(stamped, excluding: savedEvents + scannedAll)
         scannedAll = (scannedAll + fresh).sorted { $0.date < $1.date }
         refreshScanned()
         return fresh.count
@@ -649,8 +679,7 @@ struct ContentView: View {
         }
 
         // 저장소에 병합 (중복 제외)
-        let existingKeys = Set(savedEvents.map(dedupKey))
-        let fresh = stamped.filter { !existingKeys.contains(dedupKey($0)) }
+        let fresh = newEvents(stamped, excluding: savedEvents)
         savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
         EventStore.save(savedEvents)   // 위젯 갱신
 
@@ -682,6 +711,7 @@ struct ContentView: View {
                     let result = try CalendarService.addEvents(savedEvents)
                     var msg = String(localized: "캘린더 \(result.added)개 추가")
                     if result.skipped > 0 { msg += String(localized: " (중복 \(result.skipped)개 제외)") }
+                    if result.removed > 0 { msg += String(localized: " · 쌓여 있던 중복 \(result.removed)개 정리") }
                     messages.append(msg)
                 } catch {
                     messages.append(String(localized: "캘린더 추가 실패"))
@@ -696,8 +726,15 @@ struct ContentView: View {
         withAnimation { savedBanner = true }
     }
 
-    private func dedupKey(_ event: ScannedEvent) -> String {
-        "\(event.title)|\(event.date.timeIntervalSince1970)|\(event.childName)"
+    /// `candidates` 중 `existing`이나 앞선 후보와 중복(`ScannedEvent.isDuplicate`)이 아닌 것만.
+    private func newEvents(_ candidates: [ScannedEvent], excluding existing: [ScannedEvent]) -> [ScannedEvent] {
+        var kept = existing
+        var fresh: [ScannedEvent] = []
+        for event in candidates where !kept.contains(where: { $0.isDuplicate(of: event) }) {
+            kept.append(event)
+            fresh.append(event)
+        }
+        return fresh
     }
 
     /// 아이 삭제 확정 시 연쇄 정리: 그 아이의 일정·프로필 사진 삭제 + 알림 재예약.
@@ -739,8 +776,12 @@ struct ContentView: View {
     #endif
 
     /// 선택된 아이의 반에 맞게 추출 목록 필터 (다른 반 전용 견학 등 제외).
+    /// 아이가 1명이라 선택 UI가 없는 경우에도 첫 아이의 반으로 필터.
     private func refreshScanned() {
-        let className = settings.className(for: selectedChild)
+        let effectiveChild = selectedChild.isEmpty
+            ? (registeredChildren.first ?? "")
+            : selectedChild
+        let className = settings.className(for: effectiveChild)
         scanned = className.isEmpty
             ? scannedAll
             : EventParser.filterForClass(scannedAll, className: className)

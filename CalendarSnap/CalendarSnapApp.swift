@@ -1,11 +1,9 @@
-import CloudKit
 import SwiftUI
-import UIKit
 import LeeoKit
 
 @main
 struct CalendarSnapApp: App {
-    // 가족 초대 링크(CKShare) 수락은 씬 델리게이트로만 전달돼서 어댑터가 필요하다.
+    // CloudKit 공유 초대 수락(userDidAcceptCloudKitShareWith)을 받기 위한 델리게이트
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @Environment(\.scenePhase) private var scenePhase
 
@@ -15,6 +13,26 @@ struct CalendarSnapApp: App {
         #if DEBUG
         ScreenshotDemo.seedIfRequested()
         #endif
+
+        // 로컬 저장 → 가족 공유 업로드 훅 연결 (위젯 프로세스에는 없음)
+        EventStore.onSave = { events in
+            Task { @MainActor in
+                FamilySyncManager.shared.enqueueEventsSnapshot(events)
+            }
+        }
+        ReminderSettingsStore.onSave = { settings in
+            Task { @MainActor in
+                FamilySyncManager.shared.enqueueChildrenSnapshot(settings)
+            }
+        }
+        ChildAvatarStore.onChange = { name in
+            Task { @MainActor in
+                FamilySyncManager.shared.enqueueAvatarChange(for: name)
+            }
+        }
+        Task { @MainActor in
+            FamilySyncManager.shared.start()
+        }
     }
 
     var body: some Scene {
@@ -23,36 +41,11 @@ struct CalendarSnapApp: App {
                 // 사용량이 쌓이면 "즐겁게 쓰고 계신가요?" → 만족 시 리뷰 / 아쉬움 시 피드백
                 .leeoSatisfactionCheck(CalendarSnapSpec.self)
         }
-        // 앱을 열 때마다 가족 공유 중인 일정을 맞춘다 (공유 중이 아니면 아무 일도 하지 않음)
         .onChange(of: scenePhase) { _, phase in
-            guard phase == .active else { return }
-            Task { await FamilyShareService.shared.syncIfNeeded() }
+            // 사일런트 푸시를 못 받는 경우(시뮬레이터 등) 대비 — 포그라운드 진입 시 수동 동기화
+            if phase == .active {
+                FamilySyncManager.shared.fetchChangesNow()
+            }
         }
-    }
-}
-
-/// 씬 델리게이트를 끼워 넣기 위한 최소한의 앱 델리게이트.
-final class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication,
-                     configurationForConnecting connectingSceneSession: UISceneSession,
-                     options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        let configuration = UISceneConfiguration(name: nil, sessionRole: connectingSceneSession.role)
-        configuration.delegateClass = ShareSceneDelegate.self
-        return configuration
-    }
-
-    /// 씬을 쓰지 않는 경로로 들어오는 경우까지 대비.
-    func application(_ application: UIApplication,
-                     userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShare.Metadata) {
-        Task { await FamilyShareService.shared.acceptShare(cloudKitShareMetadata) }
-    }
-}
-
-/// 초대 링크를 눌러 앱이 열렸을 때 공유를 수락한다.
-/// (화면 구성은 SwiftUI가 그대로 담당 — 여기서는 수락만 처리)
-final class ShareSceneDelegate: NSObject, UIWindowSceneDelegate {
-    func windowScene(_ windowScene: UIWindowScene,
-                     userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShare.Metadata) {
-        Task { await FamilyShareService.shared.acceptShare(cloudKitShareMetadata) }
     }
 }

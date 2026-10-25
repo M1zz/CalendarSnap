@@ -32,9 +32,13 @@
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
 		AA0000000000000000000619 /* ReminderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050E /* ReminderSettings.swift */; };
-		AA000000000000000000061A /* FamilyShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000518 /* FamilyShareService.swift */; };
-		AA000000000000000000061B /* FamilyShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000519 /* FamilyShareView.swift */; };
 		CA361DD2ED26E20A615CF1A0 /* CalendarSnapRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */; };
+		AA0000000000000000000620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000518 /* AppDelegate.swift */; };
+		AA0000000000000000000621 /* CloudSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000519 /* CloudSharingView.swift */; };
+		AA0000000000000000000622 /* FamilySharingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051A /* FamilySharingSection.swift */; };
+		AA0000000000000000000623 /* FamilySyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051B /* FamilySyncManager.swift */; };
+		AA0000000000000000000624 /* RecordMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051C /* RecordMapper.swift */; };
+		AA0000000000000000000625 /* SyncStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051D /* SyncStateStore.swift */; };
 		E1C5F672852FF09136BD4D9B /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF95EE5532C71DF5DD453D9E /* LeeoKit */; };
 		AA0000000000000000000701 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000700 /* InfoPlist.xcstrings */; };
 		AA0000000000000000000703 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000702 /* Localizable.xcstrings */; };
@@ -92,8 +96,12 @@
 		AA0000000000000000000515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0000000000000000000516 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		AA0000000000000000000517 /* PhotoViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerView.swift; sourceTree = "<group>"; };
-		AA0000000000000000000518 /* FamilyShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShareService.swift; sourceTree = "<group>"; };
-		AA0000000000000000000519 /* FamilyShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShareView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0000000000000000000519 /* CloudSharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSharingView.swift; sourceTree = "<group>"; };
+		AA000000000000000000051A /* FamilySharingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySharingSection.swift; sourceTree = "<group>"; };
+		AA000000000000000000051B /* FamilySyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySyncManager.swift; sourceTree = "<group>"; };
+		AA000000000000000000051C /* RecordMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMapper.swift; sourceTree = "<group>"; };
+		AA000000000000000000051D /* SyncStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStateStore.swift; sourceTree = "<group>"; };
 		C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapSpec.swift; sourceTree = "<group>"; };
 		AA0000000000000000000700 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		AA0000000000000000000702 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 			children = (
 				AA0000000000000000000500 /* CalendarSnapApp.swift */,
 				AA0000000000000000000501 /* ContentView.swift */,
+				AA0000000000000000000106 /* FamilySharing */,
 				AA0000000000000000000502 /* OCRService.swift */,
 				AA0000000000000000000503 /* EventParser.swift */,
 				AA000000000000000000050F /* CalendarGridParser.swift */,
@@ -150,8 +159,6 @@
 				AA000000000000000000050D /* SettingsView.swift */,
 				AA0000000000000000000510 /* MonthCalendarView.swift */,
 				AA0000000000000000000511 /* EventSharing.swift */,
-				AA0000000000000000000518 /* FamilyShareService.swift */,
-				AA0000000000000000000519 /* FamilyShareView.swift */,
 				AA0000000000000000000512 /* ChildAvatarStore.swift */,
 				AA0000000000000000000513 /* ChildAvatarView.swift */,
 				AA0000000000000000000516 /* AddEventView.swift */,
@@ -186,6 +193,19 @@
 				AA000000000000000000050E /* ReminderSettings.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000106 /* FamilySharing */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000518 /* AppDelegate.swift */,
+				AA0000000000000000000519 /* CloudSharingView.swift */,
+				AA000000000000000000051A /* FamilySharingSection.swift */,
+				AA000000000000000000051B /* FamilySyncManager.swift */,
+				AA000000000000000000051C /* RecordMapper.swift */,
+				AA000000000000000000051D /* SyncStateStore.swift */,
+			);
+			path = FamilySharing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,12 +352,16 @@
 				AA000000000000000000060A /* CalendarGridParser.swift in Sources */,
 				AA000000000000000000060B /* MonthCalendarView.swift in Sources */,
 				AA000000000000000000060C /* EventSharing.swift in Sources */,
-				AA000000000000000000061A /* FamilyShareService.swift in Sources */,
-				AA000000000000000000061B /* FamilyShareView.swift in Sources */,
 				AA000000000000000000060D /* ChildAvatarStore.swift in Sources */,
 				AA000000000000000000060E /* ChildAvatarView.swift in Sources */,
 				AA0000000000000000000610 /* AddEventView.swift in Sources */,
 				AA0000000000000000000611 /* PhotoViewerView.swift in Sources */,
+				AA0000000000000000000620 /* AppDelegate.swift in Sources */,
+				AA0000000000000000000621 /* CloudSharingView.swift in Sources */,
+				AA0000000000000000000622 /* FamilySharingSection.swift in Sources */,
+				AA0000000000000000000623 /* FamilySyncManager.swift in Sources */,
+				AA0000000000000000000624 /* RecordMapper.swift in Sources */,
+				AA0000000000000000000625 /* SyncStateStore.swift in Sources */,
 				16D2C986A796DAD4B1446BF9 /* CalendarSnapSpec.swift in Sources */,
 				CA361DD2ED26E20A615CF1A0 /* CalendarSnapRoadmap.swift in Sources */,
 			);
@@ -371,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CalendarSnap/CalendarSnap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -389,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.CalendarSnap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -407,7 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CalendarSnap/CalendarSnap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -425,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.CalendarSnap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -442,7 +466,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ScheduleWidget/ScheduleWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScheduleWidget/Info.plist;
@@ -453,7 +477,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.CalendarSnap.ScheduleWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -471,7 +495,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ScheduleWidget/ScheduleWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScheduleWidget/Info.plist;
@@ -482,7 +506,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.CalendarSnap.ScheduleWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -17,11 +17,7 @@
 			</array>
 		</dict>
 	</array>
-	<key>CKSharingSupported</key>
-	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
-	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<false/>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
@@ -46,6 +42,14 @@
 				</array>
 			</dict>
 		</dict>
+	</array>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<false/>
+	<key>CKSharingSupported</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>
