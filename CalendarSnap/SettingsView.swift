@@ -57,7 +57,9 @@ struct SettingsView: View {
                     Text("동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요.")
                 }
 
-                FamilySharingSection()
+                if !sharingBelowReminders {
+                    FamilySharingSection()
+                }
 
                 Section {
                     ForEach(ReminderOption.allCases) { option in
@@ -88,6 +90,10 @@ struct SettingsView: View {
                     }
                 } footer: {
                     Text("켜면 \(calendarNamesDescription) 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다.")
+                }
+
+                if sharingBelowReminders {
+                    FamilySharingSection()
                 }
 
                 Section {
@@ -148,6 +154,15 @@ struct SettingsView: View {
                 }
             }
         }
+    }
+
+    /// 스토어 스크린샷(-demoScreen settings)은 알림 시점이 주인공이라, 일정 공유 섹션을 그 아래로 내린다.
+    private var sharingBelowReminders: Bool {
+        #if DEBUG
+        return ScreenshotDemo.isOn && ScreenshotDemo.screen == "settings"
+        #else
+        return false
+        #endif
     }
 
     private var calendarNamesDescription: String {

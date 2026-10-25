@@ -60,11 +60,12 @@
 <p>Barneplan («appen») tar personvernet ditt på alvor.
 Appen <strong>samler ikke inn og sender ikke personopplysninger som bilder, avtaler eller opplysninger om barna til utvikleren.</strong>
 Slike data behandles og lagres i utgangspunktet bare på enheten din.
-Det eneste utvikleren mottar, er anonym bruksstatistikk og feilrapporter som ikke kan knyttes til deg (se punkt 4).</p>
+Det eneste utvikleren mottar, er <strong>anonym bruksstatistikk og feilrapporter</strong> som ikke kan knyttes til deg (se punkt 4),
+og <strong>tilbakemeldinger du selv sender</strong> fra innstillingene (se punkt 5).</p>
 
-<p>Bare hvis du selv <strong>slår på «Del med familien» og inviterer familien</strong>,
+<p>Bare hvis du selv <strong>inviterer andre under «Deling av avtaler»</strong>,
 lagres avtalene i <strong>din egen iCloud-konto</strong> og deles med dem du har invitert.
-Se punkt 3 for detaljer. Deling med familien er valgfritt, og er det slått av, forlater verken bilder, avtaler eller opplysninger om barna enheten.</p>
+Se punkt 3 for detaljer. Deling av avtaler er valgfritt, og bruker du det ikke, forlater verken bilder, avtaler eller opplysninger om barna enheten.</p>
 
 <h2>1. Hvilke opplysninger som behandles</h2>
 <p>Appen samler ikke inn personopplysninger. Opplysningene nedenfor lagres <strong>bare på enheten</strong>.
@@ -72,7 +73,7 @@ Se punkt 3 for detaljer. Deling med familien er valgfritt, og er det slått av, 
 <ul>
   <li><strong>Bilder</strong>: Bilder av kalendere og beskjeder analyseres bare på enheten med Apples Vision-rammeverk og sendes aldri videre. Originalbildet som ble analysert, lagres ikke i appen.</li>
   <li><strong>Avtaler</strong>: Avtalene som hentes ut (tittel, dato, notat), lagres bare i appens eget lagringsområde på enheten (App Group).</li>
-  <li><strong>Barneprofiler</strong>: Barnets navn og profilbilde lagres bare på enheten. (Profilbildet deles ikke, selv om deling med familien er slått på.)</li>
+  <li><strong>Barneprofiler</strong>: Barnets navn og profilbilde lagres bare på enheten. (Når plandeling er slått på, deles barnets navn, opplysninger om avdeling/klasse og profilbilde med dem du har invitert.)</li>
 </ul>
 
 <h2>2. Hvorfor appen ber om tilgang</h2>
@@ -83,48 +84,53 @@ Se punkt 3 for detaljer. Deling med familien er valgfritt, og er det slått av, 
   <li><strong>Varslinger</strong>: Lokale påminnelser kvelden før og samme dag (sendes direkte fra enheten, ingen push-server)</li>
 </ul>
 
-<h2>3. Del med familien (valgfritt, iCloud)</h2>
-<p>Når du inviterer partneren din eller andre i familien under Innstillinger &gt; Del med familien, kan både du og de du inviterer, se og redigere de samme avtalene.
+<h2>3. Deling av avtaler (valgfritt, iCloud)</h2>
+<p>Når du inviterer partneren din, besteforeldre, barnevakten eller andre med «Inviter til deling» under Innstillinger &gt; Deling av avtaler, kan både du og de du inviterer, se og redigere de samme avtalene. Dette har ingenting med Apples Familiedeling å gjøre.
 Funksjonen bruker Apples iCloud-deling (CloudKit), og utvikleren verken ser eller lagrer det som deles.</p>
 <ul>
-  <li><strong>Dette deles</strong>: avtalenes tittel, dato, klokkeslett, om de varer hele dagen, notatet om hva som skal med og barnets navn, i tillegg til listen over barn.</li>
-  <li><strong>Dette deles ikke</strong>: bilder av kalendere og beskjeder, barnas profilbilder og innstillingene for påminnelser.</li>
+  <li><strong>Dette deles</strong>: avtalenes tittel, dato, klokkeslett, om de varer hele dagen, notatet om hva som skal med og barnets navn, i tillegg til listen over barn med opplysninger om avdeling/klasse og profilbilder.</li>
+  <li><strong>Dette deles ikke</strong>: bilder av kalendere og beskjeder og innstillinger som gjelder hver enkelt enhet, for eksempel når påminnelsene kommer.</li>
   <li><strong>Lagringssted</strong>: den private iCloud-databasen til den som inviterte (eieren). Apples personvernerklæring gjelder i tillegg.</li>
   <li><strong>Tilgang</strong>: Bare personer som eieren selv har invitert med invitasjonslenken, og som har takket ja, får tilgang. Lenken gjøres aldri offentlig.</li>
-  <li><strong>Avslutte</strong>: Du kan når som helst slå av delingen under Innstillinger &gt; Del med familien med «Stopp deling» (eier) eller «Forlat deling» (deltaker).
+  <li><strong>Avslutte</strong>: Du kan når som helst slå av delingen under Innstillinger &gt; Deling av avtaler med «Stopp deling» (den som inviterte) eller «Forlat deling» (de inviterte).
       Etterpå synkroniseres ingenting mer, men avtalene hver enkelt allerede har fått, blir liggende på sin egen enhet.</li>
 </ul>
 
-<h2>4. Anonym bruksstatistikk</h2>
-<p>For å vite hvor mange som bruker appen og for å kunne rette feil, sendes følgende anonyme statistikk til Apples iCloud (CloudKit). Bare utvikleren kan lese den.</p>
+<h2>4. Anonym bruksstatistikk og feilrapporter</h2>
+<p>For å vite hvor mange som bruker appen og for å kunne rette feil, sendes følgende anonyme statistikk til utviklerens lagringsområde i Apples iCloud (CloudKit). Bare utvikleren kan lese den.</p>
 <ul>
-  <li>En tilfeldig ID som lages ved installasjon (den er ikke knyttet til enheten, Apple-ID-en eller andre apper, og den endres hvis du installerer appen på nytt)</li>
+  <li>En tilfeldig ID som lages ved installasjon (den er ikke knyttet til deg, Apple-ID-en, enheten eller andre apper, og den endres hvis du installerer appen på nytt)</li>
   <li>Appversjon, iOS-versjon og region- og språkinnstilling</li>
   <li>Hvor mange ganger og hvilke dager appen er åpnet, installasjonsdato og antall dager siden installasjon</li>
-  <li>Diagnoserapport når appen fryser eller krasjer (appversjon, iOS-versjon, enhetstype og teknisk informasjon om feilen)</li>
+  <li>Navn på hendelser i appen (for eksempel at et spørsmål om hvor fornøyd du er, eller en oppfordring til å vurdere appen er vist). Det du har skrevet, er ikke med.</li>
+  <li>Diagnoserapport når appen fryser eller krasjer (enhetstype og teknisk informasjon om feilen)</li>
 </ul>
 <p>Navn, kontaktopplysninger, posisjon og innhold du har lagt inn, som bilder, avtaler og opplysninger om barna, er ikke med. Statistikken sendes bare når du er logget på iCloud.</p>
 
 <h2>5. Utlevering til tredjeparter og databehandlere</h2>
-<p>Appen selger ikke personopplysninger og gir dem ikke videre til tredjeparter for reklame eller analyse.
+<p>Appen selger ikke personopplysninger og gir dem ikke videre til tredjeparter for reklameformål.
 Appen bruker ingen reklame-SDK-er, eksterne analysetjenester eller servere som drives av utvikleren.
-Apples iCloud-infrastruktur brukes bare når deling med familien er slått på, og når den anonyme statistikken i punkt 4 sendes.</p>
+Apples iCloud-infrastruktur (CloudKit) brukes bare når plandeling er slått på, og når den anonyme statistikken og feilrapportene i punkt 4 sendes.</p>
+<p><strong>Tilbakemeldinger</strong>: Tilbakemeldinger sendes bare når du selv sender dem med «Send tilbakemelding» i innstillingene.
+Kategorien du velger og teksten du skriver, sendes sammen med appversjon, iOS-versjon, enhetstype og språkinnstillingen på enheten til utviklerens lagringsområde i Apple CloudKit.
+Navn og e-postadresse sendes bare med hvis du selv fyller dem inn for å få svar. Avtaler, opplysninger om barna og bilder er ikke med.
+Tilbakemeldingene brukes bare til å svare deg og forbedre appen. Vil du at de skal slettes, kan du si fra til kontaktadressen nedenfor.</p>
 
 <h2>6. Lagring og sletting</h2>
 <p>Bilder, avtaler og opplysninger om barna ligger på enheten, så når du sletter appen, slettes alle data appen har lagret.
-Har du brukt deling med familien og eieren velger «Stopp deling», får de inviterte ikke lenger nye avtaler.
-Delte data i iCloud ryddes bort når eieren stopper delingen eller sletter appen.
+Har du brukt plandeling og den som inviterte velger «Stopp deling», får de inviterte ikke lenger nye avtaler.
+Delte data i iCloud ryddes bort når den som inviterte, stopper delingen eller sletter appen.
 Avtaler som er lagt inn i Apple-kalenderen, kan du administrere og slette selv i Kalender-appen i iOS.</p>
 
 <h2>7. Barns personopplysninger</h2>
 <p>Appen er et verktøy for foreldre og foresatte og samler ikke inn personopplysninger om barn.
 Navn og bilder av barna som foreldrene legger inn, sendes ikke til utvikleren.
-Er deling med familien slått på, deles barnets navn og avtaler bare med familiemedlemmer som forelderen selv har invitert.</p>
+Er plandeling slått på, deles barnets navn og avtaler bare med personer som forelderen selv har invitert, og som har takket ja.</p>
 
 <h2>8. Kontakt</h2>
 <p>Har du spørsmål om denne personvernerklæringen, kan du kontakte oss her.</p>
 <ul>
-  <li>E-post: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-post: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Hjelpeside: <a href="support.html">Barneplan – hjelp</a></li>
 </ul>
 

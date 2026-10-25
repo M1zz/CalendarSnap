@@ -60,11 +60,12 @@
 <p>Aplikace „Rozvrh školky“ (dále jen „aplikace“) si vašeho soukromí váží.
 Aplikace <strong>neshromažďuje ani neodesílá vývojáři osobní údaje, jako jsou fotky, akce nebo informace o dětech.</strong>
 Tato data se standardně zpracovávají a ukládají pouze ve vašem zařízení.
-Vývojáři se dostanou jen anonymní statistiky používání a hlášení chyb, ze kterých nelze poznat, o koho jde (viz bod 4).</p>
+Vývojáři se dostanou jen <strong>anonymní statistiky používání a hlášení chyb</strong>, ze kterých nelze poznat, o koho jde (viz bod 4),
+a <strong>zpětná vazba, kterou sami odešlete</strong> z nastavení (viz bod 5).</p>
 
-<p>Výjimkou je situace, kdy <strong>sami zapnete „Sdílení s rodinou“ a pozvete členy rodiny</strong>.
+<p>Výjimkou je situace, kdy <strong>sami pozvete další lidi v části „Sdílení událostí“</strong>.
 Pak se akce ukládají <strong>do vašeho vlastního účtu iCloud</strong> a sdílejí se s pozvanými.
-Podrobnosti najdete v bodě 3. Sdílení s rodinou je volitelné — pokud ho nezapnete, fotky, akce ani informace o dětech zařízení neopustí.</p>
+Podrobnosti najdete v bodě 3. Sdílení událostí je volitelné — pokud ho nepoužijete, fotky, akce ani informace o dětech zařízení neopustí.</p>
 
 <h2>1. Jaké údaje zpracováváme</h2>
 <p>Aplikace osobní údaje neshromažďuje. Následující údaje se ukládají <strong>výhradně ve vašem zařízení</strong>.
@@ -72,7 +73,7 @@ Podrobnosti najdete v bodě 3. Sdílení s rodinou je volitelné — pokud ho ne
 <ul>
   <li><strong>Fotky</strong>: fotky kalendářů a oznámení se analyzují pouze v zařízení pomocí frameworku Apple Vision a nikam se neodesílají. Původní fotky použité k analýze aplikace neukládá.</li>
   <li><strong>Akce</strong>: rozpoznané akce (název, datum, poznámka) se ukládají jen do vyhrazeného úložiště aplikace v zařízení (App Group).</li>
-  <li><strong>Profily dětí</strong>: jméno dítěte a profilová fotka zůstávají jen v zařízení. (Profilová fotka se nesdílí ani při zapnutém sdílení s rodinou.)</li>
+  <li><strong>Profily dětí</strong>: jméno dítěte a profilová fotka zůstávají jen v zařízení. (Při zapnutém sdílení rozvrhu se jméno dítěte, údaje o třídě a profilová fotka sdílejí s pozvanými.)</li>
 </ul>
 
 <h2>2. K čemu aplikace potřebuje oprávnění</h2>
@@ -83,48 +84,53 @@ Podrobnosti najdete v bodě 3. Sdílení s rodinou je volitelné — pokud ho ne
   <li><strong>Oznámení</strong>: místní připomínky den předem a v den akce (odesílá je přímo zařízení, bez push serveru)</li>
 </ul>
 
-<h2>3. Sdílení s rodinou (volitelné, iCloud)</h2>
-<p>Když v Nastavení &gt; Sdílení s rodinou pozvete partnera nebo jiného člena rodiny, můžete vy i pozvaný vidět a upravovat stejné akce.
+<h2>3. Sdílení událostí (volitelné, iCloud)</h2>
+<p>Když v Nastavení &gt; Sdílení událostí pozvete volbou „Pozvat ke sdílení“ partnera, prarodiče, chůvu nebo někoho dalšího, můžete vy i pozvaní vidět a upravovat stejné akce. S Rodinným sdílením od Applu to nijak nesouvisí.
 Funkce využívá sdílení přes Apple iCloud (CloudKit); vývojář sdílený obsah nevidí ani neuchovává.</p>
 <ul>
-  <li><strong>Co se sdílí</strong>: název, datum, čas, příznak celodenní akce, poznámka k tomu, co s sebou, a jméno dítěte u každé akce, dále seznam dětí.</li>
-  <li><strong>Co se nesdílí</strong>: fotky kalendářů a oznámení, profilové fotky dětí, nastavení připomínek.</li>
+  <li><strong>Co se sdílí</strong>: název, datum, čas, příznak celodenní akce, poznámka k tomu, co s sebou, a jméno dítěte u každé akce, dále seznam dětí včetně údajů o třídě a profilových fotek.</li>
+  <li><strong>Co se nesdílí</strong>: fotky kalendářů a oznámení a nastavení jednotlivých zařízení, například kdy chodí připomínky.</li>
   <li><strong>Kde jsou data uložena</strong>: v soukromé databázi iCloud toho, kdo pozvánku poslal (vlastníka). Platí zde také zásady ochrany osobních údajů společnosti Apple.</li>
   <li><strong>Kdo má přístup</strong>: jen ti, které vlastník sám pozval odkazem a kteří pozvánku přijali. Odkaz se nikdy nezveřejňuje.</li>
-  <li><strong>Ukončení</strong>: sdílení lze kdykoli vypnout v Nastavení &gt; Sdílení s rodinou volbou „Ukončit sdílení“ (vlastník) nebo „Opustit sdílení“ (účastník).
+  <li><strong>Ukončení</strong>: sdílení lze kdykoli vypnout v Nastavení &gt; Sdílení událostí volbou „Ukončit sdílení“ (ten, kdo pozval) nebo „Opustit sdílení“ (pozvaní).
       Poté se už nic nesynchronizuje a akce, které do té doby dorazily do jednotlivých zařízení, v nich zůstanou.</li>
 </ul>
 
-<h2>4. Anonymní statistiky používání</h2>
-<p>Abychom věděli, kolik lidí aplikaci používá, a mohli opravovat chyby, odesíláme do Apple iCloud (CloudKit) následující anonymní statistiky. Čte je pouze vývojář.</p>
+<h2>4. Anonymní statistiky používání a hlášení chyb</h2>
+<p>Abychom věděli, kolik lidí aplikaci používá, a mohli opravovat chyby, odesíláme následující anonymní statistiky do úložiště vývojáře v Apple iCloud (CloudKit). Čte je pouze vývojář.</p>
 <ul>
-  <li>Náhodné ID vytvořené při instalaci (není propojené se zařízením, Apple ID ani jinými aplikacemi a po přeinstalaci se změní)</li>
+  <li>Náhodné ID vytvořené při instalaci (není propojené s vámi, s Apple ID, se zařízením ani s jinými aplikacemi a po přeinstalaci se změní)</li>
   <li>Verze aplikace, verze iOS, nastavení oblasti a jazyka</li>
   <li>Počet a dny spuštění aplikace, datum instalace a počet dní od instalace</li>
-  <li>Diagnostické hlášení, když aplikace zamrzne nebo neočekávaně skončí (verze aplikace, verze iOS, typ zařízení, technické údaje o chybě)</li>
+  <li>Názvy událostí v aplikaci (např. že se zobrazil dotaz na spokojenost nebo žádost o hodnocení). Nic z toho, co napíšete, se neodesílá.</li>
+  <li>Diagnostické hlášení, když aplikace zamrzne nebo neočekávaně skončí (typ zařízení, technické údaje o chybě)</li>
 </ul>
 <p>Neobsahují jméno, kontakty, polohu ani nic, co zadáte — fotky, akce či informace o dětech. Odesílají se jen tehdy, když jste přihlášeni k iCloudu.</p>
 
 <h2>5. Předávání třetím stranám a zpracovatelé</h2>
-<p>Aplikace osobní údaje neprodává ani je neposkytuje třetím stranám pro reklamní či analytické účely.
+<p>Aplikace osobní údaje neprodává ani je neposkytuje třetím stranám pro reklamní účely.
 Nepoužívá reklamní SDK, externí analytické služby ani servery provozované vývojářem.
-Infrastruktura Apple iCloud se používá pouze při zapnutém sdílení s rodinou a k odesílání anonymních statistik podle bodu 4.</p>
+Infrastruktura Apple iCloud (CloudKit) se používá pouze při zapnutém sdílení rozvrhu a k odesílání anonymních statistik a hlášení chyb podle bodu 4.</p>
+<p><strong>Zpětná vazba</strong>: odesílá se jen tehdy, když ji sami pošlete přes „Odeslat zpětnou vazbu“ v nastavení.
+Zvolený typ a napsaný text se spolu s verzí aplikace, verzí iOS, typem zařízení a jazykem zařízení předají do úložiště vývojáře v Apple CloudKit.
+Jméno a e-mail se přikládají jen tehdy, když je sami vyplníte, abyste dostali odpověď. Akce, informace o dětech ani fotky se neodesílají.
+Zpětnou vazbu používáme jen k odpovědi a ke zlepšování aplikace. Pokud chcete, abychom ji smazali, napište nám na níže uvedený kontakt.</p>
 
 <h2>6. Uchovávání a mazání údajů</h2>
 <p>Fotky, akce a informace o dětech jsou uložené v zařízení, takže smazáním aplikace se smažou i všechna data, která uložila.
-Pokud používáte sdílení s rodinou a vlastník zvolí „Ukončit sdílení“, pozvaní už nebudou dostávat nové akce.
-Sdílená data v iCloudu se odstraní, jakmile vlastník ukončí sdílení nebo aplikaci smaže.
+Pokud používáte sdílení rozvrhu a ten, kdo pozval, zvolí „Ukončit sdílení“, pozvaní už nebudou dostávat nové akce.
+Sdílená data v iCloudu se odstraní, jakmile ten, kdo pozval, ukončí sdílení nebo aplikaci smaže.
 Akce přidané do Kalendáře Apple můžete spravovat a mazat přímo v aplikaci Kalendář.</p>
 
 <h2>7. Osobní údaje dětí</h2>
 <p>Aplikace je nástroj pro rodiče a osobní údaje dětí neshromažďuje.
 Jméno a fotka dítěte, které rodič zadá, se vývojáři neodesílají.
-Při zapnutém sdílení s rodinou se jméno dítěte a akce dostanou jen k členům rodiny, které rodič sám pozval.</p>
+Při zapnutém sdílení rozvrhu se jméno dítěte a akce dostanou jen k lidem, které rodič sám pozval a kteří pozvánku přijali.</p>
 
 <h2>8. Kontakt</h2>
 <p>S dotazy k těmto zásadám se na nás obraťte zde:</p>
 <ul>
-  <li>E-mail: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-mail: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Stránka podpory: <a href="support.html">Podpora aplikace Rozvrh školky</a></li>
 </ul>
 

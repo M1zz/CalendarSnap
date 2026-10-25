@@ -59,11 +59,12 @@
 <p>“Lịch Của Bé” (sau đây gọi là “app”) luôn coi trọng thông tin cá nhân của người dùng.
 App <strong>không thu thập và không gửi cho nhà phát triển các thông tin cá nhân như ảnh, lịch hay thông tin về con bạn.</strong>
 Theo mặc định, những dữ liệu này chỉ được xử lý và lưu trữ trên thiết bị của bạn.
-Nhà phát triển chỉ nhận được số liệu thống kê sử dụng ẩn danh và báo cáo lỗi, không thể biết bạn là ai (xem mục 4).</p>
+Nhà phát triển chỉ nhận được <strong>số liệu thống kê sử dụng ẩn danh và báo cáo lỗi</strong>, không thể biết bạn là ai (xem mục 4),
+cùng <strong>góp ý do chính bạn gửi</strong> từ phần Cài đặt (xem mục 5).</p>
 
-<p>Ngoại lệ duy nhất là khi bạn <strong>tự bật “Chia sẻ gia đình” và mời người thân</strong>:
+<p>Ngoại lệ duy nhất là khi bạn <strong>tự mời người khác trong “Chia sẻ lịch”</strong>:
 khi đó dữ liệu lịch sẽ được lưu trong <strong>tài khoản iCloud của chính bạn</strong> và chia sẻ với những người được mời.
-Chi tiết xem ở mục 3. Chia sẻ gia đình là tính năng tuỳ chọn; nếu không bật, ảnh, lịch và thông tin về con bạn sẽ không rời khỏi thiết bị.</p>
+Chi tiết xem ở mục 3. Chia sẻ lịch là tính năng tuỳ chọn; nếu không bật, ảnh, lịch và thông tin về con bạn sẽ không rời khỏi thiết bị.</p>
 
 <h2>1. Thông tin được xử lý</h2>
 <p>App không thu thập thông tin cá nhân. Các thông tin dưới đây đều <strong>chỉ được lưu trên thiết bị</strong>.
@@ -71,7 +72,7 @@ Chi tiết xem ở mục 3. Chia sẻ gia đình là tính năng tuỳ chọn; n
 <ul>
   <li><strong>Ảnh</strong>: ảnh lịch và thông báo chỉ được phân tích trên thiết bị bằng framework Apple Vision và không được gửi ra ngoài. Ảnh gốc dùng để phân tích không được lưu trong app.</li>
   <li><strong>Dữ liệu lịch</strong>: các sự kiện đã trích xuất (tiêu đề, ngày, ghi chú) chỉ được lưu trong vùng lưu trữ riêng của app trên thiết bị (App Group).</li>
-  <li><strong>Hồ sơ của bé</strong>: tên và ảnh đại diện của bé chỉ được lưu trên thiết bị. (Ảnh đại diện không được chia sẻ ngay cả khi bật chia sẻ gia đình.)</li>
+  <li><strong>Hồ sơ của bé</strong>: tên và ảnh đại diện của bé chỉ được lưu trên thiết bị. (Khi bật chia sẻ lịch, tên, thông tin lớp và ảnh đại diện của bé sẽ được chia sẻ với những người được mời.)</li>
 </ul>
 
 <h2>2. Mục đích sử dụng quyền truy cập</h2>
@@ -82,48 +83,53 @@ Chi tiết xem ở mục 3. Chia sẻ gia đình là tính năng tuỳ chọn; n
   <li><strong>Thông báo</strong>: nhắc nhở cục bộ vào hôm trước và ngày diễn ra sự kiện (gửi trực tiếp từ thiết bị, không qua máy chủ push)</li>
 </ul>
 
-<h2>3. Chia sẻ gia đình (tuỳ chọn, iCloud)</h2>
-<p>Khi bạn mời vợ/chồng hoặc người thân trong Cài đặt &gt; Chia sẻ gia đình, người mời và người được mời có thể cùng xem và chỉnh sửa một lịch chung.
+<h2>3. Chia sẻ lịch (tuỳ chọn, iCloud)</h2>
+<p>Khi bạn dùng “Mời người khác cùng xem” trong Cài đặt &gt; Chia sẻ lịch để mời vợ/chồng, ông bà hay cô giữ trẻ, người mời và người được mời có thể cùng xem và chỉnh sửa một lịch chung. Tính năng này không liên quan đến việc bạn có dùng Chia sẻ trong gia đình của Apple hay không.
 Tính năng này dùng chia sẻ iCloud (CloudKit) của Apple; nhà phát triển không xem và không lưu giữ nội dung được chia sẻ.</p>
 <ul>
-  <li><strong>Thông tin được chia sẻ</strong>: tiêu đề, ngày, giờ, thông tin cả ngày hay không, ghi chú đồ cần chuẩn bị và tên bé của từng sự kiện, cùng danh sách các bé.</li>
-  <li><strong>Thông tin không được chia sẻ</strong>: ảnh lịch và thông báo, ảnh đại diện của bé, cài đặt nhắc nhở.</li>
+  <li><strong>Thông tin được chia sẻ</strong>: tiêu đề, ngày, giờ, thông tin cả ngày hay không, ghi chú đồ cần chuẩn bị và tên bé của từng sự kiện, cùng danh sách các bé, thông tin lớp và ảnh đại diện.</li>
+  <li><strong>Thông tin không được chia sẻ</strong>: ảnh lịch và thông báo, cùng các cài đặt riêng của từng máy như thời điểm nhắc nhở.</li>
   <li><strong>Nơi lưu trữ</strong>: cơ sở dữ liệu iCloud riêng tư của người mời (chủ sở hữu). Chính sách quyền riêng tư của Apple cũng được áp dụng.</li>
   <li><strong>Phạm vi truy cập</strong>: chỉ những người được chủ sở hữu mời trực tiếp qua link mời và đã chấp nhận mới truy cập được. Link không được công khai.</li>
-  <li><strong>Dừng chia sẻ</strong>: bạn có thể tắt bất cứ lúc nào trong Cài đặt &gt; Chia sẻ gia đình bằng “Dừng chia sẻ” (chủ sở hữu) hoặc “Rời nhóm chia sẻ” (người tham gia).
+  <li><strong>Dừng chia sẻ</strong>: bạn có thể tắt bất cứ lúc nào trong Cài đặt &gt; Chia sẻ lịch bằng “Dừng chia sẻ” (người mời) hoặc “Rời nhóm chia sẻ” (người được mời).
       Sau đó dữ liệu sẽ không đồng bộ nữa; các sự kiện mỗi máy đã nhận trước đó vẫn được giữ lại trên máy đó.</li>
 </ul>
 
-<h2>4. Thống kê sử dụng ẩn danh</h2>
-<p>Để biết có bao nhiêu người dùng app và sửa lỗi, app gửi các số liệu thống kê ẩn danh sau lên Apple iCloud (CloudKit). Chỉ nhà phát triển đọc được.</p>
+<h2>4. Thống kê sử dụng và báo cáo lỗi ẩn danh</h2>
+<p>Để biết có bao nhiêu người dùng app và sửa lỗi, app gửi các số liệu thống kê ẩn danh sau lên vùng lưu trữ Apple iCloud (CloudKit) của nhà phát triển. Chỉ nhà phát triển đọc được.</p>
 <ul>
-  <li>một ID ngẫu nhiên tạo ra khi cài đặt (không liên kết với thiết bị, Apple ID hay app khác; sẽ thay đổi khi cài lại)</li>
+  <li>một ID ngẫu nhiên tạo ra khi cài đặt (không liên kết với người dùng, Apple ID, thiết bị hay app khác; sẽ thay đổi khi cài lại)</li>
   <li>phiên bản app, phiên bản iOS, cài đặt vùng và ngôn ngữ</li>
   <li>số lần mở app và những ngày mở app, ngày cài đặt và số ngày kể từ khi cài</li>
-  <li>báo cáo chẩn đoán khi app bị treo hoặc thoát bất thường (phiên bản app, phiên bản iOS, loại thiết bị, thông tin kỹ thuật về lỗi)</li>
+  <li>tên các sự kiện xảy ra trong app (ví dụ: đã hiện câu hỏi về mức độ hài lòng, đã hiện lời mời đánh giá). Không chứa nội dung bạn nhập.</li>
+  <li>báo cáo chẩn đoán khi app bị treo hoặc thoát bất thường (loại thiết bị, thông tin kỹ thuật về lỗi)</li>
 </ul>
 <p>Không bao gồm tên, thông tin liên lạc, vị trí hay nội dung bạn nhập như ảnh, lịch, thông tin về con bạn. Chỉ gửi khi bạn đang đăng nhập iCloud.</p>
 
 <h2>5. Cung cấp cho bên thứ ba và ủy thác xử lý</h2>
-<p>App không bán thông tin cá nhân và không cung cấp cho bên thứ ba vì mục đích quảng cáo hay phân tích.
+<p>App không bán thông tin cá nhân và không cung cấp cho bên thứ ba vì mục đích quảng cáo.
 App không dùng SDK quảng cáo, dịch vụ phân tích bên ngoài hay máy chủ do nhà phát triển vận hành.
-Hạ tầng iCloud của Apple chỉ được dùng khi bạn bật chia sẻ gia đình và khi gửi số liệu ẩn danh ở mục 4.</p>
+Hạ tầng iCloud (CloudKit) của Apple chỉ được dùng khi bạn bật chia sẻ lịch và khi gửi số liệu thống kê, báo cáo lỗi ẩn danh ở mục 4.</p>
+<p><strong>Gửi góp ý</strong>: chỉ được gửi khi bạn tự gửi qua mục “Gửi góp ý” trong Cài đặt.
+Loại góp ý bạn chọn và nội dung bạn viết, cùng phiên bản app, phiên bản iOS, loại thiết bị và cài đặt ngôn ngữ của thiết bị sẽ được chuyển đến vùng lưu trữ Apple CloudKit của nhà phát triển.
+Tên và email chỉ được gửi kèm khi bạn tự điền để nhận phản hồi. Không bao gồm lịch, thông tin về con bạn hay ảnh.
+Góp ý chỉ được dùng để phản hồi và cải thiện app; nếu muốn xoá, vui lòng báo cho chúng tôi qua địa chỉ liên hệ bên dưới.</p>
 
 <h2>6. Lưu giữ và xoá dữ liệu</h2>
 <p>Ảnh, lịch và thông tin về con bạn nằm trên thiết bị, nên khi xoá app, toàn bộ dữ liệu app đã lưu cũng bị xoá theo.
-Nếu dùng chia sẻ gia đình, khi chủ sở hữu chọn “Dừng chia sẻ”, những người thân được mời sẽ không nhận sự kiện mới nữa.
-Dữ liệu chia sẻ lưu trên iCloud sẽ được dọn dẹp khi chủ sở hữu dừng chia sẻ hoặc xoá app.
+Nếu dùng chia sẻ lịch, khi người mời chọn “Dừng chia sẻ”, những người được mời sẽ không nhận sự kiện mới nữa.
+Dữ liệu chia sẻ lưu trên iCloud sẽ được dọn dẹp khi người mời dừng chia sẻ hoặc xoá app.
 Các sự kiện đã thêm vào Lịch của Apple có thể được quản lý và xoá trực tiếp trong app Lịch của iOS.</p>
 
 <h2>7. Thông tin cá nhân của trẻ em</h2>
 <p>App là công cụ dành cho phụ huynh và không thu thập thông tin cá nhân của trẻ em.
 Tên và ảnh của bé do phụ huynh nhập không được gửi cho nhà phát triển.
-Khi bật chia sẻ gia đình, tên và lịch của bé chỉ được gửi đến những người thân do chính phụ huynh mời.</p>
+Khi bật chia sẻ lịch, tên và lịch của bé chỉ được gửi đến những người do chính phụ huynh mời và đã chấp nhận lời mời.</p>
 
 <h2>8. Liên hệ</h2>
 <p>Nếu có thắc mắc về chính sách quyền riêng tư này, vui lòng liên hệ:</p>
 <ul>
-  <li>Email: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>Email: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Trang hỗ trợ: <a href="support.html">Hỗ trợ Lịch Của Bé</a></li>
 </ul>
 

@@ -59,11 +59,12 @@
 <p>O “Agenda Kids” (doravante “app”) leva a sério a proteção dos seus dados pessoais.
 O app <strong>não coleta nem envia ao desenvolvedor dados pessoais como fotos, eventos ou informações das crianças.</strong>
 Esses dados são, por padrão, processados e armazenados apenas no seu aparelho.
-O desenvolvedor recebe somente estatísticas de uso anônimas e relatórios de erro que não permitem identificar você (veja o item 4).</p>
+O desenvolvedor recebe somente <strong>estatísticas de uso anônimas e relatórios de erro</strong> que não permitem identificar você (veja o item 4)
+e o <strong>feedback que você mesmo envia</strong> pelos Ajustes (veja o item 5).</p>
 
-<p>A única exceção é quando <strong>você mesmo ativa o “Compartilhamento familiar” e convida familiares</strong>:
+<p>A única exceção é quando <strong>você mesmo convida outras pessoas em “Compartilhar agenda”</strong>:
 nesse caso, os dados da agenda são armazenados na <strong>sua própria conta do iCloud</strong> e compartilhados com as pessoas convidadas.
-Os detalhes estão no item 3. O compartilhamento familiar é opcional; se ele não estiver ativado, fotos, eventos e informações das crianças não saem do aparelho.</p>
+Os detalhes estão no item 3. O compartilhamento da agenda é opcional; se ele não estiver ativado, fotos, eventos e informações das crianças não saem do aparelho.</p>
 
 <h2>1. Informações tratadas</h2>
 <p>O app não coleta dados pessoais. As informações abaixo ficam armazenadas <strong>exclusivamente no aparelho</strong>.
@@ -71,7 +72,7 @@ Os detalhes estão no item 3. O compartilhamento familiar é opcional; se ele n�
 <ul>
   <li><strong>Fotos</strong>: as fotos de calendários e comunicados são analisadas apenas no aparelho, com o framework Apple Vision, e nunca são transmitidas. As fotos originais usadas na análise não ficam salvas no app.</li>
   <li><strong>Eventos</strong>: os eventos extraídos (título, data, observações) ficam armazenados apenas no espaço exclusivo do app no aparelho (App Group).</li>
-  <li><strong>Perfis das crianças</strong>: o nome e a foto de perfil da criança ficam armazenados apenas no aparelho. (A foto de perfil não é compartilhada nem com o compartilhamento familiar ativado.)</li>
+  <li><strong>Perfis das crianças</strong>: o nome e a foto de perfil da criança ficam armazenados apenas no aparelho. (Com o compartilhamento da agenda ativado, o nome, a turma e a foto de perfil da criança são compartilhados com as pessoas convidadas.)</li>
 </ul>
 
 <h2>2. Para que usamos as permissões do aparelho</h2>
@@ -82,48 +83,53 @@ Os detalhes estão no item 3. O compartilhamento familiar é opcional; se ele n�
   <li><strong>Notificações</strong>: lembretes locais na véspera e no dia do evento (enviados pelo próprio aparelho, sem servidor de push)</li>
 </ul>
 
-<h2>3. Compartilhamento familiar (opcional, iCloud)</h2>
-<p>Ao convidar seu parceiro ou outros familiares em Ajustes &gt; Compartilhamento familiar, quem convidou e quem foi convidado podem ver e editar a mesma agenda.
+<h2>3. Compartilhar agenda (opcional, iCloud)</h2>
+<p>Ao convidar seu parceiro, os avós, a babá ou outras pessoas com “Convidar pessoas” em Ajustes &gt; Compartilhar agenda, quem convidou e quem foi convidado podem ver e editar a mesma agenda. Isso não tem relação com o Compartilhamento Familiar da Apple, esteja ele configurado ou não.
 O recurso usa o compartilhamento do iCloud (CloudKit) da Apple, e o desenvolvedor não vê nem guarda o conteúdo compartilhado.</p>
 <ul>
-  <li><strong>O que é compartilhado</strong>: título, data, horário, indicação de dia inteiro, observação do que levar e nome da criança de cada evento, além da lista de crianças.</li>
-  <li><strong>O que não é compartilhado</strong>: fotos de calendários e comunicados, fotos de perfil das crianças, ajustes de lembretes.</li>
+  <li><strong>O que é compartilhado</strong>: título, data, horário, indicação de dia inteiro, observação do que levar e nome da criança de cada evento, além da lista de crianças com turma e foto de perfil.</li>
+  <li><strong>O que não é compartilhado</strong>: fotos de calendários e comunicados e ajustes próprios de cada aparelho, como o horário dos lembretes.</li>
   <li><strong>Onde fica armazenado</strong>: no banco de dados privado do iCloud de quem convidou (o proprietário). A Política de Privacidade da Apple também se aplica.</li>
   <li><strong>Quem tem acesso</strong>: apenas as pessoas convidadas pelo proprietário por link de convite e que aceitaram. Nenhum link público é gerado.</li>
-  <li><strong>Como encerrar</strong>: a qualquer momento, em Ajustes &gt; Compartilhamento familiar, com “Parar de compartilhar” (proprietário) ou “Sair do compartilhamento” (participante).
+  <li><strong>Como encerrar</strong>: a qualquer momento, em Ajustes &gt; Compartilhar agenda, com “Parar de compartilhar” (quem convidou) ou “Sair do compartilhamento” (quem foi convidado).
       Depois disso, nada mais é sincronizado; os eventos que cada um já tinha recebido continuam no próprio aparelho.</li>
 </ul>
 
-<h2>4. Estatísticas de uso anônimas</h2>
-<p>Para saber quantas pessoas usam o app e corrigir erros, o app envia as seguintes estatísticas anônimas ao iCloud da Apple (CloudKit). Só o desenvolvedor pode lê-las.</p>
+<h2>4. Estatísticas de uso anônimas e relatórios de erro</h2>
+<p>Para saber quantas pessoas usam o app e corrigir erros, o app envia as seguintes estatísticas anônimas ao espaço de armazenamento do desenvolvedor no iCloud da Apple (CloudKit). Só o desenvolvedor pode lê-las.</p>
 <ul>
-  <li>um ID aleatório criado na instalação (sem vínculo com o aparelho, o Apple ID ou outros apps; muda se você reinstalar)</li>
+  <li>um ID aleatório criado na instalação (sem vínculo com você, seu Apple ID, o aparelho ou outros apps; muda se você reinstalar)</li>
   <li>versão do app, versão do iOS, região e idioma</li>
   <li>quantas vezes e em quais dias o app foi aberto, data de instalação e dias desde a instalação</li>
-  <li>relatórios de diagnóstico quando o app trava ou fecha inesperadamente (versão do app, versão do iOS, tipo de aparelho, detalhes técnicos do erro)</li>
+  <li>o nome de ações que acontecem no app (por exemplo, “pergunta de satisfação exibida”, “pedido de avaliação exibido”); nada do que você digita é incluído</li>
+  <li>relatórios de diagnóstico quando o app trava ou fecha inesperadamente (tipo de aparelho, detalhes técnicos do erro)</li>
 </ul>
 <p>Eles não incluem nome, contatos, localização nem nada que você tenha inserido, como fotos, eventos ou informações das crianças. Só são enviados quando você está conectado ao iCloud.</p>
 
 <h2>5. Compartilhamento com terceiros e operadores</h2>
-<p>O app não vende dados pessoais nem os fornece a terceiros para fins de publicidade ou análise.
+<p>O app não vende dados pessoais nem os fornece a terceiros para fins de publicidade.
 Não usa SDKs de anúncios, serviços externos de análise nem servidores operados pelo desenvolvedor.
-A infraestrutura do iCloud da Apple é usada apenas quando o compartilhamento familiar está ativado e no envio das estatísticas anônimas do item 4.</p>
+A infraestrutura do iCloud (CloudKit) da Apple é usada apenas quando o compartilhamento da agenda está ativado e no envio das estatísticas anônimas e relatórios de erro do item 4.</p>
+<p><strong>Feedback</strong>: só é enviado quando você mesmo o manda por “Enviar feedback” nos Ajustes.
+A categoria escolhida, o texto que você escreveu e a versão do app, a versão do iOS, o tipo de aparelho e o idioma do aparelho vão para o espaço de armazenamento CloudKit do desenvolvedor na Apple.
+Nome e e-mail só são enviados se você mesmo os informar para receber uma resposta. Eventos, informações das crianças e fotos nunca são incluídos.
+O feedback é usado apenas para responder a você e melhorar o app. Se quiser que ele seja apagado, entre em contato pelo endereço abaixo.</p>
 
 <h2>6. Armazenamento e exclusão dos dados</h2>
 <p>Fotos, eventos e informações das crianças ficam no aparelho; por isso, ao apagar o app, todos os dados salvos por ele também são apagados.
-Se você usa o compartilhamento familiar e o proprietário escolhe “Parar de compartilhar”, os familiares convidados deixam de receber novos eventos.
-Os dados compartilhados armazenados no iCloud são removidos quando o proprietário encerra o compartilhamento ou apaga o app.
+Se você usa o compartilhamento da agenda e quem convidou escolhe “Parar de compartilhar”, as pessoas convidadas deixam de receber novos eventos.
+Os dados compartilhados armazenados no iCloud são removidos quando quem convidou encerra o compartilhamento ou apaga o app.
 Os eventos adicionados ao Calendário da Apple podem ser gerenciados e apagados diretamente no app Calendário do iOS.</p>
 
 <h2>7. Dados de crianças</h2>
 <p>O app é uma ferramenta para pais e responsáveis e não coleta dados pessoais de crianças.
 O nome e a foto da criança informados pelo responsável não são enviados ao desenvolvedor.
-Com o compartilhamento familiar ativado, o nome e a agenda da criança chegam apenas aos familiares convidados pelo próprio responsável.</p>
+Com o compartilhamento da agenda ativado, o nome e a agenda da criança chegam apenas às pessoas que o próprio responsável convidou e que aceitaram o convite.</p>
 
 <h2>8. Contato</h2>
 <p>Em caso de dúvidas sobre esta Política de Privacidade, fale com a gente:</p>
 <ul>
-  <li>E-mail: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-mail: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Página de suporte: <a href="support.html">Suporte do Agenda Kids</a></li>
 </ul>
 

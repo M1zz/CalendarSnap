@@ -243,7 +243,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         do {
             try await ownerEngine.sendChanges()
         } catch {
-            infoMessage = "일정을 iCloud에 올리지 못했어요. 함께 보는 사람에게 일정이 보이지 않을 수 있어요. (\(error.localizedDescription))"
+            infoMessage = String(localized: "일정을 iCloud에 올리지 못했어요. 함께 보는 사람에게 일정이 보이지 않을 수 있어요. (\(error.localizedDescription))")
         }
 
         // 기존 공유가 있으면 재사용 (존 전체 공유의 recordName은 고정)
@@ -257,7 +257,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         }
 
         let newShare = CKShare(recordZoneID: zoneID)
-        newShare[CKShare.SystemFieldKey.title] = "아이일정 함께 보기"
+        newShare[CKShare.SystemFieldKey.title] = String(localized: "아이일정 함께 보기")
         // 카카오톡·메시지로 링크만 받아도 수락할 수 있어야 하므로 "링크가 있는 누구나"로 만든다.
         // (.none이면 UICloudSharingController가 "초대한 사람만"으로 시작해서, 링크를 그냥 전달받은
         //  상대방은 iCloud 웹에서 "초대가 필요합니다"로 막히고 앱으로 데이터가 넘어오지 않는다.)
@@ -295,7 +295,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
             saving: [], deleting: [shareID])
         // 역할까지 초기화해야 이후 다른 사람의 초대를 수락할 수 있다.
         resetToNone()
-        infoMessage = "일정 공유를 중지했어요. 내 데이터는 그대로 유지돼요."
+        infoMessage = String(localized: "일정 공유를 중지했어요. 내 데이터는 그대로 유지돼요.")
     }
 
     /// 공유 나가기 (참여자): shared DB에서 존 제거 → 참여 해제. 로컬 데이터는 유지.
@@ -303,7 +303,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         guard state.role == .participant, let zoneID else { return }
         _ = try? await container.sharedCloudDatabase.modifyRecordZones(
             saving: [], deleting: [zoneID])
-        detachFromShare(message: "일정 공유에서 나왔어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+        detachFromShare(message: String(localized: "일정 공유에서 나왔어요. 지금까지의 일정은 이 기기에 남아 있어요."))
     }
 
     /// 참여 상태 해제 (존 삭제 감지·나가기 공통). 로컬 데이터는 건드리지 않음.
@@ -336,12 +336,12 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
     func accept(_ metadata: CKShare.Metadata) {
         guard metadata.containerIdentifier == Self.containerIdentifier else {
-            infoMessage = "아이일정의 초대 링크가 아니에요."
+            infoMessage = String(localized: "아이일정의 초대 링크가 아니에요.")
             return
         }
         // 내가 만든 링크를 내가 누른 경우 — 조용히 무시하지 않고 이유를 알려준다.
         if metadata.participantRole == .owner {
-            infoMessage = "내가 만든 초대 링크예요. 이 링크를 함께 볼 사람에게 보내주세요."
+            infoMessage = String(localized: "내가 만든 초대 링크예요. 이 링크를 함께 볼 사람에게 보내주세요.")
             return
         }
         // 이미 내 일정을 공유 중인 소유자는 다른 사람의 공유에 참여할 수 없다.
@@ -351,7 +351,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
                 await refreshShare()
                 let hasAcceptedParticipant = participants.contains { $0.acceptanceStatus == .accepted }
                 if hasAcceptedParticipant {
-                    infoMessage = "이미 내 일정을 다른 사람과 공유 중이에요. 설정 > 일정 공유에서 '공유 중지'를 한 뒤 초대 링크를 다시 눌러주세요."
+                    infoMessage = String(localized: "이미 내 일정을 다른 사람과 공유 중이에요. 설정 > 일정 공유에서 '공유 중지'를 한 뒤 초대 링크를 다시 눌러주세요.")
                     return
                 }
                 await stopSharing()
@@ -363,7 +363,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
         let shareZoneID = metadata.share.recordID.zoneID
         // 같은 공유에 이미 참여 중이면 재수락 대신 새로고침만.
         if state.role == .participant, state.zoneOwnerName == shareZoneID.ownerName {
-            infoMessage = "이미 참여 중인 공유예요. 최신 일정을 가져올게요."
+            infoMessage = String(localized: "이미 참여 중인 공유예요. 최신 일정을 가져올게요.")
             fetchChangesNow()
             return
         }
@@ -394,14 +394,14 @@ final class FamilySyncManager: NSObject, ObservableObject {
 
                 await refreshShare()
                 if appliedRemoteRecordCount == 0 {
-                    infoMessage = "공유에 참여했어요. 아직 받아온 일정이 없어요 — 잠시 후 앱을 다시 열면 반영돼요."
+                    infoMessage = String(localized: "공유에 참여했어요. 아직 받아온 일정이 없어요 — 잠시 후 앱을 다시 열면 반영돼요.")
                 } else {
                     let count = EventStore.load().count
-                    infoMessage = "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요."
+                    infoMessage = String(localized: "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요.")
                 }
             } catch {
                 // 실패 원인을 그대로 보여줘야 iCloud 로그인·권한 문제를 구분할 수 있다.
-                infoMessage = "공유 참여에 실패했어요. (\(error.localizedDescription))"
+                infoMessage = String(localized: "공유 참여에 실패했어요. (\(error.localizedDescription))")
             }
         }
     }
@@ -481,7 +481,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
             } else if name == CKRecordNameZoneWideShare {
                 // 공유 레코드 삭제 = 소유자가 공유를 중지 (소유자 자신은 stopSharing에서 처리)
                 if state.role == .participant {
-                    detachFromShare(message: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+                    detachFromShare(message: String(localized: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요."))
                 } else {
                     share = nil
                 }
@@ -551,7 +551,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
                 privateEngine = nil
                 sharedEngine = nil
                 if state.isActive {
-                    detachFromShare(message: "iCloud 계정이 바뀌어 일정 공유가 중단됐어요.")
+                    detachFromShare(message: String(localized: "iCloud 계정이 바뀌어 일정 공유가 중단됐어요."))
                 }
             default:
                 break
@@ -565,7 +565,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
             // 참여 중이던 존이 삭제됨 = 공유 종료 또는 내보내짐
             for deletion in changes.deletions where deletion.zoneID.zoneName == RecordMapper.zoneName {
                 if state.role == .participant {
-                    detachFromShare(message: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+                    detachFromShare(message: String(localized: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요."))
                 }
             }
 
@@ -606,7 +606,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
                 engine.state.add(pendingDatabaseChanges: [.saveZone(CKRecordZone(zoneID: recordID.zoneID))])
                 engine.state.add(pendingRecordZoneChanges: [.saveRecord(recordID)])
             } else if state.role == .participant {
-                detachFromShare(message: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.")
+                detachFromShare(message: String(localized: "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요."))
             }
         case .unknownItem:
             // 서버에서 이미 삭제된 레코드 갱신 시도 — 캐시를 비우고 새 레코드로 재저장
@@ -617,7 +617,7 @@ extension FamilySyncManager: CKSyncEngineDelegate {
             break   // 일시 오류는 CKSyncEngine이 알아서 재시도
         default:
             // 스키마 미배포(운영 환경) 등 재시도로 풀리지 않는 오류 — 조용히 넘기면 상대에게 일정이 안 보인다.
-            infoMessage = "일정 공유 업로드에 실패했어요. (\(failure.error.code.rawValue): \(failure.error.localizedDescription))"
+            infoMessage = String(localized: "일정 공유 업로드에 실패했어요. (\(failure.error.code.rawValue): \(failure.error.localizedDescription))")
         }
     }
 
@@ -672,7 +672,7 @@ enum FamilySharingError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .alreadyParticipant:
-            return "이미 다른 사람이 공유한 일정에 참여 중이에요. 먼저 공유에서 나간 뒤 초대할 수 있어요."
+            return String(localized: "이미 다른 사람이 공유한 일정에 참여 중이에요. 먼저 공유에서 나간 뒤 초대할 수 있어요.")
         }
     }
 }

@@ -59,11 +59,12 @@
 <p>«Agenda Bimbi» (di seguito «l’app») ha a cuore la protezione dei tuoi dati personali.
 L’app <strong>non raccoglie né invia allo sviluppatore dati personali come foto, impegni o informazioni sui bambini.</strong>
 Questi dati vengono elaborati e salvati, di norma, solo sul tuo dispositivo.
-Allo sviluppatore arrivano soltanto statistiche d’uso anonime e segnalazioni di errore che non permettono di identificarti (vedi punto 4).</p>
+Allo sviluppatore arrivano soltanto <strong>statistiche d’uso anonime e segnalazioni di errore</strong> che non permettono di identificarti (vedi punto 4)
+e i <strong>feedback che invii tu stesso</strong> dalle Impostazioni (vedi punto 5).</p>
 
-<p>L’unica eccezione è quando <strong>attivi tu stesso la «Condivisione familiare» e inviti dei familiari</strong>:
+<p>L’unica eccezione è quando <strong>inviti tu stesso altre persone da «Condivisione eventi»</strong>:
 in quel caso i dati degli impegni vengono salvati nel <strong>tuo account iCloud personale</strong> e condivisi con le persone invitate.
-I dettagli sono al punto 3. La condivisione familiare è facoltativa: se non la attivi, foto, impegni e informazioni sui bambini non lasciano il dispositivo.</p>
+I dettagli sono al punto 3. La condivisione degli impegni è facoltativa: se non la attivi, foto, impegni e informazioni sui bambini non lasciano il dispositivo.</p>
 
 <h2>1. Informazioni trattate</h2>
 <p>L’app non raccoglie dati personali. Le informazioni seguenti vengono salvate <strong>esclusivamente sul dispositivo</strong>.
@@ -71,7 +72,7 @@ I dettagli sono al punto 3. La condivisione familiare è facoltativa: se non la 
 <ul>
   <li><strong>Foto</strong>: le foto di calendari e avvisi vengono analizzate solo sul dispositivo con il framework Apple Vision e non vengono mai trasmesse. Le foto originali analizzate non vengono salvate nell’app.</li>
   <li><strong>Impegni</strong>: gli impegni estratti (titolo, data, note) vengono salvati solo nello spazio di archiviazione riservato all’app sul dispositivo (App Group).</li>
-  <li><strong>Profili dei bambini</strong>: nome e foto profilo del bambino vengono salvati solo sul dispositivo. (La foto profilo non viene condivisa nemmeno con la condivisione familiare attiva.)</li>
+  <li><strong>Profili dei bambini</strong>: nome e foto profilo del bambino vengono salvati solo sul dispositivo. (Con la condivisione degli impegni attiva, nome, classe e foto profilo del bambino vengono condivisi con le persone invitate.)</li>
 </ul>
 
 <h2>2. Uso dei permessi del dispositivo</h2>
@@ -82,48 +83,53 @@ I dettagli sono al punto 3. La condivisione familiare è facoltativa: se non la 
   <li><strong>Notifiche</strong>: promemoria locali il giorno prima e il giorno stesso (inviati direttamente dal dispositivo, senza server push)</li>
 </ul>
 
-<h2>3. Condivisione familiare (facoltativa, iCloud)</h2>
-<p>Se da Impostazioni &gt; Condivisione familiare inviti il partner o altri familiari, chi invita e chi viene invitato possono vedere e modificare gli stessi impegni.
+<h2>3. Condivisione eventi (facoltativa, iCloud)</h2>
+<p>Se da Impostazioni &gt; Condivisione eventi inviti con «Invita altre persone» il partner, i nonni, la babysitter o altre persone, chi invita e chi viene invitato possono vedere e modificare gli stessi impegni. Non ha nulla a che fare con In famiglia di Apple, che tu l’abbia configurato o no.
 La funzione usa la condivisione iCloud (CloudKit) di Apple; lo sviluppatore non vede né conserva i contenuti condivisi.</p>
 <ul>
-  <li><strong>Informazioni condivise</strong>: titolo, data, ora, indicazione «tutto il giorno», nota sulle cose da portare e nome del bambino di ogni impegno, oltre all’elenco dei bambini.</li>
-  <li><strong>Informazioni non condivise</strong>: foto di calendari e avvisi, foto profilo dei bambini, impostazioni dei promemoria.</li>
+  <li><strong>Informazioni condivise</strong>: titolo, data, ora, indicazione «tutto il giorno», nota sulle cose da portare e nome del bambino di ogni impegno, oltre all’elenco dei bambini con classe e foto profilo.</li>
+  <li><strong>Informazioni non condivise</strong>: foto di calendari e avvisi, impostazioni specifiche di ogni dispositivo come l’orario dei promemoria.</li>
   <li><strong>Dove sono salvate</strong>: nel database iCloud privato di chi invita (il proprietario). Si applica anche l’informativa sulla privacy di Apple.</li>
   <li><strong>Chi può accedere</strong>: solo le persone invitate dal proprietario tramite link d’invito che hanno accettato. Non vengono creati link pubblici.</li>
-  <li><strong>Interruzione</strong>: puoi disattivarla in qualsiasi momento da Impostazioni &gt; Condivisione familiare con «Interrompi condivisione» (proprietario) o «Esci dalla condivisione» (partecipante).
+  <li><strong>Interruzione</strong>: puoi disattivarla in qualsiasi momento da Impostazioni &gt; Condivisione eventi con «Interrompi condivisione» (chi ha invitato) o «Esci dalla condivisione» (chi è stato invitato).
       Da quel momento la sincronizzazione si ferma; gli impegni già ricevuti restano sui rispettivi dispositivi.</li>
 </ul>
 
-<h2>4. Statistiche d’uso anonime</h2>
-<p>Per sapere quante persone usano l’app e correggere gli errori, l’app invia le seguenti statistiche anonime ad Apple iCloud (CloudKit). Solo lo sviluppatore può leggerle.</p>
+<h2>4. Statistiche d’uso anonime e segnalazioni di errore</h2>
+<p>Per sapere quante persone usano l’app e correggere gli errori, l’app invia le seguenti statistiche anonime allo spazio iCloud (CloudKit) dello sviluppatore presso Apple. Solo lo sviluppatore può leggerle.</p>
 <ul>
-  <li>un ID casuale generato all’installazione (non collegato al dispositivo, all’Apple ID o ad altre app; cambia se reinstalli l’app)</li>
+  <li>un ID casuale generato all’installazione (non collegato a te, al tuo Apple ID, al dispositivo o ad altre app; cambia se reinstalli l’app)</li>
   <li>versione dell’app, versione di iOS, impostazioni di zona e lingua</li>
   <li>quante volte e in quali giorni è stata aperta l’app, data di installazione e giorni trascorsi da allora</li>
-  <li>rapporti di diagnostica quando l’app si blocca o si chiude in modo anomalo (versione dell’app, versione di iOS, tipo di dispositivo, dettagli tecnici dell’errore)</li>
+  <li>il nome di ciò che accade nell’app (ad esempio «domanda di gradimento mostrata», «richiesta di recensione mostrata»); non contiene nulla di ciò che scrivi</li>
+  <li>rapporti di diagnostica quando l’app si blocca o si chiude in modo anomalo (tipo di dispositivo, dettagli tecnici dell’errore)</li>
 </ul>
 <p>Non includono nome, contatti, posizione né contenuti inseriti come foto, impegni o informazioni sui bambini. Vengono inviate solo se hai effettuato l’accesso a iCloud.</p>
 
 <h2>5. Comunicazione a terzi e responsabili del trattamento</h2>
-<p>L’app non vende i dati personali e non li comunica a terzi per finalità pubblicitarie o di analisi.
+<p>L’app non vende i dati personali e non li comunica a terzi per finalità pubblicitarie.
 Non usa SDK pubblicitari, servizi di analisi esterni né server gestiti dallo sviluppatore.
-L’infrastruttura iCloud di Apple viene utilizzata solo quando la condivisione familiare è attiva e per l’invio delle statistiche anonime del punto 4.</p>
+L’infrastruttura iCloud (CloudKit) di Apple viene utilizzata solo quando la condivisione degli impegni è attiva e per l’invio delle statistiche anonime e delle segnalazioni di errore del punto 4.</p>
+<p><strong>Feedback</strong>: viene inviato solo quando sei tu a mandarlo con «Invia feedback» nelle Impostazioni.
+La categoria scelta, il testo che scrivi e la versione dell’app, la versione di iOS, il tipo di dispositivo e la lingua del dispositivo arrivano allo spazio CloudKit dello sviluppatore presso Apple.
+Nome ed e-mail vengono inviati solo se li inserisci tu per ricevere una risposta. Impegni, informazioni sui bambini e foto non sono mai inclusi.
+Il feedback serve solo per risponderti e migliorare l’app; se vuoi che venga cancellato, scrivici all’indirizzo indicato qui sotto.</p>
 
 <h2>6. Conservazione e cancellazione dei dati</h2>
 <p>Foto, impegni e informazioni sui bambini si trovano sul dispositivo: eliminando l’app, vengono cancellati anche tutti i dati che ha salvato.
-Se usi la condivisione familiare e il proprietario sceglie «Interrompi condivisione», i familiari invitati non riceveranno più nuovi impegni.
-I dati condivisi salvati su iCloud vengono rimossi quando il proprietario interrompe la condivisione o elimina l’app.
+Se usi la condivisione degli impegni e chi ha invitato sceglie «Interrompi condivisione», le persone invitate non riceveranno più nuovi impegni.
+I dati condivisi salvati su iCloud vengono rimossi quando chi ha invitato interrompe la condivisione o elimina l’app.
 Gli eventi aggiunti al Calendario Apple si gestiscono ed eliminano direttamente dall’app Calendario di iOS.</p>
 
 <h2>7. Dati dei minori</h2>
 <p>L’app è uno strumento pensato per i genitori e non raccoglie dati personali dei minori.
 Il nome e la foto del bambino inseriti dal genitore non vengono inviati allo sviluppatore.
-Con la condivisione familiare attiva, nome e impegni del bambino arrivano solo ai familiari invitati direttamente dal genitore.</p>
+Con la condivisione degli impegni attiva, nome e impegni del bambino arrivano solo alle persone invitate direttamente dal genitore che hanno accettato l’invito.</p>
 
 <h2>8. Contatti</h2>
 <p>Per domande su questa informativa sulla privacy, scrivici:</p>
 <ul>
-  <li>E-mail: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-mail: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Pagina di assistenza: <a href="support.html">Assistenza Agenda Bimbi</a></li>
 </ul>
 

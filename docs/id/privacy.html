@@ -60,11 +60,12 @@
 <p>"Jadwal Si Kecil" (selanjutnya disebut "aplikasi") sangat menghargai privasi Anda.
 Aplikasi ini <strong>tidak mengumpulkan atau mengirimkan data pribadi seperti foto, jadwal, atau informasi anak kepada pengembang.</strong>
 Data tersebut pada dasarnya hanya diproses dan disimpan di perangkat Anda.
-Yang diterima pengembang hanyalah statistik penggunaan anonim dan laporan galat yang tidak dapat mengidentifikasi siapa pun (lihat poin 4).</p>
+Yang diterima pengembang hanyalah <strong>statistik penggunaan anonim dan laporan galat</strong> yang tidak dapat mengidentifikasi siapa pun (lihat poin 4),
+serta <strong>masukan yang Anda kirim sendiri</strong> dari Pengaturan (lihat poin 5).</p>
 
-<p>Pengecualiannya hanya jika Anda sendiri <strong>menyalakan "Berbagi Keluarga" dan mengundang anggota keluarga</strong>.
-Dalam hal itu, jadwal disimpan <strong>di akun iCloud milik Anda sendiri</strong> dan dibagikan kepada keluarga yang diundang.
-Rinciannya ada di poin 3. Berbagi Keluarga bersifat opsional — jika tidak dinyalakan, foto, jadwal, dan informasi anak tidak pernah keluar dari perangkat.</p>
+<p>Pengecualiannya hanya jika Anda sendiri <strong>mengundang orang lain melalui "Berbagi Jadwal"</strong>.
+Dalam hal itu, jadwal disimpan <strong>di akun iCloud milik Anda sendiri</strong> dan dibagikan kepada orang yang diundang.
+Rinciannya ada di poin 3. Berbagi Jadwal bersifat opsional — jika tidak dinyalakan, foto, jadwal, dan informasi anak tidak pernah keluar dari perangkat.</p>
 
 <h2>1. Informasi yang Diproses</h2>
 <p>Aplikasi tidak mengumpulkan data pribadi. Informasi berikut <strong>seluruhnya hanya disimpan di perangkat</strong>.
@@ -72,7 +73,7 @@ Rinciannya ada di poin 3. Berbagi Keluarga bersifat opsional — jika tidak diny
 <ul>
   <li><strong>Foto</strong>: foto kalender dan pengumuman hanya dianalisis di perangkat menggunakan framework Apple Vision dan tidak dikirim ke mana pun. Foto asli yang dipakai untuk analisis tidak disimpan di aplikasi.</li>
   <li><strong>Data jadwal</strong>: jadwal hasil pindaian (judul, tanggal, catatan) hanya disimpan di penyimpanan khusus aplikasi di perangkat (App Group).</li>
-  <li><strong>Profil anak</strong>: nama dan foto profil anak hanya disimpan di perangkat. (Foto profil tidak dibagikan meskipun Berbagi Keluarga dinyalakan.)</li>
+  <li><strong>Profil anak</strong>: nama dan foto profil anak hanya disimpan di perangkat. (Jika Berbagi Jadwal dinyalakan, nama anak, info kelas, dan foto profil dibagikan kepada orang yang diundang.)</li>
 </ul>
 
 <h2>2. Tujuan Penggunaan Izin Perangkat</h2>
@@ -83,48 +84,53 @@ Rinciannya ada di poin 3. Berbagi Keluarga bersifat opsional — jika tidak diny
   <li><strong>Notifikasi</strong>: pengingat lokal sehari sebelumnya dan pada hari-H (dikirim langsung dari perangkat, tanpa server push)</li>
 </ul>
 
-<h2>3. Berbagi Keluarga (opsional, iCloud)</h2>
-<p>Jika Anda mengundang pasangan atau anggota keluarga lain melalui Pengaturan &gt; Berbagi Keluarga, Anda dan orang yang diundang dapat melihat dan mengubah jadwal yang sama.
+<h2>3. Berbagi Jadwal (opsional, iCloud)</h2>
+<p>Jika Anda mengundang pasangan, kakek-nenek, pengasuh, atau orang lain dengan "Undang untuk Melihat Bersama" di Pengaturan &gt; Berbagi Jadwal, Anda dan orang yang diundang dapat melihat dan mengubah jadwal yang sama. Fitur ini tidak ada kaitannya dengan Berbagi Keluarga milik Apple.
 Fitur ini menggunakan berbagi iCloud (CloudKit) dari Apple; pengembang tidak dapat melihat atau menyimpan konten yang dibagikan.</p>
 <ul>
-  <li><strong>Yang dibagikan</strong>: judul, tanggal, waktu, keterangan sepanjang hari, catatan barang bawaan, dan nama anak pada setiap jadwal, serta daftar anak.</li>
-  <li><strong>Yang tidak dibagikan</strong>: foto kalender dan pengumuman, foto profil anak, pengaturan pengingat.</li>
+  <li><strong>Yang dibagikan</strong>: judul, tanggal, waktu, keterangan sepanjang hari, catatan barang bawaan, dan nama anak pada setiap jadwal, serta daftar anak, info kelas, dan foto profil.</li>
+  <li><strong>Yang tidak dibagikan</strong>: foto kalender dan pengumuman, serta pengaturan masing-masing perangkat seperti waktu pengingat.</li>
   <li><strong>Lokasi penyimpanan</strong>: basis data pribadi iCloud milik pengundang (pemilik). Kebijakan privasi Apple juga berlaku.</li>
   <li><strong>Hak akses</strong>: hanya orang yang diundang langsung oleh pemilik melalui tautan undangan dan telah menerimanya. Tautan tidak pernah dibuat publik.</li>
-  <li><strong>Menghentikan</strong>: kapan saja melalui Pengaturan &gt; Berbagi Keluarga dengan "Hentikan Berbagi" (pemilik) atau "Keluar dari Berbagi" (peserta).
+  <li><strong>Menghentikan</strong>: kapan saja melalui Pengaturan &gt; Berbagi Jadwal dengan "Hentikan Berbagi" (pengundang) atau "Keluar dari Berbagi" (orang yang diundang).
       Setelah itu data tidak lagi disinkronkan, dan jadwal yang sudah diterima tetap tersimpan di masing-masing perangkat.</li>
 </ul>
 
-<h2>4. Statistik Penggunaan Anonim</h2>
-<p>Untuk mengetahui berapa banyak orang yang memakai aplikasi dan untuk memperbaiki galat, kami mengirimkan statistik anonim berikut ke Apple iCloud (CloudKit). Hanya pengembang yang dapat membacanya.</p>
+<h2>4. Statistik Penggunaan dan Laporan Galat Anonim</h2>
+<p>Untuk mengetahui berapa banyak orang yang memakai aplikasi dan untuk memperbaiki galat, kami mengirimkan statistik anonim berikut ke penyimpanan Apple iCloud (CloudKit) milik pengembang. Hanya pengembang yang dapat membacanya.</p>
 <ul>
-  <li>ID acak yang dibuat saat pemasangan (tidak terhubung dengan perangkat, Apple ID, atau aplikasi lain, dan berubah jika aplikasi dipasang ulang)</li>
+  <li>ID acak yang dibuat saat pemasangan (tidak terhubung dengan pengguna, Apple ID, perangkat, atau aplikasi lain, dan berubah jika aplikasi dipasang ulang)</li>
   <li>Versi aplikasi, versi iOS, pengaturan wilayah dan bahasa</li>
   <li>Jumlah dan tanggal aplikasi dibuka, tanggal pemasangan, dan jumlah hari sejak dipasang</li>
-  <li>Laporan diagnostik saat aplikasi macet atau tertutup tiba-tiba (versi aplikasi, versi iOS, jenis perangkat, informasi teknis galat)</li>
+  <li>Nama kejadian di dalam aplikasi (misalnya: pertanyaan kepuasan ditampilkan, permintaan ulasan ditampilkan). Tidak memuat apa pun yang Anda ketik.</li>
+  <li>Laporan diagnostik saat aplikasi macet atau tertutup tiba-tiba (jenis perangkat, informasi teknis galat)</li>
 </ul>
 <p>Statistik ini tidak memuat nama, kontak, lokasi, atau apa pun yang Anda masukkan seperti foto, jadwal, dan informasi anak. Statistik hanya dikirim saat Anda masuk ke iCloud.</p>
 
 <h2>5. Pemberian kepada Pihak Ketiga dan Pemrosesan oleh Pihak Lain</h2>
-<p>Aplikasi tidak menjual data pribadi ataupun memberikannya kepada pihak ketiga untuk keperluan iklan atau analitik.
+<p>Aplikasi tidak menjual data pribadi ataupun memberikannya kepada pihak ketiga untuk keperluan iklan.
 Aplikasi tidak menggunakan SDK iklan, layanan analitik eksternal, maupun server yang dikelola pengembang.
-Infrastruktur iCloud milik Apple hanya digunakan saat Berbagi Keluarga dinyalakan dan saat mengirim statistik anonim di poin 4.</p>
+Infrastruktur iCloud (CloudKit) milik Apple hanya digunakan saat Berbagi Jadwal dinyalakan dan saat mengirim statistik anonim serta laporan galat di poin 4.</p>
+<p><strong>Mengirim masukan</strong>: hanya dikirim saat Anda sendiri mengirimkannya melalui "Kirim Masukan" di Pengaturan.
+Jenis masukan yang Anda pilih dan tulisan Anda, beserta versi aplikasi, versi iOS, jenis perangkat, dan pengaturan bahasa perangkat, dikirim ke penyimpanan Apple CloudKit milik pengembang.
+Nama dan email hanya ikut dikirim jika Anda sendiri mengisinya agar bisa dibalas. Jadwal, informasi anak, dan foto tidak disertakan.
+Masukan hanya digunakan untuk membalas dan menyempurnakan aplikasi; jika ingin masukan Anda dihapus, hubungi kami melalui kontak di bawah.</p>
 
 <h2>6. Penyimpanan dan Penghapusan Data</h2>
 <p>Foto, jadwal, dan informasi anak berada di perangkat, sehingga saat aplikasi dihapus, semua data yang disimpan aplikasi ikut terhapus.
-Jika Anda memakai Berbagi Keluarga dan pemilik memilih "Hentikan Berbagi", keluarga yang diundang tidak akan menerima jadwal baru lagi.
-Data bersama di iCloud akan dibersihkan saat pemilik menghentikan berbagi atau menghapus aplikasi.
+Jika Anda memakai Berbagi Jadwal dan pengundang memilih "Hentikan Berbagi", orang yang diundang tidak akan menerima jadwal baru lagi.
+Data bersama di iCloud akan dibersihkan saat pengundang menghentikan berbagi atau menghapus aplikasi.
 Jadwal yang sudah ditambahkan ke Kalender Apple dapat Anda kelola dan hapus langsung di aplikasi Kalender.</p>
 
 <h2>7. Data Pribadi Anak</h2>
 <p>Aplikasi ini adalah alat bantu untuk orang tua dan tidak mengumpulkan data pribadi anak.
 Nama dan foto anak yang dimasukkan orang tua tidak dikirim ke pengembang.
-Jika Berbagi Keluarga dinyalakan, nama anak dan jadwal hanya diteruskan kepada anggota keluarga yang diundang langsung oleh orang tua.</p>
+Jika Berbagi Jadwal dinyalakan, nama anak dan jadwal hanya diteruskan kepada orang yang diundang langsung oleh orang tua dan telah menerima undangan.</p>
 
 <h2>8. Kontak</h2>
 <p>Jika ada pertanyaan tentang kebijakan privasi ini, silakan hubungi kami di:</p>
 <ul>
-  <li>Email: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>Email: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Halaman bantuan: <a href="support.html">Bantuan Jadwal Si Kecil</a></li>
 </ul>
 

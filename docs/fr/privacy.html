@@ -59,11 +59,12 @@
 <p>« Agenda Bambin » (ci-après « l’app ») attache une grande importance à la protection de vos données personnelles.
 L’app <strong>ne collecte ni ne transmet au développeur aucune donnée personnelle telle que vos photos, vos événements ou les informations sur vos enfants.</strong>
 Ces données sont, par défaut, traitées et stockées uniquement sur votre appareil.
-Le développeur ne reçoit que des statistiques d’utilisation anonymes et des rapports d’erreur qui ne permettent pas de vous identifier (voir section 4).</p>
+Le développeur ne reçoit que des <strong>statistiques d’utilisation anonymes et des rapports d’erreur</strong> qui ne permettent pas de vous identifier (voir section 4),
+ainsi que les <strong>commentaires que vous envoyez vous-même</strong> depuis les réglages (voir section 5).</p>
 
-<p>Seule exception : <strong>si vous activez vous-même le « Partage familial » et invitez des proches</strong>,
+<p>Seule exception : <strong>si vous invitez vous-même d’autres personnes via « Partage des événements »</strong>,
 les données de planning sont enregistrées dans <strong>votre propre compte iCloud</strong> et partagées avec les personnes invitées.
-Les détails figurent à la section 3. Le partage familial est facultatif : s’il est désactivé, vos photos, événements et informations sur vos enfants ne quittent pas l’appareil.</p>
+Les détails figurent à la section 3. Le partage du planning est facultatif : s’il est désactivé, vos photos, événements et informations sur vos enfants ne quittent pas l’appareil.</p>
 
 <h2>1. Informations traitées</h2>
 <p>L’app ne collecte aucune donnée personnelle. Les informations ci-dessous sont stockées <strong>exclusivement sur l’appareil</strong>.
@@ -71,7 +72,7 @@ Les détails figurent à la section 3. Le partage familial est facultatif : s’
 <ul>
   <li><strong>Photos</strong> : les photos de calendriers et de circulaires sont analysées uniquement sur l’appareil grâce au framework Apple Vision et ne sont jamais transmises. Les photos originales analysées ne sont pas conservées dans l’app.</li>
   <li><strong>Événements</strong> : les événements extraits (titre, date, notes) sont stockés uniquement dans l’espace de stockage propre à l’app sur l’appareil (App Group).</li>
-  <li><strong>Profils des enfants</strong> : le prénom et la photo de profil de l’enfant sont stockés uniquement sur l’appareil. (La photo de profil n’est pas partagée, même avec le partage familial activé.)</li>
+  <li><strong>Profils des enfants</strong> : le prénom et la photo de profil de l’enfant sont stockés uniquement sur l’appareil. (Si le partage du planning est activé, le prénom, la classe et la photo de profil de l’enfant sont partagés avec les personnes invitées.)</li>
 </ul>
 
 <h2>2. Utilisation des autorisations</h2>
@@ -82,48 +83,53 @@ Les détails figurent à la section 3. Le partage familial est facultatif : s’
   <li><strong>Notifications</strong> : rappels locaux la veille et le jour de l’événement (envoyés directement par l’appareil, sans serveur push)</li>
 </ul>
 
-<h2>3. Partage familial (facultatif, iCloud)</h2>
-<p>Lorsque vous invitez votre conjoint ou d’autres proches depuis Réglages &gt; Partage familial, la personne qui invite et les personnes invitées peuvent consulter et modifier le même planning.
+<h2>3. Partage des événements (facultatif, iCloud)</h2>
+<p>Lorsque vous invitez votre conjoint, les grands-parents, la nounou ou toute autre personne avec « Inviter des proches » dans Réglages &gt; Partage des événements, la personne qui invite et les personnes invitées peuvent consulter et modifier le même planning. Cela n’a rien à voir avec le Partage familial d’Apple, que vous l’utilisiez ou non.
 Cette fonctionnalité repose sur le partage iCloud (CloudKit) d’Apple ; le développeur ne voit pas et ne conserve pas les contenus partagés.</p>
 <ul>
-  <li><strong>Informations partagées</strong> : titre, date, heure, mention « toute la journée », note des affaires à prévoir et prénom de l’enfant pour chaque événement, ainsi que la liste des enfants.</li>
-  <li><strong>Informations non partagées</strong> : photos de calendriers et de circulaires, photos de profil des enfants, réglages des rappels.</li>
+  <li><strong>Informations partagées</strong> : titre, date, heure, mention « toute la journée », note des affaires à prévoir et prénom de l’enfant pour chaque événement, ainsi que la liste des enfants avec leur classe et leur photo de profil.</li>
+  <li><strong>Informations non partagées</strong> : photos de calendriers et de circulaires, réglages propres à chaque appareil comme l’heure des rappels.</li>
   <li><strong>Lieu de stockage</strong> : la base de données iCloud privée de la personne qui invite (le propriétaire). La politique de confidentialité d’Apple s’applique également.</li>
   <li><strong>Accès</strong> : seules les personnes invitées par le propriétaire via un lien d’invitation et ayant accepté y ont accès. Aucun lien public n’est créé.</li>
-  <li><strong>Arrêt</strong> : vous pouvez y mettre fin à tout moment dans Réglages &gt; Partage familial avec « Arrêter le partage » (propriétaire) ou « Quitter le partage » (participant).
+  <li><strong>Arrêt</strong> : vous pouvez y mettre fin à tout moment dans Réglages &gt; Partage des événements avec « Arrêter le partage » (personne qui a invité) ou « Quitter le partage » (personnes invitées).
       La synchronisation s’arrête alors ; les événements déjà reçus restent sur chaque appareil.</li>
 </ul>
 
-<h2>4. Statistiques d’utilisation anonymes</h2>
-<p>Pour savoir combien de personnes utilisent l’app et corriger les bugs, l’app envoie les statistiques anonymes suivantes vers Apple iCloud (CloudKit). Seul le développeur peut les lire.</p>
+<h2>4. Statistiques d’utilisation anonymes et rapports d’erreur</h2>
+<p>Pour savoir combien de personnes utilisent l’app et corriger les bugs, l’app envoie les statistiques anonymes suivantes vers l’espace de stockage iCloud (CloudKit) du développeur chez Apple. Seul le développeur peut les lire.</p>
 <ul>
-  <li>un identifiant aléatoire créé à l’installation (sans lien avec l’appareil, l’identifiant Apple ou d’autres apps ; il change en cas de réinstallation)</li>
+  <li>un identifiant aléatoire créé à l’installation (sans lien avec vous, votre identifiant Apple, votre appareil ou d’autres apps ; il change en cas de réinstallation)</li>
   <li>la version de l’app, la version d’iOS, la région et la langue</li>
   <li>le nombre d’ouvertures de l’app et les jours d’ouverture, la date d’installation et le nombre de jours écoulés depuis</li>
-  <li>des rapports de diagnostic lorsque l’app se bloque ou se ferme de façon inattendue (version de l’app, version d’iOS, type d’appareil, informations techniques sur l’erreur)</li>
+  <li>le nom de certaines actions de l’app (par exemple « question de satisfaction affichée », « demande d’avis affichée ») ; aucun contenu saisi n’y figure</li>
+  <li>des rapports de diagnostic lorsque l’app se bloque ou se ferme de façon inattendue (type d’appareil, informations techniques sur l’erreur)</li>
 </ul>
 <p>Ils ne contiennent ni nom, ni coordonnées, ni position, ni aucun contenu saisi comme vos photos, événements ou informations sur vos enfants. Ils ne sont envoyés que si vous êtes connecté à iCloud.</p>
 
 <h2>5. Communication à des tiers et sous-traitance</h2>
-<p>L’app ne vend pas vos données personnelles et ne les communique à aucun tiers à des fins publicitaires ou d’analyse.
+<p>L’app ne vend pas vos données personnelles et ne les communique à aucun tiers à des fins publicitaires.
 Elle n’utilise ni SDK publicitaire, ni service d’analyse externe, ni serveur exploité par le développeur.
-L’infrastructure iCloud d’Apple n’est utilisée que lorsque le partage familial est activé et pour l’envoi des statistiques anonymes de la section 4.</p>
+L’infrastructure iCloud (CloudKit) d’Apple n’est utilisée que lorsque le partage du planning est activé et pour l’envoi des statistiques anonymes et rapports d’erreur de la section 4.</p>
+<p><strong>Commentaires</strong> : ils ne sont transmis que si vous les envoyez vous-même avec « Envoyer un commentaire » dans les réglages.
+La catégorie choisie, votre message, ainsi que la version de l’app, la version d’iOS, le type d’appareil et la langue de l’appareil sont transmis à l’espace de stockage CloudKit du développeur chez Apple.
+Votre nom et votre adresse e-mail ne sont joints que si vous les indiquez vous-même pour obtenir une réponse. Vos événements, les informations sur vos enfants et vos photos n’en font jamais partie.
+Les commentaires servent uniquement à vous répondre et à améliorer l’app. Pour en demander la suppression, écrivez-nous à l’adresse ci-dessous.</p>
 
 <h2>6. Conservation et suppression des données</h2>
 <p>Vos photos, événements et informations sur vos enfants se trouvent sur votre appareil : supprimer l’app efface donc toutes les données qu’elle a enregistrées.
-En cas de partage familial, lorsque le propriétaire choisit « Arrêter le partage », les proches invités ne reçoivent plus de nouveaux événements.
-Les données partagées stockées dans iCloud sont nettoyées lorsque le propriétaire arrête le partage ou supprime l’app.
+En cas de partage du planning, lorsque la personne qui a invité choisit « Arrêter le partage », les personnes invitées ne reçoivent plus de nouveaux événements.
+Les données partagées stockées dans iCloud sont nettoyées lorsque la personne qui a invité arrête le partage ou supprime l’app.
 Les événements ajoutés au Calendrier Apple se gèrent et se suppriment directement dans l’app Calendrier d’iOS.</p>
 
 <h2>7. Données des enfants</h2>
 <p>L’app est un outil destiné aux parents et ne collecte aucune donnée personnelle concernant les enfants.
 Le prénom et la photo saisis par le parent ne sont pas transmis au développeur.
-Avec le partage familial activé, le prénom et le planning de l’enfant ne sont transmis qu’aux proches que le parent a lui-même invités.</p>
+Avec le partage du planning activé, le prénom et le planning de l’enfant ne sont transmis qu’aux personnes que le parent a lui-même invitées et qui ont accepté.</p>
 
 <h2>8. Contact</h2>
 <p>Pour toute question concernant cette politique de confidentialité, contactez-nous :</p>
 <ul>
-  <li>E-mail : <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-mail : <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Page d’aide : <a href="support.html">Aide – Agenda Bambin</a></li>
 </ul>
 

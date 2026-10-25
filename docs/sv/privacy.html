@@ -60,11 +60,12 @@
 <p>Barnschema (”appen”) värnar om din integritet.
 Appen <strong>samlar inte in och skickar inte personuppgifter som bilder, händelser eller uppgifter om dina barn till utvecklaren.</strong>
 Sådana uppgifter behandlas och sparas i grunden bara på din enhet.
-Det enda utvecklaren får är anonym användningsstatistik och felrapporter som inte kan kopplas till dig (se punkt 4).</p>
+Det enda utvecklaren får är <strong>anonym användningsstatistik och felrapporter</strong> som inte kan kopplas till dig (se punkt 4) och
+<strong>feedback som du själv skickar</strong> från inställningarna (se punkt 5).</p>
 
-<p>Endast om du själv <strong>slår på ”Dela med familjen” och bjuder in familjen</strong>
+<p>Endast om du själv <strong>bjuder in andra under ”Delning av händelser”</strong>
 sparas händelserna i <strong>ditt eget iCloud-konto</strong> och delas med dem du har bjudit in.
-Mer om detta i punkt 3. Att dela med familjen är frivilligt, och är det avstängt lämnar varken bilder, händelser eller uppgifter om barnen enheten.</p>
+Mer om detta i punkt 3. Delning av händelser är frivilligt, och använder du det inte lämnar varken bilder, händelser eller uppgifter om barnen enheten.</p>
 
 <h2>1. Vilka uppgifter som behandlas</h2>
 <p>Appen samlar inte in personuppgifter. Uppgifterna nedan sparas <strong>enbart på enheten</strong>.
@@ -72,7 +73,7 @@ Mer om detta i punkt 3. Att dela med familjen är frivilligt, och är det avstä
 <ul>
   <li><strong>Bilder</strong>: Bilder av kalendrar och lappar analyseras bara på enheten med Apples ramverk Vision och skickas aldrig vidare. Originalbilden som analyserades sparas inte i appen.</li>
   <li><strong>Händelser</strong>: De händelser som hittas (titel, datum, anteckning) sparas bara i appens egen lagring på enheten (App Group).</li>
-  <li><strong>Barnprofiler</strong>: Barnets namn och profilbild sparas bara på enheten. (Profilbilden delas inte, inte ens när du delar med familjen.)</li>
+  <li><strong>Barnprofiler</strong>: Barnets namn och profilbild sparas bara på enheten. (Med schemadelning påslagen delas barnets namn, klassuppgifter och profilbild med dem du har bjudit in.)</li>
 </ul>
 
 <h2>2. Varför appen ber om behörigheter</h2>
@@ -83,48 +84,53 @@ Mer om detta i punkt 3. Att dela med familjen är frivilligt, och är det avstä
   <li><strong>Notiser</strong>: lokala påminnelser kvällen före och samma dag (skickas direkt från enheten, ingen pushserver)</li>
 </ul>
 
-<h2>3. Dela med familjen (frivilligt, iCloud)</h2>
-<p>När du bjuder in din partner eller andra i familjen under Inställningar &gt; Dela med familjen kan både du och de inbjudna se och redigera samma händelser.
+<h2>3. Delning av händelser (frivilligt, iCloud)</h2>
+<p>När du under Inställningar &gt; Delning av händelser bjuder in din partner, far- och morföräldrar, barnvakten eller andra med ”Bjud in till delning” kan både du och de inbjudna se och redigera samma händelser. Det har inget att göra med om ni använder Apples Familjedelning.
 Funktionen använder Apples iCloud-delning (CloudKit), och utvecklaren kan varken se eller lagra det som delas.</p>
 <ul>
-  <li><strong>Det här delas</strong>: händelsernas titel, datum, tid, om de pågår hela dagen, anteckningen om vad som ska med och barnets namn, samt listan över barn.</li>
-  <li><strong>Det här delas inte</strong>: bilder av kalendrar och lappar, barnens profilbilder och dina inställningar för påminnelser.</li>
+  <li><strong>Det här delas</strong>: händelsernas titel, datum, tid, om de pågår hela dagen, anteckningen om vad som ska med och barnets namn, samt listan över barn med klassuppgifter och profilbilder.</li>
+  <li><strong>Det här delas inte</strong>: bilder av kalendrar och lappar samt inställningar som gäller den enskilda enheten, till exempel när påminnelserna kommer.</li>
   <li><strong>Lagringsplats</strong>: den privata iCloud-databasen hos den som bjöd in (ägaren). Apples integritetspolicy gäller också.</li>
   <li><strong>Åtkomst</strong>: Bara personer som ägaren själv har bjudit in med inbjudningslänken och som har tackat ja får åtkomst. Länken görs aldrig offentlig.</li>
-  <li><strong>Avsluta</strong>: Du kan när som helst stänga av delningen under Inställningar &gt; Dela med familjen med ”Sluta dela” (ägare) eller ”Lämna delning” (deltagare).
+  <li><strong>Avsluta</strong>: Du kan när som helst stänga av delningen under Inställningar &gt; Delning av händelser med ”Avsluta delning” (den som bjöd in) eller ”Lämna delning” (de inbjudna).
       Därefter synkas inget mer, men de händelser var och en redan har fått finns kvar på respektive enhet.</li>
 </ul>
 
-<h2>4. Anonym användningsstatistik</h2>
-<p>För att veta hur många som använder appen och kunna rätta fel skickas följande anonyma statistik till Apples iCloud (CloudKit). Bara utvecklaren kan läsa den.</p>
+<h2>4. Anonym användningsstatistik och felrapporter</h2>
+<p>För att veta hur många som använder appen och kunna rätta fel skickas följande anonyma statistik till utvecklarens lagringsutrymme i Apples iCloud (CloudKit). Bara utvecklaren kan läsa den.</p>
 <ul>
-  <li>Ett slumpmässigt ID som skapas vid installationen (det kopplas inte till enheten, ditt Apple-ID eller andra appar och byts ut om du installerar om appen)</li>
+  <li>Ett slumpmässigt ID som skapas vid installationen (det kopplas inte till dig, ditt Apple-ID, enheten eller andra appar och byts ut om du installerar om appen)</li>
   <li>Appversion, iOS-version samt region- och språkinställning</li>
   <li>Hur många gånger och vilka dagar appen har öppnats, installationsdatum och antal dagar sedan installationen</li>
-  <li>Diagnosrapport när appen hänger sig eller kraschar (appversion, iOS-version, enhetstyp och teknisk information om felet)</li>
+  <li>Namn på sådant som har hänt i appen (till exempel att en fråga om hur nöjd du är eller en uppmaning att betygsätta appen har visats). Det du har skrivit ingår inte.</li>
+  <li>Diagnosrapport när appen hänger sig eller kraschar (enhetstyp och teknisk information om felet)</li>
 </ul>
 <p>Namn, kontaktuppgifter, plats och sådant du själv har fyllt i, som bilder, händelser och uppgifter om barnen, ingår inte. Statistiken skickas bara när du är inloggad på iCloud.</p>
 
 <h2>5. Delning med tredje part och personuppgiftsbiträden</h2>
-<p>Appen säljer inte personuppgifter och lämnar inte ut dem till tredje part för reklam eller analys.
+<p>Appen säljer inte personuppgifter och lämnar inte ut dem till tredje part i reklamsyfte.
 Appen använder inga reklam-SDK:er, externa analystjänster eller servrar som utvecklaren driver.
-Apples iCloud-infrastruktur används bara när du delar med familjen och när den anonyma statistiken i punkt 4 skickas.</p>
+Apples iCloud-infrastruktur (CloudKit) används bara när schemadelning är påslagen och när den anonyma statistiken och felrapporterna i punkt 4 skickas.</p>
+<p><strong>Feedback</strong>: Feedback skickas bara när du själv skickar den via ”Skicka feedback” i inställningarna.
+Den kategori du väljer och texten du skriver skickas tillsammans med appversion, iOS-version, enhetstyp och enhetens språkinställning till utvecklarens lagringsutrymme i Apple CloudKit.
+Namn och e-postadress skickas bara med om du själv fyller i dem för att få svar. Händelser, uppgifter om barnen och bilder ingår inte.
+Feedbacken används bara för att svara dig och förbättra appen. Vill du att den raderas kan du höra av dig till kontaktadressen nedan.</p>
 
 <h2>6. Lagring och radering</h2>
 <p>Bilder, händelser och uppgifter om barnen finns på enheten, så om du raderar appen raderas också all information som appen har sparat.
-Om du har delat med familjen och ägaren väljer ”Sluta dela” får de inbjudna inga nya händelser.
-Delad information i iCloud rensas när ägaren slutar dela eller raderar appen.
+Om du har använt schemadelning och den som bjöd in väljer ”Avsluta delning” får de inbjudna inga nya händelser.
+Delad information i iCloud rensas när den som bjöd in avslutar delningen eller raderar appen.
 Händelser som har lagts in i Apple-kalendern hanterar och raderar du själv i appen Kalender i iOS.</p>
 
 <h2>7. Barns personuppgifter</h2>
 <p>Appen är ett verktyg för föräldrar och vårdnadshavare och samlar inte in personuppgifter om barn.
 Barnens namn och bilder som föräldern fyller i skickas inte till utvecklaren.
-När du delar med familjen delas barnets namn och händelser bara med familjemedlemmar som föräldern själv har bjudit in.</p>
+När schemadelning är påslagen delas barnets namn och händelser bara med personer som föräldern själv har bjudit in och som har tackat ja.</p>
 
 <h2>8. Kontakt</h2>
 <p>Har du frågor om integritetspolicyn är du välkommen att kontakta oss.</p>
 <ul>
-  <li>E-post: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-post: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Supportsida: <a href="support.html">Barnschema – hjälp</a></li>
 </ul>
 

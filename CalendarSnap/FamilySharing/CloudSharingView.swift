@@ -56,7 +56,7 @@ enum CloudSharingPresenter {
         init(onStopSharing: @escaping () -> Void) { self.onStopSharing = onStopSharing }
 
         func itemTitle(for csc: UICloudSharingController) -> String? {
-            "아이일정 함께 보기"
+            String(localized: "아이일정 함께 보기")
         }
 
         func itemThumbnailData(for csc: UICloudSharingController) -> Data? {
@@ -66,7 +66,7 @@ enum CloudSharingPresenter {
         func cloudSharingController(_ csc: UICloudSharingController,
                                     failedToSaveShareWithError error: Error) {
             Task { @MainActor in
-                FamilySyncManager.shared.infoMessage = "공유 설정에 실패했어요. 네트워크 상태를 확인해주세요."
+                FamilySyncManager.shared.infoMessage = String(localized: "공유 설정에 실패했어요. 네트워크 상태를 확인해주세요.")
             }
         }
 

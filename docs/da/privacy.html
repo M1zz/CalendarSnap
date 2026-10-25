@@ -60,11 +60,12 @@
 <p>„Børneskema“ (herefter „appen“) passer godt på dine personoplysninger.
 Appen <strong>indsamler ikke og sender ikke personoplysninger som billeder, aftaler eller oplysninger om dine børn til udvikleren.</strong>
 Den slags data behandles og gemmes som udgangspunkt kun på din egen enhed.
-Det eneste, udvikleren modtager, er anonym brugsstatistik og fejlrapporter, som ikke kan føres tilbage til nogen (se punkt 4).</p>
+Det eneste, udvikleren modtager, er <strong>anonym brugsstatistik og fejlrapporter</strong>, som ikke kan føres tilbage til nogen (se punkt 4),
+og <strong>feedback, du selv sender</strong> fra indstillingerne (se punkt 5).</p>
 
-<p>Undtagelsen er, hvis du selv <strong>slår „Familiedeling“ til og inviterer familiemedlemmer</strong>.
+<p>Undtagelsen er, hvis du selv <strong>inviterer andre under „Deling af begivenheder“</strong>.
 Så gemmes aftalerne <strong>på din egen iCloud-konto</strong> og deles med dem, du har inviteret.
-Se punkt 3 for detaljer. Familiedeling er valgfri — er den slået fra, forlader billeder, aftaler og oplysninger om børnene aldrig enheden.</p>
+Se punkt 3 for detaljer. Deling af begivenheder er valgfri — bruger du den ikke, forlader billeder, aftaler og oplysninger om børnene aldrig enheden.</p>
 
 <h2>1. Hvilke oplysninger behandles</h2>
 <p>Appen indsamler ikke personoplysninger. Følgende gemmes <strong>udelukkende på din enhed</strong>.
@@ -72,7 +73,7 @@ Se punkt 3 for detaljer. Familiedeling er valgfri — er den slået fra, forlade
 <ul>
   <li><strong>Billeder</strong>: Billeder af kalendere og opslag analyseres kun på enheden med Apples Vision-framework og sendes ingen steder hen. De originale billeder gemmes ikke i appen.</li>
   <li><strong>Aftaler</strong>: De fundne aftaler (titel, dato, note) gemmes kun i appens eget lager på enheden (App Group).</li>
-  <li><strong>Børneprofiler</strong>: Barnets navn og profilbillede gemmes kun på enheden. (Profilbilledet deles heller ikke, når familiedeling er slået til.)</li>
+  <li><strong>Børneprofiler</strong>: Barnets navn og profilbillede gemmes kun på enheden. (Når skemadeling er slået til, deles barnets navn, oplysninger om stue/klasse og profilbillede med dem, du har inviteret.)</li>
 </ul>
 
 <h2>2. Hvorfor appen beder om adgang</h2>
@@ -83,48 +84,53 @@ Se punkt 3 for detaljer. Familiedeling er valgfri — er den slået fra, forlade
   <li><strong>Notifikationer</strong>: Lokale påmindelser dagen før og på dagen (sendes direkte fra enheden, ingen push-server)</li>
 </ul>
 
-<h2>3. Familiedeling (valgfri, iCloud)</h2>
-<p>Inviterer du din partner eller andre i familien under Indstillinger &gt; Familiedeling, kan både du og de inviterede se og redigere de samme aftaler.
+<h2>3. Deling af begivenheder (valgfri, iCloud)</h2>
+<p>Inviterer du din partner, bedsteforældrene, barnepigen eller andre med „Inviter til deling“ under Indstillinger &gt; Deling af begivenheder, kan både du og de inviterede se og redigere de samme aftaler. Det har intet at gøre med, om I bruger Apples Familiedeling.
 Funktionen bruger deling via Apples iCloud (CloudKit), og udvikleren kan hverken se eller opbevare det delte indhold.</p>
 <ul>
-  <li><strong>Hvad deles</strong>: Aftalernes titel, dato, tidspunkt, om de varer hele dagen, note om hvad der skal med og barnets navn samt listen over børn.</li>
-  <li><strong>Hvad deles ikke</strong>: Billeder af kalendere og opslag, børnenes profilbilleder, indstillinger for påmindelser.</li>
+  <li><strong>Hvad deles</strong>: Aftalernes titel, dato, tidspunkt, om de varer hele dagen, note om hvad der skal med og barnets navn samt listen over børn med oplysninger om stue/klasse og profilbilleder.</li>
+  <li><strong>Hvad deles ikke</strong>: Billeder af kalendere og opslag samt indstillinger, der gælder den enkelte enhed, fx hvornår påmindelserne kommer.</li>
   <li><strong>Hvor gemmes det</strong>: I den private iCloud-database hos den, der inviterede (ejeren). Apples privatlivspolitik gælder også.</li>
   <li><strong>Hvem har adgang</strong>: Kun personer, som ejeren selv har inviteret via link, og som har accepteret. Linket bliver aldrig offentligt.</li>
-  <li><strong>Stop</strong>: Du kan til enhver tid slå det fra under Indstillinger &gt; Familiedeling med „Stop deling“ (ejer) eller „Forlad deling“ (deltager).
+  <li><strong>Stop</strong>: Du kan til enhver tid slå det fra under Indstillinger &gt; Deling af begivenheder med „Stop deling“ (den, der inviterede) eller „Forlad deling“ (de inviterede).
       Derefter synkroniseres der ikke længere, og de aftaler, hver enhed allerede har modtaget, bliver liggende på den enkelte enhed.</li>
 </ul>
 
-<h2>4. Anonym brugsstatistik</h2>
-<p>For at vide, hvor mange der bruger appen, og for at kunne rette fejl sender vi følgende anonyme statistik til Apples iCloud (CloudKit). Kun udvikleren kan læse den.</p>
+<h2>4. Anonym brugsstatistik og fejlrapporter</h2>
+<p>For at vide, hvor mange der bruger appen, og for at kunne rette fejl sender vi følgende anonyme statistik til udviklerens lagerplads i Apples iCloud (CloudKit). Kun udvikleren kan læse den.</p>
 <ul>
-  <li>Et tilfældigt ID, der oprettes ved installation (ikke knyttet til enheden, dit Apple-id eller andre apps og skifter ved geninstallation)</li>
+  <li>Et tilfældigt ID, der oprettes ved installation (ikke knyttet til dig, dit Apple-id, enheden eller andre apps og skifter ved geninstallation)</li>
   <li>Appversion, iOS-version, indstillinger for område og sprog</li>
   <li>Hvor mange gange og på hvilke dage appen er åbnet, installationsdato og antal dage siden installation</li>
-  <li>Diagnoserapporter, hvis appen fryser eller lukker uventet (appversion, iOS-version, enhedstype, tekniske oplysninger om fejlen)</li>
+  <li>Navne på hændelser i appen (fx at et spørgsmål om tilfredshed eller en opfordring til at bedømme appen er blevet vist). Det, du har skrevet, kommer ikke med.</li>
+  <li>Diagnoserapporter, hvis appen fryser eller lukker uventet (enhedstype, tekniske oplysninger om fejlen)</li>
 </ul>
 <p>Statistikken indeholder ikke navn, kontaktoplysninger, placering eller noget, du selv har indtastet, som billeder, aftaler eller oplysninger om børn. Den sendes kun, når du er logget ind på iCloud.</p>
 
 <h2>5. Videregivelse til tredjeparter og databehandlere</h2>
-<p>Appen sælger ikke personoplysninger og videregiver dem ikke til tredjeparter til reklame eller analyse.
+<p>Appen sælger ikke personoplysninger og videregiver dem ikke til tredjeparter til reklameformål.
 Der bruges ingen reklame-SDK'er, eksterne analysetjenester eller servere drevet af udvikleren.
-Apples iCloud-infrastruktur bruges kun, når familiedeling er slået til, og når den anonyme statistik i punkt 4 sendes.</p>
+Apples iCloud-infrastruktur (CloudKit) bruges kun, når skemadeling er slået til, og når den anonyme statistik og fejlrapporterne i punkt 4 sendes.</p>
+<p><strong>Feedback</strong>: Feedback sendes kun, når du selv sender den via „Send feedback“ i indstillingerne.
+Den kategori, du vælger, og den tekst, du skriver, sendes sammen med appversion, iOS-version, enhedstype og enhedens sprogindstilling til udviklerens lagerplads i Apple CloudKit.
+Navn og e-mailadresse kommer kun med, hvis du selv skriver dem for at få svar. Aftaler, oplysninger om børn og billeder er ikke med.
+Feedbacken bruges kun til at svare dig og forbedre appen. Vil du have den slettet, så skriv til os på adressen nedenfor.</p>
 
 <h2>6. Opbevaring og sletning</h2>
 <p>Billeder, aftaler og oplysninger om børn ligger på enheden, så når du sletter appen, slettes alle de data, appen har gemt.
-Bruger du familiedeling, og vælger ejeren „Stop deling“, modtager de inviterede ikke flere nye aftaler.
-Delte data i iCloud ryddes op, når ejeren stopper delingen eller sletter appen.
+Bruger du skemadeling, og vælger den, der inviterede, „Stop deling“, modtager de inviterede ikke flere nye aftaler.
+Delte data i iCloud ryddes op, når den, der inviterede, stopper delingen eller sletter appen.
 Aftaler, der er lagt ind i Apple-kalenderen, kan du selv administrere og slette i appen Kalender.</p>
 
 <h2>7. Børns personoplysninger</h2>
 <p>Appen er et værktøj til forældre og indsamler ikke børns personoplysninger.
 Barnets navn og billede, som forælderen indtaster, sendes ikke til udvikleren.
-Er familiedeling slået til, deles barnets navn og aftaler kun med de familiemedlemmer, forælderen selv har inviteret.</p>
+Er skemadeling slået til, deles barnets navn og aftaler kun med personer, som forælderen selv har inviteret, og som har accepteret.</p>
 
 <h2>8. Kontakt</h2>
 <p>Har du spørgsmål til denne privatlivspolitik, er du velkommen til at kontakte os:</p>
 <ul>
-  <li>E-mail: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-mail: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Supportside: <a href="support.html">Børneskema – support</a></li>
 </ul>
 

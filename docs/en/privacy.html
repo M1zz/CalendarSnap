@@ -60,11 +60,12 @@
 <p>Kids Schedule (the "App") takes your privacy seriously.
 The App <strong>does not collect or send personal information such as photos, events or details about your children to the developer.</strong>
 By default, this data is processed and stored only on your device.
-The only things the developer receives are anonymous usage statistics and crash reports that can't identify you (see Section 4).</p>
+The only things the developer receives are <strong>anonymous usage statistics and error reports</strong> that can't identify you (see Section 4),
+and <strong>feedback you choose to send</strong> from Settings (see Section 5).</p>
 
-<p>The one exception: <strong>if you turn on Family Sharing and invite family members yourself</strong>,
-your schedule data is stored in <strong>your own iCloud account</strong> and shared with the family members you invited.
-See Section 3 for details. Family Sharing is optional — if you leave it off, your photos, events and children's details never leave your device.</p>
+<p>The one exception: <strong>if you invite other people under Schedule Sharing yourself</strong>,
+your schedule data is stored in <strong>your own iCloud account</strong> and shared with the people you invited.
+See Section 3 for details. Schedule Sharing is optional — if you leave it off, your photos, events and children's details never leave your device.</p>
 
 <h2>1. Information We Collect</h2>
 <p>The App does not collect personal information. Everything below is stored <strong>only on your device</strong>.
@@ -72,7 +73,7 @@ See Section 3 for details. Family Sharing is optional — if you leave it off, y
 <ul>
   <li><strong>Photos</strong>: Calendar and notice photos are analyzed only by Apple's on-device Vision framework and are never sent anywhere. The original photos used for analysis are not saved in the App.</li>
   <li><strong>Schedule data</strong>: Extracted events (title, date, notes) are stored only in the App's private storage on your device (App Group).</li>
-  <li><strong>Child profiles</strong>: Your children's names and profile photos are stored only on your device. (Profile photos are not shared even when Family Sharing is on.)</li>
+  <li><strong>Child profiles</strong>: Your children's names and profile photos are stored only on your device. (If you turn on Schedule Sharing, your children's names, class details and profile photos are shared with the people you invite.)</li>
 </ul>
 
 <h2>2. How We Use Device Permissions</h2>
@@ -83,48 +84,53 @@ See Section 3 for details. Family Sharing is optional — if you leave it off, y
   <li><strong>Notifications</strong>: Local reminders the day before and the day of an event (sent directly by your device; no push server)</li>
 </ul>
 
-<h2>3. Family Sharing (Optional, iCloud)</h2>
-<p>When you invite your partner or other family members under Settings &gt; Family Sharing, you and the people you invite can view and edit the same schedule together.
+<h2>3. Schedule Sharing (Optional, iCloud)</h2>
+<p>When you use "Invite People" under Settings &gt; Schedule Sharing to invite your partner, grandparents, a babysitter or anyone else, you and the people you invite can view and edit the same schedule together. This has nothing to do with Apple's Family Sharing, whether or not you've set it up.
 This feature uses Apple's iCloud (CloudKit) sharing. The developer cannot see or keep anything that is shared.</p>
 <ul>
-  <li><strong>What is shared</strong>: Each event's title, date, time, all-day setting, what-to-bring notes and child's name, plus the list of children.</li>
-  <li><strong>What is not shared</strong>: Calendar and notice photos, children's profile photos, and reminder settings.</li>
+  <li><strong>What is shared</strong>: Each event's title, date, time, all-day setting, what-to-bring notes and child's name, plus the list of children with their class details and profile photos.</li>
+  <li><strong>What is not shared</strong>: Calendar and notice photos, and per-device settings such as reminder times.</li>
   <li><strong>Where it's stored</strong>: In the private iCloud database of the person who sent the invite (the owner). Apple's Privacy Policy also applies.</li>
   <li><strong>Who can access it</strong>: Only people the owner personally invited with an invite link and who accepted. Links are never made public.</li>
-  <li><strong>Turning it off</strong>: At any time, go to Settings &gt; Family Sharing and tap "Stop Sharing" (owner) or "Leave Sharing" (participant).
+  <li><strong>Turning it off</strong>: At any time, go to Settings &gt; Schedule Sharing and tap "Stop Sharing" (if you sent the invite) or "Leave Sharing" (if you were invited).
       After that, nothing syncs anymore, and any events already received stay on each person's device.</li>
 </ul>
 
-<h2>4. Anonymous Usage Statistics</h2>
-<p>To understand how many people use the App and to fix bugs, the App sends the following anonymous statistics to Apple iCloud (CloudKit). Only the developer can read them.</p>
+<h2>4. Anonymous Usage Statistics and Error Reports</h2>
+<p>To understand how many people use the App and to fix bugs, the App sends the following anonymous statistics to the developer's Apple iCloud (CloudKit) storage. Only the developer can read them.</p>
 <ul>
-  <li>A random ID created at install (not linked to your device, Apple ID or any other app; it changes if you reinstall)</li>
+  <li>A random ID created at install (not linked to you, your Apple ID, your device or any other app; it changes if you reinstall)</li>
   <li>App version, iOS version, and region and language settings</li>
   <li>How many times and on which days the App was opened, the install date, and days since install</li>
-  <li>Diagnostic reports when the App freezes or quits unexpectedly (App version, iOS version, device type, and technical details of the error)</li>
+  <li>The names of things that happen in the App (for example, "satisfaction question shown" or "review request shown"). Nothing you type is included.</li>
+  <li>Diagnostic reports when the App freezes or quits unexpectedly (device type and technical details of the error)</li>
 </ul>
 <p>This never includes your name, contact details, location, or anything you enter such as photos, events or your children's details. Statistics are sent only while you're signed in to iCloud.</p>
 
 <h2>5. Sharing with Third Parties</h2>
-<p>The App never sells personal information or provides it to third parties for advertising or analytics.
+<p>The App never sells personal information or provides it to third parties for advertising purposes.
 It uses no advertising SDKs, no third-party analytics services and no developer-run servers.
-Apple's iCloud infrastructure is used only when you turn on Family Sharing and to send the anonymous statistics described in Section 4.</p>
+Apple's iCloud (CloudKit) infrastructure is used only when you turn on Schedule Sharing and to send the anonymous statistics and error reports described in Section 4.</p>
+<p><strong>Feedback</strong>: Feedback is sent only when you send it yourself with "Send Feedback" in Settings.
+The category you choose, what you write, and your App version, iOS version, device type and device language are delivered to the developer's Apple CloudKit storage.
+Your name and email are included only if you enter them yourself to get a reply. Your events, children's details and photos are never included.
+Feedback is used only to reply to you and improve the App. If you'd like yours deleted, let us know at the contact address below.</p>
 
 <h2>6. Data Retention and Deletion</h2>
 <p>Because your photos, events and children's details live on your device, deleting the App deletes all of the data it stored.
-If you use Family Sharing and the owner taps "Stop Sharing", invited family members no longer receive new events.
-Shared data stored in iCloud is cleaned up when the owner stops sharing or deletes the App.
+If you use Schedule Sharing and the person who sent the invite taps "Stop Sharing", the people they invited no longer receive new events.
+Shared data stored in iCloud is cleaned up when the person who sent the invite stops sharing or deletes the App.
 Events added to Apple Calendar can be managed and deleted directly in the iOS Calendar app.</p>
 
 <h2>7. Children's Privacy</h2>
 <p>The App is a tool for parents and caregivers, and it does not collect children's personal information.
 The children's names and photos you enter are never sent to the developer.
-With Family Sharing on, your children's names and events go only to the family members you invited yourself.</p>
+With Schedule Sharing on, your children's names and events go only to people you invited yourself and who accepted.</p>
 
 <h2>8. Contact</h2>
 <p>If you have any questions about this Privacy Policy, please get in touch.</p>
 <ul>
-  <li>Email: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>Email: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Support page: <a href="support.html">Kids Schedule Support</a></li>
 </ul>
 

@@ -413,6 +413,8 @@ struct MonthCalendarView: View {
             Text(day, format: .dateTime.month().day().weekday(.wide).locale(koKR))
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
             Spacer()
             if !selectedDayEvents.isEmpty {
                 Text("\(selectedDayEvents.count)개")
@@ -449,6 +451,8 @@ struct MonthCalendarView: View {
         HStack(alignment: .top, spacing: 12) {
             Text(event.isAllDay ? String(localized: "종일") : event.date.formatted(.dateTime.hour().minute().locale(koKR)))
                 .font(.headline)
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)   // "Ganztägig"·"Весь день" 같은 긴 말도 한 줄로
                 .foregroundStyle(.tint)
                 .frame(width: 76, alignment: .leading)
                 .padding(.top, 2)

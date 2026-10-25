@@ -133,7 +133,7 @@ struct FamilySharingSection: View {
         }
         return identity.lookupInfo?.emailAddress
             ?? identity.lookupInfo?.phoneNumber
-            ?? "함께 보는 사람"
+            ?? String(localized: "함께 보는 사람")
     }
 
     private var participantStatusText: String {
@@ -141,9 +141,9 @@ struct FamilySharingSection: View {
            let components = ownerIdentity.nameComponents,
            let formatted = PersonNameComponentsFormatter().string(for: components),
            !formatted.isEmpty {
-            return "\(formatted)님이 공유한 일정을 함께 보는 중"
+            return String(localized: "\(formatted)님이 공유한 일정을 함께 보는 중")
         }
-        return "공유된 일정을 함께 보는 중"
+        return String(localized: "공유된 일정을 함께 보는 중")
     }
 
     private var footerText: Text {
@@ -172,7 +172,7 @@ struct FamilySharingSection: View {
             } catch let error as FamilySharingError {
                 errorMessage = error.errorDescription
             } catch {
-                errorMessage = "공유를 시작하지 못했어요. 네트워크 상태를 확인한 뒤 다시 시도해주세요."
+                errorMessage = String(localized: "공유를 시작하지 못했어요. 네트워크 상태를 확인한 뒤 다시 시도해주세요.")
             }
         }
     }

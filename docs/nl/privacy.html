@@ -60,11 +60,12 @@
 <p>Kinderplanner (‘de app’) gaat zorgvuldig om met je privacy.
 De app <strong>verzamelt geen persoonsgegevens zoals foto’s, afspraken of gegevens over je kinderen en stuurt die ook niet naar de ontwikkelaar.</strong>
 Deze gegevens worden in principe alleen op je eigen toestel verwerkt en bewaard.
-Het enige wat de ontwikkelaar ontvangt, zijn anonieme gebruiksstatistieken en foutrapporten die niet naar jou te herleiden zijn (zie punt 4).</p>
+Het enige wat de ontwikkelaar ontvangt, zijn <strong>anonieme gebruiksstatistieken en foutrapporten</strong> die niet naar jou te herleiden zijn (zie punt 4),
+en <strong>feedback die je zelf</strong> via Instellingen verstuurt (zie punt 5).</p>
 
-<p>Alleen als je zelf <strong>‘Delen met je gezin’ aanzet en gezinsleden uitnodigt</strong>,
+<p>Alleen als je zelf <strong>via ‘Afspraken delen’ anderen uitnodigt</strong>,
 worden de afspraken opgeslagen in <strong>je eigen iCloud-account</strong> en gedeeld met de mensen die je hebt uitgenodigd.
-Zie punt 3 voor meer informatie. Delen met je gezin is optioneel; staat het uit, dan verlaten foto’s, afspraken en gegevens over je kinderen je toestel niet.</p>
+Zie punt 3 voor meer informatie. Afspraken delen is optioneel; staat het uit, dan verlaten foto’s, afspraken en gegevens over je kinderen je toestel niet.</p>
 
 <h2>1. Welke gegevens worden verwerkt</h2>
 <p>De app verzamelt geen persoonsgegevens. De onderstaande gegevens worden <strong>uitsluitend op je toestel</strong> bewaard.
@@ -72,7 +73,7 @@ Zie punt 3 voor meer informatie. Delen met je gezin is optioneel; staat het uit,
 <ul>
   <li><strong>Foto’s</strong>: foto’s van kalenders en mededelingen worden alleen op het toestel geanalyseerd met het Vision-framework van Apple en worden niet verstuurd. De oorspronkelijke foto wordt na de analyse niet in de app bewaard.</li>
   <li><strong>Afspraken</strong>: de gevonden afspraken (titel, datum, notitie) worden alleen bewaard in de eigen opslag van de app op je toestel (App Group).</li>
-  <li><strong>Profielen van kinderen</strong>: de naam en profielfoto van je kind worden alleen op je toestel bewaard. (De profielfoto wordt ook niet gedeeld als Delen met je gezin aanstaat.)</li>
+  <li><strong>Profielen van kinderen</strong>: de naam en profielfoto van je kind worden alleen op je toestel bewaard. (Staat Afspraken delen aan, dan worden de naam, de klas of groep en de profielfoto van je kind gedeeld met de mensen die je uitnodigt.)</li>
 </ul>
 
 <h2>2. Waarvoor de app toegang vraagt</h2>
@@ -83,48 +84,53 @@ Zie punt 3 voor meer informatie. Delen met je gezin is optioneel; staat het uit,
   <li><strong>Meldingen</strong>: lokale herinneringen de avond ervoor en op de dag zelf (rechtstreeks vanaf je toestel, zonder pushserver)</li>
 </ul>
 
-<h2>3. Delen met je gezin (optioneel, iCloud)</h2>
-<p>Als je via Instellingen &gt; Delen met je gezin je partner of andere gezinsleden uitnodigt, kunnen jij en de genodigden dezelfde afspraken bekijken en bewerken.
+<h2>3. Afspraken delen (optioneel, iCloud)</h2>
+<p>Als je via Instellingen &gt; Afspraken delen met ‘Nodig mensen uit’ je partner, opa en oma, de oppas of iemand anders uitnodigt, kunnen jij en de genodigden dezelfde afspraken bekijken en bewerken. Dit staat los van Delen met gezin van Apple; of je dat hebt ingesteld, maakt niet uit.
 Hiervoor wordt iCloud-delen (CloudKit) van Apple gebruikt; de ontwikkelaar kan de gedeelde inhoud niet inzien en bewaart die ook niet.</p>
 <ul>
-  <li><strong>Wat wordt gedeeld</strong>: titel, datum, tijd, of het een hele dag duurt, de notitie over wat er mee moet en de naam van het kind bij elke afspraak, plus de lijst met kinderen.</li>
-  <li><strong>Wat niet wordt gedeeld</strong>: foto’s van kalenders en mededelingen, profielfoto’s van de kinderen en je instellingen voor herinneringen.</li>
+  <li><strong>Wat wordt gedeeld</strong>: titel, datum, tijd, of het een hele dag duurt, de notitie over wat er mee moet en de naam van het kind bij elke afspraak, plus de lijst met kinderen met hun klas of groep en profielfoto.</li>
+  <li><strong>Wat niet wordt gedeeld</strong>: foto’s van kalenders en mededelingen, en instellingen per toestel, zoals het tijdstip van herinneringen.</li>
   <li><strong>Opslaglocatie</strong>: de privé-iCloud-database van degene die uitnodigt (de eigenaar). Daarnaast is het privacybeleid van Apple van toepassing.</li>
   <li><strong>Toegang</strong>: alleen mensen die de eigenaar zelf met een uitnodigingslink heeft uitgenodigd en die de uitnodiging hebben geaccepteerd. De link wordt nooit openbaar gemaakt.</li>
-  <li><strong>Stoppen</strong>: je kunt het delen op elk moment uitzetten via Instellingen &gt; Delen met je gezin, met ‘Stop met delen’ (eigenaar) of ‘Verlaat delen’ (deelnemer).
+  <li><strong>Stoppen</strong>: je kunt het delen op elk moment uitzetten via Instellingen &gt; Afspraken delen, met ‘Stop met delen’ (wie heeft uitgenodigd) of ‘Stap uit het delen’ (wie is uitgenodigd).
       Daarna wordt er niets meer gesynchroniseerd; afspraken die iedereen al op zijn of haar toestel had ontvangen, blijven daar staan.</li>
 </ul>
 
-<h2>4. Anonieme gebruiksstatistieken</h2>
-<p>Om te weten hoeveel mensen de app gebruiken en om fouten te kunnen oplossen, worden de volgende anonieme statistieken naar iCloud (CloudKit) van Apple gestuurd. Alleen de ontwikkelaar kan ze inzien.</p>
+<h2>4. Anonieme gebruiksstatistieken en foutrapporten</h2>
+<p>Om te weten hoeveel mensen de app gebruiken en om fouten te kunnen oplossen, worden de volgende anonieme statistieken naar de iCloud-opslag (CloudKit) van de ontwikkelaar bij Apple gestuurd. Alleen de ontwikkelaar kan ze inzien.</p>
 <ul>
-  <li>Een willekeurige ID die bij de installatie wordt aangemaakt (niet gekoppeld aan je toestel, je Apple ID of andere apps; verandert als je de app opnieuw installeert)</li>
+  <li>Een willekeurige ID die bij de installatie wordt aangemaakt (niet gekoppeld aan jou, je Apple ID, je toestel of andere apps; verandert als je de app opnieuw installeert)</li>
   <li>App-versie, iOS-versie en regio- en taalinstelling</li>
   <li>Hoe vaak en op welke dagen de app is geopend, de installatiedatum en het aantal dagen sinds de installatie</li>
-  <li>Een diagnoserapport als de app vastloopt of onverwacht stopt (app-versie, iOS-versie, type toestel en technische informatie over de fout)</li>
+  <li>De naam van gebeurtenissen in de app (bijvoorbeeld ‘tevredenheidsvraag getoond’ of ‘beoordelingsverzoek getoond’). Wat je zelf invoert, wordt niet meegestuurd.</li>
+  <li>Een diagnoserapport als de app vastloopt of onverwacht stopt (type toestel en technische informatie over de fout)</li>
 </ul>
 <p>Namen, contactgegevens, locatie en wat je zelf invoert, zoals foto’s, afspraken en gegevens over je kinderen, worden niet meegestuurd. De statistieken worden alleen verstuurd als je bent ingelogd bij iCloud.</p>
 
 <h2>5. Delen met derden en verwerkers</h2>
-<p>De app verkoopt geen persoonsgegevens en geeft ze niet aan derden voor advertenties of analyse.
+<p>De app verkoopt geen persoonsgegevens en geeft ze niet aan derden voor advertentiedoeleinden.
 De app gebruikt geen advertentie-SDK’s, externe analysediensten of servers van de ontwikkelaar.
-De iCloud-infrastructuur van Apple wordt alleen gebruikt als Delen met je gezin aanstaat en voor het versturen van de anonieme statistieken uit punt 4.</p>
+De iCloud-infrastructuur (CloudKit) van Apple wordt alleen gebruikt als Afspraken delen aanstaat en voor het versturen van de anonieme statistieken en foutrapporten uit punt 4.</p>
+<p><strong>Feedback</strong>: feedback wordt alleen verstuurd als je die zelf stuurt via ‘Stuur feedback’ in Instellingen.
+De gekozen categorie, je bericht en de app-versie, iOS-versie, het type toestel en de taalinstelling van je toestel gaan naar de CloudKit-opslag van de ontwikkelaar bij Apple.
+Je naam en e-mailadres worden alleen meegestuurd als je die zelf invult om een antwoord te krijgen. Afspraken, gegevens over je kinderen en foto’s zitten er nooit bij.
+Feedback wordt alleen gebruikt om je te antwoorden en de app te verbeteren. Wil je dat je feedback wordt verwijderd, laat het ons dan weten via het contactadres hieronder.</p>
 
 <h2>6. Bewaren en verwijderen</h2>
 <p>Foto’s, afspraken en gegevens over je kinderen staan op je toestel; verwijder je de app, dan worden alle gegevens die de app heeft opgeslagen ook verwijderd.
-Gebruik je Delen met je gezin en kiest de eigenaar ‘Stop met delen’, dan ontvangen de genodigden geen nieuwe afspraken meer.
-Gedeelde gegevens in iCloud worden opgeruimd zodra de eigenaar stopt met delen of de app verwijdert.
+Gebruik je Afspraken delen en kiest degene die heeft uitgenodigd ‘Stop met delen’, dan ontvangen de genodigden geen nieuwe afspraken meer.
+Gedeelde gegevens in iCloud worden opgeruimd zodra degene die heeft uitgenodigd stopt met delen of de app verwijdert.
 Afspraken die aan je Apple-agenda zijn toegevoegd, beheer en verwijder je zelf in de Agenda-app van iOS.</p>
 
 <h2>7. Gegevens van kinderen</h2>
 <p>De app is een hulpmiddel voor ouders en verzorgers en verzamelt geen persoonsgegevens van kinderen.
 Namen en foto’s van kinderen die ouders invoeren, worden niet naar de ontwikkelaar gestuurd.
-Staat Delen met je gezin aan, dan worden de naam van het kind en de afspraken alleen gedeeld met gezinsleden die de ouder zelf heeft uitgenodigd.</p>
+Staat Afspraken delen aan, dan worden de naam van het kind en de afspraken alleen gedeeld met mensen die de ouder zelf heeft uitgenodigd en die de uitnodiging hebben geaccepteerd.</p>
 
 <h2>8. Contact</h2>
 <p>Heb je vragen over dit privacybeleid? Neem dan contact met ons op.</p>
 <ul>
-  <li>E-mail: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>E-mail: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Hulppagina: <a href="support.html">Kinderplanner – hulp</a></li>
 </ul>
 

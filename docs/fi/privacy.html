@@ -60,11 +60,12 @@
 <p>Lapsen aikataulu (jäljempänä ”sovellus”) suhtautuu henkilötietoihisi huolella.
 Sovellus <strong>ei kerää eikä lähetä kehittäjälle henkilötietoja, kuten kuvia, tapahtumia tai lasten tietoja.</strong>
 Nämä tiedot käsitellään ja tallennetaan lähtökohtaisesti vain omalla laitteellasi.
-Kehittäjälle välittyy ainoastaan nimetöntä käyttötilastoa ja virheraportteja, joista ei voi tunnistaa ketään (ks. kohta 4).</p>
+Kehittäjälle välittyy ainoastaan <strong>nimetöntä käyttötilastoa ja virheraportteja</strong>, joista ei voi tunnistaa ketään (ks. kohta 4),
+sekä <strong>palaute, jonka itse lähetät</strong> asetuksista (ks. kohta 5).</p>
 
-<p>Poikkeus on tilanne, jossa <strong>otat itse ”Perhejaon” käyttöön ja kutsut perheenjäseniä</strong>.
+<p>Poikkeus on tilanne, jossa <strong>kutsut itse muita mukaan kohdassa ”Tapahtumien jakaminen”</strong>.
 Silloin tapahtumat tallennetaan <strong>omalle iCloud-tilillesi</strong> ja jaetaan kutsumiesi henkilöiden kanssa.
-Tarkemmat tiedot ovat kohdassa 3. Perhejako on vapaaehtoinen — jos et ota sitä käyttöön, kuvat, tapahtumat ja lasten tiedot eivät poistu laitteelta.</p>
+Tarkemmat tiedot ovat kohdassa 3. Tapahtumien jakaminen on vapaaehtoista — jos et käytä sitä, kuvat, tapahtumat ja lasten tiedot eivät poistu laitteelta.</p>
 
 <h2>1. Käsiteltävät tiedot</h2>
 <p>Sovellus ei kerää henkilötietoja. Seuraavat tiedot tallennetaan <strong>ainoastaan laitteellesi</strong>.
@@ -72,7 +73,7 @@ Tarkemmat tiedot ovat kohdassa 3. Perhejako on vapaaehtoinen — jos et ota sit�
 <ul>
   <li><strong>Kuvat</strong>: kalentereiden ja tiedotteiden kuvat analysoidaan vain laitteella Applen Vision-kehyksellä, eikä niitä lähetetä minnekään. Analysoinnissa käytettyjä alkuperäisiä kuvia ei tallenneta sovellukseen.</li>
   <li><strong>Tapahtumat</strong>: tunnistetut tapahtumat (otsikko, päivämäärä, muistiinpano) tallennetaan vain sovelluksen omaan tallennustilaan laitteella (App Group).</li>
-  <li><strong>Lasten profiilit</strong>: lapsen nimi ja profiilikuva säilyvät vain laitteella. (Profiilikuvaa ei jaeta, vaikka perhejako olisi käytössä.)</li>
+  <li><strong>Lasten profiilit</strong>: lapsen nimi ja profiilikuva säilyvät vain laitteella. (Kun aikataulun jakaminen on käytössä, lapsen nimi, ryhmä- tai luokkatieto ja profiilikuva jaetaan kutsumiesi henkilöiden kanssa.)</li>
 </ul>
 
 <h2>2. Mihin sovellus tarvitsee käyttöoikeuksia</h2>
@@ -83,48 +84,53 @@ Tarkemmat tiedot ovat kohdassa 3. Perhejako on vapaaehtoinen — jos et ota sit�
   <li><strong>Ilmoitukset</strong>: paikalliset muistutukset edellisenä päivänä ja tapahtumapäivänä (lähetetään suoraan laitteelta, ei push-palvelinta)</li>
 </ul>
 
-<h2>3. Perhejako (vapaaehtoinen, iCloud)</h2>
-<p>Kun kutsut puolisosi tai muun perheenjäsenen kohdasta Asetukset &gt; Perhejako, sinä ja kutsutut voitte nähdä ja muokata samoja tapahtumia.
+<h2>3. Tapahtumien jakaminen (vapaaehtoinen, iCloud)</h2>
+<p>Kun kutsut puolisosi, isovanhemmat, lastenhoitajan tai jonkun muun valinnalla ”Kutsu mukaan” kohdassa Asetukset &gt; Tapahtumien jakaminen, sinä ja kutsutut voitte nähdä ja muokata samoja tapahtumia. Toiminto ei liity Applen Perhejakoon.
 Ominaisuus käyttää Applen iCloud-jakoa (CloudKit), eikä kehittäjä näe tai säilytä jaettua sisältöä.</p>
 <ul>
-  <li><strong>Jaettavat tiedot</strong>: tapahtumien otsikko, päivämäärä, kellonaika, koko päivän tieto, muistiinpano mukaan otettavista ja lapsen nimi sekä lasten luettelo.</li>
-  <li><strong>Tiedot, joita ei jaeta</strong>: kalentereiden ja tiedotteiden kuvat, lasten profiilikuvat, muistutusasetukset.</li>
+  <li><strong>Jaettavat tiedot</strong>: tapahtumien otsikko, päivämäärä, kellonaika, koko päivän tieto, muistiinpano mukaan otettavista ja lapsen nimi sekä lasten luettelo ryhmä- tai luokkatietoineen ja profiilikuvineen.</li>
+  <li><strong>Tiedot, joita ei jaeta</strong>: kalentereiden ja tiedotteiden kuvat sekä laitekohtaiset asetukset, kuten muistutusten ajankohta.</li>
   <li><strong>Tallennuspaikka</strong>: kutsun lähettäjän (omistajan) oma yksityinen iCloud-tietokanta. Lisäksi sovelletaan Applen tietosuojakäytäntöä.</li>
   <li><strong>Käyttöoikeus</strong>: vain henkilöillä, jotka omistaja on itse kutsunut linkillä ja jotka ovat hyväksyneet kutsun. Linkkiä ei koskaan julkaista.</li>
-  <li><strong>Lopettaminen</strong>: jaon voi lopettaa milloin tahansa kohdassa Asetukset &gt; Perhejako valinnalla ”Lopeta jakaminen” (omistaja) tai ”Poistu jaosta” (osallistuja).
+  <li><strong>Lopettaminen</strong>: jaon voi lopettaa milloin tahansa kohdassa Asetukset &gt; Tapahtumien jakaminen valinnalla ”Lopeta jako” (kutsun lähettäjä) tai ”Poistu jaosta” (kutsutut).
       Sen jälkeen tietoja ei enää synkronoida, ja kuhunkin laitteeseen jo tulleet tapahtumat jäävät kyseiselle laitteelle.</li>
 </ul>
 
-<h2>4. Nimetön käyttötilasto</h2>
-<p>Jotta tiedämme, kuinka moni sovellusta käyttää, ja voimme korjata virheitä, lähetämme seuraavat nimettömät tilastot Applen iCloudiin (CloudKit). Niitä lukee vain kehittäjä.</p>
+<h2>4. Nimetön käyttötilasto ja virheraportit</h2>
+<p>Jotta tiedämme, kuinka moni sovellusta käyttää, ja voimme korjata virheitä, lähetämme seuraavat nimettömät tilastot kehittäjän tallennustilaan Applen iCloudissa (CloudKit). Niitä lukee vain kehittäjä.</p>
 <ul>
-  <li>Asennuksen yhteydessä luotu satunnainen tunniste (ei yhteydessä laitteeseen, Apple ID:hen tai muihin sovelluksiin ja vaihtuu uudelleenasennuksessa)</li>
+  <li>Asennuksen yhteydessä luotu satunnainen tunniste (ei yhteydessä sinuun, Apple ID:hen, laitteeseen tai muihin sovelluksiin ja vaihtuu uudelleenasennuksessa)</li>
   <li>Sovelluksen versio, iOS-versio, alue- ja kieliasetukset</li>
   <li>Sovelluksen avauskerrat ja -päivät, asennuspäivä ja asennuksesta kuluneet päivät</li>
-  <li>Diagnostiikkaraportti, jos sovellus jumiutuu tai sulkeutuu odottamatta (sovelluksen versio, iOS-versio, laitetyyppi, virheen tekniset tiedot)</li>
+  <li>Sovelluksessa tapahtuneiden asioiden nimet (esimerkiksi että tyytyväisyyskysely tai arvostelupyyntö on näytetty). Kirjoittamaasi sisältöä ei lähetetä.</li>
+  <li>Diagnostiikkaraportti, jos sovellus jumiutuu tai sulkeutuu odottamatta (laitetyyppi, virheen tekniset tiedot)</li>
 </ul>
 <p>Tilastot eivät sisällä nimeä, yhteystietoja, sijaintia eikä mitään syöttämääsi, kuten kuvia, tapahtumia tai lasten tietoja. Ne lähetetään vain, kun olet kirjautunut iCloudiin.</p>
 
 <h2>5. Luovutukset kolmansille osapuolille ja käsittelijät</h2>
-<p>Sovellus ei myy henkilötietoja eikä luovuta niitä kolmansille osapuolille mainonta- tai analytiikkatarkoituksiin.
+<p>Sovellus ei myy henkilötietoja eikä luovuta niitä kolmansille osapuolille mainontatarkoituksiin.
 Sovellus ei käytä mainos-SDK:ita, ulkoisia analytiikkapalveluja eikä kehittäjän ylläpitämiä palvelimia.
-Applen iCloud-infrastruktuuria käytetään vain, kun perhejako on käytössä, sekä kohdan 4 nimettömien tilastojen lähettämiseen.</p>
+Applen iCloud-infrastruktuuria (CloudKit) käytetään vain, kun aikataulun jakaminen on käytössä, sekä kohdan 4 nimettömien tilastojen ja virheraporttien lähettämiseen.</p>
+<p><strong>Palaute</strong>: Palaute lähetetään vain, kun lähetät sen itse asetusten kohdasta ”Lähetä palautetta”.
+Valitsemasi palautteen tyyppi ja kirjoittamasi teksti välitetään yhdessä sovelluksen version, iOS-version, laitetyypin ja laitteen kieliasetuksen kanssa kehittäjän tallennustilaan Applen CloudKitissa.
+Nimi ja sähköpostiosoite lähetetään mukana vain, jos kirjoitat ne itse saadaksesi vastauksen. Tapahtumia, lasten tietoja tai kuvia ei lähetetä.
+Palautetta käytetään vain vastaamiseen ja sovelluksen parantamiseen. Jos haluat palautteesi poistettavan, ilmoita siitä alla olevaan osoitteeseen.</p>
 
 <h2>6. Säilytys ja poistaminen</h2>
 <p>Kuvat, tapahtumat ja lasten tiedot ovat laitteella, joten kun poistat sovelluksen, kaikki sen tallentamat tiedot poistuvat samalla.
-Jos käytät perhejakoa ja omistaja valitsee ”Lopeta jakaminen”, kutsutut eivät enää saa uusia tapahtumia.
-iCloudiin tallennetut jaetut tiedot siivotaan, kun omistaja lopettaa jakamisen tai poistaa sovelluksen.
+Jos käytät aikataulun jakamista ja kutsun lähettäjä valitsee ”Lopeta jako”, kutsutut eivät enää saa uusia tapahtumia.
+iCloudiin tallennetut jaetut tiedot siivotaan, kun kutsun lähettäjä lopettaa jakamisen tai poistaa sovelluksen.
 Applen kalenteriin lisättyjä tapahtumia voit hallita ja poistaa suoraan Kalenteri-sovelluksessa.</p>
 
 <h2>7. Lasten henkilötiedot</h2>
 <p>Sovellus on vanhempien työkalu, eikä se kerää lasten henkilötietoja.
 Vanhemman syöttämää lapsen nimeä ja kuvaa ei lähetetä kehittäjälle.
-Kun perhejako on käytössä, lapsen nimi ja tapahtumat välittyvät vain niille perheenjäsenille, jotka vanhempi on itse kutsunut.</p>
+Kun aikataulun jakaminen on käytössä, lapsen nimi ja tapahtumat välittyvät vain niille, jotka vanhempi on itse kutsunut ja jotka ovat hyväksyneet kutsun.</p>
 
 <h2>8. Yhteystiedot</h2>
 <p>Tätä tietosuojaselostetta koskevat kysymykset voit lähettää alla oleviin osoitteisiin.</p>
 <ul>
-  <li>Sähköposti: <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></li>
+  <li>Sähköposti: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
   <li>Tukisivu: <a href="support.html">Lapsen aikataulu – tuki</a></li>
 </ul>
 
