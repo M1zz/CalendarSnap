@@ -30,6 +30,9 @@ enum CalendarSnapSpec: LeeoAppSpec {
         marketingURL: URL(string: "https://m1zz.github.io/CalendarSnap/")!
     )
 
+    /// App Store 앱 ID — 리뷰 남기기·친구에게 소개하기 링크.
+    static let appStoreID: String? = "6789881830"
+
     /// 완전 무료 — 앱에 StoreKit·결제 코드가 없다. 페이월/복원 의무도 없음.
     static let monetization = LeeoMonetization.free
 
