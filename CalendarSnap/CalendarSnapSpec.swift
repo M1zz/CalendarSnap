@@ -33,8 +33,13 @@ enum CalendarSnapSpec: LeeoAppSpec {
     /// App Store 앱 ID — 리뷰 남기기·친구에게 소개하기 링크.
     static let appStoreID: String? = "6789881830"
 
-    /// 완전 무료 — 앱에 StoreKit·결제 코드가 없다. 페이월/복원 의무도 없음.
+    /// 완전 무료 — 기능을 여는 결제가 없다. 페이월/복원 의무도 없음.
     static let monetization = LeeoMonetization.free
+
+    /// 개발자 응원(팁). 소모성 세 가지, 작은 것부터. 기능을 열지 않는다 — 무료 앱이라 혼자 돈다(`startStandalone`).
+    @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
+        "com.devkoan.CalendarSnap.tip.small", "com.devkoan.CalendarSnap.tip.medium", "com.devkoan.CalendarSnap.tip.large",
+    ]))
 
     /// 익명 사용 통계 → FeedbackHub. 없으면 bootstrap 이 스냅샷·app_open 을 건너뛴다.
     static let analytics: any LeeoAnalytics = LeeoUsageAnalytics(spec: CalendarSnapSpec.self)

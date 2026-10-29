@@ -1,5 +1,19 @@
 import SwiftUI
 import PhotosUI
+import LeeoKit
+
+/// 챙긴 일정이 이만큼 쌓였을 때 응원을 부탁한다. 큰 것부터.
+enum CalendarSnapTipMoments {
+    static let events = [200, 100, 30]
+
+    static func reached(events total: Int) -> [LeeoTipMoment] {
+        events.filter { total >= $0 }.map { threshold in
+            LeeoTipMoment(id: "events.\(threshold)",
+                          message: String(localized: "지금까지 아이 일정 \(total)개를 챙겼어요",
+                                          comment: "Tip ask card: number of child schedule entries saved in the app"))
+        }
+    }
+}
 
 struct ContentView: View {
     @State private var pickedItems: [PhotosPickerItem] = []
@@ -262,6 +276,13 @@ struct ContentView: View {
         NavigationStack {
             ScrollViewReader { proxy in
             List {
+                // 방금 일정을 저장한 자리. 쌓인 일정이 숫자로 보일 때만, 드물게 응원을 부탁한다.
+                if savedBanner {
+                    LeeoTipAskSlot<CalendarSnapSpec>(tipJar: CalendarSnapSpec.tipJar,
+                                                     reached: CalendarSnapTipMoments.reached(events: savedEvents.count))
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
+                }
                 childPickerSection
                 imageSection
                 eventsSection

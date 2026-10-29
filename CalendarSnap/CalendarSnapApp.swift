@@ -40,6 +40,8 @@ struct CalendarSnapApp: App {
             ContentView()
                 // 사용량이 쌓이면 "즐겁게 쓰고 계신가요?" → 만족 시 리뷰 / 아쉬움 시 피드백
                 .leeoSatisfactionCheck(CalendarSnapSpec.self)
+                // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다.
+                .task { await CalendarSnapSpec.tipJar.startStandalone() }
         }
         .onChange(of: scenePhase) { _, phase in
             // 사일런트 푸시를 못 받는 경우(시뮬레이터 등) 대비 — 포그라운드 진입 시 수동 동기화

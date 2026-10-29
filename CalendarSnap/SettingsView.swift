@@ -101,6 +101,7 @@ struct SettingsView: View {
                     LeeoSupportSection<CalendarSnapSpec>()
                     NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
                     LeeoShareAppLink<CalendarSnapSpec>()
+                    LeeoTipJarLink<CalendarSnapSpec>(tipJar: CalendarSnapSpec.tipJar)
                 } header: {
                     Text("지원")
                 }
