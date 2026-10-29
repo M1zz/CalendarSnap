@@ -19,6 +19,8 @@ struct ChildAvatarView: View {
             }
             .opacity(isSelected ? 1 : 0.7)
             .animation(.easeOut(duration: 0.15), value: isSelected)
+            // 이름은 곁에 쓰인 글이나 부르는 쪽 라벨이 말한다 — 첫 글자·사람 모양은 읽지 않는다
+            .accessibilityHidden(true)
     }
 
     @ViewBuilder
@@ -66,5 +68,6 @@ struct ChildAvatarButton: View {
             }
         }
         .buttonStyle(.plain)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }

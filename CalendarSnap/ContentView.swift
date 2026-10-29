@@ -382,6 +382,7 @@ struct ContentView: View {
                         } label: {
                             Image(systemName: "gearshape")
                         }
+                        .accessibilityLabel(Text("설정"))
                     }
                 }
         }
@@ -414,6 +415,11 @@ struct ContentView: View {
                             .padding(.bottom, scannedImages.count > 1 ? 24 : 0)
                             .contentShape(Rectangle())
                             .onTapGesture { showPhotoViewer = true }
+                            // VoiceOver·음성 명령에서도 사진을 열 수 있게 버튼으로 알린다
+                            .accessibilityElement()
+                            .accessibilityLabel(Text("사진 크게 보기"))
+                            .accessibilityAddTraits(.isButton)
+                            .accessibilityAction { showPhotoViewer = true }
                             .tag(i)
                     }
                 }
@@ -512,6 +518,7 @@ struct ContentView: View {
                     Image(systemName: "chevron.right")
                         .font(.caption)
                         .foregroundStyle(.tertiary)
+                        .accessibilityHidden(true)
                 }
             }
             .tint(.primary)
@@ -550,6 +557,10 @@ struct ContentView: View {
         .padding(.top, 10)
         .padding(.bottom, 6)
         .background(.ultraThinMaterial)
+        // 저장 결과는 아래 작은 글로만 나오니 VoiceOver 에는 말로 알린다
+        .onChange(of: resultMessage) { _, message in
+            if let message, !message.isEmpty { AccessibilityNotification.Announcement(message).post() }
+        }
     }
 
     private var reminderSummaryText: String {
@@ -567,6 +578,7 @@ struct ContentView: View {
             } label: {
                 Image(systemName: "gearshape")
             }
+            .accessibilityLabel(Text("설정"))
             if !scanned.isEmpty {
                 Button(role: .destructive) {
                     scannedAll = []
@@ -577,6 +589,7 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "trash")
                 }
+                .accessibilityLabel(Text("스캔 결과 지우기"))
             }
         }
         ToolbarItemGroup(placement: .topBarTrailing) {
@@ -586,15 +599,18 @@ struct ContentView: View {
             } label: {
                 Image(systemName: "doc.on.clipboard")
             }
+            .accessibilityLabel(Text("문자로 일정 추가"))
             Button {
                 showCamera = true
             } label: {
                 Image(systemName: "camera")
             }
+            .accessibilityLabel(Text("사진 찍기"))
             // 통신문·달력 여러 장을 한 번에 선택 가능
             PhotosPicker(selection: $pickedItems, maxSelectionCount: 10, matching: .images) {
                 Image(systemName: "photo.on.rectangle")
             }
+            .accessibilityLabel(Text("사진 선택"))
         }
     }
 
@@ -608,6 +624,7 @@ struct ContentView: View {
             }
             .padding(24)
             .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
+            .accessibilityElement(children: .combine)
         }
     }
 
@@ -831,6 +848,8 @@ private struct EventRow: View {
                         ChildAvatarView(name: event.childName.isEmpty ? nil : event.childName,
                                         children: children, size: 30, isSelected: false)
                     }
+                    .accessibilityLabel(Text("아이"))
+                    .accessibilityValue(event.childName.isEmpty ? Text("공통") : Text(verbatim: event.childName))
                 }
                 TextField("제목", text: $event.title)
                     .font(.headline)
@@ -859,7 +878,7 @@ private struct EventRow: View {
             if !event.rawText.isEmpty {
                 Text(event.rawText)
                     .font(.caption2)
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
             }
         }

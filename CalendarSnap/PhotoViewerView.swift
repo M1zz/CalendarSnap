@@ -27,6 +27,7 @@ struct PhotoViewerView: View {
                     .foregroundStyle(.white, .black.opacity(0.5))
                     .padding()
             }
+            .accessibilityLabel(Text("닫기"))
         }
         .statusBarHidden()
     }
@@ -54,6 +55,15 @@ private struct ZoomableImage: View {
             )
             .onTapGesture(count: 2) {
                 withAnimation(.snappy) { scale = scale > 1 ? 1 : 2.5 }
+            }
+            .accessibilityLabel(Text("사진"))
+            .accessibilityAddTraits(.isImage)
+            // VoiceOver 세 손가락 두 번 탭 대신 확대/축소 동작으로
+            .accessibilityZoomAction { action in
+                switch action.direction {
+                case .zoomIn: scale = min(scale * 1.5, 5)
+                case .zoomOut: scale = max(scale / 1.5, 1)
+                }
             }
     }
 }

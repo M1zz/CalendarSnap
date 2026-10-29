@@ -35,6 +35,7 @@ struct SettingsView: View {
                                     .id(avatarRefresh)
                             }
                             .buttonStyle(.plain)
+                            .accessibilityLabel(Text("\(settings.childNames[i]) 프로필 사진"))
                             VStack(alignment: .leading, spacing: 4) {
                                 TextField("이름 (예: 지호)", text: $settings.childNames[i])
                                     .textInputAutocapitalization(.never)
@@ -233,7 +234,9 @@ struct SettingsView: View {
                     Image(systemName: "pencil")
                         .font(.caption2)
                         .foregroundStyle(.secondary)
+                        .accessibilityHidden(true)
                 }
+                .accessibilityHint(Text("반 입력"))
             }
         }
         .buttonStyle(.plain)

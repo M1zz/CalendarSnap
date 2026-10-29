@@ -61,6 +61,7 @@ struct ScheduleWidgetEntryView: View {
             Image(systemName: "camera.viewfinder")
                 .font(.title2)
                 .foregroundStyle(.secondary)
+                .accessibilityHidden(true)
             Text("달력을 찍어\n일정을 등록하세요")
                 .font(.caption2)
                 .multilineTextAlignment(.center)
@@ -102,6 +103,7 @@ struct ScheduleWidgetEntryView: View {
                         .fill(event.childName.isEmpty ? AnyShapeStyle(.tint)
                               : AnyShapeStyle(event.color(children: children)))
                         .frame(width: 3, height: 26)
+                        .accessibilityHidden(true)
                     VStack(alignment: .leading, spacing: 1) {
                         HStack(spacing: 4) {
                             if !event.childName.isEmpty {
@@ -120,8 +122,9 @@ struct ScheduleWidgetEntryView: View {
                     Spacer()
                     Text(event.date, style: .relative)
                         .font(.caption2)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
+                .accessibilityElement(children: .combine)
             }
             Spacer(minLength: 0)
         }
@@ -131,6 +134,7 @@ struct ScheduleWidgetEntryView: View {
     private var header: some View {
         HStack(spacing: 4) {
             Image(systemName: "calendar.badge.clock")
+                .accessibilityHidden(true)
             Text("다가오는 일정")
         }
         .font(.caption2.weight(.semibold))

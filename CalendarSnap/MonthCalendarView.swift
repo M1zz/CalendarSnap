@@ -19,6 +19,8 @@ struct MonthCalendarView: View {
     /// 기본은 주간으로 접어 오늘 일정에 화면을 내준다. (핸들·스와이프로 월간 펼침)
     @State private var isWeekMode = true
     @State private var lastListOffset: CGFloat = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     private var calendar: Calendar { .current }
     private let koKR = Locale.current   // 이름은 그대로 두고 기기 언어를 따른다
@@ -56,15 +58,20 @@ struct MonthCalendarView: View {
                     .padding(.horizontal)
                     .padding(.bottom, 10)
             }
-            weekdayHeader
             Group {
-                if isWeekMode {
-                    weekGrid
-                } else {
-                    monthGrid
+                weekdayHeader
+                Group {
+                    if isWeekMode {
+                        weekGrid
+                    } else {
+                        monthGrid
+                    }
                 }
+                .padding(.horizontal, 8)
             }
-            .padding(.horizontal, 8)
+            // 일곱 칸 격자는 폭이 정해져 있어 더 키우면 날짜가 잘린다 — 큰 글씨에서도 여기까지만.
+            // (날짜·일정 수는 VoiceOver 와 아래 목록이 큰 글씨로 다시 알려 준다)
+            .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
             // 달력 영역을 위로 쓸면 주간으로 접고, 아래로 쓸면 월간으로 펼침
             .gesture(
                 DragGesture(minimumDistance: 15)
@@ -80,7 +87,7 @@ struct MonthCalendarView: View {
             Divider()
             eventList
         }
-        .animation(.snappy(duration: 0.25), value: isWeekMode)
+        .animation(reduceMotion ? nil : .snappy(duration: 0.25), value: isWeekMode)
         // 앱 문구가 모두 한국어이므로 날짜 표기도 한국어로 고정
         .environment(\.locale, koKR)
         .toolbar {
@@ -97,6 +104,8 @@ struct MonthCalendarView: View {
                           ? "line.3.horizontal.decrease.circle"
                           : "line.3.horizontal.decrease.circle.fill")
                 }
+                .accessibilityLabel(Text("일정 유형"))
+                .accessibilityValue(Text(typeFilter.title))
             }
         }
     }
@@ -171,9 +180,11 @@ struct MonthCalendarView: View {
     private var monthHeader: some View {
         HStack {
             Button { moveMonth(-1) } label: { Image(systemName: "chevron.left") }
+                .accessibilityLabel(isWeekMode ? Text("이전 주") : Text("이전 달"))
             Spacer()
             Text(displayedMonth, format: .dateTime.year().month(.wide).locale(koKR))
                 .font(.headline)
+                .accessibilityAddTraits(.isHeader)
             Spacer()
             Button("오늘") {
                 displayedMonth = Date()
@@ -181,6 +192,7 @@ struct MonthCalendarView: View {
             }
             .font(.subheadline)
             Button { moveMonth(1) } label: { Image(systemName: "chevron.right") }
+                .accessibilityLabel(isWeekMode ? Text("다음 주") : Text("다음 달"))
         }
     }
 
@@ -208,13 +220,14 @@ struct MonthCalendarView: View {
             }
         }
         .padding(.bottom, 4)
+        .accessibilityHidden(true)   // 요일은 날짜 칸마다 읽어 준다
     }
 
     // MARK: - 접이식 (월간 ↔ 주간)
 
     private func setWeekMode(_ collapsed: Bool) {
         guard isWeekMode != collapsed else { return }
-        withAnimation(.snappy(duration: 0.25)) { isWeekMode = collapsed }
+        withAnimation(reduceMotion ? nil : .snappy(duration: 0.25)) { isWeekMode = collapsed }
     }
 
     /// 접힘/펼침 핸들 (탭으로도 전환 가능)
@@ -275,6 +288,7 @@ struct MonthCalendarView: View {
             VStack(spacing: 3) {
                 Text("\(day)")
                     .font(.callout.weight(isToday || isSelected ? .bold : .regular))
+                    .minimumScaleFactor(0.7)
                     .foregroundStyle(isSelected ? AnyShapeStyle(.white)
                                      : weekday == 1 ? AnyShapeStyle(.red)
                                      : weekday == 7 ? AnyShapeStyle(.blue)
@@ -302,6 +316,11 @@ struct MonthCalendarView: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        // "5" 만 읽히지 않게 — 날짜·요일, 오늘인지, 일정 수까지
+        .accessibilityLabel(Text(date, format: .dateTime.month().day().weekday(.wide).locale(koKR)))
+        .accessibilityValue(dayEvents.isEmpty ? Text(verbatim: "") : Text("일정 \(dayEvents.count)개"))
+        .accessibilityHint(isToday ? Text("오늘") : Text(verbatim: ""))
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     // MARK: - 선택한 날 일정
@@ -365,11 +384,11 @@ struct MonthCalendarView: View {
                 // 선택한 날에 일정이 없으면 다음 일정을 미리 보여줌
                 if selectedDayEvents.isEmpty, let next = nextEvent(after: selectedDay) {
                     Section("다음 일정") {
-                        HStack(alignment: .top, spacing: 12) {
+                        rowLayout {
                             Text(next.date, format: .dateTime.month().day().weekday().locale(koKR))
                                 .font(.caption.weight(.semibold))
                                 .foregroundStyle(.tint)
-                                .frame(width: 64, alignment: .leading)
+                                .frame(width: typeSize.isAccessibilitySize ? nil : 64, alignment: .leading)
                                 .padding(.top, 1)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(next.title)
@@ -382,6 +401,7 @@ struct MonthCalendarView: View {
                             }
                         }
                         .padding(.vertical, 2)
+                        .accessibilityElement(children: .combine)
                     }
                 }
             } else {
@@ -405,7 +425,10 @@ struct MonthCalendarView: View {
 
     /// 선택한 날(기본 오늘)을 큼지막하게 알려주는 머리글.
     private func dayHeadline(_ day: Date) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 8) {
+        let layout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 2))
+            : AnyLayout(HStackLayout(alignment: .firstTextBaseline, spacing: 8))
+        return layout {
             Text(dayLabel(day))
                 .font(.largeTitle.bold())
                 .foregroundStyle(calendar.isDateInToday(day) ? AnyShapeStyle(.tint)
@@ -425,6 +448,15 @@ struct MonthCalendarView: View {
         .padding(.top, 4)
         .padding(.bottom, 2)
         .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isHeader)
+    }
+
+    /// 시간 | 내용 두 칸 — 손쉬운 사용 글자 크기에서는 시간을 위에 얹는다
+    private func rowLayout<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        let layout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+            : AnyLayout(HStackLayout(alignment: .top, spacing: 12))
+        return layout { content() }
     }
 
     /// "오늘"·"내일"·"어제"는 그대로, 나머지는 요일로.
@@ -440,6 +472,7 @@ struct MonthCalendarView: View {
             Image(systemName: "checkmark.circle")
                 .font(.title2)
                 .foregroundStyle(.secondary)
+                .accessibilityHidden(true)
             Text(calendar.isDateInToday(day) ? String(localized: "오늘은 챙길 일정이 없어요") : String(localized: "이 날은 일정이 없어요"))
                 .font(.title3)
                 .foregroundStyle(.secondary)
@@ -448,13 +481,13 @@ struct MonthCalendarView: View {
     }
 
     private func eventRow(_ event: ScannedEvent) -> some View {
-        HStack(alignment: .top, spacing: 12) {
+        rowLayout {
             Text(event.isAllDay ? String(localized: "종일") : event.date.formatted(.dateTime.hour().minute().locale(koKR)))
                 .font(.headline)
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)   // "Ganztägig"·"Весь день" 같은 긴 말도 한 줄로
                 .foregroundStyle(.tint)
-                .frame(width: 76, alignment: .leading)
+                .frame(width: typeSize.isAccessibilitySize ? nil : 76, alignment: .leading)
                 .padding(.top, 2)
             VStack(alignment: .leading, spacing: 2) {
                 HStack(spacing: 6) {
@@ -472,6 +505,7 @@ struct MonthCalendarView: View {
                         Image(systemName: "repeat")
                             .font(.caption2)
                             .foregroundStyle(.secondary)
+                            .accessibilityLabel(Text("반복"))
                     }
                 }
                 if !event.notes.isEmpty {
@@ -482,6 +516,7 @@ struct MonthCalendarView: View {
             }
         }
         .padding(.vertical, 6)
+        .accessibilityElement(children: .combine)
     }
 }
 

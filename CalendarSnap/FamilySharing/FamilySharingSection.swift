@@ -117,11 +117,13 @@ struct FamilySharingSection: View {
         HStack {
             Image(systemName: "person.crop.circle")
                 .foregroundStyle(.secondary)
+                .accessibilityHidden(true)
             Text(participantName(participant))
             Spacer()
             Text(participant.acceptanceStatus == .accepted ? "참여 중" : "수락 대기")
                 .foregroundStyle(participant.acceptanceStatus == .accepted ? .green : .secondary)
         }
+        .accessibilityElement(children: .combine)
     }
 
     private func participantName(_ participant: CKShare.Participant) -> String {
