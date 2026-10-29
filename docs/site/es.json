@@ -1,0 +1,188 @@
+{
+  "title": "Agenda Peques: haz una foto al calendario de la guarde y ten todo el mes",
+  "description": "Haz una foto al calendario mensual o la circular de la guarde. Todo el mes entra en tu calendario y la noche antes te avisa de qué preparar. Gratis.",
+  "hero": {
+    "headline": "Foto a la circular.\nY te avisamos la víspera.",
+    "lead": "Fotografía el calendario mensual que te da la guarde. Agenda Peques lee las fechas, las horas y el nombre de cada actividad y las mete todas de una vez. La noche antes de la excursión, a las 20:00, te recuerda que toca preparar la comida.",
+    "cta": "Descárgala gratis en el App Store",
+    "note": "Todo es gratis. Tus fotos no salen de tu iPhone."
+  },
+  "demo": {
+    "title": "Haz una foto a una circular",
+    "lead": "Aquí tienes una circular de ejemplo con las actividades del mes que viene. Hazle una foto y, igual que la app, sacará las actividades y lo que hay que llevar, y programará los avisos a las horas que elijas.",
+    "noticeTitle": "Clase Girasoles · Actividades de {month}",
+    "child": "Lucía",
+    "events": [
+      {
+        "day": 5,
+        "title": "Jornada deportiva",
+        "items": "comida, zapatillas"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Teatro de títeres",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Taller de cocina",
+        "items": "delantal"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Fiesta de cumpleaños",
+        "items": ""
+      }
+    ],
+    "snap": "Hacer foto",
+    "again": "Otra vez",
+    "empty": "Haz la foto y aquí verás los avisos que se programan.",
+    "found": "{e} actividades, {n} avisos programados",
+    "options": [
+      "La tarde anterior (para preparar cosas)",
+      "Por la mañana",
+      "1 hora antes",
+      "A la hora del evento"
+    ],
+    "timedOnly": "Solo se aplica a eventos con hora",
+    "bodies": [
+      "Es mañana. Ve preparando las cosas con tiempo.",
+      "Es hoy.",
+      "Empieza dentro de 1 hora.",
+      "Empieza ahora."
+    ],
+    "note": "Usamos una circular de ejemplo. En la app, el texto de tu foto real se lee en el propio dispositivo. Los avisos siguen las mismas reglas que la app."
+  },
+  "problem": {
+    "title": "¿Sigues pasando la circular a mano al calendario?",
+    "text": "Cinco o seis actividades al mes, y cada una con algo distinto que llevar: la comida, el chándal, un delantal. El calendario de la nevera no se ve de camino al trabajo, y siempre te acuerdas la misma mañana. Agenda Peques convierte esa hoja de papel en eventos y avisos."
+  },
+  "features": [
+    {
+      "title": "Una foto, todo el mes",
+      "text": "Calendario mensual, circular o aviso suelto: haz una foto o elígela de tu fototeca y se leen las fechas, horas y nombres de las actividades. También puedes pegar un mensaje de la guarde, y frases como «mañana» o «este viernes» se convierten en fechas.\nAntes de guardar puedes corregir el título, la fecha o la nota de qué llevar, y quitar lo que sobra deslizando. Si indicas la clase de tu peque, se descartan solas las actividades de otras clases.",
+      "shot": "02-events"
+    },
+    {
+      "title": "La noche antes, te avisa",
+      "text": "Elige entre las 20:00 de la tarde anterior, las 7:30 de esa mañana, 1 hora antes o a la hora justa. La nota de qué llevar aparece en el aviso, así la mochila no se queda a medias.\nSi activas el Calendario de Apple, todo va a un calendario con el nombre de tu peque y nada se añade dos veces.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Con varios peques y toda la familia",
+      "text": "Cada niño tiene su color. Puedes verlos a todos juntos o de uno en uno, y la app usa lo que ya tienes para adivinar de quién es la circular nueva.\nEnvía un enlace de invitación y tu pareja, los abuelos o la canguro verán y podrán editar las mismas actividades. Un widget en la pantalla de inicio te muestra lo próximo.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Empezar es cosa de tres pasos",
+    "items": [
+      {
+        "title": "Añade a tu peque",
+        "text": "Pon su nombre y su clase. La foto de perfil, cuando quieras."
+      },
+      {
+        "title": "Fotografía la circular",
+        "text": "De frente y con el texto nítido, se lee mucho mejor."
+      },
+      {
+        "title": "Revisa y guarda",
+        "text": "Permite las notificaciones y te avisará cuando hayas elegido."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Cuándo llegan los avisos",
+    "rows": [
+      [
+        "20:00 de la tarde anterior",
+        "Para preparar las cosas. Activado de serie"
+      ],
+      [
+        "7:30 de esa mañana",
+        "Lo que hay hoy. Activado de serie"
+      ],
+      [
+        "1 hora antes",
+        "Solo en actividades con hora"
+      ],
+      [
+        "A la hora del evento",
+        "Solo en actividades con hora"
+      ]
+    ],
+    "note": "Las actividades de todo el día, como una excursión, solo tienen el aviso de la tarde anterior y el de esa mañana. Puedes activarlos o desactivarlos en Ajustes cuando quieras."
+  },
+  "pricing": {
+    "title": "Todo es gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Leer actividades de fotos y mensajes",
+        "Corregir antes de guardar y filtrar otras clases",
+        "Avisos la tarde anterior, por la mañana, 1 hora antes y a la hora",
+        "Un color por peque y un calendario conjunto",
+        "Sincronización con el Calendario de Apple",
+        "Compartir con la familia por enlace",
+        "Widget en la pantalla de inicio"
+      ]
+    },
+    "pro": {
+      "name": "Apoyar al desarrollador",
+      "items": [
+        "Desde Ajustes puedes dejar una pequeña propina, la que quieras",
+        "La propina no desbloquea nada. La app funciona igual sin ella"
+      ]
+    },
+    "note": "Sin anuncios ni suscripciones."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Qué tipo de fotos puedo usar?",
+        "a": "Calendarios mensuales en cuadrícula, circulares escritas en texto y avisos sueltos o folletos. Si haces la foto de frente y con el texto nítido, se lee mejor. También puedes elegir varias fotos y escanearlas a la vez."
+      },
+      {
+        "q": "Faltan algunas actividades o hay una errata en el título.",
+        "a": "La letra a mano o muy clara puede costar de leer. Corrige el título, la fecha o lo que hay que llevar directamente en la lista, o desliza para quitar lo que no necesites. Para añadir lo que falte, usa «Añadir evento a mano» en la pestaña Escanear y vuelve a guardar."
+      },
+      {
+        "q": "No me llegan los avisos.",
+        "a": "Comprueba que las notificaciones están permitidas en Ajustes > Notificaciones > Agenda Peques. En los ajustes de la app (⚙️) también eliges qué avisos quieres recibir."
+      },
+      {
+        "q": "Se cuelan actividades de otras clases.",
+        "a": "Escribe el nombre de la clase de tu peque en Ajustes y las actividades solo para otras clases se descartarán. Cuando cambie de curso, basta con cambiarlo ahí."
+      },
+      {
+        "q": "Tengo más de un hijo.",
+        "a": "En Ajustes puedes añadir a todos los que quieras, cada uno con su foto. Al escanear, elige de quién son las actividades: en el calendario cada uno sale con su color y puedes alternar entre la vista conjunta y la de cada peque."
+      },
+      {
+        "q": "¿Cómo comparto la agenda con mi pareja?",
+        "a": "En Ajustes, dentro de «Compartir agenda», toca «Invitar a otras personas» y envía el enlace por mensaje. Podrá ver y editar a todos los peques y sus actividades, y los cambios de cualquiera aparecen al momento en los dos iPhone. No tiene nada que ver con En familia de Apple."
+      },
+      {
+        "q": "¿Hay otras formas de compartir?",
+        "a": "Con el botón de compartir de la pestaña Calendario puedes enviar un archivo de Agenda Peques, un archivo de calendario (.ics) o un resumen en texto. Con «Añadir también al Calendario de Apple» se crea un calendario con el nombre de tu peque; si lo compartes por iCloud en la app Calendario, la familia también lo tendrá al día."
+      },
+      {
+        "q": "¿Se envían mis fotos o actividades a algún sitio?",
+        "a": "No. El texto de las fotos se lee entero en tu dispositivo y los datos se guardan solo ahí. Las actividades pasan por tu iCloud únicamente si invitas a alguien con «Compartir agenda», y solo para esas personas."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Empieza por la circular\nde este mes",
+    "cta": "Descárgala gratis en el App Store"
+  },
+  "ui": {
+    "skip": "Saltar al contenido",
+    "languages": "Idioma",
+    "privacy": "Política de privacidad",
+    "contact": "¿Algún problema o echas algo en falta? Escríbenos a {email}. Solemos responder en 2 o 3 días. Si nos dices tu modelo de iPhone y la versión de iOS, nos ayudas mucho."
+  }
+}

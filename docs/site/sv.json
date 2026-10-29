@@ -1,0 +1,188 @@
+{
+  "title": "Barnschema: fota förskolans månadsplan och få hela månaden",
+  "description": "Fota månadsplanen eller veckobrevet från förskolan. Hela månaden hamnar i kalendern, och kvällen före påminner appen om vad som ska packas. Gratis.",
+  "hero": {
+    "headline": "Fota bara lappen.\nVi påminner kvällen före.",
+    "lead": "Ta en bild på månadsplanen du får med hem från förskolan. Barnschema läser datum, tider och namn på aktiviteterna och lägger in allt på en gång. Kvällen före utflykten, klockan 20, kommer påminnelsen: glöm inte matsäcken.",
+    "cta": "Hämta gratis på App Store",
+    "note": "Alla funktioner är gratis. Bilderna lämnar aldrig din iPhone."
+  },
+  "demo": {
+    "title": "Fota en lapp",
+    "lead": "Här är en exempellapp med nästa månads aktiviteter. Ta en bild, så plockas aktiviteter och packlista ut precis som i appen, och påminnelserna schemaläggs till de tider du väljer.",
+    "noticeTitle": "Avdelning Solrosen · Aktiviteter i {month}",
+    "child": "Alma",
+    "events": [
+      {
+        "day": 5,
+        "title": "Idrottsdag",
+        "items": "matsäck, gympaskor"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Dockteater",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Bakdag",
+        "items": "förkläde"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Födelsedagskalas",
+        "items": ""
+      }
+    ],
+    "snap": "Ta bild",
+    "again": "Igen",
+    "empty": "Ta bilden, så ser du de schemalagda påminnelserna här.",
+    "found": "{e} aktiviteter, {n} påminnelser schemalagda",
+    "options": [
+      "Kvällen före (för att packa)",
+      "På morgonen samma dag",
+      "1 timme före",
+      "Vid starttiden"
+    ],
+    "timedOnly": "Gäller bara händelser med en bestämd tid",
+    "bodies": [
+      "Det är i morgon. Gör i ordning sakerna i god tid.",
+      "Det är idag.",
+      "Börjar om 1 timme.",
+      "Börjar nu."
+    ],
+    "note": "Här används en exempellapp. I appen läses texten på din riktiga bild direkt på enheten. Påminnelserna följer samma regler som i appen."
+  },
+  "problem": {
+    "title": "Skriver du fortfarande av förskolans lappar i kalendern?",
+    "text": "Fem, sex aktiviteter i månaden, och varje gång ska något annat med: matsäck, gympakläder, förkläde. Planen på kylskåpet syns inte på väg till jobbet, och man kommer alltid på det samma morgon. Barnschema gör den papperslappen till kalenderhändelser och påminnelser."
+  },
+  "features": [
+    {
+      "title": "En bild, hela månaden",
+      "text": "Månadsschema, föräldrabrev eller enstaka anslag: ta en bild eller välj från bildbiblioteket, så läses datum, tider och aktiviteter åt dig. Du kan också klistra in ett meddelande från förskolan; ord som ”i morgon” och ”på fredag” blir riktiga datum.\nInnan du sparar rättar du titel, datum eller packlista direkt och sveper bort det som inte behövs. Fyll i barnets avdelning, så sorteras aktiviteter bara för andra avdelningar bort.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Kvällen före får du veta",
+      "text": "Välj mellan kl. 20 kvällen före, kl. 7.30 samma morgon, 1 timme före eller precis på tiden. Packlistan står i påminnelsen, så väskan blir packad.\nMed Apple Kalender hamnar händelserna i en kalender med barnets namn, och inget läggs in två gånger.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Flera barn och hela familjen",
+      "text": "Varje barn får en egen färg. Se alla tillsammans eller ett i taget, och utifrån tidigare händelser gissar appen vem en ny lapp gäller.\nSkicka en inbjudningslänk, så kan partner, mor- och farföräldrar eller barnvakt se och ändra samma händelser. En widget på hemskärmen visar vad som är på gång.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Kom igång i tre steg",
+    "items": [
+      {
+        "title": "Lägg till barnet",
+        "text": "Namn och avdelning. Profilbild kan du lägga till när du vill."
+      },
+      {
+        "title": "Fota lappen",
+        "text": "Rakt framifrån och med skarp text läses den bäst."
+      },
+      {
+        "title": "Kolla och spara",
+        "text": "Tillåt notiser, så kommer påminnelserna när du har valt."
+      }
+    ]
+  },
+  "reference": {
+    "title": "När kommer påminnelserna",
+    "rows": [
+      [
+        "Kl. 20.00 kvällen före",
+        "För packningen. På från början"
+      ],
+      [
+        "Kl. 7.30 samma morgon",
+        "Dagens program. På från början"
+      ],
+      [
+        "1 timme före",
+        "Bara för aktiviteter med tid"
+      ],
+      [
+        "Vid starttiden",
+        "Bara för aktiviteter med tid"
+      ]
+    ],
+    "note": "Heldagsaktiviteter som en utflykt får bara påminnelsen kvällen före och samma morgon. Du kan slå på eller av var och en i inställningarna när du vill."
+  },
+  "pricing": {
+    "title": "Alla funktioner är gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Aktiviteter lästa från bilder och meddelanden",
+        "Rätta innan du sparar, sortera bort andra avdelningar",
+        "Påminnelser kvällen före, på morgonen, 1 timme före och i tid",
+        "En färg per barn och en gemensam kalender",
+        "Synkning med Apple Kalender",
+        "Delning med familjen via länk",
+        "Widget på hemskärmen"
+      ]
+    },
+    "pro": {
+      "name": "Stöd utvecklaren",
+      "items": [
+        "I inställningarna kan du ge lite dricks, så mycket du vill",
+        "Dricks låser inte upp något. Appen fungerar likadant utan"
+      ]
+    },
+    "note": "Inga annonser, ingen prenumeration."
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Vilka bilder fungerar?",
+        "a": "Månadsplaner i rutnät, föräldrabrev skrivna som löptext och enstaka lappar eller flygblad. En bild tagen rakt framifrån med skarp text läses bäst. Du kan också välja flera bilder och skanna dem samtidigt."
+      },
+      {
+        "q": "Några aktiviteter saknas eller en titel har ett stavfel.",
+        "a": "Handstil eller blek text kan vara svår att läsa. Rätta titel, datum eller packlista direkt i listan, eller svep bort det du inte behöver. En aktivitet som saknas lägger du till med ”Lägg till händelse manuellt” på fliken Skanna och sparar igen."
+      },
+      {
+        "q": "Jag får inga påminnelser.",
+        "a": "Kontrollera under Inställningar > Notiser > Barnschema att notiser är tillåtna. I appens inställningar (⚙️) väljer du också vilka påminnelser du vill få."
+      },
+      {
+        "q": "Aktiviteter från andra avdelningar kommer med.",
+        "a": "Fyll i namnet på barnets avdelning i inställningarna, så sorteras aktiviteter bara för andra avdelningar bort. Byter barnet avdelning ändrar du det bara där."
+      },
+      {
+        "q": "Jag har flera barn.",
+        "a": "I inställningarna lägger du till så många barn du vill, vart och ett med profilbild. Välj vid skanningen vem aktiviteterna gäller: i kalendern har varje barn sin färg, och du kan växla mellan gemensam vy och filter per barn."
+      },
+      {
+        "q": "Hur delar jag schemat med min partner?",
+        "a": "Gå till ”Delning av händelser” i inställningarna, tryck på ”Bjud in till delning” och skicka länken i ett meddelande. Den inbjudna ser och ändrar alla barn och händelser, och ändringar från båda håll syns direkt hos båda. Det har inget med Apples Familjedelning att göra."
+      },
+      {
+        "q": "Går det att dela på andra sätt?",
+        "a": "Med dela-knappen på fliken Kalender skickar du en Barnschema-fil, en kalenderfil (.ics) eller en textsammanfattning. Med ”Lägg även till i Apple Kalender” skapas en kalender med barnets namn; delar du den via iCloud i appen Kalender hänger familjen också med."
+      },
+      {
+        "q": "Skickas mina bilder eller händelser någonstans?",
+        "a": "Nej. Texten på bilderna läses helt på enheten, och data sparas bara där. Händelser går via din iCloud bara om du bjuder in någon med ”Delning av händelser”, och bara till dem du bjudit in."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Börja med månadens\nlapp från förskolan",
+    "cta": "Hämta gratis på App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Problem eller önskemål? Skriv till {email}. Vi svarar oftast inom 2–3 dagar. Ange gärna enhetsmodell och iOS-version."
+  }
+}

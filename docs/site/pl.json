@@ -1,0 +1,188 @@
+{
+  "title": "Plan Malucha: zrób zdjęcie planu z przedszkola i masz cały miesiąc",
+  "description": "Sfotografuj miesięczny plan ze żłobka lub przedszkola. Cały miesiąc trafia do kalendarza, a dzień wcześniej wieczorem przypomnienie, co spakować.",
+  "hero": {
+    "headline": "Wystarczy zdjęcie.\nO pakowaniu przypomnimy.",
+    "lead": "Zrób zdjęcie miesięcznego planu, który dostajesz w przedszkolu. Plan Malucha odczyta daty, godziny i nazwy wydarzeń i doda je wszystkie naraz. Wieczorem przed wycieczką, o 20:00, przyjdzie przypomnienie: nie zapomnij o drugim śniadaniu.",
+    "cta": "Pobierz za darmo z App Store",
+    "note": "Wszystkie funkcje są bezpłatne. Zdjęcia nie opuszczają Twojego iPhone'a."
+  },
+  "demo": {
+    "title": "Zrób zdjęcie ogłoszenia",
+    "lead": "Oto przykładowe ogłoszenie z wydarzeniami na przyszły miesiąc. Zrób zdjęcie, a tak jak w aplikacji wyciągnięte zostaną wydarzenia i lista rzeczy, a przypomnienia zaplanują się na wybrane godziny.",
+    "noticeTitle": "Grupa Słoneczniki · Plan na {month}",
+    "child": "Zosia",
+    "events": [
+      {
+        "day": 5,
+        "title": "Jesienny dzień sportu",
+        "items": "drugie śniadanie, trampki"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Teatrzyk kukiełkowy",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Pieczenie pierników",
+        "items": "fartuszek"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Urodziny w grupie",
+        "items": ""
+      }
+    ],
+    "snap": "Zrób zdjęcie",
+    "again": "Jeszcze raz",
+    "empty": "Zrób zdjęcie, a tutaj pojawią się zaplanowane przypomnienia.",
+    "found": "Wydarzenia: {e}, zaplanowane przypomnienia: {n}",
+    "options": [
+      "Wieczorem dzień wcześniej (na spakowanie rzeczy)",
+      "Rano tego dnia",
+      "Godzinę wcześniej",
+      "O godzinie wydarzenia"
+    ],
+    "timedOnly": "Dotyczy tylko wydarzeń z określoną godziną",
+    "bodies": [
+      "To już jutro. Przygotuj rzeczy z wyprzedzeniem.",
+      "To dziś.",
+      "Zaczyna się za godzinę.",
+      "Zaczyna się teraz."
+    ],
+    "note": "Tu używamy przykładowego ogłoszenia. W aplikacji tekst z Twojego prawdziwego zdjęcia jest odczytywany bezpośrednio na urządzeniu. Godziny przypomnień działają według tych samych zasad co w aplikacji."
+  },
+  "problem": {
+    "title": "Wciąż przepisujesz ogłoszenia z przedszkola do kalendarza?",
+    "text": "Pięć, sześć wydarzeń w miesiącu, a za każdym razem trzeba zabrać coś innego: drugie śniadanie, strój na WF, fartuszek. Planu na lodówce nie widać w drodze do pracy, a przypominasz sobie zawsze tego samego ranka. Plan Malucha zamienia tę kartkę w wydarzenia w kalendarzu i przypomnienia."
+  },
+  "features": [
+    {
+      "title": "Jedno zdjęcie, cały miesiąc",
+      "text": "Miesięczna tabela, list do rodziców czy pojedyncze ogłoszenie: zrób zdjęcie albo wybierz je z biblioteki, a daty, godziny i nazwy wydarzeń zostaną odczytane za Ciebie. Możesz też wkleić wiadomość od wychowawczyni; słowa jak „jutro” czy „w ten piątek” zamienią się w prawdziwe daty.\nPrzed zapisaniem od razu poprawisz tytuł, datę lub listę rzeczy, a zbędne przesuniesz, by usunąć. Wpisz grupę dziecka, a wydarzenia tylko dla innych grup odpadną same.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Wieczorem przypomnienie",
+      "text": "Wybierz 20:00 dzień wcześniej, 7:30 rano tego dnia, godzinę przed lub dokładnie o czasie. Lista rzeczy pojawia się w przypomnieniu, więc plecak będzie spakowany.\nZ Kalendarzem Apple wydarzenia trafiają do kalendarza z imieniem dziecka i nic nie dodaje się dwa razy.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Kilkoro dzieci i cała rodzina",
+      "text": "Każde dziecko ma swój kolor. Oglądaj wszystkie razem albo po kolei; na podstawie wcześniejszych wydarzeń aplikacja zgadnie, czyje jest nowe ogłoszenie.\nWyślij link z zaproszeniem, a partner, dziadkowie czy niania zobaczą i będą mogli edytować te same wydarzenia. Widżet na ekranie początkowym pokazuje, co nadchodzi.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Start w trzech krokach",
+    "items": [
+      {
+        "title": "Dodaj dziecko",
+        "text": "Imię i grupa. Zdjęcie profilowe kiedy zechcesz."
+      },
+      {
+        "title": "Sfotografuj ogłoszenie",
+        "text": "Prosto z przodu i z wyraźnym tekstem odczyt jest najlepszy."
+      },
+      {
+        "title": "Sprawdź i zapisz",
+        "text": "Zezwól na powiadomienia, a przypomnienia przyjdą o wybranej porze."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kiedy przychodzą przypomnienia",
+    "rows": [
+      [
+        "20:00 dzień wcześniej",
+        "Na pakowanie. Domyślnie włączone"
+      ],
+      [
+        "7:30 rano tego dnia",
+        "Co dziś. Domyślnie włączone"
+      ],
+      [
+        "Godzinę wcześniej",
+        "Tylko dla wydarzeń z godziną"
+      ],
+      [
+        "O godzinie wydarzenia",
+        "Tylko dla wydarzeń z godziną"
+      ]
+    ],
+    "note": "Wydarzenia całodniowe, takie jak wycieczka, mają tylko przypomnienie wieczorem dzień wcześniej i rano. Każde możesz w dowolnej chwili włączyć lub wyłączyć w ustawieniach."
+  },
+  "pricing": {
+    "title": "Wszystkie funkcje są bezpłatne",
+    "free": {
+      "name": "Za darmo",
+      "items": [
+        "Odczyt wydarzeń ze zdjęć i wiadomości",
+        "Poprawki przed zapisaniem, filtr innych grup",
+        "Przypomnienia wieczorem, rano, godzinę przed i o czasie",
+        "Kolor dla każdego dziecka i wspólny kalendarz",
+        "Synchronizacja z Kalendarzem Apple",
+        "Udostępnianie rodzinie przez link",
+        "Widżet na ekranie początkowym"
+      ]
+    },
+    "pro": {
+      "name": "Wesprzyj twórcę",
+      "items": [
+        "W ustawieniach możesz zostawić drobny napiwek w dowolnej kwocie",
+        "Napiwek niczego nie odblokowuje. Aplikacja działa tak samo"
+      ]
+    },
+    "note": "Bez reklam i bez subskrypcji."
+  },
+  "faq": {
+    "title": "Częste pytania",
+    "items": [
+      {
+        "q": "Jakie zdjęcia działają?",
+        "a": "Miesięczne plany w tabeli, ogłoszenia pisane tekstem oraz pojedyncze kartki i ulotki. Zdjęcie zrobione prosto z przodu, z wyraźnym tekstem, odczytuje się najlepiej. Możesz też wybrać kilka zdjęć i zeskanować je naraz."
+      },
+      {
+        "q": "Brakuje kilku wydarzeń albo w tytule jest literówka.",
+        "a": "Pismo odręczne lub blady druk bywają trudne do odczytania. Popraw tytuł, datę lub listę rzeczy bezpośrednio na liście albo przesuń, by usunąć zbędne. Brakujące wydarzenie dodasz przez „Dodaj wydarzenie ręcznie” na karcie Skanuj, a potem zapiszesz ponownie."
+      },
+      {
+        "q": "Nie dostaję przypomnień.",
+        "a": "Sprawdź w Ustawienia > Powiadomienia > Plan Malucha, czy powiadomienia są dozwolone. W ustawieniach aplikacji (⚙️) wybierzesz też, które przypomnienia chcesz dostawać."
+      },
+      {
+        "q": "Pojawiają się wydarzenia innych grup.",
+        "a": "Wpisz w ustawieniach nazwę grupy dziecka, a wydarzenia tylko dla innych grup zostaną odfiltrowane. Gdy w nowym roku zmieni się grupa, wystarczy poprawić ją tam."
+      },
+      {
+        "q": "Mam więcej niż jedno dziecko.",
+        "a": "W ustawieniach dodasz dowolną liczbę dzieci, każde ze zdjęciem profilowym. Przy skanowaniu wybierz, czyje to wydarzenia: w kalendarzu każde dziecko ma swój kolor, a widok wspólny możesz przełączać na filtr dla jednego dziecka."
+      },
+      {
+        "q": "Jak udostępnić plan partnerowi?",
+        "a": "W ustawieniach, w sekcji „Udostępnianie wydarzeń”, stuknij „Zaproś do udostępniania” i wyślij link wiadomością. Zaproszona osoba widzi i edytuje wszystkie dzieci i wydarzenia, a zmiany z obu stron od razu pojawiają się u obojga. Nie ma to związku z Chmurą rodzinną Apple."
+      },
+      {
+        "q": "Czy można udostępniać inaczej?",
+        "a": "Przyciskiem udostępniania na karcie Kalendarz wyślesz plik Planu Malucha, plik kalendarza (.ics) lub podsumowanie tekstowe. Po włączeniu „Dodawaj też do Kalendarza Apple” powstaje kalendarz z imieniem dziecka; udostępnij go przez iCloud w aplikacji Kalendarz, a rodzina też będzie na bieżąco."
+      },
+      {
+        "q": "Czy moje zdjęcia lub wydarzenia są gdzieś wysyłane?",
+        "a": "Nie. Tekst ze zdjęć jest odczytywany w całości na urządzeniu, a dane zostają tylko na nim. Wydarzenia przechodzą przez Twój iCloud wyłącznie wtedy, gdy kogoś zaprosisz przez „Udostępnianie wydarzeń”, i tylko do zaproszonych osób."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Zacznij od ogłoszenia\nna ten miesiąc",
+    "cta": "Pobierz za darmo z App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Język",
+    "privacy": "Polityka prywatności",
+    "contact": "Coś nie działa albo czegoś brakuje? Napisz na {email}. Zwykle odpowiadamy w ciągu 2–3 dni. Model urządzenia i wersja iOS bardzo pomogą."
+  }
+}

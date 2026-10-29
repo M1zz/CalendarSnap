@@ -1,0 +1,188 @@
+{
+  "title": "Jadwal Si Kecil: foto kalender dari sekolah, jadwal sebulan langsung beres",
+  "description": "Foto kalender bulanan atau surat edaran dari daycare atau TK. Jadwal sebulan masuk kalender, malam sebelumnya ada pengingat barang bawaan. Gratis.",
+  "hero": {
+    "headline": "Cukup foto edarannya.\nKami ingatkan bekalnya.",
+    "lead": "Foto kalender bulanan yang dibawa pulang dari sekolah. Jadwal Si Kecil membaca tanggal, jam, dan nama kegiatan, lalu memasukkan semuanya sekaligus. Malam sebelum karyawisata, jam 8, datang pengingat: jangan lupa bekal.",
+    "cta": "Unduh gratis di App Store",
+    "note": "Semua fitur gratis. Foto Anda tidak pernah keluar dari iPhone."
+  },
+  "demo": {
+    "title": "Coba foto surat edaran",
+    "lead": "Ini contoh surat edaran kegiatan bulan depan. Fotolah, dan seperti di aplikasi, kegiatan serta barang bawaan langsung diambil, lalu pengingat dijadwalkan di waktu yang Anda pilih.",
+    "noticeTitle": "Kelas Bunga Matahari · Kegiatan Bulan {month}",
+    "child": "Kirana",
+    "events": [
+      {
+        "day": 5,
+        "title": "Hari olahraga",
+        "items": "bekal, sepatu olahraga"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Nonton pertunjukan boneka",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Kelas memasak",
+        "items": "celemek"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Pesta ulang tahun bersama",
+        "items": ""
+      }
+    ],
+    "snap": "Ambil foto",
+    "again": "Ulangi",
+    "empty": "Ambil foto, lalu pengingat yang dijadwalkan muncul di sini.",
+    "found": "{e} kegiatan, {n} pengingat dijadwalkan",
+    "options": [
+      "Malam sebelumnya (untuk menyiapkan barang)",
+      "Pagi harinya",
+      "1 jam sebelumnya",
+      "Tepat waktu acara"
+    ],
+    "timedOnly": "Hanya berlaku untuk acara yang memiliki waktu",
+    "bodies": [
+      "Acara besok. Siapkan barang-barangnya dari sekarang.",
+      "Acara hari ini.",
+      "Dimulai 1 jam lagi.",
+      "Dimulai sekarang."
+    ],
+    "note": "Di sini kami pakai contoh surat edaran. Di aplikasi, teks pada foto asli Anda dibaca langsung di perangkat. Waktu pengingat mengikuti aturan yang sama dengan aplikasi."
+  },
+  "problem": {
+    "title": "Masih menyalin surat edaran sekolah ke kalender?",
+    "text": "Lima sampai enam kegiatan sebulan, dan tiap kali barang bawaannya beda: bekal, baju olahraga, celemek. Kalender yang ditempel di kulkas tidak terlihat di perjalanan ke kantor, dan biasanya baru teringat pagi itu juga. Jadwal Si Kecil mengubah selembar kertas itu jadi acara di kalender dan pengingat."
+  },
+  "features": [
+    {
+      "title": "Satu foto, sebulan penuh",
+      "text": "Kalender bentuk tabel, surat untuk orang tua, atau pengumuman satu lembar: foto atau pilih dari perpustakaan foto, lalu tanggal, jam, dan nama kegiatan dibacakan untuk Anda. Pesan dari guru juga bisa ditempel; kata seperti “besok” atau “Jumat ini” diubah jadi tanggal sebenarnya.\nSebelum disimpan, judul, tanggal, atau barang bawaan bisa langsung diperbaiki, dan yang tidak perlu tinggal digeser untuk dihapus. Isi kelas anak Anda, maka kegiatan khusus kelas lain tersaring otomatis.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Malam sebelumnya, diingatkan",
+      "text": "Pilih jam 20.00 malam sebelumnya, 07.30 pagi harinya, 1 jam sebelumnya, atau tepat waktu. Barang bawaan ikut tampil di pengingat, jadi tas tidak ada yang ketinggalan.\nDengan Kalender Apple, acara masuk ke kalender bernama anak Anda dan tidak pernah tercatat dua kali.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Anak lebih dari satu, sekeluarga ikut lihat",
+      "text": "Tiap anak punya warna sendiri. Lihat semuanya sekaligus atau satu per satu; dari riwayat sebelumnya, aplikasi menebak surat edaran baru itu milik anak yang mana.\nKirim tautan undangan, maka pasangan, kakek-nenek, atau pengasuh bisa melihat dan mengubah jadwal yang sama. Widget di Layar Utama menampilkan acara berikutnya.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Tambahkan anak",
+        "text": "Isi nama dan kelas. Foto profil bisa menyusul."
+      },
+      {
+        "title": "Foto surat edarannya",
+        "text": "Foto lurus dari depan dengan teks yang jelas supaya terbaca baik."
+      },
+      {
+        "title": "Periksa lalu simpan",
+        "text": "Izinkan notifikasi, lalu pengingat datang di waktu yang dipilih."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kapan pengingat datang",
+    "rows": [
+      [
+        "20.00 malam sebelumnya",
+        "Siapkan barang. Aktif dari awal"
+      ],
+      [
+        "07.30 pagi harinya",
+        "Acara hari ini. Aktif dari awal"
+      ],
+      [
+        "1 jam sebelumnya",
+        "Hanya untuk acara yang ada jamnya"
+      ],
+      [
+        "Tepat waktu acara",
+        "Hanya untuk acara yang ada jamnya"
+      ]
+    ],
+    "note": "Acara seharian seperti karyawisata hanya mendapat pengingat malam sebelumnya dan pagi harinya. Masing-masing bisa dinyalakan atau dimatikan kapan saja di pengaturan."
+  },
+  "pricing": {
+    "title": "Semua fitur gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Membaca acara dari foto dan pesan",
+        "Perbaiki sebelum simpan, saring kelas lain",
+        "Pengingat malam sebelumnya, pagi, 1 jam sebelum, dan tepat waktu",
+        "Warna untuk tiap anak dan kalender gabungan",
+        "Sinkron dengan Kalender Apple",
+        "Berbagi dengan keluarga lewat tautan",
+        "Widget Layar Utama"
+      ]
+    },
+    "pro": {
+      "name": "Dukung pengembang",
+      "items": [
+        "Dari pengaturan, Anda bisa memberi tip kecil sesuka hati",
+        "Tip tidak membuka fitur apa pun. Tanpa tip pun aplikasinya sama"
+      ]
+    },
+    "note": "Tanpa iklan, tanpa langganan."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Foto seperti apa yang bisa dibaca?",
+        "a": "Kalender bulanan bentuk tabel, surat edaran berupa kalimat, serta pengumuman atau brosur satu lembar. Foto yang diambil lurus dari depan dengan teks jelas akan terbaca lebih baik. Anda juga bisa memilih beberapa foto untuk dipindai sekaligus."
+      },
+      {
+        "q": "Ada kegiatan yang hilang atau judulnya salah ketik.",
+        "a": "Tulisan tangan atau tulisan pudar bisa sulit dibaca. Perbaiki judul, tanggal, atau barang bawaan langsung di daftar, atau geser untuk menghapus yang tidak perlu. Kegiatan yang terlewat bisa ditambahkan lewat “Tambah Acara Secara Manual” di tab Pindai, lalu simpan lagi."
+      },
+      {
+        "q": "Pengingat tidak muncul.",
+        "a": "Periksa di Pengaturan > Notifikasi > Jadwal Si Kecil bahwa notifikasi sudah diizinkan. Di pengaturan aplikasi (⚙️) Anda juga bisa memilih pengingat mana yang ingin diterima."
+      },
+      {
+        "q": "Kegiatan kelas lain ikut masuk.",
+        "a": "Isi nama kelas anak Anda di pengaturan, maka kegiatan khusus kelas lain akan tersaring. Kalau naik kelas dan pindah kelas, cukup ubah di sana."
+      },
+      {
+        "q": "Anak saya lebih dari satu.",
+        "a": "Di pengaturan Anda bisa menambahkan anak sebanyak apa pun, masing-masing dengan foto profil. Saat memindai, pilih ini jadwal siapa: di kalender tiap anak punya warna sendiri, dan Anda bisa berpindah antara tampilan gabungan dan filter per anak."
+      },
+      {
+        "q": "Bagaimana berbagi jadwal dengan pasangan?",
+        "a": "Buka “Berbagi Jadwal” di pengaturan, ketuk “Undang untuk Melihat Bersama”, lalu kirim tautannya lewat pesan. Yang diundang bisa melihat dan mengubah jadwal semua anak, dan perubahan dari pihak mana pun langsung terlihat di keduanya. Ini tidak terkait dengan Berbagi Keluarga dari Apple."
+      },
+      {
+        "q": "Ada cara berbagi lain?",
+        "a": "Tombol bagikan di tab Kalender bisa mengirim file Jadwal Si Kecil, file kalender (.ics), atau ringkasan teks. Jika “Tambahkan juga ke Kalender Apple” dinyalakan, akan dibuat kalender bernama anak Anda; bagikan kalender itu lewat iCloud di app Kalender agar keluarga juga ikut tahu."
+      },
+      {
+        "q": "Apakah foto atau jadwal saya dikirim ke suatu tempat?",
+        "a": "Tidak. Teks di foto dibaca sepenuhnya di perangkat, dan data hanya disimpan di sana. Jadwal hanya lewat iCloud Anda bila Anda mengundang seseorang melalui “Berbagi Jadwal”, dan hanya kepada orang yang diundang."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Mulai dari surat edaran\nbulan ini",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Lewati ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada masalah atau ingin fitur baru? Kirim email ke {email}. Biasanya kami membalas dalam 2–3 hari. Sertakan model perangkat dan versi iOS supaya lebih cepat terbantu."
+  }
+}

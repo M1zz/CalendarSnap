@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Çocuk Takvimi – kreş programı tek fotoğrafla</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Çocuk Takvimi: kreşin aylık planını fotoğrafla, bütün ay takvimde</title>
+  <meta name="description" content="Kreşin ya da anaokulunun aylık planını fotoğrafla. Bütün ay takvime girer, bir önceki akşam neyin hazırlanacağı hatırlatılır. Ücretsiz.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Çocuk Takvimi: kreşin aylık planını fotoğrafla, bütün ay takvimde">
+  <meta property="og:description" content="Kreşin ya da anaokulunun aylık planını fotoğrafla. Bütün ay takvime girer, bir önceki akşam neyin hazırlanacağı hatırlatılır. Ücretsiz.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/tr/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/tr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Çocuk Takvimi</h1>
-<p class="muted">Kreşin ya da anaokulunun takvimini veya duyurusunu fotoğraflayın,<br>bütün ay tek seferde takviminize, hatırlatmalarınıza ve widget'ınıza gelsin.</p>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="bar">
+    <a class="brand" href="../tr/"><img src="../icon.png" alt="" width="32" height="32">Çocuk Takvimi</a>
+    <a class="lang-link" href="#languages">Dil</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Tek fotoğraf → koca bir ay</b><span>Aylık takvim, veli bülteni ya da tek sayfalık duyuru; hepsi otomatik tanınır</span></div>
-  <div class="card"><b>🔔 Getirilecekler hatırlatması</b><span>Bir gün önce akşam ve o sabah, getirilecekler notuyla birlikte</span></div>
-  <div class="card"><b>👧👦 Birden fazla çocuk</b><span>Her çocuğa ayrı profil ve renk, ortak takvim ve filtre</span></div>
-  <div class="card"><b>👨‍👩‍👧 Davet edin, birlikte görün</b><span>Tek bir davet bağlantısıyla eşinizle, anneanne ve dedeyle paylaşın; iki taraftaki değişiklikler anında eşitlenir</span></div>
-  <div class="card"><b>🧩 Ana ekran widget'ı</b><span>Yaklaşan etkinlikler doğrudan ana ekranınızda</span></div>
-  <div class="card"><b>🔒 Önce gizlilik</b><span>Fotoğraflar yalnızca cihazınızda analiz edilir, geliştiricinin sunucularına gönderilmez</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Bir fotoğraf yeter.<br>Akşamdan hatırlatırız.</h1>
+        <p class="lead">Kreşten gelen aylık planın fotoğrafını çek. Çocuk Takvimi tarihleri, saatleri ve etkinlik adlarını okuyup hepsini tek seferde ekler. Geziden önceki akşam saat 20.00'de bir hatırlatma gelir: beslenmeyi unutma.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">App Store'dan ücretsiz indir</a><a class="try" href="#try">Bir duyuruyu fotoğrafla ↓</a></div>
+        <p class="muted small">Tüm özellikler ücretsiz. Fotoğrafların iPhone'undan dışarı çıkmaz.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/01-scan.jpg" alt="Bir fotoğraf yeter. Akşamdan hatırlatırız." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Destek ve İletişim</a> ·
-  <a href="privacy.html">Gizlilik Politikası</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <b>Türkçe</b></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Bir duyuruyu fotoğrafla</h2>
+      <p class="muted">İşte gelecek ayın etkinliklerini anlatan örnek bir duyuru. Fotoğrafını çek; uygulamadaki gibi etkinlikler ve getirilecekler ayıklanır, hatırlatmalar seçtiğin saatlere kurulur.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Bir duyuruyu fotoğrafla&quot;, &quot;lead&quot;: &quot;İşte gelecek ayın etkinliklerini anlatan örnek bir duyuru. Fotoğrafını çek; uygulamadaki gibi etkinlikler ve getirilecekler ayıklanır, hatırlatmalar seçtiğin saatlere kurulur.&quot;, &quot;noticeTitle&quot;: &quot;Ayçiçeği Sınıfı · {month} Etkinlikleri&quot;, &quot;child&quot;: &quot;Elif&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Spor şenliği&quot;, &quot;items&quot;: &quot;beslenme, spor ayakkabı&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Kukla tiyatrosu&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Kurabiye atölyesi&quot;, &quot;items&quot;: &quot;önlük&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Doğum günü partisi&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Fotoğraf çek&quot;, &quot;again&quot;: &quot;Tekrar&quot;, &quot;empty&quot;: &quot;Fotoğrafı çekince kurulan hatırlatmalar burada görünür.&quot;, &quot;found&quot;: &quot;{e} etkinlik, {n} hatırlatma kuruldu&quot;, &quot;options&quot;: [&quot;Bir gün önce akşam (eşyaları hazırlamak için)&quot;, &quot;O gün sabah&quot;, &quot;1 saat önce&quot;, &quot;Etkinlik saatinde&quot;], &quot;timedOnly&quot;: &quot;Yalnızca saati belirlenmiş etkinliklere uygulanır&quot;, &quot;bodies&quot;: [&quot;Etkinlik yarın. Eşyaları önceden hazırlayın.&quot;, &quot;Etkinlik bugün.&quot;, &quot;1 saat sonra başlıyor.&quot;, &quot;Şimdi başlıyor.&quot;], &quot;note&quot;: &quot;Burada örnek bir duyuru kullanıyoruz. Uygulamada gerçek fotoğrafındaki yazılar doğrudan cihazında okunur. Hatırlatma saatleri uygulamadaki kurallarla aynıdır.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Kreşin duyurularını hâlâ elle takvime mi geçiriyorsun?</h2>
+      <p>Ayda beş altı etkinlik, her birinde başka bir şey götürmek gerekiyor: beslenme, spor kıyafeti, önlük. Buzdolabındaki plan işe giderken görünmüyor, insanın aklına hep o sabah geliyor. Çocuk Takvimi o kâğıdı takvim etkinliklerine ve hatırlatmalara dönüştürür.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tek fotoğraf, koca bir ay</h2>
+        <p>Aylık tablo, veli mektubu ya da tek sayfalık duyuru: fotoğrafını çek veya fotoğraf arşivinden seç; tarih, saat ve etkinlik adları senin için okunur. Kreşten gelen mesajı da yapıştırabilirsin; “yarın” ya da “bu cuma” gibi ifadeler gerçek tarihe dönüşür.<br>Kaydetmeden önce başlığı, tarihi veya getirilecekleri hemen düzeltir, gereksizleri kaydırıp silersin. Çocuğunun sınıfını girersen yalnızca diğer sınıflara ait etkinlikler kendiliğinden elenir.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/02-events.jpg" alt="Tek fotoğraf, koca bir ay" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Bir önceki akşam hatırlatma</h2>
+        <p>Önceki akşam 20.00, o sabah 07.30, 1 saat önce ya da tam saatinde seçeneklerinden seç. Getirilecekler hatırlatmada görünür, çanta eksiksiz hazırlanır.<br>Apple Takvim'i açarsan etkinlikler çocuğunun adını taşıyan bir takvime girer, hiçbiri iki kez eklenmez.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/04-reminders.jpg" alt="Bir önceki akşam hatırlatma" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Birden çok çocuk, bütün aile</h2>
+        <p>Her çocuğun kendi rengi var. Hepsini birlikte ya da tek tek gör; uygulama geçmiş kayıtlara bakıp yeni duyurunun hangi çocuğa ait olduğunu tahmin eder.<br>Bir davet bağlantısı gönder; eşin, büyükanne ve büyükbaba ya da bakıcı aynı etkinlikleri görüp düzenleyebilir. Ana ekrandaki widget sıradakini gösterir.</p>
+      </div>
+      <div class="phone"><img src="../img/tr/03-calendar.jpg" alt="Birden çok çocuk, bütün aile" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Üç adımda başla</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Çocuğunu ekle</h3><p>Adını ve sınıfını gir. Profil fotoğrafı istediğin zaman.</p></li>
+<li class="card"><span class="n">2</span><h3>Duyuruyu fotoğrafla</h3><p>Karşıdan ve yazılar net çıkacak şekilde çekersen daha iyi okunur.</p></li>
+<li class="card"><span class="n">3</span><h3>Kontrol et ve kaydet</h3><p>Bildirimlere izin ver, hatırlatmalar seçtiğin saatte gelsin.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Hatırlatmalar ne zaman gelir</h2>
+      <div class="card table">
+        <dl><div><dt>Önceki akşam 20.00</dt><dd>Eşyaları hazırlamak için. Baştan açık</dd></div><div><dt>O sabah 07.30</dt><dd>Bugünün programı. Baştan açık</dd></div><div><dt>1 saat önce</dt><dd>Yalnızca saati olan etkinliklerde</dd></div><div><dt>Etkinlik saatinde</dt><dd>Yalnızca saati olan etkinliklerde</dd></div></dl>
+      </div>
+      <p class="muted">Gezi gibi tüm gün süren etkinliklerde yalnızca önceki akşam ve o sabahki hatırlatma gelir. Her birini ayarlardan istediğin zaman açıp kapatabilirsin.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Tüm özellikler ücretsiz</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Ücretsiz</h3>
+          <ul><li>Fotoğraf ve mesajlardan etkinlik okuma</li><li>Kaydetmeden önce düzeltme, diğer sınıfları eleme</li><li>Önceki akşam, sabah, 1 saat önce ve tam saatinde hatırlatma</li><li>Her çocuğa bir renk ve ortak takvim</li><li>Apple Takvim ile eşzamanlama</li><li>Davet bağlantısıyla aileyle paylaşma</li><li>Ana ekran widget'ı</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Geliştiriciyi destekle</h3>
+          <ul><li>Ayarlardan dilediğin kadar küçük bir bahşiş gönderebilirsin</li><li>Bahşiş hiçbir şeyin kilidini açmaz. Uygulama aynen çalışır</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Reklam yok, abonelik yok.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Sık sorulan sorular</h2>
+      <div class="faq"><details><summary>Hangi fotoğraflar okunuyor?</summary><p>Tablo şeklindeki aylık takvimler, düz metin olarak yazılmış duyurular ve tek sayfalık bildiriler ya da broşürler. Karşıdan, yazılar net çekilmiş fotoğraflar daha iyi okunur. Birkaç fotoğrafı seçip aynı anda tarayabilirsin.</p></details>
+<details><summary>Bazı etkinlikler eksik ya da bir başlıkta yazım hatası var.</summary><p>El yazısı ya da soluk yazılar zor okunabilir. Başlığı, tarihi veya getirilecekleri doğrudan listede düzelt, gerekmeyenleri kaydırıp sil. Eksik bir etkinliği Tara sekmesindeki “Etkinliği Elle Ekle” ile ekleyip yeniden kaydet.</p></details>
+<details><summary>Hatırlatma gelmiyor.</summary><p>Ayarlar &gt; Bildirimler &gt; Çocuk Takvimi bölümünde bildirimlere izin verildiğini kontrol et. Uygulamanın ayarlarından (⚙️) hangi hatırlatmaları almak istediğini de seçebilirsin.</p></details>
+<details><summary>Diğer sınıfların etkinlikleri de geliyor.</summary><p>Ayarlara çocuğunun sınıf adını gir; yalnızca diğer sınıflara ait etkinlikler elenir. Yeni dönemde sınıf değişirse sadece orayı güncellemen yeterli.</p></details>
+<details><summary>Birden fazla çocuğum var.</summary><p>Ayarlardan istediğin kadar çocuk ekleyebilir, her birine profil fotoğrafı koyabilirsin. Tararken etkinliklerin kime ait olduğunu seç: takvimde her çocuğun kendi rengi olur, ortak görünümle çocuk bazlı filtre arasında geçiş yapabilirsin.</p></details>
+<details><summary>Takvimi eşimle nasıl paylaşırım?</summary><p>Ayarlardaki “Etkinlik Paylaşımı” bölümünde “Davet Et ve Paylaş”a dokun ve bağlantıyı mesajla gönder. Davet edilen kişi tüm çocukları ve etkinlikleri görüp düzenleyebilir; iki taraftan yapılan değişiklikler hemen ikisinde de görünür. Bunun Apple'ın Aile Paylaşımı ile ilgisi yoktur.</p></details>
+<details><summary>Başka paylaşım yolları var mı?</summary><p>Takvim sekmesindeki paylaş düğmesiyle Çocuk Takvimi dosyası, takvim dosyası (.ics) ya da metin özeti gönderebilirsin. “Apple Takvim'e de ekle” açıkken çocuğunun adını taşıyan bir takvim oluşur; bunu Takvim uygulamasında iCloud üzerinden paylaşırsan aile de güncel kalır.</p></details>
+<details><summary>Fotoğraflarım ya da etkinliklerim bir yere gönderiliyor mu?</summary><p>Hayır. Fotoğraflardaki yazılar tamamen cihazında okunur ve veriler yalnızca orada saklanır. Etkinlikler yalnızca “Etkinlik Paylaşımı” ile birini davet ettiğinde iCloud'un üzerinden ve sadece davet ettiğin kişilere gider.</p></details></div>
+      <p class="contact">Bir sorun mu var ya da bir özellik mi istiyorsun? <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> adresine yaz. Genellikle 2–3 gün içinde yanıt veriyoruz. Cihaz modelini ve iOS sürümünü yazarsan çok yardımcı olur.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bu ayın duyurusuyla<br>başla</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">App Store'dan ücretsiz indir</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Dil"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></nav>
+    <p><a href="privacy.html">Gizlilik Politikası</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

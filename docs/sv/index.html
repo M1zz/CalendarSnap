@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Barnschema – förskolans kalender i en enda bild</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barnschema: fota förskolans månadsplan och få hela månaden</title>
+  <meta name="description" content="Fota månadsplanen eller veckobrevet från förskolan. Hela månaden hamnar i kalendern, och kvällen före påminner appen om vad som ska packas. Gratis.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Barnschema: fota förskolans månadsplan och få hela månaden">
+  <meta property="og:description" content="Fota månadsplanen eller veckobrevet från förskolan. Hela månaden hamnar i kalendern, och kvällen före påminner appen om vad som ska packas. Gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/sv/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/sv/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Barnschema</h1>
-<p class="muted">Fota kalendern eller månadsbrevet från förskolan,<br>så hamnar hela månaden i kalendern, påminnelserna och widgeten.</p>
+  <a class="skip" href="#main">Hoppa till innehållet</a>
+  <header class="bar">
+    <a class="brand" href="../sv/"><img src="../icon.png" alt="" width="32" height="32">Barnschema</a>
+    <a class="lang-link" href="#languages">Språk</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 En bild → en hel månad</b><span>Månadskalender, månadsbrev eller lapp – allt känns igen automatiskt</span></div>
-  <div class="card"><b>🔔 Påminnelse om vad som ska med</b><span>Kvällen före och samma morgon, med din anteckning om vad som ska med</span></div>
-  <div class="card"><b>👧👦 Flera barn</b><span>Egen profil och färg för varje barn, gemensam kalender med filter</span></div>
-  <div class="card"><b>👨‍👩‍👧 Bjud in och se tillsammans</b><span>Dela schemat med din partner och far- och morföräldrar via en enda inbjudningslänk – ändringar från båda håll synkas direkt</span></div>
-  <div class="card"><b>🧩 Widget på hemskärmen</b><span>Se kommande händelser direkt på hemskärmen</span></div>
-  <div class="card"><b>🔒 Integriteten först</b><span>Bilderna analyseras bara på enheten och skickas aldrig till utvecklarens servrar</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Fota bara lappen.<br>Vi påminner kvällen före.</h1>
+        <p class="lead">Ta en bild på månadsplanen du får med hem från förskolan. Barnschema läser datum, tider och namn på aktiviteterna och lägger in allt på en gång. Kvällen före utflykten, klockan 20, kommer påminnelsen: glöm inte matsäcken.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Hämta gratis på App Store</a><a class="try" href="#try">Fota en lapp ↓</a></div>
+        <p class="muted small">Alla funktioner är gratis. Bilderna lämnar aldrig din iPhone.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/01-scan.jpg" alt="Fota bara lappen. Vi påminner kvällen före." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Hjälp och kontakt</a> ·
-  <a href="privacy.html">Integritetspolicy</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <b>Svenska</b> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Fota en lapp</h2>
+      <p class="muted">Här är en exempellapp med nästa månads aktiviteter. Ta en bild, så plockas aktiviteter och packlista ut precis som i appen, och påminnelserna schemaläggs till de tider du väljer.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Fota en lapp&quot;, &quot;lead&quot;: &quot;Här är en exempellapp med nästa månads aktiviteter. Ta en bild, så plockas aktiviteter och packlista ut precis som i appen, och påminnelserna schemaläggs till de tider du väljer.&quot;, &quot;noticeTitle&quot;: &quot;Avdelning Solrosen · Aktiviteter i {month}&quot;, &quot;child&quot;: &quot;Alma&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Idrottsdag&quot;, &quot;items&quot;: &quot;matsäck, gympaskor&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Dockteater&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Bakdag&quot;, &quot;items&quot;: &quot;förkläde&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Födelsedagskalas&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Ta bild&quot;, &quot;again&quot;: &quot;Igen&quot;, &quot;empty&quot;: &quot;Ta bilden, så ser du de schemalagda påminnelserna här.&quot;, &quot;found&quot;: &quot;{e} aktiviteter, {n} påminnelser schemalagda&quot;, &quot;options&quot;: [&quot;Kvällen före (för att packa)&quot;, &quot;På morgonen samma dag&quot;, &quot;1 timme före&quot;, &quot;Vid starttiden&quot;], &quot;timedOnly&quot;: &quot;Gäller bara händelser med en bestämd tid&quot;, &quot;bodies&quot;: [&quot;Det är i morgon. Gör i ordning sakerna i god tid.&quot;, &quot;Det är idag.&quot;, &quot;Börjar om 1 timme.&quot;, &quot;Börjar nu.&quot;], &quot;note&quot;: &quot;Här används en exempellapp. I appen läses texten på din riktiga bild direkt på enheten. Påminnelserna följer samma regler som i appen.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Skriver du fortfarande av förskolans lappar i kalendern?</h2>
+      <p>Fem, sex aktiviteter i månaden, och varje gång ska något annat med: matsäck, gympakläder, förkläde. Planen på kylskåpet syns inte på väg till jobbet, och man kommer alltid på det samma morgon. Barnschema gör den papperslappen till kalenderhändelser och påminnelser.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>En bild, hela månaden</h2>
+        <p>Månadsschema, föräldrabrev eller enstaka anslag: ta en bild eller välj från bildbiblioteket, så läses datum, tider och aktiviteter åt dig. Du kan också klistra in ett meddelande från förskolan; ord som ”i morgon” och ”på fredag” blir riktiga datum.<br>Innan du sparar rättar du titel, datum eller packlista direkt och sveper bort det som inte behövs. Fyll i barnets avdelning, så sorteras aktiviteter bara för andra avdelningar bort.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/02-events.jpg" alt="En bild, hela månaden" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kvällen före får du veta</h2>
+        <p>Välj mellan kl. 20 kvällen före, kl. 7.30 samma morgon, 1 timme före eller precis på tiden. Packlistan står i påminnelsen, så väskan blir packad.<br>Med Apple Kalender hamnar händelserna i en kalender med barnets namn, och inget läggs in två gånger.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/04-reminders.jpg" alt="Kvällen före får du veta" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Flera barn och hela familjen</h2>
+        <p>Varje barn får en egen färg. Se alla tillsammans eller ett i taget, och utifrån tidigare händelser gissar appen vem en ny lapp gäller.<br>Skicka en inbjudningslänk, så kan partner, mor- och farföräldrar eller barnvakt se och ändra samma händelser. En widget på hemskärmen visar vad som är på gång.</p>
+      </div>
+      <div class="phone"><img src="../img/sv/03-calendar.jpg" alt="Flera barn och hela familjen" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kom igång i tre steg</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Lägg till barnet</h3><p>Namn och avdelning. Profilbild kan du lägga till när du vill.</p></li>
+<li class="card"><span class="n">2</span><h3>Fota lappen</h3><p>Rakt framifrån och med skarp text läses den bäst.</p></li>
+<li class="card"><span class="n">3</span><h3>Kolla och spara</h3><p>Tillåt notiser, så kommer påminnelserna när du har valt.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>När kommer påminnelserna</h2>
+      <div class="card table">
+        <dl><div><dt>Kl. 20.00 kvällen före</dt><dd>För packningen. På från början</dd></div><div><dt>Kl. 7.30 samma morgon</dt><dd>Dagens program. På från början</dd></div><div><dt>1 timme före</dt><dd>Bara för aktiviteter med tid</dd></div><div><dt>Vid starttiden</dt><dd>Bara för aktiviteter med tid</dd></div></dl>
+      </div>
+      <p class="muted">Heldagsaktiviteter som en utflykt får bara påminnelsen kvällen före och samma morgon. Du kan slå på eller av var och en i inställningarna när du vill.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Alla funktioner är gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Aktiviteter lästa från bilder och meddelanden</li><li>Rätta innan du sparar, sortera bort andra avdelningar</li><li>Påminnelser kvällen före, på morgonen, 1 timme före och i tid</li><li>En färg per barn och en gemensam kalender</li><li>Synkning med Apple Kalender</li><li>Delning med familjen via länk</li><li>Widget på hemskärmen</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Stöd utvecklaren</h3>
+          <ul><li>I inställningarna kan du ge lite dricks, så mycket du vill</li><li>Dricks låser inte upp något. Appen fungerar likadant utan</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Inga annonser, ingen prenumeration.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Vanliga frågor</h2>
+      <div class="faq"><details><summary>Vilka bilder fungerar?</summary><p>Månadsplaner i rutnät, föräldrabrev skrivna som löptext och enstaka lappar eller flygblad. En bild tagen rakt framifrån med skarp text läses bäst. Du kan också välja flera bilder och skanna dem samtidigt.</p></details>
+<details><summary>Några aktiviteter saknas eller en titel har ett stavfel.</summary><p>Handstil eller blek text kan vara svår att läsa. Rätta titel, datum eller packlista direkt i listan, eller svep bort det du inte behöver. En aktivitet som saknas lägger du till med ”Lägg till händelse manuellt” på fliken Skanna och sparar igen.</p></details>
+<details><summary>Jag får inga påminnelser.</summary><p>Kontrollera under Inställningar &gt; Notiser &gt; Barnschema att notiser är tillåtna. I appens inställningar (⚙️) väljer du också vilka påminnelser du vill få.</p></details>
+<details><summary>Aktiviteter från andra avdelningar kommer med.</summary><p>Fyll i namnet på barnets avdelning i inställningarna, så sorteras aktiviteter bara för andra avdelningar bort. Byter barnet avdelning ändrar du det bara där.</p></details>
+<details><summary>Jag har flera barn.</summary><p>I inställningarna lägger du till så många barn du vill, vart och ett med profilbild. Välj vid skanningen vem aktiviteterna gäller: i kalendern har varje barn sin färg, och du kan växla mellan gemensam vy och filter per barn.</p></details>
+<details><summary>Hur delar jag schemat med min partner?</summary><p>Gå till ”Delning av händelser” i inställningarna, tryck på ”Bjud in till delning” och skicka länken i ett meddelande. Den inbjudna ser och ändrar alla barn och händelser, och ändringar från båda håll syns direkt hos båda. Det har inget med Apples Familjedelning att göra.</p></details>
+<details><summary>Går det att dela på andra sätt?</summary><p>Med dela-knappen på fliken Kalender skickar du en Barnschema-fil, en kalenderfil (.ics) eller en textsammanfattning. Med ”Lägg även till i Apple Kalender” skapas en kalender med barnets namn; delar du den via iCloud i appen Kalender hänger familjen också med.</p></details>
+<details><summary>Skickas mina bilder eller händelser någonstans?</summary><p>Nej. Texten på bilderna läses helt på enheten, och data sparas bara där. Händelser går via din iCloud bara om du bjuder in någon med ”Delning av händelser”, och bara till dem du bjudit in.</p></details></div>
+      <p class="contact">Problem eller önskemål? Skriv till <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Vi svarar oftast inom 2–3 dagar. Ange gärna enhetsmodell och iOS-version.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Börja med månadens<br>lapp från förskolan</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Hämta gratis på App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Språk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv" aria-current="page">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Integritetspolicy</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

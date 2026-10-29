@@ -1,0 +1,188 @@
+{
+  "title": "Barneplan: ta bilde av månedsplanen fra barnehagen og få hele måneden",
+  "description": "Ta bilde av månedsplanen eller beskjeden fra barnehagen. Hele måneden havner i kalenderen, og kvelden før minner appen deg på pakkingen. Gratis.",
+  "hero": {
+    "headline": "Bare ta et bilde.\nVi minner om pakkingen.",
+    "lead": "Ta bilde av månedsplanen du får med hjem fra barnehagen. Barneplan leser datoer, klokkeslett og navn på aktivitetene og legger dem inn på én gang. Kvelden før turen, klokka 20, kommer påminnelsen: husk matpakka.",
+    "cta": "Last ned gratis i App Store",
+    "note": "Alle funksjoner er gratis. Bildene forlater aldri iPhonen din."
+  },
+  "demo": {
+    "title": "Ta bilde av en beskjed",
+    "lead": "Her er en eksempelbeskjed med aktivitetene neste måned. Ta bilde av den, så hentes aktiviteter og pakkeliste ut akkurat som i appen, og påminnelsene planlegges til tidspunktene du velger.",
+    "noticeTitle": "Solsikkeavdelingen · Aktiviteter i {month}",
+    "child": "Nora",
+    "events": [
+      {
+        "day": 5,
+        "title": "Idrettsdag",
+        "items": "matpakke, joggesko"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Dukketeater",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Bakedag",
+        "items": "forkle"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Bursdagsfeiring",
+        "items": ""
+      }
+    ],
+    "snap": "Ta bilde",
+    "again": "Igjen",
+    "empty": "Ta bildet, så ser du de planlagte påminnelsene her.",
+    "found": "{e} aktiviteter, {n} påminnelser planlagt",
+    "options": [
+      "Kvelden før (for å pakke)",
+      "Samme morgen",
+      "1 time før",
+      "På tidspunktet"
+    ],
+    "timedOnly": "Gjelder bare avtaler med klokkeslett",
+    "bodies": [
+      "Det er i morgen. Gjør klart tingene i god tid.",
+      "Det er i dag.",
+      "Starter om 1 time.",
+      "Starter nå."
+    ],
+    "note": "Her bruker vi en eksempelbeskjed. I appen leses teksten på det ekte bildet ditt rett på enheten. Påminnelsene følger de samme reglene som i appen."
+  },
+  "problem": {
+    "title": "Skriver du fortsatt av barnehagelappen i kalenderen?",
+    "text": "Fem–seks aktiviteter i måneden, og hver gang skal noe annet med: matpakke, gymtøy, forkle. Planen på kjøleskapet ser du ikke på vei til jobb, og du kommer alltid på det samme morgen. Barneplan gjør den papirlappen om til kalenderavtaler og påminnelser."
+  },
+  "features": [
+    {
+      "title": "Ett bilde, hele måneden",
+      "text": "Månedsskjema, foreldreskriv eller enkeltoppslag: ta bilde eller velg fra bildebiblioteket, så leses datoer, klokkeslett og aktiviteter for deg. Du kan også lime inn en melding fra barnehagen; ord som «i morgen» og «på fredag» blir til ekte datoer.\nFør du lagrer, retter du tittel, dato eller pakkeliste med en gang og sveiper bort det du ikke trenger. Skriv inn avdelingen til barnet, så sorteres aktiviteter bare for andre avdelinger bort.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Kvelden før får du beskjed",
+      "text": "Velg mellom kl. 20 kvelden før, kl. 7.30 samme morgen, 1 time før eller akkurat på tiden. Pakkelista står i påminnelsen, så sekken blir pakket.\nMed Apple Kalender havner avtalene i en kalender med barnets navn, og ingenting legges inn to ganger.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Flere barn og hele familien",
+      "text": "Hvert barn får sin egen farge. Se alle samlet eller ett om gangen, og ut fra tidligere avtaler gjetter appen hvem en ny lapp gjelder.\nSend en invitasjonslenke, så kan partner, besteforeldre eller barnevakt se og endre de samme avtalene. En widget på Hjem-skjermen viser hva som kommer.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "I gang på tre steg",
+    "items": [
+      {
+        "title": "Legg til barnet",
+        "text": "Navn og avdeling. Profilbilde kan du legge til når du vil."
+      },
+      {
+        "title": "Ta bilde av lappen",
+        "text": "Rett forfra og med skarp tekst blir den lest best."
+      },
+      {
+        "title": "Sjekk og lagre",
+        "text": "Tillat varslinger, så kommer påminnelsene når du har valgt."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Når kommer påminnelsene",
+    "rows": [
+      [
+        "Kl. 20.00 kvelden før",
+        "For å pakke. På fra start"
+      ],
+      [
+        "Kl. 7.30 samme morgen",
+        "Dagens plan. På fra start"
+      ],
+      [
+        "1 time før",
+        "Bare for aktiviteter med klokkeslett"
+      ],
+      [
+        "På tidspunktet",
+        "Bare for aktiviteter med klokkeslett"
+      ]
+    ],
+    "note": "Heldagsaktiviteter som en tur får bare påminnelsen kvelden før og samme morgen. Du kan slå hver av dem av og på i innstillingene når som helst."
+  },
+  "pricing": {
+    "title": "Alle funksjoner er gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Aktiviteter lest fra bilder og meldinger",
+        "Rett før du lagrer, sorter bort andre avdelinger",
+        "Påminnelser kvelden før, om morgenen, 1 time før og på tiden",
+        "Egen farge per barn og en felles kalender",
+        "Synkronisering med Apple Kalender",
+        "Deling med familien via lenke",
+        "Widget på Hjem-skjermen"
+      ]
+    },
+    "pro": {
+      "name": "Støtt utvikleren",
+      "items": [
+        "I innstillingene kan du gi litt tips, så mye du vil",
+        "Tips låser ikke opp noe. Appen virker likt uten"
+      ]
+    },
+    "note": "Ingen reklame, ikke noe abonnement."
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "items": [
+      {
+        "q": "Hvilke bilder fungerer?",
+        "a": "Månedsplaner i rutenett, foreldreskriv skrevet som tekst og enkeltoppslag eller flygeblader. Et bilde tatt rett forfra med skarp tekst leses best. Du kan også velge flere bilder og skanne dem på én gang."
+      },
+      {
+        "q": "Det mangler et par aktiviteter, eller en tittel har en skrivefeil.",
+        "a": "Håndskrift og svak tekst kan være vanskelig å lese. Rett tittel, dato eller pakkeliste direkte i lista, eller sveip bort det du ikke trenger. En manglende aktivitet legger du til med «Legg til avtale manuelt» i Skann-fanen, og så lagrer du på nytt."
+      },
+      {
+        "q": "Jeg får ingen påminnelser.",
+        "a": "Sjekk under Innstillinger > Varslinger > Barneplan at varslinger er tillatt. I appens innstillinger (⚙️) velger du også hvilke påminnelser du vil ha."
+      },
+      {
+        "q": "Aktiviteter fra andre avdelinger dukker opp.",
+        "a": "Skriv navnet på avdelingen til barnet i innstillingene, så sorteres aktiviteter bare for andre avdelinger bort. Bytter barnet avdeling, endrer du det bare der."
+      },
+      {
+        "q": "Jeg har flere barn.",
+        "a": "I innstillingene kan du legge til så mange barn du vil, hvert med profilbilde. Velg ved skanning hvem aktivitetene gjelder: I kalenderen har hvert barn sin farge, og du kan bytte mellom samlet visning og filter per barn."
+      },
+      {
+        "q": "Hvordan deler jeg planen med partneren min?",
+        "a": "Gå til «Deling av avtaler» i innstillingene, trykk på «Inviter til deling», og send lenken i en melding. Den inviterte kan se og endre alle barn og avtaler, og endringer fra begge sider vises straks hos begge. Det har ingenting med Apples Familiedeling å gjøre."
+      },
+      {
+        "q": "Kan man dele på andre måter?",
+        "a": "Med del-knappen i Kalender-fanen sender du en Barneplan-fil, en kalenderfil (.ics) eller et tekstsammendrag. Med «Legg også til i Apple Kalender» lages en kalender med barnets navn; deler du den via iCloud i Kalender-appen, holder familien seg også oppdatert."
+      },
+      {
+        "q": "Blir bildene eller avtalene mine sendt noe sted?",
+        "a": "Nei. Teksten på bildene leses helt på enheten, og dataene lagres bare der. Avtaler går bare via din iCloud hvis du inviterer noen med «Deling av avtaler», og bare til dem du har invitert."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Start med lappen\nfor denne måneden",
+    "cta": "Last ned gratis i App Store"
+  },
+  "ui": {
+    "skip": "Gå til innhold",
+    "languages": "Språk",
+    "privacy": "Personvernerklæring",
+    "contact": "Problemer eller ønsker? Skriv til {email}. Vi svarer vanligvis innen 2–3 dager. Oppgi gjerne enhetsmodell og iOS-versjon."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "title": "Lapsen aikataulu: kuva päiväkodin kuukausitiedotteesta, koko kuukausi valmiina",
+  "description": "Kuvaa päiväkodin kuukausikalenteri tai tiedote. Koko kuukausi siirtyy kalenteriin, ja edellisenä iltana muistutus pakkaamisesta. Ilmainen.",
+  "hero": {
+    "headline": "Kuvaa vain tiedote.\nMuistutamme illalla.",
+    "lead": "Ota kuva päiväkodista saamastasi kuukausikalenterista. Lapsen aikataulu lukee päivämäärät, kellonajat ja tapahtumien nimet ja lisää ne kerralla. Retkeä edeltävänä iltana kello 20 tulee muistutus: muista eväät.",
+    "cta": "Lataa ilmaiseksi App Storesta",
+    "note": "Kaikki ominaisuudet ovat ilmaisia. Kuvat eivät lähde iPhonestasi."
+  },
+  "demo": {
+    "title": "Kuvaa tiedote",
+    "lead": "Tässä on esimerkkitiedote ensi kuun tapahtumista. Ota kuva, niin sovelluksen tapaan siitä poimitaan tapahtumat ja mukaan otettavat tavarat, ja muistutukset ajastetaan valitsemiisi aikoihin.",
+    "noticeTitle": "Auringonkukat-ryhmä · Tapahtumat: {month}",
+    "child": "Aino",
+    "events": [
+      {
+        "day": 5,
+        "title": "Syksyn liikuntapäivä",
+        "items": "eväät, lenkkarit"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Nukketeatteri",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Leivontapäivä",
+        "items": "esiliina"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Synttärijuhlat",
+        "items": ""
+      }
+    ],
+    "snap": "Ota kuva",
+    "again": "Uudestaan",
+    "empty": "Ota kuva, niin ajastetut muistutukset näkyvät tässä.",
+    "found": "Tapahtumia {e}, muistutuksia ajastettu {n}",
+    "options": [
+      "Edellisenä iltana (pakkaamista varten)",
+      "Aamulla",
+      "1 tunti ennen",
+      "Tapahtuman alkaessa"
+    ],
+    "timedOnly": "Koskee vain tapahtumia, joilla on kellonaika",
+    "bodies": [
+      "Tapahtuma on huomenna. Valmistele tavarat hyvissä ajoin.",
+      "Tapahtuma on tänään.",
+      "Alkaa tunnin päästä.",
+      "Alkaa nyt."
+    ],
+    "note": "Tässä käytetään esimerkkitiedotetta. Sovelluksessa oikean kuvasi teksti luetaan suoraan laitteella. Muistutusten ajat noudattavat samoja sääntöjä kuin sovelluksessa."
+  },
+  "problem": {
+    "title": "Kopioitko yhä päiväkodin tiedotteet käsin kalenteriin?",
+    "text": "Viisi, kuusi tapahtumaa kuussa, ja joka kerta mukaan tarvitaan jotain muuta: eväät, liikuntavaatteet, esiliina. Jääkaapin oven kalenteria ei näe työmatkalla, ja asia muistuu mieleen aina vasta samana aamuna. Lapsen aikataulu tekee siitä paperista kalenterimerkintöjä ja muistutuksia."
+  },
+  "features": [
+    {
+      "title": "Yksi kuva, koko kuukausi",
+      "text": "Kuukausiruudukko, vanhempainkirje tai yksittäinen ilmoitus: ota kuva tai valitse se kuvakirjastosta, niin päivämäärät, kellonajat ja tapahtumien nimet luetaan puolestasi. Voit myös liittää viestin päiväkodista; sanat kuten ”huomenna” tai ”tänä perjantaina” muuttuvat oikeiksi päivämääriksi.\nEnnen tallennusta korjaat otsikon, päivän tai tavaralistan saman tien ja pyyhkäiset turhat pois. Kun syötät lapsen ryhmän, vain muille ryhmille tarkoitetut tapahtumat karsitaan.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Edellisenä iltana muistutus",
+      "text": "Valitse kello 20 edellisenä iltana, kello 7.30 samana aamuna, tunti ennen tai täsmälleen alkaessa. Mukaan otettavat näkyvät muistutuksessa, joten reppu tulee pakattua.\nApplen Kalenterin kanssa tapahtumat menevät lapsen nimiseen kalenteriin, eikä mitään lisätä kahdesti.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Useampi lapsi ja koko perhe",
+      "text": "Jokaisella lapsella on oma värinsä. Katso kaikkia yhdessä tai yksi kerrallaan; aiempien tapahtumien perusteella sovellus arvaa, kenen uusi tiedote on.\nLähetä kutsulinkki, niin puoliso, isovanhemmat tai lapsenvahti näkevät ja muokkaavat samoja tapahtumia. Koti-valikon widget näyttää, mitä on tulossa.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Alkuun kolmessa vaiheessa",
+    "items": [
+      {
+        "title": "Lisää lapsi",
+        "text": "Nimi ja ryhmä. Profiilikuvan voi lisätä milloin vain."
+      },
+      {
+        "title": "Kuvaa tiedote",
+        "text": "Suoraan edestä ja tarkasti, niin teksti luetaan parhaiten."
+      },
+      {
+        "title": "Tarkista ja tallenna",
+        "text": "Salli ilmoitukset, niin muistutukset tulevat valitsemaasi aikaan."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Milloin muistutukset tulevat",
+    "rows": [
+      [
+        "Klo 20.00 edellisenä iltana",
+        "Pakkaamista varten. Päällä oletuksena"
+      ],
+      [
+        "Klo 7.30 samana aamuna",
+        "Päivän ohjelma. Päällä oletuksena"
+      ],
+      [
+        "1 tunti ennen",
+        "Vain tapahtumille, joilla on kellonaika"
+      ],
+      [
+        "Tapahtuman alkaessa",
+        "Vain tapahtumille, joilla on kellonaika"
+      ]
+    ],
+    "note": "Koko päivän tapahtumista, kuten retkistä, tulee vain edellisillan ja aamun muistutus. Voit kytkeä minkä tahansa päälle tai pois asetuksista milloin vain."
+  },
+  "pricing": {
+    "title": "Kaikki ominaisuudet ovat ilmaisia",
+    "free": {
+      "name": "Ilmainen",
+      "items": [
+        "Tapahtumien luku kuvista ja viesteistä",
+        "Korjaus ennen tallennusta, muiden ryhmien suodatus",
+        "Muistutukset edellisenä iltana, aamulla, tuntia ennen ja ajallaan",
+        "Oma väri jokaiselle lapselle ja yhteinen kalenteri",
+        "Synkronointi Applen Kalenterin kanssa",
+        "Jakaminen perheelle kutsulinkillä",
+        "Koti-valikon widget"
+      ]
+    },
+    "pro": {
+      "name": "Tue kehittäjää",
+      "items": [
+        "Asetuksista voit antaa pienen tipin, juuri sen verran kuin haluat",
+        "Tippi ei avaa mitään. Sovellus toimii ilman sitä samoin"
+      ]
+    },
+    "note": "Ei mainoksia, ei tilausta."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {
+        "q": "Millaiset kuvat toimivat?",
+        "a": "Ruudukkomuotoiset kuukausikalenterit, tekstinä kirjoitetut tiedotteet sekä yksittäiset ilmoitukset ja lehtiset. Suoraan edestä otettu kuva, jossa teksti on terävää, luetaan parhaiten. Voit myös valita useita kuvia ja skannata ne kerralla."
+      },
+      {
+        "q": "Pari tapahtumaa puuttuu tai otsikossa on kirjoitusvirhe.",
+        "a": "Käsialaa tai haaleaa tekstiä voi olla vaikea lukea. Korjaa otsikko, päivä tai tavaralista suoraan listassa, tai pyyhkäise turha pois. Puuttuvan tapahtuman lisäät Skannaa-välilehdellä kohdasta ”Lisää tapahtuma käsin” ja tallennat uudelleen."
+      },
+      {
+        "q": "Muistutuksia ei tule.",
+        "a": "Tarkista kohdasta Asetukset > Ilmoitukset > Lapsen aikataulu, että ilmoitukset on sallittu. Sovelluksen asetuksissa (⚙️) voit myös valita, mitkä muistutukset haluat."
+      },
+      {
+        "q": "Mukaan tulee muiden ryhmien tapahtumia.",
+        "a": "Kirjoita asetuksiin lapsen ryhmän nimi, niin vain muille ryhmille tarkoitetut tapahtumat suodatetaan pois. Jos ryhmä vaihtuu uutena toimintavuonna, muutat sen vain siellä."
+      },
+      {
+        "q": "Minulla on useampi lapsi.",
+        "a": "Asetuksissa voit lisätä niin monta lasta kuin haluat, jokaiselle profiilikuvan. Valitse skannatessa, kenen tapahtumista on kyse: kalenterissa jokaisella lapsella on oma värinsä, ja voit vaihtaa yhteisnäkymän ja lapsikohtaisen suodattimen välillä."
+      },
+      {
+        "q": "Miten jaan aikataulun puolisoni kanssa?",
+        "a": "Avaa asetuksista ”Tapahtumien jakaminen”, napauta ”Kutsu mukaan” ja lähetä linkki viestillä. Kutsuttu näkee ja muokkaa kaikkia lapsia ja tapahtumia, ja kummankin muutokset näkyvät heti molemmilla. Tällä ei ole tekemistä Applen Perhejaon kanssa."
+      },
+      {
+        "q": "Voiko jakaa muillakin tavoilla?",
+        "a": "Kalenteri-välilehden jakopainikkeella lähetät Lapsen aikataulu -tiedoston, kalenteritiedoston (.ics) tai tekstiyhteenvedon. Kun ”Lisää myös Applen Kalenteriin” on päällä, syntyy lapsen niminen kalenteri; jaa se iCloudin kautta Kalenteri-apissa, niin perhe pysyy ajan tasalla."
+      },
+      {
+        "q": "Lähetetäänkö kuviani tai tapahtumiani jonnekin?",
+        "a": "Ei. Kuvien teksti luetaan kokonaan laitteella, ja tiedot tallennetaan vain sinne. Tapahtumat kulkevat iCloudisi kautta vain, jos kutsut jonkun ”Tapahtumien jakaminen” -toiminnolla, ja vain kutsutuille."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Aloita tämän kuun\ntiedotteesta",
+    "cta": "Lataa ilmaiseksi App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Ongelmia tai toiveita? Kirjoita osoitteeseen {email}. Vastaamme yleensä 2–3 päivän kuluessa. Laitemalli ja iOS-versio auttavat meitä."
+  }
+}

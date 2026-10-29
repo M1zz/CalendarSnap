@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Πρόγραμμα Παιδιού — το πρόγραμμα του σταθμού με μία φωτογραφία</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Πρόγραμμα Παιδιού: φωτογραφίστε το πρόγραμμα του παιδικού, έχετε όλο τον μήνα</title>
+  <meta name="description" content="Φωτογραφίστε το μηνιαίο πρόγραμμα του παιδικού σταθμού. Όλος ο μήνας μπαίνει στο ημερολόγιο, με υπενθύμιση από το προηγούμενο βράδυ. Δωρεάν.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Πρόγραμμα Παιδιού: φωτογραφίστε το πρόγραμμα του παιδικού, έχετε όλο τον μήνα">
+  <meta property="og:description" content="Φωτογραφίστε το μηνιαίο πρόγραμμα του παιδικού σταθμού. Όλος ο μήνας μπαίνει στο ημερολόγιο, με υπενθύμιση από το προηγούμενο βράδυ. Δωρεάν.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/el/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Πρόγραμμα Παιδιού</h1>
-<p class="muted">Φωτογραφίστε το μηνιαίο πρόγραμμα ή την ανακοίνωση του παιδικού σταθμού ή του νηπιαγωγείου<br>και όλος ο μήνας μπαίνει μονομιάς στο ημερολόγιο, στις υπενθυμίσεις και στο widget.</p>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/"><img src="../icon.png" alt="" width="32" height="32">Πρόγραμμα Παιδιού</a>
+    <a class="lang-link" href="#languages">Γλώσσα</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Μία φωτογραφία → όλος ο μήνας</b><span>Μηνιαίο ημερολόγιο, ενημερωτικό σημείωμα ή ανακοίνωση — αναγνωρίζεται αυτόματα, σε όποια μορφή κι αν είναι</span></div>
-  <div class="card"><b>🔔 Υπενθυμίσεις για ό,τι χρειάζεται</b><span>Το προηγούμενο βράδυ και το ίδιο πρωί, μαζί με σημείωση για το τι πρέπει να πάρει μαζί του</span></div>
-  <div class="card"><b>👧👦 Για περισσότερα παιδιά</b><span>Ξεχωριστό προφίλ και χρώμα για κάθε παιδί, κοινό ημερολόγιο και φίλτρα</span></div>
-  <div class="card"><b>👨‍👩‍👧 Προσκαλέστε και δείτε μαζί</b><span>Μοιραστείτε το πρόγραμμα με τον/τη σύντροφό σας και τους παππούδες με έναν σύνδεσμο πρόσκλησης — οι αλλαγές συγχρονίζονται αμέσως και από τις δύο πλευρές</span></div>
-  <div class="card"><b>🧩 Widget στην αρχική οθόνη</b><span>Οι επόμενες δραστηριότητες κατευθείαν στην αρχική οθόνη</span></div>
-  <div class="card"><b>🔒 Πρώτα το απόρρητο</b><span>Οι φωτογραφίες αναλύονται μόνο στη συσκευή — τίποτα δεν στέλνεται σε διακομιστή του προγραμματιστή</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Μια φωτογραφία αρκεί.<br>Θα σας θυμίσουμε.</h1>
+        <p class="lead">Βγάλτε φωτογραφία το μηνιαίο πρόγραμμα που σας δίνει ο παιδικός. Το Πρόγραμμα Παιδιού διαβάζει ημερομηνίες, ώρες και ονόματα δραστηριοτήτων και τα προσθέτει όλα μαζί. Το βράδυ πριν από την εκδρομή, στις 8, έρχεται υπενθύμιση: μην ξεχάσετε το φαγητό.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Κατεβάστε το δωρεάν από το App Store</a><a class="try" href="#try">Φωτογραφίστε μια ανακοίνωση ↓</a></div>
+        <p class="muted small">Όλες οι λειτουργίες είναι δωρεάν. Οι φωτογραφίες δεν φεύγουν από το iPhone σας.</p>
+      </div>
+      <div class="phone"><img src="../img/el/01-scan.jpg" alt="Μια φωτογραφία αρκεί. Θα σας θυμίσουμε." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Υποστήριξη και επικοινωνία</a> ·
-  <a href="privacy.html">Πολιτική απορρήτου</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <b>Ελληνικά</b> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Φωτογραφίστε μια ανακοίνωση</h2>
+      <p class="muted">Ορίστε ένα δείγμα ανακοίνωσης με τις δραστηριότητες του επόμενου μήνα. Φωτογραφίστε το και, όπως στην εφαρμογή, βγαίνουν οι δραστηριότητες και τι χρειάζεται, ενώ οι υπενθυμίσεις προγραμματίζονται στις ώρες που διαλέγετε.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Φωτογραφίστε μια ανακοίνωση&quot;, &quot;lead&quot;: &quot;Ορίστε ένα δείγμα ανακοίνωσης με τις δραστηριότητες του επόμενου μήνα. Φωτογραφίστε το και, όπως στην εφαρμογή, βγαίνουν οι δραστηριότητες και τι χρειάζεται, ενώ οι υπενθυμίσεις προγραμματίζονται στις ώρες που διαλέγετε.&quot;, &quot;noticeTitle&quot;: &quot;Τμήμα Ηλιοτρόπια · Πρόγραμμα: {month}&quot;, &quot;child&quot;: &quot;Ελένη&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Γιορτή αθλητισμού&quot;, &quot;items&quot;: &quot;φαγητό, αθλητικά παπούτσια&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Κουκλοθέατρο&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Εργαστήρι μαγειρικής&quot;, &quot;items&quot;: &quot;ποδιά&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Πάρτι γενεθλίων&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Λήψη φωτογραφίας&quot;, &quot;again&quot;: &quot;Ξανά&quot;, &quot;empty&quot;: &quot;Βγάλτε τη φωτογραφία και εδώ θα δείτε τις υπενθυμίσεις.&quot;, &quot;found&quot;: &quot;{e} δραστηριότητες, {n} προγραμματισμένες υπενθυμίσεις&quot;, &quot;options&quot;: [&quot;Το προηγούμενο βράδυ (για να ετοιμάσετε τα πράγματα)&quot;, &quot;Το πρωί της ημέρας&quot;, &quot;1 ώρα πριν&quot;, &quot;Την ώρα του συμβάντος&quot;], &quot;timedOnly&quot;: &quot;Ισχύει μόνο για συμβάντα με συγκεκριμένη ώρα&quot;, &quot;bodies&quot;: [&quot;Είναι αύριο. Ετοιμάστε τα πράγματα από νωρίς.&quot;, &quot;Είναι σήμερα.&quot;, &quot;Ξεκινά σε 1 ώρα.&quot;, &quot;Ξεκινά τώρα.&quot;], &quot;note&quot;: &quot;Εδώ χρησιμοποιούμε δείγμα ανακοίνωσης. Στην εφαρμογή, το κείμενο της πραγματικής σας φωτογραφίας διαβάζεται στη συσκευή. Οι ώρες των υπενθυμίσεων ακολουθούν τους ίδιους κανόνες με την εφαρμογή.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Ακόμα αντιγράφετε τις ανακοινώσεις του παιδικού στο ημερολόγιο;</h2>
+      <p>Πέντε, έξι δραστηριότητες τον μήνα, και κάθε φορά χρειάζεται κάτι άλλο: φαγητό, φόρμα γυμναστικής, ποδιά. Το πρόγραμμα στο ψυγείο δεν το βλέπετε στον δρόμο για τη δουλειά, και το θυμάστε πάντα το ίδιο πρωί. Το Πρόγραμμα Παιδιού κάνει εκείνο το χαρτί συμβάντα και υπενθυμίσεις.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Μία φωτογραφία, όλος ο μήνας</h2>
+        <p>Μηνιαίος πίνακας, ενημερωτικό σημείωμα ή μεμονωμένη ανακοίνωση: φωτογραφίστε ή διαλέξτε από τη βιβλιοθήκη και διαβάζονται ημερομηνίες, ώρες και ονόματα δραστηριοτήτων. Μπορείτε και να επικολλήσετε μήνυμα από τη νηπιαγωγό· λέξεις όπως «αύριο» ή «αυτή την Παρασκευή» γίνονται κανονικές ημερομηνίες.<br>Πριν την αποθήκευση διορθώνετε τίτλο, ημερομηνία ή τι χρειάζεται, και σύρετε για να σβήσετε ό,τι περισσεύει. Βάλτε το τμήμα του παιδιού και οι δραστηριότητες μόνο για άλλα τμήματα φιλτράρονται.</p>
+      </div>
+      <div class="phone"><img src="../img/el/02-events.jpg" alt="Μία φωτογραφία, όλος ο μήνας" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Από το προηγούμενο βράδυ, υπενθύμιση</h2>
+        <p>Διαλέξτε 20:00 το προηγούμενο βράδυ, 7:30 το πρωί της ημέρας, 1 ώρα πριν ή ακριβώς στην ώρα. Τι χρειάζεται φαίνεται μέσα στην υπενθύμιση, έτσι η τσάντα ετοιμάζεται έγκαιρα.<br>Με το Ημερολόγιο της Apple, τα συμβάντα μπαίνουν σε ημερολόγιο με το όνομα του παιδιού, χωρίς ποτέ διπλές εγγραφές.</p>
+      </div>
+      <div class="phone"><img src="../img/el/04-reminders.jpg" alt="Από το προηγούμενο βράδυ, υπενθύμιση" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Πολλά παιδιά, όλη η οικογένεια</h2>
+        <p>Κάθε παιδί έχει το δικό του χρώμα. Δείτε τα όλα μαζί ή ένα ένα· από τα προηγούμενα συμβάντα η εφαρμογή μαντεύει για ποιο παιδί είναι η νέα ανακοίνωση.<br>Στείλτε σύνδεσμο πρόσκλησης και ο σύντροφος, οι παππούδες ή η μπέιμπι σίτερ βλέπουν και αλλάζουν τα ίδια συμβάντα. Ένα widget στην οθόνη Αφετηρίας δείχνει τι έρχεται.</p>
+      </div>
+      <div class="phone"><img src="../img/el/03-calendar.jpg" alt="Πολλά παιδιά, όλη η οικογένεια" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Ξεκινάτε σε τρία βήματα</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Προσθέστε το παιδί</h3><p>Όνομα και τμήμα. Φωτογραφία προφίλ όποτε θέλετε.</p></li>
+<li class="card"><span class="n">2</span><h3>Φωτογραφίστε την ανακοίνωση</h3><p>Από μπροστά και με καθαρά γράμματα διαβάζεται καλύτερα.</p></li>
+<li class="card"><span class="n">3</span><h3>Ελέγξτε και αποθηκεύστε</h3><p>Επιτρέψτε τις γνωστοποιήσεις και οι υπενθυμίσεις έρχονται όποτε ορίσατε.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Πότε έρχονται οι υπενθυμίσεις</h2>
+      <div class="card table">
+        <dl><div><dt>20:00 το προηγούμενο βράδυ</dt><dd>Για τα πράγματα. Ενεργό από την αρχή</dd></div><div><dt>7:30 το πρωί της ημέρας</dt><dd>Τι έχει σήμερα. Ενεργό από την αρχή</dd></div><div><dt>1 ώρα πριν</dt><dd>Μόνο για δραστηριότητες με ώρα</dd></div><div><dt>Την ώρα του συμβάντος</dt><dd>Μόνο για δραστηριότητες με ώρα</dd></div></dl>
+      </div>
+      <p class="muted">Οι ολοήμερες δραστηριότητες, όπως μια εκδρομή, έχουν μόνο την υπενθύμιση του προηγούμενου βραδιού και του πρωινού. Ενεργοποιήστε ή απενεργοποιήστε την καθεμία όποτε θέλετε στις ρυθμίσεις.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Όλες οι λειτουργίες είναι δωρεάν</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Δωρεάν</h3>
+          <ul><li>Ανάγνωση δραστηριοτήτων από φωτογραφίες και μηνύματα</li><li>Διορθώσεις πριν την αποθήκευση, φίλτρο άλλων τμημάτων</li><li>Υπενθυμίσεις το βράδυ πριν, το πρωί, 1 ώρα πριν και στην ώρα</li><li>Ένα χρώμα για κάθε παιδί και κοινό ημερολόγιο</li><li>Συγχρονισμός με το Ημερολόγιο της Apple</li><li>Κοινή χρήση με την οικογένεια μέσω συνδέσμου</li><li>Widget στην οθόνη Αφετηρίας</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Στηρίξτε τον δημιουργό</h3>
+          <ul><li>Από τις ρυθμίσεις μπορείτε να αφήσετε ένα μικρό φιλοδώρημα, όσο θέλετε</li><li>Το φιλοδώρημα δεν ξεκλειδώνει τίποτα. Η εφαρμογή δουλεύει το ίδιο</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Χωρίς διαφημίσεις, χωρίς συνδρομή.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Συχνές ερωτήσεις</h2>
+      <div class="faq"><details><summary>Τι φωτογραφίες μπορώ να χρησιμοποιήσω;</summary><p>Μηνιαία προγράμματα σε πίνακα, ενημερωτικά σημειώματα γραμμένα σε κείμενο και μεμονωμένες ανακοινώσεις ή φυλλάδια. Μια φωτογραφία από μπροστά, με καθαρά γράμματα, διαβάζεται καλύτερα. Μπορείτε επίσης να διαλέξετε πολλές φωτογραφίες και να τις σαρώσετε μαζί.</p></details>
+<details><summary>Λείπουν κάποιες δραστηριότητες ή ένας τίτλος έχει λάθος.</summary><p>Τα χειρόγραφα ή τα αχνά γράμματα διαβάζονται δύσκολα. Διορθώστε τίτλο, ημερομηνία ή τι χρειάζεται κατευθείαν στη λίστα, ή σύρετε για να σβήσετε ό,τι δεν θέλετε. Μια δραστηριότητα που λείπει την προσθέτετε με «Χειροκίνητη προσθήκη συμβάντος» στην καρτέλα Σάρωση και αποθηκεύετε ξανά.</p></details>
+<details><summary>Δεν μου έρχονται υπενθυμίσεις.</summary><p>Ελέγξτε στις Ρυθμίσεις &gt; Γνωστοποιήσεις &gt; Πρόγραμμα Παιδιού ότι οι γνωστοποιήσεις επιτρέπονται. Στις ρυθμίσεις της εφαρμογής (⚙️) διαλέγετε επίσης ποιες υπενθυμίσεις θέλετε.</p></details>
+<details><summary>Εμφανίζονται δραστηριότητες άλλων τμημάτων.</summary><p>Γράψτε στις ρυθμίσεις το όνομα του τμήματος του παιδιού και οι δραστηριότητες μόνο για άλλα τμήματα θα φιλτράρονται. Αν αλλάξει τμήμα τη νέα χρονιά, το διορθώνετε μόνο εκεί.</p></details>
+<details><summary>Έχω πάνω από ένα παιδί.</summary><p>Στις ρυθμίσεις προσθέτετε όσα παιδιά θέλετε, το καθένα με φωτογραφία προφίλ. Στη σάρωση διαλέγετε για ποιο παιδί είναι: στο ημερολόγιο κάθε παιδί έχει το χρώμα του, με κοινή προβολή και φίλτρο ανά παιδί.</p></details>
+<details><summary>Πώς μοιράζομαι το πρόγραμμα με τον σύντροφό μου;</summary><p>Στις ρυθμίσεις, στην ενότητα «Κοινή χρήση προγράμματος», πατήστε «Πρόσκληση» και στείλτε τον σύνδεσμο με μήνυμα. Όποιος τον λάβει βλέπει και αλλάζει όλα τα παιδιά και τα συμβάντα, και οι αλλαγές από οποιαδήποτε πλευρά εμφανίζονται αμέσως και στους δύο. Δεν έχει σχέση με την Οικογενειακή κοινή χρήση της Apple.</p></details>
+<details><summary>Υπάρχουν άλλοι τρόποι κοινής χρήσης;</summary><p>Με το κουμπί κοινής χρήσης στην καρτέλα Ημερολόγιο στέλνετε αρχείο Πρόγραμμα Παιδιού, αρχείο ημερολογίου (.ics) ή σύνοψη σε κείμενο. Με την επιλογή «Προσθήκη και στο Ημερολόγιο της Apple» δημιουργείται ημερολόγιο με το όνομα του παιδιού· αν το μοιραστείτε μέσω iCloud στην εφαρμογή Ημερολόγιο, ενημερώνεται και η οικογένεια.</p></details>
+<details><summary>Στέλνονται κάπου οι φωτογραφίες ή τα συμβάντα μου;</summary><p>Όχι. Το κείμενο στις φωτογραφίες διαβάζεται εξ ολοκλήρου στη συσκευή και τα δεδομένα μένουν μόνο εκεί. Τα συμβάντα περνούν από το iCloud σας μόνο αν προσκαλέσετε κάποιον μέσω «Κοινή χρήση προγράμματος», και μόνο προς όσους προσκαλέσατε.</p></details></div>
+      <p class="contact">Κάποιο πρόβλημα ή κάτι που λείπει; Γράψτε στο <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Συνήθως απαντάμε μέσα σε 2–3 ημέρες. Το μοντέλο της συσκευής και η έκδοση iOS μάς βοηθούν.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Ξεκινήστε από την<br>ανακοίνωση του μήνα</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Κατεβάστε το δωρεάν από το App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Γλώσσα"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Πολιτική απορρήτου</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

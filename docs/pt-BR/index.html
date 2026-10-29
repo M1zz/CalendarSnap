@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agenda Kids – a agenda da escolinha em uma foto</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda Kids: fotografe o calendário da escolinha e tenha o mês inteiro</title>
+  <meta name="description" content="Fotografe o calendário do mês ou o bilhete da creche ou da escola. O mês inteiro vai para a agenda, com lembrete na véspera do que levar. Grátis.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agenda Kids: fotografe o calendário da escolinha e tenha o mês inteiro">
+  <meta property="og:description" content="Fotografe o calendário do mês ou o bilhete da creche ou da escola. O mês inteiro vai para a agenda, com lembrete na véspera do que levar. Grátis.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/pt-BR/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Agenda Kids</h1>
-<p class="muted">Tire uma foto do calendário ou do comunicado da creche ou da escolinha<br>e o mês inteiro vai de uma vez para o calendário, os lembretes e o widget.</p>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <header class="bar">
+    <a class="brand" href="../pt-BR/"><img src="../icon.png" alt="" width="32" height="32">Agenda Kids</a>
+    <a class="lang-link" href="#languages">Idioma</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Uma foto, o mês inteiro</b><span>Calendário mensal, comunicado ou bilhete: qualquer formato é reconhecido automaticamente</span></div>
-  <div class="card"><b>🔔 Lembrete do que levar</b><span>Na noite anterior e na manhã do dia, junto com a lista do que levar</span></div>
-  <div class="card"><b>👧👦 Vários filhos</b><span>Perfil e cor para cada criança, calendário unificado com filtro</span></div>
-  <div class="card"><b>👨‍👩‍👧 Convide para ver junto</b><span>Um único link de convite para compartilhar a agenda com o parceiro ou os avós: as alterações feitas por qualquer um se sincronizam em tempo real</span></div>
-  <div class="card"><b>🧩 Widget na Tela de Início</b><span>Os próximos eventos direto na Tela de Início</span></div>
-  <div class="card"><b>🔒 Privacidade em primeiro lugar</b><span>As fotos são analisadas só no aparelho e nunca vão para o servidor do desenvolvedor</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Só tire uma foto.<br>A gente lembra na véspera.</h1>
+        <p class="lead">Tire uma foto do calendário do mês que a escolinha manda. O Agenda Kids lê as datas, os horários e o nome de cada atividade e adiciona tudo de uma vez. Na véspera do passeio, às 20h, chega o lembrete: não esqueça a lancheira.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Baixe grátis na App Store</a><a class="try" href="#try">Fotografe um bilhete ↓</a></div>
+        <p class="muted small">Tudo é grátis. Suas fotos não saem do seu iPhone.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/01-scan.jpg" alt="Só tire uma foto. A gente lembra na véspera." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Suporte e contato</a> ·
-  <a href="privacy.html">Política de Privacidade</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <b>Português (Brasil)</b> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Fotografe um bilhete</h2>
+      <p class="muted">Este é um bilhete de exemplo com as atividades do mês que vem. Tire a foto e, como no app, ele separa as atividades e o que levar e agenda os lembretes nos horários que você escolher.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Fotografe um bilhete&quot;, &quot;lead&quot;: &quot;Este é um bilhete de exemplo com as atividades do mês que vem. Tire a foto e, como no app, ele separa as atividades e o que levar e agenda os lembretes nos horários que você escolher.&quot;, &quot;noticeTitle&quot;: &quot;Turma Girassol · Atividades de {month}&quot;, &quot;child&quot;: &quot;Alice&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Gincana esportiva&quot;, &quot;items&quot;: &quot;lancheira, tênis&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Teatro de fantoches&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Oficina de culinária&quot;, &quot;items&quot;: &quot;avental&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Festa dos aniversariantes&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Tirar foto&quot;, &quot;again&quot;: &quot;De novo&quot;, &quot;empty&quot;: &quot;Tire a foto e veja aqui os lembretes agendados.&quot;, &quot;found&quot;: &quot;{e} atividades, {n} lembretes agendados&quot;, &quot;options&quot;: [&quot;Na noite anterior (para preparar as coisas)&quot;, &quot;Na manhã do dia&quot;, &quot;1 hora antes&quot;, &quot;No horário do evento&quot;], &quot;timedOnly&quot;: &quot;Vale apenas para eventos com horário&quot;, &quot;bodies&quot;: [&quot;É amanhã. Deixe tudo preparado com antecedência.&quot;, &quot;É hoje.&quot;, &quot;Começa em 1 hora.&quot;, &quot;Começando agora.&quot;], &quot;note&quot;: &quot;Aqui usamos um bilhete de exemplo. No app, o texto da sua foto de verdade é lido no próprio aparelho. Os lembretes seguem as mesmas regras do app.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Ainda copia o bilhete da escolinha para a agenda?</h2>
+      <p>Cinco ou seis atividades por mês, e cada uma pede uma coisa diferente: lancheira, uniforme de educação física, avental. O calendário na geladeira não aparece no caminho do trabalho, e a gente sempre lembra na mesma manhã. O Agenda Kids transforma aquela folha de papel em eventos e lembretes.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Uma foto, o mês inteiro</h2>
+        <p>Calendário em grade, bilhete aos pais ou aviso avulso: tire uma foto ou escolha na fototeca e as datas, horários e nomes das atividades são lidos para você. Também dá para colar uma mensagem da escolinha; “amanhã” ou “nesta sexta” viram datas de verdade.<br>Antes de salvar, corrija título, data ou o que levar, e deslize para apagar o que não precisa. Informe a turma do seu filho e as atividades só de outras turmas ficam de fora.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/02-events.jpg" alt="Uma foto, o mês inteiro" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Na véspera, o lembrete</h2>
+        <p>Escolha entre 20h na noite anterior, 7h30 na manhã do dia, 1 hora antes ou no horário exato. O que levar aparece no lembrete, e a mochila fica pronta a tempo.<br>Com o Calendário da Apple, tudo entra num calendário com o nome do seu filho, sem nada duplicado.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/04-reminders.jpg" alt="Na véspera, o lembrete" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Vários filhos, a família toda</h2>
+        <p>Cada criança tem sua cor. Veja todas juntas ou uma por vez; o app usa o histórico para adivinhar de quem é o bilhete novo.<br>Mande um link de convite e o parceiro, os avós ou a babá veem e editam os mesmos eventos. Um widget na Tela de Início mostra o que vem por aí.</p>
+      </div>
+      <div class="phone"><img src="../img/pt-BR/03-calendar.jpg" alt="Vários filhos, a família toda" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Comece em três passos</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Cadastre seu filho</h3><p>Nome e turma. A foto de perfil fica para quando quiser.</p></li>
+<li class="card"><span class="n">2</span><h3>Fotografe o bilhete</h3><p>De frente e com o texto nítido, a leitura fica muito melhor.</p></li>
+<li class="card"><span class="n">3</span><h3>Confira e salve</h3><p>Permita as notificações e os lembretes chegam na hora escolhida.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Quando chegam os lembretes</h2>
+      <div class="card table">
+        <dl><div><dt>20h na noite anterior</dt><dd>Para preparar as coisas. Ativado por padrão</dd></div><div><dt>7h30 na manhã do dia</dt><dd>O que tem hoje. Ativado por padrão</dd></div><div><dt>1 hora antes</dt><dd>Só para atividades com horário</dd></div><div><dt>No horário do evento</dt><dd>Só para atividades com horário</dd></div></dl>
+      </div>
+      <p class="muted">Atividades de dia inteiro, como um passeio, recebem só o lembrete da noite anterior e o da manhã. Ative ou desative cada um quando quiser nos ajustes.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Tudo é grátis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Grátis</h3>
+          <ul><li>Leitura de atividades em fotos e mensagens</li><li>Correção antes de salvar e filtro de outras turmas</li><li>Lembretes na véspera, de manhã, 1 hora antes e na hora</li><li>Uma cor por filho e um calendário único</li><li>Sincronização com o Calendário da Apple</li><li>Compartilhamento com a família por link</li><li>Widget na Tela de Início</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Apoie o desenvolvedor</h3>
+          <ul><li>Nos ajustes, você pode deixar uma gorjeta do valor que quiser</li><li>A gorjeta não libera nada. O app funciona igual sem ela</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Sem anúncios e sem assinatura.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq"><details><summary>Que tipo de foto funciona?</summary><p>Calendários do mês em grade, bilhetes escritos em texto corrido e avisos avulsos ou folhetos. Foto tirada de frente, com o texto nítido, é lida melhor. Você também pode escolher várias fotos para escanear de uma vez.</p></details>
+<details><summary>Faltaram algumas atividades ou o título veio com erro.</summary><p>Letra à mão ou texto apagado podem ser difíceis de ler. Corrija título, data ou o que levar direto na lista, ou deslize para apagar o que não precisa. Para incluir uma atividade que faltou, use “Adicionar evento manualmente” na aba Escanear e salve de novo.</p></details>
+<details><summary>Não estou recebendo lembretes.</summary><p>Confira em Ajustes &gt; Notificações &gt; Agenda Kids se as notificações estão permitidas. Nos ajustes do app (⚙️) você também escolhe quais lembretes quer receber.</p></details>
+<details><summary>Aparecem atividades de outras turmas.</summary><p>Informe o nome da turma do seu filho nos ajustes e as atividades só de outras turmas serão filtradas. Quando ele mudar de turma no ano seguinte, basta trocar ali.</p></details>
+<details><summary>Tenho mais de um filho.</summary><p>Nos ajustes você cadastra quantos filhos quiser, cada um com foto. Na hora de escanear, escolha de quem são as atividades: no calendário cada criança tem sua cor, com visão geral e filtro por filho.</p></details>
+<details><summary>Como compartilho a agenda com meu parceiro ou parceira?</summary><p>Nos ajustes, em “Compartilhar agenda”, toque em “Convidar pessoas” e envie o link por mensagem. Quem recebe vê e edita todos os filhos e eventos, e o que um muda aparece na hora para o outro. Não tem relação com o Compartilhamento Familiar da Apple.</p></details>
+<details><summary>Dá para compartilhar de outro jeito?</summary><p>O botão de compartilhar na aba Calendário envia um arquivo do Agenda Kids, um arquivo de calendário (.ics) ou um resumo em texto. Com “Adicionar também ao Calendário da Apple”, é criado um calendário com o nome do seu filho; compartilhe-o pelo iCloud no app Calendário e a família também fica em dia.</p></details>
+<details><summary>Minhas fotos ou eventos são enviados para algum lugar?</summary><p>Não. O texto das fotos é lido inteiramente no aparelho, e os dados ficam só nele. Os eventos passam pelo seu iCloud apenas se você convidar alguém em “Compartilhar agenda”, e só para quem foi convidado.</p></details></div>
+      <p class="contact">Algum problema ou ideia? Escreva para <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Costumamos responder em 2 a 3 dias. Informar o modelo do aparelho e a versão do iOS ajuda bastante.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Comece pelo bilhete<br>deste mês</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Baixe grátis na App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Idioma"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR" aria-current="page">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Política de Privacidade</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

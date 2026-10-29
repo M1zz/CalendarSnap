@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lịch Của Bé – lịch trường mầm non chỉ với một tấm ảnh</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lịch Của Bé: chụp lịch của trường mầm non, có ngay lịch cả tháng</title>
+  <meta name="description" content="Chụp lịch tháng hoặc thông báo từ nhà trẻ, trường mầm non. Cả tháng vào lịch của bạn, tối hôm trước còn nhắc chuẩn bị đồ cho bé. Miễn phí.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lịch Của Bé: chụp lịch của trường mầm non, có ngay lịch cả tháng">
+  <meta property="og:description" content="Chụp lịch tháng hoặc thông báo từ nhà trẻ, trường mầm non. Cả tháng vào lịch của bạn, tối hôm trước còn nhắc chuẩn bị đồ cho bé. Miễn phí.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Lịch Của Bé</h1>
-<p class="muted">Chụp lịch hoặc thông báo của nhà trẻ, trường mầm non<br>là lịch cả tháng có ngay trong lịch, nhắc nhở và widget.</p>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">Lịch Của Bé</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Một tấm ảnh, lịch cả tháng</b><span>Lịch tháng, thông báo gửi phụ huynh hay tờ rơi, dạng nào cũng tự động nhận diện</span></div>
-  <div class="card"><b>🔔 Nhắc đồ cần chuẩn bị</b><span>Nhắc tối hôm trước và sáng hôm đó, kèm ghi chú đồ cần mang</span></div>
-  <div class="card"><b>👧👦 Hỗ trợ nhiều con</b><span>Mỗi bé một hồ sơ, một màu riêng, xem chung một lịch hoặc lọc theo từng bé</span></div>
-  <div class="card"><b>👨‍👩‍👧 Mời cùng xem</b><span>Chỉ cần một đường link mời là chia sẻ lịch với vợ/chồng hay ông bà, bên nào sửa cũng đồng bộ ngay lập tức</span></div>
-  <div class="card"><b>🧩 Widget màn hình chính</b><span>Xem ngay các sự kiện sắp tới trên màn hình chính</span></div>
-  <div class="card"><b>🔒 Ưu tiên quyền riêng tư</b><span>Ảnh chỉ được phân tích trên máy, không gửi lên máy chủ của nhà phát triển</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Chỉ cần chụp ảnh<br>Tối trước sẽ nhắc đồ</h1>
+        <p class="lead">Chụp tờ lịch tháng mà trường gửi về. Lịch Của Bé đọc ngày, giờ và tên từng hoạt động rồi thêm tất cả vào lịch một lần. Tối trước buổi dã ngoại, lúc 8 giờ, sẽ có lời nhắc chuẩn bị hộp cơm.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Tải miễn phí trên App Store</a><a class="try" href="#try">Thử chụp một thông báo ↓</a></div>
+        <p class="muted small">Mọi tính năng đều miễn phí. Ảnh không rời khỏi iPhone của bạn.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/01-scan.jpg" alt="Chỉ cần chụp ảnh Tối trước sẽ nhắc đồ" width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Hỗ trợ và liên hệ</a> ·
-  <a href="privacy.html">Chính sách quyền riêng tư</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <b>Tiếng Việt</b> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Thử chụp một thông báo</h2>
+      <p class="muted">Đây là thông báo mẫu về các hoạt động tháng sau. Chụp lại, ứng dụng sẽ lấy ra các sự kiện và đồ cần mang, rồi đặt lời nhắc theo thời điểm bạn chọn, giống hệt trong ứng dụng.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Thử chụp một thông báo&quot;, &quot;lead&quot;: &quot;Đây là thông báo mẫu về các hoạt động tháng sau. Chụp lại, ứng dụng sẽ lấy ra các sự kiện và đồ cần mang, rồi đặt lời nhắc theo thời điểm bạn chọn, giống hệt trong ứng dụng.&quot;, &quot;noticeTitle&quot;: &quot;Lớp Hướng Dương · Hoạt động {month}&quot;, &quot;child&quot;: &quot;Bống&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Hội thao mùa thu&quot;, &quot;items&quot;: &quot;hộp cơm, giày thể thao&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Xem múa rối&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Trải nghiệm làm bánh&quot;, &quot;items&quot;: &quot;tạp dề&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Tiệc sinh nhật chung&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Chụp ảnh&quot;, &quot;again&quot;: &quot;Thử lại&quot;, &quot;empty&quot;: &quot;Chụp ảnh xong, các lời nhắc được đặt sẽ hiện ở đây.&quot;, &quot;found&quot;: &quot;{e} sự kiện, đã đặt {n} lời nhắc&quot;, &quot;options&quot;: [&quot;Tối hôm trước (để chuẩn bị đồ)&quot;, &quot;Sáng hôm đó&quot;, &quot;Trước 1 giờ&quot;, &quot;Đúng giờ sự kiện&quot;], &quot;timedOnly&quot;: &quot;Chỉ áp dụng cho sự kiện có giờ cụ thể&quot;, &quot;bodies&quot;: [&quot;Ngày mai có sự kiện. Hãy chuẩn bị đồ trước nhé.&quot;, &quot;Hôm nay có sự kiện.&quot;, &quot;Bắt đầu sau 1 giờ nữa.&quot;, &quot;Bắt đầu ngay bây giờ.&quot;], &quot;note&quot;: &quot;Đây là thông báo mẫu. Trong ứng dụng, chữ trên ảnh thật của bạn được đọc ngay trên máy. Giờ nhắc tính theo đúng quy tắc của ứng dụng.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Vẫn đang chép thông báo của trường vào lịch?</h2>
+      <p>Mỗi tháng năm sáu hoạt động, lần nào cũng phải mang thứ khác nhau: hộp cơm, đồ thể dục, tạp dề. Tờ lịch dán trên tủ lạnh thì lúc đi làm chẳng nhìn thấy, và nhớ ra thì đã là sáng hôm đó. Lịch Của Bé biến tờ giấy ấy thành sự kiện trong lịch và lời nhắc.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Một tấm ảnh, cả một tháng</h2>
+        <p>Lịch dạng bảng, thư gửi phụ huynh hay tờ thông báo lẻ: chụp hoặc chọn từ thư viện ảnh là đọc được ngày, giờ và tên hoạt động. Dán tin nhắn của cô giáo cũng được, những chữ như “ngày mai” hay “thứ Sáu này” sẽ được đổi thành ngày cụ thể.<br>Trước khi lưu, sửa ngay tiêu đề, ngày hay đồ cần mang, cái nào không cần thì vuốt để xóa. Nhập tên lớp của bé, các hoạt động chỉ dành cho lớp khác sẽ tự được lọc bỏ.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/02-events.jpg" alt="Một tấm ảnh, cả một tháng" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tối hôm trước, nhắc chuẩn bị đồ</h2>
+        <p>Chọn nhắc lúc 20:00 tối hôm trước, 7:30 sáng hôm đó, trước 1 giờ hoặc đúng giờ. Đồ cần mang hiện ngay trong lời nhắc, cặp sách không thiếu thứ gì.<br>Bật thêm Lịch của Apple, sự kiện sẽ vào một lịch riêng mang tên bé và không bao giờ bị thêm hai lần.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/04-reminders.jpg" alt="Tối hôm trước, nhắc chuẩn bị đồ" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nhiều con hay cả gia đình cùng xem</h2>
+        <p>Mỗi bé một màu riêng. Xem chung tất cả hoặc từng bé, ứng dụng còn dựa vào lịch sử để đoán thông báo mới là của bé nào.<br>Gửi đường liên kết mời là vợ chồng, ông bà hay người giúp việc đều xem và sửa được cùng một lịch. Tiện ích trên Màn hình chính cho thấy việc sắp tới.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/03-calendar.jpg" alt="Nhiều con hay cả gia đình cùng xem" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Bắt đầu chỉ với 3 bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Thêm bé</h3><p>Nhập tên và lớp. Ảnh đại diện thêm lúc nào cũng được.</p></li>
+<li class="card"><span class="n">2</span><h3>Chụp thông báo</h3><p>Chụp thẳng, chữ rõ nét thì đọc chính xác hơn.</p></li>
+<li class="card"><span class="n">3</span><h3>Kiểm tra rồi lưu</h3><p>Cho phép thông báo, lời nhắc sẽ đến đúng lúc bạn chọn.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Khi nào có lời nhắc</h2>
+      <div class="card table">
+        <dl><div><dt>20:00 tối hôm trước</dt><dd>Chuẩn bị đồ. Bật sẵn</dd></div><div><dt>7:30 sáng hôm đó</dt><dd>Việc của hôm nay. Bật sẵn</dd></div><div><dt>Trước 1 giờ</dt><dd>Chỉ cho hoạt động có giờ</dd></div><div><dt>Đúng giờ sự kiện</dt><dd>Chỉ cho hoạt động có giờ</dd></div></dl>
+      </div>
+      <p class="muted">Hoạt động cả ngày như dã ngoại chỉ có lời nhắc tối hôm trước và sáng hôm đó. Bật hoặc tắt từng loại bất cứ lúc nào trong phần cài đặt.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Mọi tính năng đều miễn phí</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Miễn phí</h3>
+          <ul><li>Đọc sự kiện từ ảnh và tin nhắn</li><li>Sửa trước khi lưu, lọc bỏ lịch của lớp khác</li><li>Nhắc tối hôm trước, sáng hôm đó, trước 1 giờ và đúng giờ</li><li>Mỗi bé một màu, có lịch chung</li><li>Đồng bộ với Lịch của Apple</li><li>Chia sẻ với gia đình qua đường liên kết</li><li>Tiện ích Màn hình chính</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Ủng hộ nhà phát triển</h3>
+          <ul><li>Trong phần cài đặt, bạn có thể gửi một khoản tip nhỏ tùy ý</li><li>Tip không mở khóa gì cả. Không gửi vẫn dùng y như vậy</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Không quảng cáo, không thuê bao.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Chụp được những loại ảnh nào?</summary><p>Lịch tháng dạng bảng, thư gửi phụ huynh viết thành câu, và thông báo lẻ hoặc tờ rơi. Chụp thẳng để chữ rõ nét sẽ đọc tốt hơn. Bạn cũng có thể chọn nhiều ảnh để quét cùng lúc.</p></details>
+<details><summary>Thiếu vài sự kiện hoặc tiêu đề bị sai chính tả.</summary><p>Chữ viết tay hoặc chữ mờ có thể khó đọc. Sửa tiêu đề, ngày hay đồ cần mang ngay trong danh sách, cái nào không cần thì vuốt để xóa. Sự kiện bị thiếu thì thêm bằng “Thêm sự kiện thủ công” ở tab Quét rồi lưu lại.</p></details>
+<details><summary>Không nhận được lời nhắc.</summary><p>Hãy kiểm tra Cài đặt &gt; Thông báo &gt; Lịch Của Bé xem đã cho phép thông báo chưa. Trong phần cài đặt của ứng dụng (⚙️), bạn còn chọn được muốn nhận những lời nhắc nào.</p></details>
+<details><summary>Lịch của lớp khác cũng bị thêm vào.</summary><p>Nhập tên lớp của bé trong phần cài đặt, các hoạt động chỉ dành cho lớp khác sẽ được lọc bỏ. Lên lớp mới mà đổi lớp thì chỉ cần sửa ở đó.</p></details>
+<details><summary>Tôi có nhiều con.</summary><p>Trong phần cài đặt có thể thêm bao nhiêu bé tùy ý, mỗi bé một ảnh đại diện. Khi quét, chọn lịch này của bé nào: trong lịch mỗi bé có màu riêng, có thể chuyển giữa xem chung và lọc theo từng bé.</p></details>
+<details><summary>Muốn cùng xem lịch với vợ hoặc chồng.</summary><p>Vào “Chia sẻ lịch” trong phần cài đặt, chạm “Mời người khác cùng xem” rồi gửi đường liên kết qua tin nhắn. Người nhận cũng xem và sửa được lịch của mọi bé, ai sửa bên nào thì cả hai bên đều thấy ngay. Tính năng này không liên quan đến Chia sẻ trong gia đình của Apple.</p></details>
+<details><summary>Có cách chia sẻ nào khác không?</summary><p>Nút chia sẻ ở tab Lịch gửi được tệp Lịch Của Bé, tệp lịch (.ics) hoặc bản tóm tắt dạng chữ. Bật “Thêm cả vào Lịch của Apple” sẽ tạo một lịch mang tên bé; chia sẻ lịch đó qua iCloud trong ứng dụng Lịch thì cả nhà cũng thấy giống nhau.</p></details>
+<details><summary>Ảnh hay lịch có bị gửi đi đâu không?</summary><p>Không. Chữ trong ảnh được đọc hoàn toàn trên máy, dữ liệu cũng chỉ lưu trên máy. Lịch chỉ đi qua iCloud của bạn khi bạn mời ai đó bằng “Chia sẻ lịch”, và chỉ đến những người được mời.</p></details></div>
+      <p class="contact">Gặp sự cố hay muốn có tính năng mới? Gửi thư đến <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Chúng tôi thường trả lời trong 2–3 ngày. Ghi kèm dòng máy và phiên bản iOS sẽ giúp ích nhiều.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bắt đầu từ thông báo<br>của tháng này</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Tải miễn phí trên App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

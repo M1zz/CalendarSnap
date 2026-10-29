@@ -1,0 +1,188 @@
+{
+  "title": "Rozvrh školky: vyfoťte plán ze školky a máte celý měsíc i připomenutí",
+  "description": "Vyfoťte měsíční plán nebo oznámení z jeslí či školky. Celý měsíc se uloží do kalendáře a večer předem vám appka připomene, co nachystat. Zdarma.",
+  "hero": {
+    "headline": "Stačí vyfotit.\nNa batůžek připomeneme.",
+    "lead": "Vyfoťte měsíční plán, který dostanete ve školce. Rozvrh školky přečte data, časy a názvy akcí a uloží je všechny najednou. Večer před výletem ve 20:00 přijde připomenutí: nezapomeňte svačinu.",
+    "cta": "Stáhnout zdarma v App Storu",
+    "note": "Všechny funkce jsou zdarma. Fotky z vašeho iPhonu nikam neodcházejí."
+  },
+  "demo": {
+    "title": "Vyfoťte oznámení",
+    "lead": "Tady je ukázkové oznámení s akcemi na příští měsíc. Vyfoťte ho a stejně jako v aplikaci se z něj vytáhnou akce a věci s sebou a připomenutí se naplánují na časy, které si vyberete.",
+    "noticeTitle": "Třída Slunečnice · Program na {month}",
+    "child": "Eliška",
+    "events": [
+      {
+        "day": 5,
+        "title": "Podzimní sportovní den",
+        "items": "svačina, tenisky"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Loutkové divadlo",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Pečení perníčků",
+        "items": "zástěra"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Oslava narozenin",
+        "items": ""
+      }
+    ],
+    "snap": "Vyfotit",
+    "again": "Znovu",
+    "empty": "Po vyfocení se tu ukážou naplánovaná připomenutí.",
+    "found": "Akce: {e}, naplánovaná připomenutí: {n}",
+    "options": [
+      "Večer předem (na přípravu věcí)",
+      "Ráno téhož dne",
+      "1 hodinu předem",
+      "V čas události"
+    ],
+    "timedOnly": "Platí jen pro události s určeným časem",
+    "bodies": [
+      "Je to zítra. Připravte si věci s předstihem.",
+      "Je to dnes.",
+      "Začíná za 1 hodinu.",
+      "Právě začíná."
+    ],
+    "note": "Tady je použito ukázkové oznámení. V aplikaci se text z vaší skutečné fotky čte přímo v zařízení. Časy připomenutí se řídí stejnými pravidly jako v aplikaci."
+  },
+  "problem": {
+    "title": "Pořád přepisujete oznámení ze školky do kalendáře?",
+    "text": "Pět, šest akcí za měsíc a pokaždé je potřeba něco jiného: svačina, cvičební úbor, zástěra. Plán na lednici cestou do práce nevidíte a vzpomenete si vždycky až to ráno. Rozvrh školky z toho papíru udělá události v kalendáři a připomenutí."
+  },
+  "features": [
+    {
+      "title": "Jedna fotka, celý měsíc",
+      "text": "Měsíční tabulka, dopis rodičům nebo jednotlivý leták: vyfoťte ho nebo vyberte z knihovny a data, časy i názvy akcí se přečtou za vás. Vložit můžete i zprávu od učitelky, slova jako „zítra“ nebo „tento pátek“ se změní na skutečná data.\nPřed uložením rovnou opravíte název, datum nebo věci s sebou a co nepotřebujete, odsunete. Zadejte třídu dítěte a akce jen pro jiné třídy se vyřadí samy.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Večer předem připomenutí",
+      "text": "Vyberte si 20:00 večer předem, 7:30 ráno téhož dne, 1 hodinu předem nebo přesně v čas akce. Věci s sebou se ukážou přímo v připomenutí, takže batůžek bude sbalený.\nS kalendářem Apple se akce uloží do kalendáře se jménem dítěte a nikdy se nepřidají dvakrát.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Víc dětí i celá rodina",
+      "text": "Každé dítě má svou barvu. Zobrazte všechny najednou nebo každé zvlášť; podle dřívějších akcí aplikace odhadne, komu nové oznámení patří.\nPošlete odkaz s pozvánkou a partner, prarodiče nebo chůva uvidí a upraví stejné akce. Widget na ploše ukáže, co se blíží.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Začnete ve třech krocích",
+    "items": [
+      {
+        "title": "Přidejte dítě",
+        "text": "Jméno a třída. Profilovou fotku kdykoli později."
+      },
+      {
+        "title": "Vyfoťte oznámení",
+        "text": "Zpříma a s ostrým textem se čte nejlépe."
+      },
+      {
+        "title": "Zkontrolujte a uložte",
+        "text": "Povolte oznámení a připomenutí přijdou ve zvolený čas."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kdy přicházejí připomenutí",
+    "rows": [
+      [
+        "20:00 večer předem",
+        "Na přípravu věcí. Zapnuto od začátku"
+      ],
+      [
+        "7:30 ráno téhož dne",
+        "Co je dnes. Zapnuto od začátku"
+      ],
+      [
+        "1 hodinu předem",
+        "Jen u akcí s určeným časem"
+      ],
+      [
+        "V čas události",
+        "Jen u akcí s určeným časem"
+      ]
+    ],
+    "note": "Celodenní akce, třeba výlet, mají jen připomenutí večer předem a ráno. Každé můžete kdykoli zapnout nebo vypnout v nastavení."
+  },
+  "pricing": {
+    "title": "Všechny funkce jsou zdarma",
+    "free": {
+      "name": "Zdarma",
+      "items": [
+        "Čtení akcí z fotek a zpráv",
+        "Úpravy před uložením, filtr jiných tříd",
+        "Připomenutí večer předem, ráno, hodinu předem i načas",
+        "Barva pro každé dítě a společný kalendář",
+        "Synchronizace s kalendářem Apple",
+        "Sdílení s rodinou přes odkaz",
+        "Widget na ploše"
+      ]
+    },
+    "pro": {
+      "name": "Podpořit vývojáře",
+      "items": [
+        "V nastavení můžete poslat malé spropitné v libovolné výši",
+        "Spropitné nic neodemyká. Aplikace funguje stejně i bez něj"
+      ]
+    },
+    "note": "Žádné reklamy, žádné předplatné."
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "items": [
+      {
+        "q": "Jaké fotky se dají použít?",
+        "a": "Měsíční plány v tabulce, oznámení psaná souvislým textem a jednotlivé letáky. Fotka pořízená zpříma s ostrým textem se čte lépe. Můžete také vybrat několik fotek a naskenovat je najednou."
+      },
+      {
+        "q": "Pár akcí chybí nebo je v názvu překlep.",
+        "a": "Ručně psaný nebo bledý text se čte hůř. Název, datum nebo věci s sebou opravte přímo v seznamu a nepotřebné odsuňte. Chybějící akci přidejte přes „Přidat událost ručně“ na kartě Skenovat a uložte znovu."
+      },
+      {
+        "q": "Nechodí mi připomenutí.",
+        "a": "Zkontrolujte v Nastavení > Oznámení > Rozvrh školky, že jsou oznámení povolená. V nastavení aplikace (⚙️) si také vyberete, která připomenutí chcete dostávat."
+      },
+      {
+        "q": "Objevují se akce jiných tříd.",
+        "a": "Zadejte v nastavení název třídy dítěte a akce jen pro jiné třídy se vyřadí. Když se v novém školním roce třída změní, stačí ji upravit tam."
+      },
+      {
+        "q": "Mám víc dětí.",
+        "a": "V nastavení přidáte libovolný počet dětí, každé s profilovou fotkou. Při skenování vyberte, čí akce to jsou: v kalendáři má každé dítě svou barvu a můžete přepínat mezi společným pohledem a filtrem podle dítěte."
+      },
+      {
+        "q": "Jak sdílet program s partnerem?",
+        "a": "V nastavení v části „Sdílení událostí“ klepněte na „Pozvat ke sdílení“ a pošlete odkaz zprávou. Pozvaný uvidí a upraví všechny děti i akce a změny z kterékoli strany se hned projeví u obou. Se Sdílením v rodině od Applu to nesouvisí."
+      },
+      {
+        "q": "Dá se sdílet i jinak?",
+        "a": "Tlačítkem sdílení na kartě Kalendář pošlete soubor Rozvrhu školky, soubor kalendáře (.ics) nebo textový souhrn. Se zapnutým „Přidávat také do kalendáře Apple“ vznikne kalendář se jménem dítěte; když ho v aplikaci Kalendář nasdílíte přes iCloud, bude mít přehled i rodina."
+      },
+      {
+        "q": "Posílají se moje fotky nebo akce někam?",
+        "a": "Ne. Text z fotek se čte celý v zařízení a data zůstávají jen v něm. Akce jdou přes váš iCloud jen tehdy, když někoho pozvete přes „Sdílení událostí“, a jen k pozvaným lidem."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Začněte oznámením\nna tento měsíc",
+    "cta": "Stáhnout zdarma v App Storu"
+  },
+  "ui": {
+    "skip": "Přejít na obsah",
+    "languages": "Jazyk",
+    "privacy": "Zásady ochrany soukromí",
+    "contact": "Něco nefunguje nebo vám chybí funkce? Napište na {email}. Obvykle odpovídáme do 2–3 dnů. Model zařízení a verze iOS nám pomohou."
+  }
+}

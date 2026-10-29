@@ -1,0 +1,188 @@
+{
+  "title": "Agenda Bimbi: una foto al calendario dell’asilo e hai tutto il mese",
+  "description": "Fotografa il calendario mensile o l’avviso del nido o della materna. Il mese finisce nel calendario e la sera prima ti ricorda cosa preparare. Gratis.",
+  "hero": {
+    "headline": "Basta una foto.\nAl resto pensiamo noi.",
+    "lead": "Fotografa il calendario del mese che ti dà l’asilo. Agenda Bimbi legge date, orari e nomi delle attività e li aggiunge tutti insieme. La sera prima della gita, alle 20, arriva il promemoria: non dimenticare il pranzo al sacco.",
+    "cta": "Scarica gratis su App Store",
+    "note": "Tutto è gratis. Le tue foto restano sul tuo iPhone."
+  },
+  "demo": {
+    "title": "Scatta una foto a un avviso",
+    "lead": "Ecco un avviso d’esempio con le attività del mese prossimo. Scattagli una foto: come nell’app, vengono estratti gli impegni e le cose da portare, e i promemoria si programmano agli orari che scegli.",
+    "noticeTitle": "Sezione Girasoli · Attività di {month}",
+    "child": "Giulia",
+    "events": [
+      {
+        "day": 5,
+        "title": "Festa dello sport",
+        "items": "pranzo al sacco, scarpe da ginnastica"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Spettacolo di burattini",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Laboratorio di cucina",
+        "items": "grembiule"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Festa dei compleanni",
+        "items": ""
+      }
+    ],
+    "snap": "Scatta foto",
+    "again": "Rifai",
+    "empty": "Scatta la foto e qui vedrai i promemoria programmati.",
+    "found": "{e} attività, {n} promemoria programmati",
+    "options": [
+      "La sera prima (per preparare le cose)",
+      "La mattina stessa",
+      "1 ora prima",
+      "All’ora dell’evento"
+    ],
+    "timedOnly": "Vale solo per gli eventi con un orario",
+    "bodies": [
+      "È per domani. Prepara per tempo quello che serve.",
+      "È per oggi.",
+      "Inizia tra 1 ora.",
+      "Inizia adesso."
+    ],
+    "note": "Qui usiamo un avviso d’esempio. Nell’app il testo della tua foto vera viene letto direttamente sul dispositivo. I promemoria seguono le stesse regole dell’app."
+  },
+  "problem": {
+    "title": "Ricopi ancora a mano gli avvisi dell’asilo nel calendario?",
+    "text": "Cinque o sei attività al mese, e ogni volta c’è da portare qualcosa di diverso: il pranzo al sacco, la tuta, il grembiule. Il calendario sul frigo non lo vedi mentre vai al lavoro, e te ne ricordi sempre la mattina stessa. Agenda Bimbi trasforma quel foglio in eventi e promemoria."
+  },
+  "features": [
+    {
+      "title": "Una foto, tutto il mese",
+      "text": "Calendario a griglia, avviso ai genitori o volantino: scatta una foto o sceglila dalla libreria e date, orari e nomi delle attività vengono letti per te. Puoi anche incollare un messaggio dell’asilo: «domani» o «questo venerdì» diventano date vere.\nPrima di salvare correggi titolo, data o cose da portare, e scorri per eliminare quello che non serve. Se inserisci la sezione di tuo figlio, le attività riservate alle altre sezioni vengono scartate.",
+      "shot": "02-events"
+    },
+    {
+      "title": "La sera prima, il promemoria",
+      "text": "Scegli tra le 20 della sera prima, le 7:30 della mattina stessa, 1 ora prima o all’ora esatta. Le cose da portare compaiono nel promemoria, così lo zainetto è pronto.\nCon Calendario Apple gli eventi finiscono in un calendario con il nome di tuo figlio, senza mai doppioni.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Più figli, tutta la famiglia",
+      "text": "Ogni bambino ha il suo colore. Puoi vederli tutti insieme o uno alla volta, e l’app usa lo storico per indovinare di chi è il nuovo avviso.\nInvia un link d’invito e il partner, i nonni o la babysitter vedono e modificano gli stessi eventi. Un widget nella schermata Home mostra cosa arriva.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Si comincia in tre passi",
+    "items": [
+      {
+        "title": "Aggiungi tuo figlio",
+        "text": "Nome e sezione. La foto profilo quando vuoi."
+      },
+      {
+        "title": "Fotografa l’avviso",
+        "text": "Di fronte e con il testo nitido, si legge molto meglio."
+      },
+      {
+        "title": "Controlla e salva",
+        "text": "Consenti le notifiche e i promemoria arrivano quando hai scelto."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Quando arrivano i promemoria",
+    "rows": [
+      [
+        "Ore 20:00 della sera prima",
+        "Per preparare le cose. Attivo di default"
+      ],
+      [
+        "Ore 7:30 della mattina stessa",
+        "Il programma di oggi. Attivo di default"
+      ],
+      [
+        "1 ora prima",
+        "Solo per attività con un orario"
+      ],
+      [
+        "All’ora dell’evento",
+        "Solo per attività con un orario"
+      ]
+    ],
+    "note": "Le attività di un’intera giornata, come una gita, hanno solo il promemoria della sera prima e quello del mattino. Puoi attivarli o disattivarli quando vuoi nelle impostazioni."
+  },
+  "pricing": {
+    "title": "Tutto è gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Lettura delle attività da foto e messaggi",
+        "Correzioni prima di salvare, filtro delle altre sezioni",
+        "Promemoria la sera prima, al mattino, 1 ora prima e puntuali",
+        "Un colore per ogni figlio e un calendario unico",
+        "Sincronizzazione con Calendario Apple",
+        "Condivisione in famiglia con un link d’invito",
+        "Widget nella schermata Home"
+      ]
+    },
+    "pro": {
+      "name": "Sostieni lo sviluppatore",
+      "items": [
+        "Dalle impostazioni puoi lasciare una piccola mancia, quanto vuoi",
+        "La mancia non sblocca nulla. L’app funziona allo stesso modo"
+      ]
+    },
+    "note": "Niente pubblicità, niente abbonamenti."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Che tipo di foto posso usare?",
+        "a": "Calendari mensili a griglia, avvisi scritti in forma di testo e singole comunicazioni o volantini. Una foto scattata di fronte, con il testo nitido, viene letta meglio. Puoi anche scegliere più foto da scansionare insieme."
+      },
+      {
+        "q": "Mancano alcune attività o c’è un errore nel titolo.",
+        "a": "La scrittura a mano o il testo sbiadito possono essere difficili da leggere. Correggi titolo, data o cose da portare direttamente nell’elenco, oppure scorri per eliminare ciò che non serve. Per aggiungere un’attività mancante usa «Aggiungi evento a mano» nella scheda Scansiona e salva di nuovo."
+      },
+      {
+        "q": "Non ricevo i promemoria.",
+        "a": "Controlla in Impostazioni > Notifiche > Agenda Bimbi che le notifiche siano consentite. Nelle impostazioni dell’app (⚙️) puoi anche scegliere quali promemoria ricevere."
+      },
+      {
+        "q": "Compaiono attività di altre sezioni.",
+        "a": "Inserisci il nome della sezione di tuo figlio nelle impostazioni: le attività riservate alle altre sezioni verranno scartate. Quando cambia sezione, basta modificarla lì."
+      },
+      {
+        "q": "Ho più di un figlio.",
+        "a": "Nelle impostazioni puoi aggiungere tutti i figli che vuoi, ognuno con la sua foto. Durante la scansione scegli per chi sono le attività: nel calendario ogni bambino ha il suo colore e puoi passare dalla vista unica al filtro per figlio."
+      },
+      {
+        "q": "Come condivido gli impegni con il mio partner?",
+        "a": "Nelle impostazioni, in «Condivisione eventi», tocca «Invita altre persone» e manda il link via messaggio. Chi riceve l’invito vede e modifica tutti i figli e gli eventi, e le modifiche fatte da una parte compaiono subito anche dall’altra. Non c’entra con In famiglia di Apple."
+      },
+      {
+        "q": "Ci sono altri modi per condividere?",
+        "a": "Con il pulsante di condivisione nella scheda Calendario puoi inviare un file di Agenda Bimbi, un file calendario (.ics) o un riepilogo in testo. Con «Aggiungi anche a Calendario Apple» viene creato un calendario con il nome di tuo figlio; condividendolo via iCloud nell’app Calendario, anche la famiglia resta aggiornata."
+      },
+      {
+        "q": "Le mie foto o i miei eventi vengono inviati da qualche parte?",
+        "a": "No. Il testo nelle foto viene letto interamente sul dispositivo e i dati restano solo lì. Gli eventi passano dal tuo iCloud solo se inviti qualcuno con «Condivisione eventi», e solo verso le persone invitate."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Comincia dall’avviso\ndi questo mese",
+    "cta": "Scarica gratis su App Store"
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "languages": "Lingua",
+    "privacy": "Informativa sulla privacy",
+    "contact": "Problemi o idee? Scrivi a {email}. Di solito rispondiamo entro 2 o 3 giorni. Indicare modello del dispositivo e versione di iOS ci aiuta molto."
+  }
+}

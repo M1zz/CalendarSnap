@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kita-Planer – Kita-Termine mit einem Foto</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kita-Planer: Kita-Kalender fotografieren, ganzen Monat samt Erinnerungen haben</title>
+  <meta name="description" content="Fotografiere den Monatsplan aus Kita oder Kindergarten. Alle Termine landen im Kalender, und am Vorabend erinnert dich die App ans Packen. Gratis.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kita-Planer: Kita-Kalender fotografieren, ganzen Monat samt Erinnerungen haben">
+  <meta property="og:description" content="Fotografiere den Monatsplan aus Kita oder Kindergarten. Alle Termine landen im Kalender, und am Vorabend erinnert dich die App ans Packen. Gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/de/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/de/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Kita-Planer</h1>
-<p class="muted">Kalender oder Elternbrief aus Kita und Kindergarten abfotografieren –<br>und alle Termine des Monats landen auf einen Schlag im Kalender, in den Erinnerungen und im Widget.</p>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="bar">
+    <a class="brand" href="../de/"><img src="../icon.png" alt="" width="32" height="32">Kita-Planer</a>
+    <a class="lang-link" href="#languages">Sprache</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Ein Foto, ein ganzer Monat</b><span>Monatskalender, Elternbrief oder Aushang – jedes Format wird automatisch erkannt</span></div>
-  <div class="card"><b>🔔 Erinnerung ans Mitbringen</b><span>Am Vorabend und am Morgen, samt Notiz, was eingepackt werden muss</span></div>
-  <div class="card"><b>👧👦 Für mehrere Kinder</b><span>Eigenes Profil und eigene Farbe für jedes Kind, gemeinsamer Kalender mit Filter</span></div>
-  <div class="card"><b>👨‍👩‍👧 Zum Mitsehen einladen</b><span>Ein Einladungslink genügt, um Termine mit Partner oder Großeltern zu teilen – Änderungen von beiden Seiten werden in Echtzeit abgeglichen</span></div>
-  <div class="card"><b>🧩 Widget für den Home-Bildschirm</b><span>Die nächsten Termine immer direkt im Blick</span></div>
-  <div class="card"><b>🔒 Datenschutz zuerst</b><span>Fotos werden nur auf dem Gerät ausgewertet – nichts geht an einen Server des Entwicklers</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Foto vom Elternbrief.<br>Erinnerung am Vorabend.</h1>
+        <p class="lead">Fotografiere den Monatsplan, den die Kita mitgibt. Kita-Planer liest Datum, Uhrzeit und Namen jedes Termins und trägt alles auf einmal ein. Am Abend vor dem Ausflug, um 20 Uhr, kommt die Erinnerung: Brotdose nicht vergessen.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Kostenlos im App Store laden</a><a class="try" href="#try">Fotografiere einen Elternbrief ↓</a></div>
+        <p class="muted small">Alle Funktionen sind kostenlos. Deine Fotos bleiben auf deinem iPhone.</p>
+      </div>
+      <div class="phone"><img src="../img/de/01-scan.jpg" alt="Foto vom Elternbrief. Erinnerung am Vorabend." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Hilfe & Kontakt</a> ·
-  <a href="privacy.html">Datenschutzerklärung</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <b>Deutsch</b> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Fotografiere einen Elternbrief</h2>
+      <p class="muted">Hier ist ein Beispielbrief mit den Terminen für nächsten Monat. Fotografiere ihn, und wie in der App werden Termine und Mitbringliste herausgelesen und Erinnerungen zu den gewählten Zeiten geplant.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Fotografiere einen Elternbrief&quot;, &quot;lead&quot;: &quot;Hier ist ein Beispielbrief mit den Terminen für nächsten Monat. Fotografiere ihn, und wie in der App werden Termine und Mitbringliste herausgelesen und Erinnerungen zu den gewählten Zeiten geplant.&quot;, &quot;noticeTitle&quot;: &quot;Sonnenblumengruppe · Termine im {month}&quot;, &quot;child&quot;: &quot;Emma&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Herbstsportfest&quot;, &quot;items&quot;: &quot;Brotdose, Turnschuhe&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Puppentheater&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Plätzchen backen&quot;, &quot;items&quot;: &quot;Schürze&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Geburtstagsfeier&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Foto aufnehmen&quot;, &quot;again&quot;: &quot;Noch mal&quot;, &quot;empty&quot;: &quot;Mach das Foto, dann siehst du hier die geplanten Erinnerungen.&quot;, &quot;found&quot;: &quot;{e} Termine, {n} Erinnerungen geplant&quot;, &quot;options&quot;: [&quot;Am Vorabend (zum Packen)&quot;, &quot;Am Morgen&quot;, &quot;1 Stunde vorher&quot;, &quot;Zur Terminzeit&quot;], &quot;timedOnly&quot;: &quot;Gilt nur für Termine mit Uhrzeit&quot;, &quot;bodies&quot;: [&quot;Morgen ist es so weit. Bereite alles rechtzeitig vor.&quot;, &quot;Heute ist es so weit.&quot;, &quot;Beginnt in 1 Stunde.&quot;, &quot;Es geht jetzt los.&quot;], &quot;note&quot;: &quot;Hier mit einem Beispielbrief. In der App wird der Text auf deinem echten Foto direkt auf dem Gerät gelesen. Die Erinnerungszeiten folgen denselben Regeln wie in der App.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Überträgst du den Elternbrief noch von Hand in den Kalender?</h2>
+      <p>Fünf, sechs Termine im Monat, und jedes Mal muss etwas anderes mit: Brotdose, Sportsachen, Schürze. Der Plan am Kühlschrank ist auf dem Weg zur Arbeit nicht zu sehen, und einfallen tut es einem immer am Morgen selbst. Kita-Planer macht aus dem Zettel Kalendertermine und Erinnerungen.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ein Foto, ein ganzer Monat</h2>
+        <p>Monatsraster, Elternbrief oder einzelner Aushang: fotografieren oder aus der Mediathek wählen, und Datum, Uhrzeit und Terminname werden ausgelesen. Du kannst auch eine Nachricht der Kita einfügen. Wörter wie „morgen“ oder „diesen Freitag“ werden zu echten Daten.<br>Vor dem Sichern korrigierst du Titel, Datum oder Mitbringliste direkt und wischst Überflüssiges weg. Hinterlegst du die Gruppe deines Kindes, fallen Termine nur für andere Gruppen automatisch raus.</p>
+      </div>
+      <div class="phone"><img src="../img/de/02-events.jpg" alt="Ein Foto, ein ganzer Monat" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Am Vorabend wird gepackt</h2>
+        <p>Wähle zwischen 20 Uhr am Vorabend, 7:30 Uhr am Morgen, 1 Stunde vorher oder genau zur Terminzeit. Die Mitbringliste steht in der Erinnerung, damit der Rucksack vollständig ist.<br>Mit dem Apple Kalender landen die Termine in einem Kalender mit dem Namen deines Kindes, und nichts wird doppelt eingetragen.</p>
+      </div>
+      <div class="phone"><img src="../img/de/04-reminders.jpg" alt="Am Vorabend wird gepackt" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Für mehrere Kinder und die ganze Familie</h2>
+        <p>Jedes Kind bekommt eine eigene Farbe. Du siehst alle zusammen oder jedes einzeln, und anhand früherer Termine errät die App, zu wem ein neuer Elternbrief gehört.<br>Schick einen Einladungslink, und Partner, Großeltern oder Babysitter sehen und bearbeiten dieselben Termine. Ein Widget auf dem Home-Bildschirm zeigt, was als Nächstes ansteht.</p>
+      </div>
+      <div class="phone"><img src="../img/de/03-calendar.jpg" alt="Für mehrere Kinder und die ganze Familie" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>In drei Schritten startklar</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Kind anlegen</h3><p>Name und Gruppe eintragen. Ein Profilfoto kannst du jederzeit ergänzen.</p></li>
+<li class="card"><span class="n">2</span><h3>Elternbrief fotografieren</h3><p>Gerade von vorn und gut scharf, dann klappt das Lesen am besten.</p></li>
+<li class="card"><span class="n">3</span><h3>Prüfen und sichern</h3><p>Mitteilungen erlauben, und die Erinnerungen kommen zur gewählten Zeit.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Wann die Erinnerungen kommen</h2>
+      <div class="card table">
+        <dl><div><dt>20:00 Uhr am Vorabend</dt><dd>Zum Packen. Standardmäßig an</dd></div><div><dt>7:30 Uhr am Morgen</dt><dd>Was heute ansteht. Standardmäßig an</dd></div><div><dt>1 Stunde vorher</dt><dd>Nur bei Terminen mit Uhrzeit</dd></div><div><dt>Zur Terminzeit</dt><dd>Nur bei Terminen mit Uhrzeit</dd></div></dl>
+      </div>
+      <p class="muted">Ganztägige Termine wie ein Ausflug bekommen nur die Erinnerung am Vorabend und am Morgen. In den Einstellungen kannst du jede jederzeit ein- und ausschalten.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Alle Funktionen sind kostenlos</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Kostenlos</h3>
+          <ul><li>Termine aus Fotos und Nachrichten lesen</li><li>Vor dem Sichern korrigieren, andere Gruppen herausfiltern</li><li>Erinnerungen am Vorabend, am Morgen, 1 Stunde vorher und pünktlich</li><li>Eine Farbe pro Kind und ein gemeinsamer Kalender</li><li>Abgleich mit dem Apple Kalender</li><li>Mit der Familie teilen per Einladungslink</li><li>Widget für den Home-Bildschirm</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Den Entwickler unterstützen</h3>
+          <ul><li>In den Einstellungen kannst du ein kleines Trinkgeld in beliebiger Höhe geben</li><li>Trinkgeld schaltet nichts frei. Die App funktioniert so oder so gleich</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Keine Werbung, kein Abo.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Häufige Fragen</h2>
+      <div class="faq"><details><summary>Welche Fotos funktionieren?</summary><p>Monatspläne im Raster, Elternbriefe als Fließtext und einzelne Aushänge oder Flyer. Gerade von vorn und mit scharfer Schrift wird am besten gelesen. Du kannst auch mehrere Fotos auf einmal auswählen und scannen.</p></details>
+<details><summary>Ein paar Termine fehlen oder ein Titel hat einen Tippfehler.</summary><p>Handschrift oder blasse Schrift ist manchmal schwer zu lesen. Korrigiere Titel, Datum oder Mitbringliste direkt in der Liste oder wisch Überflüssiges weg. Fehlende Termine trägst du im Tab „Scannen“ mit „Termin manuell hinzufügen“ ein und sicherst erneut.</p></details>
+<details><summary>Ich bekomme keine Erinnerungen.</summary><p>Prüfe unter Einstellungen &gt; Mitteilungen &gt; Kita-Planer, ob Mitteilungen erlaubt sind. In den Einstellungen der App (⚙️) wählst du außerdem, welche Erinnerungen du bekommen möchtest.</p></details>
+<details><summary>Es tauchen Termine anderer Gruppen auf.</summary><p>Trag in den Einstellungen den Gruppennamen deines Kindes ein, dann werden Termine nur für andere Gruppen herausgefiltert. Wechselt die Gruppe im neuen Kita-Jahr, änderst du es nur dort.</p></details>
+<details><summary>Ich habe mehrere Kinder.</summary><p>In den Einstellungen legst du beliebig viele Kinder an, jeweils mit Profilfoto. Wähl beim Scannen, für wen die Termine sind: Im Kalender hat jedes Kind seine Farbe, und du wechselst zwischen Gesamtansicht und Filter pro Kind.</p></details>
+<details><summary>Wie teile ich die Termine mit meinem Partner?</summary><p>Tippe in den Einstellungen unter „Termine teilen“ auf „Personen einladen“ und schick den Link per Nachricht. Die eingeladene Person sieht und bearbeitet alle Kinder und Termine, und Änderungen von beiden Seiten erscheinen sofort überall. Das hat nichts mit der Apple Familienfreigabe zu tun.</p></details>
+<details><summary>Gibt es andere Wege zum Teilen?</summary><p>Über die Teilen-Taste im Tab „Kalender“ verschickst du eine Kita-Planer-Datei, eine Kalenderdatei (.ics) oder eine Textübersicht. Mit „Auch zum Apple Kalender hinzufügen“ entsteht ein Kalender mit dem Namen deines Kindes; teilst du ihn in der Kalender-App über iCloud, ist auch die Familie auf dem Laufenden.</p></details>
+<details><summary>Werden meine Fotos oder Termine irgendwohin geschickt?</summary><p>Nein. Der Text auf deinen Fotos wird komplett auf dem Gerät gelesen, und die Daten bleiben nur dort. Termine gehen nur dann über deine iCloud, wenn du jemanden über „Termine teilen“ einlädst, und nur an diese Personen.</p></details></div>
+      <p class="contact">Probleme oder Wünsche? Schreib an <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Wir antworten meist innerhalb von 2 bis 3 Tagen. Gerätemodell und iOS-Version helfen uns weiter.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Fang mit dem Elternbrief<br>dieses Monats an</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Kostenlos im App Store laden</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Sprache"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de" aria-current="page">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Datenschutzerklärung</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

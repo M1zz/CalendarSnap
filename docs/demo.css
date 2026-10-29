@@ -1,0 +1,42 @@
+/* 아이일정 웹 데모. 안내문은 종이라서 다크 모드에서도 밝게 둔다(앱의 사진 미리보기와 같다). */
+.demo-card { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: start; }
+.demo-stage { background: var(--bg); border-radius: var(--r-inner); padding: var(--s5); }
+
+.paper { position: relative; overflow: hidden; background: #FCFAF2; color: #2b3a2b; border-radius: 6px;
+         padding: var(--s5); box-shadow: 0 10px 28px rgb(0 0 0 / .14); transform: rotate(-1deg); }
+.paper-title { font-weight: 800; text-align: center; color: #335c33; margin: 0 0 var(--s4); }
+.paper ul { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s2); font-size: .95rem; }
+.paper li { padding: 2px 4px; border-radius: 4px; transition: background .4s var(--ease); }
+.paper.read li { background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+.paper.shot .flash { animation: flash .5s ease-out; }
+@keyframes flash { 0% { opacity: .9; } 100% { opacity: 0; } }
+
+.snap-row { display: flex; justify-content: center; margin-top: var(--s5); }
+.chip { display: inline-flex; align-items: center; gap: var(--s2); font: inherit; font-weight: 600;
+        color: var(--accent); background: var(--surface); border: 0; border-radius: 999px;
+        padding: var(--s2) var(--s5); min-height: 44px; cursor: pointer;
+        transition: transform .15s var(--ease), background .15s var(--ease); }
+.chip:active { transform: scale(.95); }
+.chip:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.chip.hint { background: var(--accent); color: var(--on-accent); animation: hint 1.6s var(--ease) infinite; }
+@keyframes hint { 50% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 22%, transparent); } }
+
+.opts { border: 0; margin: 0 0 var(--s4); padding: 0; display: grid; gap: var(--s1); }
+.opt { display: flex; align-items: center; gap: var(--s3); min-height: 44px; cursor: pointer; font-weight: 600; }
+.opt input { width: 22px; height: 22px; accent-color: var(--accent); flex: none; margin: 0; }
+.opt small { display: block; font-weight: 400; color: var(--muted); font-size: .8rem; }
+.found { font-weight: 700; margin: 0 0 var(--s3); min-height: 1.5em; }
+
+.notes { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s2); max-height: 340px; overflow-y: auto; }
+.notes .empty { color: var(--muted); background: var(--bg); border-radius: var(--r-inner); padding: var(--s4); }
+.note { display: grid; gap: 2px; background: var(--bg); border-radius: var(--r-inner); padding: var(--s3) var(--s4); font-size: .9rem; }
+.note-when { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.note span:last-child { color: var(--muted); }
+.demo-note { margin-top: var(--s3); }
+
+@media (prefers-reduced-motion: reduce) {
+  .chip.hint, .paper.shot .flash { animation: none; }
+  .paper { transform: none; }
+}
+@media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } }

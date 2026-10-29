@@ -1,0 +1,188 @@
+{
+  "title": "Kita-Planer: Kita-Kalender fotografieren, ganzen Monat samt Erinnerungen haben",
+  "description": "Fotografiere den Monatsplan aus Kita oder Kindergarten. Alle Termine landen im Kalender, und am Vorabend erinnert dich die App ans Packen. Gratis.",
+  "hero": {
+    "headline": "Foto vom Elternbrief.\nErinnerung am Vorabend.",
+    "lead": "Fotografiere den Monatsplan, den die Kita mitgibt. Kita-Planer liest Datum, Uhrzeit und Namen jedes Termins und trägt alles auf einmal ein. Am Abend vor dem Ausflug, um 20 Uhr, kommt die Erinnerung: Brotdose nicht vergessen.",
+    "cta": "Kostenlos im App Store laden",
+    "note": "Alle Funktionen sind kostenlos. Deine Fotos bleiben auf deinem iPhone."
+  },
+  "demo": {
+    "title": "Fotografiere einen Elternbrief",
+    "lead": "Hier ist ein Beispielbrief mit den Terminen für nächsten Monat. Fotografiere ihn, und wie in der App werden Termine und Mitbringliste herausgelesen und Erinnerungen zu den gewählten Zeiten geplant.",
+    "noticeTitle": "Sonnenblumengruppe · Termine im {month}",
+    "child": "Emma",
+    "events": [
+      {
+        "day": 5,
+        "title": "Herbstsportfest",
+        "items": "Brotdose, Turnschuhe"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Puppentheater",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Plätzchen backen",
+        "items": "Schürze"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Geburtstagsfeier",
+        "items": ""
+      }
+    ],
+    "snap": "Foto aufnehmen",
+    "again": "Noch mal",
+    "empty": "Mach das Foto, dann siehst du hier die geplanten Erinnerungen.",
+    "found": "{e} Termine, {n} Erinnerungen geplant",
+    "options": [
+      "Am Vorabend (zum Packen)",
+      "Am Morgen",
+      "1 Stunde vorher",
+      "Zur Terminzeit"
+    ],
+    "timedOnly": "Gilt nur für Termine mit Uhrzeit",
+    "bodies": [
+      "Morgen ist es so weit. Bereite alles rechtzeitig vor.",
+      "Heute ist es so weit.",
+      "Beginnt in 1 Stunde.",
+      "Es geht jetzt los."
+    ],
+    "note": "Hier mit einem Beispielbrief. In der App wird der Text auf deinem echten Foto direkt auf dem Gerät gelesen. Die Erinnerungszeiten folgen denselben Regeln wie in der App."
+  },
+  "problem": {
+    "title": "Überträgst du den Elternbrief noch von Hand in den Kalender?",
+    "text": "Fünf, sechs Termine im Monat, und jedes Mal muss etwas anderes mit: Brotdose, Sportsachen, Schürze. Der Plan am Kühlschrank ist auf dem Weg zur Arbeit nicht zu sehen, und einfallen tut es einem immer am Morgen selbst. Kita-Planer macht aus dem Zettel Kalendertermine und Erinnerungen."
+  },
+  "features": [
+    {
+      "title": "Ein Foto, ein ganzer Monat",
+      "text": "Monatsraster, Elternbrief oder einzelner Aushang: fotografieren oder aus der Mediathek wählen, und Datum, Uhrzeit und Terminname werden ausgelesen. Du kannst auch eine Nachricht der Kita einfügen. Wörter wie „morgen“ oder „diesen Freitag“ werden zu echten Daten.\nVor dem Sichern korrigierst du Titel, Datum oder Mitbringliste direkt und wischst Überflüssiges weg. Hinterlegst du die Gruppe deines Kindes, fallen Termine nur für andere Gruppen automatisch raus.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Am Vorabend wird gepackt",
+      "text": "Wähle zwischen 20 Uhr am Vorabend, 7:30 Uhr am Morgen, 1 Stunde vorher oder genau zur Terminzeit. Die Mitbringliste steht in der Erinnerung, damit der Rucksack vollständig ist.\nMit dem Apple Kalender landen die Termine in einem Kalender mit dem Namen deines Kindes, und nichts wird doppelt eingetragen.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Für mehrere Kinder und die ganze Familie",
+      "text": "Jedes Kind bekommt eine eigene Farbe. Du siehst alle zusammen oder jedes einzeln, und anhand früherer Termine errät die App, zu wem ein neuer Elternbrief gehört.\nSchick einen Einladungslink, und Partner, Großeltern oder Babysitter sehen und bearbeiten dieselben Termine. Ein Widget auf dem Home-Bildschirm zeigt, was als Nächstes ansteht.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten startklar",
+    "items": [
+      {
+        "title": "Kind anlegen",
+        "text": "Name und Gruppe eintragen. Ein Profilfoto kannst du jederzeit ergänzen."
+      },
+      {
+        "title": "Elternbrief fotografieren",
+        "text": "Gerade von vorn und gut scharf, dann klappt das Lesen am besten."
+      },
+      {
+        "title": "Prüfen und sichern",
+        "text": "Mitteilungen erlauben, und die Erinnerungen kommen zur gewählten Zeit."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Wann die Erinnerungen kommen",
+    "rows": [
+      [
+        "20:00 Uhr am Vorabend",
+        "Zum Packen. Standardmäßig an"
+      ],
+      [
+        "7:30 Uhr am Morgen",
+        "Was heute ansteht. Standardmäßig an"
+      ],
+      [
+        "1 Stunde vorher",
+        "Nur bei Terminen mit Uhrzeit"
+      ],
+      [
+        "Zur Terminzeit",
+        "Nur bei Terminen mit Uhrzeit"
+      ]
+    ],
+    "note": "Ganztägige Termine wie ein Ausflug bekommen nur die Erinnerung am Vorabend und am Morgen. In den Einstellungen kannst du jede jederzeit ein- und ausschalten."
+  },
+  "pricing": {
+    "title": "Alle Funktionen sind kostenlos",
+    "free": {
+      "name": "Kostenlos",
+      "items": [
+        "Termine aus Fotos und Nachrichten lesen",
+        "Vor dem Sichern korrigieren, andere Gruppen herausfiltern",
+        "Erinnerungen am Vorabend, am Morgen, 1 Stunde vorher und pünktlich",
+        "Eine Farbe pro Kind und ein gemeinsamer Kalender",
+        "Abgleich mit dem Apple Kalender",
+        "Mit der Familie teilen per Einladungslink",
+        "Widget für den Home-Bildschirm"
+      ]
+    },
+    "pro": {
+      "name": "Den Entwickler unterstützen",
+      "items": [
+        "In den Einstellungen kannst du ein kleines Trinkgeld in beliebiger Höhe geben",
+        "Trinkgeld schaltet nichts frei. Die App funktioniert so oder so gleich"
+      ]
+    },
+    "note": "Keine Werbung, kein Abo."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Welche Fotos funktionieren?",
+        "a": "Monatspläne im Raster, Elternbriefe als Fließtext und einzelne Aushänge oder Flyer. Gerade von vorn und mit scharfer Schrift wird am besten gelesen. Du kannst auch mehrere Fotos auf einmal auswählen und scannen."
+      },
+      {
+        "q": "Ein paar Termine fehlen oder ein Titel hat einen Tippfehler.",
+        "a": "Handschrift oder blasse Schrift ist manchmal schwer zu lesen. Korrigiere Titel, Datum oder Mitbringliste direkt in der Liste oder wisch Überflüssiges weg. Fehlende Termine trägst du im Tab „Scannen“ mit „Termin manuell hinzufügen“ ein und sicherst erneut."
+      },
+      {
+        "q": "Ich bekomme keine Erinnerungen.",
+        "a": "Prüfe unter Einstellungen > Mitteilungen > Kita-Planer, ob Mitteilungen erlaubt sind. In den Einstellungen der App (⚙️) wählst du außerdem, welche Erinnerungen du bekommen möchtest."
+      },
+      {
+        "q": "Es tauchen Termine anderer Gruppen auf.",
+        "a": "Trag in den Einstellungen den Gruppennamen deines Kindes ein, dann werden Termine nur für andere Gruppen herausgefiltert. Wechselt die Gruppe im neuen Kita-Jahr, änderst du es nur dort."
+      },
+      {
+        "q": "Ich habe mehrere Kinder.",
+        "a": "In den Einstellungen legst du beliebig viele Kinder an, jeweils mit Profilfoto. Wähl beim Scannen, für wen die Termine sind: Im Kalender hat jedes Kind seine Farbe, und du wechselst zwischen Gesamtansicht und Filter pro Kind."
+      },
+      {
+        "q": "Wie teile ich die Termine mit meinem Partner?",
+        "a": "Tippe in den Einstellungen unter „Termine teilen“ auf „Personen einladen“ und schick den Link per Nachricht. Die eingeladene Person sieht und bearbeitet alle Kinder und Termine, und Änderungen von beiden Seiten erscheinen sofort überall. Das hat nichts mit der Apple Familienfreigabe zu tun."
+      },
+      {
+        "q": "Gibt es andere Wege zum Teilen?",
+        "a": "Über die Teilen-Taste im Tab „Kalender“ verschickst du eine Kita-Planer-Datei, eine Kalenderdatei (.ics) oder eine Textübersicht. Mit „Auch zum Apple Kalender hinzufügen“ entsteht ein Kalender mit dem Namen deines Kindes; teilst du ihn in der Kalender-App über iCloud, ist auch die Familie auf dem Laufenden."
+      },
+      {
+        "q": "Werden meine Fotos oder Termine irgendwohin geschickt?",
+        "a": "Nein. Der Text auf deinen Fotos wird komplett auf dem Gerät gelesen, und die Daten bleiben nur dort. Termine gehen nur dann über deine iCloud, wenn du jemanden über „Termine teilen“ einlädst, und nur an diese Personen."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Fang mit dem Elternbrief\ndieses Monats an",
+    "cta": "Kostenlos im App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Probleme oder Wünsche? Schreib an {email}. Wir antworten meist innerhalb von 2 bis 3 Tagen. Gerätemodell und iOS-Version helfen uns weiter."
+  }
+}

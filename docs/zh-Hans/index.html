@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>宝贝日程 — 拍一张照片，幼儿园日程全搞定</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宝贝日程：拍一张幼儿园日程表，整月安排和带物提醒全搞定</title>
+  <meta name="description" content="拍下幼儿园、托儿所发的月度日程表或家园通知，整月日程自动进日历，前一天晚上提醒你准备要带的东西。所有功能免费。">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="宝贝日程：拍一张幼儿园日程表，整月安排和带物提醒全搞定">
+  <meta property="og:description" content="拍下幼儿园、托儿所发的月度日程表或家园通知，整月日程自动进日历，前一天晚上提醒你准备要带的东西。所有功能免费。">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/zh-Hans/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>宝贝日程</h1>
-<p class="muted">拍下幼儿园、托儿所的月历或通知，<br>整月日程一次性加入日历、提醒和小组件。</p>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hans/"><img src="../icon.png" alt="" width="32" height="32">宝贝日程</a>
+    <a class="lang-link" href="#languages">语言</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 一张照片，整月日程</b><span>月历、家长通知、活动传单，各种格式都能自动识别</span></div>
-  <div class="card"><b>🔔 物品准备提醒</b><span>前一天晚上和当天早上提醒，附上要带的物品备注</span></div>
-  <div class="card"><b>👧👦 多孩家庭也好用</b><span>每个孩子有专属头像和颜色，可合并查看，也可按孩子筛选</span></div>
-  <div class="card"><b>👨‍👩‍👧 邀请一起查看</b><span>一个邀请链接，与另一半、爷爷奶奶共享日程，任何一方修改都会实时同步</span></div>
-  <div class="card"><b>🧩 主屏幕小组件</b><span>即将到来的日程，在主屏幕上一眼看到</span></div>
-  <div class="card"><b>🔒 隐私优先</b><span>照片只在手机本地识别，绝不上传到开发者服务器</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>通知拍一下就好<br>要带的东西前晚提醒</h1>
+        <p class="lead">把幼儿园发的月度日程表拍下来，宝贝日程会读出日期、时间和活动名称，一次性放进日历。春游前一晚 8 点，它会提醒你别忘了准备便当。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">在 App Store 免费下载</a><a class="try" href="#try">拍一张通知试试 ↓</a></div>
+        <p class="muted small">所有功能免费。照片不会离开你的手机。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/01-scan.jpg" alt="通知拍一下就好 要带的东西前晚提醒" width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">帮助与联系</a> ·
-  <a href="privacy.html">隐私政策</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <b>简体中文</b> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>拍一张通知试试</h2>
+      <p class="muted">这是一份下个月活动通知的示例。拍下后，它会像 App 一样提取日程和要带的物品，并按你选的时间预约提醒。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;拍一张通知试试&quot;, &quot;lead&quot;: &quot;这是一份下个月活动通知的示例。拍下后，它会像 App 一样提取日程和要带的物品，并按你选的时间预约提醒。&quot;, &quot;noticeTitle&quot;: &quot;向日葵班 {month}活动安排&quot;, &quot;child&quot;: &quot;朵朵&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;秋季运动会&quot;, &quot;items&quot;: &quot;便当、运动鞋&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;观看木偶剧&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;包饺子体验&quot;, &quot;items&quot;: &quot;围裙&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;集体生日会&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;拍照&quot;, &quot;again&quot;: &quot;再来一次&quot;, &quot;empty&quot;: &quot;拍照后，这里会显示将要预约的提醒。&quot;, &quot;found&quot;: &quot;{e} 个日程，已预约 {n} 条提醒&quot;, &quot;options&quot;: [&quot;前一天晚上（准备物品）&quot;, &quot;当天早上&quot;, &quot;1 小时前&quot;, &quot;日程开始时&quot;], &quot;timedOnly&quot;: &quot;仅适用于设定了时间的日程&quot;, &quot;bodies&quot;: [&quot;明天有日程，请提前准备好需带物品。&quot;, &quot;今天有日程。&quot;, &quot;1 小时后开始。&quot;, &quot;现在开始。&quot;], &quot;note&quot;: &quot;这里用的是示例通知。在 App 里，照片中的文字都在手机本机识别。提醒时间与 App 的规则相同。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>还在把通知上的日程抄进日历吗？</h2>
+      <p>一个月五六个活动，每次要带的东西都不一样：便当、运动服、围裙。贴在冰箱上的日程表，上班路上看不到，想起来往往已是当天早上。宝贝日程把那一张纸变成日历和提醒。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>一张照片，一整个月</h2>
+        <p>月历、家园通知、单张活动通知，不管什么样子，拍照或从相册选取，就能读出日期、时间和活动名称。也可以直接粘贴老师发来的消息，“明天”“这周五”这样的说法也会换算成具体日期。<br>保存前可以直接修改标题、日期和需带物品，不需要的日程左滑删掉即可。填好孩子的班级，其他班专属的活动会自动过滤掉。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/02-events.jpg" alt="一张照片，一整个月" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>要带的东西，前一晚提醒你</h2>
+        <p>提醒时间可选前一天晚上 8 点、当天早上 7:30、1 小时前或准点。需带物品会显示在提醒里，书包不会再漏装。<br>打开“同时添加到‘日历’App”，日程会进入以孩子名字命名的专属日历，已经加过的日程不会重复添加。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/04-reminders.jpg" alt="要带的东西，前一晚提醒你" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>几个孩子也好，全家一起也好</h2>
+        <p>每个孩子用不同颜色区分，可以一起看，也可以单独看。它还会参考以往记录，猜出新通知是哪个孩子的。<br>发送邀请链接，伴侣、爷爷奶奶或阿姨都能查看和修改同一份日程。主屏幕小组件随时显示接下来的安排。</p>
+      </div>
+      <div class="phone"><img src="../img/zh-Hans/03-calendar.jpg" alt="几个孩子也好，全家一起也好" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三步就能开始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>添加孩子</h3><p>填写名字和班级，头像照片想加再加。</p></li>
+<li class="card"><span class="n">2</span><h3>拍下通知</h3><p>正对着拍，让字迹清晰，识别会更准。</p></li>
+<li class="card"><span class="n">3</span><h3>确认并保存</h3><p>允许通知后，就会在你选的时间提醒带东西。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>提醒什么时候来</h2>
+      <div class="card table">
+        <dl><div><dt>前一天晚上 20:00</dt><dd>准备要带的东西，默认开启</dd></div><div><dt>当天早上 7:30</dt><dd>今日日程提醒，默认开启</dd></div><div><dt>1 小时前</dt><dd>仅限设定了时间的日程</dd></div><div><dt>日程开始时</dt><dd>仅限设定了时间的日程</dd></div></dl>
+      </div>
+      <p class="muted">春游、外出参观这类全天日程，只会收到前一晚和当天早上的提醒。可随时在设置中开关。</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>所有功能都免费</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>免费</h3>
+          <ul><li>从照片和消息中读取日程</li><li>保存前修改，过滤其他班级的日程</li><li>前一晚、当天早上、1 小时前和准点提醒</li><li>按孩子分色，合并日历</li><li>与“日历”App 同步</li><li>通过邀请链接和家人共享</li><li>主屏幕小组件</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>支持开发者</h3>
+          <ul><li>可以在设置中随心送上一点小费</li><li>小费不会解锁任何功能，不送也一样用</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">没有广告，也没有订阅。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>常见问题</h2>
+      <div class="faq"><details><summary>可以拍哪些照片？</summary><p>月历（表格式）、文字形式的家园通知，以及单张活动通知或传单都可以。正对着拍、让字迹清晰，识别会更准确；也可以一次选多张照片批量扫描。</p></details>
+<details><summary>漏了几个日程，或者标题有错字。</summary><p>手写或模糊的字可能较难识别。可以在提取出的列表里直接修改标题、日期和需带物品，不需要的日程左滑删除。漏掉的日程，请在“扫描”标签页用“手动添加日程”补上，再重新保存。</p></details>
+<details><summary>收不到提醒。</summary><p>请在“设置”&gt;“通知”&gt;“宝贝日程”中确认已允许通知。在 App 的设置（⚙️）里还可以选择接收哪些时间的提醒。</p></details>
+<details><summary>其他班的活动也被加进来了。</summary><p>请在设置中填写孩子的班级名称，通知里其他班专属的活动会被自动过滤。升班换了班级，只需改这里。</p></details>
+<details><summary>我有好几个孩子。</summary><p>可以在设置中添加多个孩子并设置头像。扫描时选择是谁的日程，日历里就会按孩子分色显示，还能在合并视图和单个孩子之间切换。</p></details>
+<details><summary>想和伴侣一起看日程。</summary><p>在设置的“日程共享”中点“邀请他人一起查看”，用信息发送邀请链接。对方也能查看和修改所有孩子的日程，任何一方修改都会立刻同步到双方。这与 Apple 的家人共享无关。</p></details>
+<details><summary>还有其他共享方式吗？</summary><p>用“日历”标签页的共享按钮，可以发送宝贝日程文件、日历文件（.ics）或文字摘要。打开“同时添加到‘日历’App”后会生成以孩子名字命名的日历，在“日历”App 里把它通过 iCloud 共享，家人也能同步看到。</p></details>
+<details><summary>照片或日程会被发送到别处吗？</summary><p>不会。照片里的文字全部在手机本机识别，数据也只存在手机上。只有在用“日程共享”邀请了别人时，日程才会经由你的 iCloud 共享给被邀请的人。</p></details></div>
+      <p class="contact">遇到问题或想要新功能，请发邮件至 <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>。我们通常会在 2 到 3 天内回复。附上设备型号和 iOS 版本会更有帮助。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>从这个月的通知<br>开始拍吧</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">在 App Store 免费下载</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="语言"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隐私政策</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

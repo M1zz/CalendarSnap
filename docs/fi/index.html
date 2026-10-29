@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lapsen aikataulu — päiväkodin kuukausi yhdestä kuvasta</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lapsen aikataulu: kuva päiväkodin kuukausitiedotteesta, koko kuukausi valmiina</title>
+  <meta name="description" content="Kuvaa päiväkodin kuukausikalenteri tai tiedote. Koko kuukausi siirtyy kalenteriin, ja edellisenä iltana muistutus pakkaamisesta. Ilmainen.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lapsen aikataulu: kuva päiväkodin kuukausitiedotteesta, koko kuukausi valmiina">
+  <meta property="og:description" content="Kuvaa päiväkodin kuukausikalenteri tai tiedote. Koko kuukausi siirtyy kalenteriin, ja edellisenä iltana muistutus pakkaamisesta. Ilmainen.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Lapsen aikataulu</h1>
-<p class="muted">Ota kuva päiväkodin tai esikoulun kuukausikalenterista tai tiedotteesta,<br>niin koko kuukausi siirtyy kerralla kalenteriin, muistutuksiin ja widgetiin.</p>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">Lapsen aikataulu</a>
+    <a class="lang-link" href="#languages">Kieli</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Yksi kuva → koko kuukausi</b><span>Kuukausikalenteri, vanhempainkirje tai ilmoitus — sovellus tunnistaa ne kaikki automaattisesti</span></div>
-  <div class="card"><b>🔔 Muistutus mukaan otettavista</b><span>Edellisenä iltana ja samana aamuna, mukana muistiinpano siitä, mitä pitää pakata</span></div>
-  <div class="card"><b>👧👦 Usealle lapselle</b><span>Jokaiselle lapselle oma profiili ja väri, yhteinen kalenteri ja suodattimet</span></div>
-  <div class="card"><b>👨‍👩‍👧 Kutsu katsomaan yhdessä</b><span>Jaa aikataulu puolisolle ja isovanhemmille yhdellä kutsulinkillä — kummankin tekemät muutokset synkronoituvat heti</span></div>
-  <div class="card"><b>🧩 Widget kotivalikkoon</b><span>Tulevat tapahtumat suoraan kotivalikossa</span></div>
-  <div class="card"><b>🔒 Yksityisyys ensin</b><span>Kuvat analysoidaan vain laitteella — mitään ei lähetetä kehittäjän palvelimelle</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Kuvaa vain tiedote.<br>Muistutamme illalla.</h1>
+        <p class="lead">Ota kuva päiväkodista saamastasi kuukausikalenterista. Lapsen aikataulu lukee päivämäärät, kellonajat ja tapahtumien nimet ja lisää ne kerralla. Retkeä edeltävänä iltana kello 20 tulee muistutus: muista eväät.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Lataa ilmaiseksi App Storesta</a><a class="try" href="#try">Kuvaa tiedote ↓</a></div>
+        <p class="muted small">Kaikki ominaisuudet ovat ilmaisia. Kuvat eivät lähde iPhonestasi.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/01-scan.jpg" alt="Kuvaa vain tiedote. Muistutamme illalla." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Tuki ja yhteydenotot</a> ·
-  <a href="privacy.html">Tietosuojaseloste</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <b>Suomi</b> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Kuvaa tiedote</h2>
+      <p class="muted">Tässä on esimerkkitiedote ensi kuun tapahtumista. Ota kuva, niin sovelluksen tapaan siitä poimitaan tapahtumat ja mukaan otettavat tavarat, ja muistutukset ajastetaan valitsemiisi aikoihin.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Kuvaa tiedote&quot;, &quot;lead&quot;: &quot;Tässä on esimerkkitiedote ensi kuun tapahtumista. Ota kuva, niin sovelluksen tapaan siitä poimitaan tapahtumat ja mukaan otettavat tavarat, ja muistutukset ajastetaan valitsemiisi aikoihin.&quot;, &quot;noticeTitle&quot;: &quot;Auringonkukat-ryhmä · Tapahtumat: {month}&quot;, &quot;child&quot;: &quot;Aino&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Syksyn liikuntapäivä&quot;, &quot;items&quot;: &quot;eväät, lenkkarit&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Nukketeatteri&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Leivontapäivä&quot;, &quot;items&quot;: &quot;esiliina&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Synttärijuhlat&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Ota kuva&quot;, &quot;again&quot;: &quot;Uudestaan&quot;, &quot;empty&quot;: &quot;Ota kuva, niin ajastetut muistutukset näkyvät tässä.&quot;, &quot;found&quot;: &quot;Tapahtumia {e}, muistutuksia ajastettu {n}&quot;, &quot;options&quot;: [&quot;Edellisenä iltana (pakkaamista varten)&quot;, &quot;Aamulla&quot;, &quot;1 tunti ennen&quot;, &quot;Tapahtuman alkaessa&quot;], &quot;timedOnly&quot;: &quot;Koskee vain tapahtumia, joilla on kellonaika&quot;, &quot;bodies&quot;: [&quot;Tapahtuma on huomenna. Valmistele tavarat hyvissä ajoin.&quot;, &quot;Tapahtuma on tänään.&quot;, &quot;Alkaa tunnin päästä.&quot;, &quot;Alkaa nyt.&quot;], &quot;note&quot;: &quot;Tässä käytetään esimerkkitiedotetta. Sovelluksessa oikean kuvasi teksti luetaan suoraan laitteella. Muistutusten ajat noudattavat samoja sääntöjä kuin sovelluksessa.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Kopioitko yhä päiväkodin tiedotteet käsin kalenteriin?</h2>
+      <p>Viisi, kuusi tapahtumaa kuussa, ja joka kerta mukaan tarvitaan jotain muuta: eväät, liikuntavaatteet, esiliina. Jääkaapin oven kalenteria ei näe työmatkalla, ja asia muistuu mieleen aina vasta samana aamuna. Lapsen aikataulu tekee siitä paperista kalenterimerkintöjä ja muistutuksia.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Yksi kuva, koko kuukausi</h2>
+        <p>Kuukausiruudukko, vanhempainkirje tai yksittäinen ilmoitus: ota kuva tai valitse se kuvakirjastosta, niin päivämäärät, kellonajat ja tapahtumien nimet luetaan puolestasi. Voit myös liittää viestin päiväkodista; sanat kuten ”huomenna” tai ”tänä perjantaina” muuttuvat oikeiksi päivämääriksi.<br>Ennen tallennusta korjaat otsikon, päivän tai tavaralistan saman tien ja pyyhkäiset turhat pois. Kun syötät lapsen ryhmän, vain muille ryhmille tarkoitetut tapahtumat karsitaan.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/02-events.jpg" alt="Yksi kuva, koko kuukausi" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Edellisenä iltana muistutus</h2>
+        <p>Valitse kello 20 edellisenä iltana, kello 7.30 samana aamuna, tunti ennen tai täsmälleen alkaessa. Mukaan otettavat näkyvät muistutuksessa, joten reppu tulee pakattua.<br>Applen Kalenterin kanssa tapahtumat menevät lapsen nimiseen kalenteriin, eikä mitään lisätä kahdesti.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/04-reminders.jpg" alt="Edellisenä iltana muistutus" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Useampi lapsi ja koko perhe</h2>
+        <p>Jokaisella lapsella on oma värinsä. Katso kaikkia yhdessä tai yksi kerrallaan; aiempien tapahtumien perusteella sovellus arvaa, kenen uusi tiedote on.<br>Lähetä kutsulinkki, niin puoliso, isovanhemmat tai lapsenvahti näkevät ja muokkaavat samoja tapahtumia. Koti-valikon widget näyttää, mitä on tulossa.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/03-calendar.jpg" alt="Useampi lapsi ja koko perhe" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Alkuun kolmessa vaiheessa</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Lisää lapsi</h3><p>Nimi ja ryhmä. Profiilikuvan voi lisätä milloin vain.</p></li>
+<li class="card"><span class="n">2</span><h3>Kuvaa tiedote</h3><p>Suoraan edestä ja tarkasti, niin teksti luetaan parhaiten.</p></li>
+<li class="card"><span class="n">3</span><h3>Tarkista ja tallenna</h3><p>Salli ilmoitukset, niin muistutukset tulevat valitsemaasi aikaan.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Milloin muistutukset tulevat</h2>
+      <div class="card table">
+        <dl><div><dt>Klo 20.00 edellisenä iltana</dt><dd>Pakkaamista varten. Päällä oletuksena</dd></div><div><dt>Klo 7.30 samana aamuna</dt><dd>Päivän ohjelma. Päällä oletuksena</dd></div><div><dt>1 tunti ennen</dt><dd>Vain tapahtumille, joilla on kellonaika</dd></div><div><dt>Tapahtuman alkaessa</dt><dd>Vain tapahtumille, joilla on kellonaika</dd></div></dl>
+      </div>
+      <p class="muted">Koko päivän tapahtumista, kuten retkistä, tulee vain edellisillan ja aamun muistutus. Voit kytkeä minkä tahansa päälle tai pois asetuksista milloin vain.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Kaikki ominaisuudet ovat ilmaisia</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Ilmainen</h3>
+          <ul><li>Tapahtumien luku kuvista ja viesteistä</li><li>Korjaus ennen tallennusta, muiden ryhmien suodatus</li><li>Muistutukset edellisenä iltana, aamulla, tuntia ennen ja ajallaan</li><li>Oma väri jokaiselle lapselle ja yhteinen kalenteri</li><li>Synkronointi Applen Kalenterin kanssa</li><li>Jakaminen perheelle kutsulinkillä</li><li>Koti-valikon widget</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Tue kehittäjää</h3>
+          <ul><li>Asetuksista voit antaa pienen tipin, juuri sen verran kuin haluat</li><li>Tippi ei avaa mitään. Sovellus toimii ilman sitä samoin</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Ei mainoksia, ei tilausta.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Millaiset kuvat toimivat?</summary><p>Ruudukkomuotoiset kuukausikalenterit, tekstinä kirjoitetut tiedotteet sekä yksittäiset ilmoitukset ja lehtiset. Suoraan edestä otettu kuva, jossa teksti on terävää, luetaan parhaiten. Voit myös valita useita kuvia ja skannata ne kerralla.</p></details>
+<details><summary>Pari tapahtumaa puuttuu tai otsikossa on kirjoitusvirhe.</summary><p>Käsialaa tai haaleaa tekstiä voi olla vaikea lukea. Korjaa otsikko, päivä tai tavaralista suoraan listassa, tai pyyhkäise turha pois. Puuttuvan tapahtuman lisäät Skannaa-välilehdellä kohdasta ”Lisää tapahtuma käsin” ja tallennat uudelleen.</p></details>
+<details><summary>Muistutuksia ei tule.</summary><p>Tarkista kohdasta Asetukset &gt; Ilmoitukset &gt; Lapsen aikataulu, että ilmoitukset on sallittu. Sovelluksen asetuksissa (⚙️) voit myös valita, mitkä muistutukset haluat.</p></details>
+<details><summary>Mukaan tulee muiden ryhmien tapahtumia.</summary><p>Kirjoita asetuksiin lapsen ryhmän nimi, niin vain muille ryhmille tarkoitetut tapahtumat suodatetaan pois. Jos ryhmä vaihtuu uutena toimintavuonna, muutat sen vain siellä.</p></details>
+<details><summary>Minulla on useampi lapsi.</summary><p>Asetuksissa voit lisätä niin monta lasta kuin haluat, jokaiselle profiilikuvan. Valitse skannatessa, kenen tapahtumista on kyse: kalenterissa jokaisella lapsella on oma värinsä, ja voit vaihtaa yhteisnäkymän ja lapsikohtaisen suodattimen välillä.</p></details>
+<details><summary>Miten jaan aikataulun puolisoni kanssa?</summary><p>Avaa asetuksista ”Tapahtumien jakaminen”, napauta ”Kutsu mukaan” ja lähetä linkki viestillä. Kutsuttu näkee ja muokkaa kaikkia lapsia ja tapahtumia, ja kummankin muutokset näkyvät heti molemmilla. Tällä ei ole tekemistä Applen Perhejaon kanssa.</p></details>
+<details><summary>Voiko jakaa muillakin tavoilla?</summary><p>Kalenteri-välilehden jakopainikkeella lähetät Lapsen aikataulu -tiedoston, kalenteritiedoston (.ics) tai tekstiyhteenvedon. Kun ”Lisää myös Applen Kalenteriin” on päällä, syntyy lapsen niminen kalenteri; jaa se iCloudin kautta Kalenteri-apissa, niin perhe pysyy ajan tasalla.</p></details>
+<details><summary>Lähetetäänkö kuviani tai tapahtumiani jonnekin?</summary><p>Ei. Kuvien teksti luetaan kokonaan laitteella, ja tiedot tallennetaan vain sinne. Tapahtumat kulkevat iCloudisi kautta vain, jos kutsut jonkun ”Tapahtumien jakaminen” -toiminnolla, ja vain kutsutuille.</p></details></div>
+      <p class="contact">Ongelmia tai toiveita? Kirjoita osoitteeseen <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Vastaamme yleensä 2–3 päivän kuluessa. Laitemalli ja iOS-versio auttavat meitä.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Aloita tämän kuun<br>tiedotteesta</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Lataa ilmaiseksi App Storesta</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Kieli"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

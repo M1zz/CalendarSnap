@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Plan Malucha – plan z przedszkola w jednym zdjęciu</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan Malucha: zrób zdjęcie planu z przedszkola i masz cały miesiąc</title>
+  <meta name="description" content="Sfotografuj miesięczny plan ze żłobka lub przedszkola. Cały miesiąc trafia do kalendarza, a dzień wcześniej wieczorem przypomnienie, co spakować.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plan Malucha: zrób zdjęcie planu z przedszkola i masz cały miesiąc">
+  <meta property="og:description" content="Sfotografuj miesięczny plan ze żłobka lub przedszkola. Cały miesiąc trafia do kalendarza, a dzień wcześniej wieczorem przypomnienie, co spakować.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/pl/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/pl/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Plan Malucha</h1>
-<p class="muted">Zrób zdjęcie kalendarza lub ogłoszenia ze żłobka czy przedszkola,<br>a cały miesiąc od razu trafi do kalendarza, przypomnień i widżetu.</p>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="bar">
+    <a class="brand" href="../pl/"><img src="../icon.png" alt="" width="32" height="32">Plan Malucha</a>
+    <a class="lang-link" href="#languages">Język</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Jedno zdjęcie → cały miesiąc</b><span>Kalendarz miesięczny, list do rodziców czy pojedyncze ogłoszenie – wszystko rozpoznawane automatycznie</span></div>
-  <div class="card"><b>🔔 Przypomnienia, co zabrać</b><span>Wieczorem dzień wcześniej i rano tego dnia, razem z notatką, co spakować</span></div>
-  <div class="card"><b>👧👦 Kilkoro dzieci</b><span>Osobny profil i kolor dla każdego dziecka, wspólny kalendarz z filtrem</span></div>
-  <div class="card"><b>👨‍👩‍👧 Zaproś do wspólnego przeglądania</b><span>Jeden link z zaproszeniem i plan widzą też partner czy dziadkowie – zmiany z obu stron synchronizują się na bieżąco</span></div>
-  <div class="card"><b>🧩 Widżet na ekranie początkowym</b><span>Najbliższe wydarzenia od razu na ekranie początkowym</span></div>
-  <div class="card"><b>🔒 Prywatność przede wszystkim</b><span>Zdjęcia są analizowane tylko na urządzeniu – nic nie trafia na serwery twórcy aplikacji</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Wystarczy zdjęcie.<br>O pakowaniu przypomnimy.</h1>
+        <p class="lead">Zrób zdjęcie miesięcznego planu, który dostajesz w przedszkolu. Plan Malucha odczyta daty, godziny i nazwy wydarzeń i doda je wszystkie naraz. Wieczorem przed wycieczką, o 20:00, przyjdzie przypomnienie: nie zapomnij o drugim śniadaniu.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Pobierz za darmo z App Store</a><a class="try" href="#try">Zrób zdjęcie ogłoszenia ↓</a></div>
+        <p class="muted small">Wszystkie funkcje są bezpłatne. Zdjęcia nie opuszczają Twojego iPhone'a.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/01-scan.jpg" alt="Wystarczy zdjęcie. O pakowaniu przypomnimy." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Pomoc i kontakt</a> ·
-  <a href="privacy.html">Polityka prywatności</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <b>Polski</b> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Zrób zdjęcie ogłoszenia</h2>
+      <p class="muted">Oto przykładowe ogłoszenie z wydarzeniami na przyszły miesiąc. Zrób zdjęcie, a tak jak w aplikacji wyciągnięte zostaną wydarzenia i lista rzeczy, a przypomnienia zaplanują się na wybrane godziny.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Zrób zdjęcie ogłoszenia&quot;, &quot;lead&quot;: &quot;Oto przykładowe ogłoszenie z wydarzeniami na przyszły miesiąc. Zrób zdjęcie, a tak jak w aplikacji wyciągnięte zostaną wydarzenia i lista rzeczy, a przypomnienia zaplanują się na wybrane godziny.&quot;, &quot;noticeTitle&quot;: &quot;Grupa Słoneczniki · Plan na {month}&quot;, &quot;child&quot;: &quot;Zosia&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Jesienny dzień sportu&quot;, &quot;items&quot;: &quot;drugie śniadanie, trampki&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Teatrzyk kukiełkowy&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Pieczenie pierników&quot;, &quot;items&quot;: &quot;fartuszek&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Urodziny w grupie&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Zrób zdjęcie&quot;, &quot;again&quot;: &quot;Jeszcze raz&quot;, &quot;empty&quot;: &quot;Zrób zdjęcie, a tutaj pojawią się zaplanowane przypomnienia.&quot;, &quot;found&quot;: &quot;Wydarzenia: {e}, zaplanowane przypomnienia: {n}&quot;, &quot;options&quot;: [&quot;Wieczorem dzień wcześniej (na spakowanie rzeczy)&quot;, &quot;Rano tego dnia&quot;, &quot;Godzinę wcześniej&quot;, &quot;O godzinie wydarzenia&quot;], &quot;timedOnly&quot;: &quot;Dotyczy tylko wydarzeń z określoną godziną&quot;, &quot;bodies&quot;: [&quot;To już jutro. Przygotuj rzeczy z wyprzedzeniem.&quot;, &quot;To dziś.&quot;, &quot;Zaczyna się za godzinę.&quot;, &quot;Zaczyna się teraz.&quot;], &quot;note&quot;: &quot;Tu używamy przykładowego ogłoszenia. W aplikacji tekst z Twojego prawdziwego zdjęcia jest odczytywany bezpośrednio na urządzeniu. Godziny przypomnień działają według tych samych zasad co w aplikacji.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Wciąż przepisujesz ogłoszenia z przedszkola do kalendarza?</h2>
+      <p>Pięć, sześć wydarzeń w miesiącu, a za każdym razem trzeba zabrać coś innego: drugie śniadanie, strój na WF, fartuszek. Planu na lodówce nie widać w drodze do pracy, a przypominasz sobie zawsze tego samego ranka. Plan Malucha zamienia tę kartkę w wydarzenia w kalendarzu i przypomnienia.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Jedno zdjęcie, cały miesiąc</h2>
+        <p>Miesięczna tabela, list do rodziców czy pojedyncze ogłoszenie: zrób zdjęcie albo wybierz je z biblioteki, a daty, godziny i nazwy wydarzeń zostaną odczytane za Ciebie. Możesz też wkleić wiadomość od wychowawczyni; słowa jak „jutro” czy „w ten piątek” zamienią się w prawdziwe daty.<br>Przed zapisaniem od razu poprawisz tytuł, datę lub listę rzeczy, a zbędne przesuniesz, by usunąć. Wpisz grupę dziecka, a wydarzenia tylko dla innych grup odpadną same.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/02-events.jpg" alt="Jedno zdjęcie, cały miesiąc" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Wieczorem przypomnienie</h2>
+        <p>Wybierz 20:00 dzień wcześniej, 7:30 rano tego dnia, godzinę przed lub dokładnie o czasie. Lista rzeczy pojawia się w przypomnieniu, więc plecak będzie spakowany.<br>Z Kalendarzem Apple wydarzenia trafiają do kalendarza z imieniem dziecka i nic nie dodaje się dwa razy.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/04-reminders.jpg" alt="Wieczorem przypomnienie" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kilkoro dzieci i cała rodzina</h2>
+        <p>Każde dziecko ma swój kolor. Oglądaj wszystkie razem albo po kolei; na podstawie wcześniejszych wydarzeń aplikacja zgadnie, czyje jest nowe ogłoszenie.<br>Wyślij link z zaproszeniem, a partner, dziadkowie czy niania zobaczą i będą mogli edytować te same wydarzenia. Widżet na ekranie początkowym pokazuje, co nadchodzi.</p>
+      </div>
+      <div class="phone"><img src="../img/pl/03-calendar.jpg" alt="Kilkoro dzieci i cała rodzina" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Start w trzech krokach</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Dodaj dziecko</h3><p>Imię i grupa. Zdjęcie profilowe kiedy zechcesz.</p></li>
+<li class="card"><span class="n">2</span><h3>Sfotografuj ogłoszenie</h3><p>Prosto z przodu i z wyraźnym tekstem odczyt jest najlepszy.</p></li>
+<li class="card"><span class="n">3</span><h3>Sprawdź i zapisz</h3><p>Zezwól na powiadomienia, a przypomnienia przyjdą o wybranej porze.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kiedy przychodzą przypomnienia</h2>
+      <div class="card table">
+        <dl><div><dt>20:00 dzień wcześniej</dt><dd>Na pakowanie. Domyślnie włączone</dd></div><div><dt>7:30 rano tego dnia</dt><dd>Co dziś. Domyślnie włączone</dd></div><div><dt>Godzinę wcześniej</dt><dd>Tylko dla wydarzeń z godziną</dd></div><div><dt>O godzinie wydarzenia</dt><dd>Tylko dla wydarzeń z godziną</dd></div></dl>
+      </div>
+      <p class="muted">Wydarzenia całodniowe, takie jak wycieczka, mają tylko przypomnienie wieczorem dzień wcześniej i rano. Każde możesz w dowolnej chwili włączyć lub wyłączyć w ustawieniach.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Wszystkie funkcje są bezpłatne</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Za darmo</h3>
+          <ul><li>Odczyt wydarzeń ze zdjęć i wiadomości</li><li>Poprawki przed zapisaniem, filtr innych grup</li><li>Przypomnienia wieczorem, rano, godzinę przed i o czasie</li><li>Kolor dla każdego dziecka i wspólny kalendarz</li><li>Synchronizacja z Kalendarzem Apple</li><li>Udostępnianie rodzinie przez link</li><li>Widżet na ekranie początkowym</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Wesprzyj twórcę</h3>
+          <ul><li>W ustawieniach możesz zostawić drobny napiwek w dowolnej kwocie</li><li>Napiwek niczego nie odblokowuje. Aplikacja działa tak samo</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Bez reklam i bez subskrypcji.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Częste pytania</h2>
+      <div class="faq"><details><summary>Jakie zdjęcia działają?</summary><p>Miesięczne plany w tabeli, ogłoszenia pisane tekstem oraz pojedyncze kartki i ulotki. Zdjęcie zrobione prosto z przodu, z wyraźnym tekstem, odczytuje się najlepiej. Możesz też wybrać kilka zdjęć i zeskanować je naraz.</p></details>
+<details><summary>Brakuje kilku wydarzeń albo w tytule jest literówka.</summary><p>Pismo odręczne lub blady druk bywają trudne do odczytania. Popraw tytuł, datę lub listę rzeczy bezpośrednio na liście albo przesuń, by usunąć zbędne. Brakujące wydarzenie dodasz przez „Dodaj wydarzenie ręcznie” na karcie Skanuj, a potem zapiszesz ponownie.</p></details>
+<details><summary>Nie dostaję przypomnień.</summary><p>Sprawdź w Ustawienia &gt; Powiadomienia &gt; Plan Malucha, czy powiadomienia są dozwolone. W ustawieniach aplikacji (⚙️) wybierzesz też, które przypomnienia chcesz dostawać.</p></details>
+<details><summary>Pojawiają się wydarzenia innych grup.</summary><p>Wpisz w ustawieniach nazwę grupy dziecka, a wydarzenia tylko dla innych grup zostaną odfiltrowane. Gdy w nowym roku zmieni się grupa, wystarczy poprawić ją tam.</p></details>
+<details><summary>Mam więcej niż jedno dziecko.</summary><p>W ustawieniach dodasz dowolną liczbę dzieci, każde ze zdjęciem profilowym. Przy skanowaniu wybierz, czyje to wydarzenia: w kalendarzu każde dziecko ma swój kolor, a widok wspólny możesz przełączać na filtr dla jednego dziecka.</p></details>
+<details><summary>Jak udostępnić plan partnerowi?</summary><p>W ustawieniach, w sekcji „Udostępnianie wydarzeń”, stuknij „Zaproś do udostępniania” i wyślij link wiadomością. Zaproszona osoba widzi i edytuje wszystkie dzieci i wydarzenia, a zmiany z obu stron od razu pojawiają się u obojga. Nie ma to związku z Chmurą rodzinną Apple.</p></details>
+<details><summary>Czy można udostępniać inaczej?</summary><p>Przyciskiem udostępniania na karcie Kalendarz wyślesz plik Planu Malucha, plik kalendarza (.ics) lub podsumowanie tekstowe. Po włączeniu „Dodawaj też do Kalendarza Apple” powstaje kalendarz z imieniem dziecka; udostępnij go przez iCloud w aplikacji Kalendarz, a rodzina też będzie na bieżąco.</p></details>
+<details><summary>Czy moje zdjęcia lub wydarzenia są gdzieś wysyłane?</summary><p>Nie. Tekst ze zdjęć jest odczytywany w całości na urządzeniu, a dane zostają tylko na nim. Wydarzenia przechodzą przez Twój iCloud wyłącznie wtedy, gdy kogoś zaprosisz przez „Udostępnianie wydarzeń”, i tylko do zaproszonych osób.</p></details></div>
+      <p class="contact">Coś nie działa albo czegoś brakuje? Napisz na <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Zwykle odpowiadamy w ciągu 2–3 dni. Model urządzenia i wersja iOS bardzo pomogą.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Zacznij od ogłoszenia<br>na ten miesiąc</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Pobierz za darmo z App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Język"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl" aria-current="page">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Polityka prywatności</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

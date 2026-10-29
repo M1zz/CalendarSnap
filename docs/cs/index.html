@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rozvrh školky — program ze školky z jedné fotky</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rozvrh školky: vyfoťte plán ze školky a máte celý měsíc i připomenutí</title>
+  <meta name="description" content="Vyfoťte měsíční plán nebo oznámení z jeslí či školky. Celý měsíc se uloží do kalendáře a večer předem vám appka připomene, co nachystat. Zdarma.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rozvrh školky: vyfoťte plán ze školky a máte celý měsíc i připomenutí">
+  <meta property="og:description" content="Vyfoťte měsíční plán nebo oznámení z jeslí či školky. Celý měsíc se uloží do kalendáře a večer předem vám appka připomene, co nachystat. Zdarma.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Rozvrh školky</h1>
-<p class="muted">Vyfoťte kalendář nebo oznámení ze školky či jeslí<br>a celý měsíc máte rázem v kalendáři, v připomínkách i ve widgetu.</p>
+  <a class="skip" href="#main">Přejít na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">Rozvrh školky</a>
+    <a class="lang-link" href="#languages">Jazyk</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Jedna fotka → celý měsíc</b><span>Měsíční kalendář, dopis pro rodiče i oznámení na nástěnce — rozpozná jakoukoli podobu</span></div>
-  <div class="card"><b>🔔 Připomínky, co s sebou</b><span>Večer předem i ráno v den akce, včetně poznámky, co dítěti přibalit</span></div>
-  <div class="card"><b>👧👦 Pro více dětí</b><span>Vlastní profil a barva pro každé dítě, společný kalendář a filtry</span></div>
-  <div class="card"><b>👨‍👩‍👧 Pozvat ke společnému prohlížení</b><span>Jedním odkazem sdílíte program s partnerem i prarodiči — úpravy z obou stran se okamžitě synchronizují</span></div>
-  <div class="card"><b>🧩 Widget na plochu</b><span>Nejbližší akce rovnou na ploše telefonu</span></div>
-  <div class="card"><b>🔒 Soukromí na prvním místě</b><span>Fotky se zpracují jen v zařízení — nic se neposílá na server vývojáře</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Stačí vyfotit.<br>Na batůžek připomeneme.</h1>
+        <p class="lead">Vyfoťte měsíční plán, který dostanete ve školce. Rozvrh školky přečte data, časy a názvy akcí a uloží je všechny najednou. Večer před výletem ve 20:00 přijde připomenutí: nezapomeňte svačinu.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Stáhnout zdarma v App Storu</a><a class="try" href="#try">Vyfoťte oznámení ↓</a></div>
+        <p class="muted small">Všechny funkce jsou zdarma. Fotky z vašeho iPhonu nikam neodcházejí.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/01-scan.jpg" alt="Stačí vyfotit. Na batůžek připomeneme." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Podpora a kontakt</a> ·
-  <a href="privacy.html">Ochrana osobních údajů</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <a href="../ru/index.html" hreflang="ru" lang="ru" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Русский</a> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <b>Čeština</b> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Vyfoťte oznámení</h2>
+      <p class="muted">Tady je ukázkové oznámení s akcemi na příští měsíc. Vyfoťte ho a stejně jako v aplikaci se z něj vytáhnou akce a věci s sebou a připomenutí se naplánují na časy, které si vyberete.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Vyfoťte oznámení&quot;, &quot;lead&quot;: &quot;Tady je ukázkové oznámení s akcemi na příští měsíc. Vyfoťte ho a stejně jako v aplikaci se z něj vytáhnou akce a věci s sebou a připomenutí se naplánují na časy, které si vyberete.&quot;, &quot;noticeTitle&quot;: &quot;Třída Slunečnice · Program na {month}&quot;, &quot;child&quot;: &quot;Eliška&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Podzimní sportovní den&quot;, &quot;items&quot;: &quot;svačina, tenisky&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Loutkové divadlo&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Pečení perníčků&quot;, &quot;items&quot;: &quot;zástěra&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Oslava narozenin&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Vyfotit&quot;, &quot;again&quot;: &quot;Znovu&quot;, &quot;empty&quot;: &quot;Po vyfocení se tu ukážou naplánovaná připomenutí.&quot;, &quot;found&quot;: &quot;Akce: {e}, naplánovaná připomenutí: {n}&quot;, &quot;options&quot;: [&quot;Večer předem (na přípravu věcí)&quot;, &quot;Ráno téhož dne&quot;, &quot;1 hodinu předem&quot;, &quot;V čas události&quot;], &quot;timedOnly&quot;: &quot;Platí jen pro události s určeným časem&quot;, &quot;bodies&quot;: [&quot;Je to zítra. Připravte si věci s předstihem.&quot;, &quot;Je to dnes.&quot;, &quot;Začíná za 1 hodinu.&quot;, &quot;Právě začíná.&quot;], &quot;note&quot;: &quot;Tady je použito ukázkové oznámení. V aplikaci se text z vaší skutečné fotky čte přímo v zařízení. Časy připomenutí se řídí stejnými pravidly jako v aplikaci.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Pořád přepisujete oznámení ze školky do kalendáře?</h2>
+      <p>Pět, šest akcí za měsíc a pokaždé je potřeba něco jiného: svačina, cvičební úbor, zástěra. Plán na lednici cestou do práce nevidíte a vzpomenete si vždycky až to ráno. Rozvrh školky z toho papíru udělá události v kalendáři a připomenutí.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Jedna fotka, celý měsíc</h2>
+        <p>Měsíční tabulka, dopis rodičům nebo jednotlivý leták: vyfoťte ho nebo vyberte z knihovny a data, časy i názvy akcí se přečtou za vás. Vložit můžete i zprávu od učitelky, slova jako „zítra“ nebo „tento pátek“ se změní na skutečná data.<br>Před uložením rovnou opravíte název, datum nebo věci s sebou a co nepotřebujete, odsunete. Zadejte třídu dítěte a akce jen pro jiné třídy se vyřadí samy.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/02-events.jpg" alt="Jedna fotka, celý měsíc" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Večer předem připomenutí</h2>
+        <p>Vyberte si 20:00 večer předem, 7:30 ráno téhož dne, 1 hodinu předem nebo přesně v čas akce. Věci s sebou se ukážou přímo v připomenutí, takže batůžek bude sbalený.<br>S kalendářem Apple se akce uloží do kalendáře se jménem dítěte a nikdy se nepřidají dvakrát.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/04-reminders.jpg" alt="Večer předem připomenutí" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Víc dětí i celá rodina</h2>
+        <p>Každé dítě má svou barvu. Zobrazte všechny najednou nebo každé zvlášť; podle dřívějších akcí aplikace odhadne, komu nové oznámení patří.<br>Pošlete odkaz s pozvánkou a partner, prarodiče nebo chůva uvidí a upraví stejné akce. Widget na ploše ukáže, co se blíží.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/03-calendar.jpg" alt="Víc dětí i celá rodina" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Začnete ve třech krocích</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Přidejte dítě</h3><p>Jméno a třída. Profilovou fotku kdykoli později.</p></li>
+<li class="card"><span class="n">2</span><h3>Vyfoťte oznámení</h3><p>Zpříma a s ostrým textem se čte nejlépe.</p></li>
+<li class="card"><span class="n">3</span><h3>Zkontrolujte a uložte</h3><p>Povolte oznámení a připomenutí přijdou ve zvolený čas.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kdy přicházejí připomenutí</h2>
+      <div class="card table">
+        <dl><div><dt>20:00 večer předem</dt><dd>Na přípravu věcí. Zapnuto od začátku</dd></div><div><dt>7:30 ráno téhož dne</dt><dd>Co je dnes. Zapnuto od začátku</dd></div><div><dt>1 hodinu předem</dt><dd>Jen u akcí s určeným časem</dd></div><div><dt>V čas události</dt><dd>Jen u akcí s určeným časem</dd></div></dl>
+      </div>
+      <p class="muted">Celodenní akce, třeba výlet, mají jen připomenutí večer předem a ráno. Každé můžete kdykoli zapnout nebo vypnout v nastavení.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Všechny funkce jsou zdarma</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Zdarma</h3>
+          <ul><li>Čtení akcí z fotek a zpráv</li><li>Úpravy před uložením, filtr jiných tříd</li><li>Připomenutí večer předem, ráno, hodinu předem i načas</li><li>Barva pro každé dítě a společný kalendář</li><li>Synchronizace s kalendářem Apple</li><li>Sdílení s rodinou přes odkaz</li><li>Widget na ploše</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Podpořit vývojáře</h3>
+          <ul><li>V nastavení můžete poslat malé spropitné v libovolné výši</li><li>Spropitné nic neodemyká. Aplikace funguje stejně i bez něj</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Žádné reklamy, žádné předplatné.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Časté otázky</h2>
+      <div class="faq"><details><summary>Jaké fotky se dají použít?</summary><p>Měsíční plány v tabulce, oznámení psaná souvislým textem a jednotlivé letáky. Fotka pořízená zpříma s ostrým textem se čte lépe. Můžete také vybrat několik fotek a naskenovat je najednou.</p></details>
+<details><summary>Pár akcí chybí nebo je v názvu překlep.</summary><p>Ručně psaný nebo bledý text se čte hůř. Název, datum nebo věci s sebou opravte přímo v seznamu a nepotřebné odsuňte. Chybějící akci přidejte přes „Přidat událost ručně“ na kartě Skenovat a uložte znovu.</p></details>
+<details><summary>Nechodí mi připomenutí.</summary><p>Zkontrolujte v Nastavení &gt; Oznámení &gt; Rozvrh školky, že jsou oznámení povolená. V nastavení aplikace (⚙️) si také vyberete, která připomenutí chcete dostávat.</p></details>
+<details><summary>Objevují se akce jiných tříd.</summary><p>Zadejte v nastavení název třídy dítěte a akce jen pro jiné třídy se vyřadí. Když se v novém školním roce třída změní, stačí ji upravit tam.</p></details>
+<details><summary>Mám víc dětí.</summary><p>V nastavení přidáte libovolný počet dětí, každé s profilovou fotkou. Při skenování vyberte, čí akce to jsou: v kalendáři má každé dítě svou barvu a můžete přepínat mezi společným pohledem a filtrem podle dítěte.</p></details>
+<details><summary>Jak sdílet program s partnerem?</summary><p>V nastavení v části „Sdílení událostí“ klepněte na „Pozvat ke sdílení“ a pošlete odkaz zprávou. Pozvaný uvidí a upraví všechny děti i akce a změny z kterékoli strany se hned projeví u obou. Se Sdílením v rodině od Applu to nesouvisí.</p></details>
+<details><summary>Dá se sdílet i jinak?</summary><p>Tlačítkem sdílení na kartě Kalendář pošlete soubor Rozvrhu školky, soubor kalendáře (.ics) nebo textový souhrn. Se zapnutým „Přidávat také do kalendáře Apple“ vznikne kalendář se jménem dítěte; když ho v aplikaci Kalendář nasdílíte přes iCloud, bude mít přehled i rodina.</p></details>
+<details><summary>Posílají se moje fotky nebo akce někam?</summary><p>Ne. Text z fotek se čte celý v zařízení a data zůstávají jen v něm. Akce jdou přes váš iCloud jen tehdy, když někoho pozvete přes „Sdílení událostí“, a jen k pozvaným lidem.</p></details></div>
+      <p class="contact">Něco nefunguje nebo vám chybí funkce? Napište na <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Obvykle odpovídáme do 2–3 dnů. Model zařízení a verze iOS nám pomohou.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Začněte oznámením<br>na tento měsíc</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Stáhnout zdarma v App Storu</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Jazyk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany soukromí</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

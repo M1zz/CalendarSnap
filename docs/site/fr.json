@@ -1,0 +1,188 @@
+{
+  "title": "Agenda Bambin : photographiez le planning de la crèche, tout le mois est rangé",
+  "description": "Photographiez le planning mensuel de la crèche ou de l’école. Tout le mois arrive dans votre calendrier, avec un rappel la veille au soir. Gratuit.",
+  "hero": {
+    "headline": "Une photo du mot.\nUn rappel la veille.",
+    "lead": "Photographiez le planning du mois remis par la crèche. Agenda Bambin lit les dates, les heures et le nom de chaque activité, et les ajoute d’un coup. La veille de la sortie, à 20 h, un rappel vous dit de préparer le pique-nique.",
+    "cta": "Télécharger gratuitement sur l’App Store",
+    "note": "Tout est gratuit. Vos photos restent sur votre iPhone."
+  },
+  "demo": {
+    "title": "Prenez un mot en photo",
+    "lead": "Voici un exemple de mot annonçant les activités du mois prochain. Prenez-le en photo : comme dans l’app, les activités et les affaires à prévoir en sont tirées, puis les rappels sont programmés aux moments choisis.",
+    "noticeTitle": "Section des Tournesols · Au programme en {month}",
+    "child": "Léa",
+    "events": [
+      {
+        "day": 5,
+        "title": "Fête du sport",
+        "items": "pique-nique, baskets"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Spectacle de marionnettes",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Atelier pâtisserie",
+        "items": "tablier"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Fête des anniversaires",
+        "items": ""
+      }
+    ],
+    "snap": "Prendre une photo",
+    "again": "Recommencer",
+    "empty": "Prenez la photo pour voir ici les rappels programmés.",
+    "found": "{e} activités, {n} rappels programmés",
+    "options": [
+      "La veille au soir (pour préparer les affaires)",
+      "Le matin même",
+      "1 heure avant",
+      "À l’heure de l’événement"
+    ],
+    "timedOnly": "S’applique uniquement aux événements avec une heure",
+    "bodies": [
+      "C’est demain. Préparez les affaires à l’avance.",
+      "C’est aujourd’hui.",
+      "Commence dans 1 heure.",
+      "Ça commence maintenant."
+    ],
+    "note": "Exemple fictif. Dans l’app, le texte de votre vraie photo est lu directement sur l’appareil. Les rappels suivent les mêmes règles que l’app."
+  },
+  "problem": {
+    "title": "Vous recopiez encore le mot de la crèche dans votre agenda ?",
+    "text": "Cinq ou six activités par mois, et à chaque fois quelque chose de différent à prévoir : pique-nique, tenue de sport, tablier. Le planning aimanté sur le frigo, on ne le voit pas sur le trajet du travail, et on y repense toujours le matin même. Agenda Bambin transforme cette feuille en événements et en rappels."
+  },
+  "features": [
+    {
+      "title": "Une photo, tout le mois",
+      "text": "Grille mensuelle, mot aux parents ou affichette : prenez une photo ou choisissez-la dans la photothèque, et les dates, heures et noms des activités sont lus pour vous. Vous pouvez aussi coller un message de la crèche ; « demain » ou « ce vendredi » deviennent de vraies dates.\nAvant d’enregistrer, corrigez le titre, la date ou les affaires à prévoir, et balayez ce qui ne sert pas. Indiquez la section de votre enfant, et les activités réservées aux autres sections sont écartées.",
+      "shot": "02-events"
+    },
+    {
+      "title": "La veille au soir, un rappel",
+      "text": "Choisissez 20 h la veille, 7 h 30 le matin même, 1 heure avant ou à l’heure pile. Les affaires à prévoir s’affichent dans le rappel : le sac est prêt à temps.\nAvec le Calendrier Apple, les événements vont dans un calendrier au nom de votre enfant, sans jamais être ajoutés deux fois.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Plusieurs enfants, toute la famille",
+      "text": "Chaque enfant a sa couleur. Affichez-les tous ensemble ou un par un ; l’app s’appuie sur l’historique pour deviner à qui est destiné un nouveau mot.\nEnvoyez un lien d’invitation : votre conjoint, les grands-parents ou la nounou voient et modifient les mêmes événements. Un widget sur l’écran d’accueil affiche ce qui arrive.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Trois étapes pour commencer",
+    "items": [
+      {
+        "title": "Ajoutez votre enfant",
+        "text": "Son prénom et sa section. La photo de profil, quand vous voulez."
+      },
+      {
+        "title": "Photographiez le mot",
+        "text": "Bien de face, texte net : la lecture n’en sera que meilleure."
+      },
+      {
+        "title": "Vérifiez et enregistrez",
+        "text": "Autorisez les notifications, et les rappels arrivent au moment choisi."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Quand arrivent les rappels",
+    "rows": [
+      [
+        "20 h la veille",
+        "Pour préparer les affaires. Activé par défaut"
+      ],
+      [
+        "7 h 30 le matin même",
+        "Le programme du jour. Activé par défaut"
+      ],
+      [
+        "1 heure avant",
+        "Seulement pour les activités avec une heure"
+      ],
+      [
+        "À l’heure de l’événement",
+        "Seulement pour les activités avec une heure"
+      ]
+    ],
+    "note": "Les activités sur toute la journée, comme une sortie, n’ont que le rappel de la veille et celui du matin. Activez-les ou désactivez-les à tout moment dans les réglages."
+  },
+  "pricing": {
+    "title": "Tout est gratuit",
+    "free": {
+      "name": "Gratuit",
+      "items": [
+        "Lecture des activités depuis des photos et des messages",
+        "Corrections avant d’enregistrer, filtre des autres sections",
+        "Rappels la veille, le matin, 1 heure avant et à l’heure",
+        "Une couleur par enfant et un calendrier commun",
+        "Synchronisation avec le Calendrier Apple",
+        "Partage en famille par lien d’invitation",
+        "Widget pour l’écran d’accueil"
+      ]
+    },
+    "pro": {
+      "name": "Soutenir le développeur",
+      "items": [
+        "Depuis les réglages, laissez un petit pourboire du montant de votre choix",
+        "Le pourboire ne débloque rien. L’app fonctionne pareil sans"
+      ]
+    },
+    "note": "Ni publicité ni abonnement."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Quelles photos fonctionnent ?",
+        "a": "Les plannings mensuels en grille, les mots aux parents rédigés en phrases et les affichettes ou prospectus. Une photo prise bien de face avec un texte net est mieux lue. Vous pouvez aussi sélectionner plusieurs photos à scanner d’un coup."
+      },
+      {
+        "q": "Il manque des activités ou un titre comporte une faute.",
+        "a": "L’écriture manuscrite ou un texte pâle peuvent être difficiles à lire. Corrigez le titre, la date ou les affaires directement dans la liste, ou balayez ce dont vous n’avez pas besoin. Pour une activité manquante, utilisez « Ajouter un événement manuellement » dans l’onglet Scanner, puis enregistrez à nouveau."
+      },
+      {
+        "q": "Je ne reçois pas de rappels.",
+        "a": "Vérifiez dans Réglages > Notifications > Agenda Bambin que les notifications sont autorisées. Dans les réglages de l’app (⚙️), choisissez aussi quels rappels vous voulez recevoir."
+      },
+      {
+        "q": "Des activités d’autres sections apparaissent.",
+        "a": "Indiquez la section de votre enfant dans les réglages : les activités réservées aux autres sections seront écartées. À la rentrée, si la section change, il suffit de la modifier là."
+      },
+      {
+        "q": "J’ai plusieurs enfants.",
+        "a": "Ajoutez autant d’enfants que vous voulez dans les réglages, chacun avec sa photo. Au moment du scan, choisissez pour qui sont les activités : chaque enfant a sa couleur dans le calendrier, avec une vue commune et un filtre par enfant."
+      },
+      {
+        "q": "Comment partager le planning avec mon conjoint ?",
+        "a": "Dans les réglages, sous « Partage des événements », touchez « Inviter des proches » et envoyez le lien par message. La personne invitée voit et modifie tous les enfants et événements, et les changements faits de part et d’autre apparaissent aussitôt des deux côtés. Rien à voir avec le Partage familial d’Apple."
+      },
+      {
+        "q": "Existe-t-il d’autres façons de partager ?",
+        "a": "Le bouton de partage de l’onglet Calendrier envoie un fichier Agenda Bambin, un fichier de calendrier (.ics) ou un résumé texte. Avec « Ajouter aussi au Calendrier Apple », un calendrier au nom de votre enfant est créé ; partagez-le via iCloud dans l’app Calendrier pour que la famille suive aussi."
+      },
+      {
+        "q": "Mes photos ou mes événements sont-ils envoyés quelque part ?",
+        "a": "Non. Le texte des photos est lu entièrement sur l’appareil, et les données y restent. Les événements ne passent par votre iCloud que si vous invitez quelqu’un via « Partage des événements », et uniquement vers les personnes invitées."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Commencez par le mot\nde ce mois-ci",
+    "cta": "Télécharger gratuitement sur l’App Store"
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "languages": "Langue",
+    "privacy": "Politique de confidentialité",
+    "contact": "Un souci ou une idée ? Écrivez à {email}. Nous répondons en général sous 2 à 3 jours. Pensez à préciser le modèle de votre appareil et la version d’iOS."
+  }
+}

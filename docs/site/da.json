@@ -1,0 +1,188 @@
+{
+  "title": "Børneskema: tag et billede af planen fra børnehaven og få hele måneden",
+  "description": "Tag et billede af månedsplanen fra vuggestuen eller børnehaven. Hele måneden kommer i kalenderen, og aftenen før får du besked om at pakke. Gratis.",
+  "hero": {
+    "headline": "Bare tag et billede.\nVi minder om madpakken.",
+    "lead": "Tag et billede af månedsplanen, du får med hjem fra børnehaven. Børneskema læser datoer, tidspunkter og navne på aktiviteterne og lægger dem ind på én gang. Aftenen før turen, kl. 20, kommer påmindelsen: husk madpakken.",
+    "cta": "Hent gratis i App Store",
+    "note": "Alle funktioner er gratis. Dine billeder forlader aldrig din iPhone."
+  },
+  "demo": {
+    "title": "Tag et billede af en besked",
+    "lead": "Her er en eksempelbesked med næste måneds aktiviteter. Tag et billede, og ligesom i appen trækkes aktiviteter og pakkeliste ud, og påmindelserne planlægges til de tidspunkter, du vælger.",
+    "noticeTitle": "Solsikkestuen · Aktiviteter i {month}",
+    "child": "Ida",
+    "events": [
+      {
+        "day": 5,
+        "title": "Idrætsdag",
+        "items": "madpakke, kondisko"
+      },
+      {
+        "day": 12,
+        "time": "10:00",
+        "title": "Dukketeater",
+        "items": ""
+      },
+      {
+        "day": 18,
+        "title": "Bagedag",
+        "items": "forklæde"
+      },
+      {
+        "day": 26,
+        "time": "15:00",
+        "title": "Fødselsdagsfest",
+        "items": ""
+      }
+    ],
+    "snap": "Tag billede",
+    "again": "Igen",
+    "empty": "Tag billedet, så ser du de planlagte påmindelser her.",
+    "found": "{e} aktiviteter, {n} påmindelser planlagt",
+    "options": [
+      "Aftenen før (så du kan pakke)",
+      "Om morgenen samme dag",
+      "1 time før",
+      "På tidspunktet"
+    ],
+    "timedOnly": "Gælder kun begivenheder med et fast tidspunkt",
+    "bodies": [
+      "Det er i morgen. Gør tingene klar i god tid.",
+      "Det er i dag.",
+      "Starter om 1 time.",
+      "Starter nu."
+    ],
+    "note": "Her bruger vi en eksempelbesked. I appen læses teksten på dit rigtige billede direkte på enheden. Påmindelserne følger de samme regler som i appen."
+  },
+  "problem": {
+    "title": "Skriver du stadig børnehavens beskeder ind i kalenderen i hånden?",
+    "text": "Fem-seks aktiviteter om måneden, og hver gang skal der noget forskelligt med: madpakke, idrætstøj, forklæde. Planen på køleskabet kan man ikke se på vej på arbejde, og man kommer altid først i tanke om det samme morgen. Børneskema gør det stykke papir til kalenderaftaler og påmindelser."
+  },
+  "features": [
+    {
+      "title": "Ét billede, hele måneden",
+      "text": "Månedsskema, forældrebrev eller enkelt opslag: tag et billede eller vælg et fra dit fotobibliotek, så læses datoer, tidspunkter og aktiviteter for dig. Du kan også indsætte en besked fra pædagogerne; ord som „i morgen“ og „på fredag“ bliver til rigtige datoer.\nInden du gemmer, retter du titel, dato eller pakkeliste med det samme og swiper det overflødige væk. Skriv dit barns stue ind, så sorteres aktiviteter kun for andre stuer fra.",
+      "shot": "02-events"
+    },
+    {
+      "title": "Aftenen før får du besked",
+      "text": "Vælg mellem kl. 20 aftenen før, kl. 7.30 samme morgen, 1 time før eller præcis til tiden. Pakkelisten står i påmindelsen, så tasken bliver pakket.\nMed Apple Kalender havner aftalerne i en kalender med dit barns navn, og intet kommer ind to gange.",
+      "shot": "04-reminders"
+    },
+    {
+      "title": "Flere børn og hele familien",
+      "text": "Hvert barn får sin egen farve. Se alle samlet eller ét ad gangen, og ud fra tidligere aftaler gætter appen, hvem en ny besked er til.\nSend et invitationslink, så kan din partner, bedsteforældre eller babysitteren se og redigere de samme aftaler. En widget på hjemmeskærmen viser, hvad der er på vej.",
+      "shot": "03-calendar"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang på tre trin",
+    "items": [
+      {
+        "title": "Tilføj dit barn",
+        "text": "Navn og stue. Profilbillede kan komme på, når du vil."
+      },
+      {
+        "title": "Tag billede af beskeden",
+        "text": "Lige forfra og med skarp tekst bliver den læst bedst."
+      },
+      {
+        "title": "Tjek og gem",
+        "text": "Tillad notifikationer, så kommer påmindelserne på det valgte tidspunkt."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Hvornår kommer påmindelserne",
+    "rows": [
+      [
+        "Kl. 20.00 aftenen før",
+        "Tid til at pakke. Slået til fra start"
+      ],
+      [
+        "Kl. 7.30 samme morgen",
+        "Dagens program. Slået til fra start"
+      ],
+      [
+        "1 time før",
+        "Kun ved aktiviteter med tidspunkt"
+      ],
+      [
+        "På tidspunktet",
+        "Kun ved aktiviteter med tidspunkt"
+      ]
+    ],
+    "note": "Heldagsaktiviteter som en udflugt får kun påmindelsen aftenen før og samme morgen. Du kan slå hver enkelt til og fra i indstillingerne når som helst."
+  },
+  "pricing": {
+    "title": "Alle funktioner er gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Aktiviteter læst fra billeder og beskeder",
+        "Ret inden du gemmer, frasorter andre stuer",
+        "Påmindelser aftenen før, om morgenen, 1 time før og til tiden",
+        "En farve pr. barn og en fælles kalender",
+        "Synkronisering med Apple Kalender",
+        "Deling med familien via link",
+        "Widget til hjemmeskærmen"
+      ]
+    },
+    "pro": {
+      "name": "Støt udvikleren",
+      "items": [
+        "I indstillingerne kan du give lidt drikkepenge, lige så meget du vil",
+        "Drikkepenge låser ikke noget op. Appen virker ens uden"
+      ]
+    },
+    "note": "Ingen reklamer, intet abonnement."
+  },
+  "faq": {
+    "title": "Ofte stillede spørgsmål",
+    "items": [
+      {
+        "q": "Hvilke billeder virker?",
+        "a": "Månedsplaner i skemaform, forældrebreve skrevet som tekst og enkelte opslag eller foldere. Et billede taget lige forfra med skarp tekst læses bedst. Du kan også vælge flere billeder og scanne dem på én gang."
+      },
+      {
+        "q": "Der mangler et par aktiviteter, eller en titel har en stavefejl.",
+        "a": "Håndskrift og svag tekst kan være svær at læse. Ret titel, dato eller pakkeliste direkte i listen, eller swipe det væk, du ikke skal bruge. En manglende aktivitet tilføjer du med „Tilføj begivenhed manuelt“ på fanen Scan og gemmer igen."
+      },
+      {
+        "q": "Jeg får ingen påmindelser.",
+        "a": "Tjek under Indstillinger > Notifikationer > Børneskema, at notifikationer er tilladt. I appens indstillinger (⚙️) vælger du også, hvilke påmindelser du vil have."
+      },
+      {
+        "q": "Der kommer aktiviteter med fra andre stuer.",
+        "a": "Skriv navnet på dit barns stue i indstillingerne, så sorteres aktiviteter kun for andre stuer fra. Skifter barnet stue, retter du det bare der."
+      },
+      {
+        "q": "Jeg har flere børn.",
+        "a": "I indstillingerne kan du tilføje så mange børn, du vil, hver med profilbillede. Vælg ved scanningen, hvem aktiviteterne er til: I kalenderen har hvert barn sin farve, og du kan skifte mellem samlet visning og filter pr. barn."
+      },
+      {
+        "q": "Hvordan deler jeg planen med min partner?",
+        "a": "Gå til „Deling af begivenheder“ i indstillingerne, tryk på „Inviter til deling“, og send linket i en besked. Den inviterede kan se og redigere alle børn og aftaler, og ændringer fra begge sider vises straks hos begge. Det har intet med Apples Familiedeling at gøre."
+      },
+      {
+        "q": "Kan man dele på andre måder?",
+        "a": "Med del-knappen på fanen Kalender sender du en Børneskema-fil, en kalenderfil (.ics) eller et tekstresumé. Med „Tilføj også til Apple Kalender“ oprettes en kalender med dit barns navn; deler du den via iCloud i Kalender-appen, er familien også med."
+      },
+      {
+        "q": "Bliver mine billeder eller aftaler sendt nogen steder hen?",
+        "a": "Nej. Teksten på billederne læses helt på enheden, og data bliver kun gemt der. Aftaler går kun via din iCloud, hvis du inviterer nogen gennem „Deling af begivenheder“, og kun til dem, du har inviteret."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Start med månedens\nbesked fra børnehaven",
+    "cta": "Hent gratis i App Store"
+  },
+  "ui": {
+    "skip": "Gå til indhold",
+    "languages": "Sprog",
+    "privacy": "Privatlivspolitik",
+    "contact": "Problemer eller ønsker? Skriv til {email}. Vi svarer som regel inden for 2–3 dage. Oplys gerne enhedsmodel og iOS-version."
+  }
+}

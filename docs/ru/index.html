@@ -1,85 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Расписание малыша — расписание садика по одному фото</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 20px 64px;
-    line-height: 1.7; color: #1c1c1e; background: #fff; text-align: center;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #1c1c1e; }
-    a.button { background: #0a84ff; }
-    .card { background: #2c2c2e; }
-    .muted { color: #98989f; }
-  }
-  .icon { font-size: 64px; }
-  h1 { font-size: 2rem; margin: 8px 0 4px; }
-  .muted { color: #6e6e73; }
-  .features {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px; margin: 32px 0; text-align: left;
-  }
-  .card { background: #f2f2f7; border-radius: 14px; padding: 16px 18px; }
-  .card b { display: block; margin-bottom: 4px; }
-  .card span { font-size: 0.9rem; }
-  .links { margin-top: 40px; }
-  .links a { margin: 0 12px; }
-</style>
-<!--HREFLANG-->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/CalendarSnap/en/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/en/">
-<style>.langs{margin-top:48px;font-size:.85rem;line-height:2;text-align:center}.langs a{margin:0 6px;white-space:nowrap}.langs b{margin:0 6px;white-space:nowrap}</style>
-<!--/HREFLANG-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Расписание малыша: сфотографируйте план из садика и получите весь месяц</title>
+  <meta name="description" content="Сфотографируйте план на месяц из детского сада. Все события попадут в календарь, а накануне вечером придёт напоминание, что собрать. Бесплатно.">
+  <meta name="theme-color" content="#0068D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789881830">
+  <link rel="canonical" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/CalendarSnap/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/CalendarSnap/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/CalendarSnap/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/CalendarSnap/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/CalendarSnap/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/CalendarSnap/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/CalendarSnap/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/CalendarSnap/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/CalendarSnap/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/CalendarSnap/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/CalendarSnap/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/CalendarSnap/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/CalendarSnap/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/CalendarSnap/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/CalendarSnap/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/CalendarSnap/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/CalendarSnap/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/CalendarSnap/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/CalendarSnap/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/CalendarSnap/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/CalendarSnap/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/CalendarSnap/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/CalendarSnap/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/CalendarSnap/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Расписание малыша: сфотографируйте план из садика и получите весь месяц">
+  <meta property="og:description" content="Сфотографируйте план на месяц из детского сада. Все события попадут в календарь, а накануне вечером придёт напоминание, что собрать. Бесплатно.">
+  <meta property="og:url" content="https://m1zz.github.io/CalendarSnap/ru/">
+  <meta property="og:image" content="https://m1zz.github.io/CalendarSnap/img/ru/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0068D9}@media (prefers-color-scheme:dark){:root{--accent:#0A84FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="icon">📅</div>
-<h1>Расписание малыша</h1>
-<p class="muted">Сфотографируйте календарь или объявление из детского сада —<br>и все события месяца сразу появятся в календаре, напоминаниях и виджете.</p>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <header class="bar">
+    <a class="brand" href="../ru/"><img src="../icon.png" alt="" width="32" height="32">Расписание малыша</a>
+    <a class="lang-link" href="#languages">Язык</a>
+  </header>
 
-<div class="features">
-  <div class="card"><b>📸 Одно фото — весь месяц</b><span>Календарь на месяц, письмо для родителей, объявление — любой формат распознаётся автоматически</span></div>
-  <div class="card"><b>🔔 Напоминания о сборах</b><span>Вечером накануне и утром в тот же день — вместе со списком того, что взять с собой</span></div>
-  <div class="card"><b>👧👦 Для нескольких детей</b><span>У каждого ребёнка свой профиль и цвет, общий календарь и фильтр по детям</span></div>
-  <div class="card"><b>👨‍👩‍👧 Пригласите и смотрите вместе</b><span>Одна ссылка-приглашение — и расписание видят супруг, бабушки и дедушки. Изменения с любой стороны синхронизируются мгновенно</span></div>
-  <div class="card"><b>🧩 Виджет на экране «Домой»</b><span>Ближайшие события видны прямо на экране «Домой»</span></div>
-  <div class="card"><b>🔒 Конфиденциальность прежде всего</b><span>Фото распознаются только на устройстве и никогда не отправляются на серверы разработчика</span></div>
-</div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Просто сфотографируйте.<br>Накануне напомним.</h1>
+        <p class="lead">Сфотографируйте план на месяц, который выдали в садике. Расписание малыша прочитает даты, время и названия событий и добавит всё разом. Вечером накануне экскурсии, в 20:00, придёт напоминание: не забудьте ланч-бокс.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789881830">Загрузить бесплатно в App Store</a><a class="try" href="#try">Сфотографируйте объявление ↓</a></div>
+        <p class="muted small">Все функции бесплатны. Фотографии не покидают ваш iPhone.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/01-scan.jpg" alt="Просто сфотографируйте. Накануне напомним." width="720" height="1564" decoding="async"></div>
+    </section>
 
-<div class="links">
-  <a href="support.html">Поддержка</a> ·
-  <a href="privacy.html">Политика конфиденциальности</a> ·
-  <a href="https://github.com/M1zz/CalendarSnap">GitHub</a>
-</div>
-<!--LANGNAV-->
-<nav class="langs"><a href="../index.html?lang=ko" hreflang="ko" lang="ko" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">한국어</a> · <a href="../en/index.html" hreflang="en" lang="en" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">English</a> · <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">简体中文</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">繁體中文</a> · <a href="../ja/index.html" hreflang="ja" lang="ja" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">日本語</a> · <b>Русский</b> · <a href="../es/index.html" hreflang="es" lang="es" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Español</a> · <a href="../de/index.html" hreflang="de" lang="de" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Deutsch</a> · <a href="../fr/index.html" hreflang="fr" lang="fr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Français</a> · <a href="../it/index.html" hreflang="it" lang="it" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Italiano</a> · <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Português (Brasil)</a> · <a href="../th/index.html" hreflang="th" lang="th" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">ไทย</a> · <a href="../vi/index.html" hreflang="vi" lang="vi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Tiếng Việt</a> · <a href="../cs/index.html" hreflang="cs" lang="cs" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Čeština</a> · <a href="../da/index.html" hreflang="da" lang="da" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Dansk</a> · <a href="../el/index.html" hreflang="el" lang="el" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Ελληνικά</a> · <a href="../fi/index.html" hreflang="fi" lang="fi" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Suomi</a> · <a href="../id/index.html" hreflang="id" lang="id" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Bahasa Indonesia</a> · <a href="../nb/index.html" hreflang="nb" lang="nb" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Norsk bokmål</a> · <a href="../nl/index.html" hreflang="nl" lang="nl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Nederlands</a> · <a href="../pl/index.html" hreflang="pl" lang="pl" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Polski</a> · <a href="../sv/index.html" hreflang="sv" lang="sv" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Svenska</a> · <a href="../tr/index.html" hreflang="tr" lang="tr" onclick="try{sessionStorage.setItem('langChosen','1')}catch(e){}">Türkçe</a></nav>
-<!--/LANGNAV-->
+
+    <section class="reveal" id="try">
+      <h2>Сфотографируйте объявление</h2>
+      <p class="muted">Вот пример объявления о событиях следующего месяца. Сфотографируйте его, и, как в приложении, из него будут извлечены события и список вещей, а напоминания запланируются на выбранное время.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Сфотографируйте объявление&quot;, &quot;lead&quot;: &quot;Вот пример объявления о событиях следующего месяца. Сфотографируйте его, и, как в приложении, из него будут извлечены события и список вещей, а напоминания запланируются на выбранное время.&quot;, &quot;noticeTitle&quot;: &quot;Группа «Подсолнухи» · План на {month}&quot;, &quot;child&quot;: &quot;Маша&quot;, &quot;events&quot;: [{&quot;day&quot;: 5, &quot;title&quot;: &quot;Осенние весёлые старты&quot;, &quot;items&quot;: &quot;ланч-бокс, кроссовки&quot;}, {&quot;day&quot;: 12, &quot;time&quot;: &quot;10:00&quot;, &quot;title&quot;: &quot;Кукольный театр&quot;, &quot;items&quot;: &quot;&quot;}, {&quot;day&quot;: 18, &quot;title&quot;: &quot;Мастер-класс по выпечке&quot;, &quot;items&quot;: &quot;фартук&quot;}, {&quot;day&quot;: 26, &quot;time&quot;: &quot;15:00&quot;, &quot;title&quot;: &quot;Праздник именинников&quot;, &quot;items&quot;: &quot;&quot;}], &quot;snap&quot;: &quot;Сфотографировать&quot;, &quot;again&quot;: &quot;Ещё раз&quot;, &quot;empty&quot;: &quot;Сделайте снимок, и здесь появятся запланированные напоминания.&quot;, &quot;found&quot;: &quot;Событий: {e}, напоминаний: {n}&quot;, &quot;options&quot;: [&quot;Накануне вечером (собрать вещи)&quot;, &quot;Утром в тот же день&quot;, &quot;За 1 час&quot;, &quot;В момент начала&quot;], &quot;timedOnly&quot;: &quot;Только для событий с указанным временем&quot;, &quot;bodies&quot;: [&quot;Событие завтра. Подготовьте всё заранее.&quot;, &quot;Событие сегодня.&quot;, &quot;Начнётся через час.&quot;, &quot;Начинается прямо сейчас.&quot;], &quot;note&quot;: &quot;Здесь использован пример объявления. В приложении текст на вашем настоящем фото распознаётся прямо на устройстве. Время напоминаний считается по тем же правилам, что и в приложении.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>До сих пор переписываете объявления из садика в календарь?</h2>
+      <p>Пять-шесть событий в месяц, и к каждому нужно что-то своё: ланч-бокс, спортивная форма, фартук. План на холодильнике по дороге на работу не видно, а вспоминаешь всегда в то же утро. Расписание малыша превращает этот листок в события календаря и напоминания.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Одно фото — весь месяц</h2>
+        <p>Календарь-сетка, объявление для родителей или отдельная листовка: сфотографируйте или выберите снимок из медиатеки, и даты, время и названия событий будут прочитаны за вас. Можно вставить и сообщение от воспитателя: «завтра» или «в эту пятницу» превратятся в настоящие даты.<br>Перед сохранением поправьте название, дату или список вещей, а лишнее смахните. Укажите группу ребёнка, и события только для других групп отсеются сами.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/02-events.jpg" alt="Одно фото — весь месяц" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Накануне вечером — напоминание</h2>
+        <p>Выберите 20:00 накануне, 7:30 утром в тот же день, за 1 час или точно ко времени. Список вещей показывается прямо в напоминании, так что рюкзак будет собран.<br>С календарём Apple события попадают в отдельный календарь с именем ребёнка и никогда не добавляются дважды.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/04-reminders.jpg" alt="Накануне вечером — напоминание" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Несколько детей и вся семья</h2>
+        <p>У каждого ребёнка свой цвет. Смотрите всех вместе или по одному; по прошлым событиям приложение угадает, чьё это новое объявление.<br>Отправьте ссылку-приглашение, и партнёр, бабушки с дедушками или няня смогут видеть и править те же события. Виджет на экране «Домой» покажет, что впереди.</p>
+      </div>
+      <div class="phone"><img src="../img/ru/03-calendar.jpg" alt="Несколько детей и вся семья" width="720" height="1564" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Начать — три шага</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Добавьте ребёнка</h3><p>Имя и группа. Фото профиля — когда захотите.</p></li>
+<li class="card"><span class="n">2</span><h3>Сфотографируйте объявление</h3><p>Ровно и чётко — так текст распознаётся лучше всего.</p></li>
+<li class="card"><span class="n">3</span><h3>Проверьте и сохраните</h3><p>Разрешите уведомления, и напоминания придут в выбранное время.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Когда приходят напоминания</h2>
+      <div class="card table">
+        <dl><div><dt>20:00 накануне</dt><dd>Собрать вещи. Включено по умолчанию</dd></div><div><dt>7:30 в тот же день</dt><dd>Что сегодня. Включено по умолчанию</dd></div><div><dt>За 1 час</dt><dd>Только для событий со временем</dd></div><div><dt>В момент начала</dt><dd>Только для событий со временем</dd></div></dl>
+      </div>
+      <p class="muted">Для событий на весь день, например экскурсии, приходят только напоминания накануне вечером и утром. Любое можно включить или выключить в настройках.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Все функции бесплатны</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Бесплатно</h3>
+          <ul><li>Распознавание событий с фото и из сообщений</li><li>Правка перед сохранением, фильтр чужих групп</li><li>Напоминания накануне, утром, за час и вовремя</li><li>Свой цвет для каждого ребёнка и общий календарь</li><li>Синхронизация с календарём Apple</li><li>Общий доступ для семьи по ссылке</li><li>Виджет на экране «Домой»</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Поддержать разработчика</h3>
+          <ul><li>В настройках можно оставить небольшие чаевые — сколько захотите</li><li>Чаевые ничего не открывают. Приложение работает так же и без них</li></ul>
+          
+        </div>
+      </div>
+      <p class="muted">Без рекламы и подписок.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Частые вопросы</h2>
+      <div class="faq"><details><summary>Какие фото подходят?</summary><p>Календари на месяц в виде сетки, объявления, написанные текстом, и отдельные листовки. Снимок, сделанный прямо и с чётким текстом, распознаётся лучше. Можно выбрать сразу несколько фото и отсканировать их вместе.</p></details>
+<details><summary>Пропало несколько событий или в названии опечатка.</summary><p>Рукописный или бледный текст распознаётся хуже. Поправьте название, дату или список вещей прямо в списке, а ненужное смахните. Пропущенное событие добавьте кнопкой «Добавить событие вручную» на вкладке «Скан» и сохраните ещё раз.</p></details>
+<details><summary>Не приходят напоминания.</summary><p>Проверьте в «Настройки» &gt; «Уведомления» &gt; «Расписание малыша», что уведомления разрешены. В настройках приложения (⚙️) можно выбрать, какие напоминания получать.</p></details>
+<details><summary>Попадают события других групп.</summary><p>Укажите в настройках название группы ребёнка, и события только для других групп будут отсеяны. Если в новом году группа сменится, достаточно поменять её там.</p></details>
+<details><summary>У меня несколько детей.</summary><p>В настройках можно добавить сколько угодно детей, каждому — фото профиля. При сканировании выберите, чьи это события: в календаре у каждого ребёнка свой цвет, есть общий вид и фильтр по ребёнку.</p></details>
+<details><summary>Как поделиться расписанием с супругом?</summary><p>В настройках, в разделе «Совместное расписание», нажмите «Пригласить» и отправьте ссылку сообщением. Приглашённый увидит и сможет править всех детей и события, а изменения с любой стороны сразу появятся у обоих. Это не связано с функцией «Семейный доступ» Apple.</p></details>
+<details><summary>Есть другие способы поделиться?</summary><p>Кнопка «Поделиться» на вкладке «Календарь» отправит файл Расписания малыша, файл календаря (.ics) или текстовую сводку. Если включить «Добавлять и в календарь Apple», появится календарь с именем ребёнка; откройте к нему доступ через iCloud в приложении «Календарь», и семья тоже будет в курсе.</p></details>
+<details><summary>Мои фото или события куда-то отправляются?</summary><p>Нет. Текст на фото распознаётся полностью на устройстве, и данные хранятся только там. События проходят через ваш iCloud, только если вы пригласили кого-то через «Совместное расписание», и только к приглашённым.</p></details></div>
+      <p class="contact">Что-то не работает или не хватает функции? Напишите на <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Обычно отвечаем за 2–3 дня. Укажите модель устройства и версию iOS — это поможет.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Начните с объявления<br>на этот месяц</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789881830">Загрузить бесплатно в App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Язык"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru" aria-current="page">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Политика конфиденциальности</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Kids Schedule</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>
