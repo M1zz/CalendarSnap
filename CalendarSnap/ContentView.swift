@@ -55,17 +55,32 @@ struct ContentView: View {
     @State private var otherClassEvents: [ScannedEvent] = []
     @State private var otherClassNames: Set<String> = []
     @State private var showClassCleanup = false
+    // 아이폰 듀오: 펴면 달력 탭이 오른쪽(세로면 위) 판으로 옮겨 간다 (LeeoKit Fold)
+    @Environment(\.foldLayout) private var fold
+    /// 펼치면서 달력 탭을 스캔 탭으로 돌렸다. 접으면 달력 탭으로 돌아간다.
+    @State private var foldMovedCalendar = false
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            scanTab
-                .tabItem { Label("스캔", systemImage: "camera.viewfinder") }
-                .tag(0)
+            // 펴면 왼쪽(세로면 아래) 스캔 | 오른쪽(위) 달력 — 찍고 저장한 일정이 바로 옆 달력에 선다.
+            // 접혀 있거나 보통 아이폰이면 스캔만 그린다(지금 화면 그대로). 두 쪽이 다 보이니 탭바는 숨긴다.
+            FoldSplitView {
+                scanTab
+            } result: {
+                calendarTab
+                    .environment(\.foldLayout, .single)
+            }
+            .toolbar(fold.isUnfolded ? .hidden : .automatic, for: .tabBar)
+            .tabItem { Label("스캔", systemImage: "camera.viewfinder") }
+            .tag(0)
 
             calendarTab
                 .tabItem { Label("달력", systemImage: "calendar") }
                 .tag(1)
         }
+        // 펼친 화면에는 달력 탭이 따로 서지 않는다 — 달력은 오른쪽 판에 있다.
+        .onChange(of: fold.isUnfolded, initial: true) { _, _ in foldRedirectTab() }
+        .onChange(of: selectedTab) { _, _ in foldRedirectTab() }
         #if DEBUG
         .onAppear { applyScreenshotDemo() }
         #endif
@@ -129,6 +144,7 @@ struct ContentView: View {
         // 올린 사진 크게 보기 (스와이프 + 핀치 줌)
         .fullScreenCover(isPresented: $showPhotoViewer) {
             PhotoViewerView(images: scannedImages, index: photoViewerIndex)
+                .foldConfined()
         }
         .sheet(isPresented: $showAddEvent) {
             AddEventView(children: registeredChildren,
@@ -271,6 +287,17 @@ struct ContentView: View {
     }
 
     // MARK: - 탭
+
+    /// 펼친 화면에서 달력 탭으로 가려 하면(저장 뒤 이동 포함) 스캔 탭에 남기고, 접으면 달력 탭으로 돌려 놓는다.
+    private func foldRedirectTab() {
+        if fold.isUnfolded, selectedTab == 1 {
+            foldMovedCalendar = true
+            selectedTab = 0
+        } else if !fold.isUnfolded, foldMovedCalendar {
+            foldMovedCalendar = false
+            selectedTab = 1
+        }
+    }
 
     private var scanTab: some View {
         NavigationStack {
@@ -918,13 +945,15 @@ struct PasteTextView: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button("취소") { dismiss() }
+                        Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                     }
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button("일정 추출") {
+                        Button {
                             let captured = text
                             dismiss()
                             onExtract(captured)
+                        } label: {
+                            Label("일정 추출", systemImage: "text.viewfinder")
                         }
                         .fontWeight(.semibold)
                         .disabled(isEmpty)

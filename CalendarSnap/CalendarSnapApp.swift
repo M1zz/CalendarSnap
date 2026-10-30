@@ -38,6 +38,8 @@ struct CalendarSnapApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                // 아이폰 듀오: 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
+                .foldAware()
                 // 사용량이 쌓이면 "즐겁게 쓰고 계신가요?" → 만족 시 리뷰 / 아쉬움 시 피드백
                 .leeoSatisfactionCheck(CalendarSnapSpec.self)
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다.

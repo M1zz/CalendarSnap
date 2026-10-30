@@ -68,10 +68,10 @@ struct AddEventView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("추가") {
+                    Button {
                         onSave(ScannedEvent(title: title.trimmingCharacters(in: .whitespaces),
                                             date: date,
                                             isAllDay: isAllDay,
@@ -79,6 +79,8 @@ struct AddEventView: View {
                                             childName: childName.trimmingCharacters(in: .whitespaces),
                                             rawText: String(localized: "직접 추가")))
                         dismiss()
+                    } label: {
+                        Label("추가", systemImage: "checkmark")
                     }
                     // 제목 필수 + 아이 미등록 상태면 아이 이름도 필수
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty

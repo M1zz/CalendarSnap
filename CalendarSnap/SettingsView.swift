@@ -111,7 +111,7 @@ struct SettingsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("완료") { dismiss() }
+                    Button { dismiss() } label: { Label("완료", systemImage: "checkmark") }
                 }
             }
             // 반 입력 팝업

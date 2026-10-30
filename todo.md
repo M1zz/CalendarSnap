@@ -1,5 +1,15 @@
 # CalendarSnap TODO
 
+## 아이폰 듀오 대응 (2026-10-30, 듀오 시뮬레이터 빌드 성공 · `-FoldPretend` 세로 화면 · 접힌 바깥 화면 확인 · 실기기 확인 안 함)
+- [x] 앱 루트에 `.foldAware()` (LeeoKit Fold) — 시트 · 알림창이 접힌 선을 비킨다
+- [x] 펴면 왼쪽(세로면 아래) 스캔 | 오른쪽(위) 달력. 찍고 저장한 일정이 바로 옆 달력에 선다 (`ContentView` 의 `FoldSplitView`)
+- [x] 펼친 화면은 두 쪽이 다 보이므로 탭바를 숨기고, 달력 탭으로 가려 하면(저장 뒤 이동 포함) 스캔에 남긴다. 접으면 달력 탭으로 돌려 놓는다 (`foldRedirectTab`)
+- [x] 사진 크게 보기(fullScreenCover)는 `.foldConfined()`
+- [x] 툴바 글자 버튼에 아이콘: 취소 · 추가 · 완료 · 일정 추출 (새 문자열 없음)
+- [ ] 오른쪽 판 달력과 달력 탭은 다른 뷰라, 펴고 접으면 달력에서 고른 날 · 보던 달이 오늘로 돌아간다
+- [ ] 가로로 편 화면 · 실기기 확인
+- 확인: `xcrun simctl create … iPhone-Duo` 에 설치하고 `-demoScreen events -FoldPretend` 로 실행, 바깥 화면은 `simctl io … screenshot --display=<바깥 화면 UUID>`
+
 ## 애플 캘린더 중복 등록
 - [x] 중복 판정 강화 (EventDuplicate): 같은 날 같은 제목(공백·기호 무시) 또는 같은 시각에 비슷한 제목이면 중복
 - [x] 캘린더에 이미 쌓인 중복 사본은 먼저 만든 것 하나만 남기고 정리 (반복 일정 제외)
