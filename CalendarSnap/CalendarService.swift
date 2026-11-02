@@ -54,11 +54,11 @@ enum CalendarService {
 
         // 아이별로 캘린더를 분리 (iCloud 캘린더 공유로 가족과 자동 동기화 가능).
         // 아이 미지정(공통) 일정은 별도 달력을 만들지 않고 모든 아이 달력에 넣음.
+        // 아이가 아예 없으면 공통 일정 그대로 기본 "어린이집" 달력에 넣는다.
+        // (예전에는 공통 일정을 먼저 꺼낸 뒤 아이가 없는지 봐서, 아이 없는 사용자의 일정이 하나도 안 들어갔다)
         var groups = Dictionary(grouping: events, by: \.childName)
-        if let common = groups.removeValue(forKey: ""), !groups.isEmpty {
+        if groups.count > 1, let common = groups.removeValue(forKey: "") {
             for key in groups.keys { groups[key, default: []] += common }
-        } else if let common = groups[""], groups.count == 1 {
-            groups = ["": common]   // 아이가 아예 없으면 기본 "어린이집" 달력 사용
         }
 
         // 아이 달력이 있는데 과거에 만들어진 기본 "어린이집" 달력이 남아 있으면 정리
