@@ -14,9 +14,12 @@ struct EventStore {
     }
 
     static func load() -> [ScannedEvent] {
-        guard let data = defaults?.data(forKey: key),
-              let events = try? JSONDecoder().decode([ScannedEvent].self, from: data)
-        else { return [] }
+        guard let data = defaults?.data(forKey: key) else { return [] }
+        guard let events = try? JSONDecoder().decode([ScannedEvent].self, from: data) else {
+            // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
+            defaults?.set(data, forKey: key + ".unreadable")
+            return []
+        }
         return events.sorted { $0.date < $1.date }
     }
 
