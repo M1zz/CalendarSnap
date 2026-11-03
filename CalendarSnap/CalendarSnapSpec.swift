@@ -35,6 +35,8 @@ enum CalendarSnapSpec: LeeoAppSpec {
 
     /// 완전 무료 — 기능을 여는 결제가 없다. 페이월/복원 의무도 없음.
     static let monetization = LeeoMonetization.free
+    /// 금고가 위젯과 함께 쓰는 공유 컨테이너도 백업한다.
+    static let appGroups = ["group.com.devkoan.calendarsnap"]
 
     /// 개발자 응원(팁). 소모성 세 가지, 작은 것부터. 기능을 열지 않는다 — 무료 앱이라 혼자 돈다(`startStandalone`).
     @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
