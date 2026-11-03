@@ -30,6 +30,8 @@ struct ContentView: View {
     @State private var settings: ReminderSettings = ReminderSettingsStore.load()
     @State private var isProcessing = false
     @State private var showCamera = false
+    /// Siri · 단축어로 들어온 스캔 요청 (→ ScanNoticeIntent.swift)
+    @Bindable private var scanRouter = ScanRouter.shared
     @State private var showPasteText = false
     @State private var showSettings = false
     @State private var errorMessage: String?
@@ -87,6 +89,22 @@ struct ContentView: View {
         // 다른 사용자가 보낸 .aischedule 파일을 열면 일정을 채워줌
         .onOpenURL { url in
             handleIncomingFile(url)
+        }
+        .onChange(of: scanRouter.cameraRequest) { showCamera = true }
+        .onChange(of: scanRouter.images.count, initial: true) { _, count in
+            guard count > 0 else { return }
+            let images = scanRouter.images
+            scanRouter.images = []
+            Task {
+                var added = 0
+                for image in images {
+                    scannedImages.append(image)
+                    added += await runOCR(on: image)
+                }
+                if added == 0 {
+                    errorMessage = String(localized: "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요.")
+                }
+            }
         }
         // 가족 공유로 받은 원격 변경을 화면·알림·캘린더에 반영
         .onReceive(NotificationCenter.default.publisher(for: .familyDataDidChange)) { _ in

@@ -32,16 +32,18 @@
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
 		AA0000000000000000000619 /* ReminderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050E /* ReminderSettings.swift */; };
-		CA361DD2ED26E20A615CF1A0 /* CalendarSnapRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */; };
 		AA0000000000000000000620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000518 /* AppDelegate.swift */; };
 		AA0000000000000000000621 /* CloudSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000519 /* CloudSharingView.swift */; };
 		AA0000000000000000000622 /* FamilySharingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051A /* FamilySharingSection.swift */; };
 		AA0000000000000000000623 /* FamilySyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051B /* FamilySyncManager.swift */; };
 		AA0000000000000000000624 /* RecordMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051C /* RecordMapper.swift */; };
 		AA0000000000000000000625 /* SyncStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000051D /* SyncStateStore.swift */; };
-		E1C5F672852FF09136BD4D9B /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF95EE5532C71DF5DD453D9E /* LeeoKit */; };
 		AA0000000000000000000701 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000700 /* InfoPlist.xcstrings */; };
 		AA0000000000000000000703 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000702 /* Localizable.xcstrings */; };
+		BE4E513DEF0D0DA0B0569CE6 /* ScanNoticeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E7902B4036F84C38F50A16 /* ScanNoticeIntent.swift */; };
+		CA361DD2ED26E20A615CF1A0 /* CalendarSnapRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */; };
+		DB8B42FA39A39D6DFE76C203 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ACFE8602415E26E3A2CBC500 /* AppShortcuts.xcstrings */; };
+		E1C5F672852FF09136BD4D9B /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF95EE5532C71DF5DD453D9E /* LeeoKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 /* Begin PBXFileReference section */
 		0E5DD29BF2F4C5544146541E /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapRoadmap.swift; sourceTree = "<group>"; };
+		85E7902B4036F84C38F50A16 /* ScanNoticeIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScanNoticeIntent.swift; sourceTree = "<group>"; };
 		AA0000000000000000000201 /* CalendarSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0000000000000000000301 /* ScheduleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScheduleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0000000000000000000500 /* CalendarSnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSnapApp.swift; sourceTree = "<group>"; };
@@ -102,9 +105,10 @@
 		AA000000000000000000051B /* FamilySyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySyncManager.swift; sourceTree = "<group>"; };
 		AA000000000000000000051C /* RecordMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMapper.swift; sourceTree = "<group>"; };
 		AA000000000000000000051D /* SyncStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStateStore.swift; sourceTree = "<group>"; };
-		C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapSpec.swift; sourceTree = "<group>"; };
 		AA0000000000000000000700 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		AA0000000000000000000702 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		ACFE8602415E26E3A2CBC500 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		C4345D45EE168A3E7F3BA9D9 /* CalendarSnapSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarSnapSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				7A622F9B9C393695302A187F /* CalendarSnapRoadmap.swift */,
 				0E5DD29BF2F4C5544146541E /* Localizable.xcstrings */,
 				AA0000000000000000000700 /* InfoPlist.xcstrings */,
+				85E7902B4036F84C38F50A16 /* ScanNoticeIntent.swift */,
+				ACFE8602415E26E3A2CBC500 /* AppShortcuts.xcstrings */,
 			);
 			path = CalendarSnap;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				AA000000000000000000060F /* Assets.xcassets in Resources */,
 				3101DACA275E006000B16231 /* Localizable.xcstrings in Resources */,
 				AA0000000000000000000701 /* InfoPlist.xcstrings in Resources */,
+				DB8B42FA39A39D6DFE76C203 /* AppShortcuts.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +371,7 @@
 				AA0000000000000000000625 /* SyncStateStore.swift in Sources */,
 				16D2C986A796DAD4B1446BF9 /* CalendarSnapSpec.swift in Sources */,
 				CA361DD2ED26E20A615CF1A0 /* CalendarSnapRoadmap.swift in Sources */,
+				BE4E513DEF0D0DA0B0569CE6 /* ScanNoticeIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
