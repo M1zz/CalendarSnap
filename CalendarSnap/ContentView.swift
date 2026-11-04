@@ -1,3 +1,4 @@
+import AppIntents
 import SwiftUI
 import PhotosUI
 import LeeoKit
@@ -91,6 +92,10 @@ struct ContentView: View {
             handleIncomingFile(url)
         }
         .onChange(of: scanRouter.cameraRequest) { showCamera = true }
+        // Siri · Spotlight 에서 일정을 열면 달력 탭으로 (달력이 그 날로 간다)
+        .onChange(of: scanRouter.eventDay, initial: true) { _, day in
+            if day != nil { selectedTab = 1 }
+        }
         .onChange(of: scanRouter.images.count, initial: true) { _, count in
             guard count > 0 else { return }
             let images = scanRouter.images
@@ -647,6 +652,8 @@ struct ContentView: View {
             .accessibilityLabel(Text("문자로 일정 추가"))
             Button {
                 showCamera = true
+                // Siri 가 "알림장 찍기" 를 이 앱의 일로 배우게
+                IntentDonationManager.shared.donate(intent: ScanNoticeIntent())
             } label: {
                 Image(systemName: "camera")
             }

@@ -50,6 +50,10 @@ struct CalendarSnapApp: App {
             if phase == .active {
                 FamilySyncManager.shared.fetchChangesNow()
             }
+            // 저장한 일정을 Spotlight · Siri 가 찾게 다시 색인
+            if phase == .active || phase == .background {
+                Task { await EventIndex.reindex() }
+            }
         }
     }
 }

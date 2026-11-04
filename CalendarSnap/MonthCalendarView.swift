@@ -19,6 +19,7 @@ struct MonthCalendarView: View {
     /// 기본은 주간으로 접어 오늘 일정에 화면을 내준다. (핸들·스와이프로 월간 펼침)
     @State private var isWeekMode = true
     @State private var lastListOffset: CGFloat = 0
+    private let router = ScanRouter.shared
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var typeSize
 
@@ -88,6 +89,15 @@ struct MonthCalendarView: View {
             eventList
         }
         .animation(reduceMotion ? nil : .snappy(duration: 0.25), value: isWeekMode)
+        // Siri · Spotlight 에서 연 일정: 그 날로 가서 거르개 없이 보여 준다
+        .onChange(of: router.eventDay, initial: true) { _, day in
+            guard let day else { return }
+            router.eventDay = nil
+            childFilter = nil
+            typeFilter = .all
+            displayedMonth = day
+            selectedDay = calendar.startOfDay(for: day)
+        }
         // 앱 문구가 모두 한국어이므로 날짜 표기도 한국어로 고정
         .environment(\.locale, koKR)
         .toolbar {
