@@ -74,6 +74,8 @@ final class PurchaseManager {
     private(set) var isKnown = Plan.cachedTier != nil
     /// 결제 전부터 쓰던 사람이라 Pro 인가.
     private(set) var isEarlyUser = false
+    /// 팔기 시작했는가. 아니면 아무것도 막지 않는다 (→ Plan.isSelling).
+    private(set) var isSelling = Plan.isSelling
     private(set) var products: [Product] = []
     private(set) var ownedProductIDs: Set<String> = []
     /// 지금 살아 있는 구독. 있으면 설정에 '평생으로 바꾸기' 가 선다.
@@ -98,7 +100,7 @@ final class PurchaseManager {
     }
 
     /// 이 기능을 써도 되는가.
-    func allows(_ feature: PlanFeature) -> Bool { tier >= feature.tier }
+    func allows(_ feature: PlanFeature) -> Bool { !isSelling || tier >= feature.tier }
 
     func ownsLifetime(_ tier: PlanTier) -> Bool {
         ownedProductIDs.contains { Self.lifetimeIDs.contains($0) && Self.tierByProduct[$0] == tier }
@@ -164,8 +166,13 @@ final class PurchaseManager {
         ownedProductIDs = store.purchasedProductIDs
         isWorking = store.purchasingProductID != nil || store.isRestoring
         failureMessage = store.lastError
-        // 위젯은 App Group 의 그 한 줄만 읽는다. 칸이 바뀐 판에만 다시 그린다.
-        if before != tier { WidgetCenter.shared.reloadAllTimelines() }
+        let wasSelling = isSelling
+        if !isSelling, products.contains(where: { Self.tierByProduct[$0.id] != nil }) {
+            Plan.markSelling()
+            isSelling = true
+        }
+        // 위젯은 App Group 의 그 두 줄만 읽는다. 바뀐 판에만 다시 그린다.
+        if before != tier || wasSelling != isSelling { WidgetCenter.shared.reloadAllTimelines() }
     }
 
     // MARK: - 지금까지 쓰던 사람
