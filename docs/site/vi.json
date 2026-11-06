@@ -1,11 +1,11 @@
 {
   "title": "Lịch Của Bé: chụp lịch của trường mầm non, có ngay lịch cả tháng",
-  "description": "Chụp lịch tháng hoặc thông báo từ nhà trẻ, trường mầm non. Cả tháng vào lịch của bạn, tối hôm trước còn nhắc chuẩn bị đồ cho bé. Miễn phí.",
+  "description": "Chụp lịch tháng hoặc thông báo từ nhà trẻ, trường mầm non. Cả tháng vào lịch của bạn, tối hôm trước còn nhắc chuẩn bị đồ cho bé. Đọc ảnh miễn phí.",
   "hero": {
     "headline": "Chỉ cần chụp ảnh\nTối trước sẽ nhắc đồ",
     "lead": "Chụp tờ lịch tháng mà trường gửi về. Lịch Của Bé đọc ngày, giờ và tên từng hoạt động rồi thêm tất cả vào lịch một lần. Tối trước buổi dã ngoại, lúc 8 giờ, sẽ có lời nhắc chuẩn bị hộp cơm.",
     "cta": "Tải miễn phí trên App Store",
-    "note": "Mọi tính năng đều miễn phí. Ảnh không rời khỏi iPhone của bạn."
+    "note": "Đọc ảnh và nhắc tối hôm trước đều miễn phí. Ảnh không rời khỏi iPhone của bạn."
   },
   "demo": {
     "title": "Thử chụp một thông báo",
@@ -116,27 +116,29 @@
     "note": "Hoạt động cả ngày như dã ngoại chỉ có lời nhắc tối hôm trước và sáng hôm đó. Bật hoặc tắt từng loại bất cứ lúc nào trong phần cài đặt."
   },
   "pricing": {
-    "title": "Mọi tính năng đều miễn phí",
+    "title": "Đọc ảnh miễn phí",
     "free": {
       "name": "Miễn phí",
       "items": [
-        "Đọc sự kiện từ ảnh và tin nhắn",
+        "Đọc sự kiện từ ảnh và tin nhắn, không giới hạn",
         "Sửa trước khi lưu, lọc bỏ lịch của lớp khác",
-        "Nhắc tối hôm trước, sáng hôm đó, trước 1 giờ và đúng giờ",
-        "Mỗi bé một màu, có lịch chung",
+        "Một bé",
+        "Nhắc tối hôm trước và sáng hôm đó",
         "Đồng bộ với Lịch của Apple",
-        "Chia sẻ với gia đình qua đường liên kết",
-        "Tiện ích Màn hình chính"
+        "Tham gia lịch mà gia đình chia sẻ với bạn"
       ]
     },
     "pro": {
-      "name": "Ủng hộ nhà phát triển",
+      "name": "Plus và Pro",
       "items": [
-        "Trong phần cài đặt, bạn có thể gửi một khoản tip nhỏ tùy ý",
-        "Tip không mở khóa gì cả. Không gửi vẫn dùng y như vậy"
-      ]
+        "Plus: nhiều bé, có ảnh đại diện",
+        "Plus: nhắc trước 1 giờ và đúng giờ",
+        "Pro: mọi thứ của Plus và mời gia đình cùng chia sẻ",
+        "Pro: Tiện ích Màn hình chính"
+      ],
+      "note": "Gói theo tuần, tháng hoặc năm, hoặc trả một lần dùng mãi mãi. Tip trong phần cài đặt là riêng và không mở khóa gì."
     },
-    "note": "Không quảng cáo, không thuê bao."
+    "note": "Không quảng cáo."
   },
   "faq": {
     "title": "Câu hỏi thường gặp",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Tôi có nhiều con.",
-        "a": "Trong phần cài đặt có thể thêm bao nhiêu bé tùy ý, mỗi bé một ảnh đại diện. Khi quét, chọn lịch này của bé nào: trong lịch mỗi bé có màu riêng, có thể chuyển giữa xem chung và lọc theo từng bé."
+        "a": "Trong phần cài đặt có thể thêm bao nhiêu bé tùy ý, mỗi bé một ảnh đại diện. Khi quét, chọn lịch này của bé nào: trong lịch mỗi bé có màu riêng, có thể chuyển giữa xem chung và lọc theo từng bé. Từ bé thứ hai trở đi và ảnh đại diện cần có Plus."
       },
       {
         "q": "Muốn cùng xem lịch với vợ hoặc chồng.",
-        "a": "Vào “Chia sẻ lịch” trong phần cài đặt, chạm “Mời người khác cùng xem” rồi gửi đường liên kết qua tin nhắn. Người nhận cũng xem và sửa được lịch của mọi bé, ai sửa bên nào thì cả hai bên đều thấy ngay. Tính năng này không liên quan đến Chia sẻ trong gia đình của Apple."
+        "a": "Vào “Chia sẻ lịch” trong phần cài đặt, chạm “Mời người khác cùng xem” rồi gửi đường liên kết qua tin nhắn. Người nhận cũng xem và sửa được lịch của mọi bé, ai sửa bên nào thì cả hai bên đều thấy ngay. Tính năng này không liên quan đến Chia sẻ trong gia đình của Apple. Muốn bắt đầu chia sẻ mới cần có Pro. Người được mời tham gia miễn phí."
       },
       {
         "q": "Có cách chia sẻ nào khác không?",

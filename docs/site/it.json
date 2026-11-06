@@ -1,11 +1,11 @@
 {
   "title": "Agenda Bimbi: una foto al calendario dell’asilo e hai tutto il mese",
-  "description": "Fotografa il calendario mensile o l’avviso del nido o della materna. Il mese finisce nel calendario e la sera prima ti ricorda cosa preparare. Gratis.",
+  "description": "Fotografa il calendario mensile o l’avviso del nido o della materna. Il mese finisce nel calendario e la sera prima ti ricorda cosa preparare. La lettura delle foto è gratis.",
   "hero": {
     "headline": "Basta una foto.\nAl resto pensiamo noi.",
     "lead": "Fotografa il calendario del mese che ti dà l’asilo. Agenda Bimbi legge date, orari e nomi delle attività e li aggiunge tutti insieme. La sera prima della gita, alle 20, arriva il promemoria: non dimenticare il pranzo al sacco.",
     "cta": "Scarica gratis su App Store",
-    "note": "Tutto è gratis. Le tue foto restano sul tuo iPhone."
+    "note": "La lettura delle foto e il promemoria della sera prima sono gratis. Le tue foto restano sul tuo iPhone."
   },
   "demo": {
     "title": "Scatta una foto a un avviso",
@@ -116,27 +116,29 @@
     "note": "Le attività di un’intera giornata, come una gita, hanno solo il promemoria della sera prima e quello del mattino. Puoi attivarli o disattivarli quando vuoi nelle impostazioni."
   },
   "pricing": {
-    "title": "Tutto è gratis",
+    "title": "La lettura delle foto è gratis",
     "free": {
       "name": "Gratis",
       "items": [
-        "Lettura delle attività da foto e messaggi",
+        "Lettura delle attività da foto e messaggi, senza limiti",
         "Correzioni prima di salvare, filtro delle altre sezioni",
-        "Promemoria la sera prima, al mattino, 1 ora prima e puntuali",
-        "Un colore per ogni figlio e un calendario unico",
+        "Un figlio",
+        "Promemoria la sera prima e al mattino",
         "Sincronizzazione con Calendario Apple",
-        "Condivisione in famiglia con un link d’invito",
-        "Widget nella schermata Home"
+        "Unirsi a un calendario condiviso dalla famiglia"
       ]
     },
     "pro": {
-      "name": "Sostieni lo sviluppatore",
+      "name": "Plus e Pro",
       "items": [
-        "Dalle impostazioni puoi lasciare una piccola mancia, quanto vuoi",
-        "La mancia non sblocca nulla. L’app funziona allo stesso modo"
-      ]
+        "Plus: più figli, con foto profilo",
+        "Plus: promemoria 1 ora prima e puntuali",
+        "Pro: tutto Plus, più invitare la famiglia a condividere",
+        "Pro: widget nella schermata Home"
+      ],
+      "note": "Abbonamento settimanale, mensile o annuale, oppure un pagamento unico per sempre. La mancia nelle impostazioni è a parte e non sblocca nulla."
     },
-    "note": "Niente pubblicità, niente abbonamenti."
+    "note": "Niente pubblicità."
   },
   "faq": {
     "title": "Domande frequenti",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Ho più di un figlio.",
-        "a": "Nelle impostazioni puoi aggiungere tutti i figli che vuoi, ognuno con la sua foto. Durante la scansione scegli per chi sono le attività: nel calendario ogni bambino ha il suo colore e puoi passare dalla vista unica al filtro per figlio."
+        "a": "Nelle impostazioni puoi aggiungere tutti i figli che vuoi, ognuno con la sua foto. Durante la scansione scegli per chi sono le attività: nel calendario ogni bambino ha il suo colore e puoi passare dalla vista unica al filtro per figlio. Dal secondo figlio in poi, e per le foto profilo, serve Plus."
       },
       {
         "q": "Come condivido gli impegni con il mio partner?",
-        "a": "Nelle impostazioni, in «Condivisione eventi», tocca «Invita altre persone» e manda il link via messaggio. Chi riceve l’invito vede e modifica tutti i figli e gli eventi, e le modifiche fatte da una parte compaiono subito anche dall’altra. Non c’entra con In famiglia di Apple."
+        "a": "Nelle impostazioni, in «Condivisione eventi», tocca «Invita altre persone» e manda il link via messaggio. Chi riceve l’invito vede e modifica tutti i figli e gli eventi, e le modifiche fatte da una parte compaiono subito anche dall’altra. Non c’entra con In famiglia di Apple. Per avviare una nuova condivisione serve Pro. Chi viene invitato partecipa gratis."
       },
       {
         "q": "Ci sono altri modi per condividere?",

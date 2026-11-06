@@ -1,11 +1,11 @@
 {
   "title": "Agenda Peques: haz una foto al calendario de la guarde y ten todo el mes",
-  "description": "Haz una foto al calendario mensual o la circular de la guarde. Todo el mes entra en tu calendario y la noche antes te avisa de qué preparar. Gratis.",
+  "description": "Haz una foto al calendario mensual o la circular de la guarde. Todo el mes entra en tu calendario y la noche antes te avisa de qué preparar. Leer las fotos es gratis.",
   "hero": {
     "headline": "Foto a la circular.\nY te avisamos la víspera.",
     "lead": "Fotografía el calendario mensual que te da la guarde. Agenda Peques lee las fechas, las horas y el nombre de cada actividad y las mete todas de una vez. La noche antes de la excursión, a las 20:00, te recuerda que toca preparar la comida.",
     "cta": "Descárgala gratis en el App Store",
-    "note": "Todo es gratis. Tus fotos no salen de tu iPhone."
+    "note": "Leer las fotos y el aviso de la noche antes es gratis. Tus fotos no salen de tu iPhone."
   },
   "demo": {
     "title": "Haz una foto a una circular",
@@ -116,27 +116,29 @@
     "note": "Las actividades de todo el día, como una excursión, solo tienen el aviso de la tarde anterior y el de esa mañana. Puedes activarlos o desactivarlos en Ajustes cuando quieras."
   },
   "pricing": {
-    "title": "Todo es gratis",
+    "title": "Leer las fotos es gratis",
     "free": {
       "name": "Gratis",
       "items": [
-        "Leer actividades de fotos y mensajes",
+        "Leer actividades de fotos y mensajes, sin límite",
         "Corregir antes de guardar y filtrar otras clases",
-        "Avisos la tarde anterior, por la mañana, 1 hora antes y a la hora",
-        "Un color por peque y un calendario conjunto",
+        "Un peque",
+        "Avisos la tarde anterior y por la mañana",
         "Sincronización con el Calendario de Apple",
-        "Compartir con la familia por enlace",
-        "Widget en la pantalla de inicio"
+        "Unirte a una agenda que te comparte tu familia"
       ]
     },
     "pro": {
-      "name": "Apoyar al desarrollador",
+      "name": "Plus y Pro",
       "items": [
-        "Desde Ajustes puedes dejar una pequeña propina, la que quieras",
-        "La propina no desbloquea nada. La app funciona igual sin ella"
-      ]
+        "Plus: varios peques, con foto de perfil",
+        "Plus: avisos 1 hora antes y a la hora",
+        "Pro: todo lo de Plus e invitar a la familia a compartir",
+        "Pro: widget en la pantalla de inicio"
+      ],
+      "note": "Suscripción semanal, mensual o anual, o un pago único para siempre. La propina de Ajustes va aparte y no desbloquea nada."
     },
-    "note": "Sin anuncios ni suscripciones."
+    "note": "Sin anuncios."
   },
   "faq": {
     "title": "Preguntas frecuentes",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Tengo más de un hijo.",
-        "a": "En Ajustes puedes añadir a todos los que quieras, cada uno con su foto. Al escanear, elige de quién son las actividades: en el calendario cada uno sale con su color y puedes alternar entre la vista conjunta y la de cada peque."
+        "a": "En Ajustes puedes añadir a todos los que quieras, cada uno con su foto. Al escanear, elige de quién son las actividades: en el calendario cada uno sale con su color y puedes alternar entre la vista conjunta y la de cada peque. A partir del segundo peque, y para las fotos de perfil, necesitas Plus."
       },
       {
         "q": "¿Cómo comparto la agenda con mi pareja?",
-        "a": "En Ajustes, dentro de «Compartir agenda», toca «Invitar a otras personas» y envía el enlace por mensaje. Podrá ver y editar a todos los peques y sus actividades, y los cambios de cualquiera aparecen al momento en los dos iPhone. No tiene nada que ver con En familia de Apple."
+        "a": "En Ajustes, dentro de «Compartir agenda», toca «Invitar a otras personas» y envía el enlace por mensaje. Podrá ver y editar a todos los peques y sus actividades, y los cambios de cualquiera aparecen al momento en los dos iPhone. No tiene nada que ver con En familia de Apple. Para empezar a compartir necesitas Pro. Quien recibe la invitación se une gratis."
       },
       {
         "q": "¿Hay otras formas de compartir?",

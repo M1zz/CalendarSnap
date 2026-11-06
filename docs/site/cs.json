@@ -1,11 +1,11 @@
 {
   "title": "Rozvrh školky: vyfoťte plán ze školky a máte celý měsíc i připomenutí",
-  "description": "Vyfoťte měsíční plán nebo oznámení z jeslí či školky. Celý měsíc se uloží do kalendáře a večer předem vám appka připomene, co nachystat. Zdarma.",
+  "description": "Vyfoťte měsíční plán nebo oznámení z jeslí či školky. Celý měsíc se uloží do kalendáře a večer předem vám appka připomene, co nachystat. Čtení fotek je zdarma.",
   "hero": {
     "headline": "Stačí vyfotit.\nNa batůžek připomeneme.",
     "lead": "Vyfoťte měsíční plán, který dostanete ve školce. Rozvrh školky přečte data, časy a názvy akcí a uloží je všechny najednou. Večer před výletem ve 20:00 přijde připomenutí: nezapomeňte svačinu.",
     "cta": "Stáhnout zdarma v App Storu",
-    "note": "Všechny funkce jsou zdarma. Fotky z vašeho iPhonu nikam neodcházejí."
+    "note": "Čtení fotek a připomenutí večer předem jsou zdarma. Fotky z vašeho iPhonu nikam neodcházejí."
   },
   "demo": {
     "title": "Vyfoťte oznámení",
@@ -116,27 +116,29 @@
     "note": "Celodenní akce, třeba výlet, mají jen připomenutí večer předem a ráno. Každé můžete kdykoli zapnout nebo vypnout v nastavení."
   },
   "pricing": {
-    "title": "Všechny funkce jsou zdarma",
+    "title": "Čtení fotek je zdarma",
     "free": {
       "name": "Zdarma",
       "items": [
-        "Čtení akcí z fotek a zpráv",
+        "Čtení akcí z fotek a zpráv bez omezení",
         "Úpravy před uložením, filtr jiných tříd",
-        "Připomenutí večer předem, ráno, hodinu předem i načas",
-        "Barva pro každé dítě a společný kalendář",
+        "Jedno dítě",
+        "Připomenutí večer předem a ráno",
         "Synchronizace s kalendářem Apple",
-        "Sdílení s rodinou přes odkaz",
-        "Widget na ploše"
+        "Připojení k plánu, který s vámi sdílí rodina"
       ]
     },
     "pro": {
-      "name": "Podpořit vývojáře",
+      "name": "Plus a Pro",
       "items": [
-        "V nastavení můžete poslat malé spropitné v libovolné výši",
-        "Spropitné nic neodemyká. Aplikace funguje stejně i bez něj"
-      ]
+        "Plus: více dětí, s profilovou fotkou",
+        "Plus: připomenutí hodinu předem a načas",
+        "Pro: vše z Plus a pozvání rodiny ke sdílení",
+        "Pro: widget na ploše"
+      ],
+      "note": "Týdenní, měsíční nebo roční předplatné, nebo jednorázová platba navždy. Spropitné v nastavení je zvlášť a nic neodemyká."
     },
-    "note": "Žádné reklamy, žádné předplatné."
+    "note": "Žádné reklamy."
   },
   "faq": {
     "title": "Časté otázky",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Mám víc dětí.",
-        "a": "V nastavení přidáte libovolný počet dětí, každé s profilovou fotkou. Při skenování vyberte, čí akce to jsou: v kalendáři má každé dítě svou barvu a můžete přepínat mezi společným pohledem a filtrem podle dítěte."
+        "a": "V nastavení přidáte libovolný počet dětí, každé s profilovou fotkou. Při skenování vyberte, čí akce to jsou: v kalendáři má každé dítě svou barvu a můžete přepínat mezi společným pohledem a filtrem podle dítěte. Od druhého dítěte a pro profilové fotky potřebujete Plus."
       },
       {
         "q": "Jak sdílet program s partnerem?",
-        "a": "V nastavení v části „Sdílení událostí“ klepněte na „Pozvat ke sdílení“ a pošlete odkaz zprávou. Pozvaný uvidí a upraví všechny děti i akce a změny z kterékoli strany se hned projeví u obou. Se Sdílením v rodině od Applu to nesouvisí."
+        "a": "V nastavení v části „Sdílení událostí“ klepněte na „Pozvat ke sdílení“ a pošlete odkaz zprávou. Pozvaný uvidí a upraví všechny děti i akce a změny z kterékoli strany se hned projeví u obou. Se Sdílením v rodině od Applu to nesouvisí. Ke spuštění nového sdílení potřebujete Pro. Pozvaní se připojí zdarma."
       },
       {
         "q": "Dá se sdílet i jinak?",

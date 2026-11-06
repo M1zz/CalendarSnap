@@ -1,11 +1,11 @@
 {
   "title": "Lapsen aikataulu: kuva päiväkodin kuukausitiedotteesta, koko kuukausi valmiina",
-  "description": "Kuvaa päiväkodin kuukausikalenteri tai tiedote. Koko kuukausi siirtyy kalenteriin, ja edellisenä iltana muistutus pakkaamisesta. Ilmainen.",
+  "description": "Kuvaa päiväkodin kuukausikalenteri tai tiedote. Koko kuukausi siirtyy kalenteriin, ja edellisenä iltana muistutus pakkaamisesta. Kuvien luku on ilmaista.",
   "hero": {
     "headline": "Kuvaa vain tiedote.\nMuistutamme illalla.",
     "lead": "Ota kuva päiväkodista saamastasi kuukausikalenterista. Lapsen aikataulu lukee päivämäärät, kellonajat ja tapahtumien nimet ja lisää ne kerralla. Retkeä edeltävänä iltana kello 20 tulee muistutus: muista eväät.",
     "cta": "Lataa ilmaiseksi App Storesta",
-    "note": "Kaikki ominaisuudet ovat ilmaisia. Kuvat eivät lähde iPhonestasi."
+    "note": "Kuvien luku ja edellisillan muistutus ovat ilmaisia. Kuvat eivät lähde iPhonestasi."
   },
   "demo": {
     "title": "Kuvaa tiedote",
@@ -116,27 +116,29 @@
     "note": "Koko päivän tapahtumista, kuten retkistä, tulee vain edellisillan ja aamun muistutus. Voit kytkeä minkä tahansa päälle tai pois asetuksista milloin vain."
   },
   "pricing": {
-    "title": "Kaikki ominaisuudet ovat ilmaisia",
+    "title": "Kuvien luku on ilmaista",
     "free": {
       "name": "Ilmainen",
       "items": [
-        "Tapahtumien luku kuvista ja viesteistä",
+        "Tapahtumien luku kuvista ja viesteistä rajattomasti",
         "Korjaus ennen tallennusta, muiden ryhmien suodatus",
-        "Muistutukset edellisenä iltana, aamulla, tuntia ennen ja ajallaan",
-        "Oma väri jokaiselle lapselle ja yhteinen kalenteri",
+        "Yksi lapsi",
+        "Muistutukset edellisenä iltana ja aamulla",
         "Synkronointi Applen Kalenterin kanssa",
-        "Jakaminen perheelle kutsulinkillä",
-        "Koti-valikon widget"
+        "Liittyminen perheen jakamaan aikatauluun"
       ]
     },
     "pro": {
-      "name": "Tue kehittäjää",
+      "name": "Plus ja Pro",
       "items": [
-        "Asetuksista voit antaa pienen tipin, juuri sen verran kuin haluat",
-        "Tippi ei avaa mitään. Sovellus toimii ilman sitä samoin"
-      ]
+        "Plus: useampi lapsi, profiilikuvan kanssa",
+        "Plus: muistutukset tuntia ennen ja ajallaan",
+        "Pro: kaikki Plussan ominaisuudet ja perheen kutsuminen jakamaan",
+        "Pro: Koti-valikon widget"
+      ],
+      "note": "Viikko-, kuukausi- tai vuositilaus tai kertamaksu ikuisesti. Asetusten tippi on erillinen eikä avaa mitään."
     },
-    "note": "Ei mainoksia, ei tilausta."
+    "note": "Ei mainoksia."
   },
   "faq": {
     "title": "Usein kysyttyä",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Minulla on useampi lapsi.",
-        "a": "Asetuksissa voit lisätä niin monta lasta kuin haluat, jokaiselle profiilikuvan. Valitse skannatessa, kenen tapahtumista on kyse: kalenterissa jokaisella lapsella on oma värinsä, ja voit vaihtaa yhteisnäkymän ja lapsikohtaisen suodattimen välillä."
+        "a": "Asetuksissa voit lisätä niin monta lasta kuin haluat, jokaiselle profiilikuvan. Valitse skannatessa, kenen tapahtumista on kyse: kalenterissa jokaisella lapsella on oma värinsä, ja voit vaihtaa yhteisnäkymän ja lapsikohtaisen suodattimen välillä. Toisesta lapsesta alkaen ja profiilikuviin tarvitset Plussan."
       },
       {
         "q": "Miten jaan aikataulun puolisoni kanssa?",
-        "a": "Avaa asetuksista ”Tapahtumien jakaminen”, napauta ”Kutsu mukaan” ja lähetä linkki viestillä. Kutsuttu näkee ja muokkaa kaikkia lapsia ja tapahtumia, ja kummankin muutokset näkyvät heti molemmilla. Tällä ei ole tekemistä Applen Perhejaon kanssa."
+        "a": "Avaa asetuksista ”Tapahtumien jakaminen”, napauta ”Kutsu mukaan” ja lähetä linkki viestillä. Kutsuttu näkee ja muokkaa kaikkia lapsia ja tapahtumia, ja kummankin muutokset näkyvät heti molemmilla. Tällä ei ole tekemistä Applen Perhejaon kanssa. Uuden jakamisen aloittamiseen tarvitset Pron. Kutsutut liittyvät maksutta."
       },
       {
         "q": "Voiko jakaa muillakin tavoilla?",

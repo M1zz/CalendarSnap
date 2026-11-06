@@ -1,11 +1,11 @@
 {
   "title": "Barnschema: fota förskolans månadsplan och få hela månaden",
-  "description": "Fota månadsplanen eller veckobrevet från förskolan. Hela månaden hamnar i kalendern, och kvällen före påminner appen om vad som ska packas. Gratis.",
+  "description": "Fota månadsplanen eller veckobrevet från förskolan. Hela månaden hamnar i kalendern, och kvällen före påminner appen om vad som ska packas. Det är gratis att läsa bilder.",
   "hero": {
     "headline": "Fota bara lappen.\nVi påminner kvällen före.",
     "lead": "Ta en bild på månadsplanen du får med hem från förskolan. Barnschema läser datum, tider och namn på aktiviteterna och lägger in allt på en gång. Kvällen före utflykten, klockan 20, kommer påminnelsen: glöm inte matsäcken.",
     "cta": "Hämta gratis på App Store",
-    "note": "Alla funktioner är gratis. Bilderna lämnar aldrig din iPhone."
+    "note": "Det är gratis att läsa bilder och få påminnelsen kvällen före. Bilderna lämnar aldrig din iPhone."
   },
   "demo": {
     "title": "Fota en lapp",
@@ -116,27 +116,29 @@
     "note": "Heldagsaktiviteter som en utflykt får bara påminnelsen kvällen före och samma morgon. Du kan slå på eller av var och en i inställningarna när du vill."
   },
   "pricing": {
-    "title": "Alla funktioner är gratis",
+    "title": "Det är gratis att läsa bilder",
     "free": {
       "name": "Gratis",
       "items": [
-        "Aktiviteter lästa från bilder och meddelanden",
+        "Aktiviteter lästa från bilder och meddelanden, utan gräns",
         "Rätta innan du sparar, sortera bort andra avdelningar",
-        "Påminnelser kvällen före, på morgonen, 1 timme före och i tid",
-        "En färg per barn och en gemensam kalender",
+        "Ett barn",
+        "Påminnelser kvällen före och på morgonen",
         "Synkning med Apple Kalender",
-        "Delning med familjen via länk",
-        "Widget på hemskärmen"
+        "Gå med i ett schema som familjen delar med dig"
       ]
     },
     "pro": {
-      "name": "Stöd utvecklaren",
+      "name": "Plus och Pro",
       "items": [
-        "I inställningarna kan du ge lite dricks, så mycket du vill",
-        "Dricks låser inte upp något. Appen fungerar likadant utan"
-      ]
+        "Plus: flera barn, med profilbild",
+        "Plus: påminnelser 1 timme före och i tid",
+        "Pro: allt i Plus och bjuda in familjen att dela",
+        "Pro: widget på hemskärmen"
+      ],
+      "note": "Prenumeration per vecka, månad eller år, eller betala en gång för alltid. Dricks i inställningarna är något annat och låser inte upp något."
     },
-    "note": "Inga annonser, ingen prenumeration."
+    "note": "Inga annonser."
   },
   "faq": {
     "title": "Vanliga frågor",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Jag har flera barn.",
-        "a": "I inställningarna lägger du till så många barn du vill, vart och ett med profilbild. Välj vid skanningen vem aktiviteterna gäller: i kalendern har varje barn sin färg, och du kan växla mellan gemensam vy och filter per barn."
+        "a": "I inställningarna lägger du till så många barn du vill, vart och ett med profilbild. Välj vid skanningen vem aktiviteterna gäller: i kalendern har varje barn sin färg, och du kan växla mellan gemensam vy och filter per barn. Från andra barnet och för profilbilder behöver du Plus."
       },
       {
         "q": "Hur delar jag schemat med min partner?",
-        "a": "Gå till ”Delning av händelser” i inställningarna, tryck på ”Bjud in till delning” och skicka länken i ett meddelande. Den inbjudna ser och ändrar alla barn och händelser, och ändringar från båda håll syns direkt hos båda. Det har inget med Apples Familjedelning att göra."
+        "a": "Gå till ”Delning av händelser” i inställningarna, tryck på ”Bjud in till delning” och skicka länken i ett meddelande. Den inbjudna ser och ändrar alla barn och händelser, och ändringar från båda håll syns direkt hos båda. Det har inget med Apples Familjedelning att göra. För att starta en ny delning behöver du Pro. De som bjuds in är med gratis."
       },
       {
         "q": "Går det att dela på andra sätt?",

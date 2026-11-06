@@ -1,11 +1,11 @@
 {
   "title": "Barneplan: ta bilde av månedsplanen fra barnehagen og få hele måneden",
-  "description": "Ta bilde av månedsplanen eller beskjeden fra barnehagen. Hele måneden havner i kalenderen, og kvelden før minner appen deg på pakkingen. Gratis.",
+  "description": "Ta bilde av månedsplanen eller beskjeden fra barnehagen. Hele måneden havner i kalenderen, og kvelden før minner appen deg på pakkingen. Det er gratis å lese bilder.",
   "hero": {
     "headline": "Bare ta et bilde.\nVi minner om pakkingen.",
     "lead": "Ta bilde av månedsplanen du får med hjem fra barnehagen. Barneplan leser datoer, klokkeslett og navn på aktivitetene og legger dem inn på én gang. Kvelden før turen, klokka 20, kommer påminnelsen: husk matpakka.",
     "cta": "Last ned gratis i App Store",
-    "note": "Alle funksjoner er gratis. Bildene forlater aldri iPhonen din."
+    "note": "Det er gratis å lese bilder og få påminnelsen kvelden før. Bildene forlater aldri iPhonen din."
   },
   "demo": {
     "title": "Ta bilde av en beskjed",
@@ -116,27 +116,29 @@
     "note": "Heldagsaktiviteter som en tur får bare påminnelsen kvelden før og samme morgen. Du kan slå hver av dem av og på i innstillingene når som helst."
   },
   "pricing": {
-    "title": "Alle funksjoner er gratis",
+    "title": "Det er gratis å lese bilder",
     "free": {
       "name": "Gratis",
       "items": [
-        "Aktiviteter lest fra bilder og meldinger",
+        "Aktiviteter lest fra bilder og meldinger, uten grense",
         "Rett før du lagrer, sorter bort andre avdelinger",
-        "Påminnelser kvelden før, om morgenen, 1 time før og på tiden",
-        "Egen farge per barn og en felles kalender",
+        "Ett barn",
+        "Påminnelser kvelden før og om morgenen",
         "Synkronisering med Apple Kalender",
-        "Deling med familien via lenke",
-        "Widget på Hjem-skjermen"
+        "Bli med i en plan familien deler med deg"
       ]
     },
     "pro": {
-      "name": "Støtt utvikleren",
+      "name": "Plus og Pro",
       "items": [
-        "I innstillingene kan du gi litt tips, så mye du vil",
-        "Tips låser ikke opp noe. Appen virker likt uten"
-      ]
+        "Plus: flere barn, med profilbilde",
+        "Plus: påminnelser 1 time før og på tiden",
+        "Pro: alt i Plus og invitere familien til å dele",
+        "Pro: widget på Hjem-skjermen"
+      ],
+      "note": "Abonnement per uke, måned eller år, eller betal én gang for alltid. Tips i innstillingene er noe annet og låser ikke opp noe."
     },
-    "note": "Ingen reklame, ikke noe abonnement."
+    "note": "Ingen reklame."
   },
   "faq": {
     "title": "Vanlige spørsmål",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Jeg har flere barn.",
-        "a": "I innstillingene kan du legge til så mange barn du vil, hvert med profilbilde. Velg ved skanning hvem aktivitetene gjelder: I kalenderen har hvert barn sin farge, og du kan bytte mellom samlet visning og filter per barn."
+        "a": "I innstillingene kan du legge til så mange barn du vil, hvert med profilbilde. Velg ved skanning hvem aktivitetene gjelder: I kalenderen har hvert barn sin farge, og du kan bytte mellom samlet visning og filter per barn. Fra barn nummer to og for profilbilder trenger du Plus."
       },
       {
         "q": "Hvordan deler jeg planen med partneren min?",
-        "a": "Gå til «Deling av avtaler» i innstillingene, trykk på «Inviter til deling», og send lenken i en melding. Den inviterte kan se og endre alle barn og avtaler, og endringer fra begge sider vises straks hos begge. Det har ingenting med Apples Familiedeling å gjøre."
+        "a": "Gå til «Deling av avtaler» i innstillingene, trykk på «Inviter til deling», og send lenken i en melding. Den inviterte kan se og endre alle barn og avtaler, og endringer fra begge sider vises straks hos begge. Det har ingenting med Apples Familiedeling å gjøre. For å starte en ny deling trenger du Pro. De som blir invitert, er med gratis."
       },
       {
         "q": "Kan man dele på andre måter?",

@@ -1,11 +1,11 @@
 {
   "title": "Børneskema: tag et billede af planen fra børnehaven og få hele måneden",
-  "description": "Tag et billede af månedsplanen fra vuggestuen eller børnehaven. Hele måneden kommer i kalenderen, og aftenen før får du besked om at pakke. Gratis.",
+  "description": "Tag et billede af månedsplanen fra vuggestuen eller børnehaven. Hele måneden kommer i kalenderen, og aftenen før får du besked om at pakke. Det er gratis at læse billeder.",
   "hero": {
     "headline": "Bare tag et billede.\nVi minder om madpakken.",
     "lead": "Tag et billede af månedsplanen, du får med hjem fra børnehaven. Børneskema læser datoer, tidspunkter og navne på aktiviteterne og lægger dem ind på én gang. Aftenen før turen, kl. 20, kommer påmindelsen: husk madpakken.",
     "cta": "Hent gratis i App Store",
-    "note": "Alle funktioner er gratis. Dine billeder forlader aldrig din iPhone."
+    "note": "Det er gratis at læse billeder og få påmindelsen aftenen før. Dine billeder forlader aldrig din iPhone."
   },
   "demo": {
     "title": "Tag et billede af en besked",
@@ -116,27 +116,29 @@
     "note": "Heldagsaktiviteter som en udflugt får kun påmindelsen aftenen før og samme morgen. Du kan slå hver enkelt til og fra i indstillingerne når som helst."
   },
   "pricing": {
-    "title": "Alle funktioner er gratis",
+    "title": "Det er gratis at læse billeder",
     "free": {
       "name": "Gratis",
       "items": [
-        "Aktiviteter læst fra billeder og beskeder",
+        "Aktiviteter læst fra billeder og beskeder, uden grænse",
         "Ret inden du gemmer, frasorter andre stuer",
-        "Påmindelser aftenen før, om morgenen, 1 time før og til tiden",
-        "En farve pr. barn og en fælles kalender",
+        "Ét barn",
+        "Påmindelser aftenen før og om morgenen",
         "Synkronisering med Apple Kalender",
-        "Deling med familien via link",
-        "Widget til hjemmeskærmen"
+        "Være med i en plan, familien deler med dig"
       ]
     },
     "pro": {
-      "name": "Støt udvikleren",
+      "name": "Plus og Pro",
       "items": [
-        "I indstillingerne kan du give lidt drikkepenge, lige så meget du vil",
-        "Drikkepenge låser ikke noget op. Appen virker ens uden"
-      ]
+        "Plus: flere børn, med profilbillede",
+        "Plus: påmindelser 1 time før og til tiden",
+        "Pro: alt i Plus og invitere familien til at dele",
+        "Pro: widget til hjemmeskærmen"
+      ],
+      "note": "Abonnement pr. uge, måned eller år, eller betal én gang for altid. Drikkepenge i indstillingerne er noget andet og låser ikke noget op."
     },
-    "note": "Ingen reklamer, intet abonnement."
+    "note": "Ingen reklamer."
   },
   "faq": {
     "title": "Ofte stillede spørgsmål",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Jeg har flere børn.",
-        "a": "I indstillingerne kan du tilføje så mange børn, du vil, hver med profilbillede. Vælg ved scanningen, hvem aktiviteterne er til: I kalenderen har hvert barn sin farve, og du kan skifte mellem samlet visning og filter pr. barn."
+        "a": "I indstillingerne kan du tilføje så mange børn, du vil, hver med profilbillede. Vælg ved scanningen, hvem aktiviteterne er til: I kalenderen har hvert barn sin farve, og du kan skifte mellem samlet visning og filter pr. barn. Fra andet barn og til profilbilleder skal du have Plus."
       },
       {
         "q": "Hvordan deler jeg planen med min partner?",
-        "a": "Gå til „Deling af begivenheder“ i indstillingerne, tryk på „Inviter til deling“, og send linket i en besked. Den inviterede kan se og redigere alle børn og aftaler, og ændringer fra begge sider vises straks hos begge. Det har intet med Apples Familiedeling at gøre."
+        "a": "Gå til „Deling af begivenheder“ i indstillingerne, tryk på „Inviter til deling“, og send linket i en besked. Den inviterede kan se og redigere alle børn og aftaler, og ændringer fra begge sider vises straks hos begge. Det har intet med Apples Familiedeling at gøre. For at starte en ny deling skal du have Pro. De inviterede er med gratis."
       },
       {
         "q": "Kan man dele på andre måder?",

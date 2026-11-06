@@ -5,7 +5,7 @@
     "headline": "Wystarczy zdjęcie.\nO pakowaniu przypomnimy.",
     "lead": "Zrób zdjęcie miesięcznego planu, który dostajesz w przedszkolu. Plan Malucha odczyta daty, godziny i nazwy wydarzeń i doda je wszystkie naraz. Wieczorem przed wycieczką, o 20:00, przyjdzie przypomnienie: nie zapomnij o drugim śniadaniu.",
     "cta": "Pobierz za darmo z App Store",
-    "note": "Wszystkie funkcje są bezpłatne. Zdjęcia nie opuszczają Twojego iPhone'a."
+    "note": "Odczyt zdjęć i przypomnienie wieczorem są bezpłatne. Zdjęcia nie opuszczają Twojego iPhone'a."
   },
   "demo": {
     "title": "Zrób zdjęcie ogłoszenia",
@@ -116,27 +116,29 @@
     "note": "Wydarzenia całodniowe, takie jak wycieczka, mają tylko przypomnienie wieczorem dzień wcześniej i rano. Każde możesz w dowolnej chwili włączyć lub wyłączyć w ustawieniach."
   },
   "pricing": {
-    "title": "Wszystkie funkcje są bezpłatne",
+    "title": "Odczyt zdjęć jest bezpłatny",
     "free": {
       "name": "Za darmo",
       "items": [
-        "Odczyt wydarzeń ze zdjęć i wiadomości",
+        "Odczyt wydarzeń ze zdjęć i wiadomości bez limitu",
         "Poprawki przed zapisaniem, filtr innych grup",
-        "Przypomnienia wieczorem, rano, godzinę przed i o czasie",
-        "Kolor dla każdego dziecka i wspólny kalendarz",
+        "Jedno dziecko",
+        "Przypomnienia wieczorem i rano",
         "Synchronizacja z Kalendarzem Apple",
-        "Udostępnianie rodzinie przez link",
-        "Widżet na ekranie początkowym"
+        "Dołączenie do planu udostępnionego przez rodzinę"
       ]
     },
     "pro": {
-      "name": "Wesprzyj twórcę",
+      "name": "Plus i Pro",
       "items": [
-        "W ustawieniach możesz zostawić drobny napiwek w dowolnej kwocie",
-        "Napiwek niczego nie odblokowuje. Aplikacja działa tak samo"
-      ]
+        "Plus: więcej dzieci, ze zdjęciem profilowym",
+        "Plus: przypomnienia godzinę przed i o czasie",
+        "Pro: wszystko z Plus i zapraszanie rodziny do wspólnego planu",
+        "Pro: widżet na ekranie początkowym"
+      ],
+      "note": "Subskrypcja tygodniowa, miesięczna lub roczna albo jednorazowy zakup na zawsze. Napiwek w ustawieniach to osobna sprawa i niczego nie odblokowuje."
     },
-    "note": "Bez reklam i bez subskrypcji."
+    "note": "Bez reklam."
   },
   "faq": {
     "title": "Częste pytania",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Mam więcej niż jedno dziecko.",
-        "a": "W ustawieniach dodasz dowolną liczbę dzieci, każde ze zdjęciem profilowym. Przy skanowaniu wybierz, czyje to wydarzenia: w kalendarzu każde dziecko ma swój kolor, a widok wspólny możesz przełączać na filtr dla jednego dziecka."
+        "a": "W ustawieniach dodasz dowolną liczbę dzieci, każde ze zdjęciem profilowym. Przy skanowaniu wybierz, czyje to wydarzenia: w kalendarzu każde dziecko ma swój kolor, a widok wspólny możesz przełączać na filtr dla jednego dziecka. Od drugiego dziecka, a także do zdjęć profilowych, potrzebny jest Plus."
       },
       {
         "q": "Jak udostępnić plan partnerowi?",
-        "a": "W ustawieniach, w sekcji „Udostępnianie wydarzeń”, stuknij „Zaproś do udostępniania” i wyślij link wiadomością. Zaproszona osoba widzi i edytuje wszystkie dzieci i wydarzenia, a zmiany z obu stron od razu pojawiają się u obojga. Nie ma to związku z Chmurą rodzinną Apple."
+        "a": "W ustawieniach, w sekcji „Udostępnianie wydarzeń”, stuknij „Zaproś do udostępniania” i wyślij link wiadomością. Zaproszona osoba widzi i edytuje wszystkie dzieci i wydarzenia, a zmiany z obu stron od razu pojawiają się u obojga. Nie ma to związku z Chmurą rodzinną Apple. Aby rozpocząć nowe udostępnianie, potrzebny jest Pro. Zaproszone osoby dołączają za darmo."
       },
       {
         "q": "Czy można udostępniać inaczej?",

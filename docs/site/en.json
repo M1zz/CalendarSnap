@@ -1,11 +1,11 @@
 {
   "title": "Kids Schedule: snap the daycare calendar, get the whole month and reminders",
-  "description": "Photograph the monthly calendar or newsletter from daycare or preschool. Every event lands in your calendar, with a reminder the evening before. Free.",
+  "description": "Photograph the monthly calendar or newsletter from daycare or preschool. Every event lands in your calendar, with a reminder the evening before. Snapping notices is free.",
   "hero": {
     "headline": "Snap the notice.\nPack the night before.",
     "lead": "Take a photo of the monthly calendar your daycare sends home. Kids Schedule reads the dates, times and event names and adds them all at once. The evening before the field trip, at 8 p.m., you get a nudge to pack the lunch.",
     "cta": "Get it free on the App Store",
-    "note": "Every feature is free. Your photos never leave your phone."
+    "note": "Snapping notices and evening-before reminders are free. Your photos never leave your phone."
   },
   "demo": {
     "title": "Snap a notice",
@@ -116,27 +116,29 @@
     "note": "All-day events like field trips only get the evening-before and morning-of reminders. Turn any of them on or off in Settings."
   },
   "pricing": {
-    "title": "Every feature is free",
+    "title": "Snapping notices is free",
     "free": {
       "name": "Free",
       "items": [
-        "Reading events from photos and messages",
+        "Reading events from photos and messages, no limit",
         "Editing before you save, filtering other classes",
-        "Evening-before, morning-of, 1-hour and on-time reminders",
-        "A color per child and one combined calendar",
+        "One child",
+        "Evening-before and morning-of reminders",
         "Apple Calendar sync",
-        "Sharing with family by invite link",
-        "Home Screen widget"
+        "Joining a schedule your family shares with you"
       ]
     },
     "pro": {
-      "name": "Support the developer",
+      "name": "Plus and Pro",
       "items": [
-        "Send a small tip of any size from Settings",
-        "Tips don't unlock anything. The app works the same either way"
-      ]
+        "Plus: more than one child, with profile photos",
+        "Plus: 1-hour and on-time reminders",
+        "Pro: everything in Plus, and inviting family to share",
+        "Pro: Home Screen widget"
+      ],
+      "note": "Choose a weekly, monthly or yearly subscription, or pay once for lifetime. Tips in Settings are separate and unlock nothing."
     },
-    "note": "No ads, no subscription."
+    "note": "No ads."
   },
   "faq": {
     "title": "Questions",
@@ -159,11 +161,11 @@
       },
       {
         "q": "I have more than one child.",
-        "a": "Add as many children as you like in Settings, each with a profile photo. Choose whose events you're scanning, and the calendar shows each child in their own color, with a combined view and a filter per child."
+        "a": "Add as many children as you like in Settings, each with a profile photo. Choose whose events you're scanning, and the calendar shows each child in their own color, with a combined view and a filter per child. A second child and profile photos come with Plus."
       },
       {
         "q": "How do I share the schedule with my partner?",
-        "a": "In Settings, under Schedule Sharing, tap Invite People and send the link by message. They can see and edit every child and event, and changes from either side show up on both right away. This is separate from Apple Family Sharing."
+        "a": "In Settings, under Schedule Sharing, tap Invite People and send the link by message. They can see and edit every child and event, and changes from either side show up on both right away. This is separate from Apple Family Sharing. Starting a shared schedule needs Pro. People you invite join for free."
       },
       {
         "q": "Are there other ways to share?",

@@ -1,11 +1,11 @@
 {
   "title": "Kita-Planer: Kita-Kalender fotografieren, ganzen Monat samt Erinnerungen haben",
-  "description": "Fotografiere den Monatsplan aus Kita oder Kindergarten. Alle Termine landen im Kalender, und am Vorabend erinnert dich die App ans Packen. Gratis.",
+  "description": "Fotografiere den Monatsplan aus Kita oder Kindergarten. Alle Termine landen im Kalender, und am Vorabend erinnert dich die App ans Packen. Das Fotografieren ist kostenlos.",
   "hero": {
     "headline": "Foto vom Elternbrief.\nErinnerung am Vorabend.",
     "lead": "Fotografiere den Monatsplan, den die Kita mitgibt. Kita-Planer liest Datum, Uhrzeit und Namen jedes Termins und trägt alles auf einmal ein. Am Abend vor dem Ausflug, um 20 Uhr, kommt die Erinnerung: Brotdose nicht vergessen.",
     "cta": "Kostenlos im App Store laden",
-    "note": "Alle Funktionen sind kostenlos. Deine Fotos bleiben auf deinem iPhone."
+    "note": "Fotografieren und die Erinnerung am Vorabend sind kostenlos. Deine Fotos bleiben auf deinem iPhone."
   },
   "demo": {
     "title": "Fotografiere einen Elternbrief",
@@ -116,27 +116,29 @@
     "note": "Ganztägige Termine wie ein Ausflug bekommen nur die Erinnerung am Vorabend und am Morgen. In den Einstellungen kannst du jede jederzeit ein- und ausschalten."
   },
   "pricing": {
-    "title": "Alle Funktionen sind kostenlos",
+    "title": "Das Fotografieren ist kostenlos",
     "free": {
       "name": "Kostenlos",
       "items": [
-        "Termine aus Fotos und Nachrichten lesen",
+        "Termine aus Fotos und Nachrichten lesen, unbegrenzt",
         "Vor dem Sichern korrigieren, andere Gruppen herausfiltern",
-        "Erinnerungen am Vorabend, am Morgen, 1 Stunde vorher und pünktlich",
-        "Eine Farbe pro Kind und ein gemeinsamer Kalender",
+        "Ein Kind",
+        "Erinnerungen am Vorabend und am Morgen",
         "Abgleich mit dem Apple Kalender",
-        "Mit der Familie teilen per Einladungslink",
-        "Widget für den Home-Bildschirm"
+        "Einem Plan beitreten, den die Familie mit dir teilt"
       ]
     },
     "pro": {
-      "name": "Den Entwickler unterstützen",
+      "name": "Plus und Pro",
       "items": [
-        "In den Einstellungen kannst du ein kleines Trinkgeld in beliebiger Höhe geben",
-        "Trinkgeld schaltet nichts frei. Die App funktioniert so oder so gleich"
-      ]
+        "Plus: mehrere Kinder, mit Profilfoto",
+        "Plus: Erinnerungen 1 Stunde vorher und pünktlich",
+        "Pro: alles aus Plus und die Familie zum Teilen einladen",
+        "Pro: Widget für den Home-Bildschirm"
+      ],
+      "note": "Als Wochen-, Monats- oder Jahresabo oder einmal zahlen und für immer nutzen. Trinkgeld in den Einstellungen ist davon getrennt und schaltet nichts frei."
     },
-    "note": "Keine Werbung, kein Abo."
+    "note": "Keine Werbung."
   },
   "faq": {
     "title": "Häufige Fragen",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Ich habe mehrere Kinder.",
-        "a": "In den Einstellungen legst du beliebig viele Kinder an, jeweils mit Profilfoto. Wähl beim Scannen, für wen die Termine sind: Im Kalender hat jedes Kind seine Farbe, und du wechselst zwischen Gesamtansicht und Filter pro Kind."
+        "a": "In den Einstellungen legst du beliebig viele Kinder an, jeweils mit Profilfoto. Wähl beim Scannen, für wen die Termine sind: Im Kalender hat jedes Kind seine Farbe, und du wechselst zwischen Gesamtansicht und Filter pro Kind. Ab dem zweiten Kind und für Profilfotos brauchst du Plus."
       },
       {
         "q": "Wie teile ich die Termine mit meinem Partner?",
-        "a": "Tippe in den Einstellungen unter „Termine teilen“ auf „Personen einladen“ und schick den Link per Nachricht. Die eingeladene Person sieht und bearbeitet alle Kinder und Termine, und Änderungen von beiden Seiten erscheinen sofort überall. Das hat nichts mit der Apple Familienfreigabe zu tun."
+        "a": "Tippe in den Einstellungen unter „Termine teilen“ auf „Personen einladen“ und schick den Link per Nachricht. Die eingeladene Person sieht und bearbeitet alle Kinder und Termine, und Änderungen von beiden Seiten erscheinen sofort überall. Das hat nichts mit der Apple Familienfreigabe zu tun. Um selbst einen gemeinsamen Plan zu starten, brauchst du Pro. Eingeladene machen kostenlos mit."
       },
       {
         "q": "Gibt es andere Wege zum Teilen?",

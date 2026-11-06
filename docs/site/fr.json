@@ -1,11 +1,11 @@
 {
   "title": "Agenda Bambin : photographiez le planning de la crèche, tout le mois est rangé",
-  "description": "Photographiez le planning mensuel de la crèche ou de l’école. Tout le mois arrive dans votre calendrier, avec un rappel la veille au soir. Gratuit.",
+  "description": "Photographiez le planning mensuel de la crèche ou de l’école. Tout le mois arrive dans votre calendrier, avec un rappel la veille au soir. La lecture des photos est gratuite.",
   "hero": {
     "headline": "Une photo du mot.\nUn rappel la veille.",
     "lead": "Photographiez le planning du mois remis par la crèche. Agenda Bambin lit les dates, les heures et le nom de chaque activité, et les ajoute d’un coup. La veille de la sortie, à 20 h, un rappel vous dit de préparer le pique-nique.",
     "cta": "Télécharger gratuitement sur l’App Store",
-    "note": "Tout est gratuit. Vos photos restent sur votre iPhone."
+    "note": "La lecture des photos et le rappel de la veille sont gratuits. Vos photos restent sur votre iPhone."
   },
   "demo": {
     "title": "Prenez un mot en photo",
@@ -116,27 +116,29 @@
     "note": "Les activités sur toute la journée, comme une sortie, n’ont que le rappel de la veille et celui du matin. Activez-les ou désactivez-les à tout moment dans les réglages."
   },
   "pricing": {
-    "title": "Tout est gratuit",
+    "title": "La lecture des photos est gratuite",
     "free": {
       "name": "Gratuit",
       "items": [
-        "Lecture des activités depuis des photos et des messages",
+        "Lecture des activités depuis des photos et des messages, sans limite",
         "Corrections avant d’enregistrer, filtre des autres sections",
-        "Rappels la veille, le matin, 1 heure avant et à l’heure",
-        "Une couleur par enfant et un calendrier commun",
+        "Un enfant",
+        "Rappels la veille au soir et le matin",
         "Synchronisation avec le Calendrier Apple",
-        "Partage en famille par lien d’invitation",
-        "Widget pour l’écran d’accueil"
+        "Rejoindre un planning partagé par votre famille"
       ]
     },
     "pro": {
-      "name": "Soutenir le développeur",
+      "name": "Plus et Pro",
       "items": [
-        "Depuis les réglages, laissez un petit pourboire du montant de votre choix",
-        "Le pourboire ne débloque rien. L’app fonctionne pareil sans"
-      ]
+        "Plus : plusieurs enfants, avec photo de profil",
+        "Plus : rappels 1 heure avant et à l’heure",
+        "Pro : tout Plus, et inviter la famille à partager",
+        "Pro : widget pour l’écran d’accueil"
+      ],
+      "note": "Abonnement à la semaine, au mois ou à l’année, ou achat unique à vie. Le pourboire des réglages est à part et ne débloque rien."
     },
-    "note": "Ni publicité ni abonnement."
+    "note": "Pas de publicité."
   },
   "faq": {
     "title": "Questions fréquentes",
@@ -159,11 +161,11 @@
       },
       {
         "q": "J’ai plusieurs enfants.",
-        "a": "Ajoutez autant d’enfants que vous voulez dans les réglages, chacun avec sa photo. Au moment du scan, choisissez pour qui sont les activités : chaque enfant a sa couleur dans le calendrier, avec une vue commune et un filtre par enfant."
+        "a": "Ajoutez autant d’enfants que vous voulez dans les réglages, chacun avec sa photo. Au moment du scan, choisissez pour qui sont les activités : chaque enfant a sa couleur dans le calendrier, avec une vue commune et un filtre par enfant. À partir du deuxième enfant, et pour les photos de profil, il faut Plus."
       },
       {
         "q": "Comment partager le planning avec mon conjoint ?",
-        "a": "Dans les réglages, sous « Partage des événements », touchez « Inviter des proches » et envoyez le lien par message. La personne invitée voit et modifie tous les enfants et événements, et les changements faits de part et d’autre apparaissent aussitôt des deux côtés. Rien à voir avec le Partage familial d’Apple."
+        "a": "Dans les réglages, sous « Partage des événements », touchez « Inviter des proches » et envoyez le lien par message. La personne invitée voit et modifie tous les enfants et événements, et les changements faits de part et d’autre apparaissent aussitôt des deux côtés. Rien à voir avec le Partage familial d’Apple. Lancer un nouveau partage demande Pro. Les personnes invitées le rejoignent gratuitement."
       },
       {
         "q": "Existe-t-il d’autres façons de partager ?",

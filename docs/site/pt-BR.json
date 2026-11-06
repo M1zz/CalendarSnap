@@ -1,11 +1,11 @@
 {
   "title": "Agenda Kids: fotografe o calendário da escolinha e tenha o mês inteiro",
-  "description": "Fotografe o calendário do mês ou o bilhete da creche ou da escola. O mês inteiro vai para a agenda, com lembrete na véspera do que levar. Grátis.",
+  "description": "Fotografe o calendário do mês ou o bilhete da creche ou da escola. O mês inteiro vai para a agenda, com lembrete na véspera do que levar. Ler as fotos é grátis.",
   "hero": {
     "headline": "Só tire uma foto.\nA gente lembra na véspera.",
     "lead": "Tire uma foto do calendário do mês que a escolinha manda. O Agenda Kids lê as datas, os horários e o nome de cada atividade e adiciona tudo de uma vez. Na véspera do passeio, às 20h, chega o lembrete: não esqueça a lancheira.",
     "cta": "Baixe grátis na App Store",
-    "note": "Tudo é grátis. Suas fotos não saem do seu iPhone."
+    "note": "Ler as fotos e receber o lembrete da véspera é grátis. Suas fotos não saem do seu iPhone."
   },
   "demo": {
     "title": "Fotografe um bilhete",
@@ -116,27 +116,29 @@
     "note": "Atividades de dia inteiro, como um passeio, recebem só o lembrete da noite anterior e o da manhã. Ative ou desative cada um quando quiser nos ajustes."
   },
   "pricing": {
-    "title": "Tudo é grátis",
+    "title": "Ler as fotos é grátis",
     "free": {
       "name": "Grátis",
       "items": [
-        "Leitura de atividades em fotos e mensagens",
+        "Leitura de atividades em fotos e mensagens, sem limite",
         "Correção antes de salvar e filtro de outras turmas",
-        "Lembretes na véspera, de manhã, 1 hora antes e na hora",
-        "Uma cor por filho e um calendário único",
+        "Um filho",
+        "Lembretes na véspera e de manhã",
         "Sincronização com o Calendário da Apple",
-        "Compartilhamento com a família por link",
-        "Widget na Tela de Início"
+        "Entrar numa agenda que a família compartilha com você"
       ]
     },
     "pro": {
-      "name": "Apoie o desenvolvedor",
+      "name": "Plus e Pro",
       "items": [
-        "Nos ajustes, você pode deixar uma gorjeta do valor que quiser",
-        "A gorjeta não libera nada. O app funciona igual sem ela"
-      ]
+        "Plus: vários filhos, com foto de perfil",
+        "Plus: lembretes 1 hora antes e na hora",
+        "Pro: tudo do Plus e convidar a família para compartilhar",
+        "Pro: widget na Tela de Início"
+      ],
+      "note": "Assinatura semanal, mensal ou anual, ou pagamento único vitalício. A gorjeta nos ajustes é à parte e não libera nada."
     },
-    "note": "Sem anúncios e sem assinatura."
+    "note": "Sem anúncios."
   },
   "faq": {
     "title": "Perguntas frequentes",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Tenho mais de um filho.",
-        "a": "Nos ajustes você cadastra quantos filhos quiser, cada um com foto. Na hora de escanear, escolha de quem são as atividades: no calendário cada criança tem sua cor, com visão geral e filtro por filho."
+        "a": "Nos ajustes você cadastra quantos filhos quiser, cada um com foto. Na hora de escanear, escolha de quem são as atividades: no calendário cada criança tem sua cor, com visão geral e filtro por filho. A partir do segundo filho, e para fotos de perfil, é preciso o Plus."
       },
       {
         "q": "Como compartilho a agenda com meu parceiro ou parceira?",
-        "a": "Nos ajustes, em “Compartilhar agenda”, toque em “Convidar pessoas” e envie o link por mensagem. Quem recebe vê e edita todos os filhos e eventos, e o que um muda aparece na hora para o outro. Não tem relação com o Compartilhamento Familiar da Apple."
+        "a": "Nos ajustes, em “Compartilhar agenda”, toque em “Convidar pessoas” e envie o link por mensagem. Quem recebe vê e edita todos os filhos e eventos, e o que um muda aparece na hora para o outro. Não tem relação com o Compartilhamento Familiar da Apple. Para começar um novo compartilhamento é preciso o Pro. Quem é convidado entra de graça."
       },
       {
         "q": "Dá para compartilhar de outro jeito?",

@@ -1,11 +1,11 @@
 {
   "title": "Çocuk Takvimi: kreşin aylık planını fotoğrafla, bütün ay takvimde",
-  "description": "Kreşin ya da anaokulunun aylık planını fotoğrafla. Bütün ay takvime girer, bir önceki akşam neyin hazırlanacağı hatırlatılır. Ücretsiz.",
+  "description": "Kreşin ya da anaokulunun aylık planını fotoğrafla. Bütün ay takvime girer, bir önceki akşam neyin hazırlanacağı hatırlatılır. Fotoğraf okuma ücretsiz.",
   "hero": {
     "headline": "Bir fotoğraf yeter.\nAkşamdan hatırlatırız.",
     "lead": "Kreşten gelen aylık planın fotoğrafını çek. Çocuk Takvimi tarihleri, saatleri ve etkinlik adlarını okuyup hepsini tek seferde ekler. Geziden önceki akşam saat 20.00'de bir hatırlatma gelir: beslenmeyi unutma.",
     "cta": "App Store'dan ücretsiz indir",
-    "note": "Tüm özellikler ücretsiz. Fotoğrafların iPhone'undan dışarı çıkmaz."
+    "note": "Fotoğraf okuma ve önceki akşam hatırlatması ücretsiz. Fotoğrafların iPhone'undan dışarı çıkmaz."
   },
   "demo": {
     "title": "Bir duyuruyu fotoğrafla",
@@ -116,27 +116,29 @@
     "note": "Gezi gibi tüm gün süren etkinliklerde yalnızca önceki akşam ve o sabahki hatırlatma gelir. Her birini ayarlardan istediğin zaman açıp kapatabilirsin."
   },
   "pricing": {
-    "title": "Tüm özellikler ücretsiz",
+    "title": "Fotoğraf okuma ücretsiz",
     "free": {
       "name": "Ücretsiz",
       "items": [
-        "Fotoğraf ve mesajlardan etkinlik okuma",
+        "Fotoğraf ve mesajlardan sınırsız etkinlik okuma",
         "Kaydetmeden önce düzeltme, diğer sınıfları eleme",
-        "Önceki akşam, sabah, 1 saat önce ve tam saatinde hatırlatma",
-        "Her çocuğa bir renk ve ortak takvim",
+        "Bir çocuk",
+        "Önceki akşam ve sabah hatırlatma",
         "Apple Takvim ile eşzamanlama",
-        "Davet bağlantısıyla aileyle paylaşma",
-        "Ana ekran widget'ı"
+        "Ailenin seninle paylaştığı takvime katılma"
       ]
     },
     "pro": {
-      "name": "Geliştiriciyi destekle",
+      "name": "Plus ve Pro",
       "items": [
-        "Ayarlardan dilediğin kadar küçük bir bahşiş gönderebilirsin",
-        "Bahşiş hiçbir şeyin kilidini açmaz. Uygulama aynen çalışır"
-      ]
+        "Plus: birden fazla çocuk, profil fotoğrafıyla",
+        "Plus: 1 saat önce ve tam saatinde hatırlatma",
+        "Pro: Plus'taki her şey ve aileyi paylaşmaya davet",
+        "Pro: Ana ekran widget'ı"
+      ],
+      "note": "Haftalık, aylık ya da yıllık abonelik veya tek seferlik ödemeyle ömür boyu. Ayarlardaki bahşiş ayrıdır ve hiçbir şeyin kilidini açmaz."
     },
-    "note": "Reklam yok, abonelik yok."
+    "note": "Reklam yok."
   },
   "faq": {
     "title": "Sık sorulan sorular",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Birden fazla çocuğum var.",
-        "a": "Ayarlardan istediğin kadar çocuk ekleyebilir, her birine profil fotoğrafı koyabilirsin. Tararken etkinliklerin kime ait olduğunu seç: takvimde her çocuğun kendi rengi olur, ortak görünümle çocuk bazlı filtre arasında geçiş yapabilirsin."
+        "a": "Ayarlardan istediğin kadar çocuk ekleyebilir, her birine profil fotoğrafı koyabilirsin. Tararken etkinliklerin kime ait olduğunu seç: takvimde her çocuğun kendi rengi olur, ortak görünümle çocuk bazlı filtre arasında geçiş yapabilirsin. İkinci çocuktan itibaren ve profil fotoğrafları için Plus gerekir."
       },
       {
         "q": "Takvimi eşimle nasıl paylaşırım?",
-        "a": "Ayarlardaki “Etkinlik Paylaşımı” bölümünde “Davet Et ve Paylaş”a dokun ve bağlantıyı mesajla gönder. Davet edilen kişi tüm çocukları ve etkinlikleri görüp düzenleyebilir; iki taraftan yapılan değişiklikler hemen ikisinde de görünür. Bunun Apple'ın Aile Paylaşımı ile ilgisi yoktur."
+        "a": "Ayarlardaki “Etkinlik Paylaşımı” bölümünde “Davet Et ve Paylaş”a dokun ve bağlantıyı mesajla gönder. Davet edilen kişi tüm çocukları ve etkinlikleri görüp düzenleyebilir; iki taraftan yapılan değişiklikler hemen ikisinde de görünür. Bunun Apple'ın Aile Paylaşımı ile ilgisi yoktur. Yeni bir paylaşım başlatmak için Pro gerekir. Davet edilenler ücretsiz katılır."
       },
       {
         "q": "Başka paylaşım yolları var mı?",

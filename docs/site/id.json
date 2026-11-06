@@ -1,11 +1,11 @@
 {
   "title": "Jadwal Si Kecil: foto kalender dari sekolah, jadwal sebulan langsung beres",
-  "description": "Foto kalender bulanan atau surat edaran dari daycare atau TK. Jadwal sebulan masuk kalender, malam sebelumnya ada pengingat barang bawaan. Gratis.",
+  "description": "Foto kalender bulanan atau surat edaran dari daycare atau TK. Jadwal sebulan masuk kalender, malam sebelumnya ada pengingat barang bawaan. Membaca foto gratis.",
   "hero": {
     "headline": "Cukup foto edarannya.\nKami ingatkan bekalnya.",
     "lead": "Foto kalender bulanan yang dibawa pulang dari sekolah. Jadwal Si Kecil membaca tanggal, jam, dan nama kegiatan, lalu memasukkan semuanya sekaligus. Malam sebelum karyawisata, jam 8, datang pengingat: jangan lupa bekal.",
     "cta": "Unduh gratis di App Store",
-    "note": "Semua fitur gratis. Foto Anda tidak pernah keluar dari iPhone."
+    "note": "Membaca foto dan pengingat malam sebelumnya gratis. Foto Anda tidak pernah keluar dari iPhone."
   },
   "demo": {
     "title": "Coba foto surat edaran",
@@ -116,27 +116,29 @@
     "note": "Acara seharian seperti karyawisata hanya mendapat pengingat malam sebelumnya dan pagi harinya. Masing-masing bisa dinyalakan atau dimatikan kapan saja di pengaturan."
   },
   "pricing": {
-    "title": "Semua fitur gratis",
+    "title": "Membaca foto gratis",
     "free": {
       "name": "Gratis",
       "items": [
-        "Membaca acara dari foto dan pesan",
+        "Membaca acara dari foto dan pesan, tanpa batas",
         "Perbaiki sebelum simpan, saring kelas lain",
-        "Pengingat malam sebelumnya, pagi, 1 jam sebelum, dan tepat waktu",
-        "Warna untuk tiap anak dan kalender gabungan",
+        "Satu anak",
+        "Pengingat malam sebelumnya dan pagi hari",
         "Sinkron dengan Kalender Apple",
-        "Berbagi dengan keluarga lewat tautan",
-        "Widget Layar Utama"
+        "Bergabung ke jadwal yang dibagikan keluarga"
       ]
     },
     "pro": {
-      "name": "Dukung pengembang",
+      "name": "Plus dan Pro",
       "items": [
-        "Dari pengaturan, Anda bisa memberi tip kecil sesuka hati",
-        "Tip tidak membuka fitur apa pun. Tanpa tip pun aplikasinya sama"
-      ]
+        "Plus: lebih dari satu anak, dengan foto profil",
+        "Plus: pengingat 1 jam sebelum dan tepat waktu",
+        "Pro: semua isi Plus dan mengundang keluarga untuk berbagi",
+        "Pro: widget Layar Utama"
+      ],
+      "note": "Langganan mingguan, bulanan, atau tahunan, atau sekali bayar untuk selamanya. Tip di pengaturan terpisah dan tidak membuka fitur apa pun."
     },
-    "note": "Tanpa iklan, tanpa langganan."
+    "note": "Tanpa iklan."
   },
   "faq": {
     "title": "Pertanyaan umum",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Anak saya lebih dari satu.",
-        "a": "Di pengaturan Anda bisa menambahkan anak sebanyak apa pun, masing-masing dengan foto profil. Saat memindai, pilih ini jadwal siapa: di kalender tiap anak punya warna sendiri, dan Anda bisa berpindah antara tampilan gabungan dan filter per anak."
+        "a": "Di pengaturan Anda bisa menambahkan anak sebanyak apa pun, masing-masing dengan foto profil. Saat memindai, pilih ini jadwal siapa: di kalender tiap anak punya warna sendiri, dan Anda bisa berpindah antara tampilan gabungan dan filter per anak. Mulai anak kedua dan untuk foto profil, Anda perlu Plus."
       },
       {
         "q": "Bagaimana berbagi jadwal dengan pasangan?",
-        "a": "Buka “Berbagi Jadwal” di pengaturan, ketuk “Undang untuk Melihat Bersama”, lalu kirim tautannya lewat pesan. Yang diundang bisa melihat dan mengubah jadwal semua anak, dan perubahan dari pihak mana pun langsung terlihat di keduanya. Ini tidak terkait dengan Berbagi Keluarga dari Apple."
+        "a": "Buka “Berbagi Jadwal” di pengaturan, ketuk “Undang untuk Melihat Bersama”, lalu kirim tautannya lewat pesan. Yang diundang bisa melihat dan mengubah jadwal semua anak, dan perubahan dari pihak mana pun langsung terlihat di keduanya. Ini tidak terkait dengan Berbagi Keluarga dari Apple. Untuk memulai berbagi baru, Anda perlu Pro. Orang yang diundang bergabung gratis."
       },
       {
         "q": "Ada cara berbagi lain?",

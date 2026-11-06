@@ -1,11 +1,11 @@
 {
   "title": "Kinderplanner: maak een foto van de kalender van de opvang en heb de hele maand",
-  "description": "Fotografeer de maandkalender of nieuwsbrief van de opvang. De hele maand staat in je agenda, en de avond ervoor hoor je wat er mee moet. Gratis.",
+  "description": "Fotografeer de maandkalender of nieuwsbrief van de opvang. De hele maand staat in je agenda, en de avond ervoor hoor je wat er mee moet. Foto's inlezen is gratis.",
   "hero": {
     "headline": "Eén foto is genoeg.\nWij geven een seintje.",
     "lead": "Fotografeer de maandkalender die je van de opvang meekrijgt. Kinderplanner leest de data, tijden en namen van de activiteiten en zet ze in één keer in je agenda. De avond voor het uitje, om 20.00 uur, komt de herinnering: vergeet het lunchtrommeltje niet.",
     "cta": "Gratis downloaden in de App Store",
-    "note": "Alle functies zijn gratis. Je foto's verlaten je iPhone nooit."
+    "note": "Foto's inlezen en de herinnering de avond ervoor zijn gratis. Je foto's verlaten je iPhone nooit."
   },
   "demo": {
     "title": "Maak een foto van een briefje",
@@ -116,27 +116,29 @@
     "note": "Activiteiten van een hele dag, zoals een uitje, krijgen alleen de herinnering de avond ervoor en die ochtend. Zet ze in de instellingen aan of uit wanneer je wilt."
   },
   "pricing": {
-    "title": "Alle functies zijn gratis",
+    "title": "Foto's inlezen is gratis",
     "free": {
       "name": "Gratis",
       "items": [
-        "Activiteiten lezen uit foto's en berichten",
+        "Activiteiten lezen uit foto's en berichten, onbeperkt",
         "Aanpassen voor je bewaart, andere groepen wegfilteren",
-        "Herinneringen de avond ervoor, 's ochtends, 1 uur ervoor en op tijd",
-        "Een kleur per kind en één gezamenlijke agenda",
+        "Eén kind",
+        "Herinneringen de avond ervoor en 's ochtends",
         "Synchronisatie met Apple Agenda",
-        "Delen met het gezin via een link",
-        "Widget op het beginscherm"
+        "Meedoen met een agenda die je gezin met je deelt"
       ]
     },
     "pro": {
-      "name": "Steun de ontwikkelaar",
+      "name": "Plus en Pro",
       "items": [
-        "In de instellingen kun je een kleine fooi geven, zoveel je wilt",
-        "Een fooi ontgrendelt niets. De app werkt zonder precies hetzelfde"
-      ]
+        "Plus: meer kinderen, met profielfoto",
+        "Plus: herinneringen 1 uur ervoor en op tijd",
+        "Pro: alles van Plus en je gezin uitnodigen om te delen",
+        "Pro: widget op het beginscherm"
+      ],
+      "note": "Abonnement per week, maand of jaar, of één keer betalen voor altijd. Een fooi in de instellingen staat daar los van en ontgrendelt niets."
     },
-    "note": "Geen advertenties, geen abonnement."
+    "note": "Geen advertenties."
   },
   "faq": {
     "title": "Veelgestelde vragen",
@@ -159,11 +161,11 @@
       },
       {
         "q": "Ik heb meer dan één kind.",
-        "a": "In de instellingen voeg je zoveel kinderen toe als je wilt, elk met een profielfoto. Kies bij het scannen voor wie de activiteiten zijn: in de agenda heeft elk kind een eigen kleur, met een gezamenlijke weergave en een filter per kind."
+        "a": "In de instellingen voeg je zoveel kinderen toe als je wilt, elk met een profielfoto. Kies bij het scannen voor wie de activiteiten zijn: in de agenda heeft elk kind een eigen kleur, met een gezamenlijke weergave en een filter per kind. Vanaf het tweede kind en voor profielfoto's heb je Plus nodig."
       },
       {
         "q": "Hoe deel ik de planning met mijn partner?",
-        "a": "Ga in de instellingen naar „Afspraken delen”, tik op „Nodig mensen uit” en stuur de link in een bericht. De genodigde ziet en bewerkt alle kinderen en afspraken, en wijzigingen van beide kanten verschijnen meteen bij allebei. Dit staat los van Delen met gezin van Apple."
+        "a": "Ga in de instellingen naar „Afspraken delen”, tik op „Nodig mensen uit” en stuur de link in een bericht. De genodigde ziet en bewerkt alle kinderen en afspraken, en wijzigingen van beide kanten verschijnen meteen bij allebei. Dit staat los van Delen met gezin van Apple. Om zelf te gaan delen heb je Pro nodig. Wie je uitnodigt, doet gratis mee."
       },
       {
         "q": "Kan ik ook op andere manieren delen?",
