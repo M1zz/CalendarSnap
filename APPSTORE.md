@@ -58,6 +58,10 @@ https://m1zz.github.io/CalendarSnap/
 
 사진 속 글자 인식은 모두 기기 안에서 처리되며, 사진을 따로 서버로 보내지 않습니다.
 
+구독 안내
+아이일정 Plus와 Pro 구독은 자동 갱신 구독입니다. 갱신일 24시간 전까지 해지하지 않으면 Apple 계정으로 자동 결제되며, 설정의 구독 관리에서 언제든 해지할 수 있습니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보처리방침: https://m1zz.github.io/CalendarSnap/privacy.html
 
 ## en
 
@@ -117,6 +121,11 @@ See upcoming events right from your Home Screen with the widget.
 
 Text recognition in photos happens entirely on your device. Your photos are never sent to a server.
 
+Subscriptions
+Kids Schedule Plus and Pro are auto-renewing subscriptions. Payment is charged to your Apple Account, and the subscription renews unless canceled at least 24 hours before the period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/CalendarSnap/en/privacy.html
+
 ## en-GB
 
 ### 지원 URL
@@ -174,6 +183,11 @@ Widget
 See upcoming events right from your Home Screen with the widget.
 
 Text recognition in photos happens entirely on your device. Your photos are never sent to a server.
+
+Subscriptions
+Kids Schedule Plus and Pro are auto-renewing subscriptions. Payment is charged to your Apple Account, and the subscription renews unless cancelled at least 24 hours before the period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/CalendarSnap/en/privacy.html
 
 ## zh-Hans
 
@@ -233,6 +247,11 @@ https://m1zz.github.io/CalendarSnap/zh-Hans/
 
 照片中的文字识别全部在设备上完成，照片不会被上传到服务器。
 
+订阅说明
+宝贝日程 Plus 和 Pro 均为自动续期订阅。费用从你的 Apple 账户扣除，除非在当期结束前至少 24 小时取消，否则将自动续期。可随时在“设置”中管理或取消。
+使用条款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策: https://m1zz.github.io/CalendarSnap/zh-Hans/privacy.html
+
 ## zh-Hant
 
 ### 지원 URL
@@ -290,6 +309,11 @@ https://m1zz.github.io/CalendarSnap/zh-Hant/
 透過主畫面小工具，隨時查看即將到來的行程。
 
 照片中的文字辨識全部在裝置上完成，照片不會上傳到伺服器。
+
+訂閱說明
+寶貝日程 Plus 與 Pro 皆為自動續訂訂閱。費用會從你的 Apple 帳號扣款，除非在當期結束前至少 24 小時取消，否則將自動續訂。可隨時在「設定」中管理或取消。
+使用條款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隱私權政策: https://m1zz.github.io/CalendarSnap/zh-Hant/privacy.html
 
 ## ja
 
@@ -349,6 +373,11 @@ https://m1zz.github.io/CalendarSnap/ja/
 
 写真の文字認識はすべてデバイス内で行われ、写真がサーバーに送信されることはありません。
 
+サブスクリプションについて
+こどもスケジュールのPlusとProは自動更新のサブスクリプションです。期間終了の24時間前までに解約しない限り、Apple Accountに自動で請求されます。設定のサブスクリプション管理からいつでも解約できます。
+利用規約（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+プライバシーポリシー: https://m1zz.github.io/CalendarSnap/ja/privacy.html
+
 ## ru
 
 ### 지원 URL
@@ -406,6 +435,11 @@ https://m1zz.github.io/CalendarSnap/ru/
 Ближайшие события видны прямо на экране «Домой».
 
 Распознавание текста на фото полностью происходит на вашем устройстве. Фото не отправляются на сервер.
+
+Подписки
+Расписание малыша Plus и Pro — подписки с автопродлением. Оплата списывается с вашего Apple Account, а подписка продлевается, если не отменить её минимум за 24 часа до конца периода. Управлять подпиской и отменить её можно в Настройках.
+Условия использования (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Политика конфиденциальности: https://m1zz.github.io/CalendarSnap/ru/privacy.html
 
 ## es
 
@@ -465,6 +499,11 @@ Consulta los próximos eventos desde la pantalla de inicio con el widget.
 
 El reconocimiento del texto de las fotos se hace por completo en tu dispositivo. Tus fotos nunca se envían a ningún servidor.
 
+Suscripciones
+Agenda Peques Plus y Pro son suscripciones de renovación automática. El cargo se realiza en tu cuenta de Apple y la suscripción se renueva salvo que la canceles al menos 24 horas antes de que termine el periodo. Puedes gestionarla o cancelarla cuando quieras en Ajustes.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidad: https://m1zz.github.io/CalendarSnap/es/privacy.html
+
 ## de
 
 ### 지원 URL
@@ -522,6 +561,11 @@ Widget
 Sieh anstehende Termine direkt auf dem Home-Bildschirm.
 
 Die Texterkennung in Fotos läuft komplett auf deinem Gerät. Deine Fotos werden nie an einen Server gesendet.
+
+Abonnements
+Kita-Planer Plus und Pro sind Abos mit automatischer Verlängerung. Die Zahlung erfolgt über deinen Apple Account. Das Abo verlängert sich, sofern du nicht mindestens 24 Stunden vor Ablauf des Zeitraums kündigst. Verwalten oder kündigen kannst du es jederzeit in den Einstellungen.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Datenschutzerklärung: https://m1zz.github.io/CalendarSnap/de/privacy.html
 
 ## fr
 
@@ -581,6 +625,11 @@ Consultez les prochains événements directement depuis l’écran d’accueil.
 
 La reconnaissance du texte des photos s’effectue entièrement sur votre appareil. Vos photos ne sont jamais envoyées à un serveur.
 
+Abonnements
+Agenda Bambin Plus et Pro sont des abonnements à renouvellement automatique. Le paiement est débité sur votre compte Apple, et l’abonnement se renouvelle sauf résiliation au moins 24 heures avant la fin de la période. Gérez-le ou résiliez-le à tout moment dans Réglages.
+Conditions d'utilisation (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité: https://m1zz.github.io/CalendarSnap/fr/privacy.html
+
 ## it
 
 ### 지원 URL
@@ -638,6 +687,11 @@ Widget
 Controlla i prossimi eventi direttamente dalla schermata Home.
 
 Il riconoscimento del testo nelle foto avviene interamente sul tuo dispositivo. Le tue foto non vengono mai inviate a un server.
+
+Abbonamenti
+Agenda Bimbi Plus e Pro sono abbonamenti a rinnovo automatico. Il pagamento viene addebitato sul tuo Apple Account e l’abbonamento si rinnova se non lo disdici almeno 24 ore prima della scadenza. Puoi gestirlo o disdirlo in qualsiasi momento in Impostazioni.
+Condizioni d'uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Informativa sulla privacy: https://m1zz.github.io/CalendarSnap/it/privacy.html
 
 ## pt-BR
 
@@ -697,6 +751,11 @@ Veja os próximos eventos direto na tela de início.
 
 O reconhecimento de texto nas fotos acontece totalmente no seu dispositivo. Suas fotos nunca são enviadas a um servidor.
 
+Assinaturas
+Agenda Kids Plus e Pro são assinaturas com renovação automática. A cobrança é feita na sua Conta Apple e a assinatura é renovada, a menos que você cancele pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser em Ajustes.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de Privacidade: https://m1zz.github.io/CalendarSnap/pt-BR/privacy.html
+
 ## th
 
 ### 지원 URL
@@ -754,6 +813,11 @@ https://m1zz.github.io/CalendarSnap/th/
 ดูกำหนดการที่กำลังจะถึงได้ทันทีจากหน้าจอโฮม
 
 การอ่านข้อความจากรูปถ่ายทำงานทั้งหมดในอุปกรณ์ของคุณ รูปถ่ายไม่ถูกส่งไปยังเซิร์ฟเวอร์
+
+การสมัครสมาชิก
+ตารางลูกน้อย Plus และ Pro เป็นการสมัครสมาชิกที่ต่ออายุอัตโนมัติ ระบบจะเรียกเก็บเงินจากบัญชี Apple ของคุณและต่ออายุเว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ จัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่า
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://m1zz.github.io/CalendarSnap/th/privacy.html
 
 ## vi
 
@@ -813,6 +877,11 @@ Xem các sự kiện sắp tới ngay trên Màn hình chính.
 
 Việc nhận dạng chữ trong ảnh hoàn toàn diễn ra trên thiết bị của bạn. Ảnh không bao giờ được gửi lên máy chủ.
 
+Gói đăng ký
+Lịch Của Bé Plus và Pro là các gói đăng ký tự động gia hạn. Phí được tính vào Tài khoản Apple của bạn và tự gia hạn trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong Cài đặt.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Chính sách quyền riêng tư: https://m1zz.github.io/CalendarSnap/vi/privacy.html
+
 ## cs
 
 ### 지원 URL
@@ -870,6 +939,11 @@ Widget
 Nadcházející události uvidíte rovnou na ploše.
 
 Rozpoznávání textu na fotkách probíhá celé ve vašem zařízení. Vaše fotky se nikdy neodesílají na žádný server.
+
+Předplatné
+Rozvrh školky Plus a Pro jsou automaticky obnovovaná předplatná. Platba se strhává z vašeho účtu Apple a předplatné se obnoví, pokud ho nezrušíte alespoň 24 hodin před koncem období. Spravovat nebo zrušit ho můžete kdykoli v Nastavení.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://m1zz.github.io/CalendarSnap/cs/privacy.html
 
 ## da
 
@@ -929,6 +1003,11 @@ Se de kommende begivenheder direkte fra hjemmeskærmen.
 
 Tekstgenkendelsen i billeder foregår helt på din enhed. Dine billeder sendes aldrig til en server.
 
+Abonnementer
+Børneskema Plus og Pro er abonnementer, der fornyes automatisk. Betalingen trækkes på din Apple-konto, og abonnementet fornyes, medmindre du opsiger det mindst 24 timer før perioden slutter. Administrer eller opsig når som helst i Indstillinger.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatlivspolitik: https://m1zz.github.io/CalendarSnap/da/privacy.html
+
 ## el
 
 ### 지원 URL
@@ -986,6 +1065,11 @@ https://m1zz.github.io/CalendarSnap/el/
 Δες τα επερχόμενα συμβάντα κατευθείαν από την αρχική οθόνη.
 
 Η αναγνώριση κειμένου στις φωτογραφίες γίνεται εξ ολοκλήρου στη συσκευή σου. Οι φωτογραφίες σου δεν στέλνονται ποτέ σε διακομιστή.
+
+Συνδρομές
+Οι συνδρομές Πρόγραμμα Παιδιού Plus και Pro ανανεώνονται αυτόματα. Η χρέωση γίνεται στον λογαριασμό Apple σου και η συνδρομή ανανεώνεται, εκτός αν την ακυρώσεις τουλάχιστον 24 ώρες πριν λήξει η περίοδος. Μπορείς να τη διαχειριστείς ή να την ακυρώσεις οποτεδήποτε από τις Ρυθμίσεις.
+Όροι χρήσης (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Πολιτική απορρήτου: https://m1zz.github.io/CalendarSnap/el/privacy.html
 
 ## fi
 
@@ -1045,6 +1129,11 @@ Näe tulevat tapahtumat suoraan kotinäytöltä.
 
 Kuvien tekstintunnistus tapahtuu kokonaan laitteellasi. Kuviasi ei koskaan lähetetä palvelimelle.
 
+Tilaukset
+Lapsen aikataulu Plus ja Pro ovat automaattisesti uusiutuvia tilauksia. Maksu veloitetaan Apple-tililtäsi, ja tilaus uusiutuu, ellei sitä peruta vähintään 24 tuntia ennen jakson päättymistä. Hallitse tai peru tilaus milloin tahansa Asetuksissa.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://m1zz.github.io/CalendarSnap/fi/privacy.html
+
 ## id
 
 ### 지원 URL
@@ -1102,6 +1191,11 @@ Widget
 Lihat acara mendatang langsung dari layar utama.
 
 Pengenalan teks pada foto berlangsung sepenuhnya di perangkat Anda. Foto Anda tidak pernah dikirim ke server.
+
+Langganan
+Jadwal Si Kecil Plus dan Pro adalah langganan yang diperpanjang otomatis. Pembayaran ditagihkan ke Akun Apple Anda dan langganan diperpanjang kecuali dibatalkan paling lambat 24 jam sebelum periode berakhir. Kelola atau batalkan kapan saja di Pengaturan.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Kebijakan Privasi: https://m1zz.github.io/CalendarSnap/id/privacy.html
 
 ## nb
 
@@ -1161,6 +1255,11 @@ Se de kommende avtalene rett fra hjemskjermen.
 
 Tekstgjenkjenningen i bilder skjer helt på enheten din. Bildene dine sendes aldri til en server.
 
+Abonnementer
+Barneplan Plus og Pro er abonnementer som fornyes automatisk. Betalingen belastes Apple-kontoen din, og abonnementet fornyes med mindre du sier det opp minst 24 timer før perioden er over. Administrer eller si opp når som helst i Innstillinger.
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://m1zz.github.io/CalendarSnap/nb/privacy.html
+
 ## nl
 
 ### 지원 URL
@@ -1218,6 +1317,11 @@ Widget
 Bekijk aankomende afspraken direct op je beginscherm.
 
 Tekstherkenning in foto’s gebeurt volledig op je apparaat. Je foto’s worden nooit naar een server gestuurd.
+
+Abonnementen
+Kinderplanner Plus en Pro zijn automatisch verlengende abonnementen. De betaling loopt via je Apple Account en het abonnement wordt verlengd tenzij je minstens 24 uur voor het einde van de periode opzegt. Beheer of zeg op wanneer je wilt in Instellingen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://m1zz.github.io/CalendarSnap/nl/privacy.html
 
 ## pl
 
@@ -1277,6 +1381,11 @@ Zobacz nadchodzące wydarzenia prosto z ekranu początkowego.
 
 Rozpoznawanie tekstu na zdjęciach odbywa się w całości na Twoim urządzeniu. Twoje zdjęcia nigdy nie są wysyłane na serwer.
 
+Subskrypcje
+Plan Malucha Plus i Pro to subskrypcje odnawiane automatycznie. Opłata jest pobierana z Twojego konta Apple, a subskrypcja odnawia się, jeśli nie anulujesz jej co najmniej 24 godziny przed końcem okresu. Zarządzaj nią lub anuluj ją w dowolnej chwili w Ustawieniach.
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://m1zz.github.io/CalendarSnap/pl/privacy.html
+
 ## sv
 
 ### 지원 URL
@@ -1335,6 +1444,11 @@ Se kommande händelser direkt från hemskärmen.
 
 Textigenkänningen i bilder sker helt på din enhet. Dina bilder skickas aldrig till någon server.
 
+Prenumerationer
+Barnschema Plus och Pro är prenumerationer som förnyas automatiskt. Betalningen dras från ditt Apple-konto och prenumerationen förnyas om du inte avslutar den minst 24 timmar innan perioden slutar. Hantera eller avsluta när som helst i Inställningar.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Integritetspolicy: https://m1zz.github.io/CalendarSnap/sv/privacy.html
+
 ## tr
 
 ### 지원 URL
@@ -1392,6 +1506,11 @@ Widget
 Yaklaşan etkinlikleri ana ekrandan hemen görün.
 
 Fotoğraflardaki metin tanıma tamamen cihazınızda gerçekleşir. Fotoğraflarınız hiçbir zaman bir sunucuya gönderilmez.
+
+Abonelikler
+Çocuk Takvimi Plus ve Pro otomatik yenilenen aboneliklerdir. Ödeme Apple Hesabınızdan alınır ve dönem bitmeden en az 24 saat önce iptal edilmezse abonelik yenilenir. Ayarlar'dan istediğiniz zaman yönetebilir veya iptal edebilirsiniz.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik Politikası: https://m1zz.github.io/CalendarSnap/tr/privacy.html
 
 ## 손쉬운 사용
 
