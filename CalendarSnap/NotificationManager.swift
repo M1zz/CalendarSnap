@@ -35,6 +35,12 @@ enum NotificationManager {
             let fireDate: Date
         }
 
+        // 칸이 내려가 잠긴 알림 시점(1시간 전 · 정각 → Plus)은 켜져 있어도 울리지 않는다.
+        var settings = settings
+        settings.options = settings.options.filter { option in
+            PlanFeature.required(for: option).map { !Plan.surelyLacks($0) } ?? true
+        }
+
         let now = Date()
         let queue = events
             .flatMap { event in

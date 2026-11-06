@@ -33,12 +33,26 @@ enum CalendarSnapSpec: LeeoAppSpec {
     /// App Store 앱 ID — 리뷰 남기기·친구에게 소개하기 링크.
     static let appStoreID: String? = "6789881830"
 
-    /// 완전 무료 — 기능을 여는 결제가 없다. 페이월/복원 의무도 없음.
-    static let monetization = LeeoMonetization.free
+    /// **알림장 찍기는 무료로, 둘째 아이는 Plus, 가족과 함께 보기는 Pro.**
+    ///
+    /// 무료 · Plus · Pro 세 칸, 유료 칸마다 주 · 월 · 연 구독과 평생 (→ PurchaseManager 상품 ID).
+    /// 칸마다 무엇이 열리는지는 `PlanFeature.tier` 한 곳에 있다. 1.0.7 빌드 6 까지 받은 사람은 Pro 다.
+    /// 팁은 따로 혼자 돈다(아래 `tipJar`) — 기능을 열지 않으므로 권한 상품에 넣지 않는다.
+    static let monetization = LeeoMonetization.freemiumSubscription(
+        LeeoSubscriptionConfig(
+            productIDs: PurchaseManager.productIDs,
+            // 자체 약관이 없으므로 애플 표준 사용권 계약(EULA). 구독을 파는 앱의 심사 필수 항목.
+            termsURL: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!,
+            entitlementIDs: Set(PurchaseManager.tierByProduct.keys),
+            gate: LeeoGatePolicy(
+                freeLimits: [PlanFeature.moreChildren.rawValue: Plan.freeChildLimit],
+                proOnly: Set(PlanFeature.allCases.filter { $0 != .moreChildren }.map(\.rawValue))),
+            // 위젯과 함께 읽는 통.
+            cacheSuiteName: AppGroup.identifier))
     /// 금고가 위젯과 함께 쓰는 공유 컨테이너도 백업한다.
     static let appGroups = ["group.com.devkoan.calendarsnap"]
 
-    /// 개발자 응원(팁). 소모성 세 가지, 작은 것부터. 기능을 열지 않는다 — 무료 앱이라 혼자 돈다(`startStandalone`).
+    /// 개발자 응원(팁). 소모성 세 가지, 작은 것부터. 기능을 열지 않는다 — 권한 상품과 따로 혼자 돈다(`startStandalone`).
     @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
         "com.devkoan.CalendarSnap.tip.small", "com.devkoan.CalendarSnap.tip.medium", "com.devkoan.CalendarSnap.tip.large",
     ]))

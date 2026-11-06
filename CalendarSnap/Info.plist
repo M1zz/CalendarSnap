@@ -17,6 +17,17 @@
 			</array>
 		</dict>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.devkoan.CalendarSnap</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>calendarsnap</string>
+			</array>
+		</dict>
+	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>UTExportedTypeDeclarations</key>

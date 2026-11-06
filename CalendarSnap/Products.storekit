@@ -1,0 +1,338 @@
+{
+  "identifier": "B12BD415-EAE4-4A5E-9025-D7AD9A375F71",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "23.99",
+      "familyShareable": true,
+      "internalID": "A54FC8FD-51DF-4F6A-9C4D-90817A2BB261",
+      "localizations": [
+        {
+          "description": "아이 여러 명, 아이 사진 프로필, 1시간 전 · 정각 알림을 엽니다.",
+          "displayName": "아이일정 Plus 평생",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "Unlocks more than one child, child photos, and 1-hour-before and on-time reminders.",
+          "displayName": "Kids Schedule Plus Lifetime",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.plus",
+      "referenceName": "Plus 평생",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "35.99",
+      "familyShareable": true,
+      "internalID": "B61C7978-2BAE-4B42-A9BF-8BD30AF33D75",
+      "localizations": [
+        {
+          "description": "Plus 전부에 초대해서 함께 보기와 홈 화면 위젯을 더합니다.",
+          "displayName": "아이일정 Pro 평생",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "Everything in Plus, plus sharing with family and Home Screen widgets.",
+          "displayName": "Kids Schedule Pro Lifetime",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.pro",
+      "referenceName": "Pro 평생",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "11.99",
+      "familyShareable": true,
+      "internalID": "A81393AF-F469-4C91-9FFB-E4E9A670185E",
+      "localizations": [
+        {
+          "description": "Plus 평생을 산 분이 Pro 평생으로 올립니다.",
+          "displayName": "Pro 평생으로 올리기",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "For Plus Lifetime owners: upgrade to Pro Lifetime.",
+          "displayName": "Upgrade to Pro Lifetime",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.pro.upgrade",
+      "referenceName": "Plus 평생 → Pro 평생 올리기",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "23.99",
+      "familyShareable": true,
+      "internalID": "863E31F9-B97C-4F63-829F-C28E18AB186C",
+      "localizations": [
+        {
+          "description": "구독하던 분이 Pro 평생으로 옮겨 갑니다.",
+          "displayName": "아이일정 Pro 평생 (구독 졸업)",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "For subscribers: switch to Pro Lifetime.",
+          "displayName": "Kids Schedule Pro Lifetime (Subscriber)",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.pro.graduate",
+      "referenceName": "구독 졸업 Pro 평생",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "0.99",
+      "familyShareable": false,
+      "internalID": "C7505EEC-D087-4CD0-9F23-4768FF7F3E95",
+      "localizations": [
+        {
+          "description": "개발자를 응원합니다. 기능을 열지 않습니다.",
+          "displayName": "작은 응원",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "Supports the developer. Unlocks no features.",
+          "displayName": "Small Tip",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.tip.small",
+      "referenceName": "팁 small",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "2.99",
+      "familyShareable": false,
+      "internalID": "02E2E25B-C8F2-4474-988F-4B84E56030C1",
+      "localizations": [
+        {
+          "description": "개발자를 응원합니다. 기능을 열지 않습니다.",
+          "displayName": "따뜻한 응원",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "Supports the developer. Unlocks no features.",
+          "displayName": "Kind Tip",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.tip.medium",
+      "referenceName": "팁 medium",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "4.99",
+      "familyShareable": false,
+      "internalID": "A67E6366-C6F9-447C-BA68-D8370033DA5C",
+      "localizations": [
+        {
+          "description": "개발자를 응원합니다. 기능을 열지 않습니다.",
+          "displayName": "큰 응원",
+          "locale": "ko_KR"
+        },
+        {
+          "description": "Supports the developer. Unlocks no features.",
+          "displayName": "Big Tip",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.devkoan.CalendarSnap.tip.large",
+      "referenceName": "팁 large",
+      "type": "Consumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "6789881830",
+    "_developerTeamID": "QGAQ3AY3R3",
+    "_failTransactionsEnabled": false,
+    "_lastSynchronizedDate": 0,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [
+    {
+      "id": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+      "localizations": [],
+      "name": "아이일정",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "11.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "C533B22D-54AF-46ED-A9A5-38ED334CA90A",
+          "localizations": [
+            {
+              "description": "Plus 전부에 초대해서 함께 보기와 홈 화면 위젯을 더합니다.",
+              "displayName": "아이일정 Pro 연 구독",
+              "locale": "ko_KR"
+            },
+            {
+              "description": "Everything in Plus, plus sharing with family and Home Screen widgets.",
+              "displayName": "Kids Schedule Pro Yearly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.devkoan.CalendarSnap.pro.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Pro 연",
+          "subscriptionGroupID": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+          "type": "RecurringSubscription",
+          "winbackOffers": [],
+          "introductoryOffer": {
+            "internalID": "F02486BD-9AEB-4708-86FE-B4E92690D78E",
+            "numberOfPeriods": 1,
+            "paymentMode": "payUpFront",
+            "subscriptionPeriod": "P1Y",
+            "displayPrice": "5.99"
+          }
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "3.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "92217DD0-76E2-4A85-B88F-C2C8070D38A1",
+          "localizations": [
+            {
+              "description": "Plus 전부에 초대해서 함께 보기와 홈 화면 위젯을 더합니다.",
+              "displayName": "아이일정 Pro 월 구독",
+              "locale": "ko_KR"
+            },
+            {
+              "description": "Everything in Plus, plus sharing with family and Home Screen widgets.",
+              "displayName": "Kids Schedule Pro Monthly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.devkoan.CalendarSnap.pro.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "Pro 월",
+          "subscriptionGroupID": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "1.49",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "9690E9D6-912A-464B-AF5E-633695E353F5",
+          "localizations": [
+            {
+              "description": "Plus 전부에 초대해서 함께 보기와 홈 화면 위젯을 더합니다.",
+              "displayName": "아이일정 Pro 주 구독",
+              "locale": "ko_KR"
+            },
+            {
+              "description": "Everything in Plus, plus sharing with family and Home Screen widgets.",
+              "displayName": "Kids Schedule Pro Weekly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.devkoan.CalendarSnap.pro.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "Pro 주",
+          "subscriptionGroupID": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "7.99",
+          "familyShareable": true,
+          "groupNumber": 2,
+          "internalID": "7B66F0E4-23D9-4C42-B0A2-0AE094C1DD77",
+          "localizations": [
+            {
+              "description": "아이 여러 명, 아이 사진 프로필, 1시간 전 · 정각 알림을 엽니다.",
+              "displayName": "아이일정 Plus 연 구독",
+              "locale": "ko_KR"
+            },
+            {
+              "description": "Unlocks more than one child, child photos, and 1-hour-before and on-time reminders.",
+              "displayName": "Kids Schedule Plus Yearly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.devkoan.CalendarSnap.plus.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Plus 연",
+          "subscriptionGroupID": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+          "type": "RecurringSubscription",
+          "winbackOffers": [],
+          "introductoryOffer": {
+            "internalID": "92D4609B-93E2-4CE1-8786-933E21B37205",
+            "numberOfPeriods": 1,
+            "paymentMode": "payUpFront",
+            "subscriptionPeriod": "P1Y",
+            "displayPrice": "3.99"
+          }
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "2.49",
+          "familyShareable": true,
+          "groupNumber": 2,
+          "internalID": "F78B7DA4-EE17-4120-8711-9BD03F5DFE21",
+          "localizations": [
+            {
+              "description": "아이 여러 명, 아이 사진 프로필, 1시간 전 · 정각 알림을 엽니다.",
+              "displayName": "아이일정 Plus 월 구독",
+              "locale": "ko_KR"
+            },
+            {
+              "description": "Unlocks more than one child, child photos, and 1-hour-before and on-time reminders.",
+              "displayName": "Kids Schedule Plus Monthly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.devkoan.CalendarSnap.plus.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "Plus 월",
+          "subscriptionGroupID": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "0.99",
+          "familyShareable": true,
+          "groupNumber": 2,
+          "internalID": "0212A272-6BC2-4CBF-A3FE-89DACCDB60D1",
+          "localizations": [
+            {
+              "description": "아이 여러 명, 아이 사진 프로필, 1시간 전 · 정각 알림을 엽니다.",
+              "displayName": "아이일정 Plus 주 구독",
+              "locale": "ko_KR"
+            },
+            {
+              "description": "Unlocks more than one child, child photos, and 1-hour-before and on-time reminders.",
+              "displayName": "Kids Schedule Plus Weekly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.devkoan.CalendarSnap.plus.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "Plus 주",
+          "subscriptionGroupID": "AAC113CA-BFA8-4922-BE3C-FCF199A5693C",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

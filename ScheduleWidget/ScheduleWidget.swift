@@ -46,7 +46,10 @@ struct ScheduleWidgetEntryView: View {
     private var children: [String] { ReminderSettingsStore.load().childNames }
 
     var body: some View {
-        if entry.events.isEmpty {
+        // 위젯은 Pro 다. 앱이 App Group 에 적은 칸이 Pro 아래로 확실할 때만 잠근다(아직 모르면 연다).
+        if Plan.surelyLacks(.widget) {
+            lockedView
+        } else if entry.events.isEmpty {
             emptyView
         } else {
             switch family {
@@ -54,6 +57,25 @@ struct ScheduleWidgetEntryView: View {
             default: mediumView
             }
         }
+    }
+
+    /// 누르면 앱이 Pro 페이월을 연다 (→ ContentView.onOpenURL).
+    private var lockedView: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            header
+            Spacer(minLength: 0)
+            Label {
+                Text("아이일정 Pro에서 열려요")
+                    .font(.body.weight(.semibold))
+                    .fixedSize(horizontal: false, vertical: true)
+            } icon: {
+                Image(systemName: "lock.fill")
+                    .accessibilityHidden(true)
+            }
+            Spacer(minLength: 0)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        .widgetURL(Plan.paywallURL)
     }
 
     private var emptyView: some View {

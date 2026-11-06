@@ -6,6 +6,11 @@ import SwiftUI
 /// iCloud 계정으로 수락하면 함께 볼 수 있습니다.
 /// iCloud 상태·역할(소유자/참여자)에 따라 초대·참여자 관리·나가기 UI를 보여줍니다.
 struct FamilySharingSection: View {
+    /// 공유를 새로 만들 수 있는가 (Pro). 이미 공유 중인 주인 · 초대받은 사람은 이 값과 상관없이 그대로 쓴다.
+    var canStartSharing = true
+    /// 잠긴 채 '초대해서 함께 보기'를 눌렀을 때 — Pro 페이월.
+    var onLocked: () -> Void = {}
+
     @ObservedObject private var syncManager = FamilySyncManager.shared
     @State private var isPreparingShare = false
     @State private var showStopConfirm = false
@@ -73,7 +78,7 @@ struct FamilySharingSection: View {
         switch syncManager.role {
         case .none:
             Button {
-                startSharing()
+                if canStartSharing { startSharing() } else { onLocked() }
             } label: {
                 if isPreparingShare {
                     HStack {
@@ -81,7 +86,13 @@ struct FamilySharingSection: View {
                         Text("공유 준비 중…")
                     }
                 } else {
-                    Label("초대해서 함께 보기", systemImage: "person.crop.circle.badge.plus")
+                    HStack {
+                        Label("초대해서 함께 보기", systemImage: "person.crop.circle.badge.plus")
+                        if !canStartSharing {
+                            Spacer()
+                            PlanLockBadge(feature: .familySharing)
+                        }
+                    }
                 }
             }
             .disabled(isPreparingShare)

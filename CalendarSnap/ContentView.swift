@@ -62,6 +62,11 @@ struct ContentView: View {
     @Environment(\.foldLayout) private var fold
     /// 펼치면서 달력 탭을 스캔 탭으로 돌렸다. 접으면 달력 탭으로 돌아간다.
     @State private var foldMovedCalendar = false
+    // 요금제 (→ PurchaseManager). 위젯 · 두 달째 · 구독 졸업 제안이 여기서 뜬다.
+    @State private var purchases = PurchaseManager.shared
+    @State private var paywall: PaywallRequest?
+    @State private var showGraduation = false
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -89,7 +94,26 @@ struct ContentView: View {
         #endif
         // 다른 사용자가 보낸 .aischedule 파일을 열면 일정을 채워줌
         .onOpenURL { url in
+            // 잠긴 위젯을 누르면 Pro 페이월 (→ ScheduleWidget)
+            if url == Plan.paywallURL {
+                paywall = PaywallRequest(highlight: .widget)
+                return
+            }
             handleIncomingFile(url)
+        }
+        // 영수증을 읽어 칸을 정한다. 켤 때와 돌아올 때마다.
+        .task(id: scenePhase) {
+            guard scenePhase == .active else { return }
+            await purchases.refresh()
+            offerGraduationIfDue()
+        }
+        .sheet(item: $paywall) { request in
+            PaywallView(highlight: request.highlight, headline: request.headline)
+        }
+        .sheet(isPresented: $showGraduation) {
+            LeeoGraduationOfferView(graduate: purchases.product(PurchaseManager.graduateID)) {
+                await purchases.refresh()
+            }
         }
         .onChange(of: scanRouter.cameraRequest) { showCamera = true }
         // Siri · Spotlight 에서 일정을 열면 달력 탭으로 (달력이 그 날로 간다)
@@ -327,7 +351,8 @@ struct ContentView: View {
             ScrollViewReader { proxy in
             List {
                 // 방금 일정을 저장한 자리. 쌓인 일정이 숫자로 보일 때만, 드물게 응원을 부탁한다.
-                if savedBanner {
+                // 응원 부탁은 이미 Pro 를 가진 사람에게만.
+                if savedBanner, purchases.tier == .pro {
                     LeeoTipAskSlot<CalendarSnapSpec>(tipJar: CalendarSnapSpec.tipJar,
                                                      reached: CalendarSnapTipMoments.reached(events: savedEvents.count))
                         .listRowInsets(EdgeInsets())
@@ -814,6 +839,31 @@ struct ContentView: View {
 
         resultMessage = messages.joined(separator: " · ")
         withAnimation { savedBanner = true }
+        await offerAfterSecondMonth()
+    }
+
+    // MARK: - 요금제 제안
+
+    private static let secondMonthOfferedKey = "plan.secondMonthOffered"
+
+    /// 두 번째 달 알림장을 넣은 직후 한 번. 첫 달로 이미 편함을 겪은 사람에게 '두 달째' 를 짚어 준다.
+    private func offerAfterSecondMonth() async {
+        let defaults = UserDefaults.standard
+        guard purchases.isKnown, purchases.tier == .free,
+              !defaults.bool(forKey: Self.secondMonthOfferedKey) else { return }
+        let months = Set(savedEvents.map { Calendar.current.dateComponents([.year, .month], from: $0.date) })
+        guard months.count >= 2 else { return }
+        defaults.set(true, forKey: Self.secondMonthOfferedKey)
+        try? await Task.sleep(for: .seconds(1.2))   // 저장 결과 줄을 먼저 보게
+        guard paywall == nil, !showSettings else { return }
+        paywall = PaywallRequest(headline: String(localized: "두 달째 일정을 넣었어요"))
+    }
+
+    /// 구독 6개월째 · 연 갱신 7일 전에 한 번씩 '구독 졸업' 평생가.
+    private func offerGraduationIfDue() {
+        guard purchases.graduationIsDue, paywall == nil, !showSettings else { return }
+        purchases.markGraduationOffered()
+        showGraduation = true
     }
 
     /// `candidates` 중 `existing`이나 앞선 후보와 중복(`ScannedEvent.isDuplicate`)이 아닌 것만.

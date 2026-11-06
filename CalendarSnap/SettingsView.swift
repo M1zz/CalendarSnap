@@ -18,6 +18,11 @@ struct SettingsView: View {
     @State private var pendingDeleteIndex: Int?   // 삭제 확인 대기 중인 아이
     @State private var classEditIndex: Int?       // 반 입력 중인 아이
     @State private var classEditText = ""
+    @State private var purchases = PurchaseManager.shared
+    @ObservedObject private var syncManager = FamilySyncManager.shared
+    @State private var paywall: PaywallRequest?
+    @State private var showGraduation = false
+    @State private var showManageSubscriptions = false
 
     var body: some View {
         NavigationStack {
@@ -26,6 +31,10 @@ struct SettingsView: View {
                     ForEach(settings.childNames.indices, id: \.self) { i in
                         HStack(spacing: 12) {
                             Button {
+                                guard unlocked(.childPhoto) else {
+                                    paywall = PaywallRequest(highlight: .childPhoto)
+                                    return
+                                }
                                 avatarTargetIndex = i
                                 showAvatarPicker = true
                             } label: {
@@ -48,9 +57,19 @@ struct SettingsView: View {
                         pendingDeleteIndex = offsets.first
                     }
                     Button {
-                        settings.childNames.append("")
+                        if needsPlusForAnotherChild {
+                            paywall = PaywallRequest(highlight: .moreChildren)
+                        } else {
+                            settings.childNames.append("")
+                        }
                     } label: {
-                        Label("아이 추가", systemImage: "plus.circle.fill")
+                        HStack {
+                            Label("아이 추가", systemImage: "plus.circle.fill")
+                            if needsPlusForAnotherChild {
+                                Spacer()
+                                PlanLockBadge(feature: .moreChildren)
+                            }
+                        }
                     }
                 } header: {
                     Text("아이")
@@ -59,7 +78,7 @@ struct SettingsView: View {
                 }
 
                 if !sharingBelowReminders {
-                    FamilySharingSection()
+                    familySharing
                 }
 
                 Section {
@@ -67,7 +86,13 @@ struct SettingsView: View {
                         Toggle(isOn: binding(for: option)) {
                             Label {
                                 VStack(alignment: .leading, spacing: 2) {
-                                    Text(option.title)
+                                    HStack(spacing: 6) {
+                                        Text(option.title)
+                                        // 켜려고 누르면 Plus 페이월이 뜬다.
+                                        if let feature = PlanFeature.required(for: option), !unlocked(feature) {
+                                            PlanLockBadge(feature: feature)
+                                        }
+                                    }
                                     if !option.appliesToAllDay {
                                         Text("시간이 지정된 일정에만 적용돼요")
                                             .font(.caption2)
@@ -78,6 +103,7 @@ struct SettingsView: View {
                                 Image(systemName: option.systemImage)
                             }
                         }
+
                     }
                 } header: {
                     Text("알림 시점")
@@ -94,8 +120,10 @@ struct SettingsView: View {
                 }
 
                 if sharingBelowReminders {
-                    FamilySharingSection()
+                    familySharing
                 }
+
+                planSection
 
                 Section {
                     // 피드백 보내기 + 리뷰 남기기 + 버전(7탭→개발자 모드→인박스). 전부 LeeoKit 제공.
@@ -142,6 +170,15 @@ struct SettingsView: View {
             } message: {
                 Text(deleteDialogMessage)
             }
+            .sheet(item: $paywall) { request in
+                PaywallView(highlight: request.highlight, headline: request.headline)
+            }
+            .sheet(isPresented: $showGraduation) {
+                LeeoGraduationOfferView(graduate: purchases.product(PurchaseManager.graduateID)) {
+                    await purchases.refresh()
+                }
+            }
+            .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
             .photosPicker(isPresented: $showAvatarPicker, selection: $avatarItem, matching: .images)
             .onChange(of: avatarItem) { _, item in
                 guard let item else { return }
@@ -249,13 +286,87 @@ struct SettingsView: View {
         return String(localized: "\(settings.childNames[i])의 반")
     }
 
+    /// 잠긴 알림 시점은 켜려고 할 때 페이월을 띄운다. 끄는 일은 언제나 된다.
+    /// 칸이 내려가 잠긴 시점은 켜져 있어도 울리지 않으므로(→ NotificationManager) 꺼진 것으로 보인다.
     private func binding(for option: ReminderOption) -> Binding<Bool> {
-        Binding(
-            get: { settings.options.contains(option) },
+        let feature = PlanFeature.required(for: option)
+        return Binding(
+            get: { settings.options.contains(option) && feature.map(unlocked) ?? true },
             set: { isOn in
-                if isOn { settings.options.insert(option) }
-                else { settings.options.remove(option) }
+                if isOn, let feature, !unlocked(feature) {
+                    paywall = PaywallRequest(highlight: feature)
+                } else if isOn {
+                    settings.options.insert(option)
+                } else {
+                    settings.options.remove(option)
+                }
             })
+    }
+
+    // MARK: - 요금제
+
+    /// 이 기능을 지금 써도 되는가.
+    /// 남이 공유한 가족 일정에 참여한 사람은 그 집 아이들을 그대로 다룬다 — 초대받은 사람은 무료다.
+    private func unlocked(_ feature: PlanFeature) -> Bool {
+        if purchases.allows(feature) { return true }
+        return syncManager.role == .participant && (feature == .moreChildren || feature == .childPhoto)
+    }
+
+    /// 무료 한도(아이 1명)를 채웠는가. 이미 넣은 아이는 칸과 상관없이 그대로 보이고 지울 수 있다.
+    private var needsPlusForAnotherChild: Bool {
+        guard !unlocked(.moreChildren) else { return false }
+        return settings.childNames.count >= Plan.freeChildLimit
+    }
+
+    /// 공유를 새로 만드는 주인만 Pro 를 확인한다. 이미 공유 중이거나 초대받은 사람은 그대로 쓴다.
+    private var familySharing: some View {
+        FamilySharingSection(canStartSharing: purchases.allows(.familySharing)) {
+            paywall = PaywallRequest(highlight: .familySharing)
+        }
+    }
+
+    private var planSection: some View {
+        Section {
+            if purchases.isKnown {
+                LabeledContent("지금 쓰는 칸", value: purchases.tier.title)
+            }
+            if purchases.tier < .pro {
+                Button {
+                    paywall = PaywallRequest()
+                } label: {
+                    Label("요금제 보기", systemImage: "sparkles")
+                }
+            }
+            if purchases.subscription != nil {
+                Button {
+                    showManageSubscriptions = true
+                } label: {
+                    Label("구독 관리", systemImage: "creditcard")
+                }
+                // 구독 중인 사람이 언제든 평생으로 옮겨 갈 길. 산 뒤 해지 화면으로 바로 안내한다.
+                if purchases.product(PurchaseManager.graduateID) != nil, !purchases.ownsLifetime(.pro) {
+                    Button {
+                        showGraduation = true
+                    } label: {
+                        Label(LeeoLadderText.switchToLifetimeEntry, systemImage: "graduationcap")
+                    }
+                }
+            }
+            Button {
+                Task { await purchases.restore() }
+            } label: {
+                Label("구매 복원", systemImage: "arrow.clockwise")
+            }
+            .disabled(purchases.isWorking)
+        } header: {
+            Text("요금제")
+        } footer: {
+            if purchases.isEarlyUser {
+                Text("요금제가 생기기 전부터 쓰신 분이라 Pro가 그대로 열려 있어요.")
+            } else if let message = purchases.failureMessage, purchases.tier == .free {
+                Text(message)
+            }
+        }
     }
 }
 
