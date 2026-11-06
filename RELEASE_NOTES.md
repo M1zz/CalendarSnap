@@ -1,5 +1,199 @@
 # 릴리즈 노트
 
+## 1.0.7
+
+### 앱스토어 (한국어)
+
+Siri에게 말하면 알림장을 바로 찍을 수 있어요.
+저장한 일정을 iPhone 검색에서 찾아 바로 열어요.
+기록을 매일 자동으로 백업하고 iCloud나 파일로 되살려요.
+아이를 등록하지 않아도 일정이 캘린더에 들어가요.
+업데이트 뒤 기록이 사라질 수 있던 문제를 고쳤어요.
+
+### 앱스토어 (English, en)
+
+Ask Siri to snap a school notice.
+Find saved events in iPhone Search.
+Daily backups, restore from iCloud.
+Calendar now works with no child added.
+Fixed a bug that could erase your data.
+
+### App Store (en-GB)
+
+Ask Siri to snap a school letter.
+Find saved events in iPhone Search.
+Daily backups, restore from iCloud.
+Calendar now works with no child added.
+Fixed a bug that could erase your data.
+
+### 앱스토어 (Chinese Simplified, zh-Hans)
+
+让 Siri 直接拍下学校通知。
+在 iPhone 搜索中找到已保存的日程。
+每天自动备份，可从 iCloud 或文件恢复。
+未添加孩子也能把日程加入日历。
+修复了更新后记录可能丢失的问题。
+
+### 앱스토어 (Chinese Traditional, zh-Hant)
+
+讓 Siri 直接拍下聯絡簿。
+在 iPhone 搜尋中找到已儲存的行程。
+每天自動備份，可從 iCloud 或檔案回復。
+未新增孩子也能把行程加入行事曆。
+修正了更新後紀錄可能遺失的問題。
+
+### 앱스토어 (Japanese, ja)
+
+Siriに頼んでお便りをすぐ撮影できます。
+保存した予定をiPhoneの検索から開けます。
+毎日自動でバックアップし復元もできます。
+子どもを登録しなくても予定が入ります。
+記録が消えることがある問題を直しました。
+
+### 앱스토어 (Russian, ru)
+
+Попросите Siri снять объявление школы.
+Ищите события в Поиске iPhone.
+Ежедневная копия с восстановлением.
+События идут в календарь и без ребёнка.
+Исправлена возможная потеря данных.
+
+### 앱스토어 (Spanish, es)
+
+Pide a Siri que fotografíe el aviso.
+Busca tus eventos guardados.
+Copia diaria, restaurable desde iCloud.
+Funciona sin añadir a tus hijos.
+Corregida una posible pérdida de datos.
+
+### 앱스토어 (German, de)
+
+Lass Siri den Elternbrief scannen.
+Finde gespeicherte Termine in der Suche.
+Tägliches Backup, wiederherstellbar.
+Termine landen jetzt immer im Kalender.
+Möglicher Datenverlust behoben.
+
+### 앱스토어 (French, fr)
+
+Demandez à Siri de scanner le mot.
+Retrouvez vos événements dans Recherche.
+Sauvegarde quotidienne et restauration.
+Ajout au calendrier même sans enfant.
+Perte de données possible corrigée.
+
+### 앱스토어 (Italian, it)
+
+Chiedi a Siri di scansionare l’avviso.
+Trova gli eventi salvati nella Ricerca.
+Backup giornaliero, da iCloud o da file.
+Eventi nel calendario anche senza figli.
+Risolta una possibile perdita di dati.
+
+### 앱스토어 (Portuguese Brazil, pt-BR)
+
+Peça à Siri para fotografar o bilhete.
+Ache seus eventos salvos na Busca.
+Backup diário, restaure pelo iCloud.
+Eventos vão ao calendário sem cadastro.
+Corrigimos uma possível perda de dados.
+
+### 앱스토어 (Thai, th)
+
+สั่ง Siri ให้ถ่ายใบแจ้งจากโรงเรียนได้
+ค้นหากิจกรรมที่บันทึกไว้ใน iPhone ได้
+สำรองทุกวัน กู้คืนจาก iCloud หรือไฟล์ได้
+ไม่ต้องเพิ่มลูกก็ลงปฏิทินได้
+แก้ปัญหาข้อมูลอาจหายหลังอัปเดต
+
+### 앱스토어 (Vietnamese, vi)
+
+Nhờ Siri chụp ngay thông báo của trường.
+Tìm lịch đã lưu trong Tìm kiếm.
+Sao lưu mỗi ngày, khôi phục từ iCloud.
+Lịch vào Lịch ngay cả khi chưa thêm bé.
+Sửa lỗi có thể mất dữ liệu.
+
+### 앱스토어 (Czech, cs)
+
+Nechte Siri vyfotit oznámení ze školy.
+Uložené události najdete ve Vyhledávání.
+Denní záloha s obnovou z iCloudu.
+Události se uloží i bez přidání dítěte.
+Opravena možná ztráta dat.
+
+### 앱스토어 (Danish, da)
+
+Bed Siri fotografere skolebeskeden.
+Find gemte begivenheder i Søgning.
+Daglig backup, gendan fra iCloud.
+Begivenheder kommer altid i kalenderen.
+Rettet muligt tab af data.
+
+### 앱스토어 (Greek, el)
+
+Η Siri σαρώνει το σημείωμα του σχολείου.
+Βρείτε τα συμβάντα σας στην Αναζήτηση.
+Καθημερινό αντίγραφο με επαναφορά.
+Συμβάντα στο ημερολόγιο χωρίς παιδί.
+Διορθώθηκε πιθανή απώλεια δεδομένων.
+
+### 앱스토어 (Finnish, fi)
+
+Pyydä Siriä kuvaamaan koulun tiedote.
+Löydä tallennetut tapahtumat haulla.
+Päivittäinen varmuuskopio ja palautus.
+Tapahtumat menevät aina kalenteriin.
+Korjattu mahdollinen tietojen menetys.
+
+### 앱스토어 (Indonesian, id)
+
+Minta Siri memotret surat sekolah.
+Cari acara tersimpan di Pencarian.
+Cadangan harian, pulihkan dari iCloud.
+Acara selalu masuk ke kalender.
+Perbaikan risiko data hilang.
+
+### 앱스토어 (Norwegian Bokmål, nb)
+
+Be Siri ta bilde av skolebeskjeden.
+Finn lagrede hendelser i Søk.
+Daglig kopi som kan gjenopprettes.
+Hendelser havner alltid i kalenderen.
+Rettet mulig tap av data.
+
+### 앱스토어 (Dutch, nl)
+
+Laat Siri de schoolbrief scannen.
+Vind bewaarde afspraken via Zoeken.
+Dagelijkse back-up, herstel via iCloud.
+Afspraken komen nu altijd in je agenda.
+Mogelijk gegevensverlies opgelost.
+
+### 앱스토어 (Polish, pl)
+
+Poproś Siri o zdjęcie ogłoszenia.
+Znajdź zapisane wydarzenia.
+Codzienna kopia z przywracaniem.
+Działa też bez dodawania dziecka.
+Naprawiono możliwą utratę danych.
+
+### 앱스토어 (Swedish, sv)
+
+Be Siri fota av skollappen.
+Hitta sparade händelser i Sök.
+Daglig säkerhetskopia, återställ enkelt.
+Händelser hamnar alltid i kalendern.
+Fixat möjlig dataförlust.
+
+### 앱스토어 (Turkish, tr)
+
+Okul duyurusunu Siri ile çekin.
+Kayıtlı etkinlikleri Arama'da bulun.
+Günlük yedek, iCloud'dan geri yükleme.
+Etkinlikler artık hep takvime eklenir.
+Olası veri kaybı sorunu giderildi.
+
 ## 1.0.6
 
 ### 앱스토어 (한국어)
