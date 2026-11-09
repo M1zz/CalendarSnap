@@ -42,6 +42,8 @@ struct CalendarSnapApp: App {
                 .foldAware()
                 // 사용량이 쌓이면 "즐겁게 쓰고 계신가요?" → 만족 시 리뷰 / 아쉬움 시 피드백
                 .leeoSatisfactionCheck(CalendarSnapSpec.self)
+                // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
+                .leeoFeedbackReplyNotice(CalendarSnapSpec.self)
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다.
                 .task { await CalendarSnapSpec.tipJar.startStandalone() }
         }
