@@ -87,7 +87,7 @@ Snap the notice, get the month
 
 ### 키워드
 
-preschool,calendar,school,reminders,scanner,family,sharing,parents,lunch,field trip,sync,ocr,nursery
+pta,newsletter,coparenting,dad,menu,nursery,field trip,parents,sharing,lunch,sync,reminders,family
 
 ### 프로모션 텍스트
 
@@ -213,7 +213,7 @@ https://m1zz.github.io/CalendarSnap/zh-Hans/
 
 ### 키워드
 
-幼儿园,日历,提醒,托班,家长,接送,春游,午餐,亲子,家庭共享,识别,扫描,多孩,学校,小学,班级,课程表,家校,备忘,照片识别,祖父母,准备物品,课外班,育儿,宝妈,宝爸,行事历,待办,家长会
+祖父母,准备物品,课外班,幼儿园通知,托儿所,家庭日历,午餐,家校,托班,接送,班级,家长,课程表,多孩,亲子,家庭共享,学校,行事历,照片识别,春游,宝妈,识别,备忘,扫描,家长会,小学,待办,育儿
 
 ### 프로모션 텍스트
 
@@ -339,7 +339,7 @@ https://m1zz.github.io/CalendarSnap/ja/
 
 ### 키워드
 
-幼稚園,連絡帳,園だより,プリント,カレンダー,リマインダー,持ち物,遠足,お弁当,家族共有,共働き,育児,ママ,パパ,小学校,学童,習い事,OCR,スキャン,行事,登園,降園,祖父母,兄弟
+園だより,遠足,登園,降園,幼稚園の予定,学校行事,おたより,保護者,月間予定,献立表,時間割,家族カレンダー,学童,行事,祖父母,習い事,持ち物,共働き,連絡帳,兄弟,幼稚園,お弁当,小学校,パパ
 
 ### 프로모션 텍스트
 
