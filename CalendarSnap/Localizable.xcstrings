@@ -50029,6 +50029,155 @@
           }
         }
       }
+    },
+    "새 달 일정표를 찍어 두세요": {
+      "comment": "Notification title, sent on the 3 days before and on the 1st of a month that has no events yet",
+      "localizations": {
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je čas vyfotit kalendář na nový měsíc"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tid til at tage et billede af den nye måneds kalender"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeit, den Kalender für den neuen Monat zu fotografieren"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ώρα να φωτογραφίσετε το ημερολόγιο του νέου μήνα"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time to snap the new month’s calendar"
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time to snap the new month’s calendar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toca hacer la foto al calendario del nuevo mes"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aika ottaa kuva uuden kuukauden kalenterista"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pensez à photographier le calendrier du nouveau mois"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saatnya memfoto kalender bulan baru"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È ora di fotografare il calendario del nuovo mese"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい月のカレンダーを撮っておきましょう"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 달 일정표를 찍어 두세요"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "På tide å ta bilde av den nye månedens kalender"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tijd om de agenda van de nieuwe maand te fotograferen"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czas zrobić zdjęcie kalendarza na nowy miesiąc"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hora de fotografar o calendário do novo mês"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пора сфотографировать календарь на новый месяц"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dags att fota den nya månadens kalender"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ได้เวลาถ่ายรูปปฏิทินของเดือนใหม่แล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni ayın takvimini çekme zamanı"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã đến lúc chụp lịch của tháng mới"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "该拍下新一个月的日历了"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "該拍下新一個月的行事曆了"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
