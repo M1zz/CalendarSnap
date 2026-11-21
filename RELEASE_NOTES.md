@@ -1,5 +1,157 @@
 # 릴리즈 노트
 
+## 1.0.8
+
+### 앱스토어 (한국어)
+
+아랍어로도 앱을 쓸 수 있어요.
+아랍어 알림장도 일정으로 바꿔 줘요.
+달력이 기기에서 정한 주 시작 요일을 따라요.
+
+### 앱스토어 (English, en)
+
+Now available in Arabic.
+Arabic notices become events too.
+Weeks start on the day you chose.
+
+### App Store (en-GB)
+
+Now available in Arabic.
+Arabic notices become events too.
+Weeks start on the day you chose.
+
+### 앱스토어 (Chinese Simplified, zh-Hans)
+
+现已支持阿拉伯语。
+阿拉伯语通知也能变成日程。
+日历按你设置的每周起始日显示。
+
+### 앱스토어 (Chinese Traditional, zh-Hant)
+
+現已支援阿拉伯語。
+阿拉伯語通知也能變成行程。
+行事曆依你設定的每週起始日顯示。
+
+### 앱스토어 (Japanese, ja)
+
+アラビア語に対応しました。
+アラビア語のお知らせも予定にできます。
+週の始まりが端末の設定どおりになりました。
+
+### 앱스토어 (Russian, ru)
+
+Теперь и на арабском.
+Читает и объявления на арабском.
+Неделя начинается как в настройках.
+
+### 앱스토어 (Spanish, es)
+
+Ya disponible en árabe.
+Lee también avisos en árabe.
+La semana empieza según tus ajustes.
+
+### 앱스토어 (German, de)
+
+Jetzt auch auf Arabisch.
+Liest auch arabische Aushänge.
+Wochenstart wie in den Einstellungen.
+
+### 앱스토어 (French, fr)
+
+Disponible désormais en arabe.
+Lit aussi les affichages en arabe.
+La semaine commence selon vos réglages.
+
+### 앱스토어 (Italian, it)
+
+Ora disponibile in arabo.
+Legge anche gli avvisi in arabo.
+Inizio settimana come da impostazioni.
+
+### 앱스토어 (Portuguese Brazil, pt-BR)
+
+Agora disponível em árabe.
+Lê também avisos em árabe.
+A semana começa conforme seus ajustes.
+
+### 앱스토어 (Thai, th)
+
+รองรับภาษาอาหรับแล้ว
+อ่านประกาศภาษาอาหรับเป็นกำหนดการได้
+ปฏิทินเริ่มสัปดาห์ตามที่ตั้งค่าไว้
+
+### 앱스토어 (Vietnamese, vi)
+
+Đã hỗ trợ tiếng Ả Rập.
+Đọc được cả thông báo tiếng Ả Rập.
+Lịch bắt đầu tuần theo cài đặt của bạn.
+
+### 앱스토어 (Czech, cs)
+
+Nově i v arabštině.
+Čte i arabská oznámení.
+Týden začíná podle vašeho nastavení.
+
+### 앱스토어 (Danish, da)
+
+Nu også på arabisk.
+Læser også arabiske opslag.
+Ugen starter som i dine indstillinger.
+
+### 앱스토어 (Greek, el)
+
+Τώρα και στα αραβικά.
+Διαβάζει και αραβικές ανακοινώσεις.
+Η εβδομάδα ξεκινά όπως στις ρυθμίσεις.
+
+### 앱스토어 (Finnish, fi)
+
+Nyt myös arabiaksi.
+Lukee myös arabiankieliset tiedotteet.
+Viikko alkaa asetustesi mukaan.
+
+### 앱스토어 (Indonesian, id)
+
+Kini tersedia dalam bahasa Arab.
+Pengumuman berbahasa Arab jadi acara.
+Minggu dimulai sesuai pengaturanmu.
+
+### 앱스토어 (Norwegian Bokmål, nb)
+
+Nå også på arabisk.
+Leser også arabiske lapper.
+Uken starter som i innstillingene.
+
+### 앱스토어 (Dutch, nl)
+
+Nu ook in het Arabisch.
+Leest ook Arabische brieven.
+De week begint zoals in je instellingen.
+
+### 앱스토어 (Polish, pl)
+
+Teraz także po arabsku.
+Czyta też ogłoszenia po arabsku.
+Tydzień zaczyna się jak w ustawieniach.
+
+### 앱스토어 (Swedish, sv)
+
+Nu även på arabiska.
+Läser även lappar på arabiska.
+Veckan börjar som i dina inställningar.
+
+### 앱스토어 (Turkish, tr)
+
+Artık Arapça da kullanılabilir.
+Arapça duyuruları da etkinliğe çevirir.
+Hafta, ayarlarınızdaki günle başlar.
+
+### 앱스토어 (아랍어)
+
+صار التطبيق متاحًا بالعربية.
+نحوّل التعاميم العربية أيضًا إلى مواعيد.
+يبدأ أسبوع التقويم حسب إعدادات جهازك.
+
 ## 1.0.7
 
 ### 앱스토어 (한국어)
