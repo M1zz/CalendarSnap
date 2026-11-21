@@ -3,6 +3,48 @@
   "strings": {
     " (이미 있는 %lld개 제외)": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (لم يُتخطَّ شيء)"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا موعدًا محفوظًا مسبقًا)"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا موعدين محفوظين مسبقًا)"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا %lld مواعيد محفوظة مسبقًا)"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا %lld موعدًا محفوظًا مسبقًا)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا %lld موعد محفوظ مسبقًا)"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -307,6 +349,48 @@
     },
     " (중복 %lld개 제외)": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (لا مكرر)"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا موعدًا مكررًا)"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا موعدين مكررين)"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا %lld مواعيد مكررة)"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا %lld موعدًا مكررًا)"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " (تخطّينا %lld موعد مكرر)"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -611,6 +695,12 @@
     },
     " · 캘린더에도 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · وأُضيفت إلى التقويم أيضًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -759,6 +849,12 @@
     },
     "%@님": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -907,6 +1003,12 @@
     },
     "%@님과 함께 보는 중": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتشارك الجدول مع %@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -1055,6 +1157,12 @@
     },
     "%@반": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فصل %@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -1203,6 +1311,12 @@
     },
     "%@의 반": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فصل %@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -1351,6 +1465,48 @@
     },
     "%@의 일정 %lld개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요.": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيُحذف أيضًا ملف %1$@ وصورته، ولا يمكن التراجع عن ذلك."
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيُحذف أيضًا موعد %1$@ الوحيد وصورته، ولا يمكن التراجع عن ذلك."
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيُحذف أيضًا موعدا %1$@ وصورته، ولا يمكن التراجع عن ذلك."
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ستُحذف أيضًا %2$lld مواعيد لـ%1$@ وصورته، ولا يمكن التراجع عن ذلك."
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيُحذف أيضًا %2$lld موعدًا لـ%1$@ وصورته، ولا يمكن التراجع عن ذلك."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيُحذف أيضًا %2$lld موعد لـ%1$@ وصورته، ولا يمكن التراجع عن ذلك."
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -1655,6 +1811,12 @@
     },
     "%@의 일정과 연결됐어요. 이제 양쪽에서 함께 관리할 수 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الربط بمواعيد %@. صار بإمكانكما إدارتها معًا من الجهتين."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -1803,6 +1965,12 @@
     },
     "%@의 프로필이 삭제됩니다. 되돌릴 수 없어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيُحذف ملف %@، ولا يمكن التراجع عن ذلك."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -1951,6 +2119,12 @@
     },
     "'%@' 삭제": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف «%@»"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2099,6 +2273,12 @@
     },
     "1시간 뒤 일정이에요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يبدأ بعد ساعة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2247,6 +2427,12 @@
     },
     "1시간 전": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قبل ساعة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2395,6 +2581,12 @@
     },
     "1회성": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لمرة واحدة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2544,6 +2736,12 @@
     "Face ID 잠금": {
       "comment": "Roadmap item: Face ID lock",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القفل بـFace ID"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2693,6 +2891,12 @@
     "Face ID나 Touch ID로 앱을 잠가 아이 일정을 지켜요.": {
       "comment": "Roadmap item detail: Face ID lock",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اقفل التطبيق بـFace ID أو Touch ID لتبقى مواعيد أطفالك خاصة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2842,6 +3046,12 @@
     "Siri에게 물어 아이의 오늘 일정을 바로 확인해요.": {
       "comment": "Roadmap item detail: Siri and Shortcuts",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسأل Siri عن مواعيد طفلك اليوم واعرفها فورًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -2991,6 +3201,12 @@
     "Siri와 단축어": {
       "comment": "Roadmap item: Siri and Shortcuts",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri والاختصارات"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -3140,6 +3356,12 @@
     "VoiceOver가 달력과 일정을 빠짐없이, 알맞은 순서로 읽어 줘요.": {
       "comment": "Roadmap item detail: better VoiceOver support",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقرأ VoiceOver التقويم وكل المواعيد كاملة وبالترتيب الصحيح."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -3289,6 +3511,12 @@
     "VoiceOver로 더 편하게": {
       "comment": "Roadmap item: better VoiceOver support",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجربة أفضل مع VoiceOver"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -3437,6 +3665,12 @@
     },
     "iCloud 상태를 확인하지 못했어요. 잠시 후 다시 시도해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر التحقق من حالة iCloud. حاول مرة أخرى بعد قليل."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -3585,6 +3819,12 @@
     },
     "iCloud 저장 공간이 부족해 일정을 올리지 못했어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد مساحة كافية في iCloud لرفع مواعيدك."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -3733,6 +3973,12 @@
     },
     "iCloud에 로그인해야 가족 공유를 쓸 수 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل الدخول إلى iCloud لاستخدام مشاركة العائلة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -3881,6 +4127,12 @@
     },
     "iCloud에 로그인해야 가족 공유를 쓸 수 있어요. 설정 앱 > Apple 계정에서 로그인해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل الدخول إلى iCloud لاستخدام مشاركة العائلة، من تطبيق الإعدادات > حساب Apple."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4029,6 +4281,12 @@
     },
     "iCloud에 로그인해야 가족과 일정을 공유할 수 있어요.\n설정 앱 > Apple 계정에서 로그인해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل الدخول إلى iCloud لتشارك المواعيد مع عائلتك.\nمن تطبيق الإعدادات > حساب Apple."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4177,6 +4435,12 @@
     },
     "가져오기 완료": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتمل الاستيراد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4325,6 +4589,12 @@
     },
     "가족": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العائلة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4473,6 +4743,12 @@
     },
     "가족 공유": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة العائلة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4621,6 +4897,12 @@
     },
     "가족 공유가 종료됐어요. 지금까지 받은 일정은 그대로 남아 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت مشاركة العائلة. المواعيد التي وصلتك حتى الآن تبقى كما هي."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4769,6 +5051,12 @@
     },
     "가족 공유를 중단했어요. 지금까지의 일정은 그대로 남아 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أوقفت مشاركة العائلة. المواعيد الحالية تبقى كما هي."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -4917,6 +5205,12 @@
     },
     "가족 초대하기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دعوة العائلة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5065,6 +5359,12 @@
     },
     "가족 초대해서 함께 보기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ادعُ عائلتك لمتابعة الجدول معًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5213,6 +5513,12 @@
     },
     "가족의 일정과 연결됨": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مرتبط بمواعيد عائلة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5361,6 +5667,12 @@
     },
     "공유 나가기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مغادرة المشاركة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5509,6 +5821,12 @@
     },
     "공유 정보가 초기화됐어요. 다시 초대해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أُعيد ضبط بيانات المشاركة. أرسل الدعوة من جديد."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5657,6 +5975,12 @@
     },
     "공유 중단": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف المشاركة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5805,6 +6129,12 @@
     },
     "공유에서 나왔어요. 지금까지 받은 일정은 그대로 남아 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غادرت المشاركة. المواعيد التي وصلتك حتى الآن تبقى كما هي."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -5953,6 +6283,12 @@
     },
     "공유할 일정이 없어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد مواعيد لمشاركتها."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6101,6 +6437,12 @@
     },
     "공통": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "للجميع"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6250,6 +6592,12 @@
     "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요.": {
       "comment": "Roadmap item detail: layouts for larger text",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند تكبير الخط تُعاد ترتيب الشاشات بشكل مريح دون أن يُقتطع منها شيء."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6398,6 +6746,12 @@
     },
     "날짜를 선택하면 일정이 표시됩니다": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر يومًا لترى مواعيده"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6547,6 +6901,12 @@
     "내 일정 한 번에 지우기": {
       "comment": "Roadmap item: delete all my data",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف كل مواعيدي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6695,6 +7055,12 @@
     },
     "내가 만든 가족 공유가 이미 있어요. ‘공유 중단’ 후에 초대를 수락해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لديك مشاركة عائلية أنشأتها بنفسك. اضغط «إيقاف المشاركة» أولًا ثم اقبل الدعوة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6843,6 +7209,12 @@
     },
     "내일 일정이에요. 준비물을 미리 챙겨주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموعد غدًا. جهّز الأغراض مسبقًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -6991,6 +7363,12 @@
     },
     "누구의 일정인가요?": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لمن هذا الجدول؟"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -7139,6 +7517,12 @@
     },
     "다가오는 일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المواعيد القادمة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -7287,6 +7671,12 @@
     },
     "다음 일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموعد التالي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -7436,6 +7826,12 @@
     "다크 모드": {
       "comment": "Roadmap item: dark mode",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوضع الداكن"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -7584,6 +7980,12 @@
     },
     "달력": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التقويم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -7732,6 +8134,12 @@
     },
     "달력을 찍어\n일정을 등록하세요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صوّر التقويم\nلتضيف المواعيد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -7880,6 +8288,12 @@
     },
     "당일 아침": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صباح اليوم نفسه"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8029,6 +8443,12 @@
     "대비를 높이거나 색을 구별하기 어려워도 아이별 일정을 알아볼 수 있어요.": {
       "comment": "Roadmap item detail: better colors and contrast",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ميّز مواعيد كل طفل حتى مع زيادة التباين أو إن صعب عليك التمييز بين الألوان."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8178,6 +8598,12 @@
     "더 많은 나라 말로 앱을 쓸 수 있게 해요.": {
       "comment": "Roadmap item detail: more languages",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم التطبيق بلغات أكثر."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8327,6 +8753,12 @@
     "더 많은 언어": {
       "comment": "Roadmap item: more languages",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لغات أكثر"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8475,6 +8907,12 @@
     },
     "동그라미를 누르면 프로필 사진을 넣을 수 있어요. 반을 입력하면 통신문에서 다른 반 전용 일정(견학 등)을 자동으로 걸러줍니다. 새 학년에 반이 바뀌면 여기만 고쳐주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط الدائرة لإضافة صورة للطفل. إذا أدخلت فصله فستُستبعد تلقائيًا من التعاميم المواعيد الخاصة بالفصول الأخرى (كالرحلات). وعندما يتغير الفصل في عام دراسي جديد، عدّله هنا فقط."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8623,6 +9061,12 @@
     },
     "동기화에 실패했어요. 잠시 후 다시 시도해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّرت المزامنة. حاول مرة أخرى بعد قليل."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8771,6 +9215,12 @@
     },
     "마지막 동기화 %@ · 앱을 열 때와 일정을 바꿀 때 자동으로 맞춰져요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "آخر مزامنة %@ · تتم المزامنة تلقائيًا عند فتح التطبيق وعند تعديل المواعيد."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -8919,6 +9369,12 @@
     },
     "문자로 일정 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة من رسالة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9067,6 +9523,12 @@
     },
     "반 이름 (예: 무궁화)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم الفصل (مثل: عباد الشمس)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9215,6 +9677,12 @@
     },
     "반 입력": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدخال الفصل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9363,6 +9831,12 @@
     },
     "반복": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متكرر"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9511,6 +9985,12 @@
     },
     "반을 입력하면 통신문에서 다른 반 전용 일정을 자동으로 걸러줘요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل الفصل لتُستبعد تلقائيًا المواعيد الخاصة بالفصول الأخرى."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9659,6 +10139,12 @@
     },
     "반을 추가해주세요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف فصلًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9807,6 +10293,12 @@
     },
     "배우자·조부모와 함께 보기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شارك الجدول مع الزوج والأجداد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -9956,6 +10448,12 @@
     "백업과 내보내기": {
       "comment": "Roadmap item: backup and export",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النسخ الاحتياطي والتصدير"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -10104,6 +10602,12 @@
     },
     "보기 전용": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض فقط"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -10253,6 +10757,12 @@
     "보기 편한 색과 대비": {
       "comment": "Roadmap item: better colors and contrast",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ألوان وتباين أوضح"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -10401,6 +10911,48 @@
     },
     "사진 %lld장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요.": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لا توجد صور."
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "صورة واحدة. اضغطها لعرضها بحجم أكبر."
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "صورتان. مرّر للتنقل بينهما واضغط لعرض أكبر."
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld صور. مرّر للتنقل بينها واضغط لعرض أكبر."
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld صورة. مرّر للتنقل بينها واضغط لعرض أكبر."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld صورة. مرّر للتنقل بينها واضغط لعرض أكبر."
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -10705,6 +11257,12 @@
     },
     "사진에서 텍스트를 찾지 못했습니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم نجد أي نص في الصورة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -10853,6 +11411,12 @@
     },
     "사진을 탭하면 크게 볼 수 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط الصورة لعرضها بحجم أكبر."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11001,6 +11565,12 @@
     },
     "삭제": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11150,6 +11720,12 @@
     "손끝으로 느끼는 반응": {
       "comment": "Roadmap item: haptic feedback",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اهتزاز خفيف عند اللمس"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11298,6 +11874,12 @@
     },
     "수락 대기 중": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بانتظار القبول"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11446,6 +12028,12 @@
     },
     "스캔": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المسح"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11594,6 +12182,12 @@
     },
     "시간이 지정된 일정에만 적용돼요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ينطبق فقط على المواعيد المحددة بوقت"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11743,6 +12337,12 @@
     "쓰는 요령 알려 주기": {
       "comment": "Roadmap item: in-app tips",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نصائح مفيدة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -11892,6 +12492,12 @@
     "쓰던 일정 이어 쓰기": {
       "comment": "Roadmap item: keep unsaved drafts",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكمل الموعد من حيث توقفت"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12040,6 +12646,12 @@
     },
     "아이": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطفل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12188,6 +12800,12 @@
     },
     "아이 삭제": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف الطفل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12336,6 +12954,12 @@
     },
     "아이 이름 (예: 지호)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسم الطفل (مثل: ليان)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12484,6 +13108,12 @@
     },
     "아이 일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مواعيد الأطفال"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12633,6 +13263,12 @@
     "아이 일정을 파일로 저장하고 다시 불러올 수 있어요.": {
       "comment": "Roadmap item detail: backup and export",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احفظ جداول أطفالك في ملف واسترجعها لاحقًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12781,6 +13417,12 @@
     },
     "아이 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة طفل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -12929,6 +13571,12 @@
     },
     "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 표시돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف طفلًا لتُنظَّم المواعيد لكل طفل ويظهر اسمه في التذكيرات."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13077,6 +13725,12 @@
     },
     "아이를 등록하면 일정이 아이별로 관리되고 알림에도 이름이 함께 표시돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف طفلًا لتُنظَّم المواعيد لكل طفل ويظهر اسمه في التذكيرات أيضًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13225,6 +13879,12 @@
     },
     "아이일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدول أطفالي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13373,6 +14033,12 @@
     },
     "아이일정 데이터": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بيانات جدول أطفالي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13521,6 +14187,12 @@
     },
     "아이일정 사용자에게 보내기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال إلى مستخدمي جدول أطفالي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13669,6 +14341,12 @@
     },
     "아이일정 캘린더": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقويم جدول أطفالي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13817,6 +14495,12 @@
     },
     "아이일정 함께 보기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدول أطفالي المشترك"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -13965,6 +14649,12 @@
     },
     "아직 동기화한 적이 없어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تتم المزامنة بعد."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -14113,6 +14803,12 @@
     },
     "아직 참여한 사람이 없어요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم ينضم أحد بعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -14261,6 +14957,12 @@
     },
     "아직 초대하지 않았어요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تُرسل دعوة بعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -14409,6 +15111,12 @@
     },
     "알림": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعميم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -14557,6 +15265,48 @@
     },
     "알림 %lld개 예약": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لا تذكيرات"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "جُدول تذكير واحد"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "جُدول تذكيران"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "جُدولت %lld تذكيرات"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "جُدول %lld تذكيرًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "جُدول %lld تذكير"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -14861,6 +15611,12 @@
     },
     "알림 권한이 필요해요 (설정에서 허용)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يلزم إذن الإشعارات (فعّله من الإعدادات)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15009,6 +15765,12 @@
     },
     "알림 설정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعدادات التذكير"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15157,6 +15919,12 @@
     },
     "알림 시점": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وقت التذكير"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15305,6 +16073,12 @@
     },
     "알림 시점이 꺼져 있어요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كل أوقات التذكير متوقفة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15453,6 +16227,12 @@
     },
     "알림 없음": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بلا تذكيرات"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15602,6 +16382,12 @@
     "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요.": {
       "comment": "Roadmap item detail: in-app tips",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلميحات لطيفة عن الميزات المفيدة في الوقت المناسب."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15750,6 +16536,12 @@
     },
     "애플 캘린더에도 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضِف إلى تقويم Apple أيضًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -15899,6 +16691,12 @@
     "앱을 영어로도 쓸 수 있어요.": {
       "comment": "Roadmap item detail: English language",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم التطبيق كاملًا بالإنجليزية."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16048,6 +16846,12 @@
     "어두운 화면에서도 달력과 일정이 또렷하게 보여요.": {
       "comment": "Roadmap item detail: dark mode",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يبقى التقويم والمواعيد واضحين ومقروئين في الوضع الداكن."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16196,6 +17000,12 @@
     },
     "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعرض المواعيد القادمة المستخرجة من تقويم الحضانة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16344,6 +17154,12 @@
     },
     "어린이집 알림장을 찍거나 문자를 붙여넣어 보세요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صوّر تعميم الحضانة أو الصق رسالة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16493,6 +17309,12 @@
     "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요.": {
       "comment": "Roadmap item detail: what's new after an update",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند أول فتح بعد كل تحديث، تعرّف على الجديد."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16642,6 +17464,12 @@
     "업데이트 소식": {
       "comment": "Roadmap item: what's new after an update",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما الجديد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16790,6 +17618,12 @@
     },
     "여기에 어린이집 문자·카카오톡 메시지를 붙여넣으세요.\n예) 내일은 비가 예정된 만큼 장화, 우의, 우산에 이름을 적어 보내주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الصق هنا رسالة الحضانة.\nمثال: يُتوقع هطول المطر غدًا، فاكتبوا اسم الطفل على الحذاء والمعطف والمظلة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -16939,6 +17773,12 @@
     "영어 지원": {
       "comment": "Roadmap item: English language",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دعم كامل للإنجليزية"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17087,6 +17927,12 @@
     },
     "예: 도시락, 물통 지참": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مثال: وجبة غداء، قارورة ماء"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17235,6 +18081,12 @@
     },
     "오늘": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اليوم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17383,6 +18235,12 @@
     },
     "오늘 일정이에요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموعد اليوم."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17531,6 +18389,12 @@
     },
     "오류": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطأ"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17679,6 +18543,12 @@
     },
     "완료": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17828,6 +18698,12 @@
     "움직임 줄이기": {
       "comment": "Roadmap item: respect Reduce Motion",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقليل الحركة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -17977,6 +18853,12 @@
     "움직임 줄이기를 켜면 화면 효과가 차분해져요.": {
       "comment": "Roadmap item detail: respect Reduce Motion",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند تفعيل تقليل الحركة تهدأ تأثيرات الشاشة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -18126,6 +19008,12 @@
     "원하면 앱 안에서 저장한 일정을 모두 지울 수 있어요.": {
       "comment": "Roadmap item detail: delete all my data",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "امسح كل المواعيد المحفوظة من داخل التطبيق متى شئت."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -18274,6 +19162,12 @@
     },
     "월간 달력으로 펼치기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توسيع إلى عرض الشهر"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -18422,6 +19316,12 @@
     },
     "이 가족의 일정을 더 이상 받지 않습니다. 지금까지 받은 일정은 그대로 남아요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لن تصلك مواعيد هذه العائلة بعد الآن. المواعيد التي وصلتك حتى الآن تبقى كما هي."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -18570,6 +19470,12 @@
     },
     "이 가족의 일정을 함께 보고 있어요. 내가 추가하거나 고친 일정도 상대에게 그대로 전달됩니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتابع مواعيد هذه العائلة معهم. المواعيد التي تضيفها أو تعدّلها تصلهم أيضًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -18718,6 +19624,12 @@
     },
     "이 기기에서는 iCloud 사용이 제한돼 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدام iCloud مقيّد على هذا الجهاز."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -18866,6 +19778,12 @@
     },
     "이 날 일정 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة موعد في هذا اليوم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19014,6 +19932,12 @@
     },
     "이 날은 일정이 없어요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا مواعيد في هذا اليوم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19162,6 +20086,12 @@
     },
     "이 문자에서 날짜가 있는 일정을 찾지 못했습니다.\n날짜(예: 7월 12일)나 '내일·금요일' 같은 표현이 있는지 확인해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم نجد في هذه الرسالة مواعيد بتواريخ.\nتأكد أنها تحتوي على تاريخ واضح."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19310,6 +20240,12 @@
     },
     "이 아이를 삭제할까요?": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف هذا الطفل؟"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19458,6 +20394,12 @@
     },
     "이름 (예: 지호)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاسم (مثل: ليان)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19606,6 +20548,12 @@
     },
     "이미 다른 가족의 공유에 참여하고 있어요. 먼저 ‘공유 나가기’를 한 뒤 초대해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت مشارك بالفعل في جدول عائلة أخرى. اضغط «مغادرة المشاركة» أولًا ثم أرسل الدعوة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19754,6 +20702,12 @@
     },
     "이미지를 처리할 수 없습니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّرت معالجة الصورة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -19902,6 +20856,48 @@
     },
     "이번 사진에서 추출된 일정 %lld개": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم نجد مواعيد في هذه الصورة"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "وجدنا موعدًا واحدًا في هذه الصورة"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "وجدنا موعدين في هذه الصورة"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "وجدنا %lld مواعيد في هذه الصورة"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "وجدنا %lld موعدًا في هذه الصورة"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "وجدنا %lld موعد في هذه الصورة"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -20206,6 +21202,12 @@
     },
     "일시": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التاريخ والوقت"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -20354,6 +21356,12 @@
     },
     "일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "موعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -20502,6 +21510,48 @@
     },
     "일정 %lld개 저장 + 알림 받기": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حفظ المواعيد وتفعيل التذكيرات"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حفظ موعد واحد وتفعيل التذكير"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حفظ موعدين وتفعيل التذكيرات"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حفظ %lld مواعيد وتفعيل التذكيرات"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حفظ %lld موعدًا وتفعيل التذكيرات"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حفظ %lld موعد وتفعيل التذكيرات"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -20806,6 +21856,48 @@
     },
     "일정 %lld개를 가져왔어요.": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم يُستورد أي موعد."
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استوردنا موعدًا واحدًا."
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استوردنا موعدين."
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استوردنا %lld مواعيد."
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استوردنا %lld موعدًا."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "استوردنا %lld موعد."
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21110,6 +22202,12 @@
     },
     "일정 데이터를 가져오지 못했습니다.\n아이일정 앱에서 내보낸 파일인지 확인해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر استيراد بيانات الجدول.\nتأكد أن الملف مُصدَّر من تطبيق جدول أطفالي."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21258,6 +22356,12 @@
     },
     "일정 시각 정각": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند بدء الموعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21406,6 +22510,12 @@
     },
     "일정 유형": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نوع الموعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21554,6 +22664,12 @@
     },
     "일정 직접 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة موعد يدويًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21702,6 +22818,12 @@
     },
     "일정 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة موعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21850,6 +22972,12 @@
     },
     "일정 추출": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخراج المواعيد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -21998,6 +23126,12 @@
     },
     "일정 패턴을 보고 '%@'의 문서로 인식했어요. 아니라면 위에서 바꿔주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "من نمط المواعيد يبدو أن هذا تعميم يخص %@. إن لم يكن كذلك فغيّره في الأعلى."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -22146,6 +23280,12 @@
     },
     "일정으로 인식할 텍스트를 찾지 못했습니다.\n글씨가 선명하게 나오도록 다시 찍어보세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم نجد نصًا يشبه المواعيد.\nأعد التصوير بحيث تظهر الكتابة بوضوح."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -22295,6 +23435,12 @@
     "일정을 넣거나 저장했을 때 가볍게 떨려서 알려 줘요.": {
       "comment": "Roadmap item detail: haptic feedback",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اهتزاز خفيف يخبرك بأن الموعد أُضيف أو حُفظ."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -22444,6 +23590,12 @@
     "일정을 적다가 앱이 꺼져도 쓰던 내용이 남아 있어요.": {
       "comment": "Roadmap item detail: keep unsaved drafts",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ما كنت تكتبه يبقى محفوظًا حتى لو أُغلق التطبيق في منتصف الطريق."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -22592,6 +23744,12 @@
     },
     "일정을 추가할 수 있는 캘린더 계정을 찾지 못했습니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم نجد حساب تقويم يمكن إضافة المواعيد إليه."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -22740,6 +23898,12 @@
     },
     "저장": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -22888,6 +24052,12 @@
     },
     "저장 완료! 달력·위젯에서 확인하세요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الحفظ! تجده في التقويم والأداة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23036,6 +24206,12 @@
     },
     "전날 저녁 (준비물 챙기기)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساء اليوم السابق (لتجهيز الأغراض)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23184,6 +24360,12 @@
     },
     "전체": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الكل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23332,6 +24514,12 @@
     },
     "제목": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العنوان"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23480,6 +24668,12 @@
     },
     "제목 (예: 소풍, 준비물의 날)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العنوان (مثل: رحلة، يوم إحضار الأغراض)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23628,6 +24822,12 @@
     },
     "제목·시간·준비물을 확인하고, 동그라미를 눌러 아이를 바꾸거나 필요 없는 일정은 밀어서 삭제하세요. 저장하면 달력으로 이동합니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "راجع العناوين والأوقات والأغراض المطلوبة. اضغط الدائرة لتغيير الطفل، أو اسحب لحذف ما لا تحتاجه. بعد الحفظ تنتقل إلى التقويم."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23776,6 +24976,12 @@
     },
     "제외됨": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مستبعد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -23924,6 +25130,12 @@
     },
     "종일": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طوال اليوم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24072,6 +25284,12 @@
     },
     "종일 일정(소풍·현장학습 등)은 ‘전날 저녁’과 ‘당일 아침’ 알림만 울립니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المواعيد التي تستمر طوال اليوم (كالرحلات) لا تصلها إلا تذكيرات «مساء اليوم السابق» و«صباح اليوم نفسه»."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24220,6 +25438,12 @@
     },
     "주간 달력으로 접기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طيّ إلى عرض الأسبوع"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24368,6 +25592,12 @@
     },
     "준비물·메모": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأغراض المطلوبة / ملاحظات"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24516,6 +25746,12 @@
     },
     "준비물·메모 (예: 도시락 지참)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأغراض المطلوبة / ملاحظات (مثل: وجبة غداء)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24664,6 +25900,12 @@
     },
     "지금 동기화": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مزامنة الآن"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24812,6 +26054,12 @@
     },
     "지금 시작하는 일정이에요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموعد يبدأ الآن."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -24962,6 +26210,48 @@
       "comment": "Tip ask card: number of child schedule entries saved in the app",
       "extractionState": "manual",
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "بدأت للتو بتنظيم مواعيد أطفالك"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "نظّمت حتى الآن موعدًا واحدًا لأطفالك"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "نظّمت حتى الآن موعدين لأطفالك"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "نظّمت حتى الآن %lld مواعيد لأطفالك"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "نظّمت حتى الآن %lld موعدًا لأطفالك"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "نظّمت حتى الآن %lld موعد لأطفالك"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "variations": {
             "plural": {
@@ -25338,6 +26628,12 @@
     },
     "지우기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -25486,6 +26782,12 @@
     },
     "지원": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الدعم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -25634,6 +26936,12 @@
     },
     "직접 추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أُضيف يدويًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -25782,6 +27090,12 @@
     },
     "참여 중": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منضم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -25930,6 +27244,12 @@
     },
     "참여자를 빼거나 권한을 바꾸려면 아래 ‘참여자 관리’를 눌러주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لإزالة شخص أو تغيير صلاحياته، اضغط «إدارة المشاركين» في الأسفل."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26078,6 +27398,12 @@
     },
     "처리 중…": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ المعالجة…"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26227,6 +27553,12 @@
     "처음 쓰는 분을 위한 안내": {
       "comment": "Roadmap item: first-run guide",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جولة سريعة للمستخدمين الجدد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26376,6 +27708,12 @@
     "처음 열었을 때 사진으로 일정을 넣는 법을 짧게 보여 줘요.": {
       "comment": "Roadmap item detail: first-run guide",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند أول فتح للتطبيق، دليل قصير لإضافة المواعيد من صورة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26524,6 +27862,12 @@
     },
     "초대 링크 보내기 · 참여자 관리": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إرسال الدعوة · إدارة المشاركين"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26672,6 +28016,12 @@
     },
     "초대 링크를 만들지 못했어요. 잠시 후 다시 시도해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر إنشاء رابط الدعوة. حاول مرة أخرى بعد قليل."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26820,6 +28170,12 @@
     },
     "초대 링크를 보내면 배우자·조부모도 같은 일정을 보고 고칠 수 있어요. 한쪽에서 일정을 바꾸면 양쪽에 자동으로 반영됩니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرسل رابط دعوة ليرى الزوج أو الأجداد المواعيد نفسها ويعدّلوها. أي تغيير من جهة يظهر عند الجهتين تلقائيًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -26968,6 +28324,12 @@
     },
     "초대 링크를 보내지 못했어요.\n%@": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر إرسال رابط الدعوة.\n%@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -27116,6 +28478,12 @@
     },
     "초대 링크를 카카오톡·메시지로 보내면, 상대가 아이일정 앱에서 열어 바로 참여할 수 있어요. 이후에는 어느 쪽에서 일정을 추가하거나 고쳐도 양쪽에 자동으로 반영됩니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرسل رابط الدعوة في رسالة، فيفتحه الطرف الآخر في التطبيق وينضم فورًا. بعدها، أي موعد يُضاف أو يُعدَّل من أي جهة يظهر عند الجهتين تلقائيًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -27264,6 +28632,12 @@
     },
     "초대받은 사람도 일정을 추가·수정할 수 있어요. 아이 프로필 사진은 공유되지 않습니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستطيع المدعوون إضافة المواعيد وتعديلها أيضًا. صور الأطفال لا تُشارَك."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -27412,6 +28786,12 @@
     },
     "초대한 가족": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فرد مدعو من العائلة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -27560,6 +28940,12 @@
     },
     "초대한 가족과 함께 보는 중": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتشارك الجدول مع من دعوتهم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -27708,6 +29094,12 @@
     },
     "초대한 가족이 더 이상 일정을 볼 수 없게 됩니다. 지금까지의 일정은 양쪽 기기에 그대로 남아요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لن يرى المدعوون مواعيدك بعد الآن. المواعيد الحالية تبقى على الجهازين."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -27856,6 +29248,12 @@
     },
     "추가": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -28004,6 +29402,12 @@
     },
     "취소": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلغاء"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -28152,6 +29556,48 @@
     },
     "캘린더 %lld개 추가": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لم يُضف شيء إلى التقويم"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُضيف موعد واحد إلى التقويم"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُضيف موعدان إلى التقويم"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُضيفت %lld مواعيد إلى التقويم"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُضيف %lld موعدًا إلى التقويم"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "أُضيف %lld موعد إلى التقويم"
+                }
+              }
+            }
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -28456,6 +29902,12 @@
     },
     "캘린더 권한이 필요해요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يلزم إذن التقويم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -28604,6 +30056,12 @@
     },
     "캘린더 접근 권한이 없습니다. 설정 > CalendarSnap에서 허용해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوصول إلى التقويم غير مسموح. فعّله من الإعدادات > CalendarSnap."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -28752,6 +30210,12 @@
     },
     "캘린더 추가 실패": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّرت الإضافة إلى التقويم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -28900,6 +30364,12 @@
     },
     "캘린더 파일로 공유 (.ics)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة كملف تقويم (.ics)"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29048,6 +30518,12 @@
     },
     "켜면 %@ 달력에 일정이 등록돼요. iOS 캘린더 앱에서 해당 달력을 ‘공유’하면 배우자·가족과 자동으로 동기화됩니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند التفعيل تُضاف المواعيد إلى تقويم %@. شارك هذا التقويم من تطبيق التقويم في iOS ليبقى متزامنًا مع زوجك وعائلتك."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29197,6 +30673,12 @@
     "큰 글씨에 맞춘 화면": {
       "comment": "Roadmap item: layouts for larger text",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شاشات تناسب الخط الكبير"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29345,6 +30827,12 @@
     },
     "클립보드에서 붙여넣기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لصق من الحافظة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29493,6 +30981,12 @@
     },
     "텍스트로 공유": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة كنص"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29642,6 +31136,12 @@
     "펼치는 아이폰 화면": {
       "comment": "Roadmap item: foldable iPhone layout",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شاشة iPhone القابل للطي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29791,6 +31291,12 @@
     "펼치는 아이폰에서 달력과 일정을 두 쪽으로 나눠 봐요.": {
       "comment": "Roadmap item detail: foldable iPhone layout",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شاهد التقويم والمواعيد جنبًا إلى جنب على iPhone القابل للطي."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -29939,6 +31445,12 @@
     },
     "한 달 일정을 자동으로 추출해\n캘린더에 한 번에 추가하고 알림을 보내드려요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نستخرج مواعيد الشهر كله،\nونضيفها إلى تقويمك دفعة واحدة ونذكّرك بها."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30087,6 +31599,12 @@
     },
     "함께 보는 사람": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المشاركون"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30235,6 +31753,12 @@
     },
     "함께 편집": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكنه التعديل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30383,6 +31907,12 @@
     },
     "확인": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حسنًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30531,6 +32061,12 @@
     },
     "📅 %@ 아이 일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 مواعيد الأطفال · %@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30680,6 +32216,12 @@
     "어린이집": {
       "comment": "애플 캘린더에 만드는 아이 전용 달력 이름",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحضانة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30829,6 +32371,12 @@
     "%@ 어린이집": {
       "comment": "애플 캘린더에 만드는 아이 전용 달력 이름",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · الحضانة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -30977,6 +32525,48 @@
     },
     " · 쌓여 있던 중복 %lld개 정리": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " · لا مكررات قديمة"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " · نظّفنا موعدًا مكررًا قديمًا"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " · نظّفنا موعدين مكررين قديمين"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " · نظّفنا %lld مواعيد مكررة قديمة"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " · نظّفنا %lld موعدًا مكررًا قديمًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": " · نظّفنا %lld موعد مكرر قديم"
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -31353,6 +32943,12 @@
     },
     "%@님이 공유한 일정을 함께 보는 중": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتابع المواعيد التي شاركها %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -31501,6 +33097,48 @@
     },
     "%lld개": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لا مواعيد"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "موعد واحد"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "موعدان"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld مواعيد"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld موعدًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld موعد"
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -31877,6 +33515,12 @@
     },
     "iCloud 계정이 바뀌어 일정 공유가 중단됐어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توقفت المشاركة لأن حساب iCloud تغيّر."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32025,6 +33669,12 @@
     },
     "iCloud 로그인이 필요해요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يلزم تسجيل الدخول إلى iCloud"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32173,6 +33823,12 @@
     },
     "iCloud 확인 중…": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التحقق من iCloud…"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32321,6 +33977,12 @@
     },
     "공유 설정에 실패했어요. 네트워크 상태를 확인해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر إعداد المشاركة. تحقق من اتصالك بالشبكة."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32469,6 +34131,12 @@
     },
     "공유 준비 중…": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ التحضير للمشاركة…"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32617,6 +34285,12 @@
     },
     "공유 중지": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف المشاركة"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32765,6 +34439,12 @@
     },
     "공유 참여에 실패했어요. (%@)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر الانضمام إلى الجدول المشترك. (%@)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -32913,6 +34593,48 @@
     },
     "공유된 일정에 참여했어요. 일정 %lld개를 함께 관리해요.": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "انضممت إلى الجدول المشترك، ولا مواعيد فيه بعد."
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "انضممت إلى الجدول المشترك. صار بينكم موعد واحد."
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "انضممت إلى الجدول المشترك. صار بينكم موعدان."
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "انضممت إلى الجدول المشترك. صارت بينكم %lld مواعيد."
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "انضممت إلى الجدول المشترك. صار بينكم %lld موعدًا."
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "انضممت إلى الجدول المشترك. صار بينكم %lld موعد."
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -33289,6 +35011,12 @@
     },
     "공유된 일정을 함께 보는 중": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتابع جدولًا مشتركًا"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -33437,6 +35165,12 @@
     },
     "공유를 시작하지 못했어요. 네트워크 상태를 확인한 뒤 다시 시도해주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر بدء المشاركة. تحقق من اتصالك بالشبكة وحاول مرة أخرى."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -33585,6 +35319,12 @@
     },
     "공유에 참여했어요. 아직 받아온 일정이 없어요 — 잠시 후 앱을 다시 열면 반영돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انضممت. لم تصل أي مواعيد بعد، افتح التطبيق مرة أخرى بعد قليل لتظهر."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -33733,6 +35473,12 @@
     },
     "나가도 지금까지의 일정은 이 기기에 남아요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المواعيد الحالية تبقى على هذا الجهاز."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -33881,6 +35627,12 @@
     },
     "남겨두기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إبقاء"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -34029,6 +35781,12 @@
     },
     "내가 만든 초대 링크예요. 이 링크를 함께 볼 사람에게 보내주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا رابط الدعوة الخاص بك. أرسله لمن تريد مشاركة الجدول معهم."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -34177,6 +35935,12 @@
     },
     "내일": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غدًا"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -34325,6 +36089,12 @@
     },
     "다른 반 일정 정리": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنظيف مواعيد الفصول الأخرى"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -34473,6 +36243,48 @@
     },
     "등록된 아이의 반이 아닌 %@ 일정 %lld개가 저장돼 있어요. 삭제할까요?": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "لا مواعيد محفوظة لـ%1$@."
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "يوجد موعد محفوظ لـ%1$@، وهو ليس فصل طفلك. هل تحذفه؟"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "يوجد موعدان محفوظان لـ%1$@، وهو ليس فصل طفلك. هل تحذفهما؟"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "توجد %2$lld مواعيد محفوظة لـ%1$@، وهو ليس فصل طفلك. هل تحذفها؟"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "يوجد %2$lld موعدًا محفوظًا لـ%1$@، وهو ليس فصل طفلك. هل تحذفها؟"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "يوجد %2$lld موعد محفوظ لـ%1$@، وهو ليس فصل طفلك. هل تحذفها؟"
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -34717,6 +36529,12 @@
     },
     "배우자·조부모·돌봄 선생님 등 원하는 사람을 초대해 모든 아이·일정을 실시간으로 함께 관리할 수 있어요. 애플 가족 공유와 무관하며, 초대 링크는 메시지로 보내는 게 가장 확실해요. 카카오톡으로 받았다면 링크를 길게 눌러 Safari로 열어주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ادعُ الزوج أو الأجداد أو المربية أو من تشاء لتديروا معًا كل الأطفال والمواعيد لحظة بلحظة. هذه المشاركة منفصلة عن «مشاركة العائلة» في Apple. إرسال رابط الدعوة عبر تطبيق الرسائل هو الأضمن، وإن وصلك في تطبيق مراسلة آخر فالمس الرابط مطولًا وافتحه في Safari."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -34865,6 +36683,12 @@
     },
     "설정 열기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح الإعدادات"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35013,6 +36837,12 @@
     },
     "수락 대기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بانتظار القبول"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35161,6 +36991,12 @@
     },
     "아이일정의 초대 링크가 아니에요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا ليس رابط دعوة من جدول أطفالي."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35309,6 +37145,12 @@
     },
     "어제": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أمس"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35457,6 +37299,12 @@
     },
     "오늘은 챙길 일정이 없어요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا مواعيد تنتظرك اليوم"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35605,6 +37453,12 @@
     },
     "이 날 일정 공유하기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة مواعيد هذا اليوم"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35753,6 +37607,12 @@
     },
     "이미 내 일정을 다른 사람과 공유 중이에요. 설정 > 일정 공유에서 '공유 중지'를 한 뒤 초대 링크를 다시 눌러주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت تشارك جدولك مع آخرين بالفعل. من الإعدادات > مشاركة الجدول اضغط «إيقاف المشاركة» ثم افتح رابط الدعوة مرة أخرى."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -35901,6 +37761,12 @@
     },
     "이미 다른 사람이 공유한 일정에 참여 중이에요. 먼저 공유에서 나간 뒤 초대할 수 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت منضم بالفعل إلى جدول شاركه شخص آخر. غادره أولًا ثم ادعُ من تشاء."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -36049,6 +37915,12 @@
     },
     "이미 참여 중인 공유예요. 최신 일정을 가져올게요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت منضم بالفعل إلى هذا الجدول المشترك. نجلب الآن أحدث المواعيد."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -36197,6 +38069,48 @@
     },
     "일정 %lld개 삭제": {
       "localizations": {
+        "ar": {
+          "variations": {
+            "plural": {
+              "zero": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حذف المواعيد"
+                }
+              },
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حذف موعد واحد"
+                }
+              },
+              "two": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حذف موعدين"
+                }
+              },
+              "few": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حذف %lld مواعيد"
+                }
+              },
+              "many": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حذف %lld موعدًا"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "حذف %lld موعد"
+                }
+              }
+            }
+          }
+        },
         "en": {
           "variations": {
             "plural": {
@@ -36573,6 +38487,12 @@
     },
     "일정 공유": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة الجدول"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -36721,6 +38641,12 @@
     },
     "일정 공유 업로드에 실패했어요. (%lld: %@)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر رفع المواعيد المشتركة. (%lld: %@)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -36869,6 +38795,12 @@
     },
     "일정 공유가 종료됐어요. 지금까지의 일정은 이 기기에 남아 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انتهت المشاركة. المواعيد الحالية تبقى على هذا الجهاز."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37017,6 +38949,12 @@
     },
     "일정 공유를 중지할까요?": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف مشاركة الجدول؟"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37165,6 +39103,12 @@
     },
     "일정 공유를 중지했어요. 내 데이터는 그대로 유지돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أوقفت المشاركة. بياناتك تبقى كما هي."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37313,6 +39257,12 @@
     },
     "일정 공유에서 나갈까요?": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مغادرة الجدول المشترك؟"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37461,6 +39411,12 @@
     },
     "일정 공유에서 나왔어요. 지금까지의 일정은 이 기기에 남아 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غادرت الجدول المشترك. المواعيد الحالية تبقى على هذا الجهاز."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37609,6 +39565,12 @@
     },
     "일정을 iCloud에 올리지 못했어요. 함께 보는 사람에게 일정이 보이지 않을 수 있어요. (%@)": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر رفع المواعيد إلى iCloud، وقد لا تظهر لمن تشاركهم. (%@)"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37757,6 +39719,12 @@
     },
     "일정을 추가·수정하면 함께 보는 모두의 기기에 반영돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المواعيد التي تضيفها أو تعدّلها تظهر على أجهزة الجميع."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -37905,6 +39873,12 @@
     },
     "참여자 관리": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدارة المشاركين"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38053,6 +40027,12 @@
     },
     "초대받은 사람은 더 이상 일정을 볼 수 없어요. 내 데이터는 그대로 유지돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لن يرى المدعوون مواعيدك بعد الآن. بياناتك تبقى كما هي."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38201,6 +40181,12 @@
     },
     "초대한 사람이 일정을 추가·수정하면 내 기기에도 바로 반영돼요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عندما يضيف المدعوون موعدًا أو يعدّلونه يظهر على جهازك فورًا."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38349,6 +40335,12 @@
     },
     "초대해서 함께 보기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ادعُ من يتابع معك"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38497,6 +40489,12 @@
     },
     "📅 %@ — 일정이 없어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "📅 %@ · لا مواعيد."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38648,6 +40646,12 @@
     },
     "설정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإعدادات"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38790,6 +40794,12 @@
     },
     "사진 찍기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التقاط صورة"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -38932,6 +40942,12 @@
     },
     "사진 선택": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختيار صور"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39074,6 +41090,12 @@
     },
     "닫기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إغلاق"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39216,6 +41238,12 @@
     },
     "사진 크게 보기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الصورة"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39358,6 +41386,12 @@
     },
     "이전 달": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الشهر السابق"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39500,6 +41534,12 @@
     },
     "다음 달": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الشهر التالي"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39642,6 +41682,12 @@
     },
     "이전 주": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأسبوع السابق"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39784,6 +41830,12 @@
     },
     "다음 주": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأسبوع التالي"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -39926,6 +41978,12 @@
     },
     "스캔 결과 지우기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح النتيجة"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -40068,6 +42126,12 @@
     },
     "%@ 프로필 사진": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صورة %@"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -40210,6 +42274,12 @@
     },
     "사진": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صورة"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -40352,6 +42422,12 @@
     },
     "일정 %lld개": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المواعيد: %lld"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -40494,6 +42570,12 @@
     },
     "알림장 스캔": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح تعميم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -40636,6 +42718,12 @@
     },
     "알림장 사진에서 일정을 뽑습니다. 사진을 넘기지 않으면 카메라를 엽니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخرج المواعيد من صورة تعميم. إن لم تُعطه صورة يفتح الكاميرا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -40778,6 +42866,12 @@
     },
     "Scan a Notice": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح تعميم"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -40927,6 +43021,12 @@
     "일정을 뽑을 알림장 사진. 비워 두면 카메라를 엽니다.": {
       "comment": "Siri: photos parameter description",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صور التعميم الذي تُستخرج منه المواعيد. اتركها فارغة لفتح الكاميرا."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -41070,6 +43170,12 @@
     "일정 열기": {
       "comment": "Siri/Spotlight: open a saved event",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح موعد"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -41213,6 +43319,12 @@
     "저장한 일정을 달력에서 그 날로 엽니다.": {
       "comment": "Siri: open event description",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يفتح موعدًا محفوظًا على يومه في التقويم."
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -41356,6 +43468,12 @@
     "열어 볼 저장한 일정": {
       "comment": "Siri: event parameter description",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الموعد المحفوظ الذي تريد فتحه"
+          }
+        },
         "en": {
           "stringUnit": {
             "state": "translated",
@@ -41499,6 +43617,12 @@
     "Siri에게 편하게 말하기": {
       "comment": "Roadmap item: Siri understands requests without the app name",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسأل Siri ببساطة"
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -41648,6 +43772,12 @@
     "앱 이름을 말하지 않아도 Siri가 아이 일정을 찾아 바로 열어 줘요.": {
       "comment": "Roadmap item detail: Siri understands requests without the app name",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يجد Siri مواعيد أطفالك ويفتحها فورًا، حتى دون أن تذكر اسم التطبيق."
+          }
+        },
         "ko": {
           "stringUnit": {
             "state": "translated",
@@ -41796,6 +43926,12 @@
     },
     "아이일정 Plus": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدول أطفالي Plus"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -41938,6 +44074,12 @@
     },
     "아이일정 Pro": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدول أطفالي Pro"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42080,6 +44222,12 @@
     },
     "무료": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مجاني"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42222,6 +44370,12 @@
     },
     "이 Apple 계정에서 구매한 기록을 찾지 못했어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم نجد مشتريات لحساب Apple هذا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42364,6 +44518,12 @@
     },
     "요금제": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخطط"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42506,6 +44666,12 @@
     },
     "나중에": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ليس الآن"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42648,6 +44814,12 @@
     },
     "복원": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استعادة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42790,6 +44962,12 @@
     },
     "아이일정 Plus · Pro": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدول أطفالي Plus · Pro"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -42932,6 +45110,12 @@
     },
     "아이가 늘어도, 가족이 함께 봐도. 연 구독이나 평생 중에 고르세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أطفال أكثر، والعائلة كلها على اطلاع. اختر الاشتراك السنوي أو الشراء مدى الحياة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43074,6 +45258,12 @@
     },
     "사진으로 한 달 일정 넣기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مواعيد شهر كامل من صورة واحدة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43216,6 +45406,12 @@
     },
     "알림장 사진 한 장이면 돼요. 횟수 제한 없어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تكفي صورة واحدة للتعميم، وبلا حدود."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43358,6 +45554,12 @@
     },
     "애플 캘린더에 한 번에 등록": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة إلى تقويم Apple دفعة واحدة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43500,6 +45702,12 @@
     },
     "이미 있는 일정은 빼고 넣어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نتخطى المواعيد الموجودة مسبقًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43642,6 +45850,12 @@
     },
     "전날 저녁 · 당일 아침 알림": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تذكير مساء اليوم السابق وصباح اليوم نفسه"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43784,6 +45998,12 @@
     },
     "준비물을 잊지 않게 미리 알려 줘요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حتى لا تنسى ما يجب تجهيزه."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -43926,6 +46146,12 @@
     },
     "Plus 전부": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كل ما في Plus"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44068,6 +46294,12 @@
     },
     "아이 여러 명, 사진 프로필, 1시간 전 · 정각 알림까지.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكثر من طفل، وصور الأطفال، وتذكير قبل ساعة وعند البدء."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44210,6 +46442,12 @@
     },
     "주 · 월 구독": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطط أسبوعية وشهرية"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44352,6 +46590,12 @@
     },
     "매달 %@": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ شهريًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44494,6 +46738,12 @@
     },
     "매주 %@": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ أسبوعيًا"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44636,6 +46886,12 @@
     },
     "구독 시작": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اشترك"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44778,6 +47034,12 @@
     },
     "Pro 평생으로 올리기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الترقية إلى Pro مدى الحياة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -44920,6 +47182,12 @@
     },
     "평생으로 사기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شراء مدى الحياة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45062,6 +47330,12 @@
     },
     "값을 불러오는 중…": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحميل الأسعار…"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45204,6 +47478,12 @@
     },
     "요금제를 불러오지 못했어요. 인터넷 연결을 확인하고 다시 불러와 주세요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذّر تحميل الخطط. تحقق من اتصالك بالإنترنت وحاول مرة أخرى."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45346,6 +47626,12 @@
     },
     "다시 불러오기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة المحاولة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45488,6 +47774,12 @@
     },
     "무제한": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بلا حدود"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45630,6 +47922,12 @@
     },
     "여러 명": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكثر من طفل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45772,6 +48070,12 @@
     },
     "사진으로 일정 추출": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مواعيد من الصور"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -45914,6 +48218,12 @@
     },
     "애플 캘린더 일괄 등록": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة الكل إلى تقويم Apple"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46056,6 +48366,12 @@
     },
     "알림: 전날 저녁 · 당일 아침": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التذكير: مساء اليوم السابق · صباح اليوم نفسه"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46198,6 +48514,12 @@
     },
     "그날 일정 텍스트 공유": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة مواعيد يوم كنص"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46340,6 +48662,12 @@
     },
     "아이 수": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عدد الأطفال"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46482,6 +48810,12 @@
     },
     "1명": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طفل واحد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46624,6 +48958,12 @@
     },
     "아이 사진 프로필": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صور الأطفال"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46766,6 +49106,12 @@
     },
     "알림: 1시간 전 · 정각": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التذكير: قبل ساعة · عند البدء"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -46908,6 +49254,12 @@
     },
     "홈 화면 위젯": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدوات الشاشة الرئيسية"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47050,6 +49402,12 @@
     },
     "한눈에 비교": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قارن الخطط"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47192,6 +49550,12 @@
     },
     "있음": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوفر"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47334,6 +49698,12 @@
     },
     "없음": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير متوفر"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47476,6 +49846,12 @@
     },
     "구독은 기간이 끝나기 24시간 전까지 해지하지 않으면 같은 요금으로 자동 갱신되며, Apple 계정으로 결제됩니다. 처음 연 구독을 시작하면 첫 해는 할인된 값일 수 있고, 그 뒤에는 정가로 갱신됩니다. 해지와 관리는 App Store 계정 설정에서 합니다. 평생은 구독이 아니라 한 번 결제입니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتجدد الاشتراك تلقائيًا بالسعر نفسه ما لم يُلغَ قبل 24 ساعة على الأقل من نهاية الفترة الحالية، ويُخصم المبلغ من حساب Apple. إذا بدأت الاشتراك السنوي لأول مرة فقد تكون السنة الأولى بسعر مخفّض، ثم يتجدد بالسعر المعتاد. يمكنك الإدارة أو الإلغاء في أي وقت من إعدادات حسابك في App Store. الشراء مدى الحياة دفعة واحدة وليس اشتراكًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47618,6 +49994,12 @@
     },
     "이용약관": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شروط الاستخدام"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47760,6 +50142,12 @@
     },
     "개인정보 처리방침": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سياسة الخصوصية"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -47902,6 +50290,12 @@
     },
     "코드 사용": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدام رمز"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48044,6 +50438,12 @@
     },
     "지금 쓰는 칸": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطتك الحالية"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48186,6 +50586,12 @@
     },
     "아이 여러 명": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكثر من طفل"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48328,6 +50734,12 @@
     },
     "1시간 전 · 정각 알림": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تذكير قبل ساعة وعند البدء"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48470,6 +50882,12 @@
     },
     "아이마다 달력과 반을 따로 둬요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لكل طفل تقويمه وفصله."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48612,6 +51030,12 @@
     },
     "동그라미에 아이 얼굴을 넣어 한눈에 알아봐요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ضع صورة طفلك في دائرته لتعرفه من أول نظرة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48754,6 +51178,12 @@
     },
     "등원 직전에 한 번 더 울려 줘요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنبيه إضافي قبل الذهاب إلى الحضانة مباشرة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -48896,6 +51326,12 @@
     },
     "배우자 · 조부모 · 돌봄 선생님과 같은 일정을 실시간으로 봐요. 초대받은 사람은 무료예요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شاهد الجدول نفسه لحظة بلحظة مع الزوج أو الأجداد أو المربية. المدعوون يستخدمونه مجانًا."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49038,6 +51474,12 @@
     },
     "다가오는 일정을 앱을 열지 않고 봐요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شاهد المواعيد القادمة دون فتح التطبيق."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49180,6 +51622,12 @@
     },
     "잠김, %@ 필요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مقفل، يتطلب %@"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49322,6 +51770,12 @@
     },
     "요금제 보기": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الخطط"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49464,6 +51918,12 @@
     },
     "구독 관리": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدارة الاشتراك"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49606,6 +52066,12 @@
     },
     "구매 복원": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استعادة المشتريات"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49748,6 +52214,12 @@
     },
     "요금제가 생기기 전부터 쓰신 분이라 Pro가 그대로 열려 있어요.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت معنا منذ ما قبل الخطط، لذا يبقى Pro مفتوحًا لك."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -49890,6 +52362,12 @@
     },
     "두 달째 일정을 넣었어요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضفت مواعيد شهرك الثاني"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -50033,6 +52511,12 @@
     "새 달 일정표를 찍어 두세요": {
       "comment": "Notification title, sent on the 3 days before and on the 1st of a month that has no events yet",
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حان وقت تصوير جدول الشهر الجديد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",

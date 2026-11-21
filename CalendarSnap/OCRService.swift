@@ -73,13 +73,13 @@ enum OCRService {
                 let observations = (request.results as? [VNRecognizedTextObservation]) ?? []
                 let lines = observations.compactMap { obs -> RecognizedLine? in
                     guard let candidate = obs.topCandidates(1).first else { return nil }
-                    return RecognizedLine(text: candidate.string, box: obs.boundingBox)
+                    return RecognizedLine(text: candidate.string.withWesternDigits, box: obs.boundingBox)
                 }
                 continuation.resume(returning: lines)
             }
 
             request.recognitionLevel = .accurate
-            request.recognitionLanguages = ["ko-KR", "en-US"]
+            request.recognitionLanguages = recognitionLanguages(for: request)
             request.usesLanguageCorrection = true
 
             let handler = VNImageRequestHandler(cgImage: cgImage, orientation: orientation)
@@ -89,6 +89,15 @@ enum OCRService {
             }
         }
     }
+}
+
+/// 아랍어 화면이면 아랍어 안내문을 읽는다 (아랍어 인식이 없는 iOS 에서는 한국어 · 영어).
+private func recognitionLanguages(for request: VNRecognizeTextRequest) -> [String] {
+    if AppLocale.isArabic,
+       (try? request.supportedRecognitionLanguages())?.contains("ar-SA") == true {
+        return ["ar-SA", "en-US"]
+    }
+    return ["ko-KR", "en-US"]
 }
 
 extension CGImagePropertyOrientation {

@@ -20,7 +20,7 @@ struct ScannedEvent: Identifiable, Codable, Hashable {
     var isUpcoming: Bool {
         // 종일 일정은 당일 자정까지 "다가오는 일정"으로 취급
         let reference = isAllDay
-            ? Calendar.current.startOfDay(for: date).addingTimeInterval(24 * 60 * 60)
+            ? Calendar.app.startOfDay(for: date).addingTimeInterval(24 * 60 * 60)
             : date
         return reference >= Date()
     }
@@ -57,7 +57,7 @@ enum EventDuplicate {
     /// 같은 시각(종일이면 같은 날의 종일)에 제목이 비슷하면 중복.
     static func isDuplicate(titleA: String, dateA: Date, allDayA: Bool,
                             titleB: String, dateB: Date, allDayB: Bool,
-                            calendar: Calendar = .current) -> Bool {
+                            calendar: Calendar = .app) -> Bool {
         guard calendar.isDate(dateA, inSameDayAs: dateB) else { return false }
         let a = normalize(titleA)
         let b = normalize(titleB)

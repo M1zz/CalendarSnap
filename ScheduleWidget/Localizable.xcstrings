@@ -3,6 +3,12 @@
   "strings": {
     "다가오는 일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المواعيد القادمة"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -151,6 +157,12 @@
     },
     "달력을 찍어\n일정을 등록하세요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صوّر التقويم\nلتضيف المواعيد"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -299,6 +311,12 @@
     },
     "아이 일정": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مواعيد الأطفال"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -447,6 +465,12 @@
     },
     "어린이집 달력에서 추출한 다가오는 일정을 보여줍니다.": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعرض المواعيد القادمة المستخرجة من تقويم الحضانة."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -595,6 +619,12 @@
     },
     "아이일정 Pro에서 열려요": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يُفتح مع جدول أطفالي Pro"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",

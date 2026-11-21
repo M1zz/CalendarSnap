@@ -23,7 +23,7 @@ struct RecognizedLine {
 enum CalendarGridParser {
 
     static func parse(lines: [RecognizedLine], referenceDate: Date = Date()) -> [ScannedEvent] {
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         guard let header = detectHeader(in: lines) else { return [] }
         let colSpacing = header.columnCenters[1] - header.columnCenters[0]
 

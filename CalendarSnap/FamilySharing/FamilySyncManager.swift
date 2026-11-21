@@ -397,7 +397,7 @@ final class FamilySyncManager: NSObject, ObservableObject {
                     infoMessage = String(localized: "공유에 참여했어요. 아직 받아온 일정이 없어요 — 잠시 후 앱을 다시 열면 반영돼요.")
                 } else {
                     let count = EventStore.load().count
-                    infoMessage = String(localized: "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요.")
+                    infoMessage = String(localized: "공유된 일정에 참여했어요. 일정 \(count)개를 함께 관리해요.", locale: AppLocale.locale)
                 }
             } catch {
                 // 실패 원인을 그대로 보여줘야 iCloud 로그인·권한 문제를 구분할 수 있다.

@@ -11,7 +11,7 @@ struct MonthCalendarView: View {
     var onDelete: ((ScannedEvent) -> Void)?
 
     @State private var displayedMonth = Date()
-    @State private var selectedDay: Date? = Calendar.current.startOfDay(for: Date())
+    @State private var selectedDay: Date? = Calendar.app.startOfDay(for: Date())
     @State private var childFilter: String?          // nil = 통합(전체)
     @State private var typeFilter: TypeFilter = .all
     /// true면 선택한 주만 보이는 접힌 상태.
@@ -23,8 +23,7 @@ struct MonthCalendarView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var typeSize
 
-    private var calendar: Calendar { .current }
-    private let koKR = Locale.current   // 이름은 그대로 두고 기기 언어를 따른다
+    private var calendar: Calendar { .app }
 
     enum TypeFilter: String, CaseIterable, Identifiable {
         case all = "전체"
@@ -98,8 +97,6 @@ struct MonthCalendarView: View {
             displayedMonth = day
             selectedDay = calendar.startOfDay(for: day)
         }
-        // 앱 문구가 모두 한국어이므로 날짜 표기도 한국어로 고정
-        .environment(\.locale, koKR)
         .toolbar {
             // 1회성/반복 필터는 우측 상단 메뉴로
             ToolbarItem(placement: .topBarTrailing) {
@@ -166,7 +163,8 @@ struct MonthCalendarView: View {
         guard let interval = calendar.dateInterval(of: .month, for: displayedMonth),
               let dayCount = calendar.range(of: .day, in: .month, for: interval.start)?.count
         else { return [] }
-        let leading = calendar.component(.weekday, from: interval.start) - 1
+        // 주 시작 요일은 기기 설정을 따른다 (주간 보기의 dateInterval(.weekOfYear) 와 같은 기준)
+        let leading = (calendar.component(.weekday, from: interval.start) - calendar.firstWeekday + 7) % 7
         var cells: [Date?] = Array(repeating: nil, count: leading)
         for offset in 0..<dayCount {
             cells.append(calendar.date(byAdding: .day, value: offset, to: interval.start))
@@ -189,10 +187,10 @@ struct MonthCalendarView: View {
 
     private var monthHeader: some View {
         HStack {
-            Button { moveMonth(-1) } label: { Image(systemName: "chevron.left") }
+            Button { moveMonth(-1) } label: { Image(systemName: "chevron.backward") }
                 .accessibilityLabel(isWeekMode ? Text("이전 주") : Text("이전 달"))
             Spacer()
-            Text(displayedMonth, format: .dateTime.year().month(.wide).locale(koKR))
+            Text(displayedMonth, format: .dateTime.year().month(.wide).inApp)
                 .font(.headline)
                 .accessibilityAddTraits(.isHeader)
             Spacer()
@@ -201,7 +199,7 @@ struct MonthCalendarView: View {
                 selectedDay = calendar.startOfDay(for: Date())
             }
             .font(.subheadline)
-            Button { moveMonth(1) } label: { Image(systemName: "chevron.right") }
+            Button { moveMonth(1) } label: { Image(systemName: "chevron.forward") }
                 .accessibilityLabel(isWeekMode ? Text("다음 주") : Text("다음 달"))
         }
     }
@@ -222,15 +220,26 @@ struct MonthCalendarView: View {
 
     private var weekdayHeader: some View {
         HStack(spacing: 0) {
-            ForEach(Array(calendar.veryShortStandaloneWeekdaySymbols.enumerated()), id: \.offset) { i, name in
-                Text(name)
+            ForEach(0..<7, id: \.self) { column in
+                let weekday = (calendar.firstWeekday - 1 + column) % 7 + 1
+                Text(calendar.veryShortStandaloneWeekdaySymbols[weekday - 1])
                     .font(.caption2.weight(.semibold))
-                    .foregroundStyle(i == 0 ? .red : i == 6 ? .blue : .secondary)
+                    .foregroundStyle(restDayColor(weekday).map(AnyShapeStyle.init) ?? AnyShapeStyle(.secondary))
                     .frame(maxWidth: .infinity)
             }
         }
         .padding(.bottom, 4)
         .accessibilityHidden(true)   // 요일은 날짜 칸마다 읽어 준다
+    }
+
+    /// 쉬는 날 색: 일요일 빨강 · 토요일 파랑.
+    /// 아랍어(걸프)는 금 · 토가 주말이고 금요일이 일요일 자리라 금요일 빨강 · 토요일 파랑.
+    private func restDayColor(_ weekday: Int) -> Color? {
+        switch weekday {
+        case AppLocale.isArabic ? 6 : 1: return .red
+        case 7: return .blue
+        default: return nil
+        }
     }
 
     // MARK: - 접이식 (월간 ↔ 주간)
@@ -300,9 +309,7 @@ struct MonthCalendarView: View {
                     .font(.callout.weight(isToday || isSelected ? .bold : .regular))
                     .minimumScaleFactor(0.7)
                     .foregroundStyle(isSelected ? AnyShapeStyle(.white)
-                                     : weekday == 1 ? AnyShapeStyle(.red)
-                                     : weekday == 7 ? AnyShapeStyle(.blue)
-                                     : AnyShapeStyle(.primary))
+                                     : restDayColor(weekday).map(AnyShapeStyle.init) ?? AnyShapeStyle(.primary))
                     .frame(width: 32, height: 32)
                     .background {
                         if isSelected {
@@ -327,7 +334,7 @@ struct MonthCalendarView: View {
         }
         .buttonStyle(.plain)
         // "5" 만 읽히지 않게 — 날짜·요일, 오늘인지, 일정 수까지
-        .accessibilityLabel(Text(date, format: .dateTime.month().day().weekday(.wide).locale(koKR)))
+        .accessibilityLabel(Text(date, format: .dateTime.month().day().weekday(.wide).inApp))
         .accessibilityValue(dayEvents.isEmpty ? Text(verbatim: "") : Text("일정 \(dayEvents.count)개"))
         .accessibilityHint(isToday ? Text("오늘") : Text(verbatim: ""))
         .accessibilityAddTraits(isSelected ? .isSelected : [])
@@ -395,7 +402,7 @@ struct MonthCalendarView: View {
                 if selectedDayEvents.isEmpty, let next = nextEvent(after: selectedDay) {
                     Section("다음 일정") {
                         rowLayout {
-                            Text(next.date, format: .dateTime.month().day().weekday().locale(koKR))
+                            Text(next.date, format: .dateTime.month().day().weekday().inApp)
                                 .font(.caption.weight(.semibold))
                                 .foregroundStyle(.tint)
                                 .frame(width: typeSize.isAccessibilitySize ? nil : 64, alignment: .leading)
@@ -443,7 +450,7 @@ struct MonthCalendarView: View {
                 .font(.largeTitle.bold())
                 .foregroundStyle(calendar.isDateInToday(day) ? AnyShapeStyle(.tint)
                                                              : AnyShapeStyle(.primary))
-            Text(day, format: .dateTime.month().day().weekday(.wide).locale(koKR))
+            Text(day, format: .dateTime.month().day().weekday(.wide).inApp)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .lineLimit(1)
@@ -474,7 +481,7 @@ struct MonthCalendarView: View {
         if calendar.isDateInToday(day) { return String(localized: "오늘") }
         if calendar.isDateInTomorrow(day) { return String(localized: "내일") }
         if calendar.isDateInYesterday(day) { return String(localized: "어제") }
-        return day.formatted(.dateTime.weekday(.wide).locale(koKR))
+        return day.formatted(.dateTime.weekday(.wide).inApp)
     }
 
     private func emptyDayRow(_ day: Date) -> some View {
@@ -492,7 +499,7 @@ struct MonthCalendarView: View {
 
     private func eventRow(_ event: ScannedEvent) -> some View {
         rowLayout {
-            Text(event.isAllDay ? String(localized: "종일") : event.date.formatted(.dateTime.hour().minute().locale(koKR)))
+            Text(event.isAllDay ? String(localized: "종일") : event.date.formatted(.dateTime.hour().minute().inApp))
                 .font(.headline)
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)   // "Ganztägig"·"Весь день" 같은 긴 말도 한 줄로

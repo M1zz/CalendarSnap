@@ -49,7 +49,7 @@ enum CalendarService {
         guard !events.isEmpty else { return AddResult(added: 0, skipped: 0) }
 
         let store = EKEventStore()
-        let cal = Calendar.current
+        let cal = Calendar.app
         var result = AddResult(added: 0, skipped: 0)
 
         // 아이별로 캘린더를 분리 (iCloud 캘린더 공유로 가족과 자동 동기화 가능).

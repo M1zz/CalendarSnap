@@ -104,7 +104,7 @@ struct ScheduleWidgetEntryView: View {
                 Text(next.title)
                     .font(.headline)
                     .lineLimit(2)
-                Text(next.date, format: .dateTime.month().day().hour().minute())
+                Text(next.date, format: .dateTime.month().day().hour().minute().inApp)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer(minLength: 0)
@@ -137,7 +137,7 @@ struct ScheduleWidgetEntryView: View {
                                 .font(.subheadline.weight(.medium))
                                 .lineLimit(1)
                         }
-                        Text(event.date, format: .dateTime.month().day().weekday().hour().minute())
+                        Text(event.date, format: .dateTime.month().day().weekday().hour().minute().inApp)
                             .font(.caption2)
                             .foregroundStyle(.secondary)
                     }
@@ -172,6 +172,7 @@ struct ScheduleWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: ScheduleProvider()) { entry in
             ScheduleWidgetEntryView(entry: entry)
+                .appLocale()
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("아이 일정")

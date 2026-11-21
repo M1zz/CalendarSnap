@@ -17,7 +17,7 @@ struct AddEventView: View {
         self.children = children
         self.onSave = onSave
         // 시간 지정으로 바꿀 때 자연스러운 기본값 (오전 9시)
-        let base = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: initialDate) ?? initialDate
+        let base = Calendar.app.date(bySettingHour: 9, minute: 0, second: 0, of: initialDate) ?? initialDate
         _date = State(initialValue: base)
         _childName = State(initialValue: initialChild)
     }

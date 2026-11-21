@@ -6,6 +6,8 @@ enum EventSharing {
     /// 하루치 일정 텍스트 요약 (달력 탭 "이 날 일정 공유하기").
     static func daySummary(for events: [ScannedEvent], on day: Date) -> String {
         let dayFormatter = DateFormatter()
+        dayFormatter.locale = AppLocale.locale
+        dayFormatter.calendar = .app
         dayFormatter.setLocalizedDateFormatFromTemplate("Md E")
         let dayText = dayFormatter.string(from: day)
 
@@ -14,6 +16,7 @@ enum EventSharing {
         }
 
         let timeFormatter = DateFormatter()
+        timeFormatter.locale = AppLocale.locale
         timeFormatter.setLocalizedDateFormatFromTemplate("jm")
 
         var out = [String(localized: "📅 \(dayText) 아이 일정")]

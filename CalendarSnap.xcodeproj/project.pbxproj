@@ -15,6 +15,7 @@
 		AA0000000000000000000602 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000502 /* OCRService.swift */; };
 		AA0000000000000000000603 /* EventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000503 /* EventParser.swift */; };
 		AA0000000000000000000604 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000504 /* EventStore.swift */; };
+		AA00000000000000000006A1 /* AppLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000005A1 /* AppLocale.swift */; };
 		AA0000000000000000000605 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000505 /* NotificationManager.swift */; };
 		AA0000000000000000000606 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000607 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050C /* CalendarService.swift */; };
@@ -29,6 +30,7 @@
 		AA0000000000000000000610 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000516 /* AddEventView.swift */; };
 		AA0000000000000000000611 /* PhotoViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000517 /* PhotoViewerView.swift */; };
 		AA0000000000000000000614 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000504 /* EventStore.swift */; };
+		AA00000000000000000006A2 /* AppLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000005A1 /* AppLocale.swift */; };
 		AA0000000000000000000616 /* ScannedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000506 /* ScannedEvent.swift */; };
 		AA0000000000000000000618 /* ScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000508 /* ScheduleWidget.swift */; };
 		AA0000000000000000000619 /* ReminderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000050E /* ReminderSettings.swift */; };
@@ -85,6 +87,7 @@
 		AA0000000000000000000502 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		AA0000000000000000000503 /* EventParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParser.swift; sourceTree = "<group>"; };
 		AA0000000000000000000504 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
+		AA00000000000000000005A1 /* AppLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocale.swift; sourceTree = "<group>"; };
 		AA0000000000000000000505 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		AA0000000000000000000506 /* ScannedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedEvent.swift; sourceTree = "<group>"; };
 		AA0000000000000000000507 /* CalendarSnap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarSnap.entitlements; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 			children = (
 				AA0000000000000000000506 /* ScannedEvent.swift */,
 				AA0000000000000000000504 /* EventStore.swift */,
+				AA00000000000000000005A1 /* AppLocale.swift */,
 				AA000000000000000000050E /* ReminderSettings.swift */,
 				AA0000000000000000000520 /* Plan.swift */,
 			);
@@ -315,6 +319,7 @@
 				pl,
 				sv,
 				tr,
+				ar,
 				Base,
 			);
 			mainGroup = AA0000000000000000000101;
@@ -363,6 +368,7 @@
 				AA0000000000000000000602 /* OCRService.swift in Sources */,
 				AA0000000000000000000603 /* EventParser.swift in Sources */,
 				AA0000000000000000000604 /* EventStore.swift in Sources */,
+				AA00000000000000000006A1 /* AppLocale.swift in Sources */,
 				AA0000000000000000000605 /* NotificationManager.swift in Sources */,
 				AA0000000000000000000606 /* ScannedEvent.swift in Sources */,
 				AA0000000000000000000607 /* CalendarService.swift in Sources */,
@@ -396,6 +402,7 @@
 			files = (
 				AA0000000000000000000618 /* ScheduleWidget.swift in Sources */,
 				AA0000000000000000000614 /* EventStore.swift in Sources */,
+				AA00000000000000000006A2 /* AppLocale.swift in Sources */,
 				AA0000000000000000000616 /* ScannedEvent.swift in Sources */,
 				AA0000000000000000000619 /* ReminderSettings.swift in Sources */,
 				AA0000000000000000000631 /* Plan.swift in Sources */,

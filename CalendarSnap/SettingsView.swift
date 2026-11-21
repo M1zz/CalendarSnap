@@ -229,7 +229,7 @@ struct SettingsView: View {
         guard !name.isEmpty else { return String(localized: "이 아이를 삭제할까요?") }
         let count = childEventCount(name)
         return count > 0
-            ? String(localized: "\(name)의 일정 \(count)개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요.")
+            ? String(localized: "\(name)의 일정 \(count)개와 프로필 사진이 함께 삭제됩니다. 되돌릴 수 없어요.", locale: AppLocale.locale)
             : String(localized: "\(name)의 프로필이 삭제됩니다. 되돌릴 수 없어요.")
     }
 

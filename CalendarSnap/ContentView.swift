@@ -11,6 +11,7 @@ enum CalendarSnapTipMoments {
         events.filter { total >= $0 }.map { threshold in
             LeeoTipMoment(id: "events.\(threshold)",
                           message: String(localized: "지금까지 아이 일정 \(total)개를 챙겼어요",
+                                          locale: AppLocale.locale,
                                           comment: "Tip ask card: number of child schedule entries saved in the app"))
         }
     }
@@ -319,8 +320,8 @@ struct ContentView: View {
 
             selectedTab = 1
             let skipped = package.events.count - fresh.count
-            importMessage = String(localized: "일정 \(fresh.count)개를 가져왔어요.")
-                + (skipped > 0 ? String(localized: " (이미 있는 \(skipped)개 제외)") : "")
+            importMessage = String(localized: "일정 \(fresh.count)개를 가져왔어요.", locale: AppLocale.locale)
+                + (skipped > 0 ? String(localized: " (이미 있는 \(skipped)개 제외)", locale: AppLocale.locale) : "")
 
             // 알림 권한이 이미 있으면 가져온 일정까지 포함해 재예약
             Task {
@@ -504,7 +505,7 @@ struct ContentView: View {
                 .listRowInsets(EdgeInsets())
             } footer: {
                 Text(scannedImages.count > 1
-                     ? String(localized: "사진 \(scannedImages.count)장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요.")
+                     ? String(localized: "사진 \(scannedImages.count)장 — 좌우로 넘겨보고, 탭하면 크게 볼 수 있어요.", locale: AppLocale.locale)
                      : String(localized: "사진을 탭하면 크게 볼 수 있어요."))
             }
         }
@@ -590,7 +591,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.leading)
                     }
                     Spacer()
-                    Image(systemName: "chevron.right")
+                    Image(systemName: "chevron.forward")
                         .font(.caption)
                         .foregroundStyle(.tertiary)
                         .accessibilityHidden(true)
@@ -613,7 +614,7 @@ struct ContentView: View {
                 HStack(spacing: 8) {
                     Image(systemName: savedBanner ? "checkmark.circle.fill" : "calendar.badge.plus")
                     Text(savedBanner ? String(localized: "저장 완료! 달력·위젯에서 확인하세요")
-                         : String(localized: "일정 \(scanned.count)개 저장 + 알림 받기"))
+                         : String(localized: "일정 \(scanned.count)개 저장 + 알림 받기", locale: AppLocale.locale))
                         .fontWeight(.semibold)
                 }
                 .frame(maxWidth: .infinity)
@@ -812,7 +813,7 @@ struct ContentView: View {
             let granted = await NotificationManager.requestAuthorization()
             if granted {
                 let n = await NotificationManager.schedule(for: savedEvents, settings: settings)
-                messages.append(String(localized: "알림 \(n)개 예약"))
+                messages.append(String(localized: "알림 \(n)개 예약", locale: AppLocale.locale))
             } else {
                 messages.append(String(localized: "알림 권한이 필요해요 (설정에서 허용)"))
             }
@@ -824,9 +825,9 @@ struct ContentView: View {
             if calGranted {
                 do {
                     let result = try CalendarService.addEvents(savedEvents)
-                    var msg = String(localized: "캘린더 \(result.added)개 추가")
-                    if result.skipped > 0 { msg += String(localized: " (중복 \(result.skipped)개 제외)") }
-                    if result.removed > 0 { msg += String(localized: " · 쌓여 있던 중복 \(result.removed)개 정리") }
+                    var msg = String(localized: "캘린더 \(result.added)개 추가", locale: AppLocale.locale)
+                    if result.skipped > 0 { msg += String(localized: " (중복 \(result.skipped)개 제외)", locale: AppLocale.locale) }
+                    if result.removed > 0 { msg += String(localized: " · 쌓여 있던 중복 \(result.removed)개 정리", locale: AppLocale.locale) }
                     messages.append(msg)
                 } catch {
                     messages.append(String(localized: "캘린더 추가 실패"))
@@ -851,7 +852,7 @@ struct ContentView: View {
         let defaults = UserDefaults.standard
         guard purchases.isKnown, purchases.tier == .free,
               !defaults.bool(forKey: Self.secondMonthOfferedKey) else { return }
-        let months = Set(savedEvents.map { Calendar.current.dateComponents([.year, .month], from: $0.date) })
+        let months = Set(savedEvents.map { Calendar.app.dateComponents([.year, .month], from: $0.date) })
         guard months.count >= 2 else { return }
         defaults.set(true, forKey: Self.secondMonthOfferedKey)
         try? await Task.sleep(for: .seconds(1.2))   // 저장 결과 줄을 먼저 보게
@@ -1259,11 +1260,17 @@ enum ScreenshotDemo {
                     footnote: "Lütfen programı evde çocuğunuzla birlikte gözden geçirin.",
                     todayTitle: "Orman yürüyüşü", todayNotes: "rahat ayakkabı, su matarası", recurringTitle: "İngilizce kulübü",
                     others: ["Kütüphane günü", "Yüzme", "Sağlık taraması", "Gezi", "Müzik", "Veli toplantısı"]),
+        "ar": .init(children: ("سارة", "عمر"), classes: ("عباد الشمس", "قوس قزح"), nursery: "حضانة البراعم الصغيرة",
+                    noticeTitle: "فصل عباد الشمس · فعاليات {M}",
+                    notice: ["اليوم الرياضي (وجبة غداء، حذاء رياضي)", "عرض مسرح العرائس", "ورشة خَبز الكعك (أحضروا مريلة)", "يوم التراث"],
+                    footnote: "نرجو مراجعة الجدول مع طفلكم في المنزل.",
+                    todayTitle: "نزهة في الحديقة", todayNotes: "حذاء مريح، قارورة ماء", recurringTitle: "نادي اللغة الإنجليزية",
+                    others: ["يوم المكتبة", "السباحة", "الفحص الصحي", "رحلة ميدانية", "حصة الموسيقى", "اجتماع أولياء الأمور"]),
     ]
 
     static var content: Content? { language.flatMap { contents[$0] } }
 
-    private static var cal: Calendar { .current }
+    private static var cal: Calendar { .app }
 
     /// 다음 달 n일 (hour 가 있으면 그 시각)
     private static func nextMonth(_ day: Int, hour: Int? = nil) -> Date {
@@ -1320,7 +1327,8 @@ enum ScreenshotDemo {
 
     private static func line(_ title: String, _ day: Int, _ hour: Int?) -> String {
         let f = DateFormatter()
-        f.locale = .current
+        f.locale = AppLocale.locale
+        f.calendar = cal
         f.setLocalizedDateFormatFromTemplate(hour == nil ? "MMMMd" : "MMMMdjmm")
         return "\(f.string(from: nextMonth(day, hour: hour))) \(title)"
     }
@@ -1329,7 +1337,7 @@ enum ScreenshotDemo {
     @MainActor static func noticeImage() -> UIImage? {
         guard let c = content else { return nil }
         let monthName: String = {
-            let f = DateFormatter(); f.locale = .current; f.dateFormat = "LLLL"
+            let f = DateFormatter(); f.locale = AppLocale.locale; f.calendar = cal; f.dateFormat = "LLLL"
             return f.string(from: nextMonth(1))
         }()
         let specs: [(Int, Int?)] = [(5, nil), (12, 10), (18, nil), (26, 15)]

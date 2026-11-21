@@ -73,7 +73,7 @@ struct EventEntity: AppEntity {
 
     /// 날짜(종일이 아니면 시각까지) · 아이 이름.
     var subtitle: String {
-        let when = date.formatted(date: .abbreviated, time: isAllDay ? .omitted : .shortened)
+        let when = date.formatted(Date.FormatStyle(date: .abbreviated, time: isAllDay ? .omitted : .shortened).inApp)
         return childName.isEmpty ? when : "\(when) · \(childName)"
     }
 

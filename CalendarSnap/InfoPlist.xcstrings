@@ -3,6 +3,12 @@
   "strings": {
     "CFBundleDisplayName": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جدول أطفالي"
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -151,6 +157,12 @@
     },
     "NSCalendarsFullAccessUsageDescription": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج التطبيق إلى الوصول إلى التقويم لإضافة مواعيد الحضانة المستخرجة إليه والتحقق من التكرار."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -299,6 +311,12 @@
     },
     "NSCalendarsUsageDescription": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج التطبيق إلى الوصول إلى التقويم لإضافة مواعيد الحضانة المستخرجة إليه."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",
@@ -447,6 +465,12 @@
     },
     "NSCameraUsageDescription": {
       "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تُستخدم الكاميرا لتصوير التقاويم واستخراج المواعيد منها."
+          }
+        },
         "cs": {
           "stringUnit": {
             "state": "translated",

@@ -80,7 +80,7 @@ enum NotificationManager {
     /// 그 달 일정이 하나라도 들어와 있으면 알리지 않는다 — 일정이 바뀔 때마다 다시 예약하므로 넣는 순간 멎는다.
     /// 앱을 한동안 안 열어도 이어지도록 다음 두 달 치를 본다.
     static func monthStartNudges(events: [ScannedEvent], now: Date,
-                                 calendar: Calendar = .current) -> [MonthStartNudge] {
+                                 calendar: Calendar = .app) -> [MonthStartNudge] {
         guard let thisMonth = calendar.dateInterval(of: .month, for: now)?.start else { return [] }
         return (1...2).flatMap { ahead -> [MonthStartNudge] in
             guard let monthStart = calendar.date(byAdding: .month, value: ahead, to: thisMonth),
@@ -102,7 +102,9 @@ enum NotificationManager {
     static func body(for nudge: MonthStartNudge) -> String {
         let relative = RelativeDateTimeFormatter()
         relative.dateTimeStyle = .named
-        let day = nudge.monthStart.formatted(.dateTime.month(.wide).day().weekday(.wide))
+        relative.locale = AppLocale.locale
+        relative.calendar = .app
+        let day = nudge.monthStart.formatted(.dateTime.month(.wide).day().weekday(.wide).inApp)
         return "\(day) · \(relative.localizedString(from: DateComponents(day: nudge.daysLeft)))"
     }
 
@@ -112,9 +114,9 @@ enum NotificationManager {
         content.body = body(for: nudge)
         content.sound = .default
 
-        let components = Calendar.current.dateComponents(
+        let components = Calendar.app.dateComponents(
             [.year, .month, .day, .hour, .minute], from: nudge.fireDate)
-        let month = Calendar.current.dateComponents([.year, .month], from: nudge.monthStart)
+        let month = Calendar.app.dateComponents([.year, .month], from: nudge.monthStart)
         let request = UNNotificationRequest(
             identifier: "calendarsnap.month.\(month.year ?? 0)-\(month.month ?? 0).\(nudge.daysLeft)",
             content: content,
@@ -138,7 +140,7 @@ enum NotificationManager {
         content.body = option.notificationBody(for: event)
         content.sound = .default
 
-        let components = Calendar.current.dateComponents(
+        let components = Calendar.app.dateComponents(
             [.year, .month, .day, .hour, .minute], from: fireDate)
         let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
         let request = UNNotificationRequest(

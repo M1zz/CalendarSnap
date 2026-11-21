@@ -29,6 +29,7 @@ enum EventParser {
     /// - 없으면 "내일·모레·이번 주 금요일" 같은 상대 날짜와 문서 제목으로
     ///   종일 일정 1건을 만들어 누락을 막는다 (재현율 우선).
     static func parseMessage(_ text: String, referenceDate: Date = Date()) -> [ScannedEvent] {
+        let text = text.withWesternDigits   // 아랍어 자판으로 친 ١٢ 도 날짜로
         let lines = text.components(separatedBy: .newlines)
             .map { $0.trimmingCharacters(in: .whitespaces) }
             .filter { !$0.isEmpty }
@@ -51,7 +52,7 @@ enum EventParser {
     /// 상대 날짜 표현(오늘·내일·모레·글피·요일)을 실제 날짜로 변환.
     /// 여러 표현이 있으면 텍스트에서 가장 먼저 나오는 것을 사용한다.
     private static func firstRelativeDate(in text: String, referenceDate: Date) -> Date? {
-        let cal = Calendar.current
+        let cal = Calendar.app
         let today = cal.startOfDay(for: referenceDate)
 
         var best: (loc: Int, date: Date)?
@@ -314,7 +315,7 @@ enum EventParser {
     static func parse(lines: [String], referenceDate: Date = Date(),
                       docTitle: String? = nil) -> [ScannedEvent] {
         var events: [ScannedEvent] = []
-        let calendar = Calendar.current
+        let calendar = Calendar.app
         let refComponents = calendar.dateComponents([.year, .month], from: referenceDate)
 
         // 문서의 "N월" 헤더를 찾아 기준 월로 사용
@@ -408,7 +409,9 @@ enum EventParser {
                 }
             }
         } else if let m = firstMatch(in: line, pattern: #"\b(\d{1,2})\s*/\s*(\d{1,2})\b"#),
-                  let month = Int(m[1] ?? ""), let day = Int(m[2] ?? ""),
+                  let first = Int(m[1] ?? ""), let second = Int(m[2] ?? ""),
+                  // 아랍어 안내문은 일/월 순서로 적는다 (12/7 = 7월 12일)
+                  case let (month, day) = AppLocale.isArabic ? (second, first) : (first, second),
                   (1...12).contains(month), (1...31).contains(day) {
             dates.append((month, day, m.range))
         } else if let m = firstMatch(in: line, pattern: #"(\d{1,2})\s*일(?![간양])"#),

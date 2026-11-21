@@ -36,7 +36,7 @@ enum ReminderOption: String, CaseIterable, Codable, Identifiable {
     }
 
     /// 해당 일정에 대해 이 옵션의 알림이 울릴 시각을 계산.
-    func fireDate(for event: ScannedEvent, calendar: Calendar = .current) -> Date? {
+    func fireDate(for event: ScannedEvent, calendar: Calendar = .app) -> Date? {
         switch self {
         case .dayBeforeEvening:
             guard let dayBefore = calendar.date(byAdding: .day, value: -1, to: event.date) else { return nil }
@@ -85,7 +85,7 @@ struct ReminderSettings: Codable, Equatable {
     }
 
     /// 해당 일정에 대해 (옵션, 알림시각) 쌍 목록. 시간순 정렬.
-    func reminders(for event: ScannedEvent, calendar: Calendar = .current) -> [(option: ReminderOption, fireDate: Date)] {
+    func reminders(for event: ScannedEvent, calendar: Calendar = .app) -> [(option: ReminderOption, fireDate: Date)] {
         ReminderOption.allCases
             .filter { options.contains($0) }
             .compactMap { opt in opt.fireDate(for: event, calendar: calendar).map { (opt, $0) } }
