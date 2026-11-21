@@ -56,6 +56,7 @@ SEARCH = {
     "pl": ("kalendarz przedszkola", "Zrób zdjęcie,<br>miesiąc gotowy", "Co zabrać? Przypomnimy wieczorem wcześniej"),
     "sv": ("förskolekalender", "Fota så är<br>månaden klar", "Vad som ska med, påminnelse kvällen före"),
     "tr": ("kreş takvimi", "Fotoğrafı çek,<br>ay hazır", "Getirilecekler bir gün önce akşam hatırlanır"),
+    "ar": ("جدول الروضة", "صوّر فقط<br>وشهرك منظّم", "ونذكّرك بالأغراض في المساء السابق"),
 }
 
 # 헤더: 처음 온 사람에게 한 가지 약속. 종이로 온 일정을 찍으면 달력에 다 들어간다.
@@ -84,7 +85,13 @@ HEADER = {
     "pl": ("Plan mojego dziecka", "Jedno zdjęcie ogłoszenia,<br>cały miesiąc gotowy"),
     "sv": ("Mitt barns schema", "En bild på lappen,<br>hela månaden klar"),
     "tr": ("Çocuğumun programı", "Duyurunun tek fotoğrafı,<br>koca bir ay hazır"),
+    "ar": ("جدول طفلي", "صورة واحدة للتعميم<br>ومواعيد الشهر كلها"),
 }
+
+# 오른쪽에서 왼쪽으로 쓰는 언어: 글과 기기 그림의 자리를 좌우로 뒤집는다.
+# 아랍 글자는 이어 쓰는 글씨라 자간을 줄이면 끊겨 보인다.
+RTL = {"ar"}
+RTL_CSS = ".eyebrow, .headline, .sub { letter-spacing:0; }"
 
 # 기기 화면(시뮬레이터 캡처, 가상의 두 아이 일정으로 채움)
 SHOT_CALENDAR = "01-calendar.png"
@@ -157,14 +164,17 @@ def search_html(lang):
     col = int(sw * 0.56)
     ph_w = 1040
     ph_left = l + col + int(sw * 0.04)
+    # 오른쪽에서 왼쪽으로 쓰는 언어는 x 를 거울처럼 뒤집는다 (글 상자는 안전 영역 오른쪽 끝에 붙인다)
+    mx = (lambda x, w: W - x - w) if lang in RTL else (lambda x, w: x)
+    text_left = r - col if lang in RTL else l
     return f"""
 <div class="paper"></div>
-<div class="glow" style="left:{ph_left - 300}px;top:600px;width:1700px;height:1600px;background:rgba(255,255,255,.18)"></div>
-<div class="dot" style="left:200px;top:260px;width:150px;height:150px;background:#ff9a2e;opacity:.9"></div>
-<div class="dot" style="left:420px;top:260px;width:150px;height:150px;background:rgba(255,255,255,.22)"></div>
-<div class="dot" style="left:3300px;top:2200px;width:150px;height:150px;background:#2ec4b6;opacity:.9"></div>
-{phone(shot(lang, SHOT_SCAN), ph_left, t - 360, ph_w, 0)}
-<div class="text" style="left:{l}px;top:{t}px;width:{col}px;height:{sh}px">
+<div class="glow" style="left:{mx(ph_left - 300, 1700)}px;top:600px;width:1700px;height:1600px;background:rgba(255,255,255,.18)"></div>
+<div class="dot" style="left:{mx(200, 150)}px;top:260px;width:150px;height:150px;background:#ff9a2e;opacity:.9"></div>
+<div class="dot" style="left:{mx(420, 150)}px;top:260px;width:150px;height:150px;background:rgba(255,255,255,.22)"></div>
+<div class="dot" style="left:{mx(3300, 150)}px;top:2200px;width:150px;height:150px;background:#2ec4b6;opacity:.9"></div>
+{phone(shot(lang, SHOT_SCAN), mx(ph_left, ph_w), t - 360, ph_w, 0)}
+<div class="text" style="left:{text_left}px;top:{t}px;width:{col}px;height:{sh}px">
   <div class="eyebrow" style="font-size:96px">{eyebrow}</div>
   <div class="headline" data-max="230" data-min="130" style="margin-top:36px">{headline}</div>
   <div class="sub" style="font-size:84px;margin-top:52px">{sub}</div>
@@ -185,8 +195,8 @@ def header_html(lang):
 <div class="paper"></div>
 <div class="glow" style="left:{l - 200}px;top:{t - 400}px;width:{sw + 400}px;height:{sh + 800}px;background:rgba(255,255,255,.14)"></div>
 {strokes_html}
-{phone(shot(lang, SHOT_SCAN), 300, 360, 640, -9)}
-{phone(shot(lang, SHOT_CALENDAR), 2900, 360, 640, 9)}
+{phone(shot(lang, SHOT_CALENDAR if lang in RTL else SHOT_SCAN), 300, 360, 640, -9)}
+{phone(shot(lang, SHOT_SCAN if lang in RTL else SHOT_CALENDAR), 2900, 360, 640, 9)}
 <div class="text" style="left:{l}px;top:{t}px;width:{sw}px;height:{sh}px;align-items:center;text-align:center">
   <div class="eyebrow" style="font-size:76px">{eyebrow}</div>
   <div class="headline" data-max="200" data-min="110" style="margin-top:22px">{headline}</div>
@@ -200,8 +210,10 @@ def html_lang(lang):
 def render(lang, kind):
     W, H, _ = SPEC[kind]
     body = search_html(lang) if kind == "search" else header_html(lang)
-    page = (f'<!doctype html><html lang="{html_lang(lang)}"><head><meta charset="utf-8"><style>'
-            f'{BASE_CSS % {"W": W, "H": H}}</style></head><body>{body}{FIT_JS}</body></html>')
+    rtl = lang in RTL
+    dir_attr = ' dir="rtl"' if rtl else ""
+    page = (f'<!doctype html><html lang="{html_lang(lang)}"{dir_attr}><head><meta charset="utf-8"><style>'
+            f'{BASE_CSS % {"W": W, "H": H}}{RTL_CSS if rtl else ""}</style></head><body>{body}{FIT_JS}</body></html>')
     html_path = pathlib.Path(tempfile.gettempdir()) / f"aiilj-creative-{lang}-{kind}.html"
     html_path.write_text(page, encoding="utf-8")
     # 글이 끝까지 안 맞으면 그림을 만들지 않는다(잘린 글이 스토어에 올라가는 것보다 낫다).

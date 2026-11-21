@@ -18,7 +18,7 @@ W, H = 1242, 2688   # 이 계정의 iPhone 제출 규격
 
 # ── 앱마다 고치는 곳 ──────────────────────────────────────────────
 # 앱 언어 → App Store 로케일 (스토어 폴더 이름)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl", "pl": "pl", "sv": "sv", "tr": "tr"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl", "pl": "pl", "sv": "sv", "tr": "tr", "ar": "ar"}
 # 바탕 · 포인트 색 (헤더·검색 결과 그림과 맞춘다)
 BG, ACCENT, INK, SUB = "#EEF3FE", "#2F6BF0", "#14213D", "#5E6782"
 # 언어 → [(원본 파일, 레이아웃, 헤드라인, 서브카피)]
@@ -167,7 +167,27 @@ SHOTS = {
         ("03-calendar.png", "text-bottom", "Her çocuğa<br>kendi rengi", "Kardeşlerin planları karışmaz"),
         ("04-reminders.png", "dark", "Bir gün önce<br>akşam hatırlatma", "Beslenme çantası ve spor kıyafeti unutulmasın"),
     ],
+    "ar": [
+        ("01-scan.png", "hero-bleed", "صورة واحدة للتعميم<br>وشهرك كله جاهز", "نقرأ لك التواريخ والأغراض المطلوبة"),
+        ("02-events.png", "left-text", "راجعه مرة<br>قبل الحفظ", "عدّل العنوان والتاريخ والملاحظات بلمسة"),
+        ("03-calendar.png", "text-bottom", "لكل طفل لونه", "لا تختلط مواعيد الإخوة بعد اليوم"),
+        ("04-reminders.png", "dark", "تذكير بالأغراض<br>في المساء السابق", "لا تنسَ وجبة الغداء وملابس الرياضة"),
+    ],
 }
+# 오른쪽에서 왼쪽으로 쓰는 언어: 글은 오른쪽 정렬, 기울인 폰은 좌우를 뒤집는다.
+# 아랍 글자는 이어 쓰는 글씨라 자간을 줄이면 끊겨 보인다.
+RTL = {"ar"}
+RTL_CSS = {
+    "left-text": """
+.text { text-align:right; padding:260px 110px 0 100px; }
+.wrap { left:auto; right:290px; perspective-origin:70% 30%; }
+.phone { transform:rotateY(-16deg) rotateX(2deg); }
+""",
+    "text-bottom": """
+.phone { transform:rotateY(10deg) rotateX(2deg); }
+""",
+}
+RTL_BASE = ".headline, .sub { letter-spacing:0; }"
 # ─────────────────────────────────────────────────────────────────
 
 BASE_CSS = f"""
@@ -269,7 +289,12 @@ def render(lang):
             phone = PHONE.format(img=src.as_uri())
             body = phone + text if layout == "text-bottom" else text + phone
             html = pathlib.Path(tmp) / f"{lang}-{fname}.html"
-            html.write_text(HTML.format(lang=lang, css=BASE_CSS + LAYOUTS[layout], body=body), encoding="utf-8")
+            css = BASE_CSS + LAYOUTS[layout]
+            page = HTML.format(lang=lang, css=css, body=body)
+            if lang in RTL:
+                css += RTL_BASE + RTL_CSS.get(layout, "")
+                page = HTML.format(lang=lang, css=css, body=body).replace("<html ", '<html dir="rtl" ', 1)
+            html.write_text(page, encoding="utf-8")
             png = out_dir / fname
             if not any(chrome_shot(html, png, tmp) for _ in range(3)):
                 raise SystemExit(f"그리지 못했다: {png}")
