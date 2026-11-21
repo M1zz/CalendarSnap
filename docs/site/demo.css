@@ -40,3 +40,12 @@
   .paper { transform: none; }
 }
 @media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } }
+
+/* 오른쪽에서 왼쪽으로 쓰는 언어(아랍어, scripts/build_site.sh 가 dir="rtl" 을 단다).
+   공용 sitegen.css 에 왼쪽 · 오른쪽으로 고정된 자리를 여기서 뒤집는다. */
+[dir="rtl"] .skip { left: auto; right: var(--s4); }
+[dir="rtl"] .plan ul { padding-left: 0; padding-right: 1.2em; }
+[dir="rtl"] summary { padding: var(--s4) 0 var(--s4) var(--s6); }
+[dir="rtl"] summary::after { right: auto; left: 0; }
+[dir="rtl"] .paper { transform: rotate(1deg); }
+@media (max-width: 760px) { [dir="rtl"] .hero { text-align: right; } }

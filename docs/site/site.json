@@ -1,5 +1,6 @@
 {
   "name": {
+    "ar": "جدول أطفالي",
     "cs": "Rozvrh školky",
     "da": "Børneskema",
     "de": "Kita-Planer",
@@ -157,6 +158,11 @@
       "code": "tr",
       "path": "tr/",
       "name": "Türkçe"
+    },
+    {
+      "code": "ar",
+      "path": "ar/",
+      "name": "العربية"
     }
   ]
 }

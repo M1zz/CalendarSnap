@@ -7,7 +7,8 @@
   if (!root) return;
   const T = JSON.parse(root.dataset.text);
   const lang = document.documentElement.lang;
-  const fmt = o => new Intl.DateTimeFormat(lang, o);
+  // 아랍어는 앱과 같이 양력 · 0~9 숫자로 적는다
+  const fmt = o => new Intl.DateTimeFormat(lang === "ar" ? "ar-u-nu-latn-ca-gregory" : lang, o);
   const monthName = fmt({ month: "long" }), dayFmt = fmt({ month: "short", day: "numeric" }),
         timeFmt = fmt({ hour: "numeric", minute: "2-digit" }),
         whenFmt = fmt({ weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
