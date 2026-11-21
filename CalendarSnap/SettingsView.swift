@@ -209,8 +209,10 @@ struct SettingsView: View {
         let names = settings.childNames
             .map { $0.trimmingCharacters(in: .whitespaces) }
             .filter { !$0.isEmpty }
-        guard !names.isEmpty else { return "‘\(CalendarService.calendarName(for: ""))’" }
-        return names.map { "‘\(CalendarService.calendarName(for: $0))’" }.joined(separator: ", ")
+        // 아랍어는 «» 와 ، 로 묶는다 (‘’ 는 오른쪽에서 왼쪽 글 속에서 짝이 어긋나 보인다)
+        let (open, close, comma) = AppLocale.isArabic ? ("«", "»", "، ") : ("‘", "’", ", ")
+        guard !names.isEmpty else { return open + CalendarService.calendarName(for: "") + close }
+        return names.map { open + CalendarService.calendarName(for: $0) + close }.joined(separator: comma)
     }
 
     // MARK: - 아이 삭제 확인

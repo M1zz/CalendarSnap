@@ -174,7 +174,10 @@ enum EventParser {
         }
 
         return mergedRows.map { row in
-            row.sorted { $0.box.minX < $1.box.minX }.map(\.text).joined(separator: " ")
+            // 아랍어 표는 오른쪽 칸부터 읽는다
+            let rightToLeft = row.contains { $0.text.hasArabicLetters }
+            return row.sorted { rightToLeft ? $0.box.maxX > $1.box.maxX : $0.box.minX < $1.box.minX }
+                .map(\.text).joined(separator: " ")
         }
     }
 

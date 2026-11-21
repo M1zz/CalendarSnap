@@ -53,11 +53,12 @@ enum OCRService {
         readingOrder(try await recognizeLines(in: image)).map(\.text)
     }
 
-    /// 위→아래, 왼→오른쪽 순 정렬 (달력 셀 읽기 순서).
+    /// 위→아래, 왼→오른쪽 순 정렬 (달력 셀 읽기 순서). 아랍 글자 줄은 오른쪽부터.
     static func readingOrder(_ lines: [RecognizedLine]) -> [RecognizedLine] {
         lines.sorted {
             let a = $0.box, b = $1.box
             if abs(a.midY - b.midY) > 0.02 { return a.midY > b.midY }
+            if $0.text.hasArabicLetters || $1.text.hasArabicLetters { return a.maxX > b.maxX }
             return a.minX < b.minX
         }
     }

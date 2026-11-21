@@ -48,6 +48,13 @@ extension String {
     }
 }
 
+extension String {
+    /// 아랍 글자가 들어 있는가. 사진 속 표의 칸을 오른쪽부터 읽을지 정한다.
+    var hasArabicLetters: Bool {
+        unicodeScalars.contains { (0x0600...0x06FF).contains($0.value) }
+    }
+}
+
 extension Date.FormatStyle {
     /// 앱 로케일과 달력으로 적는다 (아랍어: 양력 · 0~9, 그 밖: 기기 설정).
     var inApp: Date.FormatStyle {

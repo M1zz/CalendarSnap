@@ -641,7 +641,7 @@ struct ContentView: View {
 
     private var reminderSummaryText: String {
         let selected = ReminderOption.allCases.filter { settings.options.contains($0) }
-        let times = selected.isEmpty ? String(localized: "알림 없음") : selected.map(\.title).joined(separator: ", ")
+        let times = selected.isEmpty ? String(localized: "알림 없음") : selected.map(\.title).joined(separator: AppLocale.isArabic ? "، " : ", ")
         let cal = settings.mirrorToCalendar ? String(localized: " · 캘린더에도 추가") : ""
         return times + cal
     }
