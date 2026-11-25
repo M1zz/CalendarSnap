@@ -108,6 +108,8 @@ struct ContentView: View {
             await purchases.refresh()
             offerGraduationIfDue()
         }
+        // 할인 기간이면 앱을 연 뒤 한 번 할인 배너를 띄운다. 단추는 요금제를 연다 (LeeoKit).
+        .leeoSaleBanner { if paywall == nil { paywall = PaywallRequest() } }
         .sheet(item: $paywall) { request in
             PaywallView(highlight: request.highlight, headline: request.headline)
         }
