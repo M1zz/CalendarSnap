@@ -1,0 +1,21 @@
+{
+  "$comment": [
+    "FeedbackHubViewer 가 이 앱의 통계를 읽는 스펙. 원본은 이 파일이고, 허브는 scripts/sync-stats-specs.sh 로 복사해 간다.",
+    "release.coreAction 은 품질 탭의 '핵심 기능' 칸과 릴리즈 건강 카드가 읽는다. 이벤트 이름을 바꾸면 여기도 같이 바꿀 것."
+  ],
+  "specVersion": 1,
+  "appId": "com.devkoan.CalendarSnap",
+  "appName": "아이일정",
+  "eventLabels": {
+    "scan_events_saved": "알림장 일정을 저장함"
+  },
+  "release": {
+    "coreAction": {
+      "label": "알림장 사진의 일정을 저장한 사람",
+      "events": [
+        "scan_events_saved"
+      ],
+      "note": "찍은 알림장에서 뽑은 일정을 저장해야 알림과 달력으로 아이 일정을 챙겨 받는다."
+    }
+  }
+}

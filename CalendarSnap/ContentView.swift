@@ -800,6 +800,9 @@ struct ContentView: View {
         let fresh = newEvents(stamped, excluding: savedEvents)
         savedEvents = (savedEvents + fresh).sorted { $0.date < $1.date }
         EventStore.save(savedEvents)   // 위젯 갱신
+        if !fresh.isEmpty {
+            LeeoAnalyticsCenter.track(.custom(name: "scan_events_saved", parameters: [:]))
+        }
 
         // 스캔 작업 공간 비우기 — 저장된 일정은 달력 탭에서
         scannedAll = []
